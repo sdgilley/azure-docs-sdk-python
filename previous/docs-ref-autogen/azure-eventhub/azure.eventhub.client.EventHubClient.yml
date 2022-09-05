@@ -142,8 +142,6 @@ methods:
 
       Default value is *True*.'
     defaultValue: '30'
-  - name: auto_reconnect
-    defaultValue: 'True'
   return:
     types:
     - <xref:azure.eventhub.sender.Sender>

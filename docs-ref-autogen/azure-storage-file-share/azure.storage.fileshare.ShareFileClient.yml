@@ -508,8 +508,6 @@ methods:
 
       shared access key.'
     defaultValue: None
-  - name: credential
-    defaultValue: None
   return:
     description: A File client.
     types:
@@ -552,8 +550,6 @@ methods:
       an instance of a AzureSasCredential from azure.core.credentials or an account
 
       shared access key.'
-    defaultValue: None
-  - name: credential
     defaultValue: None
   return:
     description: A File client.

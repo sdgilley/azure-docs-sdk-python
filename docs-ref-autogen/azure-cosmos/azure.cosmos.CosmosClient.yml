@@ -295,8 +295,6 @@ methods:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:str>]
-  - name: consistency_level
-    defaultValue: None
 - uid: azure.cosmos.CosmosClient.get_database_account
   name: get_database_account
   summary: Retrieve the database account information.
