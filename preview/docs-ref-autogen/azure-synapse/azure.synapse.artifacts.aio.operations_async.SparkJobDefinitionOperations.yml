@@ -129,7 +129,7 @@ methods:
       for update,
 
       for which it should match existing entity or can be * for unconditional update.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -182,7 +182,7 @@ methods:
       no content will be
 
       returned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

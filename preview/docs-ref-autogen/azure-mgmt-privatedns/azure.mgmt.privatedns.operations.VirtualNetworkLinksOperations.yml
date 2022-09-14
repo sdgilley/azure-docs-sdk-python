@@ -67,7 +67,7 @@ methods:
       ETag value to
 
       prevent accidentally overwriting any concurrent changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -75,7 +75,7 @@ methods:
       DNS zone to
 
       be created, but to prevent updating an existing link. Other values will be ignored.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -140,7 +140,7 @@ methods:
       accidentally
 
       deleting any concurrent changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -205,7 +205,7 @@ methods:
       ETag value to
 
       prevent accidentally overwriting any concurrent changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -287,7 +287,7 @@ methods:
       returns up
 
       to 100 virtual network links.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

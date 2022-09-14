@@ -129,14 +129,14 @@ methods:
     description: 'A value indicating whether the operation should
 
       return faceIds of detected faces.'
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   - name: return_face_landmarks
     description: 'A value indicating whether the operation
 
       should return landmarks of the detected faces.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: return_face_attributes
@@ -163,7 +163,7 @@ methods:
       or ''recognition_04''. Note that each face attribute analysis has
 
       additional computational and time cost.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.FaceAttributeType>]
@@ -183,7 +183,7 @@ methods:
       specify the model you need. Possible values include: ''recognition_01'',
 
       ''recognition_02'', ''recognition_03'', ''recognition_04'''
-    defaultValue: recognition_01
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.RecognitionModel>
@@ -191,7 +191,7 @@ methods:
     description: 'A value indicating whether the
 
       operation should return ''recognitionModel'' in response.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: detection_model
@@ -208,7 +208,7 @@ methods:
       it. Possible values include: ''detection_01'', ''detection_02'',
 
       ''detection_03'''
-    defaultValue: detection_01
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.DetectionModel>
@@ -218,19 +218,19 @@ methods:
       being cached. Supported range from 60 seconds up to 86400 seconds. The
 
       default value is 86400 (24 hours).'
-    defaultValue: '86400'
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -241,7 +241,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -359,14 +359,14 @@ methods:
     description: 'A value indicating whether the operation should
 
       return faceIds of detected faces.'
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   - name: return_face_landmarks
     description: 'A value indicating whether the operation
 
       should return landmarks of the detected faces.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: return_face_attributes
@@ -393,7 +393,7 @@ methods:
       or ''recognition_04''. Note that each face attribute analysis has
 
       additional computational and time cost.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.FaceAttributeType>]
@@ -413,7 +413,7 @@ methods:
       specify the model you need. Possible values include: ''recognition_01'',
 
       ''recognition_02'', ''recognition_03'', ''recognition_04'''
-    defaultValue: recognition_01
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.RecognitionModel>
@@ -421,7 +421,7 @@ methods:
     description: 'A value indicating whether the
 
       operation should return ''recognitionModel'' in response.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: detection_model
@@ -438,7 +438,7 @@ methods:
       it. Possible values include: ''detection_01'', ''detection_02'',
 
       ''detection_03'''
-    defaultValue: detection_01
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.DetectionModel>
@@ -448,19 +448,19 @@ methods:
       being cached. Supported range from 60 seconds up to 86400 seconds. The
 
       default value is 86400 (24 hours).'
-    defaultValue: '86400'
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -556,7 +556,7 @@ methods:
       Parameter faceListId, largeFaceListId and faceIds should not be
 
       provided at the same time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: large_face_list_id
@@ -569,7 +569,7 @@ methods:
       expire. Parameter faceListId, largeFaceListId and faceIds should not
 
       be provided at the same time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: face_ids
@@ -582,34 +582,34 @@ methods:
       faceIds is limited to 1000. Parameter faceListId, largeFaceListId and
 
       faceIds should not be provided at the same time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: max_num_of_candidates_returned
     description: 'The number of top similar faces
 
       returned. The valid range is [1, 1000].'
-    defaultValue: '20'
+    isRequired: true
     types:
     - <xref:int>
   - name: mode
     description: 'Similar face searching mode. It can be "matchPerson" or
 
       "matchFace". Possible values include: ''matchPerson'', ''matchFace'''
-    defaultValue: matchPerson
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.FindSimilarMatchMode>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -668,14 +668,14 @@ methods:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -774,7 +774,7 @@ methods:
       created by PersonGroup - Create. Parameter personGroupId and
 
       largePersonGroupId should not be provided at the same time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: large_person_group_id
@@ -785,14 +785,14 @@ methods:
       personGroupId and largePersonGroupId should not be provided at the
 
       same time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_num_of_candidates_returned
     description: 'The range of
 
       maxNumOfCandidatesReturned is between 1 and 100 (default is 1).'
-    defaultValue: '1'
+    isRequired: true
     types:
     - <xref:int>
   - name: confidence_threshold
@@ -801,19 +801,19 @@ methods:
       used to judge whether one face belong to one person. The range of
 
       confidenceThreshold is [0, 1] (default specified by algorithm).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -870,14 +870,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -922,7 +922,7 @@ methods:
       PersonGroup - Create. Parameter personGroupId and largePersonGroupId
 
       should not be provided at the same time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: large_person_group_id
@@ -933,19 +933,19 @@ methods:
       created in LargePersonGroup - Create. Parameter personGroupId and
 
       largePersonGroupId should not be provided at the same time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

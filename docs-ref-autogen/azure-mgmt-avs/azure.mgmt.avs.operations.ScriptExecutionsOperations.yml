@@ -201,7 +201,7 @@ methods:
     description: 'Name of the desired output stream to return. If not provided,
 
       will return all. An empty array will return nothing.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.mgmt.avs.models.ScriptOutputStreamType>]

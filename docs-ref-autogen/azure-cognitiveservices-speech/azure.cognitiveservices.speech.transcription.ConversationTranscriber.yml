@@ -12,7 +12,7 @@ constructor:
   parameters:
   - name: audio_config
     description: The configuration for the audio input.
-    defaultValue: None
+    isRequired: true
 methods:
 - uid: azure.cognitiveservices.speech.transcription.ConversationTranscriber.join_conversation_async
   name: join_conversation_async

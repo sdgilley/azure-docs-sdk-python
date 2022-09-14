@@ -42,14 +42,14 @@ methods:
       supported
 
       currently.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: include_extended_locations
     description: 'To Include Extended Locations information or not in the
 
       response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

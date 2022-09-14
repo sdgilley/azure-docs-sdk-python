@@ -129,12 +129,12 @@ methods:
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Continuation token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -158,12 +158,12 @@ methods:
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

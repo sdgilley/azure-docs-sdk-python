@@ -59,12 +59,12 @@ methods:
   - name: iot_edge
     description: 'Whether or not the created device is an IoT Edge device. Default
       value: False'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: status_reason
     description: 'The reason for the device identity status. Default value: None'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_scope
@@ -75,7 +75,7 @@ methods:
 
       For leaf devices, the value to set a parent edge device can be retrieved from
       the parent edge device''s device_scope property.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: str] parent_scopes
@@ -87,7 +87,7 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
   return:
@@ -125,12 +125,12 @@ methods:
   - name: iot_edge
     description: 'Whether or not the created device is an IoT Edge device. Default
       value: False'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: status_reason
     description: 'The reason for the device identity status. Default value: None'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_scope
@@ -141,7 +141,7 @@ methods:
 
       For leaf devices, the value to set a parent edge device can be retrieved from
       the parent edge device''s device_scope property.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: str] parent_scopes
@@ -153,7 +153,7 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
   return:
@@ -191,12 +191,12 @@ methods:
   - name: iot_edge
     description: 'Whether or not the created device is an IoT Edge device. Default
       value: False'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: status_reason
     description: 'The reason for the device identity status. Default value: None'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_scope
@@ -207,7 +207,7 @@ methods:
 
       For leaf devices, the value to set a parent edge device can be retrieved from
       the parent edge device''s device_scope property.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: str] parent_scopes
@@ -219,7 +219,7 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
   return:
@@ -332,7 +332,7 @@ methods:
     - <xref:str>
   - name: etag
     description: The etag (if_match) value to use for the delete operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -356,7 +356,7 @@ methods:
     - <xref:str>
   - name: etag
     description: The etag (if_match) value to use for the delete operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -382,8 +382,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: connection_string
-    isRequired: true
   return:
     types:
     - <xref:azure.iot.hub.IoTHubRegistryManager>
@@ -409,8 +407,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: token_credential
-    isRequired: true
   return:
     types:
     - <xref:azure.iot.hub.IoTHubRegistryManager>
@@ -451,7 +447,7 @@ methods:
       of device identities that are returned. Any value outside the range of
 
       1-1000 is considered to be 1000'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -590,12 +586,12 @@ methods:
     - <xref:azure.iot.hub.protocol.models.QuerySpecification>
   - name: continuation_token
     description: Continuation token for paging
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_item_count
     description: Maximum number of requested device twins
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -624,7 +620,7 @@ methods:
     - <xref:azure.iot.hub.protocol.models.Twin>
   - name: etag
     description: The etag (if_match) value to use for the replace operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -648,7 +644,7 @@ methods:
     - <xref:azure.iot.hub.protocol.models.Twin>
   - name: etag
     description: The etag (if_match) value to use for the replace operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -674,7 +670,7 @@ methods:
     description: 'The properties to be send with the message.  Can contain
 
       application properties and system properties'
-    defaultValue: '{}'
+    isRequired: true
     types:
     - <xref:dict>
   exceptions:
@@ -705,12 +701,12 @@ methods:
   - name: iot_edge
     description: 'Whether or not the created device is an IoT Edge device. Default
       value: False'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: status_reason
     description: 'The reason for the device identity status. Default value: None'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_scope
@@ -721,7 +717,7 @@ methods:
 
       For leaf devices, the value to set a parent edge device can be retrieved from
       the parent edge device''s device_scope property.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: str] parent_scopes
@@ -733,7 +729,7 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
   return:
@@ -776,12 +772,12 @@ methods:
   - name: iot_edge
     description: 'Whether or not the created device is an IoT Edge device. Default
       value: False'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: status_reason
     description: 'The reason for the device identity status. Default value: None'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_scope
@@ -792,7 +788,7 @@ methods:
 
       For leaf devices, the value to set a parent edge device can be retrieved from
       the parent edge device''s device_scope property.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: str] parent_scopes
@@ -804,7 +800,7 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
   return:
@@ -847,12 +843,12 @@ methods:
   - name: iot_edge
     description: 'Whether or not the created device is an IoT Edge device. Default
       value: False'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: status_reason
     description: 'The reason for the device identity status. Default value: None'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_scope
@@ -863,7 +859,7 @@ methods:
 
       For leaf devices, the value to set a parent edge device can be retrieved from
       the parent edge device''s device_scope property.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: str] parent_scopes
@@ -875,7 +871,7 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
   return:
@@ -904,7 +900,7 @@ methods:
     - <xref:azure.iot.hub.protocol.models.Twin>
   - name: etag
     description: The etag (if_match) value to use for the update operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1038,7 +1034,7 @@ methods:
     - <xref:azure.iot.hub.protocol.models.Twin>
   - name: etag
     description: The etag (if_match) value to use for the update operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

@@ -77,12 +77,12 @@ methods:
     - <xref:str>
   - name: start_date
     description: Start date.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: end_date
     description: End date.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
@@ -95,7 +95,7 @@ methods:
       value pair string where
 
       key and value is separated by a colon (:).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: apply
@@ -105,7 +105,7 @@ methods:
       (specific for
 
       Partner Led), or for billingProfile scope by properties/invoiceSectionId.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

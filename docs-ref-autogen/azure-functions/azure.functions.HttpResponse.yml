@@ -12,7 +12,7 @@ constructor:
   parameters:
   - name: body
     description: Optional response body.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:<xref:str/bytes>>
   - name: status_code

@@ -16,7 +16,7 @@ constructor:
     - <xref:str>
   - name: state
     description: 'Block state. Possible values: committed|uncommitted'
-    defaultValue: BlockState.LATEST
+    isRequired: true
     types:
     - <xref:str>
 variables:

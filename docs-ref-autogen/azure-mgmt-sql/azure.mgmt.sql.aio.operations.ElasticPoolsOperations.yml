@@ -300,7 +300,7 @@ methods:
     - <xref:str>
   - name: skip
     description: The number of elements in the collection to skip.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

@@ -53,7 +53,7 @@ methods:
     description: 'The continuation token used to get the next
 
       page of results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: x_ms_max_item_count
@@ -62,19 +62,19 @@ methods:
       page. The service may use a different value if the value specified is
 
       not acceptable.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

@@ -20,7 +20,7 @@ methods:
       continuation_token field of a previous generator object. If specified,
 
       this generator will begin returning results from this point.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

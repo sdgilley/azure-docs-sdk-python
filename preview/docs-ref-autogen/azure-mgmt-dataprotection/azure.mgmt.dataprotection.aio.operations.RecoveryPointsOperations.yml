@@ -90,12 +90,12 @@ methods:
     - <xref:str>
   - name: filter
     description: OData filter options.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip_token
     description: skipToken Filter.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

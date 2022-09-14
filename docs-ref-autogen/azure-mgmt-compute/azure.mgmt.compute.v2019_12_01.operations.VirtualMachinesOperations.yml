@@ -355,7 +355,7 @@ methods:
       value for this
 
       flag is false if not specified.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -494,7 +494,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: Parameters supplied to the Reimage Virtual Machine operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2019_12_01.models.VirtualMachineReimageParameters>
   - name: cls
@@ -766,7 +766,7 @@ methods:
     - <xref:str>
   - name: expand
     description: The expand expression to apply on the operation.
-    defaultValue: instanceView
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -842,7 +842,7 @@ methods:
       Machines in
 
       the subscription.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

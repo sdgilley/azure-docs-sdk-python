@@ -68,7 +68,7 @@ methods:
       registration
 
       definition by plan identifier, publisher, version etc.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

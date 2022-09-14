@@ -93,7 +93,7 @@ methods:
       JSON response objects. Any links to Bing.com properties in the
 
       response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_type
@@ -106,7 +106,7 @@ methods:
       types](
 
       [https://docs.microsoft.com/en-us/azure/cognitive-services/bing-visual-search/overview#content-form-types](https://docs.microsoft.com/en-us/azure/cognitive-services/bing-visual-search/overview#content-form-types)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -144,7 +144,7 @@ methods:
       (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit / 537.51.1 (KHTML, like
 
       Gecko) Version / 7.0 Mobile / 11A465 Safari / 9537.53.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -221,7 +221,7 @@ methods:
       information. If you include the X-MSEdge-ClientID, you must not
 
       include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -240,7 +240,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -311,7 +311,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: market
@@ -342,7 +342,7 @@ methods:
       Bing uses a best fit market code based on an internal mapping that is
 
       subject to change.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: safe_search
@@ -369,7 +369,7 @@ methods:
       of the content on the site and your scenario supports the possibility
 
       of adult content. Possible values include: ''Off'', ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.visualsearch.models.SafeSearch>
@@ -393,7 +393,7 @@ methods:
       the JSON response objects. Also, any links to Bing.com properties in
 
       the response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: knowledge_request
@@ -404,7 +404,7 @@ methods:
       \ specify knowledgeRequest form\ndata and image form data in the same request\
       \ only if knowledgeRequest\nform data specifies the cropArea field only (it\
       \ must not include an\ninsights token or URL)."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: image
@@ -423,19 +423,19 @@ methods:
       the cropArea field only  (it must not include an insights token or
 
       URL).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Generator>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

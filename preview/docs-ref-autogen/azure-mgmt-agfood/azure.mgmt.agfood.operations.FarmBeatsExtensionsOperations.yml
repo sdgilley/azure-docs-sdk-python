@@ -61,29 +61,29 @@ methods:
   parameters:
   - name: farm_beats_extension_ids
     description: FarmBeatsExtension ids.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: farm_beats_extension_names
     description: FarmBeats extension names.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: extension_categories
     description: Extension categories.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: publisher_ids
     description: Publisher ids.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

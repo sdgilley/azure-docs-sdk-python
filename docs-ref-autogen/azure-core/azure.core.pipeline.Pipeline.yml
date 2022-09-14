@@ -21,7 +21,7 @@ constructor:
     isRequired: true
   - name: policies
     description: List of configured policies.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>
 examples:

@@ -114,7 +114,7 @@ methods:
     - <xref:str>
   - name: artifacts
     description: The list of artifacts to apply.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.mgmt.devtestlabs.models.ArtifactInstallProperties>]
   - name: cls
@@ -321,7 +321,7 @@ methods:
     - <xref:str>
   - name: existing_lab_disk_id
     description: Specifies the disk resource ID to detach from virtual machine.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -422,7 +422,7 @@ methods:
     - <xref:str>
   - name: size
     description: Specifies the size of the virtual machine.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -721,7 +721,7 @@ methods:
     description: 'Specify the $expand query. Example:
 
       ''properties($expand=artifacts,computeVm,networkInterface,applicableSchedule)''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -787,25 +787,25 @@ methods:
     description: 'Specify the $expand query. Example:
 
       ''properties($expand=artifacts,computeVm,networkInterface,applicableSchedule)''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: 'The filter to apply to the operation. Example: ''$filter=contains(name,''myName'').'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: 'The maximum number of resources to return from the operation. Example:
       ''$top=10''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: orderby
     description: 'The ordering expression for the results, using OData notation. Example:
 
       ''$orderby=name desc''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -41,7 +41,7 @@ functions:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: overwrite
     description: 'Whether the local file should be overwritten if it already exists.
       The default value is
@@ -130,7 +130,7 @@ functions:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: overwrite
     description: 'Whether the blob to be uploaded should overwrite the current data.
 

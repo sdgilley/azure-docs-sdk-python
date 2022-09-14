@@ -51,7 +51,7 @@ constructor:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: api_version
     description: 'The Storage API version to use for requests. Default value is the
       most recent service version that is
@@ -92,7 +92,7 @@ methods:
   parameters:
   - name: metadata
     description: Name-value pairs associated with the directory as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: content_settings
@@ -324,7 +324,7 @@ methods:
     - <xref:azure.storage.filedatalake.DirectoryProperties>
   - name: metadata
     description: Name-value pairs associated with the file as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: content_settings

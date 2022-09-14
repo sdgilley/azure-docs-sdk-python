@@ -84,26 +84,26 @@ methods:
     description: 'Filter by target resource( which is full ARM ID) Default value is
 
       select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource_type
     description: Filter by target resource type. Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource_group
     description: 'Filter by target resource group name. Default value is select
 
       all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: monitor_service
     description: 'Filter by monitor service which generates the alert instance. Default
 
       value is select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.MonitorService>
@@ -111,45 +111,45 @@ methods:
     description: 'Filter by monitor condition which is either ''Fired'' or ''Resolved''.
 
       Default value is to select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.MonitorCondition>
   - name: severity
     description: Filter by severity.  Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.Severity>
   - name: alert_state
     description: Filter by state of the alert instance. Default value is to select
       all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.AlertState>
   - name: alert_rule
     description: Filter by specific alert rule.  Default value is to select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smart_group_id
     description: Filter the alerts list by the Smart Group Id. Default value is none.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: include_context
     description: 'Include context which has contextual data specific to the monitor
 
       service. Default value is false''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: include_egress_config
     description: 'Include egress config which would be used for displaying the
 
       content in portal.  Default value is ''false''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: page_count
@@ -160,14 +160,14 @@ methods:
       value allowed is
 
       25. Default value is 25.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sort_by
     description: 'Sort the query results by input field,  Default value is
 
       ''lastModifiedDateTime''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.AlertsSortByFields>
@@ -175,7 +175,7 @@ methods:
     description: 'Sort the query results order in either ascending or descending.  Default
 
       value is ''desc'' for time fields and ''asc'' for others.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.Enum11>
@@ -188,12 +188,12 @@ methods:
 
       than getting entire content.  Default is to fetch all the fields in the essentials
       section.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: time_range
     description: Filter by time range by below listed values. Default value is 1 day.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.TimeRange>
@@ -207,7 +207,7 @@ methods:
       not both. Default
 
       is none.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -297,33 +297,33 @@ methods:
     description: 'Include count of the SmartGroups as part of the summary.
 
       Default value is ''false''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: target_resource
     description: 'Filter by target resource( which is full ARM ID) Default value is
 
       select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource_type
     description: Filter by target resource type. Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource_group
     description: 'Filter by target resource group name. Default value is select
 
       all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: monitor_service
     description: 'Filter by monitor service which generates the alert instance. Default
 
       value is select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.MonitorService>
@@ -331,31 +331,31 @@ methods:
     description: 'Filter by monitor condition which is either ''Fired'' or ''Resolved''.
 
       Default value is to select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.MonitorCondition>
   - name: severity
     description: Filter by severity.  Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.Severity>
   - name: alert_state
     description: Filter by state of the alert instance. Default value is to select
       all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.AlertState>
   - name: alert_rule
     description: Filter by specific alert rule.  Default value is to select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: time_range
     description: Filter by time range by below listed values. Default value is 1 day.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.TimeRange>
@@ -369,7 +369,7 @@ methods:
       not both. Default
 
       is none.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

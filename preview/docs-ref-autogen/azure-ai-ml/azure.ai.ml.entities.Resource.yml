@@ -16,12 +16,6 @@ constructor:
     isRequired: true
     types:
     - <xref:class>
-  - name: description
-    defaultValue: None
-  - name: tags
-    defaultValue: None
-  - name: properties
-    defaultValue: None
 methods:
 - uid: azure.ai.ml.entities.Resource.dump
   name: dump

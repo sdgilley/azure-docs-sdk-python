@@ -82,7 +82,7 @@ methods:
       Example:
 
       $expand=evidence,configuration.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -151,7 +151,7 @@ methods:
       Example:
 
       $expand=evidence,configuration.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -213,7 +213,7 @@ methods:
       eq ''logical-
 
       disks|C:>>|<<disk-free-space-mb.''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
@@ -221,7 +221,7 @@ methods:
       Example:
 
       $expand=evidence,configuration.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -291,7 +291,7 @@ methods:
   - name: filter
     description: 'Optionally filter by heartbeat condition. Example: $filter=isHeartbeat
       eq false.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
@@ -299,17 +299,17 @@ methods:
       Example:
 
       $expand=evidence,configuration.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_timestamp_utc
     description: The start of the time window.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_timestamp_utc
     description: The end of the time window.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: cls

@@ -28,7 +28,7 @@ constructor:
       "MultiPolygon",
 
       "GeometryCollection", "Feature", "FeatureCollection".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.maps.search._generated.models.GeoJsonObjectType>

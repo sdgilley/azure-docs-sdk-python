@@ -34,7 +34,7 @@ methods:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   return:
@@ -60,7 +60,7 @@ methods:
     - <xref:azure.durable_functions.RetryOptions>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   return:
@@ -89,17 +89,17 @@ methods:
     - <xref:str>
   - name: content
     description: The HTTP request content.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:str>]
   - name: headers
     description: The HTTP request headers.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Dict>[<xref:str>, <xref:str>]]
   - name: token_source
     description: The source of OAuth token to add to the request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.durable_functions.models.TokenSource.TokenSource>
   return:
@@ -119,12 +119,12 @@ methods:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the orchestrator function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
     description: A unique ID to use for the sub-orchestration instance.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:str>]
   return:
@@ -151,12 +151,12 @@ methods:
   - name: input
     description: The JSON-serializable input to pass to the activity function. Defaults
       to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
     description: The instance ID of the sub-orchestrator to call.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -200,8 +200,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: json_string
-    isRequired: true
   return:
     description: New instance of the durable orchestration context class
     types:

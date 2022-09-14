@@ -466,7 +466,7 @@ methods:
     - <xref:str>
   - name: query_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.policyinsights.models.QueryOptions>
   - name: cls
@@ -498,7 +498,7 @@ methods:
     - <xref:str>
   - name: query_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.policyinsights.models.QueryOptions>
   - name: cls
@@ -530,7 +530,7 @@ methods:
     - <xref:str>
   - name: query_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.policyinsights.models.QueryOptions>
   - name: cls
@@ -557,7 +557,7 @@ methods:
     - <xref:str>
   - name: query_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.policyinsights.models.QueryOptions>
   - name: cls
@@ -584,7 +584,7 @@ methods:
     - <xref:str>
   - name: query_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.policyinsights.models.QueryOptions>
   - name: cls
@@ -611,7 +611,7 @@ methods:
     - <xref:str>
   - name: query_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.policyinsights.models.QueryOptions>
   - name: cls
@@ -638,7 +638,7 @@ methods:
     - <xref:str>
   - name: query_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.policyinsights.models.QueryOptions>
   - name: cls
@@ -660,7 +660,7 @@ methods:
   parameters:
   - name: query_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.policyinsights.models.QueryOptions>
   - name: cls

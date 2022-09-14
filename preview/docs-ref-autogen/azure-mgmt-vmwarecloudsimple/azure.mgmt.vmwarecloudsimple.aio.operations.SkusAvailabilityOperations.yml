@@ -47,7 +47,7 @@ methods:
     - <xref:str>
   - name: sku_id
     description: sku id, if no sku is passed availability for all skus will be returned.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

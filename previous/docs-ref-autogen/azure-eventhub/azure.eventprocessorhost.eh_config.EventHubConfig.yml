@@ -34,14 +34,14 @@ constructor:
     description: 'The EventHub consumer group to receive from. The
 
       default value is ''$default''.'
-    defaultValue: $default
+    isRequired: true
     types:
     - <xref:str>
   - name: namespace_suffix
     description: 'The ServiceBus namespace URL suffix.
 
       The default value is ''servicebus.windows.net''.'
-    defaultValue: servicebus.windows.net
+    isRequired: true
     types:
     - <xref:str>
 methods:

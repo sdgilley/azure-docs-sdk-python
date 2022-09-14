@@ -34,19 +34,19 @@ methods:
     description: 'The relevant app Service Principal Object Id and the
 
       Service Principal Object Id you want to grant.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.graphrbac.models.OAuth2PermissionGrant>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -75,14 +75,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -108,19 +108,19 @@ methods:
     description: 'This is the Service Principal ObjectId associated with
 
       the app'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

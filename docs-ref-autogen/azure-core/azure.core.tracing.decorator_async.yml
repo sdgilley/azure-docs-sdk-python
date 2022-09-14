@@ -15,7 +15,7 @@ functions:
   parameters:
   - name: func
     description: A function to decorate
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:callable>
   - name: name_of_span

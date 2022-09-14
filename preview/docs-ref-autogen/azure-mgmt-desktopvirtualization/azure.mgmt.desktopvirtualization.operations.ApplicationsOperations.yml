@@ -180,7 +180,7 @@ methods:
     - <xref:str>
   - name: application
     description: Object containing Application definitions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.ApplicationPatch>
   - name: cls

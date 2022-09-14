@@ -64,7 +64,7 @@ methods:
   parameters:
   - name: filter
     description: OData filter options.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

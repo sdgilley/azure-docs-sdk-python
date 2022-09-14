@@ -56,7 +56,7 @@ methods:
       pair string where
 
       key and value is separated by a colon (:).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

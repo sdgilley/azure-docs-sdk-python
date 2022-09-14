@@ -12,7 +12,7 @@ constructor:
   - name: body
     description: The data to send in a single message. body can be type of str or
       bytes.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:bytes>
@@ -35,7 +35,7 @@ methods:
     description: 'The encoding to use for decoding event data.
 
       Default is ''UTF-8'''
-    defaultValue: UTF-8
+    isRequired: true
   return:
     types:
     - <xref:Dict>[<xref:str>, <xref:Any>]
@@ -48,7 +48,7 @@ methods:
     description: 'The encoding to use for decoding event data.
 
       Default is ''UTF-8'''
-    defaultValue: UTF-8
+    isRequired: true
   return:
     types:
     - <xref:str>
@@ -69,8 +69,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: content_type
-    isRequired: true
   return:
     types:
     - <xref:azure.eventhub.EventData>

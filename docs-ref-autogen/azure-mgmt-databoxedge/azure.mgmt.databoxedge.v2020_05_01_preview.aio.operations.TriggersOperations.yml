@@ -187,7 +187,7 @@ methods:
       context
 
       tag property.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

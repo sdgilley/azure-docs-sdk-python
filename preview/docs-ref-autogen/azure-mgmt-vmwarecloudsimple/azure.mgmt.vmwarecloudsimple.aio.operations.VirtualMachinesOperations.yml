@@ -201,13 +201,13 @@ methods:
     - <xref:str>
   - name: mode
     description: query stop mode parameter (reboot, shutdown, etc...).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.vmwarecloudsimple.models.StopMode>
   - name: m
     description: body stop mode parameter (reboot, shutdown, etc...).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.vmwarecloudsimple.models.VirtualMachineStopMode>
   - name: cls
@@ -337,17 +337,17 @@ methods:
     - <xref:str>
   - name: filter
     description: The filter to apply on the list operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: The maximum number of record sets to return.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: to be used by nextLink implementation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -372,17 +372,17 @@ methods:
   parameters:
   - name: filter
     description: The filter to apply on the list operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: The maximum number of record sets to return.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: to be used by nextLink implementation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

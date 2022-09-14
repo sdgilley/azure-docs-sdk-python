@@ -15,7 +15,7 @@ functions:
     - <xref:str>
   - name: exception_type
     description: Raises this Exception if invalid.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.core.tools.Exception>
   return:
@@ -35,7 +35,7 @@ functions:
     - <xref:str>
   - name: exception_type
     description: Raises this Exception if invalid.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.core.tools.Exception>
   return:

@@ -16,66 +16,62 @@ constructor:
   parameters:
   - name: name
     description: Name of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tags
     description: Tag dictionary. Tags can be added, removed, and updated.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: properties
     description: The asset property dictionary.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: auth_mode
     description: 'Possible values include: "aml_token", "key", defaults to "key"'
-    defaultValue: key
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: description
     description: Description of the inference endpoint, defaults to None
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: location
     description: defaults to None
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: traffic
     description: Traffic rules on how the traffic will be routed across deployments,
       defaults to {}
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Dict>[<xref:str>, <xref:int>], <xref:optional>
   - name: mirror_traffic
     description: Duplicated life traffic used to train a single deployment, defaults
       to {}
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Dict>[<xref:str>, <xref:int>], <xref:optional>
   - name: provisioning_state
     description: str, provisioning state, readonly
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: identity
     description: defaults to SystemAssigned
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.ai.ml.entities.IdentityConfiguration>, <xref:optional>
   - name: kind
     description: 'Kind of the resource, we have two kinds: K8s and Managed online
       endpoints, defaults to None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
-  - name: provisioning_state
-    defaultValue: None
-  - name: kind
-    defaultValue: None
 attributes:
 - uid: azure.ai.ml.entities.OnlineEndpoint.provisioning_state
   name: provisioning_state

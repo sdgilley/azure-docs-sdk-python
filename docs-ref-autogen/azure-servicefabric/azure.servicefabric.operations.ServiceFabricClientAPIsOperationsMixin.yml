@@ -33,7 +33,7 @@ methods:
     - <xref:list>[<xref:azure.servicefabric.models.ConfigParameterOverride>]
   - name: force
     description: Force adding configuration overrides on specified nodes.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -44,19 +44,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -91,14 +91,14 @@ methods:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -155,7 +155,7 @@ methods:
       recommended to invoke this operation again with a greater timeout
 
       value. The default value for the same is 10 minutes.'
-    defaultValue: '10'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -166,26 +166,26 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: backup_storage
     description: 'Specifies the details of the backup storage
 
       where to save the backup.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.BackupStorageDescription>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -264,7 +264,7 @@ methods:
       internal system state modified by executing the user-induced
 
       operation.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -275,19 +275,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -322,14 +322,14 @@ methods:
     - <xref:azure.servicefabric.models.RepairTaskCancelDescription>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -376,19 +376,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -429,19 +429,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -480,19 +480,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -531,7 +531,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: validate_connection
@@ -540,19 +540,19 @@ methods:
       connection and credentials before creating or updating the backup
 
       policies.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -599,19 +599,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -649,19 +649,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -719,14 +719,14 @@ methods:
     - <xref:azure.servicefabric.models.RepairTask>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -792,19 +792,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -872,19 +872,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -951,7 +951,7 @@ methods:
       for which delete is timing out due to issues in the service code that
 
       prevents graceful close of replicas.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -962,19 +962,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1017,19 +1017,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1072,19 +1072,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1127,19 +1127,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1181,19 +1181,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1239,19 +1239,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1290,19 +1290,19 @@ methods:
       actual current version of the repair task. If zero, then no version
 
       check is performed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1363,7 +1363,7 @@ methods:
       for which delete is timing out due to issues in the service code that
 
       prevents graceful close of replicas.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -1374,19 +1374,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1442,19 +1442,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1516,19 +1516,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1585,7 +1585,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: deactivation_intent
@@ -1594,20 +1594,20 @@ methods:
       deactivating the node. The possible values are following. Possible
 
       values include: ''Pause'', ''Restart'', ''RemoveData'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.servicefabric.models.DeactivationIntent>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1665,19 +1665,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1745,19 +1745,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1825,19 +1825,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1879,19 +1879,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1947,19 +1947,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2033,19 +2033,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2084,19 +2084,19 @@ methods:
       actual current version of the repair task. If zero, then no version
 
       check is performed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2137,19 +2137,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2194,7 +2194,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -2211,7 +2211,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -2222,19 +2222,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2293,7 +2293,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -2310,7 +2310,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -2321,19 +2321,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2397,14 +2397,14 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: latest
     description: 'Specifies whether to get only the most recent backup
 
       available for a partition for the specified time range.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: start_date_time_filter
@@ -2415,7 +2415,7 @@ methods:
       specified in ISO8601 format. This is an optional parameter. If not
 
       specified, all backups from the beginning are enumerated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: end_date_time_filter
@@ -2426,7 +2426,7 @@ methods:
       in ISO8601 format. This is an optional parameter. If not specified,
 
       enumeration is done till the most recent backup.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: continuation_token
@@ -2443,7 +2443,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -2460,19 +2460,19 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2538,7 +2538,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -2547,14 +2547,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -2565,19 +2565,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2671,7 +2671,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: deployed_applications_health_state_filter
@@ -2724,7 +2724,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: services_health_state_filter
@@ -2777,7 +2777,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: exclude_health_statistics
@@ -2790,7 +2790,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -2801,19 +2801,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2913,7 +2913,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: deployed_applications_health_state_filter
@@ -2966,7 +2966,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: services_health_state_filter
@@ -3019,7 +3019,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: exclude_health_statistics
@@ -3032,7 +3032,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: application_health_policy
@@ -3043,7 +3043,7 @@ methods:
       If not present, the health evaluation uses the health policy from
 
       application manifest or the default health policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ApplicationHealthPolicy>
   - name: timeout
@@ -3054,19 +3054,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3121,7 +3121,7 @@ methods:
     description: 'The flag that specifies whether
 
       application parameters will be excluded from the result.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -3132,19 +3132,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3209,7 +3209,7 @@ methods:
       - Compose - Filter that matches input with ApplicationDefinitionKind
 
       value Compose. The value is 2.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: application_type_name
@@ -3218,14 +3218,14 @@ methods:
       the applications to query for. This value should not contain the
 
       application type version.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_application_parameters
     description: 'The flag that specifies whether
 
       application parameters will be excluded from the result.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: continuation_token
@@ -3242,7 +3242,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -3259,7 +3259,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -3270,19 +3270,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3343,19 +3343,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3397,19 +3397,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3462,19 +3462,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3547,14 +3547,14 @@ methods:
       - Compose - Filter that matches input with
 
       ApplicationTypeDefinitionKind value Compose. The value is 2.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: exclude_application_parameters
     description: 'The flag that specifies whether
 
       application parameters will be excluded from the result.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: continuation_token
@@ -3571,7 +3571,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -3588,7 +3588,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -3599,19 +3599,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3675,14 +3675,14 @@ methods:
     - <xref:str>
   - name: application_type_version
     description: The version of the application type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_application_parameters
     description: 'The flag that specifies whether
 
       application parameters will be excluded from the result.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: continuation_token
@@ -3699,7 +3699,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -3716,7 +3716,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -3727,19 +3727,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3792,19 +3792,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3853,7 +3853,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -3862,14 +3862,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -3880,19 +3880,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3929,19 +3929,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3979,7 +3979,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -3996,7 +3996,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -4007,19 +4007,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4067,7 +4067,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: continuation_token
@@ -4084,7 +4084,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -4101,19 +4101,19 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4148,19 +4148,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4216,7 +4216,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_time_utc
@@ -4229,7 +4229,7 @@ methods:
       Method]([https://msdn.microsoft.com/library/system.datetime.tofiletimeutc(v=vs.110).aspx](https://msdn.microsoft.com/library/system.datetime.tofiletimeutc(v=vs.110).aspx))
 
       for details.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: end_time_utc
@@ -4242,7 +4242,7 @@ methods:
       Method]([https://msdn.microsoft.com/library/system.datetime.tofiletimeutc(v=vs.110).aspx](https://msdn.microsoft.com/library/system.datetime.tofiletimeutc(v=vs.110).aspx))
 
       for details.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -4259,7 +4259,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -4270,19 +4270,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4315,19 +4315,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4370,19 +4370,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4418,19 +4418,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4479,7 +4479,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -4488,14 +4488,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -4506,19 +4506,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4597,7 +4597,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: applications_health_state_filter
@@ -4654,7 +4654,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: events_health_state_filter
@@ -4703,7 +4703,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: exclude_health_statistics
@@ -4716,7 +4716,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: include_system_application_health_statistics
@@ -4739,7 +4739,7 @@ methods:
       The health statistics must be included in the query result for this
 
       parameter to be applied.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -4750,19 +4750,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4804,19 +4804,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -4906,7 +4906,7 @@ methods:
       only services that are in Error or Warning, and all partitions and
 
       replicas for one of these services.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ClusterHealthChunkQueryDescription>
   - name: timeout
@@ -4917,19 +4917,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5013,7 +5013,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: applications_health_state_filter
@@ -5070,7 +5070,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: events_health_state_filter
@@ -5119,7 +5119,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: exclude_health_statistics
@@ -5132,7 +5132,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: include_system_application_health_statistics
@@ -5155,7 +5155,7 @@ methods:
       The health statistics must be included in the query result for this
 
       parameter to be applied.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -5166,7 +5166,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: application_health_policy_map
@@ -5187,26 +5187,26 @@ methods:
       is defined in the manifest).
 
       The map is empty by default.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.servicefabric.models.ApplicationHealthPolicyMapItem>]
   - name: cluster_health_policy
     description: 'Defines a health policy used to evaluate
 
       the health of the cluster or of a cluster node.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ClusterHealthPolicy>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5239,19 +5239,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5304,19 +5304,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5352,19 +5352,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5397,19 +5397,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5452,19 +5452,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5514,7 +5514,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -5531,7 +5531,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -5542,19 +5542,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5597,19 +5597,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5650,19 +5650,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5735,14 +5735,14 @@ methods:
     description: 'Number of lines to show from the end of the logs. Default
 
       is 100. ''all'' to show the complete logs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: previous
     description: 'Specifies whether to get container logs from
 
       exited/dead containers of the code package instance.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -5753,19 +5753,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5812,7 +5812,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -5821,14 +5821,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -5839,19 +5839,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5888,19 +5888,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -5965,19 +5965,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -6084,7 +6084,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: deployed_service_packages_health_state_filter
@@ -6141,7 +6141,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: exclude_health_statistics
@@ -6154,7 +6154,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -6165,19 +6165,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -6295,7 +6295,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: deployed_service_packages_health_state_filter
@@ -6352,7 +6352,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: application_health_policy
@@ -6363,7 +6363,7 @@ methods:
       If not present, the health evaluation uses the health policy from
 
       application manifest or the default health policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ApplicationHealthPolicy>
   - name: exclude_health_statistics
@@ -6376,7 +6376,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -6387,19 +6387,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -6467,7 +6467,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: include_health_state
@@ -6482,19 +6482,19 @@ methods:
       health system service before the results are merged.
 
       As a result, the query is more expensive and may take a longer time.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -6543,7 +6543,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: include_health_state
@@ -6558,7 +6558,7 @@ methods:
       health system service before the results are merged.
 
       As a result, the query is more expensive and may take a longer time.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: continuation_token
@@ -6575,7 +6575,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -6592,19 +6592,19 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -6660,7 +6660,7 @@ methods:
     description: 'The name of a service manifest
 
       registered as part of an application type in a Service Fabric cluster.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: code_package_name
@@ -6669,7 +6669,7 @@ methods:
       service manifest registered as part of an application type in a
 
       Service Fabric cluster.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -6680,19 +6680,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -6801,7 +6801,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -6812,19 +6812,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -6944,7 +6944,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: application_health_policy
@@ -6955,7 +6955,7 @@ methods:
       If not present, the health evaluation uses the health policy from
 
       application manifest or the default health policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ApplicationHealthPolicy>
   - name: timeout
@@ -6966,19 +6966,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7036,19 +7036,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7117,19 +7117,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7182,19 +7182,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7244,19 +7244,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7318,14 +7318,14 @@ methods:
     - <xref:str>
   - name: partition_id
     description: The identity of the partition.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: service_manifest_name
     description: 'The name of a service manifest
 
       registered as part of an application type in a Service Fabric cluster.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -7336,19 +7336,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7423,7 +7423,7 @@ methods:
       the response will only contain the information about service types
 
       that are defined in this service manifest.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -7434,19 +7434,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7512,7 +7512,7 @@ methods:
       the response will only contain the information about service types
 
       that are defined in this service manifest.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -7523,19 +7523,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7577,7 +7577,7 @@ methods:
       - 4 - select PartitionRestart.
 
       - 8 - select NodeTransition.'
-    defaultValue: '65535'
+    isRequired: true
     types:
     - <xref:int>
   - name: state_filter
@@ -7598,7 +7598,7 @@ methods:
       - 32 - select Cancelled
 
       - 64 - select ForceCancelled'
-    defaultValue: '65535'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -7609,19 +7609,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7664,19 +7664,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7719,19 +7719,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7766,19 +7766,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7812,19 +7812,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7858,19 +7858,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7913,19 +7913,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -7968,19 +7968,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8015,14 +8015,14 @@ methods:
     - <xref:str>
   - name: service_name
     description: The name of a service.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ordering
     description: 'Ordering of partitions'' load. Possible values
 
       include: ''Desc'', ''Asc'''
-    defaultValue: Desc
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.servicefabric.models.Ordering>
@@ -8040,7 +8040,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: continuation_token
@@ -8057,19 +8057,19 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8110,19 +8110,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8174,7 +8174,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -8183,14 +8183,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -8201,19 +8201,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8294,7 +8294,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -8305,19 +8305,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8404,7 +8404,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: cluster_health_policy
@@ -8415,7 +8415,7 @@ methods:
       evaluation uses the health policy from cluster manifest or the default
 
       health policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ClusterHealthPolicy>
   - name: timeout
@@ -8426,19 +8426,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8479,19 +8479,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8531,7 +8531,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: node_status_filter
@@ -8544,7 +8544,7 @@ methods:
       Possible values include: ''default'', ''all'', ''up'', ''down'', ''enabling'',
 
       ''disabling'', ''disabled'', ''unknown'', ''removed'''
-    defaultValue: default
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.servicefabric.models.NodeStatusFilter>
@@ -8562,7 +8562,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -8573,19 +8573,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8624,19 +8624,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8682,19 +8682,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8741,7 +8741,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -8750,14 +8750,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -8768,19 +8768,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8819,19 +8819,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8878,14 +8878,14 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: latest
     description: 'Specifies whether to get only the most recent backup
 
       available for a partition for the specified time range.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: start_date_time_filter
@@ -8896,7 +8896,7 @@ methods:
       specified in ISO8601 format. This is an optional parameter. If not
 
       specified, all backups from the beginning are enumerated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: end_date_time_filter
@@ -8907,19 +8907,19 @@ methods:
       in ISO8601 format. This is an optional parameter. If not specified,
 
       enumeration is done till the most recent backup.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -8958,19 +8958,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9022,7 +9022,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -9031,14 +9031,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -9049,19 +9049,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9146,7 +9146,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: replicas_health_state_filter
@@ -9195,7 +9195,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: exclude_health_statistics
@@ -9208,7 +9208,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -9219,19 +9219,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9335,7 +9335,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: replicas_health_state_filter
@@ -9384,7 +9384,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: application_health_policy
@@ -9395,7 +9395,7 @@ methods:
       If not present, the health evaluation uses the health policy from
 
       application manifest or the default health policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ApplicationHealthPolicy>
   - name: exclude_health_statistics
@@ -9408,7 +9408,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -9419,19 +9419,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9474,19 +9474,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9545,7 +9545,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -9556,19 +9556,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9615,19 +9615,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9684,7 +9684,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -9693,14 +9693,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -9711,19 +9711,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9775,7 +9775,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -9784,14 +9784,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -9802,19 +9802,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9879,19 +9879,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9932,19 +9932,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -9991,7 +9991,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -10000,14 +10000,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -10018,19 +10018,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10076,19 +10076,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10131,7 +10131,7 @@ methods:
       of the properties returned. True if values should be returned with the
 
       metadata; False to return only property metadata.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: continuation_token
@@ -10148,7 +10148,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -10159,19 +10159,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10203,7 +10203,7 @@ methods:
   parameters:
   - name: code_version
     description: The product version of Service Fabric.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -10214,19 +10214,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10258,7 +10258,7 @@ methods:
   parameters:
   - name: config_version
     description: The config version of Service Fabric.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -10269,19 +10269,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10346,19 +10346,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10386,7 +10386,7 @@ methods:
   parameters:
   - name: task_id_filter
     description: The repair task ID prefix to be matched.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: state_filter
@@ -10407,26 +10407,26 @@ methods:
       - 32 - Restoring
 
       - 64 - Completed'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: executor_filter
     description: 'The name of the repair executor whose claimed
 
       tasks should be included in the list.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10512,7 +10512,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -10523,19 +10523,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10631,7 +10631,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: application_health_policy
@@ -10642,7 +10642,7 @@ methods:
       If not present, the health evaluation uses the health policy from
 
       application manifest or the default health policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ApplicationHealthPolicy>
   - name: timeout
@@ -10653,19 +10653,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10709,19 +10709,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10770,7 +10770,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -10781,19 +10781,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10850,7 +10850,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -10867,7 +10867,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -10878,19 +10878,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -10950,14 +10950,14 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: latest
     description: 'Specifies whether to get only the most recent backup
 
       available for a partition for the specified time range.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: start_date_time_filter
@@ -10968,7 +10968,7 @@ methods:
       specified in ISO8601 format. This is an optional parameter. If not
 
       specified, all backups from the beginning are enumerated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: end_date_time_filter
@@ -10979,7 +10979,7 @@ methods:
       in ISO8601 format. This is an optional parameter. If not specified,
 
       enumeration is done till the most recent backup.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: continuation_token
@@ -10996,7 +10996,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -11013,19 +11013,19 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11076,19 +11076,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11152,7 +11152,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -11161,14 +11161,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -11179,19 +11179,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11290,7 +11290,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: partitions_health_state_filter
@@ -11343,7 +11343,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: exclude_health_statistics
@@ -11356,7 +11356,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -11367,19 +11367,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11491,7 +11491,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: partitions_health_state_filter
@@ -11544,7 +11544,7 @@ methods:
       - All - Filter that matches input with any HealthState value. The
 
       value is 65535.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: application_health_policy
@@ -11555,7 +11555,7 @@ methods:
       If not present, the health evaluation uses the health policy from
 
       application manifest or the default health policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ApplicationHealthPolicy>
   - name: exclude_health_statistics
@@ -11568,7 +11568,7 @@ methods:
       The statistics show the number of children entities in health state
 
       Ok, Warning, and Error.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -11579,19 +11579,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11663,19 +11663,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11726,7 +11726,7 @@ methods:
     description: 'The service type name used to filter the
 
       services to query for.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: continuation_token
@@ -11743,7 +11743,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -11754,19 +11754,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11817,19 +11817,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11868,19 +11868,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -11939,19 +11939,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12003,19 +12003,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12062,7 +12062,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: events_types_filter
@@ -12071,14 +12071,14 @@ methods:
       specifying the types of FabricEvents that should only be included in
 
       the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: exclude_analysis_events
     description: 'This param disables the retrieval of
 
       AnalysisEvents if true is passed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_correlation_lookup
@@ -12089,19 +12089,19 @@ methods:
       CorrelationEvents get processed and HasCorrelatedEvents field in every
 
       FabricEvent gets populated.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12142,7 +12142,7 @@ methods:
     description: 'Allows specifying that the search performed should
 
       be recursive.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: continuation_token
@@ -12159,7 +12159,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -12170,19 +12170,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12239,14 +12239,14 @@ methods:
     - <xref:str>
   - name: partition_id
     description: The identity of the partition.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: only_query_primaries
     description: 'Indicates that unplaced replica
 
       information will be queries only for primary replicas.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -12257,19 +12257,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12303,19 +12303,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12406,19 +12406,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12477,7 +12477,7 @@ methods:
       scheme. This parameter required only for the cluster that has more
 
       than one instance of infrastructure service running.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -12488,19 +12488,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12557,7 +12557,7 @@ methods:
       scheme. This parameter required only for the cluster that has more
 
       than one instance of infrastructure service running.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -12568,19 +12568,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12645,7 +12645,7 @@ methods:
     description: 'The name of the source node for instance
 
       move. If not specified, instance is moved from a random node.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: new_node_name
@@ -12654,7 +12654,7 @@ methods:
       replica or instance move. If not specified, replica or instance is
 
       moved to a random node.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ignore_constraints
@@ -12663,7 +12663,7 @@ methods:
       instance. If this parameter is not specified, all constraints are
 
       honored.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -12674,19 +12674,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12754,7 +12754,7 @@ methods:
     description: 'The name of the source node for instance
 
       move. If not specified, instance is moved from a random node.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: new_node_name
@@ -12763,7 +12763,7 @@ methods:
       replica or instance move. If not specified, replica or instance is
 
       moved to a random node.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ignore_constraints
@@ -12772,7 +12772,7 @@ methods:
       instance. If this parameter is not specified, all constraints are
 
       honored.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -12783,19 +12783,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12840,7 +12840,7 @@ methods:
     - <xref:str>
   - name: node_name
     description: The name of the node.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ignore_constraints
@@ -12849,7 +12849,7 @@ methods:
       instance. If this parameter is not specified, all constraints are
 
       honored.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -12860,19 +12860,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -12928,7 +12928,7 @@ methods:
       replica or instance move. If not specified, replica or instance is
 
       moved to a random node.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ignore_constraints
@@ -12937,7 +12937,7 @@ methods:
       instance. If this parameter is not specified, all constraints are
 
       honored.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -12948,19 +12948,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13006,29 +13006,29 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: version
     description: The version number of the Schedule.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: schedule
     description: Defines the schedule used by Chaos.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.ChaosSchedule>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13070,21 +13070,21 @@ methods:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
       overrides*.'
-    defaultValue: 'False'
+    isRequired: true
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13113,29 +13113,29 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: code_file_path
     description: The cluster code package file path.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cluster_manifest_file_path
     description: The cluster manifest file path.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13183,19 +13183,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13234,19 +13234,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13289,19 +13289,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13360,19 +13360,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13414,19 +13414,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13463,19 +13463,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13514,19 +13514,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13601,19 +13601,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13649,14 +13649,14 @@ methods:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13721,7 +13721,7 @@ methods:
       for which delete is timing out due to issues in the service code that
 
       prevents graceful close of replicas.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -13732,19 +13732,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13856,7 +13856,7 @@ methods:
       report processing.
 
       By default, reports are not sent immediately.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -13867,19 +13867,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -13972,7 +13972,7 @@ methods:
       report processing.
 
       By default, reports are not sent immediately.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -13983,19 +13983,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -14114,7 +14114,7 @@ methods:
       report processing.
 
       By default, reports are not sent immediately.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -14125,19 +14125,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -14260,7 +14260,7 @@ methods:
       report processing.
 
       By default, reports are not sent immediately.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -14271,19 +14271,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -14381,7 +14381,7 @@ methods:
       report processing.
 
       By default, reports are not sent immediately.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -14392,19 +14392,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -14502,7 +14502,7 @@ methods:
       report processing.
 
       By default, reports are not sent immediately.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -14513,19 +14513,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -14597,7 +14597,7 @@ methods:
       health report. This information needs to be present in all of the
 
       health reports sent to the health manager.'
-    defaultValue: Stateful
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.HealthInformation>
   - name: immediate
@@ -14638,7 +14638,7 @@ methods:
       report processing.
 
       By default, reports are not sent immediately.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -14649,19 +14649,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -14771,7 +14771,7 @@ methods:
       report processing.
 
       By default, reports are not sent immediately.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
@@ -14782,19 +14782,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -14833,19 +14833,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -14912,7 +14912,7 @@ methods:
       of the partition. This is valid for the partitions with partitioning
 
       scheme as Named. The value is 3.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: partition_key_value
@@ -14931,7 +14931,7 @@ methods:
       integer in that range. Query service description to see the range or
 
       name.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: previous_rsp_version
@@ -14940,7 +14940,7 @@ methods:
       response that was received previously. This is required if the user
 
       knows that the result that was gotten previously is stale.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -14951,19 +14951,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15030,19 +15030,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15079,7 +15079,7 @@ methods:
       the current instance of the node. A default value of "0" would match
 
       any instance ID. The instance ID can be obtained using get node query.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -15090,7 +15090,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: create_fabric_dump
@@ -15099,20 +15099,20 @@ methods:
       node process. This is case-sensitive. Possible values include:
 
       ''False'', ''True'''
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.servicefabric.models.CreateFabricDump>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15165,19 +15165,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15245,7 +15245,7 @@ methods:
       to invoke this operation again with a greater timeout value. the
 
       default value for the same is 10 minutes.'
-    defaultValue: '10'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -15256,19 +15256,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15325,19 +15325,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15403,19 +15403,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15456,19 +15456,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15507,19 +15507,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15572,19 +15572,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15645,19 +15645,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15691,19 +15691,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15739,26 +15739,26 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: service_state
     description: 'The state of Service Fabric Upgrade
 
       Orchestration Service.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15834,19 +15834,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15897,19 +15897,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -15952,19 +15952,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16009,19 +16009,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16067,19 +16067,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16184,19 +16184,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16283,19 +16283,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16376,19 +16376,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16480,19 +16480,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16531,19 +16531,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16586,19 +16586,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16639,26 +16639,26 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: operations
     description: 'A list of the property batch operations to be
 
       executed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.servicefabric.models.PropertyBatchOperation>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16717,19 +16717,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16768,19 +16768,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16835,19 +16835,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16890,19 +16890,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -16954,7 +16954,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: async_parameter
@@ -16969,19 +16969,19 @@ methods:
       value is false. However, we recommend setting it to true for large
 
       application packages that were provisioned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17015,29 +17015,29 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: code_version
     description: The cluster code package version.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: config_version
     description: The cluster manifest version.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17099,19 +17099,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17175,19 +17175,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17229,7 +17229,7 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: validate_connection
@@ -17238,19 +17238,19 @@ methods:
       connection and credentials before creating or updating the backup
 
       policies.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17291,19 +17291,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17350,7 +17350,7 @@ methods:
       no further results, then the continuation token does not contain a
 
       value. The value of this parameter should not be URL encoded.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_results
@@ -17367,7 +17367,7 @@ methods:
       this parameter is zero or not specified, the paged query includes as
 
       many results as possible that fit in the return message.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:long>
   - name: timeout
@@ -17378,19 +17378,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17427,14 +17427,14 @@ methods:
     - <xref:azure.servicefabric.models.RepairTask>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17469,14 +17469,14 @@ methods:
     - <xref:azure.servicefabric.models.RepairTaskUpdateHealthPolicyDescription>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17552,19 +17552,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17623,19 +17623,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17718,19 +17718,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -17775,19 +17775,19 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

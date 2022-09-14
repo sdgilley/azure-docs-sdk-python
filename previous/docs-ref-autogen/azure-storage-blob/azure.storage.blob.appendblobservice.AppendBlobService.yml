@@ -84,14 +84,14 @@ methods:
     - <xref:bytes>
   - name: index
     description: Start index in the array of bytes.
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: count
     description: 'Number of bytes to upload. Set to None or negative value to upload
 
       all bytes starting from index.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -107,7 +107,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       blob.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: maxsize_condition
@@ -120,7 +120,7 @@ methods:
       value specified in this header, the request will fail with
 
       MaxBlobSizeConditionNotMet error (HTTP status code 412 - Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: progress_callback
@@ -129,12 +129,12 @@ methods:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -143,7 +143,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: if_modified_since
@@ -156,7 +156,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -169,7 +169,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -177,7 +177,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -190,7 +190,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -234,7 +234,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       blob.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: maxsize_condition
@@ -247,7 +247,7 @@ methods:
       value specified in this header, the request will fail with
 
       MaxBlobSizeConditionNotMet error (HTTP status code 412 - Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: progress_callback
@@ -256,12 +256,12 @@ methods:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -270,7 +270,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: if_modified_since
@@ -283,7 +283,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -296,7 +296,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -304,7 +304,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -317,7 +317,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -353,7 +353,7 @@ methods:
     description: 'Number of bytes to read from the stream. This is optional, but
 
       should be supplied for optimal performance.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -369,7 +369,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       blob.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: maxsize_condition
@@ -382,7 +382,7 @@ methods:
       value specified in this header, the request will fail with
 
       MaxBlobSizeConditionNotMet error (HTTP status code 412 - Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: progress_callback
@@ -391,12 +391,12 @@ methods:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -405,7 +405,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: if_modified_since
@@ -418,7 +418,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -431,7 +431,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -439,7 +439,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -452,7 +452,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -486,7 +486,7 @@ methods:
     - <xref:str>
   - name: encoding
     description: Python encoding to use to convert the text to bytes.
-    defaultValue: utf-8
+    isRequired: true
     types:
     - <xref:str>
   - name: validate_content
@@ -502,7 +502,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       blob.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: maxsize_condition
@@ -515,7 +515,7 @@ methods:
       value specified in this header, the request will fail with
 
       MaxBlobSizeConditionNotMet error (HTTP status code 412 - Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: progress_callback
@@ -524,12 +524,12 @@ methods:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -538,7 +538,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: if_modified_since
@@ -551,7 +551,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -564,7 +564,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -572,7 +572,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -585,7 +585,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -626,7 +626,7 @@ methods:
       will already validate. Note that this MD5 hash is not stored with the
 
       blob.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: maxsize_condition
@@ -639,7 +639,7 @@ methods:
       value specified in this header, the request will fail with
 
       MaxBlobSizeConditionNotMet error (HTTP status code 412 - Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: appendpos_condition
@@ -654,12 +654,12 @@ methods:
       AppendPositionConditionNotMet error
 
       (HTTP status code 412 - Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -672,7 +672,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -685,7 +685,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -693,7 +693,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -706,12 +706,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -748,17 +748,17 @@ methods:
     - <xref:str>
   - name: content_settings
     description: ContentSettings object used to set blob properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the blob as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -771,7 +771,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -784,7 +784,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -792,7 +792,7 @@ methods:
       to
 
       perform the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -805,12 +805,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:

@@ -31,17 +31,17 @@ functions:
     - <xref:str>
   - name: content
     description: The HTTP request content.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: headers
     description: The HTTP request headers.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Dict>[<xref:str>, <xref:str>]
   - name: token_source
     description: The source of OAuth token to add to the request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.durable_functions.models.TokenSource.TokenSource>
   return:

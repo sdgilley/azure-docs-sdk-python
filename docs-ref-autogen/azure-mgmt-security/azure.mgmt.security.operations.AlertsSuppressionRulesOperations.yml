@@ -79,7 +79,7 @@ methods:
   parameters:
   - name: alert_type
     description: Type of the alert to get rules for.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -114,7 +114,7 @@ methods:
     - <xref:str>
   - name: delete_option
     description: The delete option.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -477,17 +477,17 @@ methods:
   parameters:
   - name: skip_token
     description: The pagination token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: take_token
     description: The page size.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: OData filter options.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -523,17 +523,17 @@ methods:
     - <xref:str>
   - name: skip_token
     description: The pagination token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: take_token
     description: The page size.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: OData filter options.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

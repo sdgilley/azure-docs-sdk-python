@@ -41,7 +41,7 @@ methods:
     = None, **kwargs: Any) -> Iterable[_models.ApplicationStackCollection]'
   parameters:
   - name: os_type_selected
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.web.v2020_12_01.models.Enum4>
@@ -66,7 +66,7 @@ methods:
     = None, **kwargs: Any) -> Iterable[_models.ApplicationStackCollection]'
   parameters:
   - name: os_type_selected
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.web.v2020_12_01.models.Enum9>
@@ -92,7 +92,7 @@ methods:
   parameters:
   - name: stack_os_type
     description: Stack OS Type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.web.v2020_12_01.models.Enum5>
@@ -123,7 +123,7 @@ methods:
     - <xref:str>
   - name: stack_os_type
     description: Stack OS Type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.web.v2020_12_01.models.Enum6>
@@ -149,7 +149,7 @@ methods:
   parameters:
   - name: stack_os_type
     description: Stack OS Type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.web.v2020_12_01.models.Enum8>
@@ -180,7 +180,7 @@ methods:
     - <xref:str>
   - name: stack_os_type
     description: Stack OS Type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.web.v2020_12_01.models.Enum7>

@@ -67,19 +67,19 @@ methods:
       This is an ISO8601 time period value.  This timespan is applied in
 
       addition to any that are specified in the Odata expression.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -135,72 +135,72 @@ methods:
       This is an ISO8601 time period value.  This timespan is applied in
 
       addition to any that are specified in the Odata expression.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: An expression used to filter the returned events
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: search
     description: 'A free-text search expression to match for whether a
 
       particular event should be returned'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
     description: 'A comma-separated list of properties with "asc"
 
       (the default) or "desc" to control the order of returned events'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: select
     description: 'Limits the properties to just those requested on each
 
       returned event'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip
     description: The number of items to skip over before returning events
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: top
     description: The number of events to return
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: format
     description: Format for the returned events
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: count
     description: 'Request a count of matching items included with the
 
       returned events'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: apply
     description: An expression used for aggregation over returned events
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -232,14 +232,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

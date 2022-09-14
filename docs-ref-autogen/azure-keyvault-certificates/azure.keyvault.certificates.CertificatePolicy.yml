@@ -16,7 +16,7 @@ constructor:
       <xref:azure.keyvault.certificates.WellKnownIssuerNames.self> or
 
       <xref:azure.keyvault.certificates.WellKnownIssuerNames.unknown>'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:str>]
   - name: subject

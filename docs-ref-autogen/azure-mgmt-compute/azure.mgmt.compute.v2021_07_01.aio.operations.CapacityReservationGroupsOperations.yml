@@ -132,7 +132,7 @@ methods:
       is managed by the
 
       platform and can change outside of control plane operations.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.compute.v2021_07_01.models.CapacityReservationGroupInstanceViewTypes>
@@ -169,7 +169,7 @@ methods:
       Ids which are
 
       associated to capacity reservation group in the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.compute.v2021_07_01.models.ExpandTypesForGetCapacityReservationGroups>
@@ -201,7 +201,7 @@ methods:
       Ids which are
 
       associated to capacity reservation group in the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.compute.v2021_07_01.models.ExpandTypesForGetCapacityReservationGroups>

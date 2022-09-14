@@ -18,7 +18,7 @@ constructor:
     description: 'Required. Indicates whether a retention policy is enabled
 
       for the storage service.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: days
@@ -27,6 +27,6 @@ constructor:
       soft-deleted data should be retained. All data older than this value will
 
       be deleted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>

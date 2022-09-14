@@ -78,7 +78,7 @@ methods:
       user to review are
 
       returned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

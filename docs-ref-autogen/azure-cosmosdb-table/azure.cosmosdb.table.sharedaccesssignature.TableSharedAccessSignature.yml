@@ -41,7 +41,7 @@ methods:
       which contains this field. This field must be omitted if it has been
 
       specified in an associated stored access policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cosmosdb.table.models.TablePermissions>
   - name: expiry
@@ -56,7 +56,7 @@ methods:
       convert values to UTC. If a date is passed in without timezone info, it
 
       is assumed to be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -70,7 +70,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -81,7 +81,7 @@ methods:
       stored access policy. To create a stored access policy, use
 
       set_table_service_properties.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ip
@@ -95,7 +95,7 @@ methods:
       For example, specifying sip=168.1.5.65 or sip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -104,7 +104,7 @@ methods:
 
       is https,http. See <xref:azure.cosmosdb.table.common.models.Protocol> for possible
       values.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_pk
@@ -115,7 +115,7 @@ methods:
       If omitted, there is no lower bound on the table entities that can
 
       be accessed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_rk
@@ -126,7 +126,7 @@ methods:
       omitted, there is no lower bound on the table entities that can be
 
       accessed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: end_pk
@@ -137,7 +137,7 @@ methods:
       omitted, there is no upper bound on the table entities that can be
 
       accessed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: end_rk
@@ -146,6 +146,6 @@ methods:
       endpk must accompany endrk. Key values are inclusive. If omitted,
 
       there is no upper bound on the table entities that can be accessed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>

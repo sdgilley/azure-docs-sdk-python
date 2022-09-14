@@ -28,6 +28,6 @@ methods:
     description: 'The encoding to apply. If None, use "utf-8-sig".
 
       Implementation can be smarter if they want (using headers).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>

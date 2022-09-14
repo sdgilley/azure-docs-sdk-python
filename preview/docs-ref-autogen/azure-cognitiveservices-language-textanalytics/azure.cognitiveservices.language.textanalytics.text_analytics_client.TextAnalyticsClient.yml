@@ -51,23 +51,23 @@ methods:
     description: '(optional) if set to true, response will contain
 
       input and document level statistics.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: documents
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.cognitiveservices.language.textanalytics.models.LanguageInput>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -103,23 +103,23 @@ methods:
     description: '(optional) if set to true, response will contain
 
       input and document level statistics.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: documents
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.cognitiveservices.language.textanalytics.models.MultiLanguageInput>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -155,23 +155,23 @@ methods:
     description: '(optional) if set to true, response will contain
 
       input and document level statistics.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: documents
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.cognitiveservices.language.textanalytics.models.MultiLanguageInput>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -209,23 +209,23 @@ methods:
     description: '(optional) if set to true, response will contain
 
       input and document level statistics.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: documents
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.cognitiveservices.language.textanalytics.models.MultiLanguageInput>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

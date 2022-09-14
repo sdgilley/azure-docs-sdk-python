@@ -77,26 +77,26 @@ methods:
     description: 'Filter by target resource( which is full ARM ID) Default value is
 
       select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource_group
     description: 'Filter by target resource group name. Default value is select
 
       all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource_type
     description: Filter by target resource type. Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: monitor_service
     description: 'Filter by monitor service which generates the alert instance. Default
 
       value is select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.MonitorService>
@@ -104,25 +104,25 @@ methods:
     description: 'Filter by monitor condition which is either ''Fired'' or ''Resolved''.
 
       Default value is to select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.MonitorCondition>
   - name: severity
     description: Filter by severity.  Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.Severity>
   - name: smart_group_state
     description: Filter by state of the smart group. Default value is to select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.AlertState>
   - name: time_range
     description: Filter by time range by below listed values. Default value is 1 day.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.TimeRange>
@@ -134,14 +134,14 @@ methods:
       value allowed is
 
       25. Default value is 25.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sort_by
     description: 'Sort the query results by input field. Default value is sort by
 
       ''lastModifiedDateTime''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.SmartGroupsSortByFields>
@@ -149,7 +149,7 @@ methods:
     description: 'Sort the query results order in either ascending or descending.  Default
 
       value is ''desc'' for time fields and ''asc'' for others.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.Enum11>

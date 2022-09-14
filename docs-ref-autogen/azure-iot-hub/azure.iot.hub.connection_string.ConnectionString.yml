@@ -25,7 +25,7 @@ methods:
     - <xref:str>
   - name: default
     description: The default value returned if a key is not found
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

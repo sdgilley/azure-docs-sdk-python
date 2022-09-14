@@ -126,7 +126,7 @@ methods:
     - <xref:str>
   - name: body
     description: Optional body to force break the replication.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.netapp.models.BreakReplicationRequest>
   - name: cls

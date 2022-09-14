@@ -19,7 +19,7 @@ constructor:
   parameters:
   - name: base_headers
     description: Headers to send with the request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
 examples:

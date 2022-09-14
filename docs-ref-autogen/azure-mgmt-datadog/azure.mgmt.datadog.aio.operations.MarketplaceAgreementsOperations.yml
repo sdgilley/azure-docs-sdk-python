@@ -41,7 +41,7 @@ methods:
     = None, **kwargs: Any) -> azure.mgmt.datadog.models._models_py3.DatadogAgreementResource'
   parameters:
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:microsoft_datadog_client.models.DatadogAgreementResource>
   - name: cls

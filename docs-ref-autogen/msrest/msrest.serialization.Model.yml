@@ -27,11 +27,9 @@ methods:
   parameters:
   - name: key_transformer
     description: A key transformer function.
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:function>
-  - name: key_transformer
-    defaultValue: <function attribute_transformer at 0x000002A42255D5E0>
   return:
     description: A dict JSON compatible object
     types:
@@ -51,8 +49,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: content_type
-    defaultValue: None
   return:
     description: An instance of this model
   exceptions:
@@ -85,10 +81,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: key_extractors
-    defaultValue: None
-  - name: content_type
-    defaultValue: None
   return:
     description: An instance of this model
   exceptions:
@@ -112,7 +104,7 @@ methods:
   parameters:
   - name: keep_readonly
     description: If you want to serialize the readonly attributes
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   return:

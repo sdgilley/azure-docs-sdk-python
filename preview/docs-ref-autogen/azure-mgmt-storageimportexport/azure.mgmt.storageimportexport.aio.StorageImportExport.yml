@@ -23,12 +23,12 @@ constructor:
     - <xref:str>
   - name: accept_language
     description: Specifies the preferred language for the response.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: base_url
     description: Service URL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 variables:

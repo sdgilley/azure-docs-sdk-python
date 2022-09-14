@@ -52,24 +52,24 @@ methods:
 
       and ''and''. It does not currently support ''ne'', ''gt'', ''le'', ''ge'', or
       ''not''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
     description: May be used to sort order by reservation properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: refresh_summary
     description: 'To indicate whether to refresh the roll up counts of the reservations
 
       group by provisioning states.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: selected_state
     description: The selected provisioning state.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -110,24 +110,24 @@ methods:
 
       and ''and''. It does not currently support ''ne'', ''gt'', ''le'', ''ge'', or
       ''not''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
     description: May be used to sort order by reservation properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: refresh_summary
     description: 'To indicate whether to refresh the roll up counts of the reservations
 
       group by provisioning state.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: selected_state
     description: The selected provisioning state.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

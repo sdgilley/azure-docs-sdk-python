@@ -62,19 +62,19 @@ methods:
     - <xref:azure.batch.models.JobAddParameter>
   - name: job_add_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobAddOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -121,19 +121,19 @@ methods:
     - <xref:str>
   - name: job_delete_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobDeleteOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -188,19 +188,19 @@ methods:
     - <xref:azure.batch.models.DisableJobOption>
   - name: job_disable_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobDisableOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -243,19 +243,19 @@ methods:
     - <xref:str>
   - name: job_enable_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobEnableOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -282,19 +282,19 @@ methods:
     - <xref:str>
   - name: job_get_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobGetOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -332,19 +332,19 @@ methods:
     description: 'Additional parameters
 
       for the operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobGetAllLifetimeStatisticsOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -385,19 +385,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobGetTaskCountsOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -419,19 +419,19 @@ methods:
   parameters:
   - name: job_list_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobListOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -462,19 +462,19 @@ methods:
     description: 'Additional parameters for
 
       the operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobListFromJobScheduleOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -516,19 +516,19 @@ methods:
     - <xref:str>
   - name: job_list_preparation_and_release_task_status_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobListPreparationAndReleaseTaskStatusOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -569,19 +569,19 @@ methods:
     - <xref:azure.batch.models.JobPatchParameter>
   - name: job_patch_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobPatchOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -623,24 +623,24 @@ methods:
     types:
     - <xref:str>
   - name: terminate_reason
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: job_terminate_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobTerminateOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -682,19 +682,19 @@ methods:
     - <xref:azure.batch.models.JobUpdateParameter>
   - name: job_update_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.JobUpdateOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

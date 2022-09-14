@@ -59,7 +59,7 @@ methods:
   parameters:
   - name: capability
     description: Ground Station Capability.
-    defaultValue: EarthObservation
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure_orbital.models.Enum6>

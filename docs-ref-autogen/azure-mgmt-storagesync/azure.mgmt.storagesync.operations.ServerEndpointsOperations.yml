@@ -234,7 +234,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: Any of the properties applicable in PUT request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.storagesync.models.ServerEndpointUpdateParameters>
   - name: cls

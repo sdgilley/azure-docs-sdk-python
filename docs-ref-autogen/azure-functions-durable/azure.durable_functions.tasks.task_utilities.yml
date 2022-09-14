@@ -52,7 +52,7 @@ functions:
       only available when looking for a completed or failed event.
 
       Defaults to None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:<xref:scheduled_task">>
   - name: optional
@@ -87,17 +87,17 @@ functions:
     - <xref:azure.durable_functions.models.history.HistoryEventType.HistoryEventType>
   - name: name
     description: Name of the sub-orchestrator.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:str>]<xref::>
   - name: context
     description: A reference to the orchestration context
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:'DurableOrchestrationContext'>]
   - name: instance_id
     description: Instance ID of the sub-orchestrator. Defaults to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:str>], <xref:optional:>
   - name: Optional[HistoryEvent]
@@ -106,7 +106,7 @@ functions:
       only available when looking for a completed or failed event.
 
       Defaults to None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:<xref:scheduled_task">>
   - name: optional
@@ -159,12 +159,12 @@ functions:
     - <xref:<xref:str:>>
   - name: context
     description: A reference to the orchestration context.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:'DurableOrchestrationContext'>]<xref::>
   - name: instance_id
     description: Instance ID of the sub-orchestrator. Defaults to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:str>], <xref:optional:>
   return:

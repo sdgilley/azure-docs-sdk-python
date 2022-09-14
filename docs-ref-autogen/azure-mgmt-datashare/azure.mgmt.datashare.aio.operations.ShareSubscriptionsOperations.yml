@@ -295,17 +295,17 @@ methods:
     - <xref:str>
   - name: skip_token
     description: Continuation Token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: Filters the results using OData syntax.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
     description: Sorts the results using OData syntax.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -346,7 +346,7 @@ methods:
     - <xref:str>
   - name: skip_token
     description: Continuation token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -393,17 +393,17 @@ methods:
     - <xref:azure.mgmt.datashare.models.ShareSubscriptionSynchronization>
   - name: skip_token
     description: Continuation token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: Filters the results using OData syntax.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
     description: Sorts the results using OData syntax.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -444,17 +444,17 @@ methods:
     - <xref:str>
   - name: skip_token
     description: Continuation token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: Filters the results using OData syntax.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
     description: Sorts the results using OData syntax.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -51,7 +51,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:microsoft_datadog_client.models.DatadogMonitorResource>
   - name: cls
@@ -149,7 +149,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:microsoft_datadog_client.models.DatadogMonitorResourceUpdateParameters>
   - name: cls
@@ -451,7 +451,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:microsoft_datadog_client.models.DatadogApiKey>
   - name: cls

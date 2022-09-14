@@ -54,7 +54,7 @@ methods:
     - <xref:str>
   - name: body
     description: VM resource Id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.elastic.models.VMCollectionUpdate>
   - name: cls

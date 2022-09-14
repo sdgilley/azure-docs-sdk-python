@@ -60,7 +60,7 @@ methods:
       within an image, including the approximate location. The Brands
 
       argument is only available in English.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.VisualFeatureTypes>]
@@ -74,7 +74,7 @@ methods:
       detected in the image, Landmarks - identifies notable landmarks in the
 
       image.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.Details>]
@@ -88,14 +88,14 @@ methods:
       Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.
 
       Possible values include: ''en'', ''es'', ''ja'', ''pt'', ''zh'''
-    defaultValue: en
+    isRequired: true
     types:
     - <xref:str>
   - name: description_exclude
     description: 'Turn off specified domain models when
 
       generating the description.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.DescriptionExclude>]
@@ -105,19 +105,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -165,7 +165,7 @@ methods:
       Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.
 
       Possible values include: ''en'', ''es'', ''ja'', ''pt'', ''zh'''
-    defaultValue: en
+    isRequired: true
     types:
     - <xref:str>
   - name: model_version
@@ -174,19 +174,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -234,7 +234,7 @@ methods:
       Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.
 
       Possible values include: ''en'', ''es'', ''ja'', ''pt'', ''zh'''
-    defaultValue: en
+    isRequired: true
     types:
     - <xref:str>
   - name: model_version
@@ -243,19 +243,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -266,7 +266,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -333,7 +333,7 @@ methods:
       within an image, including the approximate location. The Brands
 
       argument is only available in English.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.VisualFeatureTypes>]
@@ -347,7 +347,7 @@ methods:
       detected in the image, Landmarks - identifies notable landmarks in the
 
       image.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.Details>]
@@ -361,14 +361,14 @@ methods:
       Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.
 
       Possible values include: ''en'', ''es'', ''ja'', ''pt'', ''zh'''
-    defaultValue: en
+    isRequired: true
     types:
     - <xref:str>
   - name: description_exclude
     description: 'Turn off specified domain models when
 
       generating the description.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.DescriptionExclude>]
@@ -378,19 +378,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -401,7 +401,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -439,7 +439,7 @@ methods:
     description: 'Maximum number of candidate descriptions to be
 
       returned.  The default is 1.'
-    defaultValue: '1'
+    isRequired: true
     types:
     - <xref:int>
   - name: language
@@ -452,14 +452,14 @@ methods:
       Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.
 
       Possible values include: ''en'', ''es'', ''ja'', ''pt'', ''zh'''
-    defaultValue: en
+    isRequired: true
     types:
     - <xref:str>
   - name: description_exclude
     description: 'Turn off specified domain models when
 
       generating the description.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.DescriptionExclude>]
@@ -469,19 +469,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -519,7 +519,7 @@ methods:
     description: 'Maximum number of candidate descriptions to be
 
       returned.  The default is 1.'
-    defaultValue: '1'
+    isRequired: true
     types:
     - <xref:int>
   - name: language
@@ -532,14 +532,14 @@ methods:
       Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.
 
       Possible values include: ''en'', ''es'', ''ja'', ''pt'', ''zh'''
-    defaultValue: en
+    isRequired: true
     types:
     - <xref:str>
   - name: description_exclude
     description: 'Turn off specified domain models when
 
       generating the description.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.DescriptionExclude>]
@@ -549,19 +549,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -572,7 +572,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -607,19 +607,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -654,19 +654,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -677,7 +677,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -741,7 +741,7 @@ methods:
     - <xref:str>
   - name: smart_cropping
     description: Boolean flag for enabling smart cropping.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: model_version
@@ -750,19 +750,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -773,7 +773,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -837,7 +837,7 @@ methods:
     - <xref:Generator>
   - name: smart_cropping
     description: Boolean flag for enabling smart cropping.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: model_version
@@ -846,19 +846,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -869,7 +869,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -917,19 +917,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -977,19 +977,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -1000,7 +1000,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -1033,14 +1033,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1074,14 +1074,14 @@ methods:
   parameters:
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1143,7 +1143,7 @@ methods:
 
       ''tr'', ''tt'', ''uz'', ''vo'', ''wae'', ''yua'', ''za'', ''zh-Hans'', ''zh-Hant'',
       ''zu'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.OcrDetectionLanguage>
@@ -1153,7 +1153,7 @@ methods:
       input the number of the pages you want to get OCR result. For a range
 
       of pages, use a hyphen. Separate each page or range with a comma.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: model_version
@@ -1162,7 +1162,7 @@ methods:
       OCR model used for text extraction. Accepted values are: "latest",
 
       "latest-preview", "2021-04-12". Defaults to "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: reading_order
@@ -1173,19 +1173,19 @@ methods:
       elements. Can be either ''basic'' or ''natural''. Will default to ''basic''
 
       if not specified'
-    defaultValue: basic
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1247,7 +1247,7 @@ methods:
 
       ''tr'', ''tt'', ''uz'', ''vo'', ''wae'', ''yua'', ''za'', ''zh-Hans'', ''zh-Hant'',
       ''zu'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.OcrDetectionLanguage>
@@ -1257,7 +1257,7 @@ methods:
       input the number of the pages you want to get OCR result. For a range
 
       of pages, use a hyphen. Separate each page or range with a comma.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: model_version
@@ -1266,7 +1266,7 @@ methods:
       OCR model used for text extraction. Accepted values are: "latest",
 
       "latest-preview", "2021-04-12". Defaults to "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: reading_order
@@ -1277,19 +1277,19 @@ methods:
       elements. Can be either ''basic'' or ''natural''. Will default to ''basic''
 
       if not specified'
-    defaultValue: basic
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -1300,7 +1300,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -1348,7 +1348,7 @@ methods:
     - <xref:bool>
   - name: url
     description: Publicly reachable URL of an image.
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:str>
   - name: language
@@ -1363,7 +1363,7 @@ methods:
       ''sv'',
 
       ''tr'', ''ar'', ''ro'', ''sr-Cyrl'', ''sr-Latn'', ''sk'''
-    defaultValue: unk
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.OcrLanguages>
@@ -1373,19 +1373,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1433,7 +1433,7 @@ methods:
     - <xref:bool>
   - name: image
     description: An image stream.
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:Generator>
   - name: language
@@ -1448,7 +1448,7 @@ methods:
       ''sv'',
 
       ''tr'', ''ar'', ''ro'', ''sr-Cyrl'', ''sr-Latn'', ''sk'''
-    defaultValue: unk
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.computervision.models.OcrLanguages>
@@ -1458,19 +1458,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -1481,7 +1481,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -1526,7 +1526,7 @@ methods:
       Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.
 
       Possible values include: ''en'', ''es'', ''ja'', ''pt'', ''zh'''
-    defaultValue: en
+    isRequired: true
     types:
     - <xref:str>
   - name: model_version
@@ -1535,19 +1535,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1592,7 +1592,7 @@ methods:
       Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.
 
       Possible values include: ''en'', ''es'', ''ja'', ''pt'', ''zh'''
-    defaultValue: en
+    isRequired: true
     types:
     - <xref:str>
   - name: model_version
@@ -1601,19 +1601,19 @@ methods:
       AI model. Accepted values are: "latest", "2021-04-01". Defaults to
 
       "latest".'
-    defaultValue: latest
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -1624,7 +1624,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config

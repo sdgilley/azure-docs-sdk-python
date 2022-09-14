@@ -149,7 +149,7 @@ methods:
     - <xref:str>
   - name: top
     description: The number of jobs to request, in the of range of [1..100].
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
@@ -157,12 +157,12 @@ methods:
       requesting
 
       entries.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: filter
     description: The filter to apply on the job state.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -200,7 +200,7 @@ methods:
     - <xref:str>
   - name: top
     description: the number of job history to request, in the of range of [1..100].
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
@@ -208,12 +208,12 @@ methods:
       requesting
 
       entries.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: filter
     description: The filter to apply on the job state.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

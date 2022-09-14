@@ -60,7 +60,7 @@ methods:
     - <xref:azure.mgmt.automation.models.JobCreateParameters>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -96,7 +96,7 @@ methods:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -132,7 +132,7 @@ methods:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -169,7 +169,7 @@ methods:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -201,12 +201,12 @@ methods:
     - <xref:str>
   - name: filter
     description: The filter to apply on the operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -243,7 +243,7 @@ methods:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -279,7 +279,7 @@ methods:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -315,7 +315,7 @@ methods:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

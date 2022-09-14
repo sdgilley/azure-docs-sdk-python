@@ -52,7 +52,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:resource_mover_service_api.models.BulkRemoveRequest>
   - name: cls
@@ -111,7 +111,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:resource_mover_service_api.models.CommitRequest>
   - name: cls
@@ -213,7 +213,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:resource_mover_service_api.models.DiscardRequest>
   - name: cls
@@ -272,7 +272,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:resource_mover_service_api.models.ResourceMoveRequest>
   - name: cls
@@ -331,7 +331,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:resource_mover_service_api.models.PrepareRequest>
   - name: cls
@@ -422,7 +422,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:resource_mover_service_api.models.MoveCollection>
   - name: cls
@@ -553,7 +553,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:resource_mover_service_api.models.UpdateMoveCollectionRequest>
   - name: cls

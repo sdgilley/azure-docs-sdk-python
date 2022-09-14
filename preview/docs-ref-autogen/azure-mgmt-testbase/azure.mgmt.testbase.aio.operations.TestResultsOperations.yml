@@ -173,7 +173,7 @@ methods:
     - <xref:test_base.models.OsUpdateType>
   - name: filter
     description: Odata filter.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

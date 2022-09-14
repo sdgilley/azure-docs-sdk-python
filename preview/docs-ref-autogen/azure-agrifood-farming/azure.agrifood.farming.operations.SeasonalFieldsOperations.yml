@@ -98,7 +98,7 @@ methods:
     - <xref:str>
   - name: seasonal_field
     description: Seasonal field resource payload to create or update.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.SeasonalField>
   - name: cls
@@ -200,125 +200,125 @@ methods:
   parameters:
   - name: farm_ids
     description: Farm Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: field_ids
     description: Field Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: season_ids
     description: Season Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: crop_variety_ids
     description: CropVarietyIds of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: crop_ids
     description: Ids of the crop it belongs to.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_avg_yield_value
     description: Minimum average yield value of the seasonal field(inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_avg_yield_value
     description: Maximum average yield value of the seasonal field(inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: avg_yield_unit
     description: Unit of the average yield value attribute.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: min_avg_seed_population_value
     description: 'Minimum average seed population value of the seasonal
 
       field(inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_avg_seed_population_value
     description: 'Maximum average seed population value of the seasonal
 
       field(inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: avg_seed_population_unit
     description: Unit of average seed population value attribute.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: min_planting_date_time
     description: 'Minimum planting datetime, sample format: yyyy-MM-ddTHH:mm:ssZ.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_planting_date_time
     description: 'Maximum planting datetime, sample format: yyyy-MM-ddTHH:mm:ssZ.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: ids
     description: Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: names
     description: Names of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: property_filters
     description: 'Filters on key-value pairs within the Properties object.
 
       eg. "{testKey} eq {testValue}".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: statuses
     description: Statuses of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_created_date_time
     description: Minimum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_created_date_time
     description: Maximum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_last_modified_date_time
     description: Minimum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_last_modified_date_time
     description: Maximum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -358,125 +358,125 @@ methods:
     - <xref:str>
   - name: farm_ids
     description: Farm Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: field_ids
     description: Field Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: season_ids
     description: Season Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: crop_variety_ids
     description: CropVarietyIds of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: crop_ids
     description: Ids of the crop it belongs to.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_avg_yield_value
     description: Minimum average yield value of the seasonal field(inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_avg_yield_value
     description: Maximum average yield value of the seasonal field(inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: avg_yield_unit
     description: Unit of the average yield value attribute.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: min_avg_seed_population_value
     description: 'Minimum average seed population value of the seasonal
 
       field(inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_avg_seed_population_value
     description: 'Maximum average seed population value of the seasonal
 
       field(inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: avg_seed_population_unit
     description: Unit of average seed population value attribute.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: min_planting_date_time
     description: 'Minimum planting datetime, sample format: yyyy-MM-ddTHH:mm:ssZ.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_planting_date_time
     description: 'Maximum planting datetime, sample format: yyyy-MM-ddTHH:mm:ssZ.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: ids
     description: Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: names
     description: Names of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: property_filters
     description: 'Filters on key-value pairs within the Properties object.
 
       eg. "{testKey} eq {testValue}".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: statuses
     description: Statuses of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_created_date_time
     description: Minimum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_created_date_time
     description: Maximum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_last_modified_date_time
     description: Minimum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_last_modified_date_time
     description: Maximum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

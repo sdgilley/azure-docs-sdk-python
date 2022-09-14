@@ -111,15 +111,15 @@ methods:
     - <xref:str>
   - name: filter
     description: The filter to apply on the operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: orderby
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

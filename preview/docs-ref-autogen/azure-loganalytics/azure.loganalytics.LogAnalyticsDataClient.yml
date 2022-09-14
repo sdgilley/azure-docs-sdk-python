@@ -18,7 +18,7 @@ constructor:
     - <xref:None>
   - name: base_url
     description: Service URL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 variables:
@@ -58,14 +58,14 @@ methods:
     - <xref:azure.loganalytics.models.QueryBody>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

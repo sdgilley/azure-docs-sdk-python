@@ -252,7 +252,7 @@ methods:
     - <xref:str>
   - name: expand
     description: The expand expression to apply to the operation.
-    defaultValue: instanceView
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -346,7 +346,7 @@ methods:
     - <xref:str>
   - name: expand
     description: The expand expression to apply to the operation.
-    defaultValue: instanceView
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

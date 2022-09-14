@@ -56,7 +56,7 @@ methods:
     - <xref:str>
   - name: rollout_request
     description: Source rollout request object that defines the rollout.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.deploymentmanager.models.RolloutRequest>
   - name: cls
@@ -168,7 +168,7 @@ methods:
     description: 'Rollout retry attempt ordinal to get the result of. If not specified,
 
       result of the latest attempt will be returned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls
@@ -231,7 +231,7 @@ methods:
       resources.
 
       Defaults to false if not specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

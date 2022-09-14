@@ -118,32 +118,32 @@ methods:
     - <xref:str>
   - name: min_start_time_utc
     description: Filter by minimum startTimeUtc (ISO 8601 format).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_start_time_utc
     description: Filter by maximum startTimeUtc (ISO 8601 format).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: alert_type
     description: Filter by alert type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: compromised_entity
     description: Filter by compromised device.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: limit
     description: Limit the number of items returned in a single page.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token used for pagination.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -178,38 +178,38 @@ methods:
     - <xref:str>
   - name: min_start_time_utc
     description: Filter by minimum startTimeUtc (ISO 8601 format).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_start_time_utc
     description: Filter by maximum startTimeUtc (ISO 8601 format).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: alert_type
     description: Filter by alert type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_management_type
     description: Get devices only from specific type, Managed or Unmanaged.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.security.models.ManagementState>
   - name: compromised_entity
     description: Filter by compromised device.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: limit
     description: Limit the number of items returned in a single page.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token used for pagination.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

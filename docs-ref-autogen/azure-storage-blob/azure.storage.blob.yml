@@ -41,7 +41,7 @@ functions:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: overwrite
     description: 'Whether the local file should be overwritten if it already exists.
       The default value is
@@ -164,7 +164,7 @@ functions:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
     - <xref:str>
@@ -179,7 +179,7 @@ functions:
       For example, specifying ip=168.1.5.65 or ip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -241,7 +241,7 @@ functions:
     - <xref:str>
   - name: snapshot
     description: An optional blob snapshot ID.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: account_key
@@ -249,7 +249,7 @@ functions:
       the shared access signature.
 
       Either *account_key* or *user_delegation_key* must be specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_delegation_key
@@ -262,7 +262,7 @@ functions:
       this can be accomplished by calling <xref:azure.storage.blob.BlobServiceClient.get_user_delegation_key>.
 
       When present, the SAS is signed with the user delegation key instead.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.UserDelegationKey>
   - name: permission
@@ -277,7 +277,7 @@ functions:
       which contains this field. This field must be omitted if it has been
 
       specified in an associated stored access policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.storage.blob.BlobSasPermissions>
@@ -293,7 +293,7 @@ functions:
       convert values to UTC. If a date is passed in without timezone info, it
 
       is assumed to be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
     - <xref:str>
@@ -307,7 +307,7 @@ functions:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
     - <xref:str>
@@ -318,7 +318,7 @@ functions:
       stored access policy. To create a stored access policy, use
 
       <xref:azure.storage.blob.ContainerClient.set_container_access_policy>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ip
@@ -332,7 +332,7 @@ functions:
       For example, specifying ip=168.1.5.65 or ip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: version_id
@@ -416,7 +416,7 @@ functions:
       the shared access signature.
 
       Either *account_key* or *user_delegation_key* must be specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_delegation_key
@@ -429,7 +429,7 @@ functions:
       this can be accomplished by calling <xref:azure.storage.blob.BlobServiceClient.get_user_delegation_key>.
 
       When present, the SAS is signed with the user delegation key instead.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.UserDelegationKey>
   - name: permission
@@ -444,7 +444,7 @@ functions:
       which contains this field. This field must be omitted if it has been
 
       specified in an associated stored access policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.storage.blob.ContainerSasPermissions>
@@ -460,7 +460,7 @@ functions:
       convert values to UTC. If a date is passed in without timezone info, it
 
       is assumed to be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
     - <xref:str>
@@ -474,7 +474,7 @@ functions:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
     - <xref:str>
@@ -485,7 +485,7 @@ functions:
       stored access policy. To create a stored access policy, use
 
       <xref:azure.storage.blob.ContainerClient.set_container_access_policy>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ip
@@ -499,7 +499,7 @@ functions:
       For example, specifying ip=168.1.5.65 or ip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -594,7 +594,7 @@ functions:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: overwrite
     description: 'Whether the blob to be uploaded should overwrite the current data.
 

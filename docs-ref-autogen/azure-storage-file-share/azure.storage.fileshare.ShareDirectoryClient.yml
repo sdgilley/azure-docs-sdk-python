@@ -51,7 +51,7 @@ constructor:
       snapshot ID string
 
       or the response returned from <xref:azure.storage.fileshare.ShareClient.create_snapshot>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: credential
@@ -62,7 +62,7 @@ constructor:
       an instance of a AzureSasCredential from azure.core.credentials or an account
 
       shared access key.'
-    defaultValue: None
+    isRequired: true
   - name: api_version
     description: 'The Storage API version to use for requests. Default value is the
       most recent service version that is
@@ -360,8 +360,6 @@ methods:
 
       shared access key.'
     isRequired: true
-  - name: credential
-    defaultValue: None
   return:
     description: A directory client.
     types:
@@ -394,9 +392,7 @@ methods:
       an instance of a AzureSasCredential from azure.core.credentials or an account
 
       shared access key.'
-    defaultValue: None
-  - name: credential
-    defaultValue: None
+    isRequired: true
   return:
     description: A directory client.
     types:

@@ -23,7 +23,7 @@ constructor:
     description: 'Percentage of lifetime at which to trigger. Value
 
       should be between 1 and 99.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: days_before_expiry
@@ -33,7 +33,7 @@ constructor:
       then value
 
       should be between 1 and 972 (36 * 27).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 attributes:

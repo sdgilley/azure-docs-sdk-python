@@ -64,7 +64,7 @@ methods:
       concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -75,7 +75,7 @@ methods:
       Failed
 
       response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -170,7 +170,7 @@ methods:
     - <xref:str>
   - name: start_job_parameters
     description: Parameters applicable to a start streaming job operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:stream_analytics_management_client.models.StartStreamingJobParameters>
   - name: cls
@@ -273,7 +273,7 @@ methods:
       ''inputs'',
 
       ''transformation'', ''outputs'', and ''functions''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -302,7 +302,7 @@ methods:
       ''inputs'',
 
       ''transformation'', ''outputs'', and ''functions''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -338,7 +338,7 @@ methods:
       ''inputs'',
 
       ''transformation'', ''outputs'', and ''functions''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -395,7 +395,7 @@ methods:
       concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -16,7 +16,7 @@ constructor:
   parameters:
   - name: filepath
     description: Path to existing config file (optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 methods:

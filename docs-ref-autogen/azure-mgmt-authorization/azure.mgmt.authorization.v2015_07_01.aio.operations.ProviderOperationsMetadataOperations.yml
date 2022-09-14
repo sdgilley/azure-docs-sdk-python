@@ -44,7 +44,7 @@ methods:
     - <xref:str>
   - name: expand
     description: Specifies whether to expand the values.
-    defaultValue: resourceTypes
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -64,7 +64,7 @@ methods:
   parameters:
   - name: expand
     description: Specifies whether to expand the values.
-    defaultValue: resourceTypes
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

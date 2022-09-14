@@ -48,19 +48,19 @@ methods:
     - <xref:str>
   - name: properties
     description: Gets or sets the job properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.scheduler.models.JobProperties>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -98,14 +98,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -143,14 +143,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -185,31 +185,31 @@ methods:
     description: 'The number of jobs to request, in the of range of
 
       [1..100].'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
     description: 'The (0-based) index of the job history list from which to
 
       begin requesting entries.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: filter
     description: The filter to apply on the job state.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -248,31 +248,31 @@ methods:
     description: 'the number of job history to request, in the of range of
 
       [1..100].'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
     description: 'The (0-based) index of the job history list from which to
 
       begin requesting entries.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: filter
     description: The filter to apply on the job state.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -309,19 +309,19 @@ methods:
     - <xref:str>
   - name: properties
     description: Gets or sets the job properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.scheduler.models.JobProperties>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -359,14 +359,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

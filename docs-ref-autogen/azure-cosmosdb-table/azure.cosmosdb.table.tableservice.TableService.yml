@@ -124,7 +124,7 @@ methods:
     - <xref:azure.cosmosdb.table.tablebatch.TableBatch>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -151,12 +151,12 @@ methods:
     - <xref:str>
   - name: fail_on_exist
     description: Specifies whether to throw an exception if the table already exists.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -206,12 +206,12 @@ methods:
       not been modified since it was retrieved by the client. To force
 
       an unconditional delete, set If-Match to the wildcard character (*).'
-    defaultValue: '*'
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.cosmosdb.table.tableservice.TableService.delete_table
@@ -240,12 +240,12 @@ methods:
     - <xref:str>
   - name: fail_not_exist
     description: Specifies whether to throw an exception if the table doesn't exist.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -266,7 +266,7 @@ methods:
     - <xref:str>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -326,7 +326,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -341,7 +341,7 @@ methods:
       For example, specifying sip=168.1.5.65 or sip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -350,7 +350,7 @@ methods:
 
       is https,http. See <xref:azure.cosmosdb.table.common.models.Protocol> for possible
       values.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -381,7 +381,7 @@ methods:
       which contains this field. This field must be omitted if it has been
 
       specified in an associated stored access policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cosmosdb.table.models.TablePermissions>
   - name: expiry
@@ -396,7 +396,7 @@ methods:
       convert values to UTC. If a date is passed in without timezone info, it
 
       is assumed to be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -410,7 +410,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -419,7 +419,7 @@ methods:
       a
 
       stored access policy. To create a stored access policy, use <xref:azure.cosmosdb.table.tableservice.TableService.set_table_acl>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ip
@@ -434,7 +434,7 @@ methods:
       on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -443,7 +443,7 @@ methods:
 
       is https,http. See <xref:azure.cosmosdb.table.common.models.Protocol> for possible
       values.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_pk
@@ -454,7 +454,7 @@ methods:
       If omitted, there is no lower bound on the table entities that can
 
       be accessed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_rk
@@ -465,7 +465,7 @@ methods:
       omitted, there is no lower bound on the table entities that can be
 
       accessed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: end_pk
@@ -476,7 +476,7 @@ methods:
       omitted, there is no upper bound on the table entities that can be
 
       accessed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: end_rk
@@ -485,7 +485,7 @@ methods:
       endpk must accompany endrk. Key values are inclusive. If omitted,
 
       there is no upper bound on the table entities that can be accessed.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -515,7 +515,7 @@ methods:
     - <xref:str>
   - name: select
     description: Returns only the desired properties of an entity from the set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: accept
@@ -524,7 +524,7 @@ methods:
       <xref:azure.storage.table.models.TablePayloadFormat> for possible
 
       values.'
-    defaultValue: application/json;odata=minimalmetadata
+    isRequired: true
     types:
     - <xref:str>
   - name: property_resolver
@@ -535,12 +535,12 @@ methods:
       returns the EdmType of the property. Generally used if accept is set
 
       to JSON_NO_METADATA.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:pk>, <xref:rk>, <xref:prop_name>, <xref:prop_value>, <xref:service_edm_type>)
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -561,7 +561,7 @@ methods:
     - <xref:str>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -577,7 +577,7 @@ methods:
   parameters:
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -621,7 +621,7 @@ methods:
   parameters:
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -667,7 +667,7 @@ methods:
     - <xref:azure.storage.table.models.Entity>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -703,7 +703,7 @@ methods:
     - <xref:azure.storage.table.models.Entity>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -741,7 +741,7 @@ methods:
     - <xref:azure.storage.table.models.Entity>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -768,7 +768,7 @@ methods:
   parameters:
   - name: num_results
     description: The maximum number of tables to return.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: marker
@@ -782,7 +782,7 @@ methods:
       specified, this generator will begin returning results from the point
 
       where the previous generator stopped.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:obj>
   - name: timeout
@@ -792,7 +792,7 @@ methods:
       calls to the service in which case the timeout value specified will be
 
       applied to each individual call.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -844,12 +844,12 @@ methods:
       not been modified since it was retrieved by the client. To force
 
       an unconditional merge, set If-Match to the wildcard character (*).'
-    defaultValue: '*'
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -891,17 +891,17 @@ methods:
       string. See [http://msdn.microsoft.com/en-us/library/windowsazure/dd894031.aspx](http://msdn.microsoft.com/en-us/library/windowsazure/dd894031.aspx)
 
       for more information on constructing filters.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: select
     description: Returns only the desired properties of an entity from the set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: num_results
     description: The maximum number of entities to return.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: marker
@@ -915,7 +915,7 @@ methods:
       specified, this generator will begin returning results from the point
 
       where the previous generator stopped.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:obj>
   - name: accept
@@ -924,7 +924,7 @@ methods:
       <xref:azure.storage.table.models.TablePayloadFormat> for possible
 
       values.'
-    defaultValue: application/json;odata=minimalmetadata
+    isRequired: true
     types:
     - <xref:str>
   - name: property_resolver
@@ -935,7 +935,7 @@ methods:
       returns the EdmType of the property. Generally used if accept is set
 
       to JSON_NO_METADATA.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:pk>, <xref:rk>, <xref:prop_name>, <xref:prop_value>, <xref:service_edm_type>)
   - name: timeout
@@ -945,7 +945,7 @@ methods:
       calls to the service in which case the timeout value specified will be
 
       applied to each individual call.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -993,12 +993,12 @@ methods:
       dictionary may contain up to 5 elements. An empty dictionary
 
       will clear the access policies set on the service.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:azure.cosmosdb.table.common.models.AccessPolicy>)
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.cosmosdb.table.tableservice.TableService.set_table_service_properties
@@ -1017,21 +1017,21 @@ methods:
   parameters:
   - name: logging
     description: The logging settings provide request logs.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cosmosdb.table.common.models.Logging>
   - name: hour_metrics
     description: 'The hour metrics settings provide a summary of request
 
       statistics grouped by API in hourly aggregates for tables.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cosmosdb.table.common.models.Metrics>
   - name: minute_metrics
     description: 'The minute metrics settings provide request statistics
 
       for each minute for tables.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cosmosdb.table.common.models.Metrics>
   - name: cors
@@ -1044,12 +1044,12 @@ methods:
       about CORS rules and evaluation logic, see
 
       [https://msdn.microsoft.com/en-us/library/azure/dn535601.aspx](https://msdn.microsoft.com/en-us/library/azure/dn535601.aspx).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>(<xref:azure.cosmosdb.table.common.models.CorsRule>)
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.cosmosdb.table.tableservice.TableService.update_entity
@@ -1088,12 +1088,12 @@ methods:
       not been modified since it was retrieved by the client. To force
 
       an unconditional update, set If-Match to the wildcard character (*).'
-    defaultValue: '*'
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The server timeout, expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:

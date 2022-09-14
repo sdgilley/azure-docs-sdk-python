@@ -22,7 +22,7 @@ constructor:
     - <xref:[<xref:aiohttp.ClientResponse object>](<xref:aiohttp.ClientResponse object>)>
   - name: block_size
     description: block size of data sent over connection.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: decompress
@@ -67,6 +67,6 @@ methods:
   parameters:
   - name: encoding
     description: The encoding to apply.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>

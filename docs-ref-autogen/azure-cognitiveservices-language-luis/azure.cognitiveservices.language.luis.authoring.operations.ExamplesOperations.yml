@@ -51,19 +51,19 @@ methods:
     - <xref:azure.cognitiveservices.language.luis.authoring.models.ExampleLabelObject>
   - name: enable_nested_children
     description: Toggles nested/flat format
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -103,19 +103,19 @@ methods:
     - <xref:list>[<xref:azure.cognitiveservices.language.luis.authoring.models.ExampleLabelObject>]
   - name: enable_nested_children
     description: Toggles nested/flat format
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -155,14 +155,14 @@ methods:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -197,31 +197,31 @@ methods:
     - <xref:str>
   - name: skip
     description: The number of entries to skip. Default value is 0.
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: take
     description: 'The number of entries to return. Maximum page size is
 
       500. Default is 100.'
-    defaultValue: '100'
+    isRequired: true
     types:
     - <xref:int>
   - name: enable_nested_children
     description: Toggles nested/flat format
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

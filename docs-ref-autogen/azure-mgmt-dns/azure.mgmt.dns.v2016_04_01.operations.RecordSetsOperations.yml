@@ -76,14 +76,14 @@ methods:
       any concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
     description: 'Set to ''*'' to allow a new record set to be created, but to prevent
 
       updating an existing record set. Other values will be ignored.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -135,7 +135,7 @@ methods:
       any concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -206,7 +206,7 @@ methods:
       up to 100
 
       record sets.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: recordsetnamesuffix
@@ -216,7 +216,7 @@ methods:
       will return
 
       only records that end with .:code:*<recordSetNameSuffix>*.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -258,7 +258,7 @@ methods:
       up to 100
 
       record sets.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: recordsetnamesuffix
@@ -268,7 +268,7 @@ methods:
       will return
 
       only records that end with .:code:*<recordSetNameSuffix>*.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -323,7 +323,7 @@ methods:
       concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

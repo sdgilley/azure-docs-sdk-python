@@ -34,7 +34,7 @@ constructor:
     description: 'Time in seconds to wait between status calls,
 
       default is 30.'
-    defaultValue: '30'
+    isRequired: true
     types:
     - <xref:int>
 methods:
@@ -107,7 +107,7 @@ methods:
     description: 'Perion of time to wait for the long running
 
       operation to complete.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   exceptions:

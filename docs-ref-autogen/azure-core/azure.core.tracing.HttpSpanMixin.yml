@@ -22,7 +22,7 @@ methods:
     - <xref:azure.core.pipeline.transport.HttpRequest>
   - name: response
     description: The response received by the server. Is None if no response received.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.core.pipeline.transport.HttpResponse>
     - <xref:azure.core.pipeline.transport.AsyncHttpResponse>

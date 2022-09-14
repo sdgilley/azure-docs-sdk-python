@@ -52,7 +52,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -86,7 +86,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -121,7 +121,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -157,7 +157,7 @@ methods:
 
       include a token parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

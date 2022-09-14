@@ -57,7 +57,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:microsoft_datadog_client.models.MonitoringTagRules>
   - name: cls

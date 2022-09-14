@@ -17,6 +17,6 @@ constructor:
     - <xref:str>
   - name: inner_exception
     description: Nested exception (optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Exception>

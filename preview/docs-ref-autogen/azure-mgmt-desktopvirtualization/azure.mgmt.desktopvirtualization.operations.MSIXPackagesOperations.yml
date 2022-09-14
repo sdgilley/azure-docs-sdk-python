@@ -188,7 +188,7 @@ methods:
     - <xref:str>
   - name: msix_package
     description: Object containing MSIX Package definitions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.MSIXPackagePatch>
   - name: cls

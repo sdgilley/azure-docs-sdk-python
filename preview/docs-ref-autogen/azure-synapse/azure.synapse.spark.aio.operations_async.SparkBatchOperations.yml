@@ -67,7 +67,7 @@ methods:
       beyond
 
       plain livy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -96,7 +96,7 @@ methods:
       beyond
 
       plain livy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -117,14 +117,14 @@ methods:
   parameters:
   - name: from_parameter
     description: Optional param specifying which index the list should begin from.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: size
     description: 'Optional param specifying the size of the returned list.
 
       By default it is 20 and that is the maximum.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: detailed
@@ -132,7 +132,7 @@ methods:
       beyond
 
       plain livy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

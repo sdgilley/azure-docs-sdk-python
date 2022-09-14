@@ -52,7 +52,7 @@ constructor:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: api_version
     description: 'The Storage API version to use for requests. Default value is the
       most recent service version that is
@@ -794,8 +794,6 @@ methods:
       Credentials provided here will take precedence over those in the connection
       string.'
     isRequired: true
-  - name: credential
-    defaultValue: None
   return:
     description: A container client.
     types:
@@ -844,8 +842,6 @@ methods:
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
     isRequired: true
-  - name: credential
-    defaultValue: None
   return:
     description: A container client.
     types:
@@ -884,7 +880,7 @@ methods:
       snapshot ID string
 
       or the response returned from <xref:azure.storage.blob.BlobClient.create_snapshot>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

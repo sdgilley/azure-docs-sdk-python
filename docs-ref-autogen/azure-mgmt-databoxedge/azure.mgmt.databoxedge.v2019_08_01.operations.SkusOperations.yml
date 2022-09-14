@@ -41,7 +41,7 @@ methods:
   parameters:
   - name: filter
     description: Specify $filter='location eq `<location>`' to filter on location.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -112,7 +112,7 @@ methods:
     - <xref:str>
   - name: desktop
     description: Object containing Desktop definitions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.DesktopPatch>
   - name: cls

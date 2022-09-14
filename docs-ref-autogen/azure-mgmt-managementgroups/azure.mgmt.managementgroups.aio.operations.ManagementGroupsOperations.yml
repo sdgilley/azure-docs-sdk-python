@@ -59,7 +59,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -108,7 +108,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -159,7 +159,7 @@ methods:
       root group to the
 
       current group.  $expand=ancestors includes the ancestor Ids of the current group.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.managementgroups.models.Enum0>
@@ -171,7 +171,7 @@ methods:
       passed up if
 
       $recurse is set to true.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: filter
@@ -179,7 +179,7 @@ methods:
       (i.e.
 
       ''$filter=children.childType ne Subscription'').'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_control
@@ -187,7 +187,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -222,7 +222,7 @@ methods:
 
       include a token parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
@@ -230,7 +230,7 @@ methods:
       in will override
 
       $skipToken.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls
@@ -255,7 +255,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: skiptoken
@@ -269,7 +269,7 @@ methods:
 
       include a token parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -304,7 +304,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

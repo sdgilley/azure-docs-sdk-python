@@ -14,22 +14,22 @@ constructor:
   parameters:
   - name: read
     description: Read the content, properties, metadata etc.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: create
     description: Create a new directory
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: write
     description: Create or write content, properties, metadata. Lease the directory.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: delete
     description: Delete the directory.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: add
@@ -90,8 +90,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: permission
-    isRequired: true
   return:
     description: A DirectorySasPermissions object
     types:

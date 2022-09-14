@@ -31,7 +31,7 @@ methods:
     description: 'Whether to emit network trace logging events for the
 
       CBS session. Default is *False*. Logging events are set at INFO level.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   return:

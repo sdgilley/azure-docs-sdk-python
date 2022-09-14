@@ -64,17 +64,17 @@ methods:
     - <xref:str>
   - name: start_time
     description: Start Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_time
     description: End Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: time_grain
     description: Time Grain.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -125,17 +125,17 @@ methods:
     - <xref:str>
   - name: start_time
     description: Start Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_time
     description: End Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: time_grain
     description: Time Grain.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -181,17 +181,17 @@ methods:
     - <xref:str>
   - name: start_time
     description: Start Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_time
     description: End Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: time_grain
     description: Time Grain.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -242,17 +242,17 @@ methods:
     - <xref:str>
   - name: start_time
     description: Start Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_time
     description: End Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: time_grain
     description: Time Grain.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -293,17 +293,17 @@ methods:
     - <xref:str>
   - name: start_time
     description: Start Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_time
     description: End Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: time_grain
     description: Time Grain.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -467,17 +467,17 @@ methods:
     - <xref:str>
   - name: start_time
     description: Start Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_time
     description: End Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: time_grain
     description: Time Grain.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -523,17 +523,17 @@ methods:
     - <xref:str>
   - name: start_time
     description: Start Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_time
     description: End Time.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: time_grain
     description: Time Grain.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

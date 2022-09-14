@@ -32,11 +32,9 @@ methods:
     description: 'Whether to emit network trace logging events for the
 
       CBS session. Default is *False*. Logging events are set at INFO level.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
-  - name: loop
-    defaultValue: None
   return:
     types:
     - <xref:uamqp.c_uamqp.CBSTokenAuth>

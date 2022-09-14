@@ -158,7 +158,7 @@ methods:
       to search below
 
       the given scope as well.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -125,7 +125,7 @@ methods:
     - <xref:str>
   - name: top
     description: Number of results to retrieve.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

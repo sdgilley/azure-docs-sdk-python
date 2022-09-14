@@ -85,7 +85,6 @@ methods:
   parameters:
   - name: max_concurrency
     description: The number of parallel connections with which to download.
-    defaultValue: '1'
     types:
     - <xref:int>
   return:
@@ -101,12 +100,12 @@ methods:
   parameters:
   - name: max_concurrency
     description: The number of parallel connections with which to download.
-    defaultValue: '1'
+    isRequired: true
     types:
     - <xref:int>
   - name: encoding
     description: Test encoding to decode the downloaded bytes. Default is UTF-8.
-    defaultValue: UTF-8
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -126,7 +125,7 @@ methods:
     isRequired: true
   - name: max_concurrency
     description: The number of parallel connections with which to download.
-    defaultValue: '1'
+    isRequired: true
     types:
     - <xref:int>
   return:

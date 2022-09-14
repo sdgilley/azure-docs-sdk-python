@@ -16,7 +16,7 @@ constructor:
   parameters:
   - name: result
     description: The speech synthesis or keyword recognition result.
-    defaultValue: None
+    isRequired: true
 methods:
 - uid: azure.cognitiveservices.speech.AudioDataStream.can_read_data
   name: can_read_data
@@ -32,7 +32,7 @@ methods:
     description: 'The position to start with.
 
       Will start from current position if this param is not given.'
-    defaultValue: None
+    isRequired: true
   return:
     description: A bool indicating the result
 - uid: azure.cognitiveservices.speech.AudioDataStream.detach_input
@@ -59,7 +59,7 @@ methods:
     description: 'The position to start with.
 
       Will start from current position if this param is not given.'
-    defaultValue: None
+    isRequired: true
   return:
     description: 'The number of bytes filled, or 0 in case the stream hits its end
       and

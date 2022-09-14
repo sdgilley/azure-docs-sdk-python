@@ -150,24 +150,24 @@ methods:
     description: 'Filter by target resource group name. Default value is select
 
       all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource_type
     description: Filter by target resource type. Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource
     description: 'Filter by target resource( which is full ARM ID) Default value is
 
       select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: severity
     description: Filter by severity.  Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.Severity>
@@ -175,7 +175,7 @@ methods:
     description: 'Filter by monitor service which generates the alert instance. Default
 
       value is select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.MonitorService>
@@ -183,27 +183,27 @@ methods:
     description: 'filter by impacted/target scope (provide comma separated list for
 
       multiple scopes). The value should be an well constructed ARM id of the scope.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: description
     description: filter by alert rule description.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: alert_rule_id
     description: filter by alert rule id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: action_group
     description: filter by action group configured as part of action rule.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: name
     description: filter by action rule name.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -235,24 +235,24 @@ methods:
     description: 'Filter by target resource group name. Default value is select
 
       all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource_type
     description: Filter by target resource type. Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_resource
     description: 'Filter by target resource( which is full ARM ID) Default value is
 
       select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: severity
     description: Filter by severity.  Default value is select all.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.Severity>
@@ -260,7 +260,7 @@ methods:
     description: 'Filter by monitor service which generates the alert instance. Default
 
       value is select all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.alertsmanagement.models.MonitorService>
@@ -268,27 +268,27 @@ methods:
     description: 'filter by impacted/target scope (provide comma separated list for
 
       multiple scopes). The value should be an well constructed ARM id of the scope.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: description
     description: filter by alert rule description.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: alert_rule_id
     description: filter by alert rule id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: action_group
     description: filter by action group configured as part of action rule.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: name
     description: filter by action rule name.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

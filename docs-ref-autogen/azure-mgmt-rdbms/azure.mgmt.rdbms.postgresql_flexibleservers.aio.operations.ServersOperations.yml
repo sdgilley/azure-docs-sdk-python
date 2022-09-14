@@ -144,7 +144,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: The parameters for restarting a server.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.rdbms.postgresql_flexibleservers.models.RestartParameter>
   - name: cls

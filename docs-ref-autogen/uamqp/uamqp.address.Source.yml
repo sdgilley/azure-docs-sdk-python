@@ -19,7 +19,7 @@ constructor:
     description: 'The encoding used if address is supplied
 
       as a str rather than bytes. Default is UTF-8.'
-    defaultValue: UTF-8
+    isRequired: true
 variables:
 - description: The endpoint URL.
   name: address
@@ -51,7 +51,7 @@ methods:
     description: 'The name of the filter. This will be encoded as
 
       an AMQP Symbol. By default this is set to b''apache.org:selector-filter:string''.'
-    defaultValue: b'apache.org:selector-filter:string'
+    isRequired: true
     types:
     - <xref:bytes>
 - uid: uamqp.address.Source.set_filter
@@ -72,7 +72,7 @@ methods:
     description: 'The name of the filter. This will be encoded as
 
       an AMQP Symbol. By default this is set to b''apache.org:selector-filter:string''.'
-    defaultValue: b'apache.org:selector-filter:string'
+    isRequired: true
     types:
     - <xref:bytes>
   - name: descriptor
@@ -82,7 +82,7 @@ methods:
       This will be encoded as an AMQP Symbol. By default this is set to b''apache.org:selector-filter:string''.
 
       Set to None if the filter should not be encoded as a described value.'
-    defaultValue: b'apache.org:selector-filter:string'
+    isRequired: true
     types:
     - <xref:bytes>
     - <xref:None>

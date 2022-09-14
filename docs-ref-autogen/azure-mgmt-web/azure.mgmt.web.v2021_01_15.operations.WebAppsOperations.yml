@@ -138,7 +138,7 @@ methods:
     - <xref:str>
   - name: host_name
     description: Custom hostname.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -178,7 +178,7 @@ methods:
     - <xref:str>
   - name: host_name
     description: Custom hostname.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -1975,17 +1975,17 @@ methods:
     - <xref:str>
   - name: duration_in_seconds
     description: The duration to keep capturing in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_length
     description: The maximum frame length in bytes (Optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sas_url
     description: The Blob URL to store capture file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -2043,17 +2043,17 @@ methods:
     - <xref:str>
   - name: duration_in_seconds
     description: The duration to keep capturing in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_length
     description: The maximum frame length in bytes (Optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sas_url
     description: The Blob URL to store capture file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -2106,17 +2106,17 @@ methods:
     - <xref:str>
   - name: duration_in_seconds
     description: The duration to keep capturing in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_length
     description: The maximum frame length in bytes (Optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sas_url
     description: The Blob URL to store capture file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -2174,17 +2174,17 @@ methods:
     - <xref:str>
   - name: duration_in_seconds
     description: The duration to keep capturing in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_length
     description: The maximum frame length in bytes (Optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sas_url
     description: The Blob URL to store capture file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -3466,14 +3466,14 @@ methods:
     - <xref:str>
   - name: delete_metrics
     description: If true, web app metrics are also deleted.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: delete_empty_server_farm
     description: 'Specify false if you want to keep empty App Service plan. By
 
       default, empty App Service plan is deleted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -4772,14 +4772,14 @@ methods:
     - <xref:str>
   - name: delete_metrics
     description: If true, web app metrics are also deleted.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: delete_empty_server_farm
     description: 'Specify false if you want to keep empty App Service plan. By
 
       default, empty App Service plan is deleted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -4812,7 +4812,7 @@ methods:
     types:
     - <xref:str>
   - name: additional_flags
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -4853,7 +4853,7 @@ methods:
     types:
     - <xref:str>
   - name: additional_flags
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -9876,7 +9876,7 @@ methods:
 
       results. The default is false, which only gives you the production slot of all
       apps.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -11329,7 +11329,7 @@ methods:
       syntax. Example: $filter=(startTime eq 2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z
 
       and timeGrain eq duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -11375,7 +11375,7 @@ methods:
       syntax. Example: $filter=(startTime eq 2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z
 
       and timeGrain eq duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -12705,7 +12705,7 @@ methods:
       2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -12757,7 +12757,7 @@ methods:
       2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -13162,7 +13162,7 @@ methods:
       app only
 
       if necessary. By default, the API always restarts and reprovisions the app.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: synchronous
@@ -13170,7 +13170,7 @@ methods:
       is set to
 
       false, and the API responds immediately (asynchronous).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -13215,7 +13215,7 @@ methods:
       app only
 
       if necessary. By default, the API always restarts and reprovisions the app.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: synchronous
@@ -13223,7 +13223,7 @@ methods:
       is set to
 
       false, and the API responds immediately (asynchronous).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -13475,17 +13475,17 @@ methods:
     - <xref:str>
   - name: duration_in_seconds
     description: The duration to keep capturing in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_length
     description: The maximum frame length in bytes (Optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sas_url
     description: The Blob URL to store capture file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -13525,17 +13525,17 @@ methods:
     - <xref:str>
   - name: duration_in_seconds
     description: The duration to keep capturing in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_length
     description: The maximum frame length in bytes (Optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sas_url
     description: The Blob URL to store capture file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

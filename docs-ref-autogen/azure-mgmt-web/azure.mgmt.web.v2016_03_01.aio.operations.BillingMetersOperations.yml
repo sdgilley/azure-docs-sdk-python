@@ -41,7 +41,7 @@ methods:
   parameters:
   - name: billing_location
     description: Azure Location of billable resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

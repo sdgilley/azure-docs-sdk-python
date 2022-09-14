@@ -268,7 +268,7 @@ methods:
     description: 'Specify `<code>true</code>` to force the deletion even if the App
 
       Service Environment contains resources. The default is `<code>false</code>`.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -765,7 +765,7 @@ methods:
       is
 
       `<code>false</code>`.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: filter
@@ -778,7 +778,7 @@ methods:
       2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -845,17 +845,17 @@ methods:
     - <xref:str>
   - name: start_time
     description: Beginning time of the metrics query.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: end_time
     description: End time of the metrics query.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: time_grain
     description: Time granularity of the metrics query.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: details
@@ -863,7 +863,7 @@ methods:
       is
 
       `<code>false</code>`.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: filter
@@ -876,7 +876,7 @@ methods:
       2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -959,7 +959,7 @@ methods:
       is
 
       `<code>false</code>`.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -1121,7 +1121,7 @@ methods:
       2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -1184,7 +1184,7 @@ methods:
     - <xref:str>
   - name: properties_to_include
     description: Comma separated list of app properties to include.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -1264,7 +1264,7 @@ methods:
       is
 
       `<code>false</code>`.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: filter
@@ -1277,7 +1277,7 @@ methods:
       2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -1404,7 +1404,7 @@ methods:
       is
 
       `<code>false</code>`.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: filter
@@ -1417,7 +1417,7 @@ methods:
       2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

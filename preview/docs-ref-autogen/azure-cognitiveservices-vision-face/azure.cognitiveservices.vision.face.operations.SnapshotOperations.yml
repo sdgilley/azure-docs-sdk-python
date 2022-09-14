@@ -128,20 +128,20 @@ methods:
       same objectId. Users can specify the "objectId" in request body to
 
       avoid such conflicts. Possible values include: ''CreateNew'''
-    defaultValue: CreateNew
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.SnapshotApplyMode>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -176,14 +176,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -214,14 +214,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -250,14 +250,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -289,7 +289,7 @@ methods:
       values include: ''FaceList'', ''LargeFaceList'', ''LargePersonGroup'',
 
       ''PersonGroup'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.SnapshotObjectType>
@@ -301,19 +301,19 @@ methods:
       for the snapshot, specified by the user who created the snapshot by
 
       Snapshot - Take.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -436,19 +436,19 @@ methods:
     description: 'User specified data about the snapshot for any
 
       purpose. Length should not exceed 16KB.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -484,26 +484,26 @@ methods:
       Snapshot - Take. For each snapshot, only subscriptions included in the
 
       applyScope of Snapshot - Take can apply it.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: user_data
     description: 'User specified data about the snapshot for any
 
       purpose. Length should not exceed 16KB.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

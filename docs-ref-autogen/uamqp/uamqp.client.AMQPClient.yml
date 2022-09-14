@@ -24,14 +24,14 @@ constructor:
       \ \n\n   * uamqp.authentication.SASLPlain \n\n   * uamqp.authentication.SASTokenAuth\
       \ \n\n   * uamqp.authentication.JWTTokenAuth \n\nIf no authentication is supplied,\
       \ SASLAnnoymous will be used by default."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:uamqp.authentication.common.AMQPAuth>
   - name: client_name
     description: 'The name for the client, also known as the Container ID.
 
       If no name is provided, a random GUID will be used.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:bytes>
@@ -39,14 +39,14 @@ constructor:
     description: 'Whether to turn on network trace logs. If *True*, trace logs
 
       will be logged at INFO level. Default is *False*.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: error_policy
     description: 'A policy for parsing errors on link, connection and message
 
       disposition to determine whether the error should be retryable.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:uamqp.errors.ErrorPolicy>
   - name: keep_alive_interval
@@ -58,7 +58,7 @@ constructor:
       no
 
       thread will be started.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_size
@@ -235,19 +235,19 @@ methods:
       be specific to the entities of the service. This value will be added as
 
       an application property on the message.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bytes>
   - name: node
     description: The target node. Default is *b"$management"*.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bytes>
   - name: timeout
     description: 'Provide an optional timeout in milliseconds within which a response
 
       to the management request must be received.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: callback
@@ -301,4 +301,4 @@ methods:
     description: 'An existing Connection that may be shared between
 
       multiple clients.'
-    defaultValue: None
+    isRequired: true

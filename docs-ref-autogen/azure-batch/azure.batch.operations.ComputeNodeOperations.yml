@@ -61,19 +61,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeAddUserOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -120,19 +120,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeDeleteUserOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -175,7 +175,7 @@ methods:
     description: 'The default value is requeue.
 
       Possible values include: ''requeue'', ''terminate'', ''taskCompletion'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.batch.models.DisableComputeNodeSchedulingOption>
@@ -183,19 +183,19 @@ methods:
     description: 'Additional parameters
 
       for the operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeDisableSchedulingOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -237,19 +237,19 @@ methods:
     description: 'Additional parameters
 
       for the operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeEnableSchedulingOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -286,19 +286,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeGetOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -346,19 +346,19 @@ methods:
     description: 'Additional parameters
 
       for the operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeGetRemoteDesktopOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -369,7 +369,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -417,19 +417,19 @@ methods:
     description: 'Additional
 
       parameters for the operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeGetRemoteLoginSettingsOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -463,19 +463,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeListOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -516,7 +516,7 @@ methods:
       values include: ''requeue'', ''terminate'', ''taskCompletion'',
 
       ''retainedData'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.batch.models.ComputeNodeRebootOption>
@@ -524,19 +524,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeRebootOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -580,7 +580,7 @@ methods:
       values include: ''requeue'', ''terminate'', ''taskCompletion'',
 
       ''retainedData'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.batch.models.ComputeNodeReimageOption>
@@ -588,19 +588,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeReimageOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -660,19 +660,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeUpdateUserOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -730,19 +730,19 @@ methods:
     description: 'Additional
 
       parameters for the operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.ComputeNodeUploadBatchServiceLogsOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

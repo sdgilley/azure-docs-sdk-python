@@ -148,12 +148,12 @@ methods:
     - <xref:str>
   - name: target
     description: Target of the workspace connection.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: category
     description: Category of the workspace connection.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

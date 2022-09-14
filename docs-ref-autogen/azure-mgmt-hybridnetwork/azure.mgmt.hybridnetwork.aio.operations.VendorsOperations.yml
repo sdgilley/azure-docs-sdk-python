@@ -44,7 +44,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: Parameters supplied to the create vendor operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:hybrid_network_management_client.models.Vendor>
   - name: cls

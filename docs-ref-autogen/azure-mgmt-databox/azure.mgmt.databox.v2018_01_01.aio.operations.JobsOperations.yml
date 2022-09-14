@@ -164,7 +164,7 @@ methods:
       if the ETag
 
       of the job on the server matches this value.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -291,7 +291,7 @@ methods:
       details on the
 
       job stages.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -314,7 +314,7 @@ methods:
       next page in
 
       the list of jobs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -344,7 +344,7 @@ methods:
       next page in
 
       the list of jobs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

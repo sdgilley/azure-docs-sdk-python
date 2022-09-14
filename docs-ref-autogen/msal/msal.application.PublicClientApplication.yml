@@ -39,7 +39,7 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
-    defaultValue: None
+    isRequired: true
   return:
     description: "A dict representing the json response from AAD:\n\n* A successful\
       \ response would contain \"access_token\" key, \n\n* an error response would\
@@ -69,13 +69,13 @@ methods:
       Its valid values are defined in Open ID Connect specs
 
       [https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: login_hint
     description: Optional. Identifier of the user. Generally a User Principal Name
       (UPN).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: domain_hint
@@ -92,7 +92,7 @@ methods:
       and
 
       [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
-    defaultValue: None
+    isRequired: true
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
       by the resource provider
@@ -104,14 +104,14 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
-    defaultValue: None
+    isRequired: true
   - name: timeout
     description: 'This method will block the current thread.
 
       This parameter specifies the timeout value in seconds.
 
       Default value `None` means wait indefinitely.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: port
@@ -120,7 +120,7 @@ methods:
       By default we will use a system-allocated port.
 
       (The rest of the redirect_uri is hard coded as `http://localhost`.)'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: extra_scopes_to_consent
@@ -131,7 +131,7 @@ methods:
       in the same interaction, but for which you won''t get back a
 
       token for in this particular operation.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>
   - name: max_age
@@ -150,7 +150,7 @@ methods:
 
 
       New in version 1.15.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -166,7 +166,7 @@ methods:
   parameters:
   - name: scopes
     description: Scopes requested to access a protected API (a resource).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   return:

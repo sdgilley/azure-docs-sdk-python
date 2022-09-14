@@ -56,7 +56,7 @@ methods:
 
       Specify the last-seen etag value to prevent accidentally deleting any concurrent
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -117,7 +117,7 @@ methods:
       concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -125,7 +125,7 @@ methods:
       updating
 
       an existing zone. Other values will be ignored.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -174,7 +174,7 @@ methods:
       up to 100
 
       zones.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls
@@ -204,7 +204,7 @@ methods:
       up to 100
 
       record sets.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls
@@ -247,7 +247,7 @@ methods:
       concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

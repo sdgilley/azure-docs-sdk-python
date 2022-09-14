@@ -59,7 +59,7 @@ methods:
     - <xref:str>
   - name: force
     description: Force flag to login off userSession.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -196,7 +196,7 @@ methods:
     description: 'OData filter expression. Valid properties for filtering are userprincipalname
 
       and sessionstate.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -239,7 +239,7 @@ methods:
     - <xref:str>
   - name: send_message
     description: Object containing message includes title and message body.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.SendMessage>
   - name: cls

@@ -441,7 +441,7 @@ methods:
       the resource or
 
       Specify $skipToken=:code:*<token>* to populate the next page in the list.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -466,7 +466,7 @@ methods:
       the resource or
 
       Specify $skipToken=:code:*<token>* to populate the next page in the list.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

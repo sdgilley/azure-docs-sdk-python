@@ -19,26 +19,24 @@ constructor:
     - <xref:str>
   - name: account_id
     description: The username / account name / account id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: password
     description: The password / secret / account key.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: organization_id
     description: The ID of the organization.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: admin_contacts
     description: Details of the organization administrator.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.keyvault.certificates.AdministratorContact>]
-  - name: admin_contacts
-    defaultValue: None
 attributes:
 - uid: azure.keyvault.certificates.CertificateIssuer.account_id
   name: account_id

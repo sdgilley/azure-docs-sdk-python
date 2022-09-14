@@ -166,7 +166,7 @@ methods:
   - name: top
     description: The number of values to return in the collection. Default is 10 and
       max is 10.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: filter
@@ -180,7 +180,7 @@ methods:
       You may combine the
 
       CommunicationType and CreatedDate filters by Logical And (''and'') operator.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

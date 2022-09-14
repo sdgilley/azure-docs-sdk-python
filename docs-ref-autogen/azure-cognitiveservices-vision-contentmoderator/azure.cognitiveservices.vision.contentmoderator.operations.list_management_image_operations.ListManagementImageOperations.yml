@@ -35,24 +35,24 @@ methods:
     - <xref:str>
   - name: tag
     description: Tag for the image.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: label
     description: The image label.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -85,24 +85,24 @@ methods:
     - <xref:Generator>
   - name: tag
     description: Tag for the image.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: label
     description: The image label.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -113,7 +113,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -146,32 +146,32 @@ methods:
     - <xref:str>
   - name: tag
     description: Tag for the image.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: label
     description: The image label.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: data_representation
-    defaultValue: URL
+    isRequired: true
     types:
     - <xref:str>
   - name: value
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -198,14 +198,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -237,14 +237,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -271,14 +271,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

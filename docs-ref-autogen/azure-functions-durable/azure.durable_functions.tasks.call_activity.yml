@@ -22,7 +22,7 @@ functions:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Any>
   return:

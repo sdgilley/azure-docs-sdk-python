@@ -166,7 +166,7 @@ methods:
       schedule
 
       requests where the current user is an approver.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

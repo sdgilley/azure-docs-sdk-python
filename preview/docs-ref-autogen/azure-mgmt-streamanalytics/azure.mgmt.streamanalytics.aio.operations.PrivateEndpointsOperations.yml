@@ -119,7 +119,7 @@ methods:
       concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -128,7 +128,7 @@ methods:
 
       an existing record set. Other values will result in a 412 Pre-condition Failed
       response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

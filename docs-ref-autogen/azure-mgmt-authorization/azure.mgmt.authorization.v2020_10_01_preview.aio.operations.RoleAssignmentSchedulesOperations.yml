@@ -83,7 +83,7 @@ methods:
 
       Use $filter=asTarget() to return all role assignment schedules created for the
       current user.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

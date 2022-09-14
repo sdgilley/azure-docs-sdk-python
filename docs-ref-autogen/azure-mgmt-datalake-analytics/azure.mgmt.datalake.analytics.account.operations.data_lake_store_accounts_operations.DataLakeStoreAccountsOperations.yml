@@ -52,19 +52,19 @@ methods:
     - <xref:str>
   - name: suffix
     description: The optional suffix for the Data Lake Store account.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -106,14 +106,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -155,14 +155,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -202,19 +202,19 @@ methods:
     - <xref:str>
   - name: filter
     description: OData filter. Optional.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: The number of items to return. Optional.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
     description: 'The number of items to skip over before returning
 
       elements. Optional.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: select
@@ -223,7 +223,7 @@ methods:
       entry to just those requested, e.g.
 
       Categories?$select=CategoryName,Description. Optional.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
@@ -234,7 +234,7 @@ methods:
       on the order you''d like the values sorted, e.g.
 
       Categories?$orderby=CategoryName desc. Optional.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: count
@@ -243,19 +243,19 @@ methods:
       the matching resources included with the resources in the response,
 
       e.g. Categories?$count=true. Optional.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

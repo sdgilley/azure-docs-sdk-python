@@ -20,11 +20,9 @@ functions:
     - <xref:str>
   - name: name
     description: An optional name for the Cloud object. Otherwise it's the ARM endpoint
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
-  - name: session
-    defaultValue: None
   return:
     description: a Cloud object
   exceptions:

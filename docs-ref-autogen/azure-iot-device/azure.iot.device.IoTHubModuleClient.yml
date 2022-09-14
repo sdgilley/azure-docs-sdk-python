@@ -525,7 +525,7 @@ methods:
   - name: module_id
     description: Module ID of the target module where the method will be invoked.
       (Optional)
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -625,17 +625,17 @@ methods:
       by
 
       a different request to receive_method will be received.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: block
     description: Indicates if the operation should block until a request is received.
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: Optionally provide a number of seconds until blocking times out.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -660,12 +660,12 @@ methods:
   parameters:
   - name: block
     description: Indicates if the operation should block until a request is received.
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: Optionally provide a number of seconds until blocking times out.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:

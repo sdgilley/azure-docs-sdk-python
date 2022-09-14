@@ -14,7 +14,7 @@ constructor:
       on
 
       the service. Default is str.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:obj>
 variables:

@@ -12,7 +12,6 @@ constructor:
   parameters:
   - name: entry_point_type
     description: The type of entry point.
-    defaultValue: None
     types:
     - <xref:str>
     - <xref:azure.maps.search.models.EntryPointType>
@@ -21,6 +20,5 @@ constructor:
       ''lat'' &
 
       ''lon''.'
-    defaultValue: None
     types:
     - <xref:azure.maps.search.models.LatLon>

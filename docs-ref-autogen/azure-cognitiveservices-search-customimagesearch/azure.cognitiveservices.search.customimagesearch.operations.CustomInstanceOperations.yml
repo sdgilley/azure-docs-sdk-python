@@ -122,7 +122,7 @@ methods:
       JSON response objects. Any links to Bing.com properties in the
 
       response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -160,7 +160,7 @@ methods:
       (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit / 537.51.1 (KHTML, like
 
       Gecko) Version / 7.0 Mobile / 11A465 Safari / 9537.53'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -233,7 +233,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -252,7 +252,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -323,7 +323,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: aspect
@@ -338,7 +338,7 @@ methods:
       Return images with tall aspect ratio. Possible values include: ''All'',
 
       ''Square'', ''Wide'', ''Tall'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.customimagesearch.models.ImageAspect>
@@ -356,7 +356,7 @@ methods:
       ''Gray'', ''Green'', ''Orange'', ''Pink'', ''Purple'', ''Red'', ''Teal'', ''White'',
 
       ''Yellow'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.customimagesearch.models.ImageColor>
@@ -374,7 +374,7 @@ methods:
       \ otherwise, you\nshould use the mkt and setLang query parameters. This parameter\
       \ and\nthe\n[mkt]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference#mkt](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference#mkt))\n\
       query parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: count
@@ -395,7 +395,7 @@ methods:
       API.Do not specify this parameter when calling the Insights, Trending
 
       Images, or Web Search APIs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: freshness
@@ -408,7 +408,7 @@ methods:
       images discovered by Bing within the last 30 days. Possible values
 
       include: ''Day'', ''Week'', ''Month'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.customimagesearch.models.Freshness>
@@ -418,7 +418,7 @@ methods:
       pixels. You may use this filter with the size filter to return small
 
       images that have a height of 150 pixels.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: id
@@ -431,7 +431,7 @@ methods:
       [Image]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference#image](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference#image))
 
       object''s imageId field contains the ID that you set this parameter to.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: image_content
@@ -442,7 +442,7 @@ methods:
       images that show only a person''s head and shoulders. Possible values
 
       include: ''Face'', ''Portrait'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.customimagesearch.models.ImageContent>
@@ -464,7 +464,7 @@ methods:
       background. Possible values include: ''AnimatedGif'', ''Clipart'', ''Line'',
 
       ''Photo'', ''Shopping'', ''Transparent'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.customimagesearch.models.ImageType>
@@ -513,7 +513,7 @@ methods:
       include: ''All'', ''Any'', ''Public'', ''Share'', ''ShareCommercially'',
 
       ''Modify'', ''ModifyCommercially'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.customimagesearch.models.ImageLicense>
@@ -530,7 +530,7 @@ methods:
       Bing uses a best fit market code based on an internal mapping that is\nsubject\
       \ to change. This parameter and the\n[cc]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference#cc](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference#cc))\n\
       query parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: max_file_size
@@ -545,7 +545,7 @@ methods:
       larger than the specified maximum. You may specify this filter and
 
       minFileSize to filter images within a range of file sizes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: max_height
@@ -556,7 +556,7 @@ methods:
       may specify this filter and minHeight to filter images within a range
 
       of heights. This filter and the height filter are mutually exclusive.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: max_width
@@ -567,7 +567,7 @@ methods:
       specify this filter and maxWidth to filter images within a range of
 
       widths. This filter and the width filter are mutually exclusive.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: min_file_size
@@ -582,7 +582,7 @@ methods:
       smaller than the specified minimum. You may specify this filter and
 
       maxFileSize to filter images within a range of file sizes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: min_height
@@ -595,7 +595,7 @@ methods:
       range of heights. This filter and the height filter are mutually
 
       exclusive.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: min_width
@@ -606,7 +606,7 @@ methods:
       specify this filter and maxWidth to filter images within a range of
 
       widths. This filter and the width filter are mutually exclusive.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: offset
@@ -635,7 +635,7 @@ methods:
       Use this parameter only with the Image API. Do not specify this
 
       parameter when calling the Trending Images API or the Web Search API.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: safe_search
@@ -674,7 +674,7 @@ methods:
       your scenario supports the possibility of adult content. Possible
 
       values include: ''Off'', ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.customimagesearch.models.SafeSearch>
@@ -698,7 +698,7 @@ methods:
       tall. Possible values include: ''All'', ''Small'', ''Medium'', ''Large'',
 
       ''Wallpaper'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.customimagesearch.models.ImageSize>
@@ -728,7 +728,7 @@ methods:
       links to Bing.com properties in the response objects apply the
 
       specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: width
@@ -737,19 +737,19 @@ methods:
       You may use this filter with the size filter to return small images
 
       that have a width of 150 pixels.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

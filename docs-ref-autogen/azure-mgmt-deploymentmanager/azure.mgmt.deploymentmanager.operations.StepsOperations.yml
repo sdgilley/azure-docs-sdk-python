@@ -52,7 +52,7 @@ methods:
     - <xref:str>
   - name: step_info
     description: The step object.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.deploymentmanager.models.StepResource>
   - name: cls

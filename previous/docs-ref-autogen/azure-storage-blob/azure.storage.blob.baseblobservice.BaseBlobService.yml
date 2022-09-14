@@ -134,12 +134,12 @@ methods:
     - <xref:str>
   - name: lease_id
     description: Required if the destination blob has an active infinite lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.acquire_blob_lease
@@ -169,7 +169,7 @@ methods:
       between 15 and 60 seconds. A lease duration cannot be changed
 
       using renew or change. Default is -1 (infinite lease).'
-    defaultValue: '-1'
+    isRequired: true
     types:
     - <xref:int>
   - name: proposed_lease_id
@@ -178,7 +178,7 @@ methods:
       returns 400 (Invalid request) if the proposed lease ID is not
 
       in the correct format.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -191,7 +191,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -204,7 +204,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -212,7 +212,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -225,12 +225,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -258,14 +258,14 @@ methods:
       between 15 and 60 seconds. A lease duration cannot be changed
 
       using renew or change. Default is -1 (infinite lease).'
-    defaultValue: '-1'
+    isRequired: true
     types:
     - <xref:int>
   - name: proposed_lease_id
     description: 'Proposed lease ID, in a GUID string format. The Blob service returns
 
       400 (Invalid request) if the proposed lease ID is not in the correct format.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -278,7 +278,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -291,12 +291,12 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -353,7 +353,7 @@ methods:
       operation, a fixed-duration lease breaks after the remaining lease
 
       period elapses, and an infinite lease breaks immediately.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: if_modified_since
@@ -366,7 +366,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -379,7 +379,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -387,7 +387,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -400,12 +400,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -451,7 +451,7 @@ methods:
       operation, a fixed-duration lease breaks after the remaining lease
 
       period elapses, and an infinite lease breaks immediately.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: if_modified_since
@@ -464,7 +464,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -477,12 +477,12 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -528,7 +528,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -541,7 +541,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -549,7 +549,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -562,12 +562,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.change_container_lease
@@ -606,7 +606,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -619,12 +619,12 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.copy_blob
@@ -727,7 +727,7 @@ methods:
       pairs are specified, the destination blob is created with the specified
 
       metadata, and metadata is not copied from the source blob or file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: source_if_modified_since
@@ -740,7 +740,7 @@ methods:
       Specify this conditional header to copy the blob only if the source
 
       blob has been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: source_if_unmodified_since
@@ -753,7 +753,7 @@ methods:
       Specify this conditional header to copy the blob only if the source blob
 
       has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: source_if_match
@@ -766,7 +766,7 @@ methods:
       status code 412 (Precondition Failed). This header cannot be specified
 
       if the source is an Azure File.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:ETag>
   - name: source_if_none_match
@@ -779,7 +779,7 @@ methods:
       code 412 (Precondition Failed). This header cannot be specified if the
 
       source is an Azure File.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:ETag>
   - name: destination_if_modified_since
@@ -796,7 +796,7 @@ methods:
       If the destination blob has not been modified, the Blob service returns
 
       status code 412 (Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: destination_if_unmodified_since
@@ -813,7 +813,7 @@ methods:
       date/time. If the destination blob has been modified, the Blob service
 
       returns status code 412 (Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: destination_if_match
@@ -827,7 +827,7 @@ methods:
       the destination blob does not match the ETag specified for If-Match, the
 
       Blob service returns status code 412 (Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:ETag>
   - name: destination_if_none_match
@@ -843,7 +843,7 @@ methods:
       exist. If the specified condition isn''t met, the Blob service returns status
 
       code 412 (Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:ETag>
   - name: destination_lease_id
@@ -853,19 +853,19 @@ methods:
       destination blob. If the request does not include the lease ID or it is not
 
       valid, the operation fails with status code 412 (Precondition Failed).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: source_lease_id
     description: 'Specify this to perform the Copy Blob operation only if
 
       the lease ID given matches the active lease ID of the source blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -891,22 +891,22 @@ methods:
     description: 'A dict with name_value pairs to associate with the
 
       container as metadata. Example:{''Category'':''test''}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: public_access
     description: 'Possible values include: container, blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.PublicAccess>
   - name: fail_on_exist
     description: Specify whether to throw an exception when the container exists.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -957,17 +957,17 @@ methods:
     description: 'The snapshot parameter is an opaque DateTime value that,
 
       when present, specifies the blob snapshot to delete.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: delete_snapshots
     description: Required if the blob has associated snapshots.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.DeleteSnapshot>
   - name: if_modified_since
@@ -980,7 +980,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -993,7 +993,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -1001,7 +1001,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -1014,12 +1014,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.delete_container
@@ -1039,7 +1039,7 @@ methods:
     description: 'Specify whether to throw an exception when the container doesn''t
 
       exist.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: lease_id
@@ -1048,7 +1048,7 @@ methods:
       container''s lease is active and matches this ID.
 
       Required if the container has an active lease.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -1061,7 +1061,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -1074,12 +1074,12 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1100,19 +1100,19 @@ methods:
     - <xref:str>
   - name: blob_name
     description: Name of a blob. If None, the container will be checked for existence.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: snapshot
     description: 'The snapshot parameter is an opaque DateTime value that,
 
       when present, specifies the snapshot.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1172,7 +1172,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1187,7 +1187,7 @@ methods:
       For example, specifying sip=168.1.5.65 or sip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -1196,7 +1196,7 @@ methods:
 
       is https,http. See <xref:azure.storage.common.models.Protocol> for possible
       values.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1234,7 +1234,7 @@ methods:
       which contains this field. This field must be omitted if it has been
 
       specified in an associated stored access policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.BlobPermissions>
   - name: expiry
@@ -1249,7 +1249,7 @@ methods:
       convert values to UTC. If a date is passed in without timezone info, it
 
       is assumed to be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1263,7 +1263,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1272,7 +1272,7 @@ methods:
       a
 
       stored access policy. To create a stored access policy, use <xref:azure.storage.blob.baseblobservice.BaseBlobService.set_container_acl>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ip
@@ -1286,7 +1286,7 @@ methods:
       For example, specifying sip=168.1.5.65 or sip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -1295,42 +1295,42 @@ methods:
 
       is https,http. See <xref:azure.storage.common.models.Protocol> for possible
       values.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_control
     description: 'Response header value for Cache-Control when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_disposition
     description: 'Response header value for Content-Disposition when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_encoding
     description: 'Response header value for Content-Encoding when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_language
     description: 'Response header value for Content-Language when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_type
     description: 'Response header value for Content-Type when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1363,7 +1363,7 @@ methods:
       which contains this field. This field must be omitted if it has been
 
       specified in an associated stored access policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.ContainerPermissions>
   - name: expiry
@@ -1378,7 +1378,7 @@ methods:
       convert values to UTC. If a date is passed in without timezone info, it
 
       is assumed to be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1392,7 +1392,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1403,7 +1403,7 @@ methods:
       stored access policy. To create a stored access policy, use
 
       set_blob_service_properties.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ip
@@ -1417,7 +1417,7 @@ methods:
       For example, specifying sip=168.1.5.65 or sip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -1426,42 +1426,42 @@ methods:
 
       is https,http. See <xref:azure.storage.common.models.Protocol> for possible
       values.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_control
     description: 'Response header value for Cache-Control when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_disposition
     description: 'Response header value for Content-Disposition when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_encoding
     description: 'Response header value for Content-Encoding when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_language
     description: 'Response header value for Content-Language when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_type
     description: 'Response header value for Content-Type when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1481,19 +1481,19 @@ methods:
 
       Optional, unless using a SAS token to a specific container or blob, in which
       case it''s required.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: blob_name
     description: 'Name of existing blob.
 
       Optional, unless using a SAS token to a specific blob, in which case it''s required.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1519,12 +1519,12 @@ methods:
     description: 'The snapshot parameter is an opaque value that,
 
       when present, specifies the blob snapshot to retrieve.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -1537,7 +1537,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -1550,7 +1550,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -1558,7 +1558,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -1571,12 +1571,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1610,12 +1610,12 @@ methods:
     description: 'The snapshot parameter is an opaque DateTime value that,
 
       when present, specifies the blob snapshot to retrieve.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -1628,7 +1628,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -1641,7 +1641,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -1649,7 +1649,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -1662,12 +1662,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1683,7 +1683,7 @@ methods:
   parameters:
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1727,7 +1727,7 @@ methods:
   parameters:
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1761,7 +1761,7 @@ methods:
     description: 'The snapshot parameter is an opaque DateTime value that,
 
       when present, specifies the blob snapshot to retrieve.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_range
@@ -1772,7 +1772,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -1783,7 +1783,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -1807,7 +1807,7 @@ methods:
       will need to be done due to the reduced chunk size there may be some
 
       increase in latency.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -1816,7 +1816,7 @@ methods:
       where current is the number of bytes transfered so far, and total is
 
       the size of the blob if known.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -1841,12 +1841,12 @@ methods:
       expected to be empty as an extra request is required for empty blobs
 
       if max_connections is greater than 1.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -1859,7 +1859,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -1872,7 +1872,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -1880,7 +1880,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -1893,7 +1893,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -1902,7 +1902,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1948,14 +1948,14 @@ methods:
       open_mode prevents parallel download. So, max_connections must be set
 
       to 1 if this open_mode is used.'
-    defaultValue: wb
+    isRequired: true
     types:
     - <xref:str>
   - name: snapshot
     description: 'The snapshot parameter is an opaque DateTime value that,
 
       when present, specifies the blob snapshot to retrieve.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_range
@@ -1966,7 +1966,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -1977,7 +1977,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -2001,7 +2001,7 @@ methods:
       will need to be done due to the reduced chunk size there may be some
 
       increase in latency.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -2010,7 +2010,7 @@ methods:
       where current is the number of bytes transfered so far, and total is
 
       the size of the blob if known.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -2035,12 +2035,12 @@ methods:
       expected to be empty as an extra request is required for empty blobs
 
       if max_connections is greater than 1.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -2053,7 +2053,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -2066,7 +2066,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -2074,7 +2074,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -2087,7 +2087,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -2096,7 +2096,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2140,7 +2140,7 @@ methods:
     description: 'The snapshot parameter is an opaque DateTime value that,
 
       when present, specifies the blob snapshot to retrieve.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_range
@@ -2151,7 +2151,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -2162,7 +2162,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -2186,7 +2186,7 @@ methods:
       will need to be done due to the reduced chunk size there may be some
 
       increase in latency.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -2195,7 +2195,7 @@ methods:
       where current is the number of bytes transfered so far, and total is
 
       the size of the blob if known.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -2220,12 +2220,12 @@ methods:
       expected to be empty as an extra request is required for empty blobs
 
       if max_connections is greater than 1.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -2238,7 +2238,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -2251,7 +2251,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -2259,7 +2259,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -2272,7 +2272,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -2281,7 +2281,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2318,14 +2318,14 @@ methods:
     - <xref:str>
   - name: encoding
     description: Python encoding to use when decoding the blob data.
-    defaultValue: utf-8
+    isRequired: true
     types:
     - <xref:str>
   - name: snapshot
     description: 'The snapshot parameter is an opaque DateTime value that,
 
       when present, specifies the blob snapshot to retrieve.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: start_range
@@ -2336,7 +2336,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -2347,7 +2347,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -2371,7 +2371,7 @@ methods:
       will need to be done due to the reduced chunk size there may be some
 
       increase in latency.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -2380,7 +2380,7 @@ methods:
       where current is the number of bytes transfered so far, and total is
 
       the size of the blob if known.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -2405,12 +2405,12 @@ methods:
       expected to be empty as an extra request is required for empty blobs
 
       if max_connections is greater than 1.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -2423,7 +2423,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -2436,7 +2436,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -2444,7 +2444,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -2457,7 +2457,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -2466,7 +2466,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2495,10 +2495,10 @@ methods:
     description: 'If specified, get_container_acl only succeeds if the
 
       container''s lease is active and matches this ID.'
-    defaultValue: None
+    isRequired: true
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2522,12 +2522,12 @@ methods:
     description: 'If specified, get_container_metadata only succeeds if the
 
       container''s lease is active and matches this ID.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2550,12 +2550,12 @@ methods:
     description: 'If specified, get_container_properties only succeeds if the
 
       container''s lease is active and matches this ID.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2590,7 +2590,7 @@ methods:
     description: 'Filters the results to return only blobs whose names
 
       begin with the specified prefix.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: num_results
@@ -2604,12 +2604,12 @@ methods:
       return up to 5,000 items. Setting num_results to a value less than
 
       or equal to zero results in error response code 400 (Bad Request).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: include
     description: Specifies one or more additional datasets to include in the response.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.Include>
   - name: delimiter
@@ -2622,7 +2622,7 @@ methods:
       with the same substring up to the appearance of the delimiter character.
 
       The delimiter may be a single character or a string.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: marker
@@ -2635,12 +2635,12 @@ methods:
       specified, this generator will begin returning results from the point
 
       where the previous generator stopped.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.list_blobs
@@ -2671,7 +2671,7 @@ methods:
     description: 'Filters the results to return only blobs whose names
 
       begin with the specified prefix.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: num_results
@@ -2685,12 +2685,12 @@ methods:
       return up to 5,000 items. Setting num_results to a value less than
 
       or equal to zero results in error response code 400 (Bad Request).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: include
     description: Specifies one or more additional datasets to include in the response.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.Include>
   - name: delimiter
@@ -2703,7 +2703,7 @@ methods:
       with the same substring up to the appearance of the delimiter character.
 
       The delimiter may be a single character or a string.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: marker
@@ -2716,12 +2716,12 @@ methods:
       specified, this generator will begin returning results from the point
 
       where the previous generator stopped.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.list_containers
@@ -2748,7 +2748,7 @@ methods:
     description: 'Filters the results to return only containers whose names
 
       begin with the specified prefix.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: num_results
@@ -2757,12 +2757,12 @@ methods:
       request may return up to 1000 contianers and potentially a continuation
 
       token which should be followed to get additional resutls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: include_metadata
     description: Specifies that container metadata be returned in the response.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: marker
@@ -2775,12 +2775,12 @@ methods:
       specified, this generator will begin returning results from the point
 
       where the previous generator stopped.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.make_blob_url
@@ -2803,14 +2803,14 @@ methods:
     description: 'Protocol to use: ''http'' or ''https''. If not specified, uses the
 
       protocol specified when BaseBlobService was initialized.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: sas_token
     description: 'Shared access signature token created with
 
       generate_shared_access_signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: snapshot
@@ -2818,7 +2818,7 @@ methods:
       of
 
       this query parameter indicates the snapshot version.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -2839,14 +2839,14 @@ methods:
     description: 'Protocol to use: ''http'' or ''https''. If not specified, uses the
 
       protocol specified when BaseBlobService was initialized.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: sas_token
     description: 'Shared access signature token created with
 
       generate_shared_access_signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -2890,7 +2890,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -2903,7 +2903,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -2911,7 +2911,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -2924,12 +2924,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.release_container_lease
@@ -2963,7 +2963,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -2976,12 +2976,12 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.renew_blob_lease
@@ -3023,7 +3023,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -3036,7 +3036,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -3044,7 +3044,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -3057,12 +3057,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -3101,7 +3101,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -3114,12 +3114,12 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -3149,12 +3149,12 @@ methods:
       replaces all existing metadata attached to the blob. To remove all
 
       metadata from the blob, call this operation with no metadata headers.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -3167,7 +3167,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -3180,7 +3180,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -3188,7 +3188,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -3201,12 +3201,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -3234,12 +3234,12 @@ methods:
     - <xref:str>
   - name: content_settings
     description: ContentSettings object used to set blob properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.ContentSettings>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -3252,7 +3252,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -3265,7 +3265,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -3273,7 +3273,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -3286,12 +3286,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -3310,21 +3310,21 @@ methods:
   parameters:
   - name: logging
     description: Groups the Azure Analytics Logging settings.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.common.models.Logging>
   - name: hour_metrics
     description: 'The hour metrics settings provide a summary of request
 
       statistics grouped by API in hourly aggregates for blobs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.common.models.Metrics>
   - name: minute_metrics
     description: 'The minute metrics settings provide request statistics
 
       for each minute for blobs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.common.models.Metrics>
   - name: cors
@@ -3333,19 +3333,19 @@ methods:
       list. If an empty list is specified, all CORS rules will be deleted,
 
       and CORS will be disabled for the service.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>(<xref:azure.storage.common.models.CorsRule>)
   - name: target_version
     description: 'Indicates the default version to use for requests if an incoming
 
       request''s version is not specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: delete_retention_policy
@@ -3353,14 +3353,14 @@ methods:
       blobs.
 
       It also specifies the number of days and versions of blob to keep.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.common.models.DeleteRetentionPolicy>
   - name: static_website
     description: 'Specifies whether the static website feature is enabled,
 
       and if yes, indicates the index document and 404 error document to use.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.common.models.StaticWebsite>
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.set_container_acl
@@ -3385,19 +3385,19 @@ methods:
       dictionary may contain up to 5 elements. An empty dictionary
 
       will clear the access policies set on the service.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:azure.storage.common.models.AccessPolicy>)
   - name: public_access
     description: 'Possible values include: container, blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.PublicAccess>
   - name: lease_id
     description: 'If specified, set_container_acl only succeeds if the
 
       container''s lease is active and matches this ID.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -3410,7 +3410,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -3423,12 +3423,12 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -3457,14 +3457,14 @@ methods:
       as
 
       metadata. Example: {''category'':''test''}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: lease_id
     description: 'If specified, set_container_metadata only succeeds if the
 
       container''s lease is active and matches this ID.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -3477,12 +3477,12 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -3515,7 +3515,7 @@ methods:
       are specified, the snapshot is created with the specified metadata,
 
       and metadata is not copied from the base blob.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: if_modified_since
@@ -3528,7 +3528,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -3541,7 +3541,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -3549,7 +3549,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -3562,17 +3562,17 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -3600,7 +3600,7 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 attributes:

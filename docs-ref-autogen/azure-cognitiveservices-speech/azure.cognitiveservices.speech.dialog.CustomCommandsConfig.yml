@@ -17,16 +17,16 @@ constructor:
   parameters:
   - name: app_id
     description: The Custom Commands application id.
-    defaultValue: None
+    isRequired: true
   - name: subscription
     description: The subscription key.
-    defaultValue: None
+    isRequired: true
   - name: auth_token
     description: The authorization token.
-    defaultValue: None
+    isRequired: true
   - name: region
     description: The region name (see the [region page](https://aka.ms/csspeech/region)).
-    defaultValue: None
+    isRequired: true
 attributes:
 - uid: azure.cognitiveservices.speech.dialog.CustomCommandsConfig.application_id
   name: application_id

@@ -251,12 +251,12 @@ methods:
     - <xref:azure.servicebus.ServiceBusReceivedMessage>
   - name: reason
     description: The reason for dead-lettering the message.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:str>]
   - name: error_description
     description: The detailed error description for dead-lettering the message.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:str>]
   return:
@@ -330,7 +330,7 @@ methods:
     description: 'The maximum number of messages to try and peek. The default
 
       value is 1.'
-    defaultValue: '1'
+    isRequired: true
     types:
     - <xref:int>
   - name: sequence_number
@@ -438,7 +438,7 @@ methods:
 
       Setting to None will fully depend on the prefetch config. The default value
       is 1.'
-    defaultValue: '1'
+    isRequired: true
     types:
     - <xref:Optional>[<xref:int>]
   - name: max_wait_time
@@ -449,7 +449,7 @@ methods:
       until the connection is closed. If specified, an no messages arrive within the
 
       timeout period, an empty list will be returned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:float>]
   return:

@@ -82,7 +82,7 @@ methods:
       JSON response objects. Any links in the response objects to Bing.com
 
       properties will apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: pragma
@@ -91,7 +91,7 @@ methods:
       To prevent Bing from returning cached content, set the Pragma header
 
       to no-cache (for example, Pragma: no-cache).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -106,7 +106,7 @@ methods:
       used browser would send. For information about user agents, see [RFC
 
       2616]([http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -179,7 +179,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -198,7 +198,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -269,7 +269,7 @@ methods:
       you should include this header and the  X-Search-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: action_type
@@ -278,7 +278,7 @@ methods:
       \ possible values. 1) Edit\u2014The request is\nfrom an interactive session\
       \ 2) Load\u2014The request is from a page load.\nPossible values include: 'Edit',\
       \ 'Load'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.language.spellcheck.models.ActionType>
@@ -290,7 +290,7 @@ methods:
       contacted Bing to get a unique app name. To get a unique name, contact
 
       your Bing Business Development manager.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: country_code
@@ -307,7 +307,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_machine_name
@@ -318,7 +318,7 @@ methods:
       (the value is unimportant). The service uses the ID to help debug
 
       issues and improve the quality of corrections.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: doc_id
@@ -329,7 +329,7 @@ methods:
       unimportant). The service uses the ID to help debug issues and improve
 
       the quality of corrections.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: market
@@ -337,7 +337,7 @@ methods:
       \ to always specify the market, if known. Specifying\nthe market helps Bing\
       \ route the request and return an appropriate and\noptimal response. This parameter\
       \ and the cc query parameter are\nmutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: session_id
@@ -348,7 +348,7 @@ methods:
       unimportant). The service uses the ID to help debug issues and improve
 
       the quality of corrections'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: set_lang
@@ -362,7 +362,7 @@ methods:
       string that's used as a label in a user interface. There are few user\ninterface\
       \ strings in the JSON response objects. Also, any links to\nBing.com properties\
       \ in the response objects apply the specified\nlanguage."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_id
@@ -373,7 +373,7 @@ methods:
       uses the ID to help debug issues and improve the quality of
 
       corrections.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: mode
@@ -383,7 +383,7 @@ methods:
       Finds most spelling mistakes but does not find some\nof the grammar errors that\
       \ Proof catches (for example, capitalization\nand repeated words). Possible\
       \ values include: 'proof', 'spell'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.language.spellcheck.models.Mode>
@@ -405,7 +405,7 @@ methods:
       10,000 characters. You may specify this parameter in the query string
 
       of a GET request or in the body of a POST request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: post_context_text
@@ -426,19 +426,19 @@ methods:
       10,000 characters. You may specify this parameter in the query string
 
       of a GET request or in the body of a POST request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

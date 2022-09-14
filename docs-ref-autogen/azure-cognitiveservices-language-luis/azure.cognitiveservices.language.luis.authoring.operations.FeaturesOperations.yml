@@ -58,14 +58,14 @@ methods:
     - <xref:azure.cognitiveservices.language.luis.authoring.models.ModelFeatureInformation>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -112,14 +112,14 @@ methods:
     - <xref:azure.cognitiveservices.language.luis.authoring.models.ModelFeatureInformation>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -161,14 +161,14 @@ methods:
     - <xref:azure.cognitiveservices.language.luis.authoring.models.PhraselistCreateObject>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -206,14 +206,14 @@ methods:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -251,14 +251,14 @@ methods:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -293,26 +293,26 @@ methods:
     - <xref:str>
   - name: skip
     description: The number of entries to skip. Default value is 0.
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: take
     description: 'The number of entries to return. Maximum page size is
 
       500. Default is 100.'
-    defaultValue: '100'
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -345,26 +345,26 @@ methods:
     - <xref:str>
   - name: skip
     description: The number of entries to skip. Default value is 0.
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: take
     description: 'The number of entries to return. Maximum page size is
 
       500. Default is 100.'
-    defaultValue: '100'
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -410,19 +410,19 @@ methods:
       changed. - Name, Pattern, Mode, and a boolean called IsActive to
 
       update the feature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cognitiveservices.language.luis.authoring.models.PhraselistUpdateObject>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

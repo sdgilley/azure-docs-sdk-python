@@ -51,7 +51,7 @@ methods:
       granted by the resource owner,
 
       according to [https://tools.ietf.org/html/rfc6749#section-6](https://tools.ietf.org/html/rfc6749#section-6)'
-    defaultValue: None
+    isRequired: true
 attributes:
 - uid: msal.oauth2cli.oauth2.BaseClient.session
   name: session

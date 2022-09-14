@@ -53,7 +53,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: The cloud service object.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_10_01_preview.models.CloudService>
   - name: cls
@@ -147,7 +147,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: List of cloud service role instance names.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_10_01_preview.models.RoleInstances>
   - name: cls
@@ -250,7 +250,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: List of cloud service role instance names.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_10_01_preview.models.RoleInstances>
   - name: cls
@@ -303,7 +303,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: List of cloud service role instance names.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_10_01_preview.models.RoleInstances>
   - name: cls
@@ -353,7 +353,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: List of cloud service role instance names.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_10_01_preview.models.RoleInstances>
   - name: cls
@@ -447,7 +447,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: The cloud service object.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_10_01_preview.models.CloudServiceUpdate>
   - name: cls

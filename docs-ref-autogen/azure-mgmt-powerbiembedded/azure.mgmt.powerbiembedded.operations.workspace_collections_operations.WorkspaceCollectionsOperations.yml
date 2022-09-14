@@ -40,24 +40,24 @@ methods:
     - <xref:str>
   - name: name
     description: Workspace collection name
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: type
     description: Resource type
-    defaultValue: Microsoft.PowerBI/workspaceCollections
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -98,23 +98,23 @@ methods:
     - <xref:str>
   - name: location
     description: Azure location
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tags
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -149,21 +149,21 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -195,14 +195,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -239,14 +239,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -276,14 +276,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -306,14 +306,14 @@ methods:
   parameters:
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -344,23 +344,23 @@ methods:
     description: 'Name of the resource group the Power BI
 
       workspace collections will be migrated to.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: resources
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -397,20 +397,20 @@ methods:
     - <xref:str>
   - name: key_name
     description: 'Key name. Possible values include: ''key1'', ''key2'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.powerbiembedded.models.AccessKeyName>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -448,19 +448,19 @@ methods:
     types:
     - <xref:str>
   - name: tags
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

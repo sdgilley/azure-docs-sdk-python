@@ -216,33 +216,33 @@ methods:
     - <xref:azure.mgmt.botservice.models.ChannelName>
   - name: location
     description: Specifies the location of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tags
     description: Contains resource tags defined as key/value pairs.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: sku
     description: Gets or sets the SKU of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.botservice.models.Sku>
   - name: kind
     description: Required. Gets or sets the Kind of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.botservice.models.Kind>
   - name: etag
     description: Entity Tag.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: properties
     description: The set of properties specific to bot channel resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.botservice.models.Channel>
   - name: cls

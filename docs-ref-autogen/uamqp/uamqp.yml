@@ -28,7 +28,7 @@ functions:
       \n   * uamqp.authentication.SASLAnonymous \n\n   * uamqp.authentication.SASLPlain\
       \ \n\n   * uamqp.authentication.SASTokenAuth \n\nIf no authentication is supplied,\
       \ SASLAnnoymous will be used by default."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:uamqp.authentication.common.AMQPAuth>
   - name: timeout
@@ -37,12 +37,12 @@ functions:
       are retrieved. If set to *0* (the default), the receiver will not timeout and
 
       will continue to wait for messages until interrupted.'
-    defaultValue: '0'
+    isRequired: true
   - name: debug
     description: 'Whether to turn on network trace logs. If *True*, trace logs
 
       will be logged at INFO level. Default is *False*.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -67,7 +67,7 @@ functions:
       \n   * uamqp.authentication.SASLAnonymous \n\n   * uamqp.authentication.SASLPlain\
       \ \n\n   * uamqp.authentication.SASTokenAuth \n\nIf no authentication is supplied,\
       \ SASLAnnoymous will be used by default."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:uamqp.authentication.common.AMQPAuth>
   - name: max_batch_size
@@ -80,19 +80,19 @@ functions:
       reaches
 
       a timeout, an empty list will be returned.'
-    defaultValue: None
+    isRequired: true
   - name: timeout
     description: 'The timeout in milliseconds after which to return if no messages
 
       are retrieved. If set to *0* (the default), the receiver will not timeout and
 
       will continue to wait for messages until interrupted.'
-    defaultValue: '0'
+    isRequired: true
   - name: debug
     description: 'Whether to turn on network trace logs. If *True*, trace logs
 
       will be logged at INFO level. Default is *False*.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -121,14 +121,14 @@ functions:
       \n   * uamqp.authentication.SASLAnonymous \n\n   * uamqp.authentication.SASLPlain\
       \ \n\n   * uamqp.authentication.SASTokenAuth \n\nIf no authentication is supplied,\
       \ SASLAnnoymous will be used by default."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:uamqp.authentication.common.AMQPAuth>
   - name: debug
     description: 'Whether to turn on network trace logs. If *True*, trace logs
 
       will be logged at INFO level. Default is *False*.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   return:

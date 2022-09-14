@@ -17,7 +17,6 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-  - name: credential
 methods:
 - uid: azure.communication.sms.aio.SmsClient.close
   name: close
@@ -35,8 +34,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: conn_str
-    isRequired: true
   return:
     description: Instance of SmsClient.
     types:

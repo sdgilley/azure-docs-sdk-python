@@ -118,22 +118,22 @@ methods:
     - <xref:str>
   - name: recommendation_type
     description: Filter by recommendation type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_id
     description: Filter by device id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: limit
     description: Limit the number of items returned in a single page.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token used for pagination.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -166,22 +166,22 @@ methods:
     - <xref:str>
   - name: recommendation_type
     description: Filter by recommendation type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: device_id
     description: Filter by device id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: limit
     description: Limit the number of items returned in a single page.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token used for pagination.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

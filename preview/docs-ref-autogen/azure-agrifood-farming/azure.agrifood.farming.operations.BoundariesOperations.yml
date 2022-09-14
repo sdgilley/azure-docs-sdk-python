@@ -98,7 +98,7 @@ methods:
     - <xref:str>
   - name: boundary
     description: Boundary resource payload to create or update.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.Boundary>
   - name: cls
@@ -231,81 +231,81 @@ methods:
   parameters:
   - name: is_primary
     description: Is the boundary primary.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: parent_type
     description: Type of the parent it belongs to.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: parent_ids
     description: Parent Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_acreage
     description: Minimum acreage of the boundary (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_acreage
     description: Maximum acreage of the boundary (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: ids
     description: Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: names
     description: Names of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: property_filters
     description: 'Filters on key-value pairs within the Properties object.
 
       eg. "{testKey} eq {testValue}".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: statuses
     description: Statuses of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_created_date_time
     description: Minimum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_created_date_time
     description: Maximum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_last_modified_date_time
     description: Minimum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_last_modified_date_time
     description: Maximum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -339,81 +339,81 @@ methods:
     - <xref:str>
   - name: is_primary
     description: Is the boundary primary.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: parent_type
     description: Type of the parent it belongs to.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: parent_ids
     description: Parent Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_acreage
     description: Minimum acreage of the boundary (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_acreage
     description: Maximum acreage of the boundary (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: ids
     description: Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: names
     description: Names of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: property_filters
     description: 'Filters on key-value pairs within the Properties object.
 
       eg. "{testKey} eq {testValue}".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: statuses
     description: Statuses of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_created_date_time
     description: Minimum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_created_date_time
     description: Maximum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_last_modified_date_time
     description: Minimum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_last_modified_date_time
     description: Maximum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -435,7 +435,7 @@ methods:
   parameters:
   - name: query
     description: Query filters.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.SearchBoundaryQuery>
   - name: cls
@@ -462,7 +462,7 @@ methods:
     - <xref:str>
   - name: query
     description: Query filters.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.SearchBoundaryQuery>
   - name: cls

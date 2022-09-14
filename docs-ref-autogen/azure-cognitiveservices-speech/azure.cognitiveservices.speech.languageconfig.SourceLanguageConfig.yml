@@ -17,4 +17,4 @@ constructor:
     isRequired: true
   - name: endpointId
     description: The custom endpoint id
-    defaultValue: None
+    isRequired: true

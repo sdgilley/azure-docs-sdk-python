@@ -92,7 +92,7 @@ methods:
       JSON response objects. Any links in the response objects to Bing.com
 
       properties will apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: pragma
@@ -101,7 +101,7 @@ methods:
       To prevent Bing from returning cached content, set the Pragma header
 
       to no-cache (for example, Pragma: no-cache).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -116,7 +116,7 @@ methods:
       used browser would send. For information about user agents, see [RFC
 
       2616]([http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -189,7 +189,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -208,7 +208,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -279,7 +279,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: country_code
@@ -296,7 +296,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: market
@@ -304,7 +304,7 @@ methods:
       \ to always specify the market, if known. Specifying\nthe market helps Bing\
       \ route the request and return an appropriate and\noptimal response. This parameter\
       \ and the cc query parameter are\nmutually exclusive\u2014do not specify both."
-    defaultValue: en-us
+    isRequired: true
     types:
     - <xref:str>
   - name: response_filter
@@ -313,7 +313,7 @@ methods:
       in the response. If you do not specify this parameter, the response
 
       includes all search answers for which there''s relevant data.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.search.entitysearch.models.AnswerType>]
@@ -325,7 +325,7 @@ methods:
       default is JSON. If you specify JSONLD, the response body includes
 
       JSON-LD objects that contain the search results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.search.entitysearch.models.ResponseFormat>]
@@ -353,7 +353,7 @@ methods:
       possibility of adult content. Possible values include: ''Off'',
 
       ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.entitysearch.models.SafeSearch>
@@ -381,19 +381,19 @@ methods:
       Bing.com properties in the response objects apply the specified
 
       language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

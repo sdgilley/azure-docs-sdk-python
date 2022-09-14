@@ -124,7 +124,7 @@ functions:
     - <xref:int>
   - name: delimiter
     description: Ensure reading stops at delimiter bytestring
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bytes >(<xref:optional>)
   - name: using the delimiter= keyword argument we ensure that the read

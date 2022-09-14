@@ -178,7 +178,7 @@ methods:
       are
 
       ''instanceView''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -105,7 +105,7 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.clear_range
@@ -155,7 +155,7 @@ methods:
     - <xref:int>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.close_handles
@@ -178,12 +178,12 @@ methods:
     - <xref:str>
   - name: directory_name
     description: The path to the directory.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: file_name
     description: Name of existing file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: recursive
@@ -191,7 +191,7 @@ methods:
       specified in the URI,
 
       its files, its subdirectories and their files.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: handle_id
@@ -199,7 +199,7 @@ methods:
       be closed.
 
       Astrix (''*'') is a wildcard that specifies all handles.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: marker
@@ -211,17 +211,17 @@ methods:
       specified, this generator will begin closing handles from the point
 
       where the previous generator stopped.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.copy_file
@@ -286,12 +286,12 @@ methods:
       pairs are specified, the destination file is created with the specified
 
       metadata, and the metadata is not copied from the source blob or file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -327,24 +327,24 @@ methods:
     description: 'A dict with name_value pairs to associate with the
 
       share as metadata. Example:{''Category'':''test''}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)<xref::>
   - name: fail_on_exist
     description: 'specify whether to throw an exception when the directory exists.
 
       False by default.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: file_permission
     description: File permission, a portable SDDL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smb_properties
     description: Sets the SMB related file properties
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.SMBProperties>
   - name: timeout
@@ -392,22 +392,22 @@ methods:
     - <xref:int>
   - name: content_settings
     description: ContentSettings object used to set file properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the file as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: file_permission
     description: File permission, a portable SDDL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smb_properties
     description: Sets the SMB related file properties
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.SMBProperties>
   - name: timeout
@@ -449,24 +449,24 @@ methods:
     - <xref:str>
   - name: index
     description: Start index in the array of bytes.
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: count
     description: 'Number of bytes to upload. Set to None or negative value to upload
 
       all bytes starting from index.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: content_settings
     description: ContentSettings object used to set file properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the file as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -482,7 +482,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       file.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -491,22 +491,22 @@ methods:
       current is the number of bytes transfered so far and total is the
 
       size of the file, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
     description: Maximum number of parallel connections to use.
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: file_permission
     description: File permission, a portable SDDL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smb_properties
     description: Sets the SMB related file properties
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.SMBProperties>
   - name: timeout
@@ -551,12 +551,12 @@ methods:
     - <xref:str>
   - name: content_settings
     description: ContentSettings object used for setting file properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the file as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -572,7 +572,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       file.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -581,17 +581,17 @@ methods:
       current is the number of bytes transfered so far and total is the
 
       size of the file, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
     description: Maximum number of parallel connections to use.
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: file_permission
     description: File permission, a portable SDDL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smb_properties
@@ -605,7 +605,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.create_file_from_stream
@@ -647,12 +647,12 @@ methods:
     - <xref:int>
   - name: content_settings
     description: ContentSettings object used to set file properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the file as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -668,7 +668,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       file.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -677,7 +677,7 @@ methods:
       current is the number of bytes transfered so far and total is the
 
       size of the file, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -685,17 +685,17 @@ methods:
       upload
 
       requires the stream to be seekable.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: file_permission
     description: File permission, a portable SDDL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smb_properties
     description: Sets the SMB related file properties
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.SMBProperties>
   - name: timeout
@@ -738,17 +738,17 @@ methods:
     - <xref:str>
   - name: encoding
     description: Python encoding to use to convert the text to bytes.
-    defaultValue: utf-8
+    isRequired: true
     types:
     - <xref:str>
   - name: content_settings
     description: ContentSettings object used to set file properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the file as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -764,17 +764,17 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       file.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: file_permission
     description: File permission, a portable SDDL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smb_properties
     description: Sets the SMB related file properties
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.SMBProperties>
   - name: timeout
@@ -810,7 +810,7 @@ methods:
     isRequired: true
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
 - uid: azure.storage.file.fileservice.FileService.create_share
   name: create_share
   summary: 'Creates a new share under the specified account. If the share
@@ -832,26 +832,26 @@ methods:
     description: 'A dict with name_value pairs to associate with the
 
       share as metadata. Example:{''Category'':''test''}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: quota
     description: 'Specifies the maximum size of the share, in gigabytes. Must be
 
       greater than 0, and less than or equal to 5TB (5120).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: fail_on_exist
     description: 'Specify whether to throw an exception when the share exists.
 
       False by default.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -890,12 +890,12 @@ methods:
     description: 'Specify whether to throw an exception when the directory doesn''t
 
       exist.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -926,7 +926,7 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.delete_share
@@ -950,12 +950,12 @@ methods:
     description: 'Specify whether to throw an exception when the share doesn''t
 
       exist. False by default.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
@@ -964,12 +964,12 @@ methods:
       Specify this argument to delete a specific snapshot only.
 
       delete_snapshots must be None if this is specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: delete_snapshots
     description: To delete a share that has snapshots, this must be specified as DeleteSnapshot.Include.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.DeleteSnapshot>
   return:
@@ -996,22 +996,22 @@ methods:
     - <xref:str>
   - name: directory_name
     description: The path to a directory.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: file_name
     description: Name of a file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1071,7 +1071,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1086,7 +1086,7 @@ methods:
       For example, specifying sip=168.1.5.65 or sip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -1096,7 +1096,7 @@ methods:
       both HTTPS and HTTP (https,http) or HTTPS only (https). The default value
 
       is https,http. Note that HTTP only is not a permitted value.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1123,12 +1123,12 @@ methods:
       so
 
       this parameter should only be present if file_name is provided.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: file_name
     description: Name of file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: permission
@@ -1143,7 +1143,7 @@ methods:
       which contains this field. This field must be omitted if it has been
 
       specified in an associated stored access policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.FilePermissions>
   - name: expiry
@@ -1158,7 +1158,7 @@ methods:
       convert values to UTC. If a date is passed in without timezone info, it
 
       is assumed to be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1172,7 +1172,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1183,7 +1183,7 @@ methods:
       stored access policy. To create a stored access policy, use
 
       set_file_service_properties.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ip
@@ -1197,7 +1197,7 @@ methods:
       For example, specifying sip=168.1.5.65 or sip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -1207,42 +1207,42 @@ methods:
       both HTTPS and HTTP (https,http) or HTTPS only (https). The default value
 
       is https,http. Note that HTTP only is not a permitted value.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_control
     description: 'Response header value for Cache-Control when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_disposition
     description: 'Response header value for Content-Disposition when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_encoding
     description: 'Response header value for Content-Encoding when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_language
     description: 'Response header value for Content-Language when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_type
     description: 'Response header value for Content-Type when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1275,7 +1275,7 @@ methods:
       which contains this field. This field must be omitted if it has been
 
       specified in an associated stored access policy.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.SharePermissions>
   - name: expiry
@@ -1290,7 +1290,7 @@ methods:
       convert values to UTC. If a date is passed in without timezone info, it
 
       is assumed to be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1304,7 +1304,7 @@ methods:
       to UTC. If a date is passed in without timezone info, it is assumed to
 
       be UTC.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
     - <xref:str>
@@ -1313,7 +1313,7 @@ methods:
       a
 
       stored access policy. To create a stored access policy, use <xref:azure.storage.file.fileservice.FileService.set_share_acl>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: ip
@@ -1327,7 +1327,7 @@ methods:
       For example, specifying sip=168.1.5.65 or sip=168.1.5.60-168.1.5.70 on the SAS
 
       restricts the request to those IP addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: protocol
@@ -1337,42 +1337,42 @@ methods:
       both HTTPS and HTTP (https,http) or HTTPS only (https). The default value
 
       is https,http. Note that HTTP only is not a permitted value.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_control
     description: 'Response header value for Cache-Control when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_disposition
     description: 'Response header value for Content-Disposition when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_encoding
     description: 'Response header value for Content-Encoding when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_language
     description: 'Response header value for Content-Language when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: content_type
     description: 'Response header value for Content-Type when resource is accessed
 
       using this shared access signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1396,12 +1396,12 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1429,12 +1429,12 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1464,12 +1464,12 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1504,12 +1504,12 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1525,7 +1525,7 @@ methods:
   parameters:
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1567,7 +1567,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -1578,7 +1578,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -1602,7 +1602,7 @@ methods:
       will need to be done due to the reduced chunk size there may be some
 
       increase in latency.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -1611,7 +1611,7 @@ methods:
       where current is the number of bytes transfered so far, and total is
 
       the size of the file if known.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -1638,7 +1638,7 @@ methods:
       expected to be empty as an extra request is required for empty files
 
       if max_connections is greater than 1.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -1647,12 +1647,12 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1694,7 +1694,7 @@ methods:
       open_mode prevents parallel download. So, max_connections must be set
 
       to 1 if this open_mode is used.'
-    defaultValue: wb
+    isRequired: true
     types:
     - <xref:str>
   - name: start_range
@@ -1705,7 +1705,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -1716,7 +1716,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -1740,7 +1740,7 @@ methods:
       will need to be done due to the reduced chunk size there may be some
 
       increase in latency.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -1749,7 +1749,7 @@ methods:
       where current is the number of bytes transfered so far, and total is
 
       the size of the file if known.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -1776,7 +1776,7 @@ methods:
       expected to be empty as an extra request is required for empty files
 
       if max_connections is greater than 1.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -1785,12 +1785,12 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1837,7 +1837,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -1848,7 +1848,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -1872,7 +1872,7 @@ methods:
       will need to be done due to the reduced chunk size there may be some
 
       increase in latency.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -1881,7 +1881,7 @@ methods:
       where current is the number of bytes transfered so far, and total is
 
       the size of the file if known.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -1908,7 +1908,7 @@ methods:
       expected to be empty as an extra request is required for empty files
 
       if max_connections is greater than 1.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -1917,12 +1917,12 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1958,7 +1958,7 @@ methods:
     - <xref:str>
   - name: encoding
     description: Python encoding to use when decoding the file data.
-    defaultValue: utf-8
+    isRequired: true
     types:
     - <xref:str>
   - name: start_range
@@ -1969,7 +1969,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -1980,7 +1980,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: validate_content
@@ -2004,7 +2004,7 @@ methods:
       will need to be done due to the reduced chunk size there may be some
 
       increase in latency.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -2013,7 +2013,7 @@ methods:
       where current is the number of bytes transfered so far, and total is
 
       the size of the file if known.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -2040,7 +2040,7 @@ methods:
       expected to be empty as an extra request is required for empty files
 
       if max_connections is greater than 1.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
@@ -2049,12 +2049,12 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -2085,7 +2085,7 @@ methods:
     isRequired: true
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
 - uid: azure.storage.file.fileservice.FileService.get_share_acl
   name: get_share_acl
   summary: Gets the permissions for the specified share.
@@ -2098,7 +2098,7 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2117,12 +2117,12 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -2145,12 +2145,12 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -2176,7 +2176,7 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2200,7 +2200,7 @@ methods:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2236,7 +2236,7 @@ methods:
     - <xref:str>
   - name: directory_name
     description: The path to the directory.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: num_results
@@ -2249,7 +2249,7 @@ methods:
       return up to 5,000 items. Setting num_results to a value less than
 
       or equal to zero results in error response code 400 (Bad Request).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: marker
@@ -2262,22 +2262,22 @@ methods:
       specified, this generator will begin returning results from the point
 
       where the previous generator stopped.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: prefix
     description: List only the files and/or directories with the given prefix.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 - uid: azure.storage.file.fileservice.FileService.list_handles
@@ -2309,12 +2309,12 @@ methods:
     - <xref:str>
   - name: directory_name
     description: The path to the directory.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: file_name
     description: Name of existing file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: recursive
@@ -2322,7 +2322,7 @@ methods:
       specified in the URI,
 
       its files, its subdirectories and their files.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: max_results
@@ -2336,7 +2336,7 @@ methods:
 
       Setting max_results to a value less than or equal to zero results in error response
       code 400 (Bad Request).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: marker
@@ -2349,17 +2349,17 @@ methods:
       specified, this generator will begin returning results from the point
 
       where the previous generator stopped.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.list_ranges
@@ -2389,7 +2389,7 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: end_range
@@ -2398,17 +2398,17 @@ methods:
       The start_range and end_range params are inclusive.
 
       Ex: start_range=0, end_range=511 will download first 512 bytes of file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: snapshot
     description: A string that represents the snapshot version, if applicable.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -2440,17 +2440,17 @@ methods:
     description: 'Filters the results to return only shares whose names
 
       begin with the specified prefix.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: num_results
     description: Specifies the maximum number of shares to return.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: include_metadata
     description: Specifies that share metadata be returned in the response.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: marker
@@ -2463,17 +2463,17 @@ methods:
       specified, this generator will begin returning results from the point
 
       where the previous generator stopped.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: include_snapshots
     description: Specifies that share snapshots be returned in the response.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
 - uid: azure.storage.file.fileservice.FileService.make_file_url
@@ -2500,14 +2500,14 @@ methods:
     description: 'Protocol to use: ''http'' or ''https''. If not specified, uses the
 
       protocol specified when FileService was initialized.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: sas_token
     description: 'Shared access signature token created with
 
       generate_shared_access_signature.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -2545,7 +2545,7 @@ methods:
     - <xref:int>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.set_directory_metadata
@@ -2573,12 +2573,12 @@ methods:
     description: 'A dict containing name-value pairs to associate with the directory
 
       as metadata. Example: {''category'':''test''}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.set_directory_properties
@@ -2594,7 +2594,7 @@ methods:
     isRequired: true
   - name: file_permission
     description: File permission, a portable SDDL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smb_properties
@@ -2604,7 +2604,7 @@ methods:
     - <xref:azure.storage.file.models.SMBProperties>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.set_file_metadata
@@ -2636,12 +2636,12 @@ methods:
       replaces all existing metadata attached to the file. To remove all
 
       metadata from the file, call this operation with no metadata headers.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.set_file_properties
@@ -2675,12 +2675,12 @@ methods:
     - <xref:azure.storage.file.models.ContentSettings>
   - name: file_permission
     description: File permission, a portable SDDL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: smb_properties
     description: Sets the SMB related file properties
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.file.models.SMBProperties>
   - name: timeout
@@ -2702,14 +2702,14 @@ methods:
     description: 'The hour metrics settings provide a summary of request
 
       statistics grouped by API in hourly aggregates for files.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Metrics>
   - name: minute_metrics
     description: 'The minute metrics settings provide request statistics
 
       for each minute for files.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Metrics>
   - name: cors
@@ -2718,12 +2718,12 @@ methods:
       list. If an empty list is specified, all CORS rules will be deleted,
 
       and CORS will be disabled for the service.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>(<xref:azure.storage.common.models.CorsRule>)
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.set_share_acl
@@ -2744,12 +2744,12 @@ methods:
       dictionary may contain up to 5 elements. An empty dictionary
 
       will clear the access policies set on the service.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:azure.storage.common.models.AccessPolicy>)
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.set_share_metadata
@@ -2772,12 +2772,12 @@ methods:
     description: 'A dict containing name-value pairs to associate with the share as
 
       metadata. Example: {''category'':''test''}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.set_share_properties
@@ -2799,7 +2799,7 @@ methods:
     - <xref:int>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.snapshot_share
@@ -2816,19 +2816,19 @@ methods:
     description: 'A dict with name_value pairs to associate with the
 
       share as metadata. Example:{''Category'':''test''}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:<xref:a dict of str to str:>>
   - name: quota
     description: 'Specifies the maximum size of the share, in gigabytes. Must be
 
       greater than 0, and less than or equal to 5TB (5120).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -2895,12 +2895,12 @@ methods:
       will already validate. Note that this MD5 hash is not stored with the
 
       file.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.file.fileservice.FileService.update_range_from_file_url
@@ -2979,7 +2979,7 @@ methods:
     - <xref:int>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 attributes:

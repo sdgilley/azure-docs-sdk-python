@@ -63,7 +63,7 @@ methods:
 
       properties/usageEnd. Supported operators are ''eq'',''lt'', ''gt'', ''le'',
       ''ge''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
@@ -71,7 +71,7 @@ methods:
       By
 
       default, data is not included when listing dimensions.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skiptoken
@@ -83,13 +83,13 @@ methods:
 
       a skiptoken parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: May be used to limit the number of results to the most recent N dimension
       data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls
@@ -153,7 +153,7 @@ methods:
 
       properties/usageEnd. Supported operators are ''eq'',''lt'', ''gt'', ''le'',
       ''ge''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
@@ -161,7 +161,7 @@ methods:
       By
 
       default, data is not included when listing dimensions.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skiptoken
@@ -173,13 +173,13 @@ methods:
 
       a skiptoken parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: May be used to limit the number of results to the most recent N dimension
       data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

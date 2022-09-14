@@ -15,7 +15,7 @@ constructor:
     description: 'A time in seconds that locks registered to this renewer
 
       should be maintained for. Default value is 300 (5 minutes).'
-    defaultValue: '300'
+    isRequired: true
     types:
     - <xref:float>
   - name: on_lock_renew_failure
@@ -23,14 +23,14 @@ constructor:
       the renewable
 
       that is being registered. Default value is None (no callback).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:LockRenewFailureCallback>]
   - name: executor
     description: 'A user-specified thread pool. This cannot be combined with
 
       setting *max_workers*.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:concurrent.futures.ThreadPoolExecutor>]
   - name: max_workers
@@ -39,7 +39,7 @@ constructor:
       specified the number used will be derived from the core count of the environment.
 
       This cannot be combined with *executor*.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:int>]
 examples:
@@ -75,7 +75,7 @@ methods:
   parameters:
   - name: wait
     description: Whether to block until thread pool has shutdown. Default is *True*.
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -105,7 +105,7 @@ methods:
     description: 'A time in seconds that the lock should be maintained for.
 
       Default value is 300 (5 minutes).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:float>]
   - name: on_lock_renew_failure
@@ -113,7 +113,7 @@ methods:
       the renewable
 
       that is being registered. Default value is None (no callback).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:LockRenewFailureCallback>]
   return:

@@ -38,40 +38,40 @@ constructor:
     description: 'The total remaining seconds until the token
 
       expires.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.timedelta>
   - name: expires_at
     description: 'The timestamp at which the SAS token will expire
 
       formatted as seconds since epoch.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: username
     description: 'The SAS token username, also referred to as the key
 
       name or policy name. This can optionally be encoded into the URI.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: password
     description: 'The SAS token password, also referred to as the key.
 
       This can optionally be encoded into the URI.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: port
     description: The TLS port - default for AMQP is 5671.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
     description: 'The timeout in seconds in which to negotiate the token.
 
       The default value is 10 seconds.'
-    defaultValue: '10'
+    isRequired: true
     types:
     - <xref:float>
   - name: retry_policy
@@ -83,14 +83,14 @@ constructor:
     - <xref:uamqp.authentication.cbs_auth.TokenRetryPolicy>
   - name: verify
     description: The path to a user-defined certificate.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: token_type
     description: 'The type field of the token request.
 
       Default value is *b"servicebus.windows.net:sastoken"*.'
-    defaultValue: b'servicebus.windows.net:sastoken'
+    isRequired: true
     types:
     - <xref:bytes>
   - name: http_proxy
@@ -100,7 +100,7 @@ constructor:
       optional
 
       keys are ''username'' and ''password''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: transport_type
@@ -110,14 +110,14 @@ constructor:
       the
 
       transport type is explicitly requested.'
-    defaultValue: TransportType.Amqp
+    isRequired: true
     types:
     - <xref:uamqp.TransportType>
   - name: encoding
     description: 'The encoding to use if hostname is provided as a str.
 
       Default is ''UTF-8''.'
-    defaultValue: UTF-8
+    isRequired: true
     types:
     - <xref:str>
   - name: refresh_window
@@ -170,21 +170,21 @@ methods:
     - <xref:int>
   - name: port
     description: The TLS port - default for AMQP is 5671.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: timeout
     description: 'The timeout in seconds in which to negotiate the token.
 
       The default value is 10 seconds.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: retry_policy
     description: 'The retry policy for the PUT token request. The default
 
       retry policy has 3 retries.'
-    defaultValue: '10'
+    isRequired: true
     types:
     - <xref:uamqp.authentication.cbs_auth.TokenRetryPolicy>
   - name: verify
@@ -199,7 +199,7 @@ methods:
       optional
 
       keys are ''username'' and ''password''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: transport_type
@@ -209,19 +209,18 @@ methods:
       the
 
       transport type is explicitly requested.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:uamqp.TransportType>
   - name: encoding
     description: 'The encoding to use if hostname is provided as a str.
 
       Default is ''UTF-8''.'
-    defaultValue: TransportType.Amqp
+    isRequired: true
     types:
     - <xref:str>
   - name: refresh_window
     description: The time in seconds before the token expiration
-    defaultValue: UTF-8
     types:
     - <xref:int>
 - uid: uamqp.authentication.cbs_auth.SASTokenAuth.update_token

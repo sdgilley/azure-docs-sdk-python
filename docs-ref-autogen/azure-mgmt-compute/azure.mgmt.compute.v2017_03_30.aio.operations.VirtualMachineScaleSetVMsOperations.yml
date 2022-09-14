@@ -475,12 +475,12 @@ methods:
       ''startswith(instanceView/statuses/code, ''PowerState'') eq true'', ''properties/latestModelApplied
 
       eq true'', ''properties/latestModelApplied eq false''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: select
     description: The list parameters. Allowed values are 'instanceView', 'instanceView/statuses'.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
@@ -488,7 +488,7 @@ methods:
       are
 
       ''instanceView''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

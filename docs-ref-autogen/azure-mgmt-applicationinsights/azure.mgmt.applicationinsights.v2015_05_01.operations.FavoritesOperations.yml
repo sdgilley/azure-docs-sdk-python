@@ -65,14 +65,14 @@ methods:
     - <xref:azure.mgmt.applicationinsights.v2015_05_01.models.ApplicationInsightsComponentFavorite>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -120,14 +120,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -173,14 +173,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -223,7 +223,7 @@ methods:
     description: 'The type of favorite. Value can be either shared
 
       or user. Possible values include: ''shared'', ''user'''
-    defaultValue: shared
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.applicationinsights.v2015_05_01.models.FavoriteType>
@@ -235,7 +235,7 @@ methods:
       Possible values include: ''retention'', ''notebook'', ''sessions'',
 
       ''events'', ''userflows'', ''funnel'', ''impact'', ''segmentation'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.applicationinsights.v2015_05_01.models.FavoriteSourceType>
@@ -245,24 +245,24 @@ methods:
       full content for each applicable favorite. If false, only return
 
       summary content for favorites.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: tags
     description: Tags that must be present on each favorite returned.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -315,14 +315,14 @@ methods:
     - <xref:azure.mgmt.applicationinsights.v2015_05_01.models.ApplicationInsightsComponentFavorite>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

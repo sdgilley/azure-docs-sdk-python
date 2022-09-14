@@ -16,21 +16,16 @@ constructor:
     - <xref:float>
   - name: south
     description: The southmost value of coordinates.
-    defaultValue: '0.0'
     types:
     - <xref:float>
   - name: east
     description: The eastmost value of coordinates.
-    defaultValue: '0.0'
     types:
     - <xref:float>
   - name: north
     description: The northmost value of coordinates.
-    defaultValue: '0.0'
     types:
     - <xref:float>
-  - name: north
-    defaultValue: '0.0'
 attributes:
 - uid: azure.maps.search.models.BoundingBox.east
   name: east

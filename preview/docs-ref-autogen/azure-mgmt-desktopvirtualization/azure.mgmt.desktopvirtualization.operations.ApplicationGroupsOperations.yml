@@ -129,7 +129,7 @@ methods:
     description: 'OData filter expression. Valid properties for filtering are
 
       applicationGroupType.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -153,7 +153,7 @@ methods:
     description: 'OData filter expression. Valid properties for filtering are
 
       applicationGroupType.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -185,7 +185,7 @@ methods:
     - <xref:str>
   - name: application_group
     description: Object containing ApplicationGroup definitions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.ApplicationGroupPatch>
   - name: cls

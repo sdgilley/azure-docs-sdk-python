@@ -272,7 +272,7 @@ methods:
     - <xref:str>
   - name: expand
     description: The expand expression to apply on the operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.compute.v2019_07_01.models.ReplicationStatusTypes>

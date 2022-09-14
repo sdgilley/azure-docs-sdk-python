@@ -233,7 +233,7 @@ methods:
       by the platform
 
       and can change outside of control plane operations.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.compute.v2021_04_01.models.CapacityReservationInstanceViewTypes>

@@ -107,7 +107,7 @@ methods:
     - <xref:str>
   - name: expand_detector
     description: Indicates if Smart Detector should be expanded.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -127,7 +127,7 @@ methods:
   parameters:
   - name: expand_detector
     description: Indicates if Smart Detector should be expanded.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -155,7 +155,7 @@ methods:
     - <xref:str>
   - name: expand_detector
     description: Indicates if Smart Detector should be expanded.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

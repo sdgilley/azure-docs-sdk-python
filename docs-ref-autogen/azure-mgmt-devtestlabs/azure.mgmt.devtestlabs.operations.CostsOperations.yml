@@ -90,7 +90,7 @@ methods:
     - <xref:str>
   - name: expand
     description: 'Specify the $expand query. Example: ''properties($expand=labCostDetails)''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

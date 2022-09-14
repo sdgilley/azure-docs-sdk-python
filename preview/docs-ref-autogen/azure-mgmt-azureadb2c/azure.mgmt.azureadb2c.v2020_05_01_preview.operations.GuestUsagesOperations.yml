@@ -53,7 +53,7 @@ methods:
     - <xref:str>
   - name: resource
     description: Guest Usages resource to be created.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:$>(<xref:python-base-namespace>)<xref:azure.mgmt.azureadb2c.v2020_05_01_preview.models.GuestUsagesResource>
   - name: cls
@@ -194,7 +194,7 @@ methods:
     - <xref:str>
   - name: resource_patch
     description: Guest Usages Resource to be updated.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:$>(<xref:python-base-namespace>)<xref:azure.mgmt.azureadb2c.v2020_05_01_preview.models.GuestUsagesResourcePatch>
   - name: cls

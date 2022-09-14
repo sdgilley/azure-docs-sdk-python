@@ -49,7 +49,7 @@ constructor:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: api_version
     description: 'The Storage API version to use for requests. Default value is the
       most recent service version that is
@@ -796,7 +796,7 @@ methods:
       snapshot ID string
 
       or the response returned from <xref:azure.storage.blob.aio.BlobClient.create_snapshot>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

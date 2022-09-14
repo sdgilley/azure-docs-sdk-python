@@ -24,7 +24,7 @@ methods:
   parameters:
   - name: auth_uri
     description: If provided, this function will try to open a local browser.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout

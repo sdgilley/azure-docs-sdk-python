@@ -90,7 +90,7 @@ methods:
     - <xref:str>
   - name: session_id
     description: The recommendation action session identifier.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

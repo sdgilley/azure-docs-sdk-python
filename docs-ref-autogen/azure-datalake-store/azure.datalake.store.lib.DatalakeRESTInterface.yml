@@ -12,19 +12,19 @@ constructor:
   parameters:
   - name: store_name
     description: The name of the Data Lake Store account to execute operations against.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: token
     description: from *auth()* or *refresh_token()* or other ADAL source
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: url_suffix
     description: 'Domain to send REST requests to. The end-point URL is constructed
 
       using this and the store_name. If None, use default.'
-    defaultValue: azuredatalakestore.net
+    isRequired: true
     types:
     - <xref:str >(<xref:None>)
   - name: api_version
@@ -33,12 +33,12 @@ constructor:
       change the behavior of the requests, and can cause unexpected behavior or
 
       breaking changes. Changes to this value should be undergone with caution.'
-    defaultValue: '2018-09-01'
+    isRequired: true
     types:
     - <xref:str >(<xref:2018-09-01>)
   - name: req_timeout_s
     description: This is the timeout for each requests library call.
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:float>(<xref:60>)
   - name: kwargs
@@ -74,7 +74,7 @@ methods:
 
       methods specific to Azure Data Lake Store target the extension path (such as
       SETEXPIRY).'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool >(<xref:False>)
   - name: expected_error_code
@@ -88,18 +88,16 @@ methods:
       to handle it
 
       and do something different if it is raised.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: kwargs
     description: 'other parameters, as defined by the webHDFS standard and
 
       [https://msdn.microsoft.com/en-us/library/mt710547.aspx](https://msdn.microsoft.com/en-us/library/mt710547.aspx)'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
-  - name: headers
-    defaultValue: '{}'
 - uid: azure.datalake.store.lib.DatalakeRESTInterface.is_successful_response
   name: is_successful_response
   signature: is_successful_response(response, exception)
@@ -123,10 +121,10 @@ attributes:
   name: session
 - uid: azure.datalake.store.lib.DatalakeRESTInterface.ends
   name: ends
-  signature: 'ends = {''APPEND'': (''post'', set(), {''leaseid'', ''filesessionid'',
-    ''syncFlag'', ''offset'', ''append''}), ''CHECKACCESS'': (''get'', set(), {''fsaction''}),
+  signature: 'ends = {''APPEND'': (''post'', set(), {''leaseid'', ''append'', ''filesessionid'',
+    ''syncFlag'', ''offset''}), ''CHECKACCESS'': (''get'', set(), {''fsaction''}),
     ''CONCAT'': (''post'', {''sources''}, {''sources''}), ''CREATE'': (''put'', set(),
-    {''filesessionid'', ''write'', ''syncFlag'', ''leaseid'', ''overwrite''}), ''DELETE'':
+    {''leaseid'', ''overwrite'', ''filesessionid'', ''syncFlag'', ''write''}), ''DELETE'':
     (''delete'', set(), {''recursive''}), ''GETCONTENTSUMMARY'': (''get'', set(),
     set()), ''GETFILESTATUS'': (''get'', set(), set()), ''LISTSTATUS'': (''get'',
     set(), {''listSize'', ''listAfter''}), ''MKDIRS'': (''put'', set(), set()), ''MODIFYACLENTRIES'':
@@ -136,5 +134,5 @@ attributes:
     (''put'', {''aclSpec''}, {''aclSpec''}), ''REMOVEDEFAULTACL'': (''put'', set(),
     set()), ''RENAME'': (''put'', {''destination''}, {''destination''}), ''SETACL'':
     (''put'', {''aclSpec''}, {''aclSpec''}), ''SETEXPIRY'': (''put'', {''expiryOption''},
-    {''expireTime'', ''expiryOption''}), ''SETOWNER'': (''put'', set(), {''owner'',
-    ''group''}), ''SETPERMISSION'': (''put'', set(), {''permission''})}'
+    {''expireTime'', ''expiryOption''}), ''SETOWNER'': (''put'', set(), {''group'',
+    ''owner''}), ''SETPERMISSION'': (''put'', set(), {''permission''})}'

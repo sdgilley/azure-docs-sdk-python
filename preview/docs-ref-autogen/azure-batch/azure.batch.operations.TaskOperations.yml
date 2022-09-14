@@ -56,19 +56,19 @@ methods:
     - <xref:azure.batch.models.TaskAddParameter>
   - name: task_add_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskAddOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -146,19 +146,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskAddCollectionOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: threads
@@ -168,7 +168,7 @@ methods:
       for them to finish.
 
       Otherwise will submit add_collection requests sequentially on main thread'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -211,19 +211,19 @@ methods:
     - <xref:str>
   - name: task_delete_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskDeleteOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -263,19 +263,19 @@ methods:
     - <xref:str>
   - name: task_get_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskGetOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -310,19 +310,19 @@ methods:
     - <xref:str>
   - name: task_list_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskListOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -363,19 +363,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskListSubtasksOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -429,19 +429,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskReactivateOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -483,19 +483,19 @@ methods:
     - <xref:str>
   - name: task_terminate_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskTerminateOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -534,24 +534,24 @@ methods:
       updating the retention time applies only to the primary Task and not
 
       subtasks.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskConstraints>
   - name: task_update_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.TaskUpdateOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

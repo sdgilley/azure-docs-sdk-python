@@ -54,7 +54,7 @@ methods:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -86,7 +86,7 @@ methods:
     - <xref:str>
   - name: client_request_id
     description: Identifies this specific client request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
@@ -96,17 +96,17 @@ methods:
       ''properties/osType'', ''properties/status'', ''properties/startTime'', and
 
       ''properties/softwareUpdateConfiguration/name''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip
     description: Number of entries you skip before returning results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: Maximum number of entries returned in the results collection.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

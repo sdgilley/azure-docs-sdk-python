@@ -96,7 +96,7 @@ methods:
     - <xref:str>
   - name: expand
     description: May be used to expand the soldTo, invoice sections and billing profiles.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -116,7 +116,7 @@ methods:
   parameters:
   - name: expand
     description: May be used to expand the soldTo, invoice sections and billing profiles.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

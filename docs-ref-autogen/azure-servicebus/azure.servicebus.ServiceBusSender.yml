@@ -134,7 +134,7 @@ methods:
       can
 
       hold. By default, the value is determined by your Service Bus tier.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:int>]
   return:

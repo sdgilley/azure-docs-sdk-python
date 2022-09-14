@@ -18,22 +18,22 @@ constructor:
     - <xref:str>
   - name: description
     description: Description of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: credentials
     description: Credentials to use for Azure ML workspace to connect to the storage.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:ServicePrincipalSection>, <xref:CertificateSection>]
   - name: tags
     description: Tag dictionary. Tags can be added, removed, and updated.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: properties
     description: The asset property dictionary.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: kwargs

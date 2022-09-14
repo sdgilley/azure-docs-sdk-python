@@ -57,32 +57,32 @@ methods:
     - <xref:str>
   - name: tags
     description: Resource tags.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: norad_id
     description: NORAD ID of the spacecraft.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: title_line
     description: Title line of Two Line Element (TLE).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tle_line1
     description: Line 1 of Two Line Element (TLE).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tle_line2
     description: Line 2 of Two Line Element (TLE).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: links
     description: Links of the Spacecraft.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure_orbital.models.SpacecraftLink>]
   - name: cls

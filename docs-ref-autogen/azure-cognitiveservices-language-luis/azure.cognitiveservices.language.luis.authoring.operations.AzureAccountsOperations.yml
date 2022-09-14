@@ -44,26 +44,26 @@ methods:
     description: 'The custom arm token header to use; containing the
 
       user''s ARM token used to validate azure accounts information.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: azure_account_info_object
     description: 'The Azure account information
 
       object.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cognitiveservices.language.luis.authoring.models.AzureAccountInfoObject>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -98,19 +98,19 @@ methods:
     description: 'The custom arm token header to use; containing the
 
       user''s ARM token used to validate azure accounts information.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -138,19 +138,19 @@ methods:
     description: 'The custom arm token header to use; containing the
 
       user''s ARM token used to validate azure accounts information.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -183,26 +183,26 @@ methods:
     description: 'The custom arm token header to use; containing the
 
       user''s ARM token used to validate azure accounts information.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: azure_account_info_object
     description: 'The Azure account information
 
       object.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cognitiveservices.language.luis.authoring.models.AzureAccountInfoObject>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

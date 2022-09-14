@@ -15,21 +15,21 @@ constructor:
   parameters:
   - name: default_datastore
     description: The default datastore of pipeline.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: default_compute
     description: The default compute target of pipeline.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: continue_on_step_failure
     description: Flag when set, continue pipeline execution if a step fails.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: force_rerun
     description: Flag will force rerun pipeline execution after set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>

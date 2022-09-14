@@ -77,7 +77,7 @@ methods:
       has requests
 
       targeted for.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

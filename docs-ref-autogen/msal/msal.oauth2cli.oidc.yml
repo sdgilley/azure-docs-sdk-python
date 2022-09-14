@@ -23,8 +23,6 @@ functions:
 
       it is a binary string so you should use *None* as encoding here.'
     isRequired: true
-  - name: encoding
-    defaultValue: utf-8
 - uid: msal.oauth2cli.oidc.decode_id_token
   name: decode_id_token
   summary: 'Decodes and validates an id_token and returns its claims as a dictionary.
@@ -68,8 +66,6 @@ functions:
 
       it is a binary string so you should use *None* as encoding here.'
     isRequired: true
-  - name: encoding
-    defaultValue: utf-8
 classes:
 - msal.oauth2cli.oidc.Client
 - msal.oauth2cli.oidc.Prompt

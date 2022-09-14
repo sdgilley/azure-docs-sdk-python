@@ -110,7 +110,7 @@ methods:
     - <xref:str>
   - name: get_metadata_request
     description: The parameters for getting a SSIS object metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.synapse.models.GetSsisObjectMetadataRequest>
   - name: cls

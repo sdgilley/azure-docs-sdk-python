@@ -104,15 +104,15 @@ methods:
     - <xref:str>
   - name: expand
     description: The expand expression to apply on the operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: orderby
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

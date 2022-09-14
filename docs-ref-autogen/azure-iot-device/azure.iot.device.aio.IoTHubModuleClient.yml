@@ -507,7 +507,7 @@ methods:
   - name: module_id
     description: Module ID of the target module where the method will be invoked.
       (Optional)
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -597,7 +597,7 @@ methods:
       by
 
       a different call to receive_method will be received.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

@@ -277,7 +277,7 @@ methods:
     - <xref:str>
   - name: versions_description
     description: The upgrade path description with target version.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.servicefabric.models.UpgradableVersionsDescription>
   - name: cls

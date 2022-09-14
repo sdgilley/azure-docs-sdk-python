@@ -15,7 +15,6 @@ constructor:
   parameters:
   - name: status_code
     description: HTTP request status code.
-    defaultValue: None
     types:
     - <xref:int>
   - name: response

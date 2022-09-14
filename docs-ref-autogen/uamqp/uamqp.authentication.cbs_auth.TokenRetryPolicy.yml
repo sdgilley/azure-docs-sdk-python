@@ -17,13 +17,13 @@ constructor:
       PUT token request. The default is 3. This is exclusive of
 
       the initial attempt.'
-    defaultValue: '3'
+    isRequired: true
     types:
     - <xref:int>
   - name: backoff
     description: 'The time in miliseconds to wait between
 
       retry attempts.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>

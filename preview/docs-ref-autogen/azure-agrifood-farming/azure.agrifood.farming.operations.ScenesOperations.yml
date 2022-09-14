@@ -44,7 +44,7 @@ methods:
     - <xref:str>
   - name: job
     description: Job parameters supplied by user.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.SatelliteDataIngestionJob>
   - name: cls
@@ -139,66 +139,66 @@ methods:
     - <xref:str>
   - name: provider
     description: Provider name of scene data.
-    defaultValue: Microsoft
+    isRequired: true
     types:
     - <xref:str>
   - name: source
     description: Source name of scene data, default value Sentinel_2_L2A (Sentinel
       2 L2A).
-    defaultValue: Sentinel_2_L2A
+    isRequired: true
     types:
     - <xref:str>
   - name: start_date_time
     description: 'Scene start UTC datetime (inclusive), sample format:
 
       yyyy-MM-ddThh:mm:ssZ.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_date_time
     description: 'Scene end UTC datetime (inclusive), sample format: yyyy-MM-dThh:mm:ssZ.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_cloud_coverage_percentage
     description: 'Filter scenes with cloud coverage percentage less than
 
       max value. Range [0 to 100.0].'
-    defaultValue: '100'
+    isRequired: true
     types:
     - <xref:float>
   - name: max_dark_pixel_coverage_percentage
     description: 'Filter scenes with dark pixel coverage percentage
 
       less than max value. Range [0 to 100.0].'
-    defaultValue: '100'
+    isRequired: true
     types:
     - <xref:float>
   - name: image_names
     description: List of image names to be filtered.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: image_resolutions
     description: List of image resolutions in meters to be filtered.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:float>]
   - name: image_formats
     description: List of image formats to be filtered.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

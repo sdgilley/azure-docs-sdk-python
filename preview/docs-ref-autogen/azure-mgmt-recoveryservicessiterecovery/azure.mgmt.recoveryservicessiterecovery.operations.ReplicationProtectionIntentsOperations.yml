@@ -94,12 +94,12 @@ methods:
   parameters:
   - name: skip_token
     description: The pagination token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: take_token
     description: The page size.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

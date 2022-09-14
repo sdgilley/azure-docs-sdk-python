@@ -53,7 +53,7 @@ constructor:
       account name, and "key"
 
       should be the storage account key.'
-    defaultValue: None
+    isRequired: true
   - name: api_version
     description: 'The Storage API version to use for requests. Default value is the
       most recent service version that is

@@ -105,7 +105,7 @@ methods:
     - <xref:str>
   - name: vm_instance_i_ds
     description: A list of virtual machine instance IDs from the VM scale set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_06_01.models.VirtualMachineScaleSetVMInstanceIDs>
   - name: cls
@@ -257,7 +257,7 @@ methods:
     - <xref:str>
   - name: vm_instance_i_ds
     description: A list of virtual machine instance IDs from the VM scale set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_06_01.models.VirtualMachineScaleSetVMInstanceIDs>
   - name: cls
@@ -319,12 +319,12 @@ methods:
       value for this
 
       flag is false if not specified.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: vm_instance_i_ds
     description: A list of virtual machine instance IDs from the VM scale set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_06_01.models.VirtualMachineScaleSetVMInstanceIDs>
   - name: cls
@@ -377,7 +377,7 @@ methods:
     - <xref:str>
   - name: vm_instance_i_ds
     description: A list of virtual machine instance IDs from the VM scale set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_06_01.models.VirtualMachineScaleSetVMInstanceIDs>
   - name: cls
@@ -433,7 +433,7 @@ methods:
     - <xref:str>
   - name: vm_scale_set_reimage_input
     description: Parameters for Reimaging VM ScaleSet.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_06_01.models.VirtualMachineScaleSetReimageParameters>
   - name: cls
@@ -486,7 +486,7 @@ methods:
     - <xref:str>
   - name: vm_instance_i_ds
     description: A list of virtual machine instance IDs from the VM scale set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_06_01.models.VirtualMachineScaleSetVMInstanceIDs>
   - name: cls
@@ -536,7 +536,7 @@ methods:
     - <xref:str>
   - name: vm_instance_i_ds
     description: A list of virtual machine instance IDs from the VM scale set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_06_01.models.VirtualMachineScaleSetVMInstanceIDs>
   - name: cls
@@ -635,7 +635,7 @@ methods:
     - <xref:str>
   - name: vm_instance_i_ds
     description: A list of virtual machine instance IDs from the VM scale set.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_06_01.models.VirtualMachineScaleSetVMInstanceIDs>
   - name: cls

@@ -37,19 +37,19 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -60,7 +60,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -84,19 +84,19 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -126,27 +126,27 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: data_representation
-    defaultValue: URL
+    isRequired: true
     types:
     - <xref:str>
   - name: value
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -170,19 +170,19 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -212,19 +212,19 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -235,7 +235,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -265,27 +265,27 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: data_representation
-    defaultValue: URL
+    isRequired: true
     types:
     - <xref:str>
   - name: value
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -327,26 +327,26 @@ methods:
     - <xref:Generator>
   - name: list_id
     description: The list Id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_image
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -357,7 +357,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -394,26 +394,26 @@ methods:
   parameters:
   - name: list_id
     description: The list Id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_image
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -455,34 +455,34 @@ methods:
     - <xref:str>
   - name: list_id
     description: The list Id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_image
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: data_representation
-    defaultValue: URL
+    isRequired: true
     types:
     - <xref:str>
   - name: value
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -519,7 +519,7 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: enhanced
@@ -530,19 +530,19 @@ methods:
       image/tiff is not supported when enhanced is set to true
 
       Note: This impacts the response time.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -553,7 +553,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -585,7 +585,7 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: enhanced
@@ -596,19 +596,19 @@ methods:
       image/tiff is not supported when enhanced is set to true
 
       Note: This impacts the response time.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -645,7 +645,7 @@ methods:
     description: 'Whether to retain the submitted image for future
 
       use; defaults to false if omitted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: enhanced
@@ -656,27 +656,27 @@ methods:
       image/tiff is not supported when enhanced is set to true
 
       Note: This impacts the response time.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: data_representation
-    defaultValue: URL
+    isRequired: true
     types:
     - <xref:str>
   - name: value
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

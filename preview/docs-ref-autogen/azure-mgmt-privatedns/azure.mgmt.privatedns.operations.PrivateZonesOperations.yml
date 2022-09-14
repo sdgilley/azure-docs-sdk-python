@@ -64,7 +64,7 @@ methods:
       any
 
       concurrent changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -72,7 +72,7 @@ methods:
       to prevent
 
       updating an existing zone. Other values will be ignored.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -130,7 +130,7 @@ methods:
 
       zone. Specify the last-seen ETag value to prevent accidentally deleting any
       concurrent changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -192,7 +192,7 @@ methods:
       any
 
       concurrent changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -261,7 +261,7 @@ methods:
       returns up to
 
       100 zones.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls
@@ -291,7 +291,7 @@ methods:
       up to 100
 
       record sets.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

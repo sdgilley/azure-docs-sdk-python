@@ -25,15 +25,15 @@ constructor:
     - <xref:str>
   - name: headers
     description: HTTP headers
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str,str>]
   - name: files
     description: Files list.
-    defaultValue: None
+    isRequired: true
   - name: data
     description: Body to be sent.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bytes>
     - <xref:str.>
@@ -67,7 +67,7 @@ methods:
   parameters:
   - name: content_index
     description: The current index of parts within the batch message.
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -101,7 +101,7 @@ methods:
   parameters:
   - name: data
     description: The request field data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
 - uid: azure.core.pipeline.transport.HttpRequest.set_json_body

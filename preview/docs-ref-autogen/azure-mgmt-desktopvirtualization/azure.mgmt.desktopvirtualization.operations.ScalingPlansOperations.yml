@@ -196,7 +196,7 @@ methods:
     - <xref:str>
   - name: scaling_plan
     description: Object containing scaling plan definitions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.ScalingPlanPatch>
   - name: cls

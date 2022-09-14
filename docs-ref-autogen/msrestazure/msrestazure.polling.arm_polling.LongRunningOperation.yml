@@ -24,7 +24,7 @@ constructor:
     - <xref:callable>
   - name: lro_options
     description: LRO options.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: kwargs

@@ -112,22 +112,22 @@ methods:
     - <xref:str>
   - name: filter
     description: The filter to apply on the operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip
     description: The number of rows to skip.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: top
     description: The number of rows to take.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: inlinecount
     description: Return total rows.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

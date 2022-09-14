@@ -230,7 +230,7 @@ methods:
   - name: filter
     description: The filter to apply on the list operation. eg. $filter=ledgerType
       eq 'Public'.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -256,7 +256,7 @@ methods:
   - name: filter
     description: The filter to apply on the list operation. eg. $filter=ledgerType
       eq 'Public'.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

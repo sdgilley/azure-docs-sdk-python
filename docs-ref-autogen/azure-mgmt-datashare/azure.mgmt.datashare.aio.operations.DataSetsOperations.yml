@@ -199,17 +199,17 @@ methods:
     - <xref:str>
   - name: skip_token
     description: continuation token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: Filters the results using OData syntax.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
     description: Sorts the results using OData syntax.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

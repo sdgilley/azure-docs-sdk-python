@@ -51,31 +51,31 @@ methods:
     description: 'Indicates whether to get extra metadata for the
 
       entities predictions or not.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: show_all_intents
     description: 'Indicates whether to return all the intents
 
       in the response or just the top intent.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: log
     description: Indicates whether to log the endpoint query or not.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -115,31 +115,31 @@ methods:
     description: 'Indicates whether to get extra metadata for the
 
       entities predictions or not.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: show_all_intents
     description: 'Indicates whether to return all the intents
 
       in the response or just the top intent.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: log
     description: Indicates whether to log the endpoint query or not.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

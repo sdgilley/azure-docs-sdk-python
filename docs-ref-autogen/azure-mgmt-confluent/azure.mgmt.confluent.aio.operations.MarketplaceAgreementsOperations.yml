@@ -42,7 +42,7 @@ methods:
   parameters:
   - name: body
     description: Confluent Agreement resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.confluent.models.ConfluentAgreementResource>
   - name: cls

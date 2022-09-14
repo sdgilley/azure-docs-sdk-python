@@ -198,7 +198,7 @@ methods:
     - <xref:str>
   - name: skip_token
     description: Continuation Token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

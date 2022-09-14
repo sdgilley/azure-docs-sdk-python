@@ -15,11 +15,8 @@ constructor:
     - <xref:float>
   - name: lon
     description: The coordinate as longitude.
-    defaultValue: '0'
     types:
     - <xref:float>
-  - name: lon
-    defaultValue: '0'
 attributes:
 - uid: azure.maps.search.models.LatLon.lat
   name: lat

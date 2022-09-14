@@ -91,7 +91,7 @@ methods:
   parameters:
   - name: filter
     description: OData filter. Optional.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -114,7 +114,7 @@ methods:
   parameters:
   - name: filter
     description: OData filter. Optional.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -145,7 +145,7 @@ methods:
     - <xref:str>
   - name: filter
     description: OData filter. Optional.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

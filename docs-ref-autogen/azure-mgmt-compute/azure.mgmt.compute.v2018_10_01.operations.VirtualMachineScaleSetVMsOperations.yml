@@ -316,7 +316,7 @@ methods:
     - <xref:str>
   - name: vm_scale_set_vm_reimage_input
     description: Parameters for the Reimaging Virtual machine in ScaleSet.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2018_10_01.models.VirtualMachineScaleSetVMReimageParameters>
   - name: cls
@@ -693,12 +693,12 @@ methods:
       ''startswith(instanceView/statuses/code, ''PowerState'') eq true'', ''properties/latestModelApplied
 
       eq true'', ''properties/latestModelApplied eq false''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: select
     description: The list parameters. Allowed values are 'instanceView', 'instanceView/statuses'.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
@@ -706,7 +706,7 @@ methods:
       are
 
       ''instanceView''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

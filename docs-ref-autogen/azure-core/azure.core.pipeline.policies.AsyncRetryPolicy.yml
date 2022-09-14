@@ -129,6 +129,6 @@ methods:
     isRequired: true
   - name: response
     description: The PipelineResponse object.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineResponse>

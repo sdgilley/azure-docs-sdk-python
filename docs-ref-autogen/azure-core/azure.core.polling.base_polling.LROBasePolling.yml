@@ -56,10 +56,6 @@ methods:
   - name: initial_response
     description: The initial response of the poller
     isRequired: true
-  - name: initial_response
-    isRequired: true
-  - name: deserialization_callback
-    isRequired: true
   exceptions:
   - type: HttpResponseError if initial status is incorrect LRO state
 - uid: azure.core.polling.base_polling.LROBasePolling.request_status

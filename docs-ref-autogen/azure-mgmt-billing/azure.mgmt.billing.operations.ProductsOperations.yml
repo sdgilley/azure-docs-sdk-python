@@ -85,7 +85,7 @@ methods:
       ''not''. Tag filter is a key
 
       value pair string where key and value are separated by a colon (:).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -129,7 +129,7 @@ methods:
       ''not''. Tag filter is a key
 
       value pair string where key and value are separated by a colon (:).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -212,7 +212,7 @@ methods:
       ''not''. Tag filter is a key
 
       value pair string where key and value are separated by a colon (:).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

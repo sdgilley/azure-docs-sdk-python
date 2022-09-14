@@ -630,7 +630,7 @@ methods:
       by
 
       a different call to receive_method will be received.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

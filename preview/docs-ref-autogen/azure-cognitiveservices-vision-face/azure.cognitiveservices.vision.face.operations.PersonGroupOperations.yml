@@ -108,27 +108,27 @@ methods:
     - <xref:str>
   - name: user_data
     description: User specified data. Length should not exceed 16KB.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: recognition_model
     description: 'Possible values include: ''recognition_01'',
 
       ''recognition_02'', ''recognition_03'', ''recognition_04'''
-    defaultValue: recognition_01
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.vision.face.models.RecognitionModel>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -157,14 +157,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -198,19 +198,19 @@ methods:
     description: 'A value indicating whether the
 
       operation should return ''recognitionModel'' in response.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -238,14 +238,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -300,31 +300,31 @@ methods:
     description: 'List person groups from the least personGroupId greater
 
       than the "start".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: The number of person groups to list.
-    defaultValue: '1000'
+    isRequired: true
     types:
     - <xref:int>
   - name: return_recognition_model
     description: 'A value indicating whether the
 
       operation should return ''recognitionModel'' in response.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -353,14 +353,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -390,24 +390,24 @@ methods:
     - <xref:str>
   - name: name
     description: User defined name, maximum length is 128.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_data
     description: User specified data. Length should not exceed 16KB.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

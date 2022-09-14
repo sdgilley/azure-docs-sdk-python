@@ -218,7 +218,7 @@ methods:
       for dedicated
 
       host.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.compute.v2021_07_01.models.InstanceViewTypes>

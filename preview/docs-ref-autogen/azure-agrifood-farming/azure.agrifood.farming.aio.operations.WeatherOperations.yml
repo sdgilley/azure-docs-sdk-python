@@ -44,7 +44,7 @@ methods:
     - <xref:str>
   - name: job
     description: Job parameters supplied by user.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.WeatherDataDeleteJob>
   - name: cls
@@ -88,7 +88,7 @@ methods:
     - <xref:str>
   - name: job
     description: Job parameters supplied by user.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.WeatherDataIngestionJob>
   - name: cls
@@ -197,26 +197,26 @@ methods:
     description: 'Weather data start UTC date-time (inclusive), sample format:
 
       yyyy-MM-ddTHH:mm:ssZ.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: end_date_time
     description: 'Weather data end UTC date-time (inclusive), sample format:
 
       yyyy-MM-ddTHH:mm:ssZ.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

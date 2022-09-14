@@ -294,7 +294,7 @@ methods:
       if the ETag
 
       of the job on the server matches this value.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -352,7 +352,7 @@ methods:
       if the ETag
 
       of the order on the server matches this value.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -504,7 +504,7 @@ methods:
       and Reverse
 
       Shipping details provide forward and reverse shipping details respectively.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -533,7 +533,7 @@ methods:
       Filter
 
       supports only equals operation.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip_token
@@ -541,7 +541,7 @@ methods:
       the next
 
       page in the list of address.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -566,7 +566,7 @@ methods:
       Filter
 
       supports only equals operation.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip_token
@@ -574,7 +574,7 @@ methods:
       the next
 
       page in the list of addresses.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -607,7 +607,7 @@ methods:
       the next
 
       page in the list of configurations.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -653,7 +653,7 @@ methods:
       next page
 
       in the list of order.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -678,7 +678,7 @@ methods:
       next page
 
       in the list of order.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -709,7 +709,7 @@ methods:
       only equals
 
       operation.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
@@ -723,7 +723,7 @@ methods:
       and Reverse
 
       Shipping details provide forward and reverse shipping details respectively.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip_token
@@ -731,7 +731,7 @@ methods:
       the next
 
       page in the list of order items.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -757,7 +757,7 @@ methods:
       only equals
 
       operation.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
@@ -771,7 +771,7 @@ methods:
       and Reverse
 
       Shipping details provide forward and reverse shipping details respectively.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip_token
@@ -779,7 +779,7 @@ methods:
       the next
 
       page in the list of order items.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -810,7 +810,7 @@ methods:
       provides
 
       details on the configurations for the product.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip_token
@@ -818,7 +818,7 @@ methods:
       the next
 
       page in the list of product families.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -844,7 +844,7 @@ methods:
       provides
 
       the next page in the list of product families metadata.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

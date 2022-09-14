@@ -61,7 +61,7 @@ methods:
       which
 
       were soft deleted before.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -309,7 +309,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: Parameters supplied to the Test Base Account GetFileUploadURL operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:test_base.models.GetFileUploadURLParameters>
   - name: cls
@@ -338,7 +338,7 @@ methods:
       which were
 
       soft deleted before.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -364,7 +364,7 @@ methods:
       which were
 
       soft deleted before.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

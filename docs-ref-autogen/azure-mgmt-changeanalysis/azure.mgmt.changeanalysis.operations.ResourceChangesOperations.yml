@@ -70,7 +70,7 @@ methods:
       use for
 
       subsequent calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

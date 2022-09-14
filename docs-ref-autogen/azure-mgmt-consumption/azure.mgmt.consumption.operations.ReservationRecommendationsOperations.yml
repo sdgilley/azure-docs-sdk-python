@@ -74,7 +74,7 @@ methods:
       ''Last60Days''] and
 
       default value ''Last7Days''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

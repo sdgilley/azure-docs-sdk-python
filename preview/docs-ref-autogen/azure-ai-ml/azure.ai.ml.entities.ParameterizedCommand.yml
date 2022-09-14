@@ -24,28 +24,28 @@ constructor:
     - <xref:str>
   - name: code
     description: A local or remote path pointing at source code.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: distribution
     description: Distribution configuration for distributed training.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:Dict>, <xref:azure.ai.ml.PyTorchDistribution>, <xref:azure.ai.ml.MpiDistribution>,
       <xref:azure.ai.ml.TensorFlowDistribution>]
   - name: environment
     description: Environment that training job will run in.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:azure.ai.ml.entities.Environment>, <xref:str>]
   - name: resources
     description: Compute Resource configuration for the job.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:Dict>, <xref:azure.ai.ml.entities.ResourceConfiguration>]
   - name: kwargs
     description: A dictionary of additional configuration parameters.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
 attributes:

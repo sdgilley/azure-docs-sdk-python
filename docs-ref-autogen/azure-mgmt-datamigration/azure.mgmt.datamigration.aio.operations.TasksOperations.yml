@@ -208,7 +208,7 @@ methods:
     - <xref:str>
   - name: delete_running_tasks
     description: Delete the resource even if it contains running tasks.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -255,7 +255,7 @@ methods:
     - <xref:str>
   - name: expand
     description: Expand the response.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -301,7 +301,7 @@ methods:
     - <xref:str>
   - name: task_type
     description: Filter tasks by task type.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

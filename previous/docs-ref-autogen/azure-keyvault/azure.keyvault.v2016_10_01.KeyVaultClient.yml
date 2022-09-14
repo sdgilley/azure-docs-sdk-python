@@ -72,14 +72,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -121,14 +121,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -168,33 +168,33 @@ methods:
     - <xref:str>
   - name: certificate_policy
     description: The management policy for the certificate.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.CertificatePolicy>
   - name: certificate_attributes
     description: 'The attributes of the certificate
 
       (optional).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.CertificateAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -252,23 +252,23 @@ methods:
     description: 'The key size in bits. For example: 2048, 3072, or
 
       4096 for RSA.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: key_ops
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.keyvault.v2016_10_01.models.JsonWebKeyOperation>]
   - name: key_attributes
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.KeyAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: curve
@@ -277,20 +277,20 @@ methods:
       JsonWebKeyCurveName. Possible values include: ''P-256'', ''P-384'',
 
       ''P-521'', ''SECP256K1'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.keyvault.v2016_10_01.models.JsonWebKeyCurveName>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -359,14 +359,14 @@ methods:
     - <xref:bytes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -410,14 +410,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -452,14 +452,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -501,14 +501,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -550,14 +550,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -603,14 +603,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -652,14 +652,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -701,14 +701,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -745,14 +745,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -827,14 +827,14 @@ methods:
     - <xref:bytes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -881,14 +881,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -925,14 +925,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -974,14 +974,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1020,19 +1020,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1071,14 +1071,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1122,14 +1122,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1173,19 +1173,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1223,19 +1223,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1278,14 +1278,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1330,19 +1330,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1385,14 +1385,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1439,19 +1439,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1492,14 +1492,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1538,19 +1538,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1598,14 +1598,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1647,19 +1647,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1703,19 +1703,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1756,14 +1756,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1802,19 +1802,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1858,14 +1858,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1909,19 +1909,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified, the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1961,19 +1961,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified, the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2009,14 +2009,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2050,19 +2050,19 @@ methods:
     description: 'Maximum number of results to return in a page. If
 
       not specified the service will return up to 25 results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2119,38 +2119,38 @@ methods:
     description: 'If the private key in base64EncodedCertificate is
 
       encrypted, the password used for encryption.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: certificate_policy
     description: The management policy for the certificate.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.CertificatePolicy>
   - name: certificate_attributes
     description: 'The attributes of the certificate
 
       (optional).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.CertificateAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2201,31 +2201,31 @@ methods:
     - <xref:azure.keyvault.v2016_10_01.models.JsonWebKey>
   - name: hsm
     description: Whether to import as a hardware key (HSM) or software key.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: key_attributes
     description: The key management attributes.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.KeyAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2278,26 +2278,26 @@ methods:
     description: 'The attributes of the certificate
 
       (optional).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.CertificateAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2341,14 +2341,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2392,14 +2392,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2443,14 +2443,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2498,14 +2498,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2553,14 +2553,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2602,14 +2602,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2651,14 +2651,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2724,14 +2724,14 @@ methods:
     - <xref:bytes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2773,14 +2773,14 @@ methods:
     - <xref:bytes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2815,19 +2815,19 @@ methods:
     - <xref:str>
   - name: contact_list
     description: The contact list for the vault certificates.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.keyvault.v2016_10_01.models.Contact>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2874,31 +2874,31 @@ methods:
     - <xref:str>
   - name: credentials
     description: The credentials to be used for the issuer.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.IssuerCredentials>
   - name: organization_details
     description: 'Details of the organization as provided
 
       to the issuer.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.OrganizationDetails>
   - name: attributes
     description: Attributes of the issuer object.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.IssuerAttributes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2950,26 +2950,26 @@ methods:
     description: 'The attributes of the SAS
 
       definition.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.SasDefinitionAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3018,29 +3018,29 @@ methods:
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: content_type
     description: Type of the secret value such as a password.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: secret_attributes
     description: The secret management attributes.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.SecretAttributes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3097,33 +3097,33 @@ methods:
     description: 'The key regeneration time duration
 
       specified in ISO-8601 format.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: storage_account_attributes
     description: 'The attributes of the storage
 
       account.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.StorageAccountAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3188,14 +3188,14 @@ methods:
     - <xref:bytes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3260,14 +3260,14 @@ methods:
     - <xref:bytes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3317,33 +3317,33 @@ methods:
     - <xref:str>
   - name: certificate_policy
     description: The management policy for the certificate.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.CertificatePolicy>
   - name: certificate_attributes
     description: 'The attributes of the certificate
 
       (optional).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.CertificateAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3386,36 +3386,36 @@ methods:
     - <xref:str>
   - name: provider
     description: The issuer provider.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: credentials
     description: The credentials to be used for the issuer.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.IssuerCredentials>
   - name: organization_details
     description: 'Details of the organization as provided
 
       to the issuer.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.OrganizationDetails>
   - name: attributes
     description: Attributes of the issuer object.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.IssuerAttributes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3462,14 +3462,14 @@ methods:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3516,14 +3516,14 @@ methods:
     - <xref:azure.keyvault.v2016_10_01.models.CertificatePolicy>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3576,31 +3576,31 @@ methods:
     description: 'Json web key operations. For more information on
 
       possible key operations, see JsonWebKeyOperation.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.keyvault.v2016_10_01.models.JsonWebKeyOperation>]
   - name: key_attributes
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.KeyAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3645,33 +3645,33 @@ methods:
     description: 'Sas definition update metadata in the form of
 
       key-value pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: sas_definition_attributes
     description: 'The attributes of the SAS
 
       definition.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.SasDefinitionAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3722,31 +3722,31 @@ methods:
     - <xref:str>
   - name: content_type
     description: Type of the secret value such as a password.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: secret_attributes
     description: The secret management attributes.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.SecretAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3784,47 +3784,47 @@ methods:
     - <xref:str>
   - name: active_key_name
     description: The current active storage account key name.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: auto_regenerate_key
     description: 'whether keyvault should manage the storage
 
       account for the user.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: regeneration_period
     description: 'The key regeneration time duration
 
       specified in ISO-8601 format.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: storage_account_attributes
     description: 'The attributes of the storage
 
       account.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.keyvault.v2016_10_01.models.StorageAccountAttributes>
   - name: tags
     description: 'Application specific metadata in the form of key-value
 
       pairs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3903,14 +3903,14 @@ methods:
     - <xref:bytes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -3979,14 +3979,14 @@ methods:
     - <xref:bytes>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

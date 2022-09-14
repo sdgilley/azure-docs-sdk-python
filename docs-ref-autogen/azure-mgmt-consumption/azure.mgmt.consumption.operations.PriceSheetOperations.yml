@@ -45,7 +45,7 @@ methods:
       sheet. By
 
       default, these fields are not included when returning price sheet.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skiptoken
@@ -57,12 +57,12 @@ methods:
 
       a skiptoken parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: May be used to limit the number of results to the top N results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls
@@ -95,7 +95,7 @@ methods:
       sheet. By
 
       default, these fields are not included when returning price sheet.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skiptoken
@@ -107,12 +107,12 @@ methods:
 
       a skiptoken parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: May be used to limit the number of results to the top N results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

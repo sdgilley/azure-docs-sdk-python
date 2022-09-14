@@ -36,7 +36,7 @@ methods:
     description: 'The EventData instance which contains the offset and
 
       sequence number information used for checkpoint.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.eventhub.EventData>
   return:

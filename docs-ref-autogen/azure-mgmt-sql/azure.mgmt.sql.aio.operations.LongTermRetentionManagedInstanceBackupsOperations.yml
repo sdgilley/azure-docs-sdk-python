@@ -255,7 +255,7 @@ methods:
     description: 'Whether or not to only get the latest backup for each
 
       database.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: database_state
@@ -263,7 +263,7 @@ methods:
       or
 
       all databases.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.sql.models.DatabaseState>
@@ -299,7 +299,7 @@ methods:
     description: 'Whether or not to only get the latest backup for each
 
       database.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: database_state
@@ -307,7 +307,7 @@ methods:
       or
 
       all databases.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.sql.models.DatabaseState>
@@ -339,7 +339,7 @@ methods:
     description: 'Whether or not to only get the latest backup for each
 
       database.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: database_state
@@ -347,7 +347,7 @@ methods:
       or
 
       all databases.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.sql.models.DatabaseState>
@@ -396,7 +396,7 @@ methods:
     description: 'Whether or not to only get the latest backup for each
 
       database.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: database_state
@@ -404,7 +404,7 @@ methods:
       or
 
       all databases.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.sql.models.DatabaseState>
@@ -448,7 +448,7 @@ methods:
     description: 'Whether or not to only get the latest backup for each
 
       database.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: database_state
@@ -456,7 +456,7 @@ methods:
       or
 
       all databases.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.sql.models.DatabaseState>
@@ -496,7 +496,7 @@ methods:
     description: 'Whether or not to only get the latest backup for each
 
       database.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: database_state
@@ -504,7 +504,7 @@ methods:
       or
 
       all databases.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.sql.models.DatabaseState>

@@ -47,7 +47,7 @@ methods:
       current
 
       pipeline.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

@@ -138,7 +138,7 @@ methods:
     - <xref:str>
   - name: host_name
     description: Custom hostname.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -178,7 +178,7 @@ methods:
     - <xref:str>
   - name: host_name
     description: Custom hostname.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -809,24 +809,24 @@ methods:
   - name: skip_dns_registration
     description: "If true web app hostname is not registered with DNS on creation.\n\
       This parameter is\n\n   only used for app creation."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_custom_domain_verification
     description: 'If true, custom (non >>*<<.azurewebsites.net) domains
 
       associated with web app are not verified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: force_dns_registration
     description: If true, web app hostname is force registered with DNS.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: ttl_in_seconds
     description: Time to live in seconds for web app's default domain name.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -2483,14 +2483,14 @@ methods:
     - <xref:str>
   - name: delete_metrics
     description: If true, web app metrics are also deleted.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: delete_empty_server_farm
     description: 'Specify false if you want to keep empty App Service plan. By
 
       default, empty App Service plan is deleted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -3624,7 +3624,7 @@ methods:
     - <xref:str>
   - name: delete_metrics
     description: If true, web app metrics are also deleted.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: delete_empty_server_farm
@@ -3634,12 +3634,12 @@ methods:
       empty App Service
 
       plan is not deleted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_dns_registration
     description: If true, DNS registration is skipped.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -7477,7 +7477,7 @@ methods:
 
       results. The default is false, which only gives you the production slot of all
       apps.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -8867,7 +8867,7 @@ methods:
       "false" by
 
       default.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: filter
@@ -8881,7 +8881,7 @@ methods:
       eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -8927,7 +8927,7 @@ methods:
       "false" by
 
       default.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: filter
@@ -8941,7 +8941,7 @@ methods:
       eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -9060,7 +9060,7 @@ methods:
       eq
 
       ''2014-12-31T23:59:59Z'' and timeGrain eq duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -9107,7 +9107,7 @@ methods:
       eq
 
       ''2014-12-31T23:59:59Z'' and timeGrain eq duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -10236,7 +10236,7 @@ methods:
       eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -10288,7 +10288,7 @@ methods:
       eq
 
       duration''[Hour|Minute|Day]''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -10610,7 +10610,7 @@ methods:
       app only
 
       if necessary. By default, the API always restarts and reprovisions the app.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: synchronous
@@ -10618,7 +10618,7 @@ methods:
       is set to
 
       false, and the API responds immediately (asynchronous).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -10663,7 +10663,7 @@ methods:
       app only
 
       if necessary. By default, the API always restarts and reprovisions the app.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: synchronous
@@ -10671,7 +10671,7 @@ methods:
       is set to
 
       false, and the API responds immediately (asynchronous).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -10923,17 +10923,17 @@ methods:
     - <xref:str>
   - name: duration_in_seconds
     description: The duration to keep capturing in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_length
     description: The maximum frame length in bytes (Optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sas_url
     description: The Blob URL to store capture file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -10973,17 +10973,17 @@ methods:
     - <xref:str>
   - name: duration_in_seconds
     description: The duration to keep capturing in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: max_frame_length
     description: The maximum frame length in bytes (Optional).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: sas_url
     description: The Blob URL to store capture file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -12305,24 +12305,24 @@ methods:
   - name: skip_dns_registration
     description: "If true web app hostname is not registered with DNS on creation.\n\
       This parameter is\n\n   only used for app creation."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: skip_custom_domain_verification
     description: 'If true, custom (non >>*<<.azurewebsites.net) domains
 
       associated with web app are not verified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: force_dns_registration
     description: If true, web app hostname is force registered with DNS.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: ttl_in_seconds
     description: Time to live in seconds for web app's default domain name.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -63,7 +63,7 @@ methods:
     - <xref:str>
   - name: search_management_request_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.search.models.SearchManagementRequestOptions>
   - name: cls
@@ -109,7 +109,7 @@ methods:
     - <xref:str>
   - name: search_management_request_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.search.models.SearchManagementRequestOptions>
   - name: cls
@@ -147,7 +147,7 @@ methods:
     - <xref:str>
   - name: search_management_request_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.search.models.SearchManagementRequestOptions>
   - name: cls

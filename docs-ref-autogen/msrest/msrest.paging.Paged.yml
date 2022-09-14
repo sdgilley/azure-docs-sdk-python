@@ -25,7 +25,7 @@ constructor:
     description: 'A dictionary of class dependencies for
 
       deserialization.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw_headers

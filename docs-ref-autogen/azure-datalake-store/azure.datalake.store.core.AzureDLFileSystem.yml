@@ -11,14 +11,14 @@ constructor:
   parameters:
   - name: store_name
     description: Store name to connect to.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str >(<xref:"">)
   - name: token
     description: 'When setting up a new connection, this contains the authorization
 
       credentials (see *lib.auth()*).'
-    defaultValue: '60'
+    isRequired: true
     types:
     - <xref:<xref:credentials object>>
   - name: url_suffix
@@ -63,7 +63,7 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: invalidate_cache
     description: Whether to invalidate cache
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -119,12 +119,12 @@ methods:
     - <xref:str>
   - name: owner
     description: UUID of owning entity
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: group
     description: UUID of group
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 - uid: azure.datalake.store.core.AzureDLFileSystem.concat
@@ -148,7 +148,7 @@ methods:
     description: 'If True, assume that the paths to concatenate exist alone in a
 
       directory, and delete that whole directory when done.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool >(<xref:False>)
   return:
@@ -197,17 +197,17 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: total
     description: Return the sum on list
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: deep
     description: Recursively enumerate or just use files under current dir
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: invalidate_cache
     description: Whether to invalidate cache
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -228,7 +228,7 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: invalidate_cache
     description: Whether to invalidate cache
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -278,12 +278,12 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: details
     description: Whether to include file details
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: invalidate_cache
     description: Whether to invalidate cache
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -302,7 +302,7 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: size
     description: How many bytes to return
-    defaultValue: '1024'
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -321,12 +321,12 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: invalidate_cache
     description: Whether to invalidate cache or not
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   - name: expected_error_code
     description: Optionally indicates a specific, expected error code, if any.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -339,7 +339,7 @@ methods:
   parameters:
   - name: path
     description: Remove the path from object file-cache
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.datalake.store.core.AzureDLPath>
@@ -359,12 +359,12 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: detail
     description: Detailed info or not.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: invalidate_cache
     description: Whether to invalidate cache or not
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -383,12 +383,12 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: detail
     description: Detailed info or not.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: invalidate_cache
     description: Whether to invalidate cache or not
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -415,7 +415,7 @@ methods:
     description: 'If True, assume that the paths to concatenate exist alone in a
 
       directory, and delete that whole directory when done.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool >(<xref:False>)
   return:
@@ -465,11 +465,9 @@ methods:
     - <xref:str>
   - name: recursive
     description: Specifies whether to modify ACLs recursively or not
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
-  - name: number_of_sub_process
-    defaultValue: None
 - uid: azure.datalake.store.core.AzureDLFileSystem.mv
   name: mv
   summary: Move file between locations on ADL
@@ -496,17 +494,17 @@ methods:
     - <xref:string>
   - name: mode
     description: One of 'rb', 'ab' or 'wb'
-    defaultValue: rb
+    isRequired: true
     types:
     - <xref:string>
   - name: blocksize
     description: Size of data-node blocks if reading
-    defaultValue: '33554432'
+    isRequired: true
     types:
     - <xref:int>
   - name: delimiter
     description: For writing delimiter-ended blocks
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:byte>(<xref:s>)
     - <xref:None>
@@ -529,7 +527,7 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: delimiter
     description: Optional delimeter for delimiter-ended blocks
-    defaultValue: None
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -569,7 +567,7 @@ methods:
     - <xref:int>
   - name: delimiter
     description: Ensure reading starts and stops at delimiter bytestring
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bytes >(<xref:optional>)
   examples:
@@ -595,7 +593,7 @@ methods:
     description: 'Whether to remove also all entries below, i.e., which are returned
 
       by *walk()*.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool >(<xref:True>)
   return:
@@ -651,11 +649,9 @@ methods:
     - <xref:str>
   - name: recursive
     description: Specifies whether to remove ACLs recursively or not
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
-  - name: number_of_sub_process
-    defaultValue: None
 - uid: azure.datalake.store.core.AzureDLFileSystem.remove_default_acl
   name: remove_default_acl
   summary: 'Remove the entire default ACL from the folder.
@@ -702,7 +698,7 @@ methods:
     description: 'Whether to remove also all entries below, i.e., which are returned
 
       by *walk()*.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool >(<xref:True>)
   return:
@@ -746,11 +742,9 @@ methods:
     - <xref:str>
   - name: recursive
     description: Specifies whether to set ACLs recursively or not
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
-  - name: number_of_sub_process
-    defaultValue: None
 - uid: azure.datalake.store.core.AzureDLFileSystem.set_expiry
   name: set_expiry
   summary: 'Set or remove the expiration time on the specified file.
@@ -780,7 +774,7 @@ methods:
       \ milliseconds representing the expiration date relative to file creation. \n\
       \n   4. Absolute: ExpireTime is an integer in milliseconds, as a Unix timestamp\
       \ relative to 1/1/1970 00:00:00."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 - uid: azure.datalake.store.core.AzureDLFileSystem.stat
@@ -796,12 +790,12 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: invalidate_cache
     description: Whether to invalidate cache or not
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   - name: expected_error_code
     description: Optionally indicates a specific, expected error code, if any.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -820,7 +814,7 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: size
     description: How many bytes to return
-    defaultValue: '1024'
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -855,7 +849,7 @@ methods:
     description: 'Whether to remove also all entries below, i.e., which are returned
 
       by *walk()*.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool >(<xref:True>)
   return:
@@ -874,12 +868,12 @@ methods:
     - <xref:azure.datalake.store.core.AzureDLPath>
   - name: details
     description: Whether to include file details
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: invalidate_cache
     description: Whether to invalidate cache
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   return:

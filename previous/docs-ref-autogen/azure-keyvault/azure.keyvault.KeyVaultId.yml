@@ -30,7 +30,7 @@ methods:
     - <xref:str>
   - name: version
     description: The certificate version.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -86,7 +86,7 @@ methods:
     - <xref:str>
   - name: version
     description: The key version.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -135,7 +135,7 @@ methods:
     - <xref:str>
   - name: version
     description: The secret version.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

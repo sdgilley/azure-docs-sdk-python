@@ -61,7 +61,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:microsoft_logz.models.LogzMonitorResource>
   - name: cls
@@ -277,7 +277,7 @@ methods:
   - name: body
     description: Request body to update the collection for agent installed in the
       given monitor.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:microsoft_logz.models.VMHostUpdateRequest>
   - name: cls
@@ -353,7 +353,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:microsoft_logz.models.LogzMonitorResourceUpdateParameters>
   - name: cls

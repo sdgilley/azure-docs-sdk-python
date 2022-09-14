@@ -174,7 +174,7 @@ methods:
   parameters:
   - name: workspaces_list_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:batch_ai.models.WorkspacesListOptions>
   - name: cls
@@ -202,7 +202,7 @@ methods:
     - <xref:str>
   - name: workspaces_list_by_resource_group_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:batch_ai.models.WorkspacesListByResourceGroupOptions>
   - name: cls

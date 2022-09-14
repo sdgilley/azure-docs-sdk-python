@@ -56,12 +56,12 @@ methods:
     - <xref:str>
   - name: start_date
     description: Start date. Only applicable when querying with billing profile.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: end_date
     description: End date. Only applicable when querying with billing profile.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
@@ -72,21 +72,21 @@ methods:
       querying with
 
       billing profile.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: reservation_id
     description: 'Reservation Id GUID. Only valid if reservationOrderId is also provided.
 
       Filter to a specific reservation.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: reservation_order_id
     description: 'Reservation Order Id GUID. Required if reservationId is provided.
 
       Filter to a specific reservation order.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

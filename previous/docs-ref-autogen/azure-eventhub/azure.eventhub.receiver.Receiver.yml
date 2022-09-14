@@ -36,7 +36,7 @@ methods:
     description: 'An optional exception if the handler is closing
 
       due to an error.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Exception>
 - uid: azure.eventhub.receiver.Receiver.get_handler_state
@@ -88,11 +88,9 @@ methods:
       retrieve before the time, the result will be empty. If no batch
 
       size is supplied, the prefetch size will be the maximum.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
-  - name: timeout
-    defaultValue: None
   return:
     types:
     - <xref:list>[<xref:azure.eventhub.common.EventData>]

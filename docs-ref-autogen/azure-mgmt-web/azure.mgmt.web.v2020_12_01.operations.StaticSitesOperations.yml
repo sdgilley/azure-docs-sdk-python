@@ -615,7 +615,7 @@ methods:
       already configured
 
       on the function app. The default is `<code>false</code>`.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -691,7 +691,7 @@ methods:
       already configured
 
       on the function app. The default is `<code>false</code>`.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

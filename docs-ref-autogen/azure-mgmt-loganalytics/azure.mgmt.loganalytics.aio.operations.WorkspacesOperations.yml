@@ -111,7 +111,7 @@ methods:
       was deleted
 
       with this flag cannot be recovered.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

@@ -181,7 +181,7 @@ functions:
   parameters:
   - name: path
     description: Local component yaml file.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: params_override

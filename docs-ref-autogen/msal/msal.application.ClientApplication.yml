@@ -93,7 +93,7 @@ methods:
       So the developer need to specify a scope so that we can restrict the
 
       token to be issued for the corresponding audience.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   return:
@@ -160,7 +160,7 @@ methods:
       same nonce should also be provided here, so that we''ll validate it.
 
       An exception will be raised if the nonce in id token mismatches.'
-    defaultValue: None
+    isRequired: true
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
       by the resource provider
@@ -172,9 +172,7 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
-    defaultValue: None
-  - name: claims_challenge
-    defaultValue: None
+    isRequired: true
   return:
     description: "A dict representing the json response from AAD:\n\n* A successful\
       \ response would contain \"access_token\" key, \n\n* an error response would\
@@ -254,7 +252,7 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
-    defaultValue: None
+    isRequired: true
   return:
     description: "A dict representing the json response from AAD:\n\n* A successful\
       \ response would contain \"access_token\" key, \n\n* an error response would\
@@ -296,14 +294,6 @@ methods:
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
     isRequired: true
-  - name: account
-    isRequired: true
-  - name: authority
-    defaultValue: None
-  - name: force_refresh
-    defaultValue: 'False'
-  - name: claims_challenge
-    defaultValue: None
   return:
     description: "* A dict containing no \"error\" key, and typically contains an\
       \ \"access_token\" key, if cache lookup succeeded. \n\n* None when cache lookup\
@@ -347,7 +337,7 @@ methods:
     description: 'If True, it will skip Access Token look-up,
 
       and try to find a Refresh Token to obtain a new Access Token.'
-    defaultValue: None
+    isRequired: true
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
       by the resource provider
@@ -359,9 +349,7 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
-    defaultValue: 'False'
-  - name: claims_challenge
-    defaultValue: None
+    isRequired: true
   return:
     description: "* A dict containing no \"error\" key, and typically contains an\
       \ \"access_token\" key, if cache lookup succeeded. \n\n* None when there is\
@@ -379,7 +367,7 @@ methods:
   parameters:
   - name: username
     description: Filter accounts with this username only. Case insensitive.
-    defaultValue: None
+    isRequired: true
   return:
     description: 'A list of account objects.
 
@@ -404,17 +392,17 @@ methods:
     - <xref:list>[<xref:str>]
   - name: state
     description: Recommended by OAuth2 for CSRF protection.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: login_hint
     description: Identifier of the user. Generally a User Principal Name (UPN).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: redirect_uri
     description: Address to return to upon receiving a response from the authority.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: response_type
@@ -426,7 +414,7 @@ methods:
       which would trigger an Implicit Grant, but that is
 
       [not recommended](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow#is-the-implicit-grant-suitable-for-my-app).'
-    defaultValue: code
+    isRequired: true
     types:
     - <xref:str>
   - name: prompt
@@ -437,7 +425,7 @@ methods:
       Its valid values are defined in Open ID Connect specs
 
       [https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: nonce
@@ -445,7 +433,7 @@ methods:
       See also
 
       [OIDC specs](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).'
-    defaultValue: None
+    isRequired: true
   - name: domain_hint
     description: 'Can be one of "consumers" or "organizations" or your tenant domain
       "contoso.com".
@@ -460,7 +448,7 @@ methods:
       and
 
       [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
-    defaultValue: None
+    isRequired: true
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
       by the resource provider
@@ -472,7 +460,7 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
-    defaultValue: None
+    isRequired: true
   return:
     description: The authorization url as a string.
 - uid: msal.application.ClientApplication.initiate_auth_code_flow
@@ -495,7 +483,7 @@ methods:
     - <xref:list>
   - name: redirect_uri
     description: Optional. If not specified, server will use the pre-registered one.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: state
@@ -504,7 +492,7 @@ methods:
       maintain state between the request and callback.
 
       If absent, this library will automatically generate one internally.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: prompt
@@ -515,13 +503,13 @@ methods:
       Its valid values are defined in Open ID Connect specs
 
       [https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: login_hint
     description: Optional. Identifier of the user. Generally a User Principal Name
       (UPN).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: domain_hint
@@ -538,7 +526,7 @@ methods:
       and
 
       [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
-    defaultValue: None
+    isRequired: true
   - name: max_age
     description: 'OPTIONAL. Maximum Authentication Age.
 
@@ -555,7 +543,7 @@ methods:
 
 
       New in version 1.15.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: response_mode
@@ -586,11 +574,9 @@ methods:
       *here <https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes>*
 
       and *here <https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html#FormPostResponseMode>*'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
-  - name: response_mode
-    defaultValue: None
   return:
     description: "The auth code flow. It is a dict in this form:\n\n<!-- literal_block\
       \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\

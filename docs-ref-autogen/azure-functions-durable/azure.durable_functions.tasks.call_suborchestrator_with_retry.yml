@@ -35,12 +35,12 @@ functions:
   - name: input
     description: The JSON-serializable input to pass to the activity function. Defaults
       to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
     description: The instance ID of the sub-orchestrator to call. Defaults to "".
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

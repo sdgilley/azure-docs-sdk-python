@@ -55,7 +55,7 @@ methods:
     - <xref:str>
   - name: policies
     description: Policies to evaluate.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.mgmt.devtestlabs.models.EvaluatePoliciesProperties>]
   - name: cls

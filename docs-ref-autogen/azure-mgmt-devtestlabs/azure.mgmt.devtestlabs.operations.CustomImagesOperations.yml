@@ -156,7 +156,7 @@ methods:
     - <xref:str>
   - name: expand
     description: 'Specify the $expand query. Example: ''properties($select=vm)''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -188,25 +188,25 @@ methods:
     - <xref:str>
   - name: expand
     description: 'Specify the $expand query. Example: ''properties($select=vm)''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: 'The filter to apply to the operation. Example: ''$filter=contains(name,''myName'').'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: 'The maximum number of resources to return from the operation. Example:
       ''$top=10''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: orderby
     description: 'The ordering expression for the results, using OData notation. Example:
 
       ''$orderby=name desc''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -333,7 +333,7 @@ methods:
     - <xref:str>
   - name: jobs_list_by_experiment_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:batch_ai.models.JobsListByExperimentOptions>
   - name: cls

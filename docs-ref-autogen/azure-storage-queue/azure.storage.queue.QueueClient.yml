@@ -38,7 +38,7 @@ constructor:
       an instance of a AzureSasCredential from azure.core.credentials, an account
 
       shared access key, or an instance of a TokenCredentials class from azure.identity.'
-    defaultValue: None
+    isRequired: true
   - name: api_version
     description: 'The Storage API version to use for requests. Default value is the
       most recent service version that is
@@ -244,8 +244,6 @@ methods:
 
       key, or an instance of a TokenCredentials class from azure.identity.'
     isRequired: true
-  - name: credential
-    defaultValue: None
   return:
     description: A queue client.
     types:
@@ -281,8 +279,6 @@ methods:
 
       shared access key, or an instance of a TokenCredentials class from azure.identity.'
     isRequired: true
-  - name: credential
-    defaultValue: None
   return:
     description: A queue client.
     types:

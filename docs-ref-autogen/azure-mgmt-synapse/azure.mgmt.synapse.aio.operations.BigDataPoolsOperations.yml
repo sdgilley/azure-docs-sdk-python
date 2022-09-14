@@ -63,7 +63,7 @@ methods:
     - <xref:azure.mgmt.synapse.models.BigDataPoolResourceInfo>
   - name: force
     description: Whether to stop any running jobs in the Big Data pool.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

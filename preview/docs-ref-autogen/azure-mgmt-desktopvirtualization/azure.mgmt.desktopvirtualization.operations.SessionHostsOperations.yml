@@ -54,7 +54,7 @@ methods:
     - <xref:str>
   - name: force
     description: Force flag to force sessionHost deletion even when userSession exists.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -149,12 +149,12 @@ methods:
     - <xref:str>
   - name: force
     description: Force flag to update assign, unassign or reassign personal desktop.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: session_host
     description: Object containing SessionHost definitions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.SessionHostPatch>
   - name: cls

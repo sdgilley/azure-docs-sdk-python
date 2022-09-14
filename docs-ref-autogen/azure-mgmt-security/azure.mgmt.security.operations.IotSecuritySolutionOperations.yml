@@ -144,7 +144,7 @@ methods:
       by
 
       iotHubs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -169,7 +169,7 @@ methods:
       by
 
       iotHubs.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

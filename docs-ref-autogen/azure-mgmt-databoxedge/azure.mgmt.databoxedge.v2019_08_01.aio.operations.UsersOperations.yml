@@ -187,7 +187,7 @@ methods:
     - <xref:str>
   - name: filter
     description: Specify $filter='UserType eq `<type>`' to filter on user type property.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

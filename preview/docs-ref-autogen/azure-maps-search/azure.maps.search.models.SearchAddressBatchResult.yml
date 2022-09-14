@@ -16,11 +16,9 @@ constructor:
   parameters:
   - name: summary
     description: Summary of the results for the batch request.
-    defaultValue: None
     types:
     - <xref:azure.maps.search._generated.models.BatchResultSummary>
   - name: items
     description: Array containing the batch results.
-    defaultValue: None
     types:
     - <xref:list>[<xref:azure.maps.search._generated.models.SearchAddressBatchItem>]

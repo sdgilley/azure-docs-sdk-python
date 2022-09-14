@@ -72,7 +72,7 @@ methods:
       overwriting
 
       concurrent changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -83,7 +83,7 @@ methods:
       Failed
 
       response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -179,7 +179,7 @@ methods:
       overwriting
 
       concurrent changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

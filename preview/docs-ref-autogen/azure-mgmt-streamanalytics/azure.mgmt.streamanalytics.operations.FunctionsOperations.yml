@@ -72,7 +72,7 @@ methods:
       function
 
       (exactly like a PATCH operation) and the resulting function will be tested.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:stream_analytics_management_client.models.Function>
   - name: cls
@@ -141,7 +141,7 @@ methods:
       concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -150,7 +150,7 @@ methods:
 
       an existing function. Other values will result in a 412 Pre-condition Failed
       response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -250,7 +250,7 @@ methods:
 
       properties are returned except diagnostics. Currently only accepts ''*'' as
       a valid value.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -291,7 +291,7 @@ methods:
     description: 'Parameters used to specify the type of
 
       function to retrieve the default definition for.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:stream_analytics_management_client.models.FunctionRetrieveDefaultDefinitionParameters>
   - name: cls
@@ -353,7 +353,7 @@ methods:
       concurrent
 
       changes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

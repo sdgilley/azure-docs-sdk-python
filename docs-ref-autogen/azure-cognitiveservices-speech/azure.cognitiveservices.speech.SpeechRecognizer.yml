@@ -23,16 +23,16 @@ constructor:
     isRequired: true
   - name: audio_config
     description: The config for the audio input
-    defaultValue: None
+    isRequired: true
   - name: language
     description: The source language
-    defaultValue: None
+    isRequired: true
   - name: source_language_config
     description: The source language config
-    defaultValue: None
+    isRequired: true
   - name: auto_detect_source_language_config
     description: The auto detection source language config
-    defaultValue: None
+    isRequired: true
 methods:
 - uid: azure.cognitiveservices.speech.SpeechRecognizer.recognize_once
   name: recognize_once

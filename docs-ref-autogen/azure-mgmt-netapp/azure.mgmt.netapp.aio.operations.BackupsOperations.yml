@@ -198,7 +198,7 @@ methods:
     - <xref:str>
   - name: body
     description: Backup object supplied in the body of the operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.netapp.models.BackupPatch>
   - name: cls

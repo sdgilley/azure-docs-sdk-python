@@ -144,7 +144,7 @@ methods:
     description: 'Tells whether to return registration definition details
 
       also along with registration assignment details.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -172,7 +172,7 @@ methods:
     description: 'Tells whether to return registration definition details
 
       also along with registration assignment details.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

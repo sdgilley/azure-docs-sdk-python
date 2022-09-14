@@ -80,7 +80,7 @@ methods:
     - <xref:str>
   - name: force
     description: Force flag to delete sessionHost.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -200,7 +200,7 @@ methods:
     - <xref:str>
   - name: host_pool
     description: Object containing HostPool definitions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.HostPoolPatch>
   - name: cls

@@ -56,7 +56,7 @@ methods:
       then it is
 
       the ID of that subscription.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -94,7 +94,7 @@ methods:
       then it is
 
       the ID of that subscription.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

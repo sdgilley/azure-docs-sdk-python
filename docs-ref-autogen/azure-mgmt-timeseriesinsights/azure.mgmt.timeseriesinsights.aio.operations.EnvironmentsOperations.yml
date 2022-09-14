@@ -195,7 +195,7 @@ methods:
       of the
 
       environment in the Time Series Insights service.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

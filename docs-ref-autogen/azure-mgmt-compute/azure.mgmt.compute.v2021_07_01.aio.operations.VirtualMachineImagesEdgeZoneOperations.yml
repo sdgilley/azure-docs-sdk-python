@@ -114,7 +114,7 @@ methods:
     - <xref:str>
   - name: expand
     description: The expand expression to apply on the operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
@@ -122,13 +122,13 @@ methods:
       matches supplied
 
       values.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: orderby
     description: Specifies the order of the results returned. Formatted as an OData
       query.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -15,7 +15,7 @@ constructor:
     isRequired: true
   - name: conversation_id
     description: The conversation identifier.
-    defaultValue: None
+    isRequired: true
 methods:
 - uid: azure.cognitiveservices.speech.transcription.Conversation.add_participant_async
   name: add_participant_async
@@ -26,10 +26,10 @@ methods:
   parameters:
   - name: participant
     description: the participant object
-    defaultValue: None
+    isRequired: true
   - name: user_id
     description: the user identification string
-    defaultValue: None
+    isRequired: true
   return:
     description: A future containing the added participant object.
 - uid: azure.cognitiveservices.speech.transcription.Conversation.delete_conversation_async
@@ -85,10 +85,10 @@ methods:
   parameters:
   - name: participant
     description: the participant object
-    defaultValue: None
+    isRequired: true
   - name: user_id
     description: the user identification string
-    defaultValue: None
+    isRequired: true
   return:
     description: A future containing the added participant object.
 - uid: azure.cognitiveservices.speech.transcription.Conversation.start_conversation_async

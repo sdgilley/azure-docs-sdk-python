@@ -56,7 +56,7 @@ methods:
     - <xref:storage_import_export.models.PutJobParameters>
   - name: client_tenant_id
     description: The tenant ID of the client making the request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -144,12 +144,12 @@ methods:
       returned. The value
 
       cannot exceed 100.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: filter
     description: Can be used to restrict the results to certain conditions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -174,12 +174,12 @@ methods:
       returned. The value
 
       cannot exceed 100.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: filter
     description: Can be used to restrict the results to certain conditions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

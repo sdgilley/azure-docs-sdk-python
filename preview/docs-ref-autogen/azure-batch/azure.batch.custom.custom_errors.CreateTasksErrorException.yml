@@ -11,17 +11,17 @@ constructor:
   parameters:
   - name: message
     description: Error message describing exit reason
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: pending_tasks
     description: List of tasks remaining to be submitted.
-    defaultValue: None
+    isRequired: true
     types:
     - '[<xref:azure.batch.models.TaskAddParameter>]'
   - name: failure_tasks
     description: List of tasks which failed to add
-    defaultValue: None
+    isRequired: true
     types:
     - '[<xref:azure.batch.models.TaskAddResult>]'
   - name: errors

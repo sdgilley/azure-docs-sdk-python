@@ -119,7 +119,7 @@ methods:
       only the deny
 
       assignment name and description properties are returned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -193,7 +193,7 @@ methods:
       only the deny
 
       assignment name and description properties are returned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -246,7 +246,7 @@ methods:
       only the deny
 
       assignment name and description properties are returned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -299,7 +299,7 @@ methods:
       only the deny
 
       assignment name and description properties are returned.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

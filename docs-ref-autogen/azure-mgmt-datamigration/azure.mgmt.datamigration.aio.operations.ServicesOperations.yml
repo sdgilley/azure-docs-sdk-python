@@ -129,7 +129,7 @@ methods:
     - <xref:str>
   - name: delete_running_tasks
     description: Delete the resource even if it contains running tasks.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

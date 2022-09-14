@@ -22,16 +22,16 @@ constructor:
     description: 'Specifies to use the system default speaker for audio
 
       output.'
-    defaultValue: 'False'
+    isRequired: true
   - name: filename
     description: Specifies an audio output file. The parent directory must already
       exist.
-    defaultValue: None
+    isRequired: true
   - name: stream
     description: Creates an AudioOutputConfig object representing the specified stream.
-    defaultValue: None
+    isRequired: true
   - name: device_name
     description: 'Specifies the id of the audio device to use.
 
       This functionality was added in version 1.17.0.'
-    defaultValue: None
+    isRequired: true

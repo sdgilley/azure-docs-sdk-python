@@ -27,7 +27,7 @@ methods:
   parameters:
   - name: session
     description: The session to configure for authentication
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:requests.Session>
   return:
@@ -56,7 +56,7 @@ methods:
   parameters:
   - name: session
     description: The session to configure for authentication
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:requests.Session>
 attributes:

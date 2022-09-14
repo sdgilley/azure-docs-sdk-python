@@ -45,12 +45,12 @@ methods:
     - <xref:str>
   - name: managed_virtual_network_name
     description: Managed virtual network name.
-    defaultValue: default
+    isRequired: true
     types:
     - <xref:str>
   - name: properties
     description: Managed private endpoint properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.synapse.managedprivateendpoints.v2021_06_01_preview.models.ManagedPrivateEndpointProperties>
   - name: cls
@@ -76,7 +76,7 @@ methods:
     - <xref:str>
   - name: managed_virtual_network_name
     description: Managed virtual network name.
-    defaultValue: default
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -102,7 +102,7 @@ methods:
     - <xref:str>
   - name: managed_virtual_network_name
     description: Managed virtual network name.
-    defaultValue: default
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -123,7 +123,7 @@ methods:
   parameters:
   - name: managed_virtual_network_name
     description: Managed virtual network name.
-    defaultValue: default
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -52,7 +52,7 @@ methods:
     - <xref:str>
   - name: expand
     description: May be used to expand enabledAzurePlans and resellers.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -84,12 +84,12 @@ methods:
       containing
 
       the search text will be included in the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: May be used to filter the list of customers.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -128,12 +128,12 @@ methods:
       containing
 
       the search text will be included in the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
     description: May be used to filter the list of customers.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

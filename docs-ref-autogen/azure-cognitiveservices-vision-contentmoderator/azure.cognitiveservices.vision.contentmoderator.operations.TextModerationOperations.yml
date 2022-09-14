@@ -49,14 +49,14 @@ methods:
     - <xref:Generator>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -67,7 +67,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -108,39 +108,39 @@ methods:
     - <xref:Generator>
   - name: language
     description: Language of the text.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: autocorrect
     description: Autocorrect text.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: pii
     description: Detect personal identifiable information.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: list_id
     description: The list Id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: classify
     description: Classify input.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -151,7 +151,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config

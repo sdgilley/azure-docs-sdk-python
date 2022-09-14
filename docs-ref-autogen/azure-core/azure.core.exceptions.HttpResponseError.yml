@@ -11,12 +11,12 @@ constructor:
   parameters:
   - name: message
     description: HttpResponse's error message
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:string>
   - name: response
     description: The response that triggered the exception.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.core.pipeline.transport.HttpResponse>
     - <xref:azure.core.pipeline.transport.AsyncHttpResponse>

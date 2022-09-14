@@ -41,7 +41,7 @@ methods:
       supported
 
       currently.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

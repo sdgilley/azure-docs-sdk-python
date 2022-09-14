@@ -18,7 +18,7 @@ constructor:
     - <xref:azure.core.credentials.TokenCredential>
   - name: base_url
     description: Service URL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 variables:

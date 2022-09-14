@@ -51,14 +51,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -99,7 +99,7 @@ methods:
     description: 'An Application Insights component daily data
 
       volume cap'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.applicationinsights.v2015_05_01.models.ApplicationInsightsComponentDataVolumeCap>
   - name: current_billing_features
@@ -108,19 +108,19 @@ methods:
       the component is in the Enterprise plan, this will list both ''Basic''
 
       and ''Application Insights Enterprise''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

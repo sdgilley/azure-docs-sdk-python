@@ -41,7 +41,7 @@ methods:
     description: 'Can provide a guid, which is helpful for debugging and to
 
       provide better customer support.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -65,19 +65,19 @@ methods:
     description: 'Can provide a guid, which is helpful for debugging and to
 
       provide better customer support.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: orderby
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

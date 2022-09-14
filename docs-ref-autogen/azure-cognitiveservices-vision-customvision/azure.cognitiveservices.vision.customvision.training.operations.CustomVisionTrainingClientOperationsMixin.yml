@@ -35,19 +35,19 @@ methods:
     types:
     - <xref:str>
   - name: regions
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.cognitiveservices.vision.customvision.training.models.ImageRegionCreateEntry>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -75,19 +75,19 @@ methods:
     - <xref:str>
   - name: tags
     description: Image Tag entries to include in this batch.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:azure.cognitiveservices.vision.customvision.training.models.ImageTagCreateEntry>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -139,19 +139,19 @@ methods:
     description: 'The tags ids with which to tag each image. Limited to
 
       20.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -199,14 +199,14 @@ methods:
     - <xref:azure.cognitiveservices.vision.customvision.training.models.ImageFileCreateBatch>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -254,14 +254,14 @@ methods:
     - <xref:azure.cognitiveservices.vision.customvision.training.models.ImageIdCreateBatch>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -309,14 +309,14 @@ methods:
     - <xref:azure.cognitiveservices.vision.customvision.training.models.ImageUrlCreateBatch>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -345,35 +345,35 @@ methods:
     - <xref:str>
   - name: description
     description: The description of the project.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: domain_id
     description: 'The id of the domain to use for this project.
 
       Defaults to General.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: classification_type
     description: 'The type of classifier to create for this
 
       project. Possible values include: ''Multiclass'', ''Multilabel'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: target_export_platforms
     description: 'List of platforms the trained model is
 
       intending exporting to.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: export_model_container_uri
     description: 'The uri to the Azure Storage
 
       container that will be used to store exported models.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: notification_queue_uri
@@ -384,19 +384,19 @@ methods:
       href="[https://go.microsoft.com/fwlink/?linkid=2144149](https://go.microsoft.com/fwlink/?linkid=2144149)">Storage
 
       notifications</a> documentation for setup and message format.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -429,26 +429,26 @@ methods:
     - <xref:str>
   - name: description
     description: Optional description for the tag.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: type
     description: 'Optional type for the tag. Possible values include:
 
       ''Regular'', ''Negative'', ''GeneralProduct'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -481,14 +481,14 @@ methods:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -528,14 +528,14 @@ methods:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -565,7 +565,7 @@ methods:
     description: 'Ids of the images to be deleted. Limited to 256
 
       images per batch.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: all_images
@@ -574,7 +574,7 @@ methods:
       flag or a list of images. Using this flag will return a 202 response
 
       to indicate the images are being deleted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: all_iterations
@@ -583,19 +583,19 @@ methods:
       just the current workspace. Using this flag will return a 202 response
 
       to indicate the images are being deleted.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -628,14 +628,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -669,14 +669,14 @@ methods:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -703,14 +703,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -742,14 +742,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -793,19 +793,19 @@ methods:
       include: ''Linux'', ''Windows'', ''ONNX10'', ''ONNX12'', ''ARM'',
 
       ''TensorFlowNormal'', ''TensorFlowLite'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -832,14 +832,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -874,14 +874,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: callback
@@ -892,7 +892,7 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
@@ -919,14 +919,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -948,14 +948,14 @@ methods:
   parameters:
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -988,14 +988,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1032,7 +1032,7 @@ methods:
     - <xref:str>
   - name: iteration_id
     description: The iteration id. Defaults to workspace.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tagging_status
@@ -1041,7 +1041,7 @@ methods:
       ''Tagged'', or ''Untagged''. Defaults to ''All''. Possible values include:
 
       ''All'', ''Tagged'', ''Untagged'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
@@ -1056,26 +1056,26 @@ methods:
       or (Logical or) operators.
 
       Here is an example, metadata=key1 eq ''value1'' and key2 ne ''value2''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tag_ids
     description: 'A list of tags ids to filter the images to count.
 
       Defaults to all tags when null.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1123,19 +1123,19 @@ methods:
     description: 'A list of tags ids to filter the images to count.
 
       Defaults to all tags when null.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1187,40 +1187,40 @@ methods:
     description: 'A list of tags ids to filter the images. Defaults to
 
       all tagged images when null. Limited to 20.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: order_by
     description: 'The ordering. Defaults to newest. Possible values
 
       include: ''Newest'', ''Oldest'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: take
     description: 'Maximum number of images to return. Defaults to 50,
 
       limited to 256.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
     description: 'Number of images to skip before beginning the image
 
       batch. Defaults to 0.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1260,14 +1260,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1312,14 +1312,14 @@ methods:
     - <xref:str>
   - name: iteration_id
     description: The iteration id. Defaults to workspace.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tag_ids
     description: 'A list of tags ids to filter the images. Defaults to
 
       all tagged images when null. Limited to 20.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: tagging_status
@@ -1328,7 +1328,7 @@ methods:
       ''Tagged'', or ''Untagged''. Defaults to ''All''. Possible values include:
 
       ''All'', ''Tagged'', ''Untagged'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: filter
@@ -1343,40 +1343,40 @@ methods:
       or (Logical or) operators.
 
       Here is an example, metadata=key1 eq ''value1'' and key2 ne ''value2''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: order_by
     description: 'The ordering. Defaults to newest. Possible values
 
       include: ''Newest'', ''Oldest'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: take
     description: 'Maximum number of images to return. Defaults to 50,
 
       limited to 256.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
     description: 'Number of images to skip before beginning the image
 
       batch. Defaults to 0.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1411,24 +1411,24 @@ methods:
     - <xref:str>
   - name: image_ids
     description: The list of image ids to retrieve. Limited to 256.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: iteration_id
     description: The iteration id. Defaults to workspace.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1461,14 +1461,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1501,26 +1501,26 @@ methods:
     - <xref:str>
   - name: threshold
     description: The threshold used to determine true predictions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: overlap_threshold
     description: 'If applicable, the bounding box overlap
 
       threshold used to determine true predictions.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1547,14 +1547,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1581,14 +1581,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1610,14 +1610,14 @@ methods:
   parameters:
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1652,19 +1652,19 @@ methods:
     description: 'The iteration to retrieve this tag from.
 
       Optional, defaults to current training set.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1701,26 +1701,26 @@ methods:
     - <xref:str>
   - name: iteration_id
     description: The iteration id. Defaults to workspace.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tag_ids
     description: 'A list of tags ids to filter the images to count.
 
       Defaults to all tags when null.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1765,47 +1765,47 @@ methods:
     - <xref:str>
   - name: iteration_id
     description: The iteration id. Defaults to workspace.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tag_ids
     description: 'A list of tags ids to filter the images. Defaults to
 
       all tagged images when null. Limited to 20.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: order_by
     description: 'The ordering. Defaults to newest. Possible values
 
       include: ''Newest'', ''Oldest'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: take
     description: 'Maximum number of images to return. Defaults to 50,
 
       limited to 256.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
     description: 'Number of images to skip before beginning the image
 
       batch. Defaults to 0.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1833,19 +1833,19 @@ methods:
     - <xref:str>
   - name: iteration_id
     description: The iteration id. Defaults to workspace.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1880,19 +1880,19 @@ methods:
     - <xref:str>
   - name: iteration_id
     description: The iteration id. Defaults to workspace.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1929,40 +1929,40 @@ methods:
     - <xref:str>
   - name: iteration_id
     description: The iteration id. Defaults to workspace.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: order_by
     description: 'The ordering. Defaults to newest. Possible values
 
       include: ''Newest'', ''Oldest'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: take
     description: 'Maximum number of images to return. Defaults to 50,
 
       limited to 256.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip
     description: 'Number of images to skip before beginning the image
 
       batch. Defaults to 0.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1991,19 +1991,19 @@ methods:
     description: 'Optional, name of the project to use instead of
 
       auto-generated name.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2048,19 +2048,19 @@ methods:
     description: 'Whether to overwrite the published model with the
 
       given name (default: false).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2095,14 +2095,14 @@ methods:
     - <xref:azure.cognitiveservices.vision.customvision.training.models.PredictionQueryToken>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2148,24 +2148,24 @@ methods:
     description: 'Existing TagIds in project to get suggested tags count
 
       for.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: threshold
     description: Confidence threshold to filter suggested tags on.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2212,14 +2212,14 @@ methods:
     - <xref:azure.cognitiveservices.vision.customvision.training.models.SuggestedTagAndRegionQueryToken>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2258,26 +2258,26 @@ methods:
       iteration to evaluate against.
 
       The default iteration for the project will be used when not specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: store
     description: 'Optional. Specifies whether or not to store the result
 
       of this prediction. The default is true, to store.'
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2314,26 +2314,26 @@ methods:
       iteration to evaluate against.
 
       The default iteration for the project will be used when not specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: store
     description: 'Optional. Specifies whether or not to store the result
 
       of this prediction. The default is true, to store.'
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:bool>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2384,14 +2384,14 @@ methods:
     - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2422,35 +2422,35 @@ methods:
     description: 'The type of training to use to train the project
 
       (default: Regular). Possible values include: ''Regular'', ''Advanced'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: reserved_budget_in_hours
     description: 'The number of hours reserved as
 
       budget for training (if applicable).'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: force_train
     description: 'Whether to force train even if dataset and
 
       configuration does not change (default: false).'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: notification_email_address
     description: 'The email address to send
 
       notification to when training finishes (default: null).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: selected_tags
     description: 'List of tags selected for this training session,
 
       other tags in the project will be ignored.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: custom_base_model_info
@@ -2459,19 +2459,19 @@ methods:
       iteration which provides the base model for current iteration''s
 
       training.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.cognitiveservices.vision.customvision.training.models.CustomBaseModelInfo>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2504,14 +2504,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2558,14 +2558,14 @@ methods:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2603,14 +2603,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2643,14 +2643,14 @@ methods:
     - <xref:azure.cognitiveservices.vision.customvision.training.models.Project>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -2688,14 +2688,14 @@ methods:
     - <xref:azure.cognitiveservices.vision.customvision.training.models.Tag>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

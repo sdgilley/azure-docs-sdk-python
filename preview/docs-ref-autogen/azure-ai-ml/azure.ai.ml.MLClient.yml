@@ -101,14 +101,14 @@ methods:
   - name: _file_name
     description: Allows overriding the config file name to search for when path is
       a directory path.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: kwargs
     description: 'A dictionary of additional configuration parameters.
 
       For e.g. kwargs = {"cloud": "AzureUSGovernment"}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   return:

@@ -54,7 +54,7 @@ methods:
     - <xref:str>
   - name: body
     description: Elastic monitor resource model.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.elastic.models.ElasticMonitorResource>
   - name: cls
@@ -232,7 +232,7 @@ methods:
     - <xref:str>
   - name: body
     description: Elastic resource model update parameters.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.elastic.models.ElasticMonitorResourceUpdateParameters>
   - name: cls

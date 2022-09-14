@@ -257,7 +257,7 @@ methods:
     - <xref:str>
   - name: skiptoken
     description: Continuation token for pagination.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -86,7 +86,7 @@ methods:
     - <xref:str>
   - name: device_configuration
     description: Device configuration.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.azurestack.models.DeviceConfiguration>
   - name: cls
@@ -123,7 +123,7 @@ methods:
     - <xref:str>
   - name: device_configuration
     description: Device configuration.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.azurestack.models.DeviceConfiguration>
   - name: cls
@@ -217,7 +217,7 @@ methods:
     - <xref:str>
   - name: marketplace_product_log_update
     description: Update details for product log.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.azurestack.models.MarketplaceProductLogUpdate>
   - name: cls

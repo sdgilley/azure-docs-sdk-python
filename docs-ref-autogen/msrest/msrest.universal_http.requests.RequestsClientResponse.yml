@@ -20,8 +20,8 @@ methods:
   parameters:
   - name: callback
     description: Custom callback for monitoring progress.
-    defaultValue: None
+    isRequired: true
   - name: chunk_size
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>

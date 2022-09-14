@@ -57,14 +57,14 @@ methods:
       see
 
       [https://docs.microsoft.com/en-us/rest/api/apimanagement/apis?redirectedfrom=MSDN](https://docs.microsoft.com/en-us/rest/api/apimanagement/apis?redirectedfrom=MSDN).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
     description: 'Setting $expand=recommendedactions in url query expands the recommendedactions
 
       in the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -106,14 +106,14 @@ methods:
       see
 
       [https://docs.microsoft.com/en-us/rest/api/apimanagement/apis?redirectedfrom=MSDN](https://docs.microsoft.com/en-us/rest/api/apimanagement/apis?redirectedfrom=MSDN).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
     description: 'Setting $expand=recommendedactions in url query expands the recommendedactions
 
       in the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -146,14 +146,14 @@ methods:
       see
 
       [https://docs.microsoft.com/en-us/rest/api/apimanagement/apis?redirectedfrom=MSDN](https://docs.microsoft.com/en-us/rest/api/apimanagement/apis?redirectedfrom=MSDN).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
     description: 'Setting $expand=recommendedactions in url query expands the recommendedactions
 
       in the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -181,14 +181,14 @@ methods:
       see
 
       [https://docs.microsoft.com/en-us/rest/api/apimanagement/apis?redirectedfrom=MSDN](https://docs.microsoft.com/en-us/rest/api/apimanagement/apis?redirectedfrom=MSDN).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: expand
     description: 'Setting $expand=recommendedactions in url query expands the recommendedactions
 
       in the response.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

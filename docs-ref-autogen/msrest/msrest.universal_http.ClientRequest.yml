@@ -31,15 +31,15 @@ constructor:
     - <xref:str>
   - name: headers
     description: HTTP headers
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str,str>]
   - name: files
     description: Files list.
-    defaultValue: None
+    isRequired: true
   - name: data
     description: Body to be sent.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bytes>
     - <xref:str.>
@@ -67,7 +67,7 @@ methods:
   parameters:
   - name: headers
     description: Any headers to add to the request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: content

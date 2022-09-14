@@ -18,12 +18,12 @@ constructor:
       Possible values
 
       include: "minimize", "maximize".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: primary_metric
     description: Required. Name of the metric to optimize.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 attributes:

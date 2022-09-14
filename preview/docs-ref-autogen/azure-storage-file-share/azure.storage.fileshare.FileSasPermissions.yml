@@ -16,12 +16,12 @@ constructor:
       of a copy
 
       operation.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: create
     description: Create a new file or copy a file to a new file.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: write
@@ -29,12 +29,12 @@ constructor:
       Use the file
 
       as the destination of a copy operation within the same account.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: delete
     description: Delete the file.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
 methods:
@@ -57,8 +57,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: permission
-    isRequired: true
   return:
     description: A FileSasPermissions object
     types:

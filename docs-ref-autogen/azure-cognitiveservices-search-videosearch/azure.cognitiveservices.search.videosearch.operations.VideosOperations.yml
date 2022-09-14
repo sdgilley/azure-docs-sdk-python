@@ -117,7 +117,7 @@ methods:
       JSON response objects. Any links to Bing.com properties in the
 
       response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -155,7 +155,7 @@ methods:
       (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit / 537.51.1 (KHTML, like
 
       Gecko) Version / 7.0 Mobile / 11A465 Safari / 9537.53'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -228,7 +228,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -247,7 +247,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -318,7 +318,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: country_code
@@ -335,7 +335,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: id
@@ -346,7 +346,7 @@ methods:
       object''s videoId field contains the ID that you set this parameter to.
 
       You use this parameter to identify the video to get insights of.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: modules
@@ -373,7 +373,7 @@ methods:
       you should always include it because it helps to improve relevance and
 
       the results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.VideoInsightModule>]
@@ -390,7 +390,7 @@ methods:
       Bing uses a best fit market code based on an internal mapping that is\nsubject\
       \ to change. This parameter and the\n[cc]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-video-api-v7-reference#cc](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-video-api-v7-reference#cc))\n\
       query parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: resolution
@@ -405,7 +405,7 @@ methods:
       value is the same as not specifying the resolution parameter. Possible
 
       values include: ''All'', ''SD480p'', ''HD720p'', ''HD1080p'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.VideoResolution>
@@ -445,7 +445,7 @@ methods:
       of the content on the site and your scenario supports the possibility
 
       of adult content. Possible values include: ''Off'', ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.SafeSearch>
@@ -475,7 +475,7 @@ methods:
       links to Bing.com properties in the response objects apply the
 
       specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: text_decorations
@@ -494,7 +494,7 @@ methods:
       query parameter. For information about hit highlighting, see [Hit
 
       Highlighting]([https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting](https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: text_format
@@ -508,20 +508,20 @@ methods:
       \ For display strings that\ncontain escapable HTML characters such as <, >,\
       \ and &, if textFormat\nis set to HTML, Bing escapes the characters as appropriate\
       \ (for\nexample, < is escaped to &lt;). Possible values include: 'Raw', 'Html'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.TextFormat>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -625,7 +625,7 @@ methods:
       JSON response objects. Any links to Bing.com properties in the
 
       response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -663,7 +663,7 @@ methods:
       (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit / 537.51.1 (KHTML, like
 
       Gecko) Version / 7.0 Mobile / 11A465 Safari / 9537.53'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -736,7 +736,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -755,7 +755,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -826,7 +826,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: country_code
@@ -843,7 +843,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: count
@@ -864,7 +864,7 @@ methods:
       Search API. Do not specify this parameter when calling the Trending
 
       Videos API or the Web Search API.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: freshness
@@ -879,7 +879,7 @@ methods:
       discovered within the last 30 days. Possible values include: ''Day'',
 
       ''Week'', ''Month'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.Freshness>
@@ -893,7 +893,7 @@ methods:
       You use this parameter to ensure that the specified video is the first
 
       video in the list of videos that Bing returns.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: length
@@ -908,7 +908,7 @@ methods:
       value is the same as not specifying the videoLength parameter.
 
       Possible values include: ''All'', ''Short'', ''Medium'', ''Long'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.VideoLength>
@@ -925,7 +925,7 @@ methods:
       Bing uses a best fit market code based on an internal mapping that is\nsubject\
       \ to change. This parameter and the\n[cc]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-video-api-v7-reference#cc](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-video-api-v7-reference#cc))\n\
       query parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: offset
@@ -952,7 +952,7 @@ methods:
       [nextOffset]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-video-api-v7-reference#videos-nextoffset](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-video-api-v7-reference#videos-nextoffset)).
 
       Use this parameter only with the Video Search API.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: pricing
@@ -965,7 +965,7 @@ methods:
       pricing.Specifying this value is the same as not specifying the
 
       pricing parameter. Possible values include: ''All'', ''Free'', ''Paid'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.VideoPricing>
@@ -981,7 +981,7 @@ methods:
       value is the same as not specifying the resolution parameter. Possible
 
       values include: ''All'', ''SD480p'', ''HD720p'', ''HD1080p'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.VideoResolution>
@@ -1021,7 +1021,7 @@ methods:
       of the content on the site and your scenario supports the possibility
 
       of adult content. Possible values include: ''Off'', ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.SafeSearch>
@@ -1051,7 +1051,7 @@ methods:
       links to Bing.com properties in the response objects apply the
 
       specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: text_decorations
@@ -1070,7 +1070,7 @@ methods:
       query parameter. For information about hit highlighting, see [Hit
 
       Highlighting]([https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting](https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: text_format
@@ -1084,20 +1084,20 @@ methods:
       \ For display strings that\ncontain escapable HTML characters such as <, >,\
       \ and &, if textFormat\nis set to HTML, Bing escapes the characters as appropriate\
       \ (for\nexample, < is escaped to &lt;). Possible values include: 'Raw', 'Html'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.TextFormat>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1179,7 +1179,7 @@ methods:
       JSON response objects. Any links to Bing.com properties in the
 
       response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -1217,7 +1217,7 @@ methods:
       (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit / 537.51.1 (KHTML, like
 
       Gecko) Version / 7.0 Mobile / 11A465 Safari / 9537.53'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -1290,7 +1290,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -1309,7 +1309,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -1380,7 +1380,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: country_code
@@ -1397,7 +1397,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: market
@@ -1413,7 +1413,7 @@ methods:
       Bing uses a best fit market code based on an internal mapping that is\nsubject\
       \ to change. This parameter and the\n[cc]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-video-api-v7-reference#cc](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-video-api-v7-reference#cc))\n\
       query parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: safe_search
@@ -1452,7 +1452,7 @@ methods:
       of the content on the site and your scenario supports the possibility
 
       of adult content. Possible values include: ''Off'', ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.SafeSearch>
@@ -1482,7 +1482,7 @@ methods:
       links to Bing.com properties in the response objects apply the
 
       specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: text_decorations
@@ -1501,7 +1501,7 @@ methods:
       query parameter. For information about hit highlighting, see [Hit
 
       Highlighting]([https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting](https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: text_format
@@ -1515,20 +1515,20 @@ methods:
       \ For display strings that\ncontain escapable HTML characters such as <, >,\
       \ and &, if textFormat\nis set to HTML, Bing escapes the characters as appropriate\
       \ (for\nexample, < is escaped to &lt;). Possible values include: 'Raw', 'Html'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.videosearch.models.TextFormat>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

@@ -18,7 +18,7 @@ constructor:
     isRequired: true
   - name: voice_signature
     description: User's voice signature (optional).
-    defaultValue: None
+    isRequired: true
 methods:
 - uid: azure.cognitiveservices.speech.transcription.Participant.set_preferred_language
   name: set_preferred_language

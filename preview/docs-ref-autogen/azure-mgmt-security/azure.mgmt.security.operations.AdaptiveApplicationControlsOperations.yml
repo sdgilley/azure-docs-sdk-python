@@ -79,12 +79,12 @@ methods:
   parameters:
   - name: include_path_recommendations
     description: Include the policy rules.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: summary
     description: Return output in a summarized form.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

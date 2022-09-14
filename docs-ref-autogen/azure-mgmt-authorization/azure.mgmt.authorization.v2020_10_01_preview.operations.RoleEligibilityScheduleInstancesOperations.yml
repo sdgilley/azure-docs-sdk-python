@@ -85,7 +85,7 @@ methods:
 
       $filter=asTarget() to return all role eligibility schedules created for the
       current user.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -92,7 +92,7 @@ methods:
     - <xref:str>
   - name: principal_type
     description: 'Type of the principal Id: User, Group or ServicePrincipal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -118,7 +118,7 @@ methods:
     - <xref:str>
   - name: scope
     description: Scope of the Synapse Built-in Role.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -161,22 +161,22 @@ methods:
   parameters:
   - name: role_id
     description: Synapse Built-In Role Id.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: principal_id
     description: Object ID of the AAD principal or security-group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: scope
     description: Scope of the Synapse Built-in Role.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: continuation_token_parameter
     description: Continuation token.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

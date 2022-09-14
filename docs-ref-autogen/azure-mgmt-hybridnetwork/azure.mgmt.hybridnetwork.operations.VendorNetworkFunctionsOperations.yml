@@ -154,7 +154,7 @@ methods:
       for eq (equals)
 
       are: skuType, skuName and vendorProvisioningState.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

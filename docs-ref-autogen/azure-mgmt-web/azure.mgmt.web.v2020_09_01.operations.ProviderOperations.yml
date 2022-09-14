@@ -41,7 +41,7 @@ methods:
     = None, **kwargs: Any) -> Iterable[_models.ApplicationStackCollection]'
   parameters:
   - name: os_type_selected
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.web.v2020_09_01.models.Enum5>
@@ -66,7 +66,7 @@ methods:
     = None, **kwargs: Any) -> Iterable[_models.ApplicationStackCollection]'
   parameters:
   - name: os_type_selected
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.web.v2020_09_01.models.Enum6>

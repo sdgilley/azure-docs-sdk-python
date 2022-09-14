@@ -46,7 +46,7 @@ methods:
   - name: include
     description: If specified, restricts the response to only include the selected
       item.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.sql.models.CapabilityGroup>

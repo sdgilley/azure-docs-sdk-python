@@ -214,7 +214,7 @@ methods:
     - <xref:str>
   - name: experiments_list_by_workspace_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:batch_ai.models.ExperimentsListByWorkspaceOptions>
   - name: cls

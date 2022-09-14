@@ -207,7 +207,7 @@ methods:
       all role
 
       assignments at, above or below the scope for the specified principal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -261,7 +261,7 @@ methods:
       all role
 
       assignments at, above or below the scope for the specified principal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -294,7 +294,7 @@ methods:
       all role
 
       assignments at, above or below the scope for the specified principal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -327,7 +327,7 @@ methods:
       all role
 
       assignments at, above or below the scope for the specified principal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

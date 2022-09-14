@@ -89,7 +89,7 @@ methods:
       here as a filter
 
       e.g. $filter=type eq ''xxxx''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

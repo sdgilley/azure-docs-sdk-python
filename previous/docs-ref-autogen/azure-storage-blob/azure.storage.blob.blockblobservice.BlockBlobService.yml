@@ -291,36 +291,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: blob_name
-    isRequired: true
-  - name: copy_source
-    isRequired: true
-  - name: metadata
-    defaultValue: None
-  - name: source_if_modified_since
-    defaultValue: None
-  - name: source_if_unmodified_since
-    defaultValue: None
-  - name: source_if_match
-    defaultValue: None
-  - name: source_if_none_match
-    defaultValue: None
-  - name: destination_if_modified_since
-    defaultValue: None
-  - name: destination_if_unmodified_since
-    defaultValue: None
-  - name: destination_if_match
-    defaultValue: None
-  - name: destination_if_none_match
-    defaultValue: None
-  - name: destination_lease_id
-    defaultValue: None
-  - name: source_lease_id
-    defaultValue: None
-  - name: timeout
-    defaultValue: None
-  - name: requires_sync
-    defaultValue: None
 - uid: azure.storage.blob.blockblobservice.BlockBlobService.create_blob_from_bytes
   name: create_blob_from_bytes
   summary: 'Creates a new blob from an array of bytes, or updates the content
@@ -350,24 +320,24 @@ methods:
     - <xref:bytes>
   - name: index
     description: Start index in the array of bytes.
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:int>
   - name: count
     description: 'Number of bytes to upload. Set to None or negative value to upload
 
       all bytes starting from index.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: content_settings
     description: ContentSettings object used to set blob properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the blob as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -383,7 +353,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       blob.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -392,7 +362,7 @@ methods:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -400,12 +370,12 @@ methods:
       exceeds
 
       64MB.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -418,7 +388,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -431,7 +401,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -439,7 +409,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -452,7 +422,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -461,7 +431,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -495,12 +465,12 @@ methods:
     - <xref:str>
   - name: content_settings
     description: ContentSettings object used to set blob properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the blob as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -520,7 +490,7 @@ methods:
       will not be used, because computing the MD5 hash requires buffering
 
       entire blocks, and doing so defeats the purpose of the memory-efficient algorithm.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -529,7 +499,7 @@ methods:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -537,12 +507,12 @@ methods:
       exceeds
 
       64MB.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -555,7 +525,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -568,7 +538,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -576,7 +546,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -589,7 +559,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -598,7 +568,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -636,17 +606,17 @@ methods:
     description: 'Number of bytes to read from the stream. This is optional, but
 
       should be supplied for optimal performance.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: content_settings
     description: ContentSettings object used to set blob properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the blob as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -666,7 +636,7 @@ methods:
       will not be used, because computing the MD5 hash requires buffering
 
       entire blocks, and doing so defeats the purpose of the memory-efficient algorithm.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -675,7 +645,7 @@ methods:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -683,12 +653,12 @@ methods:
       exceeds
 
       64MB. Note that parallel upload requires the stream to be seekable.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -701,7 +671,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -714,7 +684,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -722,7 +692,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -735,7 +705,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -744,7 +714,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: use_byte_buffer
@@ -789,7 +759,7 @@ methods:
 
       seek and read calls to the underlying stream. This is particularly beneficial
       when uploading larger blocks.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -823,17 +793,17 @@ methods:
     - <xref:str>
   - name: encoding
     description: Python encoding to use to convert the text to bytes.
-    defaultValue: utf-8
+    isRequired: true
     types:
     - <xref:str>
   - name: content_settings
     description: ContentSettings object used to set blob properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the blob as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -849,7 +819,7 @@ methods:
       already validate. Note that this MD5 hash is not stored with the
 
       blob.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: progress_callback
@@ -858,7 +828,7 @@ methods:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:func>(<xref:current>, <xref:total>)
   - name: max_connections
@@ -866,12 +836,12 @@ methods:
       exceeds
 
       64MB.'
-    defaultValue: '2'
+    isRequired: true
     types:
     - <xref:int>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -884,7 +854,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -897,7 +867,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -905,7 +875,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -918,7 +888,7 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
@@ -927,7 +897,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -958,7 +928,7 @@ methods:
     - <xref:str>
   - name: snapshot
     description: Datetime to determine the time to retrieve the blocks.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: block_list_type
@@ -967,17 +937,17 @@ methods:
       of uncommitted blocks, or both lists together. Valid values are:
 
       committed, uncommitted, or all.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1033,17 +1003,17 @@ methods:
       will already validate. Note that this MD5 hash is not stored with the
 
       blob.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.blockblobservice.BlockBlobService.put_block_from_url
@@ -1098,17 +1068,17 @@ methods:
   - name: source_content_md5
     description: If given, the service will calculate the MD5 hash of the block content
       and compare against this value.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 - uid: azure.storage.blob.blockblobservice.BlockBlobService.put_block_list
@@ -1153,12 +1123,12 @@ methods:
     - <xref:list>(<xref:azure.storage.blob.models.BlobBlock>)
   - name: content_settings
     description: ContentSettings object used to set properties on the blob.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.blob.models.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the blob as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: validate_content
@@ -1173,12 +1143,12 @@ methods:
       will already validate. Note that this check is associated with
 
       the block list content, and not with the content of the blob itself.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: lease_id
     description: Required if the blob has an active lease.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_modified_since
@@ -1191,7 +1161,7 @@ methods:
       Specify this header to perform the operation only
 
       if the resource has been modified since the specified time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_unmodified_since
@@ -1204,7 +1174,7 @@ methods:
       Specify this header to perform the operation only if
 
       the resource has not been modified since the specified date/time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: if_match
@@ -1212,7 +1182,7 @@ methods:
       to perform
 
       the operation only if the resource''s ETag matches the value specified.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: if_none_match
@@ -1225,12 +1195,12 @@ methods:
       the operation only if the resource does not exist, and fail the
 
       operation if it does exist.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -1268,7 +1238,7 @@ methods:
       multiple calls to the Azure service and the timeout will apply to
 
       each call individually.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
 attributes:

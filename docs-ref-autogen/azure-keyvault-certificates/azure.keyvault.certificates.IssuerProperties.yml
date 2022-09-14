@@ -11,7 +11,7 @@ constructor:
   parameters:
   - name: provider
     description: The issuer provider.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 attributes:

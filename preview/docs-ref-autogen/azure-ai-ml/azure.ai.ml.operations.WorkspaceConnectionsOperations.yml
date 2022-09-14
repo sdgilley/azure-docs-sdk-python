@@ -73,7 +73,7 @@ methods:
   parameters:
   - name: connection_type
     description: Type of workspace connection to list.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

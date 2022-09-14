@@ -80,12 +80,12 @@ methods:
       and ''and''. It does not
 
       currently support ''ne'', ''or'', or ''not''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: May be used to limit the number of results to the most recent N marketplaces.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: skiptoken
@@ -97,7 +97,7 @@ methods:
 
       a skiptoken parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

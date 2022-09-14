@@ -70,7 +70,7 @@ methods:
       ''gt'', ''le'', ''ge'',
 
       and ''and''. It does not currently support ''ne'', ''or'', or ''not''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -139,7 +139,7 @@ methods:
       ''gt'', ''le'', ''ge'',
 
       and ''and''. It does not currently support ''ne'', ''or'', or ''not''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

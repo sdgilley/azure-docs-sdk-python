@@ -463,7 +463,7 @@ methods:
     - <xref:azure.mgmt.sql.models.Enum77>
   - name: continuation_token_parameter
     description: The continuation token for this operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

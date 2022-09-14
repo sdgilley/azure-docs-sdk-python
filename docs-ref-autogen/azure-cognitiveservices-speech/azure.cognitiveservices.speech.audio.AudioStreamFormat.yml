@@ -20,12 +20,10 @@ constructor:
   parameters:
   - name: samples_per_second
     description: The sample rate for the stream.
-    defaultValue: None
+    isRequired: true
   - name: bits_per_sample
     description: The number of bits per audio sample
-    defaultValue: '16'
+    isRequired: true
   - name: channels
     description: The number of audio channels
-    defaultValue: '1'
-  - name: compressed_stream_format
-    defaultValue: None
+    isRequired: true

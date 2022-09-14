@@ -120,7 +120,7 @@ methods:
     - <xref:str>
   - name: tenant_id
     description: Tenant ID for cross-tenant request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -147,7 +147,7 @@ methods:
     - <xref:str>
   - name: tenant_id
     description: Tenant ID for cross-tenant request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -179,7 +179,7 @@ methods:
     - <xref:str>
   - name: tenant_id
     description: Tenant ID for cross-tenant request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -205,7 +205,7 @@ methods:
     - <xref:str>
   - name: tenant_id
     description: Tenant ID for cross-tenant request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -232,12 +232,12 @@ methods:
       all role
 
       assignments at, above or below the scope for the specified principal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tenant_id
     description: Tenant ID for cross-tenant request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -291,12 +291,12 @@ methods:
       all role
 
       assignments at, above or below the scope for the specified principal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tenant_id
     description: Tenant ID for cross-tenant request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -329,12 +329,12 @@ methods:
       all role
 
       assignments at, above or below the scope for the specified principal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tenant_id
     description: Tenant ID for cross-tenant request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -367,12 +367,12 @@ methods:
       all role
 
       assignments at, above or below the scope for the specified principal.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: tenant_id
     description: Tenant ID for cross-tenant request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

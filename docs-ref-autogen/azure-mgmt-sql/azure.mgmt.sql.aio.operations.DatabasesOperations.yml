@@ -222,7 +222,7 @@ methods:
     - <xref:str>
   - name: replica_type
     description: The type of replica to be failed over.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.sql.models.ReplicaType>
@@ -607,7 +607,7 @@ methods:
     types:
     - <xref:str>
   - name: skip_token
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

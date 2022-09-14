@@ -63,12 +63,12 @@ methods:
     description: 'It is a list of case-sensitive strings.
 
       Some ID provider can accept empty string to represent default scope.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>
   - name: redirect_uri
     description: Optional. If not specified, server will use the pre-registered one.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: state
@@ -77,7 +77,7 @@ methods:
       maintain state between the request and callback.
 
       If absent, this library will automatically generate one internally.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: kwargs
@@ -136,7 +136,7 @@ methods:
     isRequired: true
   - name: scope
     description: Optional. It must be a subset of previously granted scopes.
-    defaultValue: None
+    isRequired: true
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_auth_code_flow
   name: obtain_token_by_auth_code_flow
   summary: 'With the auth_response being redirected back,
@@ -164,7 +164,7 @@ methods:
       Some Identity Provider allows you to provide
 
       a subset of what you specified during <xref:msal.oauth2cli.oauth2.Client.initiate_auth_code_flow>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:collections.Iterable>[<xref:str>]
   return:
@@ -209,14 +209,14 @@ methods:
     description: 'Required, if the "redirect_uri" parameter was included in the
 
       authorization request, and their values MUST be identical.'
-    defaultValue: None
+    isRequired: true
   - name: scope
     description: 'It is both unnecessary and harmless to use scope here, per RFC 6749.
 
       We suggest to use the same scope already used in auth request uri,
 
       so that this library can link the obtained tokens with their scope.'
-    defaultValue: None
+    isRequired: true
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_browser
   name: obtain_token_by_browser
   summary: 'A native app can use this method to obtain token via a local browser.
@@ -227,7 +227,7 @@ methods:
   parameters:
   - name: scope
     description: A list of scopes that you would like to obtain token for.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:collections.Iterable>[<xref:str>]
   - name: extra_scope_to_consent
@@ -241,7 +241,7 @@ methods:
       call
 
       would be able to obtain token for those additional scopes, silently.'
-    defaultValue: None
+    isRequired: true
   - name: redirect_uri
     description: 'The redirect_uri to be sent via auth request to Identity Provider
       (IdP),
@@ -314,7 +314,7 @@ methods:
       \ turn off the loop. You can do so by using a callback as:\n\n   exit_condition\
       \ = lambda flow: True\n\nto make the loop run only once, i.e. no polling, hence\
       \ non-block."
-    defaultValue: 'lambda flow: flow.get("expires_at", 0) < time.time()'
+    isRequired: true
     types:
     - <xref:Callable>
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_refresh_token
@@ -340,13 +340,13 @@ methods:
       granted by the resource owner,
 
       according to [https://tools.ietf.org/html/rfc6749#section-6](https://tools.ietf.org/html/rfc6749#section-6)'
-    defaultValue: None
+    isRequired: true
   - name: rt_getter
     description: A callable to translate the token_item to a raw RT string
-    defaultValue: 'lambda token_item: token_item["refresh_token"]'
+    isRequired: true
   - name: on_removing_rt
     description: If absent, fall back to the one defined in initialization
-    defaultValue: None
+    isRequired: true
   - name: on_updating_rt
     description: 'Default to None, it will fall back to the one defined in initialization.
 
@@ -362,7 +362,7 @@ methods:
       This behavior is useful when you are migrating RTs from elsewhere
 
       into a token storage managed by this library.'
-    defaultValue: None
+    isRequired: true
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_username_password
   name: obtain_token_by_username_password
   summary: The Resource Owner Password Credentials Grant, used by legacy app.
@@ -406,7 +406,7 @@ methods:
     description: 'REQUIRED if the state parameter was present in the client
 
       authorization request. This function will compare it with response.'
-    defaultValue: None
+    isRequired: true
 attributes:
 - uid: msal.oauth2cli.oauth2.Client.DEVICE_FLOW
   name: DEVICE_FLOW

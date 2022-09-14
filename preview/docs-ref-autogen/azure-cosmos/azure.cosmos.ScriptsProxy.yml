@@ -156,13 +156,13 @@ methods:
   - name: partition_key
     description: Specifies the partition key to indicate which partition the sproc
       should execute on.
-    defaultValue: None
+    isRequired: true
   - name: params
     description: List of parameters to be passed to the stored procedure to be executed.
-    defaultValue: None
+    isRequired: true
   - name: enable_script_logging
     description: Enables or disables script logging for the current request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   return:
@@ -230,7 +230,7 @@ methods:
   parameters:
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -245,7 +245,7 @@ methods:
   parameters:
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
-    defaultValue: None
+    isRequired: true
   return:
     description: An Iterable of triggers (dicts).
     types:
@@ -258,7 +258,7 @@ methods:
   parameters:
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
-    defaultValue: None
+    isRequired: true
   return:
     description: An Iterable of user-defined functions (dicts).
     types:
@@ -276,10 +276,10 @@ methods:
   - name: parameters
     description: Optional array of parameters to the query. Ignored if no query is
       provided.
-    defaultValue: None
+    isRequired: true
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
-    defaultValue: None
+    isRequired: true
   return:
     description: An Iterable of stored procedures (dicts).
     types:
@@ -296,10 +296,10 @@ methods:
   - name: parameters
     description: Optional array of parameters to the query. Ignored if no query is
       provided.
-    defaultValue: None
+    isRequired: true
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
-    defaultValue: None
+    isRequired: true
   return:
     description: An Iterable of triggers (dicts).
     types:
@@ -317,10 +317,10 @@ methods:
   - name: parameters
     description: Optional array of parameters to the query. Ignored if no query is
       provided.
-    defaultValue: None
+    isRequired: true
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
-    defaultValue: None
+    isRequired: true
   return:
     description: An Iterable of user-defined functions (dicts).
     types:

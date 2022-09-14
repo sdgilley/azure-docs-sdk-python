@@ -53,7 +53,7 @@ methods:
     - <xref:str>
   - name: body
     description: Organization resource model.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.confluent.models.OrganizationResource>
   - name: cls
@@ -223,7 +223,7 @@ methods:
     - <xref:str>
   - name: body
     description: Updated Organization resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.confluent.models.OrganizationResourceUpdate>
   - name: cls

@@ -247,7 +247,7 @@ methods:
     - <xref:str>
   - name: hibernate
     description: Optional parameter to hibernate a virtual machine. (Feature in Preview).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -298,7 +298,7 @@ methods:
     description: 'Optional parameter to force delete virtual machines.(Feature in
 
       Preview).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -449,7 +449,7 @@ methods:
       value for this
 
       flag is false if not specified.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
@@ -588,7 +588,7 @@ methods:
     - <xref:str>
   - name: parameters
     description: Parameters supplied to the Reimage Virtual Machine operation.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2021_07_01.models.VirtualMachineReimageParameters>
   - name: cls
@@ -870,7 +870,7 @@ methods:
 
       part of the VM model view that was provided by the user during the VM Create/Update
       operation.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.compute.v2021_07_01.models.InstanceViewTypes>
@@ -947,7 +947,7 @@ methods:
       Machines in
 
       the subscription.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -1038,7 +1038,7 @@ methods:
       SAS URIs
 
       will be generated with a default expiration duration of 120 minutes.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

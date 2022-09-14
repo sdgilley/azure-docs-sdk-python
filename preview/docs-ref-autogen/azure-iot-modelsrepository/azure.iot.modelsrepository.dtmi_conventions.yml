@@ -20,7 +20,7 @@ functions:
     - <xref:str>
   - name: expanded
     description: 'Indicates if the URI should be for an expanded model (Default: False)'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   return:

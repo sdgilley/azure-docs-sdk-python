@@ -48,21 +48,21 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns Order or
 
@@ -90,21 +90,21 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -132,14 +132,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -172,14 +172,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

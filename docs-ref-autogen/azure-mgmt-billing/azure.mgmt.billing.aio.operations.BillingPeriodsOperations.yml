@@ -78,7 +78,7 @@ methods:
       support ''ne'', ''or'', or
 
       ''not''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skiptoken
@@ -90,13 +90,13 @@ methods:
 
       a skiptoken parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: top
     description: May be used to limit the number of results to the most recent N billing
       periods.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: cls

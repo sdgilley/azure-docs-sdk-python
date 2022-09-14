@@ -120,7 +120,7 @@ methods:
     - <xref:str>
   - name: file_servers_list_by_workspace_options
     description: Parameter group.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:batch_ai.models.FileServersListByWorkspaceOptions>
   - name: cls

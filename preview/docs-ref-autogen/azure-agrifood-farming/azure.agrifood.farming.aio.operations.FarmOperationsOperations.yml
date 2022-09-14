@@ -44,7 +44,7 @@ methods:
     - <xref:str>
   - name: job
     description: Job parameters supplied by user.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.FarmOperationDataIngestionJob>
   - name: cls

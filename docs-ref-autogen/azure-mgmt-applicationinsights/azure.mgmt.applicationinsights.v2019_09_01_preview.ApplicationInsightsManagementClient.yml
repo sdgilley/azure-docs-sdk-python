@@ -21,7 +21,7 @@ constructor:
     - <xref:str>
   - name: base_url
     description: Service URL
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
 variables:

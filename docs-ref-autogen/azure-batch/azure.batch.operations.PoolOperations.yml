@@ -48,19 +48,19 @@ methods:
     - <xref:azure.batch.models.PoolAddParameter>
   - name: pool_add_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolAddOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -115,19 +115,19 @@ methods:
     - <xref:str>
   - name: pool_delete_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolDeleteOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -159,19 +159,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolDisableAutoScaleOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -224,7 +224,7 @@ methods:
       Compute Nodes in an Azure Batch Pool
 
       ([https://azure.microsoft.com/en-us/documentation/articles/batch-automatic-scaling](https://azure.microsoft.com/en-us/documentation/articles/batch-automatic-scaling)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: auto_scale_evaluation_interval
@@ -245,26 +245,26 @@ methods:
       new autoscale evaluation schedule will be started, with its starting
 
       time being the time when this request was issued.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:timedelta>
   - name: pool_enable_auto_scale_options
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolEnableAutoScaleOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -318,19 +318,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolEvaluateAutoScaleOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -358,19 +358,19 @@ methods:
     - <xref:str>
   - name: pool_exists_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolExistsOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -397,19 +397,19 @@ methods:
     - <xref:str>
   - name: pool_get_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolGetOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -447,19 +447,19 @@ methods:
     description: 'Additional parameters
 
       for the operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolGetAllLifetimeStatisticsOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -481,19 +481,19 @@ methods:
   parameters:
   - name: pool_list_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolListOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -532,19 +532,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolListUsageMetricsOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -585,19 +585,19 @@ methods:
     - <xref:azure.batch.models.PoolPatchParameter>
   - name: pool_patch_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolPatchOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -641,19 +641,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolRemoveNodesOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -703,19 +703,19 @@ methods:
     - <xref:azure.batch.models.PoolResizeParameter>
   - name: pool_resize_options
     description: Additional parameters for the operation
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolResizeOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -762,19 +762,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolStopResizeOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -820,19 +820,19 @@ methods:
     description: 'Additional parameters for the
 
       operation'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.batch.models.PoolUpdatePropertiesOptions>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

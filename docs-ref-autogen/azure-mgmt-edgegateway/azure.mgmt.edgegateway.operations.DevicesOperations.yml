@@ -48,21 +48,21 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns DataBoxEdgeDevice or
 
@@ -103,21 +103,21 @@ methods:
     - <xref:azure.mgmt.edgegateway.models.AsymmetricEncryptedSecret>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -145,21 +145,21 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -187,21 +187,21 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -229,14 +229,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -271,14 +271,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -315,14 +315,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -359,14 +359,14 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -399,21 +399,21 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -440,19 +440,19 @@ methods:
       related to the resource or Specify $skipToken=<token> to populate the
 
       next page in the list.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -477,19 +477,19 @@ methods:
       related to the resource or Specify $skipToken=<token> to populate the
 
       next page in the list.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -521,21 +521,21 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'The poller return type is ClientRawResponse, the
 
       direct response alongside the deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: polling
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
-    defaultValue: 'True'
+    isRequired: true
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -563,19 +563,19 @@ methods:
     - <xref:str>
   - name: tags
     description: The tags attached to the Data Box Edge/Gateway resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -615,20 +615,20 @@ methods:
     description: 'The authentication type. Possible values
 
       include: ''Invalid'', ''AzureActiveDirectory'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.edgegateway.models.AuthenticationType>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

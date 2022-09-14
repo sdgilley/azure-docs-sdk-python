@@ -16,12 +16,12 @@ constructor:
     - <xref:azure.core.credentials.TokenCredential>
   - name: synapse_dns_suffix
     description: Gets the DNS suffix used as the base for all Synapse service requests.
-    defaultValue: dev.azuresynapse.net
+    isRequired: true
     types:
     - <xref:str>
   - name: livy_api_version
     description: Valid api-version for the request.
-    defaultValue: 2019-11-01-preview
+    isRequired: true
     types:
     - <xref:str>
 variables:

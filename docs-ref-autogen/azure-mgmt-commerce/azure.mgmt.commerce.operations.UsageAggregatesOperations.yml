@@ -62,14 +62,14 @@ methods:
       the time
 
       period (for the given subscriptionId, meterId, usageStartTime and usageEndTime).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: aggregation_granularity
     description: '`Daily` (default) returns the data in daily granularity,
 
       `Hourly` returns the data in hourly granularity.'
-    defaultValue: Daily
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.commerce.models.AggregationGranularity>
@@ -81,7 +81,7 @@ methods:
 
       the data is retrieved from the beginning of the day/hour (based on the granularity)
       passed in.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

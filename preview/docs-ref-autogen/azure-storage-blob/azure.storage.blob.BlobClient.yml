@@ -43,7 +43,7 @@ constructor:
       snapshot ID string
 
       or the response returned from <xref:azure.storage.blob.BlobClient.create_snapshot>.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: credential
@@ -61,7 +61,7 @@ constructor:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: api_version
     description: 'The Storage API version to use for requests. Default value is the
       most recent service version that is
@@ -1656,11 +1656,9 @@ methods:
       If specified, this will override
 
       the snapshot in the url.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
-  - name: snapshot
-    defaultValue: None
   return:
     description: A Blob client.
     types:
@@ -1710,9 +1708,7 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
-    defaultValue: None
-  - name: credential
-    defaultValue: None
+    isRequired: true
   return:
     description: A Blob client.
     types:

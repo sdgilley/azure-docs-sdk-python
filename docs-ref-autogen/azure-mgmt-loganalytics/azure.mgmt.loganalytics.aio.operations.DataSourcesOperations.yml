@@ -154,7 +154,7 @@ methods:
     - <xref:str>
   - name: skiptoken
     description: Starting point of the collection of data source instances.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

@@ -169,7 +169,7 @@ methods:
     - <xref:str>
   - name: workspace
     description: Object containing Workspace definitions.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:desktop_virtualization_api_client.models.WorkspacePatch>
   - name: cls

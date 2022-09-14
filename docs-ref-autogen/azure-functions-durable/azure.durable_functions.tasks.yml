@@ -24,7 +24,7 @@ functions:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Any>
   return:
@@ -58,7 +58,7 @@ functions:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Any>
   return:
@@ -96,17 +96,17 @@ functions:
     - <xref:str>
   - name: content
     description: The HTTP request content.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: headers
     description: The HTTP request headers.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Dict>[<xref:str>, <xref:str>]
   - name: token_source
     description: The source of OAuth token to add to the request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.durable_functions.models.TokenSource.TokenSource>
   return:
@@ -139,12 +139,12 @@ functions:
   - name: input
     description: The JSON-serializable input to pass to the activity function. Defaults
       to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
     description: The instance ID of the sub-orchestrator to call. Defaults to "".
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -184,12 +184,12 @@ functions:
   - name: input
     description: The JSON-serializable input to pass to the activity function. Defaults
       to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
     description: The instance ID of the sub-orchestrator to call. Defaults to "".
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -207,8 +207,6 @@ functions:
     isRequired: true
     types:
     - <xref:Any>
-  - name: input_
-    defaultValue: None
 - uid: azure.durable_functions.tasks.create_timer_task
   name: create_timer_task
   summary: Durable Timers are used in orchestrator function to implement delays.
@@ -347,17 +345,17 @@ functions:
     - <xref:str>
   - name: content
     description: The HTTP request content.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: headers
     description: The HTTP request headers.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Dict>[<xref:str>, <xref:str>]
   - name: token_source
     description: The source of OAuth token to add to the request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.durable_functions.models.TokenSource.TokenSource>
   return:
@@ -374,8 +372,6 @@ functions:
     isRequired: true
     types:
     - <xref:Any>
-  - name: input_
-    defaultValue: None
 - uid: azure.durable_functions.tasks.new_uuid
   name: new_uuid
   summary: "Create a new UUID that is safe for replay within an orchestration or operation.\n\

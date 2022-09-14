@@ -47,7 +47,7 @@ methods:
       for
 
       start date and end date. The filter supports ''le'' and  ''ge''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -82,7 +82,7 @@ methods:
       for
 
       start date and end date. The filter supports ''le'' and  ''ge''.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

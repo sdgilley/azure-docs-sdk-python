@@ -65,7 +65,7 @@ functions:
     types:
     - <xref:dict>
   - name: partition_key_range_id
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   return:

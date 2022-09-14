@@ -44,12 +44,12 @@ methods:
     - <xref:str>
   - name: compute_type
     description: Type of compute to filter by.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: recommended
     description: Specifies whether to return recommended vm sizes or all vm sizes.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls

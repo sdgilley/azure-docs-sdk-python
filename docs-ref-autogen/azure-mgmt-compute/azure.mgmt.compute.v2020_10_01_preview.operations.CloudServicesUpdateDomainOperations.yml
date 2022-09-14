@@ -60,7 +60,7 @@ methods:
     - <xref:int>
   - name: parameters
     description: The update domain object.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.mgmt.compute.v2020_10_01_preview.models.UpdateDomain>
   - name: cls

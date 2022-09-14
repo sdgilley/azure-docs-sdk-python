@@ -115,7 +115,7 @@ methods:
     - <xref:str>
   - name: expand
     description: OData expand. Optional.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.security.models.ExpandEnum>

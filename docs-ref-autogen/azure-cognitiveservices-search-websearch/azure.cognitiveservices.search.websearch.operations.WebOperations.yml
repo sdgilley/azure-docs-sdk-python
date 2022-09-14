@@ -87,7 +87,7 @@ methods:
       JSON response objects. Any links in the response objects to Bing.com
 
       properties will apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: pragma
@@ -96,7 +96,7 @@ methods:
       To prevent Bing from returning cached content, set the Pragma header
 
       to no-cache (for example, Pragma: no-cache).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -111,7 +111,7 @@ methods:
       used browser would send. For information about user agents, see [RFC
 
       2616]([http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -184,7 +184,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -203,7 +203,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -274,7 +274,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: answer_count
@@ -291,7 +291,7 @@ methods:
       parameter in the same request and set it to webpages and news, the
 
       response would include only webpages.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: country_code
@@ -308,7 +308,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: count
@@ -327,7 +327,7 @@ methods:
       offset by 10 (for example, 0, 10, 20). It is possible for multiple
 
       pages to include some overlap in results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: freshness
@@ -337,7 +337,7 @@ methods:
       \ that discovered within the last 30 days. This\nfilter applies only to webpage\
       \ results and not to the other results\nsuch as news and images. Possible values\
       \ include: 'Day', 'Week',\n'Month'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.websearch.models.Freshness>
@@ -352,7 +352,7 @@ methods:
       \ is\nnot listed in Market Codes, Bing uses a best fit market code based on\n\
       an internal mapping that is subject to change. This parameter and the\ncc query\
       \ parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: en-us
+    isRequired: true
     types:
     - <xref:str>
   - name: offset
@@ -371,7 +371,7 @@ methods:
       subsequent page, increment offset by 10 (for example, 0, 10, 20). it
 
       is possible for multiple pages to include some overlap in results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: promote
@@ -406,7 +406,7 @@ methods:
       RelatedSearches, SpellSuggestions, TimeZone, Videos, Webpages. Use
 
       only if you specify answerCount.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.search.websearch.models.AnswerType>]
@@ -434,7 +434,7 @@ methods:
       Web Search API returns them). To include answers that would otherwise
 
       be excluded because of ranking, see the promote query parameter.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>
     - <xref:azure.cognitiveservices.search.websearch.models.AnswerType>]
@@ -462,7 +462,7 @@ methods:
       possibility of adult content. Possible values include: ''Off'',
 
       ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.websearch.models.SafeSearch>
@@ -490,7 +490,7 @@ methods:
       Bing.com properties in the response objects apply the specified
 
       language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: text_decorations
@@ -503,7 +503,7 @@ methods:
       default is false. To specify whether to use Unicode characters or HTML
 
       tags as the markers, see the textFormat query parameter.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: text_format
@@ -517,20 +517,20 @@ methods:
       \ For display strings that\ncontain escapable HTML characters such as <, >,\
       \ and &, if textFormat\nis set to HTML, Bing escapes the characters as appropriate\
       \ (for\nexample, < is escaped to &lt;). Possible values include: 'Raw', 'Html'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.websearch.models.TextFormat>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

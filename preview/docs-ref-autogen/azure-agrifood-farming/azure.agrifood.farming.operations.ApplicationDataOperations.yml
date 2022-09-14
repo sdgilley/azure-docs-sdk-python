@@ -49,7 +49,7 @@ methods:
     - <xref:str>
   - name: application_data
     description: Application data resource payload to create or update.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.agrifood.farming.models.ApplicationData>
   - name: cls
@@ -135,149 +135,149 @@ methods:
     description: 'Minimum average amount of material applied during the application
 
       (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_avg_material
     description: 'Maximum average amount of material applied during the application
 
       (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: min_total_material
     description: 'Minimum total amount of material applied during the application
 
       (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_total_material
     description: 'Maximum total amount of material applied during the application
 
       (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: sources
     description: Sources of the operation data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: associated_boundary_ids
     description: Boundary IDs associated with operation data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: operation_boundary_ids
     description: Operation boundary IDs associated with operation data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_operation_start_date_time
     description: 'Minimum start date-time of the operation data, sample
 
       format: yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_operation_start_date_time
     description: 'Maximum start date-time of the operation data, sample
 
       format: yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_operation_end_date_time
     description: 'Minimum end date-time of the operation data, sample format:
 
       yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_operation_end_date_time
     description: 'Maximum end date-time of the operation data, sample format:
 
       yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_operation_modified_date_time
     description: 'Minimum modified date-time of the operation data,
 
       sample format: yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_operation_modified_date_time
     description: 'Maximum modified date-time of the operation data,
 
       sample format: yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_area
     description: Minimum area for which operation was applied (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_area
     description: Maximum area for which operation was applied (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: ids
     description: Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: names
     description: Names of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: property_filters
     description: 'Filters on key-value pairs within the Properties object.
 
       eg. "{testKey} eq {testValue}".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: statuses
     description: Statuses of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_created_date_time
     description: Minimum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_created_date_time
     description: Maximum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_last_modified_date_time
     description: Minimum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_last_modified_date_time
     description: Maximum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls
@@ -321,149 +321,149 @@ methods:
     description: 'Minimum average amount of material applied during the application
 
       (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_avg_material
     description: 'Maximum average amount of material applied during the application
 
       (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: min_total_material
     description: 'Minimum total amount of material applied during the application
 
       (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_total_material
     description: 'Maximum total amount of material applied during the application
 
       (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: sources
     description: Sources of the operation data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: associated_boundary_ids
     description: Boundary IDs associated with operation data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: operation_boundary_ids
     description: Operation boundary IDs associated with operation data.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_operation_start_date_time
     description: 'Minimum start date-time of the operation data, sample
 
       format: yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_operation_start_date_time
     description: 'Maximum start date-time of the operation data, sample
 
       format: yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_operation_end_date_time
     description: 'Minimum end date-time of the operation data, sample format:
 
       yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_operation_end_date_time
     description: 'Maximum end date-time of the operation data, sample format:
 
       yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_operation_modified_date_time
     description: 'Minimum modified date-time of the operation data,
 
       sample format: yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_operation_modified_date_time
     description: 'Maximum modified date-time of the operation data,
 
       sample format: yyyy-MM-ddTHH:mm:ssZ (inclusive).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_area
     description: Minimum area for which operation was applied (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: max_area
     description: Maximum area for which operation was applied (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: ids
     description: Ids of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: names
     description: Names of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: property_filters
     description: 'Filters on key-value pairs within the Properties object.
 
       eg. "{testKey} eq {testValue}".'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: statuses
     description: Statuses of the resource.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: min_created_date_time
     description: Minimum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_created_date_time
     description: Maximum creation date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: min_last_modified_date_time
     description: Minimum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_last_modified_date_time
     description: Maximum last modified date of resource (inclusive).
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime.datetime>
   - name: max_page_size
     description: 'Maximum number of items needed (inclusive).
 
       Minimum = 10, Maximum = 1000, Default value = 50.'
-    defaultValue: '50'
+    isRequired: true
     types:
     - <xref:int>
   - name: skip_token
     description: Skip token for getting next set of results.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

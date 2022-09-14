@@ -25,7 +25,7 @@ functions:
     - <xref:bytes>
   - name: expiry
     description: The lifetime of the generated token. Default is 1 hour.
-    defaultValue: '1:00:00'
+    isRequired: true
     types:
     - <xref:datetime.timedelta>
   return:
@@ -61,8 +61,6 @@ functions:
     isRequired: true
     types:
     - <xref:uamqp.types.AMQPType>
-  - name: encoding
-    defaultValue: UTF-8
   return:
     types:
     - <xref:uamqp.c_uamqp.AMQPValue>

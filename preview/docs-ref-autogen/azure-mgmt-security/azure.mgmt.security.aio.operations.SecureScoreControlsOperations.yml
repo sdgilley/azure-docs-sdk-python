@@ -39,7 +39,7 @@ methods:
   parameters:
   - name: expand
     description: OData expand. Optional.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.security.models.ExpandControlsEnum>
@@ -70,7 +70,7 @@ methods:
     - <xref:str>
   - name: expand
     description: OData expand. Optional.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.security.models.ExpandControlsEnum>

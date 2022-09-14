@@ -53,7 +53,7 @@ methods:
 
       include a token parameter that specifies a starting point to use for subsequent
       calls.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: skip
@@ -61,7 +61,7 @@ methods:
       this in will
 
       override $skipToken.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: top
@@ -69,7 +69,7 @@ methods:
       in will override
 
       $skipToken.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: select
@@ -82,7 +82,7 @@ methods:
       specified the
 
       $select parameter can override select in $skipToken.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: search
@@ -121,7 +121,7 @@ methods:
       entities or
 
       one of it''s descendants for it to show up in the results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.managementgroups.models.Enum2>
@@ -138,7 +138,7 @@ methods:
       that the
 
       ''{entityName}'' and ''{substringToSearch}'' fields are checked case insensitively.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: view
@@ -146,7 +146,7 @@ methods:
       is returned by
 
       the getEntities call.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.managementgroups.models.Enum3>
@@ -155,7 +155,7 @@ methods:
       group
 
       (i.e. "$filter=name eq ''groupName''").'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: cache_control
@@ -163,7 +163,7 @@ methods:
       the
 
       header with ''no-cache'' value to bypass existing caches.'
-    defaultValue: no-cache
+    isRequired: true
     types:
     - <xref:str>
   - name: cls

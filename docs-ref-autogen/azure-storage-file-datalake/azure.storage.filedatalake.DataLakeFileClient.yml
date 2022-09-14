@@ -43,7 +43,7 @@ constructor:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    defaultValue: None
+    isRequired: true
   - name: api_version
     description: 'The Storage API version to use for requests. Default value is the
       most recent service version that is
@@ -91,7 +91,7 @@ methods:
     isRequired: true
   - name: length
     description: Size of the data in bytes.
-    defaultValue: None
+    isRequired: true
   - name: validate_content
     description: 'If true, calculates an MD5 hash of the block content. The storage
 
@@ -139,12 +139,12 @@ methods:
   parameters:
   - name: content_settings
     description: ContentSettings object used to set path properties.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.storage.filedatalake.ContentSettings>
   - name: metadata
     description: Name-value pairs associated with the file as metadata.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>(<xref:str>, <xref:str>)
   - name: lease
@@ -376,14 +376,14 @@ methods:
     description: 'Start of byte range to use for downloading a section of the file.
 
       Must be set if length is provided.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: length
     description: 'Number of bytes to read from the stream. This is optional, but
 
       should be supplied for optimal performance.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: lease
@@ -497,7 +497,7 @@ methods:
       this optional parameter allows data after the flush position to be
 
       retained for a future flush operation.'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: content_settings
@@ -634,7 +634,7 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
-    defaultValue: None
+    isRequired: true
 - uid: azure.storage.filedatalake.DataLakeFileClient.get_file_properties
   name: get_file_properties
   summary: 'Returns all user-defined metadata, standard HTTP properties, and
@@ -972,7 +972,7 @@ methods:
       When expiry_options is RelativeTo*, expires_on should be an int in milliseconds.
 
       If the type of expires_on is datetime, it should be in UTC time.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
@@ -993,12 +993,12 @@ methods:
     isRequired: true
   - name: length
     description: Size of the data in bytes.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: overwrite
     description: to overwrite an existing file or not.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: content_settings

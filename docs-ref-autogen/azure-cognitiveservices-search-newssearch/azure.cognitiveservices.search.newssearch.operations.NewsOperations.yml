@@ -97,7 +97,7 @@ methods:
       JSON response objects. Any links to Bing.com properties in the
 
       response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -135,7 +135,7 @@ methods:
       (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit / 537.51.1 (KHTML, like
 
       Gecko) Version / 7.0 Mobile / 11A465 Safari / 9537.53'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -208,7 +208,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -227,7 +227,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -298,7 +298,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: country_code
@@ -315,7 +315,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: category
@@ -344,7 +344,7 @@ methods:
       [headlineCount]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#headlineCount](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#headlineCount))
 
       query parameter.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: count
@@ -369,7 +369,7 @@ methods:
       [category]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#category](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#category))
 
       parameter, Bing ignores this parameter.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: headline_count
@@ -382,7 +382,7 @@ methods:
       [category]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#category](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#category))
 
       parameter.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: market
@@ -398,7 +398,7 @@ methods:
       Bing uses a best fit market code based on an internal mapping that is\nsubject\
       \ to change. This parameter and the\n[cc]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#cc](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#cc))\n\
       query parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: offset
@@ -425,7 +425,7 @@ methods:
       [category]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#category](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#category))
 
       parameter, Bing ignores this parameter.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: original_image
@@ -446,7 +446,7 @@ methods:
       same thumbnail image. Use this parameter only with the News Search API
 
       or News Category API. Trending Topics API ignore this parameter.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: safe_search
@@ -473,7 +473,7 @@ methods:
       your scenario supports the possibility of adult content. Possible
 
       values include: ''Off'', ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.newssearch.models.SafeSearch>
@@ -503,7 +503,7 @@ methods:
       links to Bing.com properties in the response objects apply the
 
       specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: text_decorations
@@ -522,7 +522,7 @@ methods:
       query parameter. For information about hit highlighting, see [Hit
 
       Highlighting]([https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting](https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: text_format
@@ -536,20 +536,20 @@ methods:
       \ For display strings that\ncontain escapable HTML characters such as <, >,\
       \ and &, if textFormat\nis set to HTML, Bing escapes the characters as appropriate\
       \ (for\nexample, < is escaped to &lt;). Possible values include: 'Raw', 'Html'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.newssearch.models.TextFormat>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -654,7 +654,7 @@ methods:
       JSON response objects. Any links to Bing.com properties in the
 
       response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -692,7 +692,7 @@ methods:
       (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit / 537.51.1 (KHTML, like
 
       Gecko) Version / 7.0 Mobile / 11A465 Safari / 9537.53'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -765,7 +765,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -784,7 +784,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -855,7 +855,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: country_code
@@ -872,7 +872,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: count
@@ -893,7 +893,7 @@ methods:
       by 20 (for example, 0, 20, 40). It is possible for multiple pages to
 
       include some overlap in results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: freshness
@@ -912,7 +912,7 @@ methods:
       or the Trending Topics API. Possible values include: ''Day'', ''Week'',
 
       ''Month'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.newssearch.models.Freshness>
@@ -929,7 +929,7 @@ methods:
       Bing uses a best fit market code based on an internal mapping that is\nsubject\
       \ to change. This parameter and the\n[cc]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#cc](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#cc))\n\
       query parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: offset
@@ -952,7 +952,7 @@ methods:
       example, 0, 20, 40). It is possible for multiple pages to include some
 
       overlap in results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: original_image
@@ -975,7 +975,7 @@ methods:
       API. Do not specify this parameter when calling the Trending Topics
 
       API or News Category API.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: safe_search
@@ -1002,7 +1002,7 @@ methods:
       your scenario supports the possibility of adult content. Possible
 
       values include: ''Off'', ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.newssearch.models.SafeSearch>
@@ -1032,7 +1032,7 @@ methods:
       links to Bing.com properties in the response objects apply the
 
       specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: sort_by
@@ -1047,7 +1047,7 @@ methods:
       Trending Topics API, the response returns trending topics sorted by
 
       date from the most recent to the oldest.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: text_decorations
@@ -1066,7 +1066,7 @@ methods:
       query parameter. For information about hit highlighting, see [Hit
 
       Highlighting]([https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting](https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: text_format
@@ -1080,20 +1080,20 @@ methods:
       \ For display strings that\ncontain escapable HTML characters such as <, >,\
       \ and &, if textFormat\nis set to HTML, Bing escapes the characters as appropriate\
       \ (for\nexample, < is escaped to &lt;). Possible values include: 'Raw', 'Html'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.newssearch.models.TextFormat>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config
@@ -1178,7 +1178,7 @@ methods:
       JSON response objects. Any links to Bing.com properties in the
 
       response objects apply the specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: user_agent
@@ -1216,7 +1216,7 @@ methods:
       (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit / 537.51.1 (KHTML, like
 
       Gecko) Version / 7.0 Mobile / 11A465 Safari / 9537.53'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_id
@@ -1289,7 +1289,7 @@ methods:
       requests for the user on that device. If you include the
 
       X-MSEdge-ClientID, you must not include cookies in the request.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: client_ip
@@ -1308,7 +1308,7 @@ methods:
       the location not being anywhere near the device''s actual location,
 
       which may result in Bing serving erroneous results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -1379,7 +1379,7 @@ methods:
       you should include this header and the X-MSEdge-ClientIP header, but
 
       at a minimum, you should include this header.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: country_code
@@ -1396,7 +1396,7 @@ methods:
       \ you specify multiple languages; otherwise, you\nshould use the mkt and setLang\
       \ query parameters. This parameter and\nthe mkt query parameter are mutually\
       \ exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: count
@@ -1417,7 +1417,7 @@ methods:
       by 20 (for example, 0, 20, 40). It is possible for multiple pages to
 
       include some overlap in results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: market
@@ -1433,7 +1433,7 @@ methods:
       Bing uses a best fit market code based on an internal mapping that is\nsubject\
       \ to change. This parameter and the\n[cc]([https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#cc](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-news-api-v7-reference#cc))\n\
       query parameter are mutually exclusive\u2014do not specify both."
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: offset
@@ -1456,7 +1456,7 @@ methods:
       example, 0, 20, 40). It is possible for multiple pages to include some
 
       overlap in results.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:int>
   - name: safe_search
@@ -1483,7 +1483,7 @@ methods:
       your scenario supports the possibility of adult content. Possible
 
       values include: ''Off'', ''Moderate'', ''Strict'''
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.newssearch.models.SafeSearch>
@@ -1513,7 +1513,7 @@ methods:
       links to Bing.com properties in the response objects apply the
 
       specified language.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: since
@@ -1530,7 +1530,7 @@ methods:
       Do not specify this parameter when calling the News Search API or News
 
       Category API.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:long>
   - name: sort_by
@@ -1545,7 +1545,7 @@ methods:
       Trending Topics API, the response returns trending topics sorted by
 
       date from the most recent to the oldest.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: text_decorations
@@ -1564,7 +1564,7 @@ methods:
       query parameter. For information about hit highlighting, see [Hit
 
       Highlighting]([https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting](https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting)).'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: text_format
@@ -1578,20 +1578,20 @@ methods:
       \ For display strings that\ncontain escapable HTML characters such as <, >,\
       \ and &, if textFormat\nis set to HTML, Bing escapes the characters as appropriate\
       \ (for\nexample, < is escaped to &lt;). Possible values include: 'Raw', 'Html'"
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.cognitiveservices.search.newssearch.models.TextFormat>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
   - name: operation_config

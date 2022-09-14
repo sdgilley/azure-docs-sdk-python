@@ -79,13 +79,13 @@ methods:
   parameters:
   - name: include_path_recommendations
     description: Include the policy rules.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.security.models.Enum37>
   - name: summary
     description: Return output in a summarized form.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
     - <xref:azure.mgmt.security.models.Enum38>

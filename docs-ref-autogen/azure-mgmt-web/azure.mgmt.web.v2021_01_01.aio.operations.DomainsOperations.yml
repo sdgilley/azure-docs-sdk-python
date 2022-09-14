@@ -176,7 +176,7 @@ methods:
 
       immediately. The default is `<code>false</code>` which deletes the domain after
       24 hours.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: cls
