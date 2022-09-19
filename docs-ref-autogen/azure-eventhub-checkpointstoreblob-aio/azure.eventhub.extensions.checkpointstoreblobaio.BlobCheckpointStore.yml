@@ -115,6 +115,8 @@ methods:
     description: The hostname of the secondary endpoint.
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   return:
     description: A blob checkpoint store.
     types:

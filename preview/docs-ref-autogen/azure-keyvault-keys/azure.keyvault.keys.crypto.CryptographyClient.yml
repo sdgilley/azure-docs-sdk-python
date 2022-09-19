@@ -174,7 +174,7 @@ methods:
     types:
     - <xref:azure.keyvault.keys.JsonWebKey>
     - <xref:dict>
-  - name: jwk
+  - name: cls
     isRequired: true
   return:
     types:

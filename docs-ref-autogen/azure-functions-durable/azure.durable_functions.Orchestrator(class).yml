@@ -29,7 +29,7 @@ methods:
     types:
     - <xref:Callable>[[<xref:azure.durable_functions.DurableOrchestrationContext>],
       <xref:Iterator>[<xref:Any>]]
-  - name: fn
+  - name: cls
     isRequired: true
   return:
     description: Handle function of the newly created orchestration client

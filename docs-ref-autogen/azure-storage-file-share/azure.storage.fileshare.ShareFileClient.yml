@@ -496,7 +496,7 @@ methods:
       ID string
 
       or the response returned from <xref:azure.storage.fileshare.ShareClient.create_snapshot>.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: credential
@@ -508,8 +508,8 @@ methods:
 
       shared access key.'
     defaultValue: None
-  - name: credential
-    defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: A File client.
     types:
@@ -541,7 +541,7 @@ methods:
       ID string
 
       or the response returned from <xref:azure.storage.fileshare.ShareClient.create_snapshot>.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: credential
@@ -553,8 +553,8 @@ methods:
 
       shared access key.'
     defaultValue: None
-  - name: credential
-    defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: A File client.
     types:
@@ -636,7 +636,7 @@ methods:
   parameters:
   - name: offset
     description: Specifies the start offset of bytes over which to get ranges.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:int>
   - name: length
@@ -651,7 +651,7 @@ methods:
       specifies a previous file snapshot to be compared
 
       against a more recent snapshot or the current file.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: lease

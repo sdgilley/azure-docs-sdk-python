@@ -205,9 +205,9 @@ methods:
       account name, and "key"
 
       should be the storage account key.'
-    isRequired: true
-  - name: credential
     defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: A Queue service client.
     types:

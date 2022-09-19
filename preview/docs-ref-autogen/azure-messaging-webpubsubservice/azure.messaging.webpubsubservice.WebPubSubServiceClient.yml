@@ -32,7 +32,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: connection_string
+  - name: cls
     isRequired: true
   return:
     types:

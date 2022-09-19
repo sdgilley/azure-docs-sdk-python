@@ -164,7 +164,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: table_name
+  - name: cls
     isRequired: true
   return:
     description: A table client.
@@ -201,6 +201,8 @@ methods:
     types:
     - <xref:azure.core.credentials.AzureNamedKeyCredential>
     - <xref:azure.core.credentials.AzureSasCredential>
+  - name: cls
+    isRequired: true
   return:
     description: A table client.
     types:

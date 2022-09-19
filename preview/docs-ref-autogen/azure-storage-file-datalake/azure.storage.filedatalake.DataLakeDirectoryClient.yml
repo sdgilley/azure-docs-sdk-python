@@ -597,9 +597,9 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
-    isRequired: true
-  - name: credential
     defaultValue: None
+  - name: cls
+    isRequired: true
 - uid: azure.storage.filedatalake.DataLakeDirectoryClient.get_directory_properties
   name: get_directory_properties
   summary: 'Returns all user-defined metadata, standard HTTP properties, and

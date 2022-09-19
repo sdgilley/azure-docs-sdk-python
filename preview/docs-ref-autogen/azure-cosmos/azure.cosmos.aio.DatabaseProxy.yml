@@ -338,6 +338,8 @@ methods:
   - name: user
     description: The ID (name) of the user to be retrieved.
     isRequired: true
+  - name: user_id
+    isRequired: true
   return:
     description: A *UserProxy* instance representing the retrieved user.
     types:

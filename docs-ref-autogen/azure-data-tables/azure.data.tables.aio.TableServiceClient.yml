@@ -184,7 +184,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: conn_str
+  - name: cls
     isRequired: true
   return:
     description: A Table service client.

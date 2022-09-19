@@ -183,9 +183,9 @@ methods:
       shared access
 
       key, or an instance of a TokenCredentials class from azure.identity.'
-    isRequired: true
-  - name: credential
     defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: A Queue service client.
     types:

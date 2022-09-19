@@ -167,9 +167,9 @@ methods:
       an instance of a AzureSasCredential from azure.core.credentials or an account
 
       shared access key.'
-    isRequired: true
-  - name: credential
     defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: A File Share service client.
     types:

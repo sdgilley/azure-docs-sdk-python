@@ -29,7 +29,7 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.hub.protocol.models.ConfigurationContent>
-  - name: configuration_content
+  - name: device_id
     isRequired: true
   return:
     description: An object.
@@ -66,12 +66,12 @@ methods:
     - <xref:str>
   - name: configuration
     description: The configuration to create.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.iot.hub.protocol.models.Configuration>
   - name: etag
     description: The etag (if_match) value to use for the delete operation.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   return:
@@ -97,7 +97,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: connection_string
+  - name: cls
     isRequired: true
   return:
     types:
@@ -124,7 +124,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: token_credential
+  - name: cls
     isRequired: true
   return:
     types:

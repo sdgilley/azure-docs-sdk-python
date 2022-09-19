@@ -221,6 +221,8 @@ methods:
       More on consistency levels and possible values: [https://aka.ms/cosmos-consistency-levels](https://aka.ms/cosmos-consistency-levels)'
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   return:
     description: a CosmosClient instance
     types:

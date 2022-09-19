@@ -512,6 +512,8 @@ methods:
       Default is None in which case *certifi.where()* will be used.'
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   return:
     types:
     - <xref:azure.eventhub.aio.EventHubConsumerClient>

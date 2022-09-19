@@ -37,7 +37,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: connection_string
+  - name: cls
     isRequired: true
   return:
     types:
@@ -64,7 +64,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: token_credential
+  - name: cls
     isRequired: true
   return:
     types:

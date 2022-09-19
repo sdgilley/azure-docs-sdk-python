@@ -92,7 +92,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: string
+  - name: cls
     isRequired: true
   return:
     description: A NTFSAttributes object

@@ -254,9 +254,9 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
-    isRequired: true
-  - name: credential
     defaultValue: None
+  - name: cls
+    isRequired: true
   examples:
   - "Creating the DataLakeServiceClient from a connection string.<!--[!code-python[Main](les\\\
     datalake_samples_file_system.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\

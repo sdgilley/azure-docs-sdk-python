@@ -31,7 +31,7 @@ methods:
 
       instance of the class'
     isRequired: true
-  - name: json_string
+  - name: cls
     isRequired: true
   return:
     description: New instance of the durable orchestration binding class

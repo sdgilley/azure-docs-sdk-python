@@ -42,7 +42,7 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
-  - name: data
+  - name: cls
     isRequired: true
   return:
     description: DocumentModelSummary

@@ -522,6 +522,8 @@ methods:
       in reduced feature compatibility.'
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.aio.ServiceBusAdministrationClient>

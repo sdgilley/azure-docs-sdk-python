@@ -32,7 +32,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: session_token
+  - name: cls
     isRequired: true
   return:
     description: A Vector session Token

@@ -171,7 +171,7 @@ methods:
     types:
     - <xref:bytes>
     - <xref:bytearray>
-  - name: data
+  - name: cls
     isRequired: true
 - uid: uamqp.message.Message.encode_message
   name: encode_message

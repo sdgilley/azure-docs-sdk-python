@@ -89,7 +89,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: traceparent
+  - name: cls
     isRequired: true
   - name: attributes
     defaultValue: None
@@ -105,7 +105,7 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
-  - name: headers
+  - name: cls
     isRequired: true
   - name: attributes
     defaultValue: None
@@ -117,7 +117,7 @@ methods:
   - name: span
     description: The span to set the current span as
     isRequired: true
-  - name: span
+  - name: cls
     isRequired: true
 - uid: azure.core.tracing.ext.opencensus_span.OpenCensusSpan.set_current_tracer
   name: set_current_tracer
@@ -170,7 +170,7 @@ methods:
   - name: func
     description: The function that will be run in the new context
     isRequired: true
-  - name: func
+  - name: cls
     isRequired: true
   return:
     description: The target the pass in instead of the function

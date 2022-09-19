@@ -27,11 +27,11 @@ methods:
   parameters:
   - name: key_transformer
     description: A key transformer function.
-    defaultValue: 'True'
+    defaultValue: <function attribute_transformer at 0x0000022B08E9D550>
     types:
     - <xref:function>
-  - name: key_transformer
-    defaultValue: <function attribute_transformer at 0x00000199141ED550>
+  - name: keep_readonly
+    defaultValue: 'True'
   return:
     description: A dict JSON compatible object
     types:
@@ -48,11 +48,11 @@ methods:
     - <xref:str>
   - name: content_type
     description: JSON by default, set application/xml if XML.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
-  - name: content_type
-    defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: An instance of this model
   exceptions:
@@ -82,12 +82,12 @@ methods:
     - <xref:dict>
   - name: content_type
     description: JSON by default, set application/xml if XML.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: key_extractors
-    defaultValue: None
-  - name: content_type
     defaultValue: None
   return:
     description: An instance of this model

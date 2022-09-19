@@ -359,9 +359,9 @@ methods:
       an instance of a AzureSasCredential from azure.core.credentials or an account
 
       shared access key.'
-    isRequired: true
-  - name: credential
     defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: A directory client.
     types:
@@ -383,7 +383,7 @@ methods:
       snapshot ID string
 
       or the response returned from <xref:azure.storage.fileshare.ShareClient.create_snapshot>.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: credential
@@ -395,8 +395,8 @@ methods:
 
       shared access key.'
     defaultValue: None
-  - name: credential
-    defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: A directory client.
     types:

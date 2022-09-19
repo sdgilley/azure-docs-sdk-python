@@ -169,6 +169,8 @@ methods:
       120.
     types:
     - <xref:float>
+  - name: cls
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.aio.ServiceBusClient>

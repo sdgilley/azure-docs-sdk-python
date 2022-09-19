@@ -88,7 +88,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: permission
+  - name: cls
     isRequired: true
   return:
     description: A FileSasPermissions object

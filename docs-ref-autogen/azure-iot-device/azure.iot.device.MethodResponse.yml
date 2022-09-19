@@ -40,7 +40,7 @@ methods:
     isRequired: true
     types:
     - <xref:int>
-  - name: status
+  - name: cls
     isRequired: true
   - name: payload
     defaultValue: None

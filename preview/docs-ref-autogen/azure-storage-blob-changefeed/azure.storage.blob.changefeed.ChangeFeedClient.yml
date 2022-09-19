@@ -91,9 +91,9 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
-    isRequired: true
-  - name: credential
     defaultValue: None
+  - name: cls
+    isRequired: true
   return:
     description: A change feed client.
     types:

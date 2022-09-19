@@ -21,7 +21,7 @@ methods:
     isRequired: true
     types:
     - <xref:Dict>[<xref:Any>, <xref:Any>]
-  - name: json_obj
+  - name: cls
     isRequired: true
   return:
     description: New instance of the durable orchestration status class

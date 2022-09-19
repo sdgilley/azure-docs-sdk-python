@@ -44,7 +44,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: data_type
+  - name: name
     isRequired: true
   return:
     types:
@@ -65,7 +65,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: data_type
+  - name: name
     isRequired: true
   return:
     types:
@@ -106,7 +106,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: data_type
+  - name: cls
     isRequired: true
 - uid: msrest.Serializer.serialize_bytearray
   name: serialize_bytearray
@@ -249,16 +249,18 @@ methods:
     description: 'Whether the objects in the iterable must
 
       not be None or empty.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: div
     description: 'If set, this str will be used to combine the elements
 
       in the iterable into a combined string. Default is ''None''.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     types:
     - <xref:list>, <xref:str>
@@ -331,7 +333,7 @@ methods:
   - name: data
     description: Object to be serialized.
     isRequired: true
-  - name: data
+  - name: cls
     isRequired: true
   return:
     types:
@@ -366,7 +368,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: data_type
+  - name: name
     isRequired: true
   return:
     types:
