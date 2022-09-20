@@ -27,7 +27,7 @@ methods:
   parameters:
   - name: key_transformer
     description: A key transformer function.
-    defaultValue: <function attribute_transformer at 0x000001DC8B8BE5E0>
+    defaultValue: <function attribute_transformer at 0x000001A3E4CCE5E0>
     types:
     - <xref:function>
   - name: keep_readonly
