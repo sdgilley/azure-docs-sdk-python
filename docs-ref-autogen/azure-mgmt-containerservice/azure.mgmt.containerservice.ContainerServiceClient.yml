@@ -109,8 +109,6 @@ methods:
     \ \n\n* 2022-07-02-preview: <xref:azure.mgmt.containerservice.v2022_07_02_preview.models#module-azure.mgmt.containerservice.v2022_07_02_preview.models>"
   signature: models(api_version='2022-07-01')
   parameters:
-  - name: cls
-    isRequired: true
   - name: api_version
     defaultValue: '2022-07-01'
 attributes:
