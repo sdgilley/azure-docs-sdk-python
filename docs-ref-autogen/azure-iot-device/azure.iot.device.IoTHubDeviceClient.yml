@@ -139,6 +139,10 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: cls
+    isRequired: true
+  - name: connection_string
+    isRequired: true
   return:
     description: An instance of an IoTHub client that uses a connection string for
       authentication.
@@ -236,6 +240,10 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: cls
+    isRequired: true
+  - name: sastoken
+    isRequired: true
   exceptions:
   - type: TypeError if given an unsupported parameter.
   - type: ValueError if the sastoken parameter is invalid.
@@ -345,6 +353,14 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: cls
+    isRequired: true
+  - name: symmetric_key
+    isRequired: true
+  - name: hostname
+    isRequired: true
+  - name: device_id
+    isRequired: true
   return:
     description: An instance of an IoTHub client that uses a symmetric key for authentication.
   exceptions:
@@ -459,6 +475,14 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: cls
+    isRequired: true
+  - name: x509
+    isRequired: true
+  - name: hostname
+    isRequired: true
+  - name: device_id
+    isRequired: true
   return:
     description: An instance of an IoTHub client that uses an X509 certificate for
       authentication.
@@ -500,6 +524,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: blob_name
+    isRequired: true
   return:
     description: 'A JSON-like (dictionary) object from IoT Hub that will contain relevant
       information including: correlationId, hostName, containerName, blobName, sasToken.'
@@ -571,6 +597,14 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: correlation_id
+    isRequired: true
+  - name: is_success
+    isRequired: true
+  - name: status_code
+    isRequired: true
+  - name: status_description
+    isRequired: true
 - uid: azure.iot.device.IoTHubDeviceClient.patch_twin_reported_properties
   name: patch_twin_reported_properties
   summary: 'Update reported properties with the Azure IoT Hub or Azure IoT Edge Hub
@@ -594,6 +628,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: reported_properties_patch
+    isRequired: true
   exceptions:
   - type: azure.iot.device.exceptions.CredentialError
     description: 'if credentials are invalid
@@ -674,6 +710,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: method_name
+    defaultValue: None
+  - name: block
+    defaultValue: 'True'
+  - name: timeout
+    defaultValue: None
   return:
     description: 'MethodRequest object representing the received method request, or
       None if
@@ -704,6 +746,10 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: block
+    defaultValue: 'True'
+  - name: timeout
+    defaultValue: None
   return:
     description: 'Twin Desired Properties patch as a JSON dict, or None if no patch
       has been
@@ -739,6 +785,8 @@ methods:
     types:
     - <xref:azure.iot.device.Message>
     - <xref:str>
+  - name: message
+    isRequired: true
   exceptions:
   - type: azure.iot.device.exceptions.CredentialError
     description: 'if credentials are invalid
@@ -788,6 +836,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.device.MethodResponse>
+  - name: method_response
+    isRequired: true
   exceptions:
   - type: azure.iot.device.exceptions.CredentialError
     description: 'if credentials are invalid
@@ -842,6 +892,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: sastoken
+    isRequired: true
   exceptions:
   - type: ValueError if the sastoken parameter is invalid
   - type: azure.iot.device.exceptions.CredentialError

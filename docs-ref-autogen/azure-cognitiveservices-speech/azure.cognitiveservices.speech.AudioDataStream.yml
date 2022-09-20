@@ -17,6 +17,8 @@ constructor:
   - name: result
     description: The speech synthesis or keyword recognition result.
     defaultValue: None
+  - name: result
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.AudioDataStream.can_read_data
   name: can_read_data
@@ -32,6 +34,10 @@ methods:
     description: 'The position to start with.
 
       Will start from current position if this param is not given.'
+    defaultValue: None
+  - name: requested_bytes
+    isRequired: true
+  - name: pos
     defaultValue: None
   return:
     description: A bool indicating the result
@@ -60,6 +66,10 @@ methods:
 
       Will start from current position if this param is not given.'
     defaultValue: None
+  - name: audio_buffer
+    isRequired: true
+  - name: pos
+    defaultValue: None
   return:
     description: 'The number of bytes filled, or 0 in case the stream hits its end
       and
@@ -73,6 +83,8 @@ methods:
   - name: file_name
     description: Name of the file to be saved to
     isRequired: true
+  - name: file_name
+    isRequired: true
 - uid: azure.cognitiveservices.speech.AudioDataStream.save_to_wav_file_async
   name: save_to_wav_file_async
   summary: Save the audio data to a file, asynchronously.
@@ -80,6 +92,8 @@ methods:
   parameters:
   - name: file_name
     description: Name of the file to be saved to
+    isRequired: true
+  - name: file_name
     isRequired: true
   return:
     description: An asynchronous operation representing the saving.

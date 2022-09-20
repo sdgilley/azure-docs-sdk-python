@@ -40,6 +40,10 @@ methods:
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
     defaultValue: None
+  - name: flow
+    isRequired: true
+  - name: claims_challenge
+    defaultValue: None
   return:
     description: "A dict representing the json response from AAD:\n\n* A successful\
       \ response would contain \"access_token\" key, \n\n* an error response would\
@@ -153,6 +157,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: scopes
+    isRequired: true
+  - name: prompt
+    defaultValue: None
+  - name: login_hint
+    defaultValue: None
+  - name: domain_hint
+    defaultValue: None
+  - name: claims_challenge
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
+  - name: port
+    defaultValue: None
+  - name: extra_scopes_to_consent
+    defaultValue: None
+  - name: max_age
+    defaultValue: None
   return:
     description: "* A dict containing no \"error\" key, and typically contains an\
       \ \"access_token\" key. \n\n* A dict containing an \"error\" key, when token\
@@ -169,6 +191,8 @@ methods:
     defaultValue: None
     types:
     - <xref:list>[<xref:str>]
+  - name: scopes
+    defaultValue: None
   return:
     description: "A dict representing a newly created Device Flow object.\n\n* A successful\
       \ response would contain \"user_code\" key, among others \n\n* an error response\

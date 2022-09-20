@@ -63,6 +63,8 @@ constructor:
     types:
     - <xref:str>
     - <xref:azure.ai.textanalytics.TextAnalyticsApiVersion>
+  - name: endpoint
+  - name: credential
 examples:
 - "Creating the TextAnalyticsClient with endpoint and API key.<!--[!code-python[Main](les\\\
   sample_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\":\

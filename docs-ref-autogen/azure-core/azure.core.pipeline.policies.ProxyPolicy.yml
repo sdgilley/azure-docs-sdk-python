@@ -21,6 +21,8 @@ constructor:
     defaultValue: None
     types:
     - <xref:dict>
+  - name: proxies
+    defaultValue: None
 examples:
 - "Configuring a proxy policy.<!--[!code-python[Main](les\\test_example_sansio.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -44,3 +46,5 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineRequest>
+  - name: request
+    isRequired: true

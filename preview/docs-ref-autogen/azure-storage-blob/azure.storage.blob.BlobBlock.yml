@@ -19,6 +19,9 @@ constructor:
     defaultValue: BlockState.LATEST
     types:
     - <xref:str>
+  - name: block_id
+  - name: state
+    defaultValue: BlockState.LATEST
 variables:
 - description: Block size in bytes.
   name: size

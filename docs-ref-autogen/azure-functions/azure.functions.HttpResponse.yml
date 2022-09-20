@@ -39,6 +39,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: body
+    defaultValue: None
 methods:
 - uid: azure.functions.HttpResponse.get_body
   name: get_body

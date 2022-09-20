@@ -170,3 +170,17 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: services
+    isRequired: true
+  - name: resource_types
+    isRequired: true
+  - name: permission
+    isRequired: true
+  - name: expiry
+    isRequired: true
+  - name: start
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None

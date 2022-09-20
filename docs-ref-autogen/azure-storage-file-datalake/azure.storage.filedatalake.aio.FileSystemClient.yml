@@ -744,6 +744,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.DirectoryProperties>
+  - name: directory
+    isRequired: true
   return:
     description: A DataLakeDirectoryClient.
     types:
@@ -776,6 +778,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.FileProperties>
+  - name: file_path
+    isRequired: true
   return:
     description: A DataLakeFileClient.
     types:

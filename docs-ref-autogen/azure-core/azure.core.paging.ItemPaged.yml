@@ -23,6 +23,8 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: continuation_token
+    defaultValue: None
   return:
     description: An iterator of pages (themselves iterator of objects)
 - uid: azure.core.paging.ItemPaged.next

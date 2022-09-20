@@ -24,6 +24,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: key
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: azure.core.tracing.AbstractSpan.change_context
   name: change_context
   summary: Change the context for the life of this context manager.
@@ -73,6 +77,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: traceparent
     isRequired: true
   - name: attributes
@@ -89,6 +95,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: cls
+    isRequired: true
   - name: headers
     isRequired: true
   - name: attributes
@@ -128,6 +136,10 @@ methods:
     types:
     - <xref:azure.core.pipeline.transport.HttpResponse>
     - <xref:azure.core.pipeline.transport.AsyncHttpResponse>
+  - name: request
+    isRequired: true
+  - name: response
+    defaultValue: None
 - uid: azure.core.tracing.AbstractSpan.span
   name: span
   summary: 'Create a child span for the current span and append it to the child spans
@@ -153,6 +165,8 @@ methods:
   parameters:
   - name: func
     description: The function that will be run in the new context
+    isRequired: true
+  - name: cls
     isRequired: true
   - name: func
     isRequired: true

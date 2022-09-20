@@ -58,6 +58,8 @@ methods:
 
       uses more than one parallel connection.'
     isRequired: true
+  - name: stream
+    isRequired: true
   return:
     description: The number of bytes read.
     types:

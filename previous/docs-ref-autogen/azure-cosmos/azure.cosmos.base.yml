@@ -26,6 +26,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: media_id
   return:
     description: The attachment id from the media id.
     types:
@@ -68,6 +69,15 @@ functions:
     defaultValue: None
     types:
     - <xref:str>
+  - name: cosmos_client
+  - name: default_headers
+  - name: verb
+  - name: path
+  - name: resource_id
+  - name: resource_type
+  - name: options
+  - name: partition_key_range_id
+    defaultValue: None
   return:
     description: The HTTP request headers.
     types:
@@ -97,6 +107,9 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: self_link
+  - name: alt_content_path
+  - name: id_from_response
   return:
     description: tuple of (collection rid, collection name)
     types:
@@ -111,6 +124,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: link
   return:
     description: Document collection link.
     types:
@@ -128,6 +142,8 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: resource_link
+  - name: resource_type
   return:
     description: Path from resource link with resource type appended (if provided).
     types:
@@ -141,6 +157,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: resource_link
   return:
     description: The resource id or full name from the resource link.
     types:
@@ -165,6 +182,9 @@ functions:
     isRequired: true
     types:
     - <xref:int>
+  - name: s
+  - name: value
+  - name: n
   return:
     description: Index of the Nth occurrence in the string.
     types:
@@ -179,6 +199,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: link
   return:
     description: True or False.
     types:
@@ -194,6 +215,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: link
   return:
     description: True or False.
     types:
@@ -212,6 +234,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: link
   return:
     description: True if link is name-based; otherwise, False.
     types:
@@ -227,6 +250,7 @@ functions:
     isRequired: true
     types:
     - <xref:string>
+  - name: string_to_validate
   return:
     description: Whether given string is a valid base64 string or not.
     types:
@@ -245,6 +269,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: path
   return:
     description: Path with beginning and ending slashes trimmed.
     types:

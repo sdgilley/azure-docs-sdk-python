@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -79,6 +83,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -128,6 +138,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -177,6 +193,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -232,6 +254,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -284,6 +312,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -340,6 +374,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
+  - name: vm_scale_set_vm_reimage_input
+    defaultValue: None
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -392,6 +434,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -441,6 +489,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -495,6 +549,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either RunCommandResult or
       the result of cls(response)
@@ -544,6 +606,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -601,6 +669,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either VirtualMachineScaleSetVM
       or the result of cls(response)
@@ -633,6 +709,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: VirtualMachineScaleSetVM, or the result of cls(response)
     types:
@@ -664,6 +746,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: vm_scale_set_name
+    isRequired: true
+  - name: instance_id
+    isRequired: true
   return:
     description: VirtualMachineScaleSetVMInstanceView, or the result of cls(response)
     types:
@@ -713,6 +801,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: virtual_machine_scale_set_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: expand
+    defaultValue: None
   return:
     description: An iterator like instance of either VirtualMachineScaleSetVMListResult
       or the result of cls(response)

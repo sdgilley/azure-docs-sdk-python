@@ -14,6 +14,8 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: provider
+    defaultValue: None
 attributes:
 - uid: azure.keyvault.certificates.IssuerProperties.id
   name: id

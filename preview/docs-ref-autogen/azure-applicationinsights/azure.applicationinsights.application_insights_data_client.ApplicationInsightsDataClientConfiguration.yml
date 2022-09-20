@@ -25,3 +25,6 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: credentials
+  - name: base_url
+    defaultValue: None

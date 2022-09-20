@@ -15,6 +15,7 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: id
 variables:
 - description: Optional raw ID of the identifier.
   name: raw_id

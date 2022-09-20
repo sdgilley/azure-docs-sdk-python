@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.confidentialledger.LedgerUserRole>
+  - name: user_id
+  - name: role
 attributes:
 - uid: azure.confidentialledger.LedgerUser.id
   name: id

@@ -72,6 +72,28 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>, <xref:optional>
+  - name: name
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: auth_mode
+    defaultValue: key
+  - name: description
+    defaultValue: None
+  - name: location
+    defaultValue: None
+  - name: traffic
+    defaultValue: None
+  - name: mirror_traffic
+    defaultValue: None
+  - name: identity
+    defaultValue: None
+  - name: scoring_uri
+    defaultValue: None
+  - name: swagger_uri
+    defaultValue: None
   - name: provisioning_state
     defaultValue: None
   - name: kind

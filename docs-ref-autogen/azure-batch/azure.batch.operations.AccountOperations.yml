@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2022-01-01.15.0".'
   name: api_version
@@ -63,6 +67,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_list_pool_node_counts_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of PoolNodeCounts
     types:
@@ -99,6 +109,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_list_supported_images_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of ImageInformation
     types:

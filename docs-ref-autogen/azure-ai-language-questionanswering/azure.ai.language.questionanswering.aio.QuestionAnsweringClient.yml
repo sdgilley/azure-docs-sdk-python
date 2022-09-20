@@ -30,6 +30,8 @@ constructor:
     description: Sets the default language to use for all operations.
     types:
     - <xref:str>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.ai.language.questionanswering.aio.QuestionAnsweringClient.close
   name: close
@@ -68,6 +70,8 @@ methods:
     description: Whether the response payload will be streamed. Defaults to False.
     types:
     - <xref:bool>
+  - name: request
+    isRequired: true
   return:
     description: The response of your network call. Does not do error handling on
       your response.

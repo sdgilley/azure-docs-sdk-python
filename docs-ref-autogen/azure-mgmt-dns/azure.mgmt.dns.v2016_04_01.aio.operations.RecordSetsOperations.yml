@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -90,6 +94,20 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: zone_name
+    isRequired: true
+  - name: relative_record_set_name
+    isRequired: true
+  - name: record_type
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
   return:
     description: RecordSet, or the result of cls(response)
     types:
@@ -142,6 +160,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: zone_name
+    isRequired: true
+  - name: relative_record_set_name
+    isRequired: true
+  - name: record_type
+    isRequired: true
+  - name: if_match
+    defaultValue: None
   return:
     description: None, or the result of cls(response)
     types:
@@ -180,6 +208,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: zone_name
+    isRequired: true
+  - name: relative_record_set_name
+    isRequired: true
+  - name: record_type
+    isRequired: true
   return:
     description: RecordSet, or the result of cls(response)
     types:
@@ -224,6 +260,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: zone_name
+    isRequired: true
+  - name: top
+    defaultValue: None
+  - name: recordsetnamesuffix
+    defaultValue: None
   return:
     description: An iterator like instance of either RecordSetListResult or the result
       of cls(response)
@@ -277,6 +321,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: zone_name
+    isRequired: true
+  - name: record_type
+    isRequired: true
+  - name: top
+    defaultValue: None
+  - name: recordsetnamesuffix
+    defaultValue: None
   return:
     description: An iterator like instance of either RecordSetListResult or the result
       of cls(response)
@@ -333,6 +387,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: zone_name
+    isRequired: true
+  - name: relative_record_set_name
+    isRequired: true
+  - name: record_type
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: if_match
+    defaultValue: None
   return:
     description: RecordSet, or the result of cls(response)
     types:

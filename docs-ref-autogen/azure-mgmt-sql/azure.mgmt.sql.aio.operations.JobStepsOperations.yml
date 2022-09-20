@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -74,6 +78,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: step_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: JobStep, or the result of cls(response)
     types:
@@ -117,6 +133,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: step_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -160,6 +186,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: step_name
+    isRequired: true
   return:
     description: JobStep, or the result of cls(response)
     types:
@@ -208,6 +244,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: job_version
+    isRequired: true
+  - name: step_name
+    isRequired: true
   return:
     description: JobStep, or the result of cls(response)
     types:
@@ -246,6 +294,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
   return:
     description: An iterator like instance of either JobStepListResult or the result
       of cls(response)
@@ -290,6 +346,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: job_version
+    isRequired: true
   return:
     description: An iterator like instance of either JobStepListResult or the result
       of cls(response)

@@ -20,6 +20,8 @@ constructor:
 
       shared access key'
     isRequired: true
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.communication.administration.PhoneNumberAdministrationClient.begin_purchase_reservation
   name: begin_purchase_reservation

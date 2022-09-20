@@ -41,6 +41,16 @@ constructor:
     isRequired: true
     types:
     - <xref:dict>
+  - name: name
+    defaultValue: None
+  - name: version
+    defaultValue: None
+  - name: description
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: properties
+    defaultValue: None
 methods:
 - uid: azure.ai.ml.entities.Asset.dump
   name: dump
@@ -53,6 +63,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: path
+    isRequired: true
 attributes:
 - uid: azure.ai.ml.entities.Asset.version
   name: version

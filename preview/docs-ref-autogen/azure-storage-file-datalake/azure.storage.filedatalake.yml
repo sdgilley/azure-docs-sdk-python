@@ -94,6 +94,11 @@ functions:
       value is https.
     types:
     - <xref:str>
+  - name: account_name
+  - name: account_key
+  - name: resource_types
+  - name: permission
+  - name: expiry
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -273,6 +278,14 @@ functions:
       generating and distributing the SAS.'
     types:
     - <xref:str>
+  - name: account_name
+  - name: file_system_name
+  - name: directory_name
+  - name: credential
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -458,6 +471,15 @@ functions:
       sas with delegation key.'
     types:
     - <xref:str>
+  - name: account_name
+  - name: file_system_name
+  - name: directory_name
+  - name: file_name
+  - name: credential
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -632,6 +654,13 @@ functions:
       generating and distributing the SAS.'
     types:
     - <xref:str>
+  - name: account_name
+  - name: file_system_name
+  - name: credential
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:

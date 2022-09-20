@@ -38,6 +38,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: data
     isRequired: true
 - uid: azure.identity.AuthenticationRecord.serialize

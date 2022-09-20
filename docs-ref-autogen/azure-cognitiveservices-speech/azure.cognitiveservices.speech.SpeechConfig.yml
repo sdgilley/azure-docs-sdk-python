@@ -39,6 +39,18 @@ constructor:
 
       is specified in BCP-47 format.'
     defaultValue: None
+  - name: subscription
+    defaultValue: None
+  - name: region
+    defaultValue: None
+  - name: endpoint
+    defaultValue: None
+  - name: host
+    defaultValue: None
+  - name: auth_token
+    defaultValue: None
+  - name: speech_recognition_language
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.SpeechConfig.enable_audio_logging
   name: enable_audio_logging
@@ -71,6 +83,8 @@ methods:
   - name: property_id
     description: The id of the property to be retrieved.
     isRequired: true
+  - name: property_id
+    isRequired: true
   return:
     description: The value of the property.
 - uid: azure.cognitiveservices.speech.SpeechConfig.get_property_by_name
@@ -80,6 +94,8 @@ methods:
   parameters:
   - name: property_name
     description: The name of the property to be retrieved.
+    isRequired: true
+  - name: property_name
     isRequired: true
   return:
     description: The value of the property.
@@ -110,6 +126,8 @@ methods:
   - name: profanity_option
     description: The profanity level to set.
     isRequired: true
+  - name: profanity_option
+    isRequired: true
 - uid: azure.cognitiveservices.speech.SpeechConfig.set_properties
   name: set_properties
   summary: Set multiple properties by id.
@@ -119,6 +137,8 @@ methods:
   - name: properties
     description: A dict mapping property ids to the values to be set.
     isRequired: true
+  - name: properties
+    isRequired: true
 - uid: azure.cognitiveservices.speech.SpeechConfig.set_properties_by_name
   name: set_properties_by_name
   summary: Set multiple properties by name.
@@ -126,6 +146,8 @@ methods:
   parameters:
   - name: properties
     description: A dict mapping property ids to the values to be set.
+    isRequired: true
+  - name: properties
     isRequired: true
 - uid: azure.cognitiveservices.speech.SpeechConfig.set_property
   name: set_property
@@ -139,6 +161,10 @@ methods:
   - name: value
     description: The value to be set for the property.
     isRequired: true
+  - name: property_id
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: azure.cognitiveservices.speech.SpeechConfig.set_property_by_name
   name: set_property_by_name
   summary: Set a property by name.
@@ -149,6 +175,10 @@ methods:
     isRequired: true
   - name: value
     description: The value to be set for the property.
+    isRequired: true
+  - name: property_name
+    isRequired: true
+  - name: value
     isRequired: true
 - uid: azure.cognitiveservices.speech.SpeechConfig.set_proxy
   name: set_proxy
@@ -182,6 +212,14 @@ methods:
   - name: password
     description: The password of the proxy server.
     isRequired: true
+  - name: hostname
+    isRequired: true
+  - name: port
+    isRequired: true
+  - name: username
+    isRequired: true
+  - name: password
+    isRequired: true
 - uid: azure.cognitiveservices.speech.SpeechConfig.set_service_property
   name: set_service_property
   summary: 'Sets a property value that will be passed to service using the specified
@@ -204,6 +242,12 @@ methods:
   - name: channel
     description: The channel used to pass the specified property to service.
     isRequired: true
+  - name: name
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: channel
+    isRequired: true
 - uid: azure.cognitiveservices.speech.SpeechConfig.set_speech_synthesis_output_format
   name: set_speech_synthesis_output_format
   summary: Set speech synthesis output audio format.
@@ -211,6 +255,8 @@ methods:
   parameters:
   - name: format_id
     description: The audio format id, e.g. Riff16Khz16BitMonoPcm.
+    isRequired: true
+  - name: format_id
     isRequired: true
 attributes:
 - uid: azure.cognitiveservices.speech.SpeechConfig.authorization_token

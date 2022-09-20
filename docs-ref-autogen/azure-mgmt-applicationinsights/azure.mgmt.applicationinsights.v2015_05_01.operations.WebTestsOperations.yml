@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for this operation. Constant value: "2015-05-01".'
   name: api_version
@@ -73,6 +77,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: web_test_name
+    isRequired: true
+  - name: web_test_definition
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: WebTest or ClientRawResponse if raw=true
     types:
@@ -117,6 +131,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: web_test_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -161,6 +183,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: web_test_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: WebTest or ClientRawResponse if raw=true
     types:
@@ -192,6 +222,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of WebTest
     types:
@@ -237,6 +271,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: component_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of WebTest
     types:
@@ -275,6 +317,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of WebTest
     types:
@@ -323,6 +371,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: web_test_name
+    isRequired: true
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: WebTest or ClientRawResponse if raw=true
     types:

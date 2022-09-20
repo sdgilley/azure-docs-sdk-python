@@ -22,6 +22,8 @@ constructor:
     defaultValue: None
     types:
     - <xref:dict>
+  - name: base_headers
+    defaultValue: None
 examples:
 - "Configuring a headers policy.<!--[!code-python[Main](les\\test_example_sansio.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -52,6 +54,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: key
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: azure.core.pipeline.policies.HeadersPolicy.on_request
   name: on_request
   summary: Updates with the given headers before sending the request to the next policy.
@@ -62,6 +68,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineRequest>
+  - name: request
+    isRequired: true
 attributes:
 - uid: azure.core.pipeline.policies.HeadersPolicy.headers
   name: headers

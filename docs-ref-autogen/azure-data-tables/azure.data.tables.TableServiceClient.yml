@@ -73,6 +73,7 @@ constructor:
       \       print(\"Shared Key: {}\".format(properties))\n\n   ````"
     types:
     - <xref:str>
+  - name: endpoint
 variables:
 - description: The name of the Tables account.
   name: account_name
@@ -180,6 +181,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: conn_str
     isRequired: true
   return:
@@ -236,6 +239,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: table_name
+    isRequired: true
   return:
     description: A <xref:azure.data.tables.TableClient> object.
     types:

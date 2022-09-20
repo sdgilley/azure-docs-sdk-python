@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.vision.face.operations.FaceOperations.detect_with_stream
   name: detect_with_stream
@@ -249,6 +253,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image
+    isRequired: true
+  - name: return_face_id
+    defaultValue: 'True'
+  - name: return_face_landmarks
+    defaultValue: 'False'
+  - name: return_face_attributes
+    defaultValue: None
+  - name: recognition_model
+    defaultValue: recognition_01
+  - name: return_recognition_model
+    defaultValue: 'False'
+  - name: detection_model
+    defaultValue: detection_01
+  - name: face_id_time_to_live
+    defaultValue: '86400'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -468,6 +494,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url
+    isRequired: true
+  - name: return_face_id
+    defaultValue: 'True'
+  - name: return_face_landmarks
+    defaultValue: 'False'
+  - name: return_face_attributes
+    defaultValue: None
+  - name: recognition_model
+    defaultValue: recognition_01
+  - name: return_recognition_model
+    defaultValue: 'False'
+  - name: detection_model
+    defaultValue: detection_01
+  - name: face_id_time_to_live
+    defaultValue: '86400'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -617,6 +663,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: face_id
+    isRequired: true
+  - name: face_list_id
+    defaultValue: None
+  - name: large_face_list_id
+    defaultValue: None
+  - name: face_ids
+    defaultValue: None
+  - name: max_num_of_candidates_returned
+    defaultValue: '20'
+  - name: mode
+    defaultValue: matchPerson
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -683,6 +745,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: face_ids
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: GroupResult or ClientRawResponse if raw=true
     types:
@@ -821,6 +889,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: face_ids
+    isRequired: true
+  - name: person_group_id
+    defaultValue: None
+  - name: large_person_group_id
+    defaultValue: None
+  - name: max_num_of_candidates_returned
+    defaultValue: '1'
+  - name: confidence_threshold
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -885,6 +967,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: face_id1
+    isRequired: true
+  - name: face_id2
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: VerifyResult or ClientRawResponse if raw=true
     types:
@@ -953,6 +1043,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: face_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: person_group_id
+    defaultValue: None
+  - name: large_person_group_id
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: VerifyResult or ClientRawResponse if raw=true
     types:

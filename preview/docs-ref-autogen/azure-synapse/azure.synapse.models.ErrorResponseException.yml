@@ -15,6 +15,8 @@ constructor:
   - name: error_model
     description: A deserialized model of the response body as model.
     isRequired: true
+  - name: response
+  - name: error_model
 methods:
 - uid: azure.synapse.models.ErrorResponseException.from_response
   name: from_response
@@ -26,6 +28,10 @@ methods:
     isRequired: true
   - name: deserialize
     description: A deserializer
+    isRequired: true
+  - name: cls
+    isRequired: true
+  - name: response
     isRequired: true
   - name: deserialize
     isRequired: true

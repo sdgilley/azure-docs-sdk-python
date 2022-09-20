@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2022-01-01.15.0".'
   name: api_version
@@ -76,6 +80,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: task
+    isRequired: true
+  - name: task_add_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -171,6 +185,18 @@ methods:
     defaultValue: '0'
     types:
     - <xref:int>
+  - name: job_id
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: task_add_collection_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: threads
+    defaultValue: '0'
   return:
     description: '<xref:azure.batch.models.TaskAddCollectionResult> or
 
@@ -231,6 +257,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: task_id
+    isRequired: true
+  - name: task_delete_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -283,6 +319,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: task_id
+    isRequired: true
+  - name: task_get_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CloudTask or ClientRawResponse if raw=true
     types:
@@ -330,6 +376,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: task_list_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of CloudTask
     types:
@@ -383,6 +437,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: task_id
+    isRequired: true
+  - name: task_list_subtasks_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CloudTaskListSubtasksResult or ClientRawResponse if raw=true
     types:
@@ -449,6 +513,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: task_id
+    isRequired: true
+  - name: task_reactivate_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -503,6 +577,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: task_id
+    isRequired: true
+  - name: task_terminate_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -559,6 +643,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: task_id
+    isRequired: true
+  - name: constraints
+    defaultValue: None
+  - name: task_update_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

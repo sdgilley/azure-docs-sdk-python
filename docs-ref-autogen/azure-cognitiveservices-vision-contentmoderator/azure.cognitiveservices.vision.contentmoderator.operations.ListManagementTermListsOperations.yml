@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.vision.contentmoderator.operations.ListManagementTermListsOperations.create
   name: create
@@ -54,6 +58,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TermList or ClientRawResponse if raw=true
     types:
@@ -88,6 +100,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -117,6 +135,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -153,6 +175,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TermList or ClientRawResponse if raw=true
     types:
@@ -193,6 +221,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: language
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: RefreshIndex or ClientRawResponse if raw=true
     types:
@@ -237,6 +273,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TermList or ClientRawResponse if raw=true
     types:

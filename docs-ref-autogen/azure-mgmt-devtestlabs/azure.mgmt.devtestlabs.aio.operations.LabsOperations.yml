@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -70,6 +74,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -119,6 +127,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: lab_virtual_machine_creation_parameter
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -167,6 +181,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: lab
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either Lab or the result
       of cls(response)
@@ -210,6 +230,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -271,6 +295,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: blob_storage_absolute_sas_uri
+    defaultValue: None
+  - name: usage_start_date
+    defaultValue: None
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -330,6 +362,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: source_virtual_machine_resource_id
+    defaultValue: None
+  - name: destination_virtual_machine_name
+    defaultValue: None
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -362,6 +402,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: blob_name
+    defaultValue: None
   return:
     description: GenerateUploadUriResponse, or the result of cls(response)
     types:
@@ -393,6 +439,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: expand
+    defaultValue: None
   return:
     description: Lab, or the result of cls(response)
     types:
@@ -438,6 +490,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: expand
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
   return:
     description: An iterator like instance of either LabList or the result of cls(response)
     types:
@@ -478,6 +540,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: expand
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
   return:
     description: An iterator like instance of either LabList or the result of cls(response)
     types:
@@ -503,6 +573,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either LabVhdList or the result of cls(response)
     types:
@@ -534,6 +608,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: lab
+    isRequired: true
   return:
     description: Lab, or the result of cls(response)
     types:

@@ -15,3 +15,5 @@ constructor:
   - name: response
     description: Server response to be deserialized.
     isRequired: true
+  - name: deserialize
+  - name: response

@@ -44,6 +44,7 @@ constructor:
   - name: kwargs
     description: Optional kwargs for the method
     isRequired: true
+  - name: adal_method
 methods:
 - uid: msrestazure.azure_active_directory.AdalAuthentication.signed_session
   name: signed_session
@@ -60,6 +61,8 @@ methods:
     defaultValue: None
     types:
     - <xref:requests.Session>
+  - name: session
+    defaultValue: None
   return:
     types:
     - <xref:requests.Session>

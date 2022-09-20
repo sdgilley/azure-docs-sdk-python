@@ -31,6 +31,8 @@ methods:
   - name: config
     description: Any specific config overrides
     isRequired: true
+  - name: request
+    isRequired: true
 - uid: msrest.async_client.ServiceClientAsync.stream_download_async
   name: stream_download_async
   summary: Async Generator for streaming request body data.
@@ -41,4 +43,8 @@ methods:
     isRequired: true
   - name: user_callback
     description: Custom callback for monitoring progress.
+    isRequired: true
+  - name: response
+    isRequired: true
+  - name: user_callback
     isRequired: true

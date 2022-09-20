@@ -109,3 +109,17 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: queue_name
+    isRequired: true
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None

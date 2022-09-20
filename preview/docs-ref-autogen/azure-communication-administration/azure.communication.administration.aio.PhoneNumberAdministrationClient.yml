@@ -20,6 +20,8 @@ constructor:
 
       shared access key'
     isRequired: true
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.communication.administration.aio.PhoneNumberAdministrationClient.begin_purchase_reservation
   name: begin_purchase_reservation
@@ -133,6 +135,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: conn_str
     isRequired: true
   return:

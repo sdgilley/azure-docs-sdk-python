@@ -20,6 +20,9 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: credential
+  - name: base_url
+    defaultValue: None
 variables:
 - description: Operations operations
   name: operations

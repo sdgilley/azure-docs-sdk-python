@@ -26,6 +26,8 @@ constructor:
     isRequired: true
     types:
     - <xref:None>
+  - name: endpoint
+  - name: credentials
 variables:
 - description: Configuration for client.
   name: config
@@ -63,6 +65,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: rank_request
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: RankResponse or ClientRawResponse if raw=true
     types:

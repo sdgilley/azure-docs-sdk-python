@@ -25,6 +25,8 @@ constructor:
       header is present.
     types:
     - <xref:azure.synapse.artifacts.models.ParameterType.int>
+  - name: credential
+  - name: endpoint
 variables:
 - description: AccessControlOperations operations
   name: access_control

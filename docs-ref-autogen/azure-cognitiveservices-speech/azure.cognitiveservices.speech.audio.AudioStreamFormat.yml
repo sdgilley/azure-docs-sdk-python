@@ -27,5 +27,11 @@ constructor:
   - name: channels
     description: The number of audio channels
     defaultValue: '1'
+  - name: samples_per_second
+    defaultValue: None
+  - name: bits_per_sample
+    defaultValue: '16'
+  - name: channels
+    defaultValue: '1'
   - name: compressed_stream_format
     defaultValue: None

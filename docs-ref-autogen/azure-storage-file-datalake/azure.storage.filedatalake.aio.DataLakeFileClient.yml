@@ -53,6 +53,11 @@ constructor:
       feature compatibility.'
     types:
     - <xref:str>
+  - name: account_url
+  - name: file_system_name
+  - name: file_path
+  - name: credential
+    defaultValue: None
 variables:
 - description: The full endpoint URL to the file system, including SAS token if used.
   name: url
@@ -121,6 +126,12 @@ methods:
       Use of customer-provided keys must be done over HTTPS.'
     types:
     - <xref:azure.storage.filedatalake.CustomerProvidedEncryptionKey>
+  - name: data
+    isRequired: true
+  - name: offset
+    isRequired: true
+  - name: length
+    defaultValue: None
   return:
     description: dict of the response header
   examples:
@@ -287,6 +298,10 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
   return:
     description: response dict (Etag and last modified).
   examples:
@@ -449,6 +464,10 @@ methods:
       each call individually.'
     types:
     - <xref:int>
+  - name: offset
+    defaultValue: None
+  - name: length
+    defaultValue: None
   return:
     description: A streaming object (StorageStreamDownloader)
     types:
@@ -576,6 +595,10 @@ methods:
       Use of customer-provided keys must be done over HTTPS.'
     types:
     - <xref:azure.storage.filedatalake.CustomerProvidedEncryptionKey>
+  - name: offset
+    isRequired: true
+  - name: retain_uncommitted_data
+    defaultValue: 'False'
   return:
     description: response header in dict
   examples:
@@ -769,6 +792,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: new_name
+    isRequired: true
   return:
     description: the renamed file client
     types:
@@ -800,13 +825,17 @@ methods:
     description: 'The time to set the file to expiry.
 
       When expiry_options is RelativeTo*, expires_on should be an int in milliseconds'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:datetime>
   - name: timeout
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: expiry_options
+    isRequired: true
+  - name: expires_on
+    defaultValue: None
   return:
     types:
     - <xref:None>
@@ -948,5 +977,11 @@ methods:
       Defaults to 100*1024*1024, or 100MB.'
     types:
     - <xref:int>
+  - name: data
+    isRequired: true
+  - name: length
+    defaultValue: None
+  - name: overwrite
+    defaultValue: 'False'
   return:
     description: response dict (Etag and last modified).

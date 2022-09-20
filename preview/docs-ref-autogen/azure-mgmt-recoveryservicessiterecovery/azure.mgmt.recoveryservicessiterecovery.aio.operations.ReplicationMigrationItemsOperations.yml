@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -82,6 +86,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: migration_item_name
+    isRequired: true
+  - name: input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either MigrationItem or
       the result of cls(response)
@@ -140,6 +152,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: migration_item_name
+    isRequired: true
+  - name: delete_option
+    defaultValue: None
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -198,6 +218,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: migration_item_name
+    isRequired: true
+  - name: migrate_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either MigrationItem or
       the result of cls(response)
@@ -256,6 +284,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: migration_item_name
+    isRequired: true
+  - name: input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either MigrationItem or
       the result of cls(response)
@@ -314,6 +350,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: migration_item_name
+    isRequired: true
+  - name: test_migrate_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either MigrationItem or
       the result of cls(response)
@@ -372,6 +416,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: migration_item_name
+    isRequired: true
+  - name: test_migrate_cleanup_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either MigrationItem or
       the result of cls(response)
@@ -430,6 +482,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: migration_item_name
+    isRequired: true
+  - name: input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either MigrationItem or
       the result of cls(response)
@@ -465,6 +525,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: migration_item_name
+    isRequired: true
   return:
     description: MigrationItem, or the result of cls(response)
     types:
@@ -499,6 +565,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: skip_token
+    defaultValue: None
+  - name: take_token
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either MigrationItemCollection or the
       result of cls(response)
@@ -545,6 +617,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: skip_token
+    defaultValue: None
+  - name: take_token
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either MigrationItemCollection or the
       result of cls(response)

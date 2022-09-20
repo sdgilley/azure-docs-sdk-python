@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -56,6 +60,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group
+    isRequired: true
+  - name: registration_name
+    isRequired: true
+  - name: product_name
+    isRequired: true
   return:
     description: Product, or the result of cls(response)
     types:
@@ -93,6 +103,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group
+    isRequired: true
+  - name: registration_name
+    isRequired: true
+  - name: product_name
+    isRequired: true
+  - name: device_configuration
+    defaultValue: None
   return:
     description: Product, or the result of cls(response)
     types:
@@ -130,6 +148,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group
+    isRequired: true
+  - name: registration_name
+    isRequired: true
+  - name: product_name
+    isRequired: true
+  - name: device_configuration
+    defaultValue: None
   return:
     description: ProductList, or the result of cls(response)
     types:
@@ -156,6 +182,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group
+    isRequired: true
+  - name: registration_name
+    isRequired: true
   return:
     description: An iterator like instance of either ProductList or the result of
       cls(response)
@@ -188,6 +218,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group
+    isRequired: true
+  - name: registration_name
+    isRequired: true
+  - name: product_name
+    isRequired: true
   return:
     description: ExtendedProduct, or the result of cls(response)
     types:
@@ -225,6 +261,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group
+    isRequired: true
+  - name: registration_name
+    isRequired: true
+  - name: product_name
+    isRequired: true
+  - name: marketplace_product_log_update
+    defaultValue: None
   return:
     description: ProductLog, or the result of cls(response)
     types:

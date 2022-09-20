@@ -33,6 +33,9 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: sql_query
+  - name: database
+  - name: collection_id
 variables:
 - description: 'Required. data source type.Constant filled by server.  Possible values
 

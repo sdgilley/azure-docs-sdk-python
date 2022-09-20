@@ -20,6 +20,8 @@ constructor:
     defaultValue: None
     types:
     - <xref:uamqp.c_uamqp.cHeader>
+  - name: header
+    defaultValue: None
 variables:
 - description: 'The number of unsuccessful previous attempts to deliver
 

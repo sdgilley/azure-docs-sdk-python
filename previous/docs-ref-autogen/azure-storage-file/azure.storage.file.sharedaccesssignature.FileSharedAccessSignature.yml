@@ -158,6 +158,34 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: share_name
+    isRequired: true
+  - name: directory_name
+    defaultValue: None
+  - name: file_name
+    defaultValue: None
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
+  - name: cache_control
+    defaultValue: None
+  - name: content_disposition
+    defaultValue: None
+  - name: content_encoding
+    defaultValue: None
+  - name: content_language
+    defaultValue: None
+  - name: content_type
+    defaultValue: None
 - uid: azure.storage.file.sharedaccesssignature.FileSharedAccessSignature.generate_share
   name: generate_share
   summary: 'Generates a shared access signature for the share.
@@ -285,3 +313,27 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: share_name
+    isRequired: true
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
+  - name: cache_control
+    defaultValue: None
+  - name: content_disposition
+    defaultValue: None
+  - name: content_encoding
+    defaultValue: None
+  - name: content_language
+    defaultValue: None
+  - name: content_type
+    defaultValue: None

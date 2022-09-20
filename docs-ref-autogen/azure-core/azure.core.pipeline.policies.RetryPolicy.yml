@@ -111,6 +111,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineRequest>
+  - name: request
+    isRequired: true
   return:
     description: Returns the PipelineResponse or raises error if maximum retries exceeded.
     types:
@@ -145,3 +147,9 @@ methods:
     defaultValue: None
     types:
     - <xref:azure.core.pipeline.PipelineResponse>
+  - name: settings
+    isRequired: true
+  - name: transport
+    isRequired: true
+  - name: response
+    defaultValue: None

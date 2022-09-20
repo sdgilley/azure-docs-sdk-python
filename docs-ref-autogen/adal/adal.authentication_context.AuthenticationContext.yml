@@ -51,6 +51,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: resource
+    isRequired: true
+  - name: user_id
+    isRequired: true
+  - name: client_id
+    isRequired: true
   return:
     description: 'dic with several keys, include "accessToken" and
 
@@ -109,6 +115,18 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: authorization_code
+    isRequired: true
+  - name: redirect_uri
+    isRequired: true
+  - name: resource
+    isRequired: true
+  - name: client_id
+    isRequired: true
+  - name: client_secret
+    defaultValue: None
+  - name: code_verifier
+    defaultValue: None
   return:
     description: 'dict with several keys, include "accessToken" and
 
@@ -151,6 +169,16 @@ methods:
     defaultValue: None
     types:
     - <xref:optional>
+  - name: resource
+    isRequired: true
+  - name: client_id
+    isRequired: true
+  - name: certificate
+    isRequired: true
+  - name: thumbprint
+    isRequired: true
+  - name: public_certificate
+    defaultValue: None
   return:
     description: dict with several keys, include "accessToken".
 - uid: adal.authentication_context.AuthenticationContext.acquire_token_with_client_credentials
@@ -175,6 +203,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: resource
+    isRequired: true
+  - name: client_id
+    isRequired: true
+  - name: client_secret
+    isRequired: true
   return:
     description: dict with several keys, include "accessToken".
 - uid: adal.authentication_context.AuthenticationContext.acquire_token_with_device_code
@@ -201,6 +235,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: resource
+    isRequired: true
+  - name: user_code_info
+    isRequired: true
+  - name: client_id
+    isRequired: true
   return:
     description: 'dict with several keys, include "accessToken" and
 
@@ -237,6 +277,14 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: refresh_token
+    isRequired: true
+  - name: client_id
+    isRequired: true
+  - name: resource
+    isRequired: true
+  - name: client_secret
+    defaultValue: None
   return:
     description: 'dict with several keys, include "accessToken" and
 
@@ -272,6 +320,14 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: resource
+    isRequired: true
+  - name: username
+    isRequired: true
+  - name: password
+    isRequired: true
+  - name: client_id
+    isRequired: true
   return:
     description: 'dict with several keys, include "accessToken" and
 
@@ -302,6 +358,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: resource
+    isRequired: true
+  - name: client_id
+    isRequired: true
+  - name: language
+    defaultValue: None
   return:
     description: dict contains code and uri for users to login through browser.
 - uid: adal.authentication_context.AuthenticationContext.cancel_request_to_get_token_with_device_code
@@ -316,6 +378,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: user_code_info
+    isRequired: true
   return:
     description: None
 attributes:

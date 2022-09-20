@@ -50,6 +50,10 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: partition_id
+    isRequired: true
+  - name: lease
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_manager.PartitionManager.count_leases_by_owner
   name: count_leases_by_owner
   summary: Returns a dictionary of leases by current owner.
@@ -72,6 +76,10 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: partition_id
+    isRequired: true
+  - name: lease
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_manager.PartitionManager.get_partition_ids_async
   name: get_partition_ids_async
   summary: Returns a list of all the event hub partition IDs.
@@ -103,6 +111,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: reason
+    isRequired: true
   return:
     types:
     - <xref:bool>
@@ -121,6 +131,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: partition_id
+    isRequired: true
+  - name: reason
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_manager.PartitionManager.retry
   name: retry
   summary: Make attempt_renew_lease async call sync.
@@ -230,6 +244,10 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: stealable_leases
+    isRequired: true
+  - name: have_lease_count
+    isRequired: true
   return:
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>

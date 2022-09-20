@@ -27,6 +27,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: query
+  - name: table
 variables:
 - description: 'Required. data source type.Constant filled by server.  Possible values
 

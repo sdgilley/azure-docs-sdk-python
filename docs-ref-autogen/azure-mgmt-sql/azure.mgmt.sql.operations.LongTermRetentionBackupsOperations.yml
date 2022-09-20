@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -84,6 +88,16 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: backup_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either LongTermRetentionBackupOperationResult
       or the result of cls(response)
@@ -152,6 +166,18 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: backup_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either LongTermRetentionBackupOperationResult
       or the result of cls(response)
@@ -206,6 +232,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: backup_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -268,6 +302,16 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: backup_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -328,6 +372,16 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: backup_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either LongTermRetentionBackupOperationResult
       or the result of cls(response)
@@ -396,6 +450,18 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: backup_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either LongTermRetentionBackupOperationResult
       or the result of cls(response)
@@ -433,6 +499,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: backup_name
+    isRequired: true
   return:
     description: LongTermRetentionBackup, or the result of cls(response)
     types:
@@ -477,6 +551,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: backup_name
+    isRequired: true
   return:
     description: LongTermRetentionBackup, or the result of cls(response)
     types:
@@ -526,6 +610,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: only_latest_per_database
+    defaultValue: None
+  - name: database_state
+    defaultValue: None
   return:
     description: An iterator like instance of either LongTermRetentionBackupListResult
       or the result of cls(response)
@@ -565,6 +659,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location_name
+    isRequired: true
+  - name: only_latest_per_database
+    defaultValue: None
+  - name: database_state
+    defaultValue: None
   return:
     description: An iterator like instance of either LongTermRetentionBackupListResult
       or the result of cls(response)
@@ -622,6 +722,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: long_term_retention_database_name
+    isRequired: true
+  - name: only_latest_per_database
+    defaultValue: None
+  - name: database_state
+    defaultValue: None
   return:
     description: An iterator like instance of either LongTermRetentionBackupListResult
       or the result of cls(response)
@@ -668,6 +780,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: location_name
+    isRequired: true
+  - name: only_latest_per_database
+    defaultValue: None
+  - name: database_state
+    defaultValue: None
   return:
     description: An iterator like instance of either LongTermRetentionBackupListResult
       or the result of cls(response)
@@ -720,6 +840,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: only_latest_per_database
+    defaultValue: None
+  - name: database_state
+    defaultValue: None
   return:
     description: An iterator like instance of either LongTermRetentionBackupListResult
       or the result of cls(response)
@@ -764,6 +894,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location_name
+    isRequired: true
+  - name: long_term_retention_server_name
+    isRequired: true
+  - name: only_latest_per_database
+    defaultValue: None
+  - name: database_state
+    defaultValue: None
   return:
     description: An iterator like instance of either LongTermRetentionBackupListResult
       or the result of cls(response)

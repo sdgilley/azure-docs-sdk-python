@@ -44,6 +44,14 @@ constructor:
     defaultValue: servicebus.windows.net
     types:
     - <xref:str>
+  - name: sb_name
+  - name: eh_name
+  - name: policy
+  - name: sas_key
+  - name: consumer_group
+    defaultValue: $default
+  - name: namespace_suffix
+    defaultValue: servicebus.windows.net
 methods:
 - uid: azure.eventprocessorhost.eh_config.EventHubConfig.get_client_address
   name: get_client_address

@@ -38,6 +38,14 @@ constructor:
     types:
     - <xref:bytes>
     - <xref:None>
+  - name: azure
+  - name: path
+  - name: mode
+    defaultValue: rb
+  - name: blocksize
+    defaultValue: '33554432'
+  - name: delimiter
+    defaultValue: None
 examples:
 - "\n```\n\n>>> adl = AzureDLFileSystem()  \n>>> with adl.open('my-dir/my-file.txt',\
   \ mode='rb') as f:  \n...     f.read(10)  \n```\n"
@@ -90,6 +98,8 @@ methods:
     defaultValue: '-1'
     types:
     - <xref:int >(<xref:-1>)
+  - name: length
+    defaultValue: '-1'
 - uid: azure.datalake.store.core.AzureDLFile.read1
   name: read1
   summary: Return data from cache, or fetch pieces as necessary
@@ -100,6 +110,8 @@ methods:
     defaultValue: '-1'
     types:
     - <xref:int >(<xref:-1>)
+  - name: length
+    defaultValue: '-1'
 - uid: azure.datalake.store.core.AzureDLFile.readable
   name: readable
   summary: Return whether the AzureDLFile was opened for reading
@@ -114,6 +126,8 @@ methods:
     isRequired: true
     types:
     - <xref:bytearray>
+  - name: b
+    isRequired: true
   return:
     types:
     - <xref:<xref:Returns number of bytes read.>>
@@ -146,6 +160,10 @@ methods:
     defaultValue: '0'
     types:
     - <xref:{0>, <xref:1>, <xref:2}>
+  - name: loc
+    isRequired: true
+  - name: whence
+    defaultValue: '0'
 - uid: azure.datalake.store.core.AzureDLFile.seekable
   name: seekable
   summary: Return whether the AzureDLFile is seekable (only in read mode)
@@ -173,3 +191,5 @@ methods:
     isRequired: true
     types:
     - <xref:bytes>
+  - name: data
+    isRequired: true

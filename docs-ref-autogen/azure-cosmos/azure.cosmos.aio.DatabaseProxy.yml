@@ -353,6 +353,8 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:str>, <xref:Dict>[<xref:str>, <xref:Any>], <xref:azure.cosmos.aio.ContainerProxy>]
+  - name: container
+    isRequired: true
   return:
     description: A *ContainerProxy* instance representing the container.
     types:
@@ -401,6 +403,8 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:str>, <xref:Dict>[<xref:str>, <xref:Any>], <xref:azure.cosmos.aio.UserProxy>]
+  - name: user
+    isRequired: true
   return:
     description: A *UserProxy* instance representing the retrieved user.
     types:

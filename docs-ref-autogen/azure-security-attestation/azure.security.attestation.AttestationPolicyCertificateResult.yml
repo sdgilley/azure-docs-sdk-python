@@ -26,3 +26,5 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: certificate_thumbprint
+  - name: certificate_resolution

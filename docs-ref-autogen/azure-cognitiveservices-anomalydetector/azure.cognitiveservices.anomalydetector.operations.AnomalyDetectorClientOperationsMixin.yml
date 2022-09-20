@@ -40,6 +40,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ChangePointDetectResponse or ClientRawResponse if raw=true
     types:
@@ -85,6 +91,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: EntireDetectResponse or ClientRawResponse if raw=true
     types:
@@ -130,6 +142,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: LastDetectResponse or ClientRawResponse if raw=true
     types:

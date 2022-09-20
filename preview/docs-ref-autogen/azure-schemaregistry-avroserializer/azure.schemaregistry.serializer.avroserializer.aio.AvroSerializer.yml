@@ -50,6 +50,8 @@ methods:
     isRequired: true
     types:
     - <xref:bytes>
+  - name: value
+    isRequired: true
   return:
     types:
     - <xref:Dict>[<xref:str>, <xref:Any>]
@@ -83,6 +85,8 @@ methods:
     description: Required. The schema used to encode the data.
     types:
     - <xref:str>
+  - name: value
+    isRequired: true
   return:
     types:
     - <xref:bytes>

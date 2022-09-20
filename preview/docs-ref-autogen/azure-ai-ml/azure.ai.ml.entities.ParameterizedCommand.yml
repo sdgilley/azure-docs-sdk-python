@@ -45,9 +45,20 @@ constructor:
     - <xref:Union>[<xref:Dict>, <xref:azure.ai.ml.entities.ResourceConfiguration>]
   - name: kwargs
     description: A dictionary of additional configuration parameters.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
+  - name: command
+  - name: resources
+    defaultValue: None
+  - name: code
+    defaultValue: None
+  - name: environment_variables
+    defaultValue: None
+  - name: distribution
+    defaultValue: None
+  - name: environment
+    defaultValue: None
 attributes:
 - uid: azure.ai.ml.entities.ParameterizedCommand.distribution
   name: distribution

@@ -27,6 +27,9 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.ai.metricsadvisor.models.MetricDetectionCondition>
+  - name: name
+  - name: metric_id
+  - name: whole_series_detection_condition
 variables:
 - description: anomaly detection configuration description.
   name: description

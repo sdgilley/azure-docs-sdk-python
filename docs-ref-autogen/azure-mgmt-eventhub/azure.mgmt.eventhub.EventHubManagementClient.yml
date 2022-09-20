@@ -60,6 +60,14 @@ constructor:
       header is present.
     types:
     - <xref:int>
+  - name: credential
+  - name: subscription_id
+  - name: api_version
+    defaultValue: None
+  - name: base_url
+    defaultValue: https://management.azure.com
+  - name: profile
+    defaultValue: KnownProfiles.default
 methods:
 - uid: azure.mgmt.eventhub.EventHubManagementClient.close
   name: close

@@ -33,6 +33,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: partition_id
+    isRequired: true
 - uid: azure.eventprocessorhost.lease.Lease.with_source
   name: with_source
   summary: Init with existing lease.
@@ -43,3 +45,5 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: lease
+    isRequired: true

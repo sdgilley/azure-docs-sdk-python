@@ -58,3 +58,15 @@ constructor:
     defaultValue: None
     types:
     - <xref:bytearray>
+  - name: content_type
+    defaultValue: None
+  - name: content_encoding
+    defaultValue: None
+  - name: content_language
+    defaultValue: None
+  - name: content_disposition
+    defaultValue: None
+  - name: cache_control
+    defaultValue: None
+  - name: content_md5
+    defaultValue: None

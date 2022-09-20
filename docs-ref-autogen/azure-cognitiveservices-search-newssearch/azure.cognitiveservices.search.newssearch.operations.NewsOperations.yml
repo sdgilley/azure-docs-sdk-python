@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Activate swagger compliance. Constant value: "true".'
   name: x_bing_apis_sdk
@@ -557,6 +561,42 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: accept_language
+    defaultValue: None
+  - name: user_agent
+    defaultValue: None
+  - name: client_id
+    defaultValue: None
+  - name: client_ip
+    defaultValue: None
+  - name: location
+    defaultValue: None
+  - name: country_code
+    defaultValue: None
+  - name: category
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: headline_count
+    defaultValue: None
+  - name: market
+    defaultValue: None
+  - name: offset
+    defaultValue: None
+  - name: original_image
+    defaultValue: None
+  - name: safe_search
+    defaultValue: None
+  - name: set_lang
+    defaultValue: None
+  - name: text_decorations
+    defaultValue: None
+  - name: text_format
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: News or ClientRawResponse if raw=true
     types:
@@ -1101,6 +1141,44 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: query
+    isRequired: true
+  - name: accept_language
+    defaultValue: None
+  - name: user_agent
+    defaultValue: None
+  - name: client_id
+    defaultValue: None
+  - name: client_ip
+    defaultValue: None
+  - name: location
+    defaultValue: None
+  - name: country_code
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: freshness
+    defaultValue: None
+  - name: market
+    defaultValue: None
+  - name: offset
+    defaultValue: None
+  - name: original_image
+    defaultValue: None
+  - name: safe_search
+    defaultValue: None
+  - name: set_lang
+    defaultValue: None
+  - name: sort_by
+    defaultValue: None
+  - name: text_decorations
+    defaultValue: None
+  - name: text_format
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: News or ClientRawResponse if raw=true
     types:
@@ -1599,6 +1677,40 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: accept_language
+    defaultValue: None
+  - name: user_agent
+    defaultValue: None
+  - name: client_id
+    defaultValue: None
+  - name: client_ip
+    defaultValue: None
+  - name: location
+    defaultValue: None
+  - name: country_code
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: market
+    defaultValue: None
+  - name: offset
+    defaultValue: None
+  - name: safe_search
+    defaultValue: None
+  - name: set_lang
+    defaultValue: None
+  - name: since
+    defaultValue: None
+  - name: sort_by
+    defaultValue: None
+  - name: text_decorations
+    defaultValue: None
+  - name: text_format
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TrendingTopics or ClientRawResponse if raw=true
     types:

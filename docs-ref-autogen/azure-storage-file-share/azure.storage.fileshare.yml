@@ -96,6 +96,15 @@ functions:
       value is https.
     types:
     - <xref:str>
+  - name: account_name
+  - name: account_key
+  - name: resource_types
+  - name: permission
+  - name: expiry
+  - name: start
+    defaultValue: None
+  - name: ip
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -253,6 +262,20 @@ functions:
       value is https.
     types:
     - <xref:str>
+  - name: account_name
+  - name: share_name
+  - name: file_path
+  - name: account_key
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: policy_id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -391,6 +414,19 @@ functions:
       value is https.
     types:
     - <xref:str>
+  - name: account_name
+  - name: share_name
+  - name: account_key
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: policy_id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:

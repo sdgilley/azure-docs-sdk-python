@@ -17,6 +17,8 @@ constructor:
     defaultValue: None
     types:
     - <xref:obj>
+  - name: content
+    defaultValue: None
 variables:
 - description: 'A GUID value assigned to the message by the Queue service that
 

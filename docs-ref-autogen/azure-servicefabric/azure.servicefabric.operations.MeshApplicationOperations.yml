@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.servicefabric.operations.MeshApplicationOperations.create_or_update
   name: create_or_update
@@ -68,6 +72,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_resource_name
+    isRequired: true
+  - name: application_resource_description
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationResourceDescription or ClientRawResponse if
 
@@ -107,6 +119,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_resource_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -148,6 +166,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_resource_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationResourceDescription or ClientRawResponse if
 
@@ -194,6 +218,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_resource_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationResourceUpgradeProgressInfo or ClientRawResponse
 
@@ -232,6 +262,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedApplicationResourceDescriptionList or ClientRawResponse
 

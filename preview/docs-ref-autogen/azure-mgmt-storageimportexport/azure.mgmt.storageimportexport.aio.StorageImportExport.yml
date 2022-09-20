@@ -31,6 +31,12 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: credential
+  - name: subscription_id
+  - name: accept_language
+    defaultValue: None
+  - name: base_url
+    defaultValue: None
 variables:
 - description: LocationsOperations operations
   name: locations

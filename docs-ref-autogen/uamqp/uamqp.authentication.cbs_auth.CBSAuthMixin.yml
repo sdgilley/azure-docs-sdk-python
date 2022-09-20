@@ -34,6 +34,10 @@ methods:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: connection
+    isRequired: true
+  - name: debug
+    defaultValue: 'False'
   return:
     types:
     - <xref:uamqp.c_uamqp.CBSTokenAuth>

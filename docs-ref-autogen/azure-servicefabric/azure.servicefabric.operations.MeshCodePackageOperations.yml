@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The version of the API. This parameter is required and its value must
     be ''6.4-preview''. Constant value: "6.4-preview".'
@@ -85,6 +89,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_resource_name
+    isRequired: true
+  - name: service_resource_name
+    isRequired: true
+  - name: replica_name
+    isRequired: true
+  - name: code_package_name
+    isRequired: true
+  - name: tail
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ContainerLogs or ClientRawResponse if raw=true
     types:

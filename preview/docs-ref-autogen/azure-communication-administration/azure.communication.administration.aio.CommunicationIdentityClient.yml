@@ -19,6 +19,8 @@ constructor:
 
       shared access key'
     isRequired: true
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.communication.administration.aio.CommunicationIdentityClient.close
   name: close
@@ -60,6 +62,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: conn_str
     isRequired: true
   return:

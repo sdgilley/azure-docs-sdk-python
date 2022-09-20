@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version. Constant value: "2019-03-01".'
   name: api_version
@@ -62,6 +66,18 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: device_name
+    isRequired: true
+  - name: data_box_edge_device
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns DataBoxEdgeDevice or
@@ -118,6 +134,18 @@ methods:
 
       polling object for personal polling strategy'
     defaultValue: 'True'
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: device_admin_password
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
+    defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -159,6 +187,16 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
@@ -202,6 +240,16 @@ methods:
 
       polling object for personal polling strategy'
     defaultValue: 'True'
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
+    defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -244,6 +292,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DataBoxEdgeDevice or ClientRawResponse if raw=true
     types:
@@ -286,6 +342,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'DataBoxEdgeDeviceExtendedInfo or ClientRawResponse if
 
@@ -330,6 +394,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: NetworkSettings or ClientRawResponse if raw=true
     types:
@@ -374,6 +446,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: UpdateSummary or ClientRawResponse if raw=true
     types:
@@ -413,6 +493,16 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
@@ -460,6 +550,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: expand
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DataBoxEdgeDevice
     types:
@@ -497,6 +595,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: expand
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DataBoxEdgeDevice
     types:
@@ -535,6 +639,16 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
@@ -583,6 +697,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DataBoxEdgeDevice or ClientRawResponse if raw=true
     types:
@@ -636,6 +760,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate
+    isRequired: true
+  - name: authentication_type
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: UploadCertificateResponse or ClientRawResponse if raw=true
     types:

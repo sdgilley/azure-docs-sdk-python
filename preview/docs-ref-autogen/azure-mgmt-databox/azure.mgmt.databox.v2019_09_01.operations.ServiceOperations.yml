@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -52,6 +56,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location
+    isRequired: true
+  - name: available_sku_request
+    isRequired: true
   return:
     description: An iterator like instance of either AvailableSkusResult or the result
       of cls(response)
@@ -87,6 +95,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: location
+    isRequired: true
+  - name: available_sku_request
+    isRequired: true
   return:
     description: An iterator like instance of either AvailableSkusResult or the result
       of cls(response)
@@ -114,6 +128,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location
+    isRequired: true
+  - name: region_configuration_request
+    isRequired: true
   return:
     description: RegionConfigurationResponse, or the result of cls(response)
     types:
@@ -143,6 +161,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location
+    isRequired: true
+  - name: validate_address
+    isRequired: true
   return:
     description: AddressValidationOutput, or the result of cls(response)
     types:
@@ -169,6 +191,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location
+    isRequired: true
+  - name: validation_request
+    isRequired: true
   return:
     description: ValidationResponse, or the result of cls(response)
     types:
@@ -201,6 +227,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: location
+    isRequired: true
+  - name: validation_request
+    isRequired: true
   return:
     description: ValidationResponse, or the result of cls(response)
     types:

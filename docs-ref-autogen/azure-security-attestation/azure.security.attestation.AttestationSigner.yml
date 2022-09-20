@@ -25,3 +25,5 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: certificates
+  - name: key_id

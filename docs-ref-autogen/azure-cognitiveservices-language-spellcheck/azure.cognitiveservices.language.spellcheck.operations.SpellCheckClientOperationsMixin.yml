@@ -446,6 +446,48 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: text
+    isRequired: true
+  - name: accept_language
+    defaultValue: None
+  - name: pragma
+    defaultValue: None
+  - name: user_agent
+    defaultValue: None
+  - name: client_id
+    defaultValue: None
+  - name: client_ip
+    defaultValue: None
+  - name: location
+    defaultValue: None
+  - name: action_type
+    defaultValue: None
+  - name: app_name
+    defaultValue: None
+  - name: country_code
+    defaultValue: None
+  - name: client_machine_name
+    defaultValue: None
+  - name: doc_id
+    defaultValue: None
+  - name: market
+    defaultValue: None
+  - name: session_id
+    defaultValue: None
+  - name: set_lang
+    defaultValue: None
+  - name: user_id
+    defaultValue: None
+  - name: mode
+    defaultValue: None
+  - name: pre_context_text
+    defaultValue: None
+  - name: post_context_text
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SpellCheck or ClientRawResponse if raw=true
     types:

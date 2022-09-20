@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Client Api Version. Constant value: "2017-09-01-preview".'
   name: api_version
@@ -61,6 +65,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobInformation or ClientRawResponse if raw=true
     types:
@@ -104,6 +116,16 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: account_name
+    isRequired: true
+  - name: job_identity
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
@@ -156,6 +178,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: job_identity
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobInformation or ClientRawResponse if raw=true
     types:
@@ -197,6 +229,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: job_identity
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobInformation or ClientRawResponse if raw=true
     types:
@@ -241,6 +281,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: job_identity
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobDataPath or ClientRawResponse if raw=true
     types:
@@ -283,6 +331,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: job_identity
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobStatistics or ClientRawResponse if raw=true
     types:
@@ -370,6 +426,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of JobInformationBasic
     types:
@@ -420,6 +494,18 @@ methods:
 
       polling object for personal polling strategy'
     defaultValue: 'True'
+  - name: account_name
+    isRequired: true
+  - name: job_identity
+    isRequired: true
+  - name: parameters
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
+    defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns JobInformation or
 
@@ -469,6 +555,16 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: account_name
+    isRequired: true
+  - name: job_identity
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or

@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2020-05-31-preview".'
   name: api_version
@@ -67,6 +71,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: lock_token
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -116,6 +126,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: lock_token
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -156,6 +172,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

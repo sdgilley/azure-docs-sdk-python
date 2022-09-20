@@ -48,3 +48,5 @@ methods:
     isRequired: true
     types:
     - <xref:msrest.universal_http.ClientRequest>
+  - name: request
+    isRequired: true

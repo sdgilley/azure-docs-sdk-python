@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -73,6 +77,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: job_id
+    isRequired: true
+  - name: farmer_id
+    isRequired: true
+  - name: boundary_id
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either CascadeDeleteJob
       or the result of cls(response)
@@ -105,6 +115,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: boundary_id
+    isRequired: true
+  - name: boundary
+    defaultValue: None
   return:
     description: Boundary, or the result of cls(response)
     types:
@@ -130,6 +146,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: boundary_id
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -155,6 +175,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: boundary_id
+    isRequired: true
   return:
     description: Boundary, or the result of cls(response)
     types:
@@ -176,6 +200,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: job_id
+    isRequired: true
   return:
     description: CascadeDeleteJob, or the result of cls(response)
     types:
@@ -212,6 +238,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: boundary_id
+    isRequired: true
+  - name: other_farmer_id
+    isRequired: true
+  - name: other_boundary_id
+    isRequired: true
   return:
     description: BoundaryOverlapResponse, or the result of cls(response)
     types:
@@ -313,6 +347,36 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: is_primary
+    defaultValue: None
+  - name: parent_type
+    defaultValue: None
+  - name: parent_ids
+    defaultValue: None
+  - name: min_acreage
+    defaultValue: None
+  - name: max_acreage
+    defaultValue: None
+  - name: ids
+    defaultValue: None
+  - name: names
+    defaultValue: None
+  - name: property_filters
+    defaultValue: None
+  - name: statuses
+    defaultValue: None
+  - name: min_created_date_time
+    defaultValue: None
+  - name: max_created_date_time
+    defaultValue: None
+  - name: min_last_modified_date_time
+    defaultValue: None
+  - name: max_last_modified_date_time
+    defaultValue: None
+  - name: max_page_size
+    defaultValue: '50'
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either BoundaryListResponse or the result
       of cls(response)
@@ -421,6 +485,38 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: is_primary
+    defaultValue: None
+  - name: parent_type
+    defaultValue: None
+  - name: parent_ids
+    defaultValue: None
+  - name: min_acreage
+    defaultValue: None
+  - name: max_acreage
+    defaultValue: None
+  - name: ids
+    defaultValue: None
+  - name: names
+    defaultValue: None
+  - name: property_filters
+    defaultValue: None
+  - name: statuses
+    defaultValue: None
+  - name: min_created_date_time
+    defaultValue: None
+  - name: max_created_date_time
+    defaultValue: None
+  - name: min_last_modified_date_time
+    defaultValue: None
+  - name: max_last_modified_date_time
+    defaultValue: None
+  - name: max_page_size
+    defaultValue: '50'
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either BoundaryListResponse or the result
       of cls(response)
@@ -443,6 +539,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: query
+    defaultValue: None
   return:
     description: An iterator like instance of either BoundaryListResponse or the result
       of cls(response)
@@ -470,6 +568,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: query
+    defaultValue: None
   return:
     description: An iterator like instance of either BoundaryListResponse or the result
       of cls(response)

@@ -16,6 +16,8 @@ constructor:
     types:
     - <xref:str>
     - <xref:bytes>
+  - name: body
+    defaultValue: None
 examples:
 - "Create instances of EventData<!--[!code-python[Main](les\\sync_samples\\sample_code_eventhub.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -36,6 +38,8 @@ methods:
 
       Default is ''UTF-8'''
     defaultValue: UTF-8
+  - name: encoding
+    defaultValue: UTF-8
   return:
     types:
     - <xref:Dict>[<xref:str>, <xref:Any>]
@@ -48,6 +52,8 @@ methods:
     description: 'The encoding to use for decoding event data.
 
       Default is ''UTF-8'''
+    defaultValue: UTF-8
+  - name: encoding
     defaultValue: UTF-8
   return:
     types:
@@ -69,6 +75,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: content
+    isRequired: true
   - name: content_type
     isRequired: true
   return:

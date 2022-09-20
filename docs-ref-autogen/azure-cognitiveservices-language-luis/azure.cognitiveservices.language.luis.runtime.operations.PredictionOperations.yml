@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.language.luis.runtime.operations.PredictionOperations.get_slot_prediction
   name: get_slot_prediction
@@ -83,6 +87,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: slot_name
+    isRequired: true
+  - name: prediction_request
+    isRequired: true
+  - name: verbose
+    defaultValue: None
+  - name: show_all_intents
+    defaultValue: None
+  - name: log
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PredictionResponse or ClientRawResponse if raw=true
     types:
@@ -147,6 +167,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: prediction_request
+    isRequired: true
+  - name: verbose
+    defaultValue: None
+  - name: show_all_intents
+    defaultValue: None
+  - name: log
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PredictionResponse or ClientRawResponse if raw=true
     types:

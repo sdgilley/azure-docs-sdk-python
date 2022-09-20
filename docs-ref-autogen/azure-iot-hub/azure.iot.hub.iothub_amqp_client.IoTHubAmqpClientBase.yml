@@ -32,5 +32,11 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: device_id
+    isRequired: true
+  - name: message
+    isRequired: true
+  - name: app_props
+    isRequired: true
   exceptions:
   - type: Exception if the Send command is not able to send the message

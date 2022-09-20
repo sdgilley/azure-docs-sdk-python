@@ -20,6 +20,8 @@ constructor:
     isRequired: true
     types:
     - <xref:msrest.Configuration>
+  - name: creds
+  - name: config
 methods:
 - uid: msrest.service_client.ServiceClient.add_header
   name: add_header
@@ -41,6 +43,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: header
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: msrest.service_client.ServiceClient.close
   name: close
   summary: Close the pipeline if keep_alive is True.
@@ -66,6 +72,12 @@ methods:
   - name: config
     description: Any specific config overrides
     isRequired: true
+  - name: request
+    isRequired: true
+  - name: headers
+    defaultValue: None
+  - name: content
+    defaultValue: None
 - uid: msrest.service_client.ServiceClient.send_formdata
   name: send_formdata
   summary: 'Send data as a multipart form-data request.
@@ -96,6 +108,12 @@ methods:
   - name: config
     description: Any specific config overrides.
     isRequired: true
+  - name: request
+    isRequired: true
+  - name: headers
+    defaultValue: None
+  - name: content
+    defaultValue: None
 - uid: msrest.service_client.ServiceClient.stream_download
   name: stream_download
   summary: Generator for streaming request body data.
@@ -107,4 +125,8 @@ methods:
     isRequired: true
   - name: callback
     description: Custom callback for monitoring progress.
+    isRequired: true
+  - name: data
+    isRequired: true
+  - name: callback
     isRequired: true

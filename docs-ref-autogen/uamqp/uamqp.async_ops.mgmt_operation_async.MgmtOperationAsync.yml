@@ -36,7 +36,7 @@ constructor:
       draft.
 
       The default is *b"statusCode"*.'
-    defaultValue: 'False'
+    defaultValue: b'statusCode'
     types:
     - <xref:bytes>
     - <xref:str>
@@ -47,7 +47,7 @@ constructor:
       draft.
 
       The default is *b"statusDescription"*.'
-    defaultValue: b'statusCode'
+    defaultValue: b'statusDescription'
     types:
     - <xref:bytes>
     - <xref:str>
@@ -55,9 +55,18 @@ constructor:
     description: 'The encoding to use for parameters supplied as strings.
 
       Default is ''UTF-8'''
-    defaultValue: b'statusDescription'
+    defaultValue: UTF-8
     types:
     - <xref:str>
+  - name: session
+  - name: target
+    defaultValue: None
+  - name: debug
+    defaultValue: 'False'
+  - name: status_code_field
+    defaultValue: b'statusCode'
+  - name: description_fields
+    defaultValue: b'statusDescription'
   - name: encoding
     defaultValue: UTF-8
   - name: loop
@@ -102,6 +111,14 @@ methods:
     defaultValue: '0'
     types:
     - <xref:float>
+  - name: operation
+    isRequired: true
+  - name: op_type
+    isRequired: true
+  - name: message
+    isRequired: true
+  - name: timeout
+    defaultValue: '0'
   return:
     types:
     - <xref:uamqp.message.Message>

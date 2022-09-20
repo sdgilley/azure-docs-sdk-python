@@ -38,13 +38,27 @@ constructor:
     description: 'The input language to the speech recognition. The language
 
       is specified in BCP-47 format.'
-    defaultValue: None
+    isRequired: true
   - name: target_languages
     description: The target languages for translation.
-    isRequired: true
+    defaultValue: None
   - name: voice_name
     description: The voice to use for synthesized output.
     isRequired: true
+  - name: subscription
+    defaultValue: None
+  - name: region
+    defaultValue: None
+  - name: endpoint
+    defaultValue: None
+  - name: host
+    defaultValue: None
+  - name: auth_token
+    defaultValue: None
+  - name: target_languages
+    defaultValue: None
+  - name: voice_name
+  - name: speech_recognition_language
 methods:
 - uid: azure.cognitiveservices.speech.translation.SpeechTranslationConfig.add_target_language
   name: add_target_language
@@ -53,6 +67,8 @@ methods:
   parameters:
   - name: language
     description: The language code to add.
+    isRequired: true
+  - name: language
     isRequired: true
 - uid: azure.cognitiveservices.speech.translation.SpeechTranslationConfig.remove_target_language
   name: remove_target_language
@@ -68,6 +84,8 @@ methods:
   parameters:
   - name: language
     description: The language code to remove.
+    isRequired: true
+  - name: language
     isRequired: true
 attributes:
 - uid: azure.cognitiveservices.speech.translation.SpeechTranslationConfig.target_languages

@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -79,6 +83,20 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: job_execution_id
+    isRequired: true
+  - name: step_name
+    isRequired: true
+  - name: target_id
+    isRequired: true
   return:
     description: JobExecution, or the result of cls(response)
     types:
@@ -172,6 +190,30 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: job_execution_id
+    isRequired: true
+  - name: create_time_min
+    defaultValue: None
+  - name: create_time_max
+    defaultValue: None
+  - name: end_time_min
+    defaultValue: None
+  - name: end_time_max
+    defaultValue: None
+  - name: is_active
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: top
+    defaultValue: None
   return:
     description: An iterator like instance of either JobExecutionListResult or the
       result of cls(response)
@@ -271,6 +313,32 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: server_name
+    isRequired: true
+  - name: job_agent_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: job_execution_id
+    isRequired: true
+  - name: step_name
+    isRequired: true
+  - name: create_time_min
+    defaultValue: None
+  - name: create_time_max
+    defaultValue: None
+  - name: end_time_min
+    defaultValue: None
+  - name: end_time_max
+    defaultValue: None
+  - name: is_active
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: top
+    defaultValue: None
   return:
     description: An iterator like instance of either JobExecutionListResult or the
       result of cls(response)

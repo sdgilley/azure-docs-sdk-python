@@ -40,7 +40,7 @@ constructor:
     description: 'Whether to turn on network trace logs. If *True*, trace logs
 
       will be logged at INFO level. Default is *False*.'
-    defaultValue: None
+    defaultValue: 'False'
     types:
     - <xref:bool>
   - name: msg_timeout
@@ -51,14 +51,14 @@ constructor:
 
       expired data from being sent. If set to 0, messages will not expire. Default
       is 0.'
-    defaultValue: 'False'
+    defaultValue: '0'
     types:
     - <xref:int>
   - name: error_policy
     description: 'A policy for parsing errors on link, connection and message
 
       disposition to determine whether the error should be retryable.'
-    defaultValue: '0'
+    defaultValue: None
     types:
     - <xref:uamqp.errors.ErrorPolicy>
   - name: keep_alive_interval
@@ -81,7 +81,7 @@ constructor:
       from the service that the message was successfully sent. If set to ''Settled'',
 
       the client will not wait for confirmation and assume success.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:uamqp.constants.SenderSettleMode>
   - name: receive_settle_mode
@@ -185,6 +185,21 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: target
+  - name: auth
+    defaultValue: None
+  - name: client_name
+    defaultValue: None
+  - name: loop
+    defaultValue: None
+  - name: debug
+    defaultValue: 'False'
+  - name: msg_timeout
+    defaultValue: '0'
+  - name: error_policy
+    defaultValue: None
+  - name: keep_alive_interval
+    defaultValue: None
 methods:
 - uid: uamqp.async_ops.client_async.SendClientAsync.close_async
   name: close_async
@@ -214,6 +229,10 @@ methods:
     isRequired: true
     types:
     - <xref:uamqp.authentication.common.AMQPAuth>
+  - name: redirect
+    isRequired: true
+  - name: auth
+    isRequired: true
 - uid: uamqp.async_ops.client_async.SendClientAsync.send_all_messages_async
   name: send_all_messages_async
   summary: 'Send all pending messages in the queue asynchronously.
@@ -232,6 +251,8 @@ methods:
     defaultValue: 'True'
     types:
     - <xref:bool>
+  - name: close_on_done
+    defaultValue: 'True'
   return:
     types:
     - <xref:list>[<xref:uamqp.constants.MessageState>]
@@ -252,6 +273,10 @@ methods:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: messages
+    isRequired: true
+  - name: close_on_done
+    defaultValue: 'False'
   exceptions:
   - type: uamqp.errors.MessageException if message fails to send after retry policyis
       exhausted.

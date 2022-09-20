@@ -38,6 +38,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: lease
+    isRequired: true
   return:
     description: '*True* if the lease was acquired successfully, *False* if not.'
     types:
@@ -52,6 +54,8 @@ methods:
   parameters:
   - name: partition_id
     description: The ID of a given partition.
+    isRequired: true
+  - name: partition_id
     isRequired: true
   return:
     description: The existing or newly-created lease info for the partition.
@@ -76,6 +80,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: lease
+    isRequired: true
 - uid: azure.eventprocessorhost.abstract_lease_manager.AbstractLeaseManager.delete_lease_store_async
   name: delete_lease_store_async
   summary: Not used by EventProcessorHost, but a convenient function to have for testing.
@@ -102,6 +108,8 @@ methods:
   - name: partition_id
     description: The ID of a given partition.
     isRequired: true
+  - name: partition_id
+    isRequired: true
   return:
     description: Lease info for the partition, or *None*.
 - uid: azure.eventprocessorhost.abstract_lease_manager.AbstractLeaseManager.release_lease_async
@@ -117,6 +125,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: lease
+    isRequired: true
   return:
     description: '*True* if the lease was released successfully, *False* if not.'
     types:
@@ -136,6 +146,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: lease
+    isRequired: true
   return:
     description: '*True* if the lease was renewed successfully, *False* if not.'
     types:
@@ -159,6 +171,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: lease
+    isRequired: true
   return:
     description: '*True* if the updated was performed successfully, *False* if not.'
     types:

@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version. Constant value: "2016-03-01".'
   name: api_version
@@ -68,6 +72,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: properties
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobDefinition or ClientRawResponse if raw=true
     types:
@@ -113,6 +129,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -158,6 +184,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobDefinition or ClientRawResponse if raw=true
     types:
@@ -217,6 +253,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of JobDefinition
     types:
@@ -280,6 +330,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of JobHistoryDefinition
     types:
@@ -329,6 +395,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: properties
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobDefinition or ClientRawResponse if raw=true
     types:
@@ -374,6 +452,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

@@ -34,6 +34,10 @@ functions:
     isRequired: true
     types:
     - <xref:msrest.polling.PollingMethod>
+  - name: client
+  - name: initial_response
+  - name: deserialization_callback
+  - name: polling_method
 classes:
 - msrest.polling.AsyncNoPolling
 - msrest.polling.AsyncPollingMethod

@@ -39,6 +39,8 @@ methods:
     types:
     - <xref:str>
     - <xref:bytes>
+  - name: data
+    isRequired: true
 attributes:
 - uid: uamqp.message.DataBody.data
   name: data

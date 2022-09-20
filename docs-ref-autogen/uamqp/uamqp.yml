@@ -45,6 +45,13 @@ functions:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: source
+  - name: auth
+    defaultValue: None
+  - name: timeout
+    defaultValue: '0'
+  - name: debug
+    defaultValue: 'False'
   return:
     types:
     - <xref:uamqp.message.Message>
@@ -95,6 +102,15 @@ functions:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: source
+  - name: auth
+    defaultValue: None
+  - name: max_batch_size
+    defaultValue: None
+  - name: timeout
+    defaultValue: '0'
+  - name: debug
+    defaultValue: 'False'
   return:
     types:
     - <xref:list>[<xref:uamqp.message.Message>]
@@ -131,6 +147,12 @@ functions:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: target
+  - name: data
+  - name: auth
+    defaultValue: None
+  - name: debug
+    defaultValue: 'False'
   return:
     description: A list of states for each message sent.
     types:

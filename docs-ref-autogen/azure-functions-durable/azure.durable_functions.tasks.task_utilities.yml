@@ -18,6 +18,8 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: state
+  - name: name
   return:
     description: 'The raised event with the given event name that has not yet been
       processed.
@@ -52,7 +54,7 @@ functions:
       only available when looking for a completed or failed event.
 
       Defaults to None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:<xref:scheduled_task">>
   - name: optional
@@ -62,6 +64,10 @@ functions:
 
       Defaults to None.'
     isRequired: true
+  - name: state
+  - name: event_type
+  - name: scheduled_task
+    defaultValue: None
   return:
     description: The matching event from the state array, if it exists.
     types:
@@ -106,7 +112,7 @@ functions:
       only available when looking for a completed or failed event.
 
       Defaults to None.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:<xref:scheduled_task">>
   - name: optional
@@ -116,6 +122,16 @@ functions:
 
       Defaults to None.'
     isRequired: true
+  - name: state
+  - name: event_type
+  - name: name
+    defaultValue: None
+  - name: context
+    defaultValue: None
+  - name: instance_id
+    defaultValue: None
+  - name: scheduled_task
+    defaultValue: None
   return:
     description: The matching event from the state array, if it exists.
     types:
@@ -137,6 +153,8 @@ functions:
     isRequired: true
     types:
     - <xref:Optional>[<xref:azure.durable_functions.models.history.HistoryEvent.HistoryEvent>]<xref::>
+  - name: state
+  - name: scheduled_task
   return:
     description: The matching sub-orchestration completed event, if found. Else, None.
     types:
@@ -167,6 +185,12 @@ functions:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:str>], <xref:optional:>
+  - name: state
+  - name: name
+  - name: context
+    defaultValue: None
+  - name: instance_id
+    defaultValue: None
   return:
     description: The matching sub-orchestration creation event. Else, None.
     types:
@@ -192,6 +216,8 @@ functions:
     isRequired: true
     types:
     - <xref:Optional>[<xref:azure.durable_functions.models.history.HistoryEvent.HistoryEvent>]<xref::>
+  - name: state
+  - name: scheduled_task
   return:
     description: The matching sub-orchestration failure event, if found. Else, None.
     types:
@@ -324,6 +350,12 @@ functions:
     isRequired: true
     types:
     - <xref:azure.durable_functions.models.actions.Action.Action>
+  - name: state
+  - name: max_number_of_attempts
+  - name: scheduled_type
+  - name: completed_type
+  - name: failed_type
+  - name: action
   return:
     description: 'A Task encompassing the state of the scheduled work item, that is,
 

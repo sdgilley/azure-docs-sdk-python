@@ -25,3 +25,5 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: credentials
+  - name: adla_catalog_dns_suffix

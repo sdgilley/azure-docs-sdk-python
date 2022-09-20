@@ -19,7 +19,7 @@ constructor:
     - <xref:str>
   - name: name
     description: Name of the compute
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>
   - name: location
@@ -34,9 +34,16 @@ constructor:
     - <xref:Optional>[<xref:str>], <xref:optional>
   - name: resource_id
     description: ARM resource id of the underlying compute.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>, <xref:optional>
+  - name: name
+  - name: location
+    defaultValue: None
+  - name: description
+    defaultValue: None
+  - name: resource_id
+    defaultValue: None
 methods:
 - uid: azure.ai.ml.entities.Compute.dump
   name: dump
@@ -49,6 +56,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: path
+    isRequired: true
 attributes:
 - uid: azure.ai.ml.entities.Compute.created_on
   name: created_on

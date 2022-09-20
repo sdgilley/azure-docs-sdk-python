@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for this operation. Constant value: "2018-05-01-preview".'
   name: api_version
@@ -77,6 +81,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: insight_properties
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationInsightsComponent or ClientRawResponse if raw=true
     types:
@@ -121,6 +135,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -165,6 +187,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationInsightsComponent or ClientRawResponse if raw=true
     types:
@@ -216,6 +246,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: purge_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ComponentPurgeStatusResponse or ClientRawResponse if raw=true
     types:
@@ -247,6 +287,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of ApplicationInsightsComponent
     types:
@@ -283,6 +327,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of ApplicationInsightsComponent
     types:
@@ -352,6 +402,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: table
+    isRequired: true
+  - name: filters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ComponentPurgeResponse or ClientRawResponse if raw=true
     types:
@@ -403,6 +465,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationInsightsComponent or ClientRawResponse if raw=true
     types:

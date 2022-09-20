@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -56,6 +60,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: schedule_definition_id
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: decision_id
+    isRequired: true
   return:
     description: AccessReviewDecision, or the result of cls(response)
     types:
@@ -81,6 +91,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: schedule_definition_id
+    isRequired: true
+  - name: id
+    isRequired: true
   return:
     description: An iterator like instance of either AccessReviewDecisionListResult
       or the result of cls(response)
@@ -118,6 +132,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: schedule_definition_id
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: decision_id
+    isRequired: true
+  - name: properties
+    isRequired: true
   return:
     description: AccessReviewDecision, or the result of cls(response)
     types:

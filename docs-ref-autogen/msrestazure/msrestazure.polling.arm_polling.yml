@@ -28,6 +28,8 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: response
+  - name: header_name
   return:
     description: URL if not None AND valid, None otherwise
 - uid: msrestazure.polling.arm_polling.succeeded

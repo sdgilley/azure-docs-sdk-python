@@ -26,6 +26,10 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: goal
+    defaultValue: None
+  - name: primary_metric
+    defaultValue: None
 attributes:
 - uid: azure.ai.ml.sweep.Objective.goal
   name: goal

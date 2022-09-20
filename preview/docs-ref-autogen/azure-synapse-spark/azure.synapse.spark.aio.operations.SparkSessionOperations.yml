@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -45,6 +49,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: session_id
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -71,6 +77,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: session_id
+    isRequired: true
+  - name: statement_id
+    isRequired: true
   return:
     description: SparkStatementCancellationResult, or the result of cls(response)
     types:
@@ -100,6 +110,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: spark_session_options
+    isRequired: true
+  - name: detailed
+    defaultValue: None
   return:
     description: SparkSession, or the result of cls(response)
     types:
@@ -127,6 +141,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: session_id
+    isRequired: true
+  - name: spark_statement_options
+    isRequired: true
   return:
     description: SparkStatement, or the result of cls(response)
     types:
@@ -156,6 +174,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: session_id
+    isRequired: true
+  - name: detailed
+    defaultValue: None
   return:
     description: SparkSession, or the result of cls(response)
     types:
@@ -192,6 +214,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: from_parameter
+    defaultValue: None
+  - name: size
+    defaultValue: None
+  - name: detailed
+    defaultValue: None
   return:
     description: SparkSessionCollection, or the result of cls(response)
     types:
@@ -218,6 +246,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: session_id
+    isRequired: true
+  - name: statement_id
+    isRequired: true
   return:
     description: SparkStatement, or the result of cls(response)
     types:
@@ -238,6 +270,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: session_id
+    isRequired: true
   return:
     description: SparkStatementCollection, or the result of cls(response)
     types:
@@ -259,6 +293,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: session_id
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:

@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version. Constant value: "2016-03-01".'
   name: api_version
@@ -63,6 +67,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: job_collection
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobCollectionDefinition or ClientRawResponse if raw=true
     types:
@@ -102,6 +116,16 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
@@ -145,6 +169,16 @@ methods:
 
       polling object for personal polling strategy'
     defaultValue: 'True'
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
+    defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
 
@@ -186,6 +220,16 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
@@ -229,6 +273,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobCollectionDefinition or ClientRawResponse if raw=true
     types:
@@ -264,6 +316,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of JobCollectionDefinition
     types:
@@ -292,6 +350,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of JobCollectionDefinition
     types:
@@ -336,6 +398,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: job_collection_name
+    isRequired: true
+  - name: job_collection
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobCollectionDefinition or ClientRawResponse if raw=true
     types:

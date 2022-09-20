@@ -90,6 +90,10 @@ functions:
       entire blocks, and doing so defeats the purpose of the memory-efficient algorithm.'
     types:
     - <xref:bool>
+  - name: blob_url
+  - name: output
+  - name: credential
+    defaultValue: None
   return:
     types:
     - <xref:None>
@@ -192,6 +196,15 @@ functions:
       operations will be service encrypted.
     types:
     - <xref:str>
+  - name: account_name
+  - name: account_key
+  - name: resource_types
+  - name: permission
+  - name: expiry
+  - name: start
+    defaultValue: None
+  - name: ip
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -383,6 +396,25 @@ functions:
       operations will be service encrypted.
     types:
     - <xref:str>
+  - name: account_name
+  - name: container_name
+  - name: blob_name
+  - name: snapshot
+    defaultValue: None
+  - name: account_key
+    defaultValue: None
+  - name: user_delegation_key
+    defaultValue: None
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: policy_id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -542,6 +574,22 @@ functions:
       operations will be service encrypted.
     types:
     - <xref:str>
+  - name: account_name
+  - name: container_name
+  - name: account_key
+    defaultValue: None
+  - name: user_delegation_key
+    defaultValue: None
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: policy_id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -641,6 +689,10 @@ functions:
     description: Encoding to use if text is supplied as input. Defaults to UTF-8.
     types:
     - <xref:str>
+  - name: blob_url
+  - name: data
+  - name: credential
+    defaultValue: None
   return:
     description: Blob-updated property dict (Etag and last modified)
     types:

@@ -53,6 +53,16 @@ constructor:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: read
+    defaultValue: 'False'
+  - name: write
+    defaultValue: 'False'
+  - name: delete
+    defaultValue: 'False'
+  - name: list
+    defaultValue: 'False'
+  - name: create
+    defaultValue: 'False'
 methods:
 - uid: azure.storage.fileshare.ShareSasPermissions.from_string
   name: from_string
@@ -73,6 +83,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: permission
     isRequired: true
   return:

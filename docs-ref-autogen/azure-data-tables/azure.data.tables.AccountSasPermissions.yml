@@ -68,6 +68,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: permission
     isRequired: true
   return:

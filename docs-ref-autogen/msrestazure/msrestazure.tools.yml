@@ -18,6 +18,9 @@ functions:
     defaultValue: None
     types:
     - <xref:msrestazure.tools.Exception>
+  - name: rid
+  - name: exception_type
+    defaultValue: None
   return:
     description: A boolean describing whether the id is valid.
     types:
@@ -38,6 +41,9 @@ functions:
     defaultValue: None
     types:
     - <xref:msrestazure.tools.Exception>
+  - name: rname
+  - name: exception_type
+    defaultValue: None
   return:
     description: A boolean describing whether the name is valid.
     types:
@@ -56,6 +62,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: rid
   return:
     description: "A dictionary with with following key/value pairs (if found):\n\n\
       * subscription:            Subscription id \n\n* resource_group:          Name\

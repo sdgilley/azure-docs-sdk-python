@@ -23,3 +23,6 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: response
+  - name: error
+    defaultValue: None

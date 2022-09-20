@@ -19,6 +19,10 @@ constructor:
     defaultValue: None
     types:
     - <xref:int>
+  - name: start
+    defaultValue: None
+  - name: end
+    defaultValue: None
 variables:
 - description: Whether the range has been cleared.
   name: cleared

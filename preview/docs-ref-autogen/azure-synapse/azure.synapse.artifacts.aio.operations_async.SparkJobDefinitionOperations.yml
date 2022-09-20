@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -62,6 +66,8 @@ methods:
       header is present.
     types:
     - <xref:azure.synapse.artifacts.models.ParameterType.int>
+  - name: properties
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either SparkBatchJob or
       the result of cls(response)
@@ -100,6 +106,8 @@ methods:
       header is present.
     types:
     - <xref:azure.synapse.artifacts.models.ParameterType.int>
+  - name: spark_job_definition_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either SparkBatchJob or
       the result of cls(response)
@@ -136,6 +144,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: spark_job_definition_name
+    isRequired: true
+  - name: properties
+    isRequired: true
+  - name: if_match
+    defaultValue: None
   return:
     description: SparkJobDefinitionResource, or the result of cls(response)
     types:
@@ -157,6 +171,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: spark_job_definition_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -189,6 +205,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: spark_job_definition_name
+    isRequired: true
+  - name: if_none_match
+    defaultValue: None
   return:
     description: SparkJobDefinitionResource, or the result of cls(response)
     types:

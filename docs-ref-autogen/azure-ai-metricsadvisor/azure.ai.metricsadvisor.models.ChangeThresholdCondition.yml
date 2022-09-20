@@ -45,3 +45,8 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.ai.metricsadvisor.models.SuppressCondition>
+  - name: change_percentage
+  - name: shift_point
+  - name: within_range
+  - name: anomaly_detector_direction
+  - name: suppress_condition

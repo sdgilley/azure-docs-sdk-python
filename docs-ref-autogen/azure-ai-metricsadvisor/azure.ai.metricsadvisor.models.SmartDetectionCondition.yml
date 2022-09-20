@@ -29,3 +29,6 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.ai.metricsadvisor.models.SuppressCondition>
+  - name: sensitivity
+  - name: anomaly_detector_direction
+  - name: suppress_condition

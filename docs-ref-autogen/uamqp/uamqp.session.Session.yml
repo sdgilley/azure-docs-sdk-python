@@ -40,6 +40,15 @@ constructor:
     types:
     - <xref:func>[<xref:uamqp.address.Source>, <xref:uamqp.address.Target>, <xref:dict>,
       <xref:uamqp.errors.AMQPConnectionError>]
+  - name: connection
+  - name: incoming_window
+    defaultValue: None
+  - name: outgoing_window
+    defaultValue: None
+  - name: handle_max
+    defaultValue: None
+  - name: on_attach
+    defaultValue: None
 variables:
 - description: The size of the allowed window for incoming messages.
   name: incoming_window
@@ -131,6 +140,14 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: message
+    isRequired: true
+  - name: operation
+    isRequired: true
+  - name: op_type
+    defaultValue: None
+  - name: node
+    defaultValue: b'$management'
   return:
     types:
     - <xref:uamqp.message.Message>

@@ -38,3 +38,5 @@ methods:
     isRequired: true
     types:
     - <xref:msrest.pipeline.Request>
+  - name: request
+    isRequired: true

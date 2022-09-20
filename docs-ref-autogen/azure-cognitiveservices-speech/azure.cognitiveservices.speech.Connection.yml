@@ -141,6 +141,8 @@ methods:
       recognition or single-shot recognition. It takes no effect if the connection
       is from SpeechSynthsizer.'
     isRequired: true
+  - name: for_continuous_recognition
+    isRequired: true
 - uid: azure.cognitiveservices.speech.Connection.set_message_property
   name: set_message_property
   summary: 'Appends a parameter in a message to service.
@@ -162,6 +164,12 @@ methods:
     isRequired: true
   - name: property_value
     description: The value of the property that you want to set.
+    isRequired: true
+  - name: path
+    isRequired: true
+  - name: property_name
+    isRequired: true
+  - name: property_value
     isRequired: true
 attributes:
 - uid: azure.cognitiveservices.speech.Connection.connected

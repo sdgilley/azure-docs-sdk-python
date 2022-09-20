@@ -83,6 +83,12 @@ methods:
   - name: kwargs
     description: Other parameters, typically defined in OpenID Connect.
     isRequired: true
+  - name: scope
+    defaultValue: None
+  - name: redirect_uri
+    defaultValue: None
+  - name: state
+    defaultValue: None
   return:
     description: "The auth code flow. It is a dict in this form:\n\n<!-- literal_block\
       \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
@@ -137,6 +143,12 @@ methods:
   - name: scope
     description: Optional. It must be a subset of previously granted scopes.
     defaultValue: None
+  - name: assertion
+    isRequired: true
+  - name: grant_type
+    isRequired: true
+  - name: scope
+    defaultValue: None
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_auth_code_flow
   name: obtain_token_by_auth_code_flow
   summary: 'With the auth_response being redirected back,
@@ -167,6 +179,12 @@ methods:
     defaultValue: None
     types:
     - <xref:collections.Iterable>[<xref:str>]
+  - name: auth_code_flow
+    isRequired: true
+  - name: auth_response
+    isRequired: true
+  - name: scope
+    defaultValue: None
   return:
     description: "* A dict containing \"access_token\" and/or \"id_token\", among\
       \ others, depends on what scope was used. (See [https://tools.ietf.org/html/rfc6749#section-5.1](https://tools.ietf.org/html/rfc6749#section-5.1))\
@@ -217,6 +235,12 @@ methods:
 
       so that this library can link the obtained tokens with their scope.'
     defaultValue: None
+  - name: code
+    isRequired: true
+  - name: redirect_uri
+    defaultValue: None
+  - name: scope
+    defaultValue: None
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_browser
   name: obtain_token_by_browser
   summary: 'A native app can use this method to obtain token via a local browser.
@@ -227,7 +251,7 @@ methods:
   parameters:
   - name: scope
     description: A list of scopes that you would like to obtain token for.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:collections.Iterable>[<xref:str>]
   - name: extra_scope_to_consent
@@ -241,7 +265,7 @@ methods:
       call
 
       would be able to obtain token for those additional scopes, silently.'
-    defaultValue: None
+    isRequired: true
   - name: redirect_uri
     description: 'The redirect_uri to be sent via auth request to Identity Provider
       (IdP),
@@ -261,7 +285,7 @@ methods:
       Per HTTP convention, if port number is absent, it would mean port 80,
 
       although you probably want to specify port 0 in this context.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:string>
   - name: auth_params
@@ -287,6 +311,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: redirect_uri
+    defaultValue: None
+  - name: auth_code_receiver
+    defaultValue: None
   return:
     description: Same as <xref:msal.oauth2cli.oauth2.Client.obtain_token_by_auth_code_flow>
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_device_flow
@@ -317,6 +345,10 @@ methods:
     defaultValue: 'lambda flow: flow.get("expires_at", 0) < time.time()'
     types:
     - <xref:Callable>
+  - name: flow
+    isRequired: true
+  - name: exit_condition
+    defaultValue: 'lambda flow: flow.get("expires_at", 0) < time.time()'
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_refresh_token
   name: obtain_token_by_refresh_token
   summary: This is an overload which will trigger token storage callbacks.
@@ -363,6 +395,16 @@ methods:
 
       into a token storage managed by this library.'
     defaultValue: None
+  - name: token_item
+    isRequired: true
+  - name: scope
+    defaultValue: None
+  - name: rt_getter
+    defaultValue: 'lambda token_item: token_item["refresh_token"]'
+  - name: on_removing_rt
+    defaultValue: None
+  - name: on_updating_rt
+    defaultValue: None
 - uid: msal.oauth2cli.oauth2.Client.obtain_token_by_username_password
   name: obtain_token_by_username_password
   summary: The Resource Owner Password Credentials Grant, used by legacy app.
@@ -406,6 +448,10 @@ methods:
     description: 'REQUIRED if the state parameter was present in the client
 
       authorization request. This function will compare it with response.'
+    defaultValue: None
+  - name: params
+    isRequired: true
+  - name: state
     defaultValue: None
 attributes:
 - uid: msal.oauth2cli.oauth2.Client.DEVICE_FLOW

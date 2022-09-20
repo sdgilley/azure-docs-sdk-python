@@ -37,6 +37,15 @@ constructor:
     defaultValue: None
     types:
     - <xref:list>[<xref:azure.keyvault.certificates.AdministratorContact>]
+  - name: provider
+  - name: attributes
+    defaultValue: None
+  - name: account_id
+    defaultValue: None
+  - name: password
+    defaultValue: None
+  - name: organization_id
+    defaultValue: None
   - name: admin_contacts
     defaultValue: None
 attributes:

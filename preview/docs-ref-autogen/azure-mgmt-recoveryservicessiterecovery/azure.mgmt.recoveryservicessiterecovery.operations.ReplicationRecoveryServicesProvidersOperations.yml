@@ -28,6 +28,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -77,6 +81,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: provider_name
+    isRequired: true
+  - name: add_provider_input
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either RecoveryServicesProvider
       or the result of cls(response)
@@ -128,6 +138,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: provider_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -175,6 +189,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: provider_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -222,6 +240,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: provider_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either RecoveryServicesProvider
       or the result of cls(response)
@@ -251,6 +273,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: fabric_name
+    isRequired: true
+  - name: provider_name
+    isRequired: true
   return:
     description: RecoveryServicesProvider, or the result of cls(response)
     types:
@@ -294,6 +320,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: fabric_name
+    isRequired: true
   return:
     description: An iterator like instance of either RecoveryServicesProviderCollection
       or the result of cls(response)

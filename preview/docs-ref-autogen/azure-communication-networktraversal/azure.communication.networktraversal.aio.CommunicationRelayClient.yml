@@ -20,6 +20,8 @@ constructor:
     isRequired: true
     types:
     - <xref:AsyncTokenCredential>
+  - name: endpoint
+  - name: credential
 examples:
 - "<!--[!code-python[Main](les\\network_traversal_samples_async.py )]-->\n\n<!-- literal_block\
   \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\":\
@@ -74,6 +76,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: conn_str
     isRequired: true
   return:

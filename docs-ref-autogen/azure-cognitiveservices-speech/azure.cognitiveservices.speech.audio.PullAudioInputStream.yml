@@ -17,3 +17,6 @@ constructor:
   - name: stream_format
     description: The *AudioStreamFormat* the stream uses for audio data.
     defaultValue: None
+  - name: pull_stream_callback
+  - name: stream_format
+    defaultValue: None

@@ -13,6 +13,7 @@ constructor:
   - name: connection_string
     description: The connection string to generate SasToken with
     isRequired: true
+  - name: connection_string
 methods:
 - uid: azure.iot.hub.auth.ConnectionStringAuthentication.create_with_parsed_values
   name: create_with_parsed_values
@@ -41,6 +42,8 @@ methods:
     defaultValue: None
     types:
     - <xref:requests.Session>
+  - name: session
+    defaultValue: None
   return:
     types:
     - <xref:requests.Session>

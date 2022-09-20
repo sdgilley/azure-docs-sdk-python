@@ -122,6 +122,13 @@ constructor:
       or 4MB.'
     types:
     - <xref:int>
+  - name: account_url
+  - name: container_name
+  - name: blob_name
+  - name: snapshot
+    defaultValue: None
+  - name: credential
+    defaultValue: None
 examples:
 - "Creating the BlobClient from a URL to a public blob (no auth needed).<!--[!code-python[Main](les\\\
   blob_samples_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
@@ -1647,7 +1654,7 @@ methods:
 
       - except in the case of AzureSasCredential, where the conflicting SAS tokens
       will raise a ValueError.'
-    isRequired: true
+    defaultValue: None
   - name: snapshot
     description: 'The optional blob snapshot on which to operate. This can be the
       snapshot ID string
@@ -1659,6 +1666,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: blob_url
+    isRequired: true
+  - name: credential
+    defaultValue: None
   - name: snapshot
     defaultValue: None
   return:
@@ -1692,7 +1705,7 @@ methods:
       snapshot ID string
 
       or the response returned from <xref:azure.storage.blob.BlobClient.create_snapshot>.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: credential
@@ -1710,6 +1723,16 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: snapshot
     defaultValue: None
   - name: credential
     defaultValue: None

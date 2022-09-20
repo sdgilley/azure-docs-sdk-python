@@ -118,6 +118,16 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: cls
+    isRequired: true
+  - name: provisioning_host
+    isRequired: true
+  - name: registration_id
+    isRequired: true
+  - name: id_scope
+    isRequired: true
+  - name: symmetric_key
+    isRequired: true
   return:
     description: A ProvisioningDeviceClient instance which can register via Symmetric
       Key.
@@ -220,6 +230,16 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: cls
+    isRequired: true
+  - name: provisioning_host
+    isRequired: true
+  - name: registration_id
+    isRequired: true
+  - name: id_scope
+    isRequired: true
+  - name: x509
+    isRequired: true
   return:
     description: A ProvisioningDeviceClient which can register via X509 client certificates.
   exceptions:

@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: quotes
+  - name: source_node
 attributes:
 - uid: azure.confidentialledger.LedgerEnclaves.quotes
   name: quotes

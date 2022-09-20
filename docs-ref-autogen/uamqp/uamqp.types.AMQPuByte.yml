@@ -14,6 +14,7 @@ constructor:
     isRequired: true
     types:
     - <xref:list>
+  - name: value
 variables:
 - description: The Python value of the AMQP uByte.
   name: value

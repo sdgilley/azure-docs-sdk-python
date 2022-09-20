@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -63,6 +67,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: livy_request
+    isRequired: true
+  - name: detailed
+    defaultValue: None
   return:
     description: ExtendedLivySessionResponse or the result of cls(response)
     types:
@@ -100,6 +112,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: session_id
+    isRequired: true
+  - name: livy_request
+    isRequired: true
   return:
     description: LivyStatementResponseBody or the result of cls(response)
     types:
@@ -131,6 +151,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: session_id
+    isRequired: true
   return:
     description: None or the result of cls(response)
     types:
@@ -167,6 +193,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: session_id
+    isRequired: true
+  - name: statement_id
+    isRequired: true
   return:
     description: LivyStatementCancellationResponse or the result of cls(response)
     types:
@@ -206,6 +240,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: session_id
+    isRequired: true
+  - name: detailed
+    defaultValue: None
   return:
     description: ExtendedLivySessionResponse or the result of cls(response)
     types:
@@ -242,6 +284,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: session_id
+    isRequired: true
+  - name: statement_id
+    isRequired: true
   return:
     description: LivyStatementResponseBody or the result of cls(response)
     types:
@@ -289,6 +339,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: from_parameter
+    defaultValue: None
+  - name: size
+    defaultValue: None
+  - name: detailed
+    defaultValue: None
   return:
     description: ExtendedLivyListSessionResponse or the result of cls(response)
     types:
@@ -320,6 +380,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: session_id
+    isRequired: true
   return:
     description: LivyStatementsResponseBody or the result of cls(response)
     types:
@@ -351,6 +417,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: session_id
+    isRequired: true
   return:
     description: None or the result of cls(response)
     types:

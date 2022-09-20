@@ -24,3 +24,7 @@ constructor:
     defaultValue: None
     types:
     - <xref:list>[<xref:azure.maps.search._generated.models.SearchAddressBatchItem>]
+  - name: summary
+    defaultValue: None
+  - name: items
+    defaultValue: None

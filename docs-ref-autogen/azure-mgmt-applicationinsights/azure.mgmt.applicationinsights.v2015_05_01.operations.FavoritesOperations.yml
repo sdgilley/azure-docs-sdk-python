@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for this operation. Constant value: "2015-05-01".'
   name: api_version
@@ -80,6 +84,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: favorite_id
+    isRequired: true
+  - name: favorite_properties
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationInsightsComponentFavorite or ClientRawResponse if
 
@@ -135,6 +151,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: favorite_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -188,6 +214,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: favorite_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationInsightsComponentFavorite or ClientRawResponse if
 
@@ -270,6 +306,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: favorite_type
+    defaultValue: shared
+  - name: source_type
+    defaultValue: None
+  - name: can_fetch_content
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -330,6 +382,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: favorite_id
+    isRequired: true
+  - name: favorite_properties
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationInsightsComponentFavorite or ClientRawResponse if
 

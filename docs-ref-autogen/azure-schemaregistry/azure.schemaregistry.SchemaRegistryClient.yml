@@ -29,6 +29,8 @@ constructor:
       Default value and only accepted value currently is "2021-10".'
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+  - name: credential
 examples:
 - "Create a new instance of the SchemaRegistryClient.<!--[!code-python[Main](les\\\
   sync_samples\\sample_code_schemaregistry.py )]-->\n\n<!-- literal_block {\"ids\"\
@@ -60,6 +62,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: schema_id
+    isRequired: true
   return:
     types:
     - <xref:azure.schemaregistry.Schema>
@@ -105,6 +109,14 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:str>, <xref:azure.schemaregistry.SchemaFormat>]
+  - name: group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: definition
+    isRequired: true
+  - name: format
+    isRequired: true
   return:
     types:
     - <xref:azure.schemaregistry.SchemaProperties>
@@ -162,6 +174,14 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:str>, <xref:azure.schemaregistry.SchemaFormat>]
+  - name: group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: definition
+    isRequired: true
+  - name: format
+    isRequired: true
   return:
     types:
     - <xref:azure.schemaregistry.SchemaProperties>

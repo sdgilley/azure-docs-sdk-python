@@ -41,6 +41,8 @@ constructor:
     isRequired: true
     types:
     - <xref:bytes>
+  - name: method
+  - name: url
 methods:
 - uid: azure.functions.HttpRequest.get_body
   name: get_body

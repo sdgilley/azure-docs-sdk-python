@@ -24,6 +24,9 @@ constructor:
     defaultValue: None
     types:
     - <xref:list>
+  - name: transport
+  - name: policies
+    defaultValue: None
 examples:
 - "Builds the pipeline for synchronous transport.<!--[!code-python[Main](les\\test_example_sync.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -49,6 +52,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.transport.HttpRequest>
+  - name: request
+    isRequired: true
   return:
     description: The PipelineResponse object
     types:

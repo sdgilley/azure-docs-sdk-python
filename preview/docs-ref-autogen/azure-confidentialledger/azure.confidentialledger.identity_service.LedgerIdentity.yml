@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: ledger_id
+  - name: ledger_tls_certificate
 attributes:
 - uid: azure.confidentialledger.identity_service.LedgerIdentity.ledger_id
   name: ledger_id

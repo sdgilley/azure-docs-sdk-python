@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.applicationinsights.operations.QueryOperations.execute
   name: execute
@@ -66,6 +70,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: QueryResults or ClientRawResponse if raw=true
     types:

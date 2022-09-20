@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.language.luis.authoring.operations.PatternOperations.add_pattern
   name: add_pattern
@@ -69,6 +73,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: pattern
+    defaultValue: None
+  - name: intent
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PatternRuleInfo or ClientRawResponse if raw=true
     types:
@@ -114,6 +130,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: patterns
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -161,6 +187,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: pattern_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -206,6 +242,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: pattern_ids
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -265,6 +311,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: intent_id
+    isRequired: true
+  - name: skip
+    defaultValue: '0'
+  - name: take
+    defaultValue: '100'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -317,6 +377,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: skip
+    defaultValue: '0'
+  - name: take
+    defaultValue: '100'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -367,6 +439,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: pattern_id
+    isRequired: true
+  - name: pattern
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PatternRuleInfo or ClientRawResponse if raw=true
     types:
@@ -412,6 +496,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: patterns
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:

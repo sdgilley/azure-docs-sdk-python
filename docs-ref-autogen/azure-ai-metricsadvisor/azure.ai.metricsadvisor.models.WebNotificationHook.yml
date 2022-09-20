@@ -46,6 +46,8 @@ constructor:
     description: Hook external link.
     types:
     - <xref:str>
+  - name: name
+  - name: endpoint
 variables:
 - description: Hook administrators.
   name: admins

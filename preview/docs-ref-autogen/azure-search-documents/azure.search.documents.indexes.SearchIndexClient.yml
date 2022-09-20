@@ -35,6 +35,8 @@ constructor:
       will be assumed.'
     types:
     - <xref:str>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.search.documents.indexes.SearchIndexClient.analyze_text
   name: analyze_text
@@ -437,6 +439,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: index_name
+    isRequired: true
   return:
     types:
     - <xref:azure.search.documents.SearchClient>

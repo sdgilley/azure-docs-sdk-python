@@ -22,3 +22,6 @@ constructor:
     isRequired: true
     types:
     - <xref:list>
+  - name: message
+  - name: response
+  - name: parts

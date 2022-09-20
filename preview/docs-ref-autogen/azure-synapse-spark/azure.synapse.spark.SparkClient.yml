@@ -35,6 +35,11 @@ constructor:
       header is present.
     types:
     - <xref:int>
+  - name: credential
+  - name: endpoint
+  - name: spark_pool_name
+  - name: livy_api_version
+    defaultValue: 2019-11-01-preview
 variables:
 - description: SparkBatchOperations operations
   name: spark_batch

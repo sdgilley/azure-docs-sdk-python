@@ -23,6 +23,9 @@ constructor:
   - name: audio_config
     description: The config for the audio input.
     defaultValue: None
+  - name: dialog_service_config
+  - name: audio_config
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.Connection.DialogServiceConnector.connect
   name: connect
@@ -133,6 +136,8 @@ methods:
   - name: activity
     description: the serialized payload of an activity to send.
     isRequired: true
+  - name: activity
+    isRequired: true
   return:
     description: 'an interaction identifier acquired when the activity is acknowledged
       by the service. This may occur
@@ -155,6 +160,8 @@ methods:
   parameters:
   - name: activity
     description: the serialized payload of an activity to send.
+    isRequired: true
+  - name: activity
     isRequired: true
   return:
     description: A future containing the result value of the asynchronous activity
@@ -195,6 +202,8 @@ methods:
   - name: model
     description: the keyword recognition model that specifies the keyword to be recognized.
     isRequired: true
+  - name: model
+    isRequired: true
 - uid: azure.cognitiveservices.speech.Connection.DialogServiceConnector.start_keyword_recognition_async
   name: start_keyword_recognition_async
   summary: 'Asynchronously configures the dialog service connector with the given
@@ -212,6 +221,8 @@ methods:
   parameters:
   - name: model
     description: the keyword recognition model that specifies the keyword to be recognized.
+    isRequired: true
+  - name: model
     isRequired: true
   return:
     description: A future that is fulfilled once recognition has been initialized.

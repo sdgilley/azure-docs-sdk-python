@@ -177,6 +177,32 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: start_range
+    isRequired: true
+  - name: end_range
+    isRequired: true
+  - name: lease_id
+    defaultValue: None
+  - name: if_sequence_number_lte
+    defaultValue: None
+  - name: if_sequence_number_lt
+    defaultValue: None
+  - name: if_sequence_number_eq
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Page Blob
     types:
@@ -425,6 +451,38 @@ methods:
     defaultValue: None
     types:
     - <xref:PageBlobTier>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: copy_source
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: source_if_modified_since
+    defaultValue: None
+  - name: source_if_unmodified_since
+    defaultValue: None
+  - name: source_if_match
+    defaultValue: None
+  - name: source_if_none_match
+    defaultValue: None
+  - name: destination_if_modified_since
+    defaultValue: None
+  - name: destination_if_unmodified_since
+    defaultValue: None
+  - name: destination_if_match
+    defaultValue: None
+  - name: destination_if_none_match
+    defaultValue: None
+  - name: destination_lease_id
+    defaultValue: None
+  - name: source_lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
+  - name: premium_page_blob_tier
+    defaultValue: None
   return:
     description: Copy operation properties such as status, source, and ID.
     types:
@@ -549,6 +607,32 @@ methods:
     defaultValue: None
     types:
     - <xref:azure.storage.blob.models.PremiumPageBlobTier>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: content_length
+    isRequired: true
+  - name: content_settings
+    defaultValue: None
+  - name: sequence_number
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
+  - name: premium_page_blob_tier
+    defaultValue: None
   return:
     description: ETag and last modified properties for the new Page Blob
     types:
@@ -701,6 +785,40 @@ methods:
 
       premium storage accounts.'
     defaultValue: None
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: blob
+    isRequired: true
+  - name: index
+    defaultValue: '0'
+  - name: count
+    defaultValue: None
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
+  - name: premium_page_blob_tier
+    defaultValue: None
   return:
     description: ETag and last modified properties for the Page Blob
     types:
@@ -840,6 +958,36 @@ methods:
       blob and number of allowed IOPS. This is only applicable to page blobs on
 
       premium storage accounts.'
+    defaultValue: None
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: file_path
+    isRequired: true
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
+  - name: premium_page_blob_tier
     defaultValue: None
   return:
     description: ETag and last modified properties for the Page Blob
@@ -991,6 +1139,38 @@ methods:
 
       premium storage accounts.'
     defaultValue: None
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: stream
+    isRequired: true
+  - name: count
+    isRequired: true
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
+  - name: premium_page_blob_tier
+    defaultValue: None
   return:
     description: ETag and last modified properties for the Page Blob
     types:
@@ -1110,6 +1290,28 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
+  - name: start_range
+    defaultValue: None
+  - name: end_range
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: A list of valid Page Ranges for the Page Blob.
     types:
@@ -1241,6 +1443,30 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: previous_snapshot
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
+  - name: start_range
+    defaultValue: None
+  - name: end_range
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: A list of different Page Ranges for the Page Blob.
     types:
@@ -1389,6 +1615,28 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: copy_source
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: destination_if_modified_since
+    defaultValue: None
+  - name: destination_if_unmodified_since
+    defaultValue: None
+  - name: destination_if_match
+    defaultValue: None
+  - name: destination_if_none_match
+    defaultValue: None
+  - name: destination_lease_id
+    defaultValue: None
+  - name: source_lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: Copy operation properties such as status, source, and ID.
     types:
@@ -1476,6 +1724,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: content_length
+    isRequired: true
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Page Blob
     types:
@@ -1516,6 +1782,14 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: premium_page_blob_tier
+    isRequired: true
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.pageblobservice.PageBlobService.set_sequence_number
   name: set_sequence_number
   summary: Sets the blob sequence number.
@@ -1608,6 +1882,26 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: sequence_number_action
+    isRequired: true
+  - name: sequence_number
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Page Blob
     types:
@@ -1751,6 +2045,36 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: page
+    isRequired: true
+  - name: start_range
+    isRequired: true
+  - name: end_range
+    isRequired: true
+  - name: validate_content
+    defaultValue: 'False'
+  - name: lease_id
+    defaultValue: None
+  - name: if_sequence_number_lte
+    defaultValue: None
+  - name: if_sequence_number_lt
+    defaultValue: None
+  - name: if_sequence_number_eq
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Page Blob
     types:

@@ -20,6 +20,8 @@ functions:
     isRequired: true
     types:
     - <xref:datetime>
+  - name: state
+  - name: fire_at
   return:
     description: A Durable Timer Task that schedules the timer to wake up the activity
     types:

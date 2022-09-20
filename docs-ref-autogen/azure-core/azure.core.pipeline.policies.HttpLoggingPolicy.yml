@@ -39,6 +39,10 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineResponse>
+  - name: request
+    isRequired: true
+  - name: response
+    isRequired: true
 attributes:
 - uid: azure.core.pipeline.policies.HttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST
   name: DEFAULT_HEADERS_WHITELIST

@@ -29,6 +29,9 @@ constructor:
     description: Override the Mixed Reality STS service endpoint.
     types:
     - <xref:str>
+  - name: account_id
+  - name: account_domain
+  - name: credential
 methods:
 - uid: azure.mixedreality.authentication.aio.MixedRealityStsClient.close
   name: close

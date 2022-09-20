@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -82,6 +86,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: add_disks_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -141,6 +153,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: apply_recovery_point_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -199,6 +219,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -260,6 +288,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: disable_protection_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -312,6 +348,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -364,6 +406,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -422,6 +470,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: failover_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -480,6 +536,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -538,6 +600,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: remove_disks_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -593,6 +663,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -652,6 +728,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: reprotect_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -710,6 +794,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: resolve_health_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -768,6 +860,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: testfailover_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -826,6 +926,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: cleanup_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -884,6 +992,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: failover_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -943,6 +1059,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: update_protection_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -1001,6 +1125,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
+  - name: appliance_update_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -1066,6 +1198,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replication_protected_item_name
+    isRequired: true
+  - name: update_mobility_service_request
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ReplicationProtectedItem
       or the result of cls(response)
@@ -1101,6 +1241,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: replicated_protected_item_name
+    isRequired: true
   return:
     description: ReplicationProtectedItem, or the result of cls(response)
     types:
@@ -1133,6 +1279,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: skip_token
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either ReplicationProtectedItemCollection
       or the result of cls(response)
@@ -1163,6 +1313,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
   return:
     description: An iterator like instance of either ReplicationProtectedItemCollection
       or the result of cls(response)

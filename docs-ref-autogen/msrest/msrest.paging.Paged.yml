@@ -25,14 +25,18 @@ constructor:
     description: 'A dictionary of class dependencies for
 
       deserialization.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: raw_headers
     description: A dict of raw headers to add if "raw" is called
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:dict>
+  - name: command
+  - name: classes
+  - name: raw_headers
+    defaultValue: None
 methods:
 - uid: msrest.paging.Paged.advance_page
   name: advance_page
@@ -62,6 +66,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: url
+    isRequired: true
 - uid: msrest.paging.Paged.next
   name: next
   summary: Iterate through responses.

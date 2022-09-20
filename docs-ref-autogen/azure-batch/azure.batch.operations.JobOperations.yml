@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2022-01-01.15.0".'
   name: api_version
@@ -82,6 +86,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job
+    isRequired: true
+  - name: job_add_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -141,6 +153,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: job_delete_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -208,6 +228,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: disable_tasks
+    isRequired: true
+  - name: job_disable_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -263,6 +293,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: job_enable_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -302,6 +340,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: job_get_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CloudJob or ClientRawResponse if raw=true
     types:
@@ -352,6 +398,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_get_all_lifetime_statistics_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobStatistics or ClientRawResponse if raw=true
     types:
@@ -405,6 +457,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: job_get_task_counts_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TaskCountsResult or ClientRawResponse if raw=true
     types:
@@ -439,6 +499,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_list_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of CloudJob
     types:
@@ -482,6 +548,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_list_from_job_schedule_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of CloudJob
     types:
@@ -536,6 +610,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: job_list_preparation_and_release_task_status_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'An iterator like instance of
 
@@ -589,6 +671,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: job_patch_parameter
+    isRequired: true
+  - name: job_patch_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -648,6 +740,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: terminate_reason
+    defaultValue: None
+  - name: job_terminate_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -702,6 +804,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: job_update_parameter
+    isRequired: true
+  - name: job_update_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

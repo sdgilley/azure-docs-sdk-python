@@ -70,6 +70,10 @@ methods:
       Retry-After header is present.'
     types:
     - <xref:int>
+  - name: glossary_name
+    isRequired: true
+  - name: files
+    isRequired: true
   return:
     description: An instance of LROPoller that returns JSON object
     types:

@@ -184,6 +184,19 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: target
+  - name: auth
+    defaultValue: None
+  - name: client_name
+    defaultValue: None
+  - name: debug
+    defaultValue: 'False'
+  - name: msg_timeout
+    defaultValue: '0'
+  - name: error_policy
+    defaultValue: None
+  - name: keep_alive_interval
+    defaultValue: None
 methods:
 - uid: uamqp.client.SendClient.messages_pending
   name: messages_pending
@@ -226,6 +239,10 @@ methods:
     isRequired: true
     types:
     - <xref:uamqp.authentication.common.AMQPAuth>
+  - name: redirect
+    isRequired: true
+  - name: auth
+    isRequired: true
 - uid: uamqp.client.SendClient.send_all_messages
   name: send_all_messages
   summary: 'Send all pending messages in the queue. This will return a list
@@ -244,6 +261,8 @@ methods:
     defaultValue: 'True'
     types:
     - <xref:bool>
+  - name: close_on_done
+    defaultValue: 'True'
   return:
     types:
     - <xref:list>[<xref:uamqp.constants.MessageState>]
@@ -262,6 +281,10 @@ methods:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: messages
+    isRequired: true
+  - name: close_on_done
+    defaultValue: 'False'
   exceptions:
   - type: uamqp.errors.MessageException if message fails to send after retry policyis
       exhausted.

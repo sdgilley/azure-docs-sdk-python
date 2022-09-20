@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -59,6 +63,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: solution_name
+    isRequired: true
+  - name: iot_alert_id
+    isRequired: true
   return:
     description: IotAlert, or the result of cls(response)
     types:
@@ -89,6 +99,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: scope
+    isRequired: true
+  - name: iot_alert_id
+    isRequired: true
   return:
     description: IotAlertModel, or the result of cls(response)
     types:
@@ -150,6 +164,22 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: solution_name
+    isRequired: true
+  - name: min_start_time_utc
+    defaultValue: None
+  - name: max_start_time_utc
+    defaultValue: None
+  - name: alert_type
+    defaultValue: None
+  - name: compromised_entity
+    defaultValue: None
+  - name: limit
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either IotAlertList or the result of
       cls(response)
@@ -216,6 +246,22 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: scope
+    isRequired: true
+  - name: min_start_time_utc
+    defaultValue: None
+  - name: max_start_time_utc
+    defaultValue: None
+  - name: alert_type
+    defaultValue: None
+  - name: device_management_type
+    defaultValue: None
+  - name: compromised_entity
+    defaultValue: None
+  - name: limit
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either IotAlertListModel or the result
       of cls(response)

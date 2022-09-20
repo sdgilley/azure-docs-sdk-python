@@ -41,6 +41,8 @@ methods:
     defaultValue: None
     types:
     - <xref:Exception>
+  - name: exception
+    defaultValue: None
 - uid: azure.eventhub.async_ops.receiver_async.AsyncReceiver.has_started
   name: has_started
   summary: 'Whether the handler has completed all start up processes such as
@@ -84,6 +86,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: max_batch_size
+    defaultValue: None
   - name: timeout
     defaultValue: None
   return:

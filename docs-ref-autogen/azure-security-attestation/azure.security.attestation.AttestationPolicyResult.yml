@@ -44,3 +44,6 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: policy_resolution
+  - name: policy_signer
+  - name: policy_token_hash

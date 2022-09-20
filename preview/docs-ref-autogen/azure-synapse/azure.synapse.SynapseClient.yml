@@ -24,6 +24,11 @@ constructor:
     defaultValue: 2019-11-01-preview
     types:
     - <xref:str>
+  - name: credential
+  - name: synapse_dns_suffix
+    defaultValue: dev.azuresynapse.net
+  - name: livy_api_version
+    defaultValue: 2019-11-01-preview
 variables:
 - description: MonitoringOperations operations
   name: monitoring

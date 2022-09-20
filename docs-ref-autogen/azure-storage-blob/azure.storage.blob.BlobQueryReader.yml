@@ -73,6 +73,8 @@ methods:
 
       or any writable stream.'
     isRequired: true
+  - name: stream
+    isRequired: true
   return:
     description: None
 - uid: azure.storage.blob.BlobQueryReader.records

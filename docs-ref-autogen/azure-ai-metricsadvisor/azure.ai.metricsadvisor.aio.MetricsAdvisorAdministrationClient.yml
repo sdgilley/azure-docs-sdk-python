@@ -28,6 +28,8 @@ constructor:
     types:
     - <xref:azure.ai.metricsadvisor.MetricsAdvisorKeyCredential>
     - <xref:azure.core.credentials.TokenCredential>
+  - name: endpoint
+  - name: credential
 examples:
 - "Authenticate MetricsAdvisorAdministrationClient with a MetricsAdvisorKeyCredential<!--[!code-python[Main](les\\\
   async_samples\\sample_authentication_async.py )]-->\n\n<!-- literal_block {\"ids\"\

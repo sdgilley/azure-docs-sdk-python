@@ -142,6 +142,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: copy_id
+    isRequired: true
+  - name: lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.acquire_blob_lease
   name: acquire_blob_lease
   summary: 'Requests a new lease. If the blob does not have an active lease, the Blob
@@ -233,6 +243,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: lease_duration
+    defaultValue: '-1'
+  - name: proposed_lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: str
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.acquire_container_lease
@@ -299,6 +327,18 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: lease_duration
+    defaultValue: '-1'
+  - name: proposed_lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: str
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.break_blob_lease
@@ -408,6 +448,22 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: lease_break_period
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: int
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.break_container_lease
@@ -485,6 +541,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: lease_break_period
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: int
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.change_blob_lease
@@ -570,6 +636,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: lease_id
+    isRequired: true
+  - name: proposed_lease_id
+    isRequired: true
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.change_container_lease
   name: change_container_lease
   summary: 'Change the lease ID of an active lease. A change must include the current
@@ -627,6 +711,18 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: lease_id
+    isRequired: true
+  - name: proposed_lease_id
+    isRequired: true
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.copy_blob
   name: copy_blob
   summary: 'Copies a blob asynchronously. This operation returns a copy operation
@@ -868,6 +964,36 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: copy_source
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: source_if_modified_since
+    defaultValue: None
+  - name: source_if_unmodified_since
+    defaultValue: None
+  - name: source_if_match
+    defaultValue: None
+  - name: source_if_none_match
+    defaultValue: None
+  - name: destination_if_modified_since
+    defaultValue: None
+  - name: destination_if_unmodified_since
+    defaultValue: None
+  - name: destination_if_match
+    defaultValue: None
+  - name: destination_if_none_match
+    defaultValue: None
+  - name: destination_lease_id
+    defaultValue: None
+  - name: source_lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: Copy operation properties such as status, source, and ID.
     types:
@@ -909,6 +1035,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: public_access
+    defaultValue: None
+  - name: fail_on_exist
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: None
   return:
     description: True if container is created, False if container already exists.
     types:
@@ -1022,6 +1158,26 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: delete_snapshots
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.delete_container
   name: delete_container
   summary: 'Marks the specified container for deletion. The container and any blobs
@@ -1082,6 +1238,18 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: fail_not_exist
+    defaultValue: 'False'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: True if container is deleted, False container doesn't exist.
     types:
@@ -1115,6 +1283,14 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    defaultValue: None
+  - name: snapshot
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: A boolean indicating whether the resource exists.
     types:
@@ -1199,6 +1375,18 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: resource_types
+    isRequired: true
+  - name: permission
+    isRequired: true
+  - name: expiry
+    isRequired: true
+  - name: start
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -1333,6 +1521,32 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
+  - name: cache_control
+    defaultValue: None
+  - name: content_disposition
+    defaultValue: None
+  - name: content_encoding
+    defaultValue: None
+  - name: content_language
+    defaultValue: None
+  - name: content_type
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -1464,6 +1678,30 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: container_name
+    isRequired: true
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
+  - name: cache_control
+    defaultValue: None
+  - name: content_disposition
+    defaultValue: None
+  - name: content_encoding
+    defaultValue: None
+  - name: content_language
+    defaultValue: None
+  - name: content_type
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -1496,6 +1734,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    defaultValue: None
+  - name: blob_name
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: The <xref:azure.storage.blob.models.AccountInformation>.
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.get_blob_metadata
@@ -1579,6 +1823,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: A dictionary representing the blob metadata name, value pairs.
     types:
@@ -1670,6 +1932,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: a blob object including properties and metadata.
     types:
@@ -1686,6 +1966,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: timeout
+    defaultValue: None
   return:
     description: 'The blob <xref:azure.storage.common.models.ServiceProperties> with
       an attached
@@ -1730,6 +2012,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: timeout
+    defaultValue: None
   return:
     description: The blob service stats.
     types:
@@ -1905,6 +2189,34 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
+  - name: start_range
+    defaultValue: None
+  - name: end_range
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A Blob with properties and metadata. If max_connections is greater
 
@@ -2099,6 +2411,38 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: file_path
+    isRequired: true
+  - name: open_mode
+    defaultValue: wb
+  - name: snapshot
+    defaultValue: None
+  - name: start_range
+    defaultValue: None
+  - name: end_range
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A Blob with properties and metadata. If max_connections is greater
 
@@ -2284,6 +2628,36 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: stream
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
+  - name: start_range
+    defaultValue: None
+  - name: end_range
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A Blob with properties and metadata. If max_connections is greater
 
@@ -2469,6 +2843,36 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: encoding
+    defaultValue: utf-8
+  - name: snapshot
+    defaultValue: None
+  - name: start_range
+    defaultValue: None
+  - name: end_range
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A Blob with properties and metadata. If max_connections is greater
 
@@ -2501,6 +2905,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A dictionary of access policies associated with the container. dict
       of str to
@@ -2530,6 +2940,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: A dictionary representing the container metadata name, value pairs.
     types:
@@ -2558,6 +2974,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: properties for the specified container within a container object.
     types:
@@ -2643,6 +3065,20 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: prefix
+    defaultValue: None
+  - name: num_results
+    defaultValue: None
+  - name: include
+    defaultValue: None
+  - name: delimiter
+    defaultValue: None
+  - name: marker
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.list_blobs
   name: list_blobs
   summary: 'Returns a generator to list the blobs under the specified container.
@@ -2724,6 +3160,20 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: prefix
+    defaultValue: None
+  - name: num_results
+    defaultValue: None
+  - name: include
+    defaultValue: None
+  - name: delimiter
+    defaultValue: None
+  - name: marker
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.list_containers
   name: list_containers
   summary: 'Returns a generator to list the containers under the specified account.
@@ -2783,6 +3233,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: prefix
+    defaultValue: None
+  - name: num_results
+    defaultValue: None
+  - name: include_metadata
+    defaultValue: 'False'
+  - name: marker
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.make_blob_url
   name: make_blob_url
   summary: Creates the url to access a blob.
@@ -2821,6 +3281,16 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: protocol
+    defaultValue: None
+  - name: sas_token
+    defaultValue: None
+  - name: snapshot
+    defaultValue: None
   return:
     description: blob access URL.
     types:
@@ -2849,6 +3319,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: container_name
+    isRequired: true
+  - name: protocol
+    defaultValue: None
+  - name: sas_token
+    defaultValue: None
   return:
     description: container access URL.
     types:
@@ -2932,6 +3408,22 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: lease_id
+    isRequired: true
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.release_container_lease
   name: release_container_lease
   summary: 'Release the lease. The lease may be released if the lease_id specified
@@ -2984,6 +3476,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: lease_id
+    isRequired: true
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.renew_blob_lease
   name: renew_blob_lease
   summary: 'Renews the lease. The lease can be renewed if the lease ID specified on
@@ -3065,6 +3567,22 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: lease_id
+    isRequired: true
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: str
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.renew_container_lease
@@ -3122,6 +3640,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: lease_id
+    isRequired: true
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: str
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.set_blob_metadata
@@ -3209,6 +3737,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Blob
     types:
@@ -3294,6 +3840,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: content_settings
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Blob
     types:
@@ -3363,6 +3927,22 @@ methods:
     defaultValue: None
     types:
     - <xref:azure.storage.common.models.StaticWebsite>
+  - name: logging
+    defaultValue: None
+  - name: hour_metrics
+    defaultValue: None
+  - name: minute_metrics
+    defaultValue: None
+  - name: cors
+    defaultValue: None
+  - name: target_version
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
+  - name: delete_retention_policy
+    defaultValue: None
+  - name: static_website
+    defaultValue: None
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.set_container_acl
   name: set_container_acl
   summary: 'Sets the permissions for the specified container or stored access
@@ -3431,6 +4011,20 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: signed_identifiers
+    defaultValue: None
+  - name: public_access
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Container
     types:
@@ -3485,6 +4079,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Container
     types:
@@ -3575,6 +4179,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: snapshot properties
     types:
@@ -3603,6 +4225,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: timeout
+    defaultValue: None
 attributes:
 - uid: azure.storage.blob.baseblobservice.BaseBlobService.MAX_CHUNK_GET_SIZE
   name: MAX_CHUNK_GET_SIZE

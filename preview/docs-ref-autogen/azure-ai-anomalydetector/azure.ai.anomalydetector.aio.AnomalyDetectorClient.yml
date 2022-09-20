@@ -45,6 +45,8 @@ constructor:
       behavior.'
     types:
     - <xref:str>
+  - name: credential
+  - name: endpoint
 methods:
 - uid: azure.ai.anomalydetector.aio.AnomalyDetectorClient.close
   name: close

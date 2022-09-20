@@ -26,6 +26,12 @@ constructor:
     defaultValue: None
     types:
     - <xref:bytearray>
+  - name: policy
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: cer
+    defaultValue: None
 attributes:
 - uid: azure.keyvault.certificates.KeyVaultCertificate.cer
   name: cer

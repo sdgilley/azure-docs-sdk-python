@@ -96,6 +96,12 @@ methods:
     defaultValue: None
     types:
     - <xref:list>[<xref:str>]
+  - name: auth_code_flow
+    isRequired: true
+  - name: auth_response
+    isRequired: true
+  - name: scopes
+    defaultValue: None
   return:
     description: "* A dict containing \"access_token\" and/or \"id_token\", among\
       \ others, depends on what scope was used. (See [https://tools.ietf.org/html/rfc6749#section-5.1](https://tools.ietf.org/html/rfc6749#section-5.1))\
@@ -173,6 +179,14 @@ methods:
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
     defaultValue: None
+  - name: code
+    isRequired: true
+  - name: scopes
+    isRequired: true
+  - name: redirect_uri
+    defaultValue: None
+  - name: nonce
+    defaultValue: None
   - name: claims_challenge
     defaultValue: None
   return:
@@ -214,6 +228,10 @@ methods:
     isRequired: true
     types:
     - <xref:list>
+  - name: refresh_token
+    isRequired: true
+  - name: scopes
+    isRequired: true
   return:
     description: "* A dict contains \"error\" and some other keys, when error happened.\
       \ \n\n* A dict contains no \"error\" key means migration was successful."
@@ -255,6 +273,14 @@ methods:
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
     defaultValue: None
+  - name: username
+    isRequired: true
+  - name: password
+    isRequired: true
+  - name: scopes
+    isRequired: true
+  - name: claims_challenge
+    defaultValue: None
   return:
     description: "A dict representing the json response from AAD:\n\n* A successful\
       \ response would contain \"access_token\" key, \n\n* an error response would\
@@ -295,6 +321,8 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
+    defaultValue: None
+  - name: scopes
     isRequired: true
   - name: account
     isRequired: true
@@ -347,7 +375,7 @@ methods:
     description: 'If True, it will skip Access Token look-up,
 
       and try to find a Refresh Token to obtain a new Access Token.'
-    defaultValue: None
+    defaultValue: 'False'
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
       by the resource provider
@@ -359,6 +387,14 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
+    defaultValue: None
+  - name: scopes
+    isRequired: true
+  - name: account
+    isRequired: true
+  - name: authority
+    defaultValue: None
+  - name: force_refresh
     defaultValue: 'False'
   - name: claims_challenge
     defaultValue: None
@@ -379,6 +415,8 @@ methods:
   parameters:
   - name: username
     description: Filter accounts with this username only. Case insensitive.
+    defaultValue: None
+  - name: username
     defaultValue: None
   return:
     description: 'A list of account objects.
@@ -472,6 +510,24 @@ methods:
 
       It is a string of a JSON object which contains lists of claims being requested
       from these locations.'
+    defaultValue: None
+  - name: scopes
+    isRequired: true
+  - name: login_hint
+    defaultValue: None
+  - name: state
+    defaultValue: None
+  - name: redirect_uri
+    defaultValue: None
+  - name: response_type
+    defaultValue: code
+  - name: prompt
+    defaultValue: None
+  - name: nonce
+    defaultValue: None
+  - name: domain_hint
+    defaultValue: None
+  - name: claims_challenge
     defaultValue: None
   return:
     description: The authorization url as a string.
@@ -589,6 +645,22 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: scopes
+    isRequired: true
+  - name: redirect_uri
+    defaultValue: None
+  - name: state
+    defaultValue: None
+  - name: prompt
+    defaultValue: None
+  - name: login_hint
+    defaultValue: None
+  - name: domain_hint
+    defaultValue: None
+  - name: claims_challenge
+    defaultValue: None
+  - name: max_age
+    defaultValue: None
   - name: response_mode
     defaultValue: None
   return:

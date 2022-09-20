@@ -27,6 +27,9 @@ constructor:
       default value may result in unsupported behavior.'
     types:
     - <xref:str>
+  - name: credential
+  - name: base_url
+    defaultValue: https://management.azure.com
 variables:
 - description: MetricsOperations operations
   name: metrics

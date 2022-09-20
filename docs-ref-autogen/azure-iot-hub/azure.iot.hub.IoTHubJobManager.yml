@@ -28,6 +28,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: job_id
+    isRequired: true
   return:
     description: Object.
   exceptions:
@@ -42,6 +44,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: job_id
+    isRequired: true
   return:
     description: JobResponse object containing the cancelled job.
     types:
@@ -58,6 +62,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.hub.models.JobProperties>
+  - name: job_properties
+    isRequired: true
   return:
     description: JobProperties object containing the created job.
     types:
@@ -80,6 +86,10 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.hub.models.JobRequest>
+  - name: job_id
+    isRequired: true
+  - name: job_request
+    isRequired: true
   return:
     description: JobResponse object containing the created job.
     types:
@@ -105,6 +115,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: connection_string
     isRequired: true
   return:
@@ -132,6 +144,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: url
+    isRequired: true
   - name: token_credential
     isRequired: true
   return:
@@ -147,6 +163,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: job_id
+    isRequired: true
   return:
     description: The JobProperties object containing the requested job.
     types:
@@ -173,6 +191,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: job_id
+    isRequired: true
   return:
     description: The JobResponse object containing the requested details.
     types:
@@ -195,6 +215,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: job_type
+    isRequired: true
+  - name: job_status
+    isRequired: true
   return:
     description: QueryResult object containing the jobs.
     types:

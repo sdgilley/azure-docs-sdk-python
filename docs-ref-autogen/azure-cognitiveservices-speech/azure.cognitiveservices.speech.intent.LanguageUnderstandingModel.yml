@@ -25,4 +25,12 @@ constructor:
     defaultValue: None
   - name: auth_token
     description: The authorization token.
+    isRequired: true
+  - name: subscription
+    defaultValue: None
+  - name: region
+    defaultValue: None
+  - name: app_id
+    defaultValue: None
+  - name: endpoint
     defaultValue: None

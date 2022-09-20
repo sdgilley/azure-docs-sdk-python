@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: credentials
+  - name: batch_url
 variables:
 - description: Configuration for client.
   name: config

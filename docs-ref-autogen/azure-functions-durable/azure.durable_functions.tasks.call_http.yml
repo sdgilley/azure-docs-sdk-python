@@ -44,6 +44,15 @@ functions:
     defaultValue: None
     types:
     - <xref:azure.durable_functions.models.TokenSource.TokenSource>
+  - name: state
+  - name: method
+  - name: uri
+  - name: content
+    defaultValue: None
+  - name: headers
+    defaultValue: None
+  - name: token_source
+    defaultValue: None
   return:
     description: The durable HTTP request to schedule.
     types:

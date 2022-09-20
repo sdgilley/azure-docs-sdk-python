@@ -26,6 +26,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: path
+    isRequired: true
 attributes:
 - uid: azure.ai.ml.entities.Workspace.discovery_url
   name: discovery_url

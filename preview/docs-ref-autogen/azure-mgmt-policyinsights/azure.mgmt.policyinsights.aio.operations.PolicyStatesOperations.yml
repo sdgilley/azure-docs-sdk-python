@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -69,6 +73,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: subscription_id
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -108,6 +116,8 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: subscription_id
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -148,6 +158,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: policy_states_resource
+    isRequired: true
+  - name: management_group_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either PolicyStatesQueryResults or the
       result of cls(response)
@@ -193,6 +209,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: policy_states_resource
+    isRequired: true
+  - name: subscription_id
+    isRequired: true
+  - name: policy_definition_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either PolicyStatesQueryResults or the
       result of cls(response)
@@ -238,6 +262,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: policy_states_resource
+    isRequired: true
+  - name: subscription_id
+    isRequired: true
+  - name: policy_set_definition_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either PolicyStatesQueryResults or the
       result of cls(response)
@@ -277,6 +309,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: policy_states_resource
+    isRequired: true
+  - name: resource_id
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either PolicyStatesQueryResults or the
       result of cls(response)
@@ -322,6 +360,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: policy_states_resource
+    isRequired: true
+  - name: subscription_id
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either PolicyStatesQueryResults or the
       result of cls(response)
@@ -373,6 +419,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: policy_states_resource
+    isRequired: true
+  - name: subscription_id
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: policy_assignment_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either PolicyStatesQueryResults or the
       result of cls(response)
@@ -413,6 +469,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: policy_states_resource
+    isRequired: true
+  - name: subscription_id
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either PolicyStatesQueryResults or the
       result of cls(response)
@@ -458,6 +520,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: policy_states_resource
+    isRequired: true
+  - name: subscription_id
+    isRequired: true
+  - name: policy_assignment_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either PolicyStatesQueryResults or the
       result of cls(response)
@@ -486,6 +556,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: management_group_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: SummarizeResults, or the result of cls(response)
     types:
@@ -518,6 +592,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: subscription_id
+    isRequired: true
+  - name: policy_definition_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: SummarizeResults, or the result of cls(response)
     types:
@@ -550,6 +630,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: subscription_id
+    isRequired: true
+  - name: policy_set_definition_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: SummarizeResults, or the result of cls(response)
     types:
@@ -576,6 +662,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_id
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: SummarizeResults, or the result of cls(response)
     types:
@@ -608,6 +698,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: subscription_id
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: SummarizeResults, or the result of cls(response)
     types:
@@ -645,6 +741,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: subscription_id
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: policy_assignment_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: SummarizeResults, or the result of cls(response)
     types:
@@ -672,6 +776,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: subscription_id
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: SummarizeResults, or the result of cls(response)
     types:
@@ -704,6 +812,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: subscription_id
+    isRequired: true
+  - name: policy_assignment_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: SummarizeResults, or the result of cls(response)
     types:

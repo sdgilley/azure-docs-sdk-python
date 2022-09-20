@@ -23,3 +23,5 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: credentials
+  - name: batch_url

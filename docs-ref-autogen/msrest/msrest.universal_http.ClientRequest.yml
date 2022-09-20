@@ -43,6 +43,14 @@ constructor:
     types:
     - <xref:bytes>
     - <xref:str.>
+  - name: method
+  - name: url
+  - name: headers
+    defaultValue: None
+  - name: files
+    defaultValue: None
+  - name: data
+    defaultValue: None
 methods:
 - uid: msrest.universal_http.ClientRequest.add_content
   name: add_content
@@ -54,6 +62,8 @@ methods:
     description: 'Request body data, can be a json serializable
 
       object (e.g. dictionary) or a generator (e.g. file data).'
+    isRequired: true
+  - name: data
     isRequired: true
 - uid: msrest.universal_http.ClientRequest.add_formdata
   name: add_formdata
@@ -67,14 +77,16 @@ methods:
   parameters:
   - name: headers
     description: Any headers to add to the request.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
   - name: content
     description: Dictionary of the fields of the formdata.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:dict>
+  - name: content
+    defaultValue: None
 - uid: msrest.universal_http.ClientRequest.format_parameters
   name: format_parameters
   summary: 'Format parameters into a valid query string.
@@ -89,6 +101,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: params
+    isRequired: true
 attributes:
 - uid: msrest.universal_http.ClientRequest.body
   name: body

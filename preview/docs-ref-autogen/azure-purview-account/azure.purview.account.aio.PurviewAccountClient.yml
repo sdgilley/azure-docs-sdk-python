@@ -22,6 +22,8 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.credentials_async.AsyncTokenCredential>
+  - name: endpoint
+  - name: credential
 variables:
 - description: AccountsOperations operations
   name: accounts
@@ -67,6 +69,8 @@ methods:
     description: Whether the response payload will be streamed. Defaults to False.
     types:
     - <xref:bool>
+  - name: request
+    isRequired: true
   return:
     description: The response of your network call. Does not do error handling on
       your response.

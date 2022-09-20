@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.confidentialledger.TransactionState>
+  - name: transaction_id
+  - name: state
 attributes:
 - uid: azure.confidentialledger.TransactionStatus.state
   name: state

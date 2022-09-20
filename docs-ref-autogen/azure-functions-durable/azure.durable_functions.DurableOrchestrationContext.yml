@@ -34,9 +34,13 @@ methods:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
+  - name: name
+    isRequired: true
+  - name: input_
+    defaultValue: None
   return:
     description: A Durable Task that completes when the called activity function completes
       or fails.
@@ -60,9 +64,15 @@ methods:
     - <xref:azure.durable_functions.RetryOptions>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
+  - name: name
+    isRequired: true
+  - name: retry_options
+    isRequired: true
+  - name: input_
+    defaultValue: None
   return:
     description: 'A Durable Task that completes when the called activity function
       completes or
@@ -102,6 +112,16 @@ methods:
     defaultValue: None
     types:
     - <xref:azure.durable_functions.models.TokenSource.TokenSource>
+  - name: method
+    isRequired: true
+  - name: uri
+    isRequired: true
+  - name: content
+    defaultValue: None
+  - name: headers
+    defaultValue: None
+  - name: token_source
+    defaultValue: None
   return:
     description: The durable HTTP request to schedule.
     types:
@@ -119,7 +139,7 @@ methods:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the orchestrator function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
@@ -127,6 +147,12 @@ methods:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:str>]
+  - name: name
+    isRequired: true
+  - name: input_
+    defaultValue: None
+  - name: instance_id
+    defaultValue: None
   return:
     description: A Durable Task that completes when the called sub-orchestrator completes
       or fails.
@@ -151,7 +177,7 @@ methods:
   - name: input
     description: The JSON-serializable input to pass to the activity function. Defaults
       to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
@@ -159,6 +185,14 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: name
+    isRequired: true
+  - name: retry_options
+    isRequired: true
+  - name: input_
+    defaultValue: None
+  - name: instance_id
+    defaultValue: None
   return:
     description: A Durable Task that completes when the called sub-orchestrator completes
       or fails.
@@ -174,6 +208,8 @@ methods:
     isRequired: true
     types:
     - <xref:Any>
+  - name: input_
+    isRequired: true
 - uid: azure.durable_functions.DurableOrchestrationContext.create_timer
   name: create_timer
   summary: Create a Durable Timer Task to implement a deadline at which to wake-up
@@ -185,6 +221,8 @@ methods:
     isRequired: true
     types:
     - <xref:datetime.datetime>
+  - name: fire_at
+    isRequired: true
   return:
     description: A Durable Timer Task that schedules the timer to wake up the activity
     types:
@@ -200,6 +238,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: json_string
     isRequired: true
   return:
@@ -236,6 +276,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: status
+    isRequired: true
 - uid: azure.durable_functions.DurableOrchestrationContext.task_all
   name: task_all
   summary: 'Schedule the execution of all activities.
@@ -281,6 +323,8 @@ methods:
     isRequired: true
     types:
     - <xref:List>[<xref:azure.durable_functions.models.Task.Task>]
+  - name: activities
+    isRequired: true
   return:
     description: The first [[Task]] instance to complete.
     types:
@@ -295,6 +339,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: name
+    isRequired: true
   return:
     description: Task to wait for the event
     types:

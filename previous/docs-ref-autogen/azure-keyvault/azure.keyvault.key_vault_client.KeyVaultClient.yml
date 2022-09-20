@@ -30,6 +30,11 @@ constructor:
     defaultValue: KnownProfiles.default
     types:
     - <xref:azure.profiles.KnownProfiles>
+  - name: credentials
+  - name: api_version
+    defaultValue: None
+  - name: profile
+    defaultValue: KnownProfiles.default
 variables:
 - description: Configuration for client.
   name: config
@@ -71,6 +76,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Base64 encoded pending certificate signing request (PKCS-10).
     types:

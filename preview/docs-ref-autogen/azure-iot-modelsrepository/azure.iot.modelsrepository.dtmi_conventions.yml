@@ -23,6 +23,10 @@ functions:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: dtmi
+  - name: repository_uri
+  - name: expanded
+    defaultValue: 'False'
   return:
     description: The URI for the model in the Models Repository
     types:
@@ -39,6 +43,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: dtmi
   return:
     description: Boolean indicating if DTMI is valid
     types:

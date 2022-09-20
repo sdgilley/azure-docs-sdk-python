@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.vision.face.operations.SnapshotOperations.apply
   name: apply
@@ -149,6 +153,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: snapshot_id
+    isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: mode
+    defaultValue: CreateNew
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -191,6 +205,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: snapshot_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -229,6 +249,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: snapshot_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Snapshot or ClientRawResponse if raw=true
     types:
@@ -265,6 +291,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -321,6 +353,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: type
+    defaultValue: None
+  - name: apply_scope
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -456,6 +496,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: type
+    isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: apply_scope
+    isRequired: true
+  - name: user_data
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -511,6 +563,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: snapshot_id
+    isRequired: true
+  - name: apply_scope
+    defaultValue: None
+  - name: user_data
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

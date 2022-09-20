@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.credentials_async.AsyncTokenCredential>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.digitaltwins.core.aio.DigitalTwinsClient.close
   name: close

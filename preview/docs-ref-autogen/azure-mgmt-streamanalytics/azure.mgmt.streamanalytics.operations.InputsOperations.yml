@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -92,6 +96,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: input_name
+    isRequired: true
+  - name: input
+    defaultValue: None
   return:
     description: An instance of LROPoller that returns either ResourceTestStatus or
       the result of cls(response)
@@ -151,6 +163,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: input_name
+    isRequired: true
+  - name: input
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
   return:
     description: Input, or the result of cls(response)
     types:
@@ -182,6 +206,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: input_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -213,6 +243,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: input_name
+    isRequired: true
   return:
     description: Input, or the result of cls(response)
     types:
@@ -251,6 +287,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: select
+    defaultValue: None
   return:
     description: An iterator like instance of either InputListResult or the result
       of cls(response)
@@ -312,6 +354,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: job_name
+    isRequired: true
+  - name: input_name
+    isRequired: true
+  - name: input
+    isRequired: true
+  - name: if_match
+    defaultValue: None
   return:
     description: Input, or the result of cls(response)
     types:

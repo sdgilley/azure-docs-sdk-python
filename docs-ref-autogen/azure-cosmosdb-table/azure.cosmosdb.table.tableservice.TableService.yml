@@ -127,6 +127,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: batch
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A list of the batch responses corresponding to the requests in the
       batch.
@@ -159,6 +165,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: fail_on_exist
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A boolean indicating whether the table was created. If fail_on_exist
 
@@ -214,6 +226,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: partition_key
+    isRequired: true
+  - name: row_key
+    isRequired: true
+  - name: if_match
+    defaultValue: '*'
+  - name: timeout
+    defaultValue: None
 - uid: azure.cosmosdb.table.tableservice.TableService.delete_table
   name: delete_table
   summary: 'Deletes the specified table and any data it contains.
@@ -248,6 +270,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: fail_not_exist
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A boolean indicating whether the table was deleted. If fail_not_exist
 
@@ -269,6 +297,10 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: A boolean indicating whether the table exists.
     types:
@@ -353,6 +385,18 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: resource_types
+    isRequired: true
+  - name: permission
+    isRequired: true
+  - name: expiry
+    isRequired: true
+  - name: start
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -488,6 +532,28 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: table_name
+    isRequired: true
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
+  - name: start_pk
+    defaultValue: None
+  - name: start_rk
+    defaultValue: None
+  - name: end_pk
+    defaultValue: None
+  - name: end_rk
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -543,6 +609,20 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: partition_key
+    isRequired: true
+  - name: row_key
+    isRequired: true
+  - name: select
+    defaultValue: None
+  - name: accept
+    defaultValue: application/json;odata=minimalmetadata
+  - name: property_resolver
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: The retrieved entity.
     types:
@@ -564,6 +644,10 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: A dictionary of access policies associated with the table.
     types:
@@ -580,6 +664,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: timeout
+    defaultValue: None
   return:
     description: The table service properties.
     types:
@@ -624,6 +710,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: timeout
+    defaultValue: None
   return:
     description: The table service stats.
     types:
@@ -670,6 +758,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: entity
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: The etag of the inserted entity.
     types:
@@ -706,6 +800,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: entity
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: The etag of the entity.
     types:
@@ -744,6 +844,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: entity
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: The etag of the entity.
     types:
@@ -795,6 +901,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: num_results
+    defaultValue: None
+  - name: marker
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: A generator which produces <xref:azure.cosmosdb.table.common.models.table.Table>
       objects.
@@ -852,6 +964,14 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: entity
+    isRequired: true
+  - name: if_match
+    defaultValue: '*'
+  - name: timeout
+    defaultValue: None
   return:
     description: The etag of the entity.
     types:
@@ -948,6 +1068,22 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: num_results
+    defaultValue: None
+  - name: marker
+    defaultValue: None
+  - name: accept
+    defaultValue: application/json;odata=minimalmetadata
+  - name: property_resolver
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: A generator which produces <xref:azure.storage.table.models.Entity>
       objects.
@@ -1001,6 +1137,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: signed_identifiers
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.cosmosdb.table.tableservice.TableService.set_table_service_properties
   name: set_table_service_properties
   summary: 'Sets the properties of a storage account''s Table service, including
@@ -1052,6 +1194,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: logging
+    defaultValue: None
+  - name: hour_metrics
+    defaultValue: None
+  - name: minute_metrics
+    defaultValue: None
+  - name: cors
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.cosmosdb.table.tableservice.TableService.update_entity
   name: update_entity
   summary: 'Updates an existing entity in a table. Throws if the entity does not exist.
@@ -1096,6 +1248,14 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: table_name
+    isRequired: true
+  - name: entity
+    isRequired: true
+  - name: if_match
+    defaultValue: '*'
+  - name: timeout
+    defaultValue: None
   return:
     description: The etag of the entity.
     types:

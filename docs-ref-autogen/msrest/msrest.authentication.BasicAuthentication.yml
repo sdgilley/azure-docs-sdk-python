@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: username
+  - name: password
 methods:
 - uid: msrest.authentication.BasicAuthentication.signed_session
   name: signed_session
@@ -38,6 +40,8 @@ methods:
     defaultValue: None
     types:
     - <xref:requests.Session>
+  - name: session
+    defaultValue: None
   return:
     types:
     - <xref:requests.Session>

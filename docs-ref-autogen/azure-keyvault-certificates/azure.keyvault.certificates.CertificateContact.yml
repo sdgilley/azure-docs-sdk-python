@@ -25,6 +25,12 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: email
+    defaultValue: None
+  - name: name
+    defaultValue: None
+  - name: phone
+    defaultValue: None
 attributes:
 - uid: azure.keyvault.certificates.CertificateContact.email
   name: email

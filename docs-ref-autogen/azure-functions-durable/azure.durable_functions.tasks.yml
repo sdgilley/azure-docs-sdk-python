@@ -24,9 +24,13 @@ functions:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Any>
+  - name: state
+  - name: name
+  - name: input_
+    defaultValue: None
   return:
     description: A Durable Task that completes when the called activity function completes
       or fails.
@@ -58,9 +62,14 @@ functions:
     - <xref:str>
   - name: input
     description: The JSON-serializable input to pass to the activity function.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Any>
+  - name: state
+  - name: retry_options
+  - name: name
+  - name: input_
+    defaultValue: None
   return:
     description: 'A Durable Task that completes when the called activity function
       completes or fails
@@ -109,6 +118,15 @@ functions:
     defaultValue: None
     types:
     - <xref:azure.durable_functions.models.TokenSource.TokenSource>
+  - name: state
+  - name: method
+  - name: uri
+  - name: content
+    defaultValue: None
+  - name: headers
+    defaultValue: None
+  - name: token_source
+    defaultValue: None
   return:
     description: The durable HTTP request to schedule.
     types:
@@ -139,7 +157,7 @@ functions:
   - name: input
     description: The JSON-serializable input to pass to the activity function. Defaults
       to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
@@ -147,6 +165,13 @@ functions:
     defaultValue: None
     types:
     - <xref:str>
+  - name: context
+  - name: state
+  - name: name
+  - name: input_
+    defaultValue: None
+  - name: instance_id
+    defaultValue: None
   return:
     description: A Durable Task that completes when the called sub-orchestrator completes
       or fails.
@@ -184,7 +209,7 @@ functions:
   - name: input
     description: The JSON-serializable input to pass to the activity function. Defaults
       to None.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Optional>[<xref:Any>]
   - name: instance_id
@@ -192,6 +217,14 @@ functions:
     defaultValue: None
     types:
     - <xref:str>
+  - name: context
+  - name: state
+  - name: retry_options
+  - name: name
+  - name: input_
+    defaultValue: None
+  - name: instance_id
+    defaultValue: None
   return:
     description: A Durable Task that completes when the called sub-orchestrator completes
       or fails.
@@ -207,6 +240,7 @@ functions:
     isRequired: true
     types:
     - <xref:Any>
+  - name: context
   - name: input_
     defaultValue: None
 - uid: azure.durable_functions.tasks.create_timer_task
@@ -226,6 +260,8 @@ functions:
     isRequired: true
     types:
     - <xref:datetime>
+  - name: state
+  - name: fire_at
   return:
     description: A Durable Timer Task that schedules the timer to wake up the activity
     types:
@@ -248,6 +284,7 @@ functions:
     isRequired: true
     types:
     - <xref:azure.durable_functions.DurableOrchestrationContext>
+  - name: context
   return:
     description: New UUID that is safe for replay within an orchestration or operation.
     types:
@@ -270,6 +307,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:azure.durable_functions.models.Task.Task>]
+  - name: tasks
   return:
     description: A Durable Task Set that reports the state of running all of the tasks
       within it.
@@ -285,6 +323,7 @@ functions:
     isRequired: true
     types:
     - <xref:azure.durable_functions.models.Task.Task>
+  - name: tasks
   return:
     description: 'Returns a completed Durable Task Set if any of the tasks is completed.
 
@@ -313,6 +352,8 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: state
+  - name: name
   return:
     description: 'Returns a completed task if the expected event was raised.
 
@@ -360,6 +401,15 @@ functions:
     defaultValue: None
     types:
     - <xref:azure.durable_functions.models.TokenSource.TokenSource>
+  - name: state
+  - name: method
+  - name: uri
+  - name: content
+    defaultValue: None
+  - name: headers
+    defaultValue: None
+  - name: token_source
+    defaultValue: None
   return:
     description: The durable HTTP request to schedule.
     types:
@@ -374,6 +424,7 @@ functions:
     isRequired: true
     types:
     - <xref:Any>
+  - name: context
   - name: input_
     defaultValue: None
 - uid: azure.durable_functions.tasks.new_uuid
@@ -394,6 +445,7 @@ functions:
     isRequired: true
     types:
     - <xref:azure.durable_functions.DurableOrchestrationContext>
+  - name: context
   return:
     description: New UUID that is safe for replay within an orchestration or operation.
     types:
@@ -409,6 +461,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:azure.durable_functions.models.Task.Task>]
+  - name: tasks
   return:
     description: A Durable Task Set that reports the state of running all of the tasks
       within it.
@@ -424,6 +477,7 @@ functions:
     isRequired: true
     types:
     - <xref:azure.durable_functions.models.Task.Task>
+  - name: tasks
   return:
     description: 'Returns a completed Durable Task Set if any of the tasks is completed.
 

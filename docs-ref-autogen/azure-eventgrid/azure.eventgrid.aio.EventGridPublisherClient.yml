@@ -28,6 +28,8 @@ constructor:
     - <xref:azure.core.credentials.AzureKeyCredential>
     - <xref:azure.core.credentials.AzureSasCredential>
     - <xref:azure.core.credentials_async.AsyncTokenCredential>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.eventgrid.aio.EventGridPublisherClient.close
   name: close

@@ -45,6 +45,8 @@ methods:
     isRequired: true
     types:
     - <xref:msrest.universal_http.ClientRequest>
+  - name: request
+    isRequired: true
 attributes:
 - uid: msrest.universal_http.requests.RequestsHTTPSender.session
   name: session

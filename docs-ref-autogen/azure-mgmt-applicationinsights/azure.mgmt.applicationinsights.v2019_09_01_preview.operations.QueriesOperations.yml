@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for this operation. Constant value: "2019-09-01-preview".'
   name: api_version
@@ -73,6 +77,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: query_pack_name
+    isRequired: true
+  - name: query_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -126,6 +140,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: query_pack_name
+    isRequired: true
+  - name: query_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: LogAnalyticsQueryPackQuery or ClientRawResponse if raw=true
     types:
@@ -189,6 +213,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: query_pack_name
+    isRequired: true
+  - name: top
+    defaultValue: None
+  - name: include_body
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of LogAnalyticsQueryPackQuery
     types:
@@ -246,6 +284,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: query_pack_name
+    isRequired: true
+  - name: query_id
+    isRequired: true
+  - name: query_payload
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: LogAnalyticsQueryPackQuery or ClientRawResponse if raw=true
     types:
@@ -319,6 +369,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: query_pack_name
+    isRequired: true
+  - name: query_search_properties
+    isRequired: true
+  - name: top
+    defaultValue: None
+  - name: include_body
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of LogAnalyticsQueryPackQuery
     types:

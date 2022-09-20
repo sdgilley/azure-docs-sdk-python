@@ -26,6 +26,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: content
+    isRequired: true
   - name: content_type
     isRequired: true
   return:

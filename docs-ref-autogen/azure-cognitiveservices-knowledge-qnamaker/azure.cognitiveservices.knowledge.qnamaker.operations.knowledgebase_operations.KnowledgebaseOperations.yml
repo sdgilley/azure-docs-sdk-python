@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.knowledge.qnamaker.operations.knowledgebase_operations.KnowledgebaseOperations.create
   name: create
@@ -49,6 +53,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: create_kb_payload
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Operation or ClientRawResponse if raw=true
     types:
@@ -83,6 +93,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -138,6 +154,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: environment
+    isRequired: true
+  - name: source
+    defaultValue: None
+  - name: changed_since
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: QnADocumentsDTO or ClientRawResponse if raw=true
     types:
@@ -178,6 +206,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: generate_answer_payload
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: QnASearchResultList or ClientRawResponse if raw=true
     types:
@@ -212,6 +248,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KnowledgebaseDTO or ClientRawResponse if raw=true
     types:
@@ -241,6 +283,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KnowledgebasesDTO or ClientRawResponse if raw=true
     types:
@@ -277,6 +323,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -320,6 +372,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: qn_alist
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -359,6 +419,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: feedback_records
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -398,6 +466,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: update_kb
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Operation or ClientRawResponse if raw=true
     types:

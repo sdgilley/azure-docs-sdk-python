@@ -164,6 +164,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
   - name: table_name
     isRequired: true
   return:
@@ -201,6 +205,10 @@ methods:
     types:
     - <xref:azure.core.credentials.AzureNamedKeyCredential>
     - <xref:azure.core.credentials.AzureSasCredential>
+  - name: cls
+    isRequired: true
+  - name: table_url
+    isRequired: true
   return:
     description: A table client.
     types:
@@ -371,6 +379,8 @@ methods:
     types:
     - <xref:Iterable>[<xref:Tuple>[<xref:str>, <xref:azure.data.tables.TableEntity>,
       <xref:Mapping>[<xref:str>, <xref:Any>]]]
+  - name: operations
+    isRequired: true
   return:
     description: A list of mappings with response metadata for each operation in the
       transaction.

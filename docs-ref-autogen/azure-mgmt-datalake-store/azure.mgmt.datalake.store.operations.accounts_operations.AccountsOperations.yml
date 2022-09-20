@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Client Api Version. Constant value: "2016-11-01".'
   name: api_version
@@ -58,6 +62,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: location
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: NameAvailabilityInformation or ClientRawResponse if raw=true
     types:
@@ -105,6 +117,18 @@ methods:
 
       polling object for personal polling strategy'
     defaultValue: 'True'
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
+    defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns DataLakeStoreAccount or
 
@@ -146,6 +170,16 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
@@ -191,6 +225,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -231,6 +273,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DataLakeStoreAccount or ClientRawResponse if raw=true
     types:
@@ -309,6 +359,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DataLakeStoreAccountBasic
     types:
@@ -391,6 +457,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DataLakeStoreAccountBasic
     types:
@@ -436,6 +520,18 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns DataLakeStoreAccount or

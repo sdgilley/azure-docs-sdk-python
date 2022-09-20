@@ -37,6 +37,9 @@ constructor:
       Retry-After header is present.'
     types:
     - <xref:int>
+  - name: credential
+  - name: subscription_id
+  - name: base_url
 variables:
 - description: CertificatesOperations operations
   name: certificates

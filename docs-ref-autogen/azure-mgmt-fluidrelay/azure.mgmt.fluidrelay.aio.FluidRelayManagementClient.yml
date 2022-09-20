@@ -32,6 +32,10 @@ constructor:
       default value may result in unsupported behavior.'
     types:
     - <xref:str>
+  - name: credential
+  - name: subscription_id
+  - name: base_url
+    defaultValue: https://management.azure.com
 variables:
 - description: FluidRelayOperationsOperations operations
   name: fluid_relay_operations

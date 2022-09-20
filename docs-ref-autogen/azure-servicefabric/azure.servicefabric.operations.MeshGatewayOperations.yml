@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The version of the API. This parameter is required and its value must
     be ''6.4-preview''. Constant value: "6.4-preview".'
@@ -74,6 +78,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: gateway_resource_name
+    isRequired: true
+  - name: gateway_resource_description
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: GatewayResourceDescription or ClientRawResponse if raw=true
     types:
@@ -111,6 +123,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: gateway_resource_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -152,6 +170,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: gateway_resource_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: GatewayResourceDescription or ClientRawResponse if raw=true
     types:
@@ -188,6 +212,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedGatewayResourceDescriptionList or ClientRawResponse if
 

@@ -14,6 +14,8 @@ constructor:
     defaultValue: None
     types:
     - <xref:dict>
+  - name: classes
+    defaultValue: None
 variables:
 - description: Ordered list of extractors to be used by this deserializer.
   name: key_extractors
@@ -30,6 +32,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:bytearray>
@@ -56,6 +60,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
+  - name: data_type
+    isRequired: true
   return:
     types:
     - <xref:str>, <xref:int>, <xref:float>
@@ -72,6 +80,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:bytearray>
@@ -92,6 +102,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
+  - name: data_type
+    isRequired: true
   return:
     description: Deserialized object.
   exceptions:
@@ -106,6 +120,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:Date>
@@ -121,6 +137,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:Decimal>
@@ -143,6 +161,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
+  - name: dict_type
+    isRequired: true
   return:
     types:
     - <xref:dict>
@@ -156,6 +178,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:TimeDelta>
@@ -183,6 +207,10 @@ methods:
     isRequired: true
     types:
     - <xref:Enum>
+  - name: data
+    isRequired: true
+  - name: enum_obj
+    isRequired: true
   return:
     types:
     - <xref:Enum>
@@ -196,6 +224,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:Datetime>
@@ -216,6 +246,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
+  - name: iter_type
+    isRequired: true
   return:
     types:
     - <xref:list>
@@ -229,6 +263,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:long>
@@ -247,6 +283,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:dict>
@@ -262,6 +300,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:Datetime>
@@ -277,6 +317,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:datetime.time>
@@ -294,6 +336,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     types:
     - <xref:str>
@@ -310,6 +354,8 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:Datetime>
@@ -343,6 +389,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: target_obj
+    isRequired: true
+  - name: data
+    isRequired: true
+  - name: content_type
+    defaultValue: None
 attributes:
 - uid: msrest.serialization.Deserializer.basic_types
   name: basic_types

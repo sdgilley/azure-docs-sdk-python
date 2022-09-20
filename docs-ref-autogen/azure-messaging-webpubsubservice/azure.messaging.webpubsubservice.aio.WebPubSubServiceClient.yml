@@ -36,6 +36,9 @@ constructor:
       default value may result in unsupported behavior.'
     types:
     - <xref:str>
+  - name: endpoint
+  - name: hub
+  - name: credential
 methods:
 - uid: azure.messaging.webpubsubservice.aio.WebPubSubServiceClient.from_connection_string
   name: from_connection_string

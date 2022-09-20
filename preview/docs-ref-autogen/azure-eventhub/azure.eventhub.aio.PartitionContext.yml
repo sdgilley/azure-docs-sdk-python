@@ -39,6 +39,8 @@ methods:
     defaultValue: None
     types:
     - <xref:azure.eventhub.EventData>
+  - name: event
+    defaultValue: None
   return:
     types:
     - <xref:None>

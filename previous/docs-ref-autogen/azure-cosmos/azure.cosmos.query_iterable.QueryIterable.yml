@@ -54,6 +54,16 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: client
+    isRequired: true
+  - name: query
+    isRequired: true
+  - name: options
+    isRequired: true
+  - name: database_link
+    isRequired: true
   - name: partition_key
     isRequired: true
 - uid: azure.cosmos.query_iterable.QueryIterable.fetch_next_block

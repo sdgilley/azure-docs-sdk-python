@@ -56,3 +56,5 @@ constructor:
       visualization to show.'
     types:
     - <xref:bool>
+  - name: workspace_id
+  - name: query

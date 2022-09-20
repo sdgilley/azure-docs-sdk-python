@@ -29,6 +29,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: node_id
+  - name: mrenclave
+  - name: raw_quote
+  - name: version
 attributes:
 - uid: azure.confidentialledger.EnclaveQuote.mrenclave
   name: mrenclave

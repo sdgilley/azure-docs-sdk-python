@@ -36,6 +36,8 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:azure.ai.ml.entities.Workspace,azure.ai.ml.entities.Compute,azure.ai.ml.entities.OnlineDeployment,azure.ai.ml.entities.OnlineEndpoint,azure.ai.ml.entities.BatchDeployment,azure.ai.ml.entities.BatchEndpoint>]
+  - name: entity
+    isRequired: true
   return:
     description: The resource after create/update operation
     types:
@@ -56,6 +58,8 @@ methods:
     types:
     - <xref:Union>[<xref:azure.ai.ml.entities.Job>, <xref:azure.ai.ml.entities.Model>,
       <xref:azure.ai.ml.entities.Environment,azure.ai.ml.entities.Component>, <xref:azure.ai.ml.entities.Datastore>]
+  - name: entity
+    isRequired: true
   return:
     description: The created or updated resource
     types:
@@ -95,7 +99,7 @@ methods:
     description: 'The path to the config file or starting directory to search.
 
       The parameter defaults to starting the search in the current directory.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: _file_name
@@ -108,9 +112,17 @@ methods:
     description: 'A dictionary of additional configuration parameters.
 
       For e.g. kwargs = {"cloud": "AzureUSGovernment"}'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:dict>
+  - name: cls
+    isRequired: true
+  - name: credential
+    isRequired: true
+  - name: path
+    defaultValue: None
+  - name: _file_name
+    defaultValue: None
   return:
     description: The workspace object for an existing Azure ML Workspace.
     types:

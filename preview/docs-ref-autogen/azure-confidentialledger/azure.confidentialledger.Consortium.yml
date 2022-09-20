@@ -14,6 +14,7 @@ constructor:
     isRequired: true
     types:
     - <xref:List>[<xref:azure.confidentialledger.ConsortiumMember>]
+  - name: members
 attributes:
 - uid: azure.confidentialledger.Consortium.members
   name: members

@@ -148,6 +148,17 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: remote_address
+  - name: auth
+    defaultValue: None
+  - name: client_name
+    defaultValue: None
+  - name: debug
+    defaultValue: 'False'
+  - name: error_policy
+    defaultValue: None
+  - name: keep_alive_interval
+    defaultValue: None
 methods:
 - uid: uamqp.client.AMQPClient.auth_complete
   name: auth_complete
@@ -247,7 +258,7 @@ methods:
     description: 'Provide an optional timeout in milliseconds within which a response
 
       to the management request must be received.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:float>
   - name: callback
@@ -258,7 +269,7 @@ methods:
       to reformat the response or raise an error based on content. The function must
 
       take 3 arguments - status code, response message and description.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:callable>[<xref:int>, <xref:bytes>, <xref:uamqp.message.Message>]
   - name: status_code_field
@@ -281,6 +292,16 @@ methods:
     isRequired: true
     types:
     - <xref:bytes>
+  - name: message
+    isRequired: true
+  - name: operation
+    isRequired: true
+  - name: op_type
+    defaultValue: None
+  - name: node
+    defaultValue: None
+  - name: callback
+    defaultValue: None
   return:
     types:
     - <xref:uamqp.message.Message>
@@ -301,4 +322,6 @@ methods:
     description: 'An existing Connection that may be shared between
 
       multiple clients.'
+    defaultValue: None
+  - name: connection
     defaultValue: None

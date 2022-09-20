@@ -60,6 +60,11 @@ constructor:
       feature compatibility.'
     types:
     - <xref:str>
+  - name: account_url
+  - name: file_system_name
+  - name: directory_name
+  - name: credential
+    defaultValue: None
 variables:
 - description: The full endpoint URL to the file system, including SAS token if used.
   name: url
@@ -186,6 +191,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: metadata
+    defaultValue: None
   return:
     description: response dict (Etag and last modified).
   examples:
@@ -304,6 +311,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: file
+    isRequired: true
   return:
     description: DataLakeFileClient
 - uid: azure.storage.filedatalake.aio.DataLakeDirectoryClient.create_sub_directory
@@ -418,6 +427,10 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: sub_directory
+    isRequired: true
+  - name: metadata
+    defaultValue: None
   return:
     description: DataLakeDirectoryClient for the subdirectory.
 - uid: azure.storage.filedatalake.aio.DataLakeDirectoryClient.delete_directory
@@ -544,6 +557,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: sub_directory
+    isRequired: true
   return:
     description: DataLakeDirectoryClient for the subdirectory
 - uid: azure.storage.filedatalake.aio.DataLakeDirectoryClient.exists
@@ -648,6 +663,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.FileProperties>
+  - name: file
+    isRequired: true
   return:
     description: A DataLakeFileClient.
     types:
@@ -671,6 +688,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.DirectoryProperties>
+  - name: sub_directory
+    isRequired: true
   return:
     description: A DataLakeDirectoryClient.
     types:
@@ -778,6 +797,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: new_name
+    isRequired: true
   return:
     description: DataLakeDirectoryClient
   examples:

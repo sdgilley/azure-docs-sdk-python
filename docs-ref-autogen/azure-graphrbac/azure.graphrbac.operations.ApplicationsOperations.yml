@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Client API version. Constant value: "1.6".'
   name: api_version
@@ -75,6 +79,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: additional_properties
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -109,6 +123,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Application or ClientRawResponse if raw=true
     types:
@@ -143,6 +163,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -177,6 +203,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Application or ClientRawResponse if raw=true
     types:
@@ -212,6 +244,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServicePrincipalObjectResult or ClientRawResponse if raw=true
     types:
@@ -246,6 +284,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of Application
     types:
@@ -280,6 +324,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of KeyCredential
     types:
@@ -320,6 +370,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DirectoryObject
     types:
@@ -354,6 +410,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of PasswordCredential
     types:
@@ -393,6 +455,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -435,6 +505,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: owner_object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -475,6 +553,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -515,6 +601,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_object_id
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

@@ -31,6 +31,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: container
+  - name: blob_template
 variables:
 - description: 'Required. data source type.Constant filled by server.  Possible values
 

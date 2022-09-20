@@ -66,6 +66,9 @@ constructor:
     description: The hostname of the secondary endpoint.
     types:
     - <xref:str>
+  - name: account_url
+  - name: credential
+    defaultValue: None
 examples:
 - "Creating the QueueServiceClient with an account url and credential.<!--[!code-python[Main](les\\\
   queue_samples_authentication_async.py )]-->\n\n<!-- literal_block {\"ids\": [],\
@@ -187,6 +190,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.queue.QueueProperties>
+  - name: queue
+    isRequired: true
   return:
     description: A <xref:azure.storage.queue.aio.QueueClient> object.
     types:

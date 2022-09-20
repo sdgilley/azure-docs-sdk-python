@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -88,6 +92,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: reported_start_time
+    isRequired: true
+  - name: reported_end_time
+    isRequired: true
+  - name: show_details
+    defaultValue: None
+  - name: aggregation_granularity
+    defaultValue: Daily
+  - name: continuation_token_parameter
+    defaultValue: None
   return:
     description: An iterator like instance of either UsageAggregationListResult or
       the result of cls(response)

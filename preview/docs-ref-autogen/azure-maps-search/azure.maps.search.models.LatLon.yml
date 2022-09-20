@@ -11,6 +11,7 @@ constructor:
   parameters:
   - name: lat
     description: The coordinate as latitude.
+    defaultValue: '0'
     types:
     - <xref:float>
   - name: lon
@@ -18,6 +19,9 @@ constructor:
     defaultValue: '0'
     types:
     - <xref:float>
+  - name: _cls
+  - name: lat
+    defaultValue: '0'
   - name: lon
     defaultValue: '0'
 attributes:

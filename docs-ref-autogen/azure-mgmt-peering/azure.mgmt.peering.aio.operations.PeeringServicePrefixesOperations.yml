@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -62,6 +66,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: peering_service_name
+    isRequired: true
+  - name: prefix_name
+    isRequired: true
+  - name: peering_service_prefix
+    isRequired: true
   return:
     description: PeeringServicePrefix, or the result of cls(response)
     types:
@@ -93,6 +105,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: peering_service_name
+    isRequired: true
+  - name: prefix_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -124,6 +142,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: peering_service_name
+    isRequired: true
+  - name: prefix_name
+    isRequired: true
   return:
     description: PeeringServicePrefix, or the result of cls(response)
     types:

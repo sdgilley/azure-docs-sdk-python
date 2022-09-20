@@ -20,6 +20,9 @@ constructor:
 
       as a str rather than bytes. Default is UTF-8.'
     defaultValue: UTF-8
+  - name: address
+  - name: encoding
+    defaultValue: UTF-8
 variables:
 - description: The endpoint URL.
   name: address

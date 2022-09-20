@@ -109,6 +109,10 @@ constructor:
       or 4MB.'
     types:
     - <xref:int>
+  - name: account_url
+  - name: container_name
+  - name: credential
+    defaultValue: None
 examples:
 - "Get a ContainerClient from an existing BlobServiceClient.<!--[!code-python[Main](les\\\
   blob_samples_containers_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
@@ -799,6 +803,10 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: blob
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
   return:
     description: A BlobClient.
     types:

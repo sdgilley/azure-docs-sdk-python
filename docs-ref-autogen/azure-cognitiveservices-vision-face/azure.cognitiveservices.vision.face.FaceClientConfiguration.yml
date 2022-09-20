@@ -27,3 +27,5 @@ constructor:
     isRequired: true
     types:
     - <xref:None>
+  - name: endpoint
+  - name: credentials

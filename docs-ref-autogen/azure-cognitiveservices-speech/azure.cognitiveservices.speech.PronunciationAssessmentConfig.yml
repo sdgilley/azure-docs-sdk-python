@@ -32,6 +32,16 @@ constructor:
   - name: json_string
     description: A json string representing pronunciation assessment parameters
     defaultValue: None
+  - name: reference_text
+    defaultValue: None
+  - name: grading_system
+    defaultValue: PronunciationAssessmentGradingSystem.FivePoint
+  - name: granularity
+    defaultValue: PronunciationAssessmentGranularity.Phoneme
+  - name: enable_miscue
+    defaultValue: 'False'
+  - name: json_string
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.PronunciationAssessmentConfig.apply_to
   name: apply_to
@@ -40,6 +50,8 @@ methods:
   parameters:
   - name: recognizer
     description: the target recognizer.
+    isRequired: true
+  - name: recognizer
     isRequired: true
 - uid: azure.cognitiveservices.speech.PronunciationAssessmentConfig.to_json
   name: to_json

@@ -28,6 +28,8 @@ constructor:
     isRequired: true
     types:
     - <xref:None>
+  - name: endpoint
+  - name: credentials
 variables:
 - description: Configuration for client.
   name: config
@@ -75,6 +77,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: show_stats
+    defaultValue: None
+  - name: documents
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: LanguageBatchResult or ClientRawResponse if raw=true
     types:
@@ -127,6 +137,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: show_stats
+    defaultValue: None
+  - name: documents
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: EntitiesBatchResult or ClientRawResponse if raw=true
     types:
@@ -179,6 +197,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: show_stats
+    defaultValue: None
+  - name: documents
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyPhraseBatchResult or ClientRawResponse if raw=true
     types:
@@ -233,6 +259,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: show_stats
+    defaultValue: None
+  - name: documents
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: object or ClientRawResponse if raw=true
     types:

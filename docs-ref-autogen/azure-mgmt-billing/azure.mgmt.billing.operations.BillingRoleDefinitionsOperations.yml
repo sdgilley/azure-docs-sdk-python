@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -55,6 +59,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
+  - name: billing_role_definition_name
+    isRequired: true
   return:
     description: BillingRoleDefinition, or the result of cls(response)
     types:
@@ -90,6 +98,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
+  - name: billing_profile_name
+    isRequired: true
+  - name: billing_role_definition_name
+    isRequired: true
   return:
     description: BillingRoleDefinition, or the result of cls(response)
     types:
@@ -130,6 +144,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
+  - name: billing_profile_name
+    isRequired: true
+  - name: invoice_section_name
+    isRequired: true
+  - name: billing_role_definition_name
+    isRequired: true
   return:
     description: BillingRoleDefinition, or the result of cls(response)
     types:
@@ -155,6 +177,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
   return:
     description: An iterator like instance of either BillingRoleDefinitionListResult
       or the result of cls(response)
@@ -186,6 +210,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
+  - name: billing_profile_name
+    isRequired: true
   return:
     description: An iterator like instance of either BillingRoleDefinitionListResult
       or the result of cls(response)
@@ -222,6 +250,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
+  - name: billing_profile_name
+    isRequired: true
+  - name: invoice_section_name
+    isRequired: true
   return:
     description: An iterator like instance of either BillingRoleDefinitionListResult
       or the result of cls(response)

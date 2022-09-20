@@ -46,6 +46,10 @@ constructor:
     types:
     - <xref:str>
     - <xref:azure.ai.metricsadvisor.models.PeriodType>
+  - name: metric_id
+  - name: dimension_key
+  - name: value
+  - name: period_type
 variables:
 - description: 'Required. feedback type.Constant filled by server.  Possible values
 

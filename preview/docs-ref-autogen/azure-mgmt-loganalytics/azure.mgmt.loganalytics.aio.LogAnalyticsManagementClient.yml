@@ -31,6 +31,10 @@ constructor:
       Retry-After header is present.'
     types:
     - <xref:int>
+  - name: credential
+  - name: subscription_id
+  - name: base_url
+    defaultValue: https://management.azure.com
 variables:
 - description: QueryPacksOperations operations
   name: query_packs

@@ -118,6 +118,13 @@ constructor:
       or 4MB.'
     types:
     - <xref:int>
+  - name: account_url
+  - name: container_name
+  - name: blob_name
+  - name: snapshot
+    defaultValue: None
+  - name: credential
+    defaultValue: None
 examples:
 - "Creating the BlobClient from a URL to a public blob (no auth needed).<!--[!code-python[Main](les\\\
   blob_samples_authentication_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\

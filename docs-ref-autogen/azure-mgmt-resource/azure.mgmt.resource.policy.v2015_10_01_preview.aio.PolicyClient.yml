@@ -34,6 +34,10 @@ constructor:
       this default value may result in unsupported behavior.'
     types:
     - <xref:str>
+  - name: credential
+  - name: subscription_id
+  - name: base_url
+    defaultValue: https://management.azure.com
 variables:
 - description: PolicyAssignmentsOperations operations
   name: policy_assignments

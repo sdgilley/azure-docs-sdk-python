@@ -28,6 +28,11 @@ functions:
     defaultValue: '1:00:00'
     types:
     - <xref:datetime.timedelta>
+  - name: key_name
+  - name: shared_access_key
+  - name: scope
+  - name: expiry
+    defaultValue: '1:00:00'
   return:
     types:
     - <xref:bytes>
@@ -61,6 +66,7 @@ functions:
     isRequired: true
     types:
     - <xref:uamqp.types.AMQPType>
+  - name: value
   - name: encoding
     defaultValue: UTF-8
   return:
@@ -83,6 +89,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: connect_str
   return:
     types:
     - <xref:dict>[<xref:str>, <xref:str>]

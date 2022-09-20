@@ -30,6 +30,8 @@ methods:
 
       Default is ''UTF-8'''
     defaultValue: UTF-8
+  - name: encoding
+    defaultValue: UTF-8
   return:
     types:
     - <xref:dict>
@@ -44,6 +46,8 @@ methods:
     description: 'The encoding to use for decoding message data.
 
       Default is ''UTF-8'''
+    defaultValue: UTF-8
+  - name: encoding
     defaultValue: UTF-8
   return:
     types:

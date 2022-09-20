@@ -18,3 +18,4 @@ constructor:
     isRequired: true
     types:
     - <xref:msrestazure.azure_active_directory>
+  - name: credentials

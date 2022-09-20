@@ -175,6 +175,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
   - name: table_name
     isRequired: true
   return:
@@ -212,6 +216,10 @@ methods:
     types:
     - <xref:azure.core.credentials.AzureNamedKeyCredential>
     - <xref:azure.core.credentials.AzureSasCredential>
+  - name: cls
+    isRequired: true
+  - name: table_url
+    isRequired: true
   return:
     description: A table client.
     types:

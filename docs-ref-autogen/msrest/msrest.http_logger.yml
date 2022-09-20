@@ -17,6 +17,8 @@ functions:
     isRequired: true
     types:
     - <xref:requests.Request>
+  - name: _
+  - name: request
 - uid: msrest.http_logger.log_response
   name: log_response
   summary: Log a server response.
@@ -36,3 +38,6 @@ functions:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: _
+  - name: _request
+  - name: response

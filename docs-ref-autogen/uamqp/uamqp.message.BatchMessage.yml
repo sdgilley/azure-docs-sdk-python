@@ -75,6 +75,20 @@ constructor:
     defaultValue: UTF-8
     types:
     - <xref:str>
+  - name: data
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: application_properties
+    defaultValue: None
+  - name: annotations
+    defaultValue: None
+  - name: header
+    defaultValue: None
+  - name: multi_messages
+    defaultValue: 'False'
+  - name: encoding
+    defaultValue: UTF-8
 variables:
 - description: 'A custom callback to be run on completion of
 

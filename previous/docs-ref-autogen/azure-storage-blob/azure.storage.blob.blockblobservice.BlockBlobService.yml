@@ -291,6 +291,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: container_name
+    isRequired: true
   - name: blob_name
     isRequired: true
   - name: copy_source
@@ -464,6 +466,38 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: blob
+    isRequired: true
+  - name: index
+    defaultValue: '0'
+  - name: count
+    defaultValue: None
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the Block Blob
     types:
@@ -601,6 +635,34 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: file_path
+    isRequired: true
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the Block Blob
     types:
@@ -792,6 +854,38 @@ methods:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: stream
+    isRequired: true
+  - name: count
+    defaultValue: None
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
+  - name: use_byte_buffer
+    defaultValue: 'False'
   return:
     description: ETag and last modified properties for the Block Blob
     types:
@@ -930,6 +1024,36 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: encoding
+    defaultValue: utf-8
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
+  - name: max_connections
+    defaultValue: '2'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the Block Blob
     types:
@@ -980,6 +1104,18 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
+  - name: block_list_type
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: list committed and/or uncommitted blocks for Block Blob
     types:
@@ -1046,6 +1182,20 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: block
+    isRequired: true
+  - name: block_id
+    isRequired: true
+  - name: validate_content
+    defaultValue: 'False'
+  - name: lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.blockblobservice.BlockBlobService.put_block_from_url
   name: put_block_from_url
   summary: Creates a new block to be committed as part of a blob.
@@ -1111,6 +1261,24 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: copy_source_url
+    isRequired: true
+  - name: source_range_start
+    isRequired: true
+  - name: source_range_end
+    isRequired: true
+  - name: block_id
+    isRequired: true
+  - name: source_content_md5
+    defaultValue: None
+  - name: lease_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.blob.blockblobservice.BlockBlobService.put_block_list
   name: put_block_list
   summary: 'Writes a blob by specifying the list of block IDs that make up the blob.
@@ -1233,6 +1401,30 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: block_list
+    isRequired: true
+  - name: content_settings
+    defaultValue: None
+  - name: metadata
+    defaultValue: None
+  - name: validate_content
+    defaultValue: 'False'
+  - name: lease_id
+    defaultValue: None
+  - name: if_modified_since
+    defaultValue: None
+  - name: if_unmodified_since
+    defaultValue: None
+  - name: if_match
+    defaultValue: None
+  - name: if_none_match
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: ETag and last modified properties for the updated Block Blob
     types:
@@ -1271,6 +1463,14 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: container_name
+    isRequired: true
+  - name: blob_name
+    isRequired: true
+  - name: standard_blob_tier
+    isRequired: true
+  - name: timeout
+    defaultValue: None
 attributes:
 - uid: azure.storage.blob.blockblobservice.BlockBlobService.MAX_BLOCK_SIZE
   name: MAX_BLOCK_SIZE

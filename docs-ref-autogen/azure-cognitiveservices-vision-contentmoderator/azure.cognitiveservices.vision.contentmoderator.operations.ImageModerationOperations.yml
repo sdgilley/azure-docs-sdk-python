@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.vision.contentmoderator.operations.ImageModerationOperations.evaluate_file_input
   name: evaluate_file_input
@@ -68,6 +72,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image_stream
+    isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: Evaluate or ClientRawResponse if raw=true
     types:
@@ -104,6 +118,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Evaluate or ClientRawResponse if raw=true
     types:
@@ -154,6 +174,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: data_representation
+    defaultValue: URL
+  - name: value
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Evaluate or ClientRawResponse if raw=true
     types:
@@ -190,6 +222,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: FoundFaces or ClientRawResponse if raw=true
     types:
@@ -243,6 +281,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image_stream
+    isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: FoundFaces or ClientRawResponse if raw=true
     types:
@@ -293,6 +341,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: data_representation
+    defaultValue: URL
+  - name: value
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: FoundFaces or ClientRawResponse if raw=true
     types:
@@ -365,6 +425,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image_stream
+    isRequired: true
+  - name: list_id
+    defaultValue: None
+  - name: cache_image
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: MatchResponse or ClientRawResponse if raw=true
     types:
@@ -421,6 +493,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    defaultValue: None
+  - name: cache_image
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: MatchResponse or ClientRawResponse if raw=true
     types:
@@ -490,6 +570,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: list_id
+    defaultValue: None
+  - name: cache_image
+    defaultValue: None
+  - name: data_representation
+    defaultValue: URL
+  - name: value
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: MatchResponse or ClientRawResponse if raw=true
     types:
@@ -561,6 +655,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: language
+    isRequired: true
+  - name: image_stream
+    isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: enhanced
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: OCR or ClientRawResponse if raw=true
     types:
@@ -616,6 +724,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: language
+    isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: enhanced
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OCR or ClientRawResponse if raw=true
     types:
@@ -684,6 +802,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: language
+    isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: cache_image
+    defaultValue: None
+  - name: enhanced
+    defaultValue: 'False'
+  - name: data_representation
+    defaultValue: URL
+  - name: value
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OCR or ClientRawResponse if raw=true
     types:

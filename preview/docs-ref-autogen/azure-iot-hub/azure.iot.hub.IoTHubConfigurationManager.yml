@@ -24,6 +24,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.hub.protocol.models.ConfigurationContent>
+  - name: device_id
+    isRequired: true
   - name: configuration_content
     isRequired: true
   return:
@@ -45,6 +47,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.hub.protocol.models.Configuration>
+  - name: configuration
+    isRequired: true
   return:
     description: Configuration object containing the created configuration.
   exceptions:
@@ -61,14 +65,18 @@ methods:
     - <xref:str>
   - name: configuration
     description: The configuration to create.
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:azure.iot.hub.protocol.models.Configuration>
   - name: etag
     description: The etag (if_match) value to use for the delete operation.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
+  - name: configuration_id
+    isRequired: true
+  - name: etag
+    defaultValue: None
   return:
     description: Configuration object containing the updated configuration.
   exceptions:
@@ -83,6 +91,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: configuration_id
+    isRequired: true
   return:
     description: The Configuration object.
   exceptions:
@@ -98,6 +108,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: max_count
+    defaultValue: None
   return:
     description: The list[Configuration] object.
   exceptions:
@@ -113,6 +125,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.hub.protocol.models.ConfigurationQueriesTestInput>
+  - name: configuration_queries_test_input
+    isRequired: true
   return:
     description: The ConfigurationQueriesTestResponse object.
   exceptions:
@@ -138,6 +152,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: configuration
+    isRequired: true
+  - name: etag
+    isRequired: true
   return:
     description: Configuration object containing the updated configuration.
   exceptions:

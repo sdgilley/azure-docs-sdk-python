@@ -125,6 +125,32 @@ constructor:
     defaultValue: None
     types:
     - <xref:dict>
+  - name: body
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: application_properties
+    defaultValue: None
+  - name: annotations
+    defaultValue: None
+  - name: header
+    defaultValue: None
+  - name: msg_format
+    defaultValue: None
+  - name: message
+    defaultValue: None
+  - name: settler
+    defaultValue: None
+  - name: delivery_no
+    defaultValue: None
+  - name: encoding
+    defaultValue: UTF-8
+  - name: body_type
+    defaultValue: None
+  - name: footer
+    defaultValue: None
+  - name: delivery_annotations
+    defaultValue: None
 variables:
 - description: 'A custom callback to be run on completion of
 
@@ -171,6 +197,8 @@ methods:
     types:
     - <xref:bytes>
     - <xref:bytearray>
+  - name: cls
+    isRequired: true
   - name: data
     isRequired: true
 - uid: uamqp.message.Message.encode_message
@@ -251,6 +279,12 @@ methods:
     defaultValue: None
     types:
     - <xref:dict>
+  - name: failed
+    isRequired: true
+  - name: deliverable
+    isRequired: true
+  - name: annotations
+    defaultValue: None
   return:
     types:
     - <xref:bool>
@@ -288,6 +322,12 @@ methods:
     defaultValue: None
     types:
     - <xref:dict>
+  - name: condition
+    defaultValue: None
+  - name: description
+    defaultValue: None
+  - name: info
+    defaultValue: None
   return:
     types:
     - <xref:bool>

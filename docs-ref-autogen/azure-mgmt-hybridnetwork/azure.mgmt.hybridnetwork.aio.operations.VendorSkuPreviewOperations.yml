@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -81,6 +85,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: vendor_name
+    isRequired: true
+  - name: sku_name
+    isRequired: true
+  - name: preview_subscription
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either PreviewSubscription
       or the result of cls(response)
@@ -130,6 +142,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: vendor_name
+    isRequired: true
+  - name: sku_name
+    isRequired: true
+  - name: preview_subscription
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -162,6 +180,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: vendor_name
+    isRequired: true
+  - name: sku_name
+    isRequired: true
+  - name: preview_subscription
+    isRequired: true
   return:
     description: PreviewSubscription, or the result of cls(response)
     types:
@@ -187,6 +211,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: vendor_name
+    isRequired: true
+  - name: sku_name
+    isRequired: true
   return:
     description: An iterator like instance of either PreviewSubscriptionsList or the
       result of cls(response)

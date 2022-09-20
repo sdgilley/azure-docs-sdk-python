@@ -25,3 +25,6 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: rule
+  - name: target
+  - name: value

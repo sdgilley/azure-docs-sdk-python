@@ -53,6 +53,10 @@ constructor:
       feature compatibility.'
     types:
     - <xref:str>
+  - name: account_url
+  - name: file_system_name
+  - name: credential
+    defaultValue: None
 variables:
 - description: The full endpoint URL to the file system, including SAS token if used.
   name: url
@@ -147,6 +151,10 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: lease_duration
+    defaultValue: '-1'
+  - name: lease_id
+    defaultValue: None
   return:
     description: A DataLakeLeaseClient object, that can be run in a context manager.
     types:
@@ -309,6 +317,10 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: directory
+    isRequired: true
+  - name: metadata
+    defaultValue: None
   return:
     description: DataLakeDirectoryClient
   examples:
@@ -478,6 +490,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: file
+    isRequired: true
   return:
     description: DataLakeFileClient
   examples:
@@ -518,6 +532,10 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: metadata
+    defaultValue: None
+  - name: public_access
+    defaultValue: None
   return:
     description: A dictionary of response headers.
     types:
@@ -593,6 +611,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: directory
+    isRequired: true
   return:
     description: DataLakeDirectoryClient
   examples:
@@ -665,6 +685,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: file
+    isRequired: true
   return:
     description: DataLakeFileClient
   examples:
@@ -792,6 +814,12 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
+  - name: file_system_name
     isRequired: true
   - name: credential
     defaultValue: None
@@ -823,6 +851,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.DirectoryProperties>
+  - name: directory
+    isRequired: true
   return:
     description: A DataLakeDirectoryClient.
     types:
@@ -855,6 +885,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.FileProperties>
+  - name: file_path
+    isRequired: true
   return:
     description: A DataLakeFileClient.
     types:
@@ -942,7 +974,7 @@ methods:
       number of items to return per page. If omitted or greater than 5,000, the
 
       response will include up to 5,000 items per page.'
-    defaultValue: 'True'
+    defaultValue: None
     types:
     - <xref:int>
   - name: upn
@@ -961,11 +993,16 @@ methods:
       application Object IDs are not translated because they do not have
 
       unique friendly names.'
-    defaultValue: None
   - name: timeout
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: path
+    defaultValue: None
+  - name: recursive
+    defaultValue: 'True'
+  - name: max_results
+    defaultValue: None
   return:
     description: An iterable (auto-paging) response of PathProperties.
     types:
@@ -1075,6 +1112,10 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: signed_identifiers
+    isRequired: true
+  - name: public_access
+    defaultValue: None
   return:
     description: File System-updated property dict (Etag and last modified).
     types:
@@ -1145,6 +1186,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: metadata
+    isRequired: true
   return:
     description: filesystem-updated property dict (Etag and last modified).
   examples:

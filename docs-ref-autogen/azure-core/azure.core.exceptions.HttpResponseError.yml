@@ -20,6 +20,10 @@ constructor:
     types:
     - <xref:azure.core.pipeline.transport.HttpResponse>
     - <xref:azure.core.pipeline.transport.AsyncHttpResponse>
+  - name: message
+    defaultValue: None
+  - name: response
+    defaultValue: None
 variables:
 - description: The HTTP response reason
   name: reason

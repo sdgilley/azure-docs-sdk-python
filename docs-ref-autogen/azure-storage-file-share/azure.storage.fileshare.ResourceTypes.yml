@@ -32,6 +32,12 @@ constructor:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: service
+    defaultValue: 'False'
+  - name: container
+    defaultValue: 'False'
+  - name: object
+    defaultValue: 'False'
 methods:
 - uid: azure.storage.fileshare.ResourceTypes.from_string
   name: from_string
@@ -52,6 +58,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: string
     isRequired: true
   return:

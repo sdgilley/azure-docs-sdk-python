@@ -99,7 +99,7 @@ constructor:
       current is the number of bytes transfered so far, and total is the
 
       size of the blob, or None if the total size is unknown.'
-    defaultValue: 'False'
+    defaultValue: None
     types:
     - <xref:callable >[<xref:None>]
   - name: timeout
@@ -107,9 +107,30 @@ constructor:
       before the
 
       process will stop and raise an exception if  transfer is still in progress'
-    defaultValue: None
+    defaultValue: '0'
     types:
     - <xref:int >(<xref:0>)
+  - name: adlfs
+  - name: rpath
+  - name: lpath
+  - name: nthreads
+    defaultValue: None
+  - name: chunksize
+    defaultValue: '268435456'
+  - name: buffersize
+    defaultValue: '4194304'
+  - name: blocksize
+    defaultValue: '4194304'
+  - name: client
+    defaultValue: None
+  - name: run
+    defaultValue: 'True'
+  - name: overwrite
+    defaultValue: 'False'
+  - name: verbose
+    defaultValue: 'False'
+  - name: progress_callback
+    defaultValue: None
   - name: timeout
     defaultValue: '0'
 methods:
@@ -145,6 +166,10 @@ methods:
     defaultValue: 'True'
     types:
     - <xref:bool >[<xref:True>]
+  - name: nthreads
+    defaultValue: None
+  - name: monitor
+    defaultValue: 'True'
 - uid: azure.datalake.store.multithread.ADLUploader.save
   name: save
   summary: 'Persist this upload
@@ -175,6 +200,8 @@ methods:
     defaultValue: 'True'
     types:
     - <xref:bool >(<xref:True>)
+  - name: keep
+    defaultValue: 'True'
 - uid: azure.datalake.store.multithread.ADLUploader.successful
   name: successful
   summary: 'Return whether the uploader completed successfully.

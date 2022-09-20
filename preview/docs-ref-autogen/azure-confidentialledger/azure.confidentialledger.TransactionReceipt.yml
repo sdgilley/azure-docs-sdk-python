@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:List>[<xref:int>]
+  - name: transaction_id
+  - name: receipt
 attributes:
 - uid: azure.confidentialledger.TransactionReceipt.contents
   name: contents

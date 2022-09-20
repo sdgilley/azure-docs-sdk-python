@@ -29,6 +29,9 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: client
+  - name: lease_id
+    defaultValue: None
 variables:
 - description: 'The ID of the lease currently being maintained. This will be *None*
     if no
@@ -112,6 +115,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: lease_duration
+    defaultValue: '-1'
   return:
     types:
     - <xref:None>
@@ -185,6 +190,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: lease_break_period
+    defaultValue: None
   return:
     description: Approximate time remaining in the lease period, in seconds.
     types:
@@ -241,6 +248,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: proposed_lease_id
+    isRequired: true
   return:
     description: None
 - uid: azure.storage.filedatalake.DataLakeLeaseClient.release

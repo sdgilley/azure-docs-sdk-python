@@ -28,3 +28,7 @@ constructor:
     defaultValue: None
     types:
     - <xref:int>
+  - name: enabled
+    defaultValue: 'False'
+  - name: days
+    defaultValue: None

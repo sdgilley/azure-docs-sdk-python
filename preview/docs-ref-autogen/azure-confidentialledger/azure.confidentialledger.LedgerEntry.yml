@@ -24,6 +24,9 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: transaction_id
+  - name: contents
+  - name: sub_ledger_id
 attributes:
 - uid: azure.confidentialledger.LedgerEntry.contents
   name: contents

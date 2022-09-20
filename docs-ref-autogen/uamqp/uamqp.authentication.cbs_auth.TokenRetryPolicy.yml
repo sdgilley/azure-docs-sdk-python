@@ -27,3 +27,7 @@ constructor:
     defaultValue: '0'
     types:
     - <xref:int>
+  - name: retries
+    defaultValue: '3'
+  - name: backoff
+    defaultValue: '0'

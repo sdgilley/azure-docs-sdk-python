@@ -20,6 +20,8 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.credentials_async.AsyncTokenCredential>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.messaging.webpubsubservice.aio.WebPubSubServiceClient.from_connection_string
   name: from_connection_string

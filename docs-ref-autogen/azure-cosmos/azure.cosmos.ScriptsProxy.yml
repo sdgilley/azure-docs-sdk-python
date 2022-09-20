@@ -32,6 +32,8 @@ methods:
   - name: body
     description: A dict-like object representing the sproc to create.
     isRequired: true
+  - name: body
+    isRequired: true
   return:
     description: A dict representing the new stored procedure.
     types:
@@ -50,6 +52,8 @@ methods:
   parameters:
   - name: body
     description: A dict-like object representing the trigger to create.
+    isRequired: true
+  - name: body
     isRequired: true
   return:
     description: A dict representing the new trigger.
@@ -71,6 +75,8 @@ methods:
   - name: body
     description: A dict-like object representing the udf to create.
     isRequired: true
+  - name: body
+    isRequired: true
   return:
     description: A dict representing the new user-defined function.
     types:
@@ -90,6 +96,8 @@ methods:
   parameters:
   - name: sproc
     description: The ID (name) or dict representing stored procedure to be deleted.
+    isRequired: true
+  - name: sproc
     isRequired: true
   return:
     types:
@@ -111,6 +119,8 @@ methods:
   - name: trigger
     description: The ID (name) or dict representing trigger to be deleted.
     isRequired: true
+  - name: trigger
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -130,6 +140,8 @@ methods:
   parameters:
   - name: udf
     description: The ID (name) or dict representing udf to be deleted.
+    isRequired: true
+  - name: udf
     isRequired: true
   return:
     types:
@@ -165,6 +177,14 @@ methods:
     defaultValue: None
     types:
     - <xref:bool>
+  - name: sproc
+    isRequired: true
+  - name: partition_key
+    defaultValue: None
+  - name: params
+    defaultValue: None
+  - name: enable_script_logging
+    defaultValue: None
   return:
     description: Result of the executed stored procedure for the given parameters.
     types:
@@ -183,6 +203,8 @@ methods:
   - name: sproc
     description: The ID (name) or dict representing stored procedure to retrieve.
     isRequired: true
+  - name: sproc
+    isRequired: true
   return:
     description: A dict representing the retrieved stored procedure.
     types:
@@ -199,6 +221,8 @@ methods:
   - name: trigger
     description: The ID (name) or dict representing trigger to retrieve.
     isRequired: true
+  - name: trigger
+    isRequired: true
   return:
     description: A dict representing the retrieved trigger.
     types:
@@ -214,6 +238,8 @@ methods:
   parameters:
   - name: udf
     description: The ID (name) or dict representing udf to retrieve.
+    isRequired: true
+  - name: udf
     isRequired: true
   return:
     description: A dict representing the retrieved user-defined function.
@@ -233,6 +259,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: max_item_count
+    defaultValue: None
   return:
     description: An Iterable of stored procedures (dicts).
     types:
@@ -246,6 +274,8 @@ methods:
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
     defaultValue: None
+  - name: max_item_count
+    defaultValue: None
   return:
     description: An Iterable of triggers (dicts).
     types:
@@ -258,6 +288,8 @@ methods:
   parameters:
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
+    defaultValue: None
+  - name: max_item_count
     defaultValue: None
   return:
     description: An Iterable of user-defined functions (dicts).
@@ -280,6 +312,12 @@ methods:
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
     defaultValue: None
+  - name: query
+    isRequired: true
+  - name: parameters
+    defaultValue: None
+  - name: max_item_count
+    defaultValue: None
   return:
     description: An Iterable of stored procedures (dicts).
     types:
@@ -299,6 +337,12 @@ methods:
     defaultValue: None
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
+    defaultValue: None
+  - name: query
+    isRequired: true
+  - name: parameters
+    defaultValue: None
+  - name: max_item_count
     defaultValue: None
   return:
     description: An Iterable of triggers (dicts).
@@ -321,6 +365,12 @@ methods:
   - name: max_item_count
     description: Max number of items to be returned in the enumeration operation.
     defaultValue: None
+  - name: query
+    isRequired: true
+  - name: parameters
+    defaultValue: None
+  - name: max_item_count
+    defaultValue: None
   return:
     description: An Iterable of user-defined functions (dicts).
     types:
@@ -340,6 +390,10 @@ methods:
     isRequired: true
   - name: body
     description: A dict-like object representing the sproc to replace.
+    isRequired: true
+  - name: sproc
+    isRequired: true
+  - name: body
     isRequired: true
   return:
     description: A dict representing the stored procedure after replace went through.
@@ -365,6 +419,10 @@ methods:
   - name: body
     description: A dict-like object representing the trigger to replace.
     isRequired: true
+  - name: trigger
+    isRequired: true
+  - name: body
+    isRequired: true
   return:
     description: A dict representing the trigger after replace went through.
     types:
@@ -388,6 +446,10 @@ methods:
     isRequired: true
   - name: body
     description: A dict-like object representing the udf to replace.
+    isRequired: true
+  - name: udf
+    isRequired: true
+  - name: body
     isRequired: true
   return:
     description: A dict representing the user-defined function after replace went

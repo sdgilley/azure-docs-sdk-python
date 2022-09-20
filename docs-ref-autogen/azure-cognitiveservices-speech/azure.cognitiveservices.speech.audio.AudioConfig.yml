@@ -43,3 +43,11 @@ constructor:
   - name: stream
     description: Creates an AudioConfig object representing the specified stream.
     defaultValue: None
+  - name: use_default_microphone
+    defaultValue: 'False'
+  - name: filename
+    defaultValue: None
+  - name: stream
+    defaultValue: None
+  - name: device_name
+    defaultValue: None

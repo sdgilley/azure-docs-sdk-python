@@ -57,6 +57,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: project_id
+    isRequired: true
+  - name: published_name
+    isRequired: true
+  - name: image_data
+    isRequired: true
+  - name: application
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImagePrediction or ClientRawResponse if raw=true
     types:
@@ -111,6 +123,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: project_id
+    isRequired: true
+  - name: published_name
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: application
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImagePrediction or ClientRawResponse if raw=true
     types:
@@ -165,6 +189,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: project_id
+    isRequired: true
+  - name: published_name
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: application
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImagePrediction or ClientRawResponse if raw=true
     types:
@@ -221,6 +257,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: project_id
+    isRequired: true
+  - name: published_name
+    isRequired: true
+  - name: image_data
+    isRequired: true
+  - name: application
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImagePrediction or ClientRawResponse if raw=true
     types:
@@ -277,6 +325,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: project_id
+    isRequired: true
+  - name: published_name
+    isRequired: true
+  - name: image_data
+    isRequired: true
+  - name: application
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImagePrediction or ClientRawResponse if raw=true
     types:
@@ -331,6 +391,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: project_id
+    isRequired: true
+  - name: published_name
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: application
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImagePrediction or ClientRawResponse if raw=true
     types:
@@ -385,6 +457,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: project_id
+    isRequired: true
+  - name: published_name
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: application
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImagePrediction or ClientRawResponse if raw=true
     types:
@@ -441,6 +525,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: project_id
+    isRequired: true
+  - name: published_name
+    isRequired: true
+  - name: image_data
+    isRequired: true
+  - name: application
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImagePrediction or ClientRawResponse if raw=true
     types:

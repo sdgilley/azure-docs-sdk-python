@@ -24,6 +24,7 @@ constructor:
     isRequired: true
     types:
     - <xref:dict>
+  - name: json_object
 variables:
 - description: 'Its value is a service-defined error code.
 

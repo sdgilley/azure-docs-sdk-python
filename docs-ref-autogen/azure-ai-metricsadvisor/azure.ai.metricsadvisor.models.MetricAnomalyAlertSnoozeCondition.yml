@@ -26,3 +26,6 @@ constructor:
     isRequired: true
     types:
     - <xref:bool>
+  - name: auto_snooze
+  - name: snooze_scope
+  - name: only_for_successive

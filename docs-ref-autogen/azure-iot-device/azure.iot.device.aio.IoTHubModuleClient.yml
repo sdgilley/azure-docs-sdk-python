@@ -134,6 +134,10 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: cls
+    isRequired: true
+  - name: connection_string
+    isRequired: true
   return:
     description: An instance of an IoTHub client that uses a connection string for
       authentication.
@@ -215,6 +219,8 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: cls
+    isRequired: true
   return:
     description: 'An instance of an IoTHub client that uses the IoT Edge environment
       for
@@ -315,6 +321,10 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: cls
+    isRequired: true
+  - name: sastoken
+    isRequired: true
   exceptions:
   - type: TypeError if given an unsupported parameter.
   - type: ValueError if the sastoken parameter is invalid.
@@ -432,6 +442,16 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: cls
+    isRequired: true
+  - name: x509
+    isRequired: true
+  - name: hostname
+    isRequired: true
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
   return:
     description: An instance of an IoTHub client that uses an X509 certificate for
       authentication.
@@ -510,6 +530,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: method_params
+    isRequired: true
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    defaultValue: None
   return:
     description: method_result should contain a status, and a payload
     types:
@@ -531,6 +557,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: reported_properties_patch
+    isRequired: true
   exceptions:
   - type: azure.iot.device.exceptions.CredentialError
     description: 'if credentials are invalid
@@ -600,6 +628,8 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: method_name
+    defaultValue: None
   return:
     description: MethodRequest object representing the received method request.
     types:
@@ -641,6 +671,8 @@ methods:
     types:
     - <xref:azure.iot.device.Message>
     - <xref:str>
+  - name: message
+    isRequired: true
   exceptions:
   - type: azure.iot.device.exceptions.CredentialError
     description: 'if credentials are invalid
@@ -695,6 +727,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: message
+    isRequired: true
+  - name: output_name
+    isRequired: true
   exceptions:
   - type: azure.iot.device.exceptions.CredentialError
     description: 'if credentials are invalid
@@ -738,6 +774,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.device.MethodResponse>
+  - name: method_response
+    isRequired: true
   exceptions:
   - type: azure.iot.device.exceptions.CredentialError
     description: 'if credentials are invalid
@@ -792,6 +830,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: sastoken
+    isRequired: true
   exceptions:
   - type: ValueError if the sastoken parameter is invalid
   - type: azure.iot.device.exceptions.CredentialError

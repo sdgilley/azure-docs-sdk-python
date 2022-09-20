@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -82,6 +86,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: group_id
+    isRequired: true
+  - name: create_management_group_request
+    isRequired: true
+  - name: cache_control
+    defaultValue: no-cache
   return:
     description: An instance of LROPoller that returns either ManagementGroup or the
       result of cls(response)
@@ -131,6 +141,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: group_id
+    isRequired: true
+  - name: cache_control
+    defaultValue: no-cache
   return:
     description: An instance of LROPoller that returns either AzureAsyncOperationResults
       or the result of cls(response)
@@ -193,6 +207,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: group_id
+    isRequired: true
+  - name: expand
+    defaultValue: None
+  - name: recurse
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: cache_control
+    defaultValue: no-cache
   return:
     description: ManagementGroup, or the result of cls(response)
     types:
@@ -236,6 +260,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: group_id
+    isRequired: true
+  - name: skiptoken
+    defaultValue: None
+  - name: top
+    defaultValue: None
   return:
     description: An iterator like instance of either DescendantListResult or the result
       of cls(response)
@@ -275,6 +305,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: cache_control
+    defaultValue: no-cache
+  - name: skiptoken
+    defaultValue: None
   return:
     description: An iterator like instance of either ManagementGroupListResult or
       the result of cls(response)
@@ -310,6 +344,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: group_id
+    isRequired: true
+  - name: patch_group_request
+    isRequired: true
+  - name: cache_control
+    defaultValue: no-cache
   return:
     description: ManagementGroup, or the result of cls(response)
     types:

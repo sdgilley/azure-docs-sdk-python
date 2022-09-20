@@ -26,6 +26,8 @@ methods:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: response
+    isRequired: true
   exceptions:
   - type: <xref:BadResponse if response has no body>, <xref:or body does notcontain
       status.>
@@ -41,6 +43,8 @@ methods:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: response
+    isRequired: true
   exceptions:
   - type: BadResponse if response has no body and not status 202.
 - uid: msrestazure.azure_operation.LongRunningOperation.get_status_from_resource
@@ -55,6 +59,8 @@ methods:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: response
+    isRequired: true
   exceptions:
   - type: BadResponse if status not 200 or 204.
 - uid: msrestazure.azure_operation.LongRunningOperation.set_async_url_if_present
@@ -75,6 +81,8 @@ methods:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: response
+    isRequired: true
 - uid: msrestazure.azure_operation.LongRunningOperation.should_do_final_get
   name: should_do_final_get
   summary: Check whether the polling should end doing a final GET.

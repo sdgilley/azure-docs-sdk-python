@@ -30,6 +30,8 @@ constructor:
       More on consistency levels and possible values: [https://aka.ms/cosmos-consistency-levels](https://aka.ms/cosmos-consistency-levels)'
     types:
     - <xref:str>
+  - name: url
+  - name: credential
 examples:
 - "Create a new instance of the Cosmos DB client:<!--[!code-python[Main](les\\examples_async.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -221,6 +223,10 @@ methods:
       More on consistency levels and possible values: [https://aka.ms/cosmos-consistency-levels](https://aka.ms/cosmos-consistency-levels)'
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
   return:
     description: a CosmosClient instance
     types:
@@ -239,6 +245,8 @@ methods:
     types:
     - <xref:Union>[<xref:str>, <xref:azure.cosmos.DatabaseProxy>, <xref:Dict>[<xref:str>,
       <xref:Any>]]
+  - name: database
+    isRequired: true
   return:
     description: A *DatabaseProxy* instance representing the retrieved database.
     types:

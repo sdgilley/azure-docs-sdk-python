@@ -23,6 +23,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: lock_token
+    isRequired: true
   return:
     description: None.
   exceptions:
@@ -37,6 +39,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: lock_token
+    isRequired: true
   return:
     description: None.
   exceptions:

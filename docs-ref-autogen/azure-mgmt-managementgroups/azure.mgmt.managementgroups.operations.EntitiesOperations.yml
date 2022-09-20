@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -169,6 +173,24 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: skiptoken
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: search
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: view
+    defaultValue: None
+  - name: group_name
+    defaultValue: None
+  - name: cache_control
+    defaultValue: no-cache
   return:
     description: An iterator like instance of either EntityListResult or the result
       of cls(response)

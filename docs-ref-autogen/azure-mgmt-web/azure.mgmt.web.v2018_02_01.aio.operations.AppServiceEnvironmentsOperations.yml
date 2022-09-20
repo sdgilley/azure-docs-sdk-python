@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -77,6 +81,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_info
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns an iterator like instance
       of either WebAppCollection or the result of cls(response)
@@ -130,6 +140,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: hosting_environment_envelope
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either AppServiceEnvironmentResource
       or the result of cls(response)
@@ -183,6 +199,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: multi_role_pool_envelope
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either WorkerPoolResource
       or the result of cls(response)
@@ -241,6 +263,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
+  - name: worker_pool_envelope
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either WorkerPoolResource
       or the result of cls(response)
@@ -295,6 +325,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: force_delete
+    defaultValue: None
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -342,6 +378,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns an iterator like instance
       of either WebAppCollection or the result of cls(response)
@@ -389,6 +429,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns an iterator like instance
       of either WebAppCollection or the result of cls(response)
@@ -418,6 +462,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: AppServiceEnvironmentResource, or the result of cls(response)
     types:
@@ -452,6 +500,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: diagnostics_name
+    isRequired: true
   return:
     description: HostingEnvironmentDiagnostics, or the result of cls(response)
     types:
@@ -482,6 +536,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either InboundEnvironmentEndpointCollection
       or the result of cls(response)
@@ -512,6 +570,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: WorkerPoolResource, or the result of cls(response)
     types:
@@ -542,6 +604,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either OutboundEnvironmentEndpointCollection
       or the result of cls(response)
@@ -577,6 +643,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
   return:
     description: WorkerPoolResource, or the result of cls(response)
     types:
@@ -625,6 +697,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either AppServicePlanCollection or the
       result of cls(response)
@@ -649,6 +725,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An iterator like instance of either AppServiceEnvironmentCollection
       or the result of cls(response)
@@ -679,6 +757,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either StampCapacityCollection or the
       result of cls(response)
@@ -709,6 +791,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: list of HostingEnvironmentDiagnostics, or the result of cls(response)
     types:
@@ -738,6 +824,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: MetricDefinition, or the result of cls(response)
     types:
@@ -788,6 +878,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: details
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either ResourceMetricCollection or the
       result of cls(response)
@@ -818,6 +916,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either ResourceMetricDefinitionCollection
       or the result of cls(response)
@@ -886,6 +988,20 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: end_time
+    defaultValue: None
+  - name: time_grain
+    defaultValue: None
+  - name: details
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either ResourceMetricCollection or the
       result of cls(response)
@@ -925,6 +1041,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: instance
+    isRequired: true
   return:
     description: An iterator like instance of either ResourceMetricDefinitionCollection
       or the result of cls(response)
@@ -969,6 +1091,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: instance
+    isRequired: true
+  - name: details
+    defaultValue: None
   return:
     description: An iterator like instance of either ResourceMetricCollection or the
       result of cls(response)
@@ -999,6 +1129,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either SkuInfoCollection or the result
       of cls(response)
@@ -1029,6 +1163,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either WorkerPoolCollection or the result
       of cls(response)
@@ -1059,6 +1197,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either UsageCollection or the result
       of cls(response)
@@ -1089,6 +1231,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: list of Operation, or the result of cls(response)
     types:
@@ -1131,6 +1277,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either CsmUsageQuotaCollection or the
       result of cls(response)
@@ -1161,6 +1313,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: AddressResponse, or the result of cls(response)
     types:
@@ -1195,6 +1351,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: properties_to_include
+    defaultValue: None
   return:
     description: An iterator like instance of either WebAppCollection or the result
       of cls(response)
@@ -1230,6 +1392,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
   return:
     description: An iterator like instance of either ResourceMetricDefinitionCollection
       or the result of cls(response)
@@ -1288,6 +1456,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
+  - name: details
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either ResourceMetricCollection or the
       result of cls(response)
@@ -1323,6 +1501,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
   return:
     description: An iterator like instance of either UsageCollection or the result
       of cls(response)
@@ -1365,6 +1549,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
+  - name: instance
+    isRequired: true
   return:
     description: An iterator like instance of either ResourceMetricDefinitionCollection
       or the result of cls(response)
@@ -1428,6 +1620,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
+  - name: instance
+    isRequired: true
+  - name: details
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either ResourceMetricCollection or the
       result of cls(response)
@@ -1463,6 +1667,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
   return:
     description: An iterator like instance of either SkuInfoCollection or the result
       of cls(response)
@@ -1493,6 +1703,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either WorkerPoolCollection or the result
       of cls(response)
@@ -1523,6 +1737,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -1558,6 +1776,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: hosting_environment_envelope
+    isRequired: true
   return:
     description: AppServiceEnvironmentResource, or the result of cls(response)
     types:
@@ -1594,6 +1818,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: multi_role_pool_envelope
+    isRequired: true
   return:
     description: WorkerPoolResource, or the result of cls(response)
     types:
@@ -1635,6 +1865,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_pool_name
+    isRequired: true
+  - name: worker_pool_envelope
+    isRequired: true
   return:
     description: WorkerPoolResource, or the result of cls(response)
     types:

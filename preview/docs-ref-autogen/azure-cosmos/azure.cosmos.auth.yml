@@ -34,6 +34,12 @@ functions:
     isRequired: true
     types:
     - <xref:dict>
+  - name: cosmos_client_connection
+  - name: verb
+  - name: path
+  - name: resource_id_or_fullname
+  - name: is_name_based
+  - name: resource_type
   - name: headers
   return:
     description: The authorization headers.

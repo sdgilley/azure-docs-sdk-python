@@ -19,6 +19,8 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: filepath
+    defaultValue: None
 methods:
 - uid: msrest.universal_http.HTTPSenderConfiguration.load
   name: load
@@ -30,6 +32,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: filepath
+    isRequired: true
   exceptions:
   - type: ValueError if supplied config file is invalid.
 - uid: msrest.universal_http.HTTPSenderConfiguration.save
@@ -42,5 +46,7 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: filepath
+    isRequired: true
   exceptions:
   - type: ValueError if supplied filepath cannot be written to.

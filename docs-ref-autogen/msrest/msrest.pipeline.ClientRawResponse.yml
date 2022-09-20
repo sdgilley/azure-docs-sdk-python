@@ -27,6 +27,8 @@ constructor:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: output
+  - name: response
 methods:
 - uid: msrest.pipeline.ClientRawResponse.add_headers
   name: add_headers
@@ -40,3 +42,5 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: header_dict
+    isRequired: true

@@ -24,5 +24,7 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: continuation_token
+    defaultValue: None
   return:
     description: An async iterator of pages (themselves async iterator of objects)

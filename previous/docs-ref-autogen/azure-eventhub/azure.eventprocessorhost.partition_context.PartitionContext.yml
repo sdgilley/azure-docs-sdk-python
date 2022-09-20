@@ -70,6 +70,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventhub.common.EventData>
+  - name: event_data
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_context.PartitionContext.to_string
   name: to_string
   summary: 'Returns the parition context in the following format:

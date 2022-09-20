@@ -19,6 +19,9 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: base_url
+  - name: filepath
+    defaultValue: None
 methods:
 - uid: msrest.Configuration.add_user_agent
   name: add_user_agent
@@ -30,6 +33,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: value
+    isRequired: true
 attributes:
 - uid: msrest.Configuration.enable_http_logger
   name: enable_http_logger

@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version. Constant value: "2019-03-01".'
   name: api_version
@@ -70,6 +74,20 @@ methods:
 
       polling object for personal polling strategy'
     defaultValue: 'True'
+  - name: device_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
+    defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns BandwidthSchedule or
 
@@ -116,6 +134,18 @@ methods:
     description: 'True for ARMPolling, False for no polling, or a
 
       polling object for personal polling strategy'
+    defaultValue: 'True'
+  - name: device_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: polling
     defaultValue: 'True'
   return:
     description: 'An instance of LROPoller that returns None or
@@ -164,6 +194,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: BandwidthSchedule or ClientRawResponse if raw=true
     types:
@@ -204,6 +244,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of BandwidthSchedule
     types:

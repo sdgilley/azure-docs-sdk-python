@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -74,6 +78,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: data_box_edge_device
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either DataBoxEdgeDevice
       or the result of cls(response)
@@ -124,6 +134,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: security_settings
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -168,6 +184,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -215,6 +235,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -262,6 +286,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -309,6 +337,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -335,6 +367,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: DataBoxEdgeDevice, or the result of cls(response)
     types:
@@ -362,6 +398,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: DataBoxEdgeDeviceExtendedInfo, or the result of cls(response)
     types:
@@ -389,6 +429,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: NetworkSettings, or the result of cls(response)
     types:
@@ -423,6 +467,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: UpdateSummary, or the result of cls(response)
     types:
@@ -452,6 +500,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: expand
+    defaultValue: None
   return:
     description: An iterator like instance of either DataBoxEdgeDeviceList or the
       result of cls(response)
@@ -476,6 +528,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: expand
+    defaultValue: None
   return:
     description: An iterator like instance of either DataBoxEdgeDeviceList or the
       result of cls(response)
@@ -509,6 +563,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: DataBoxEdgeDevice, or the result of cls(response)
     types:
@@ -541,6 +601,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: UploadCertificateResponse, or the result of cls(response)
     types:

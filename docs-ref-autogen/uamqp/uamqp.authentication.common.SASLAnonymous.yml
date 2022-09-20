@@ -59,3 +59,14 @@ constructor:
     defaultValue: UTF-8
     types:
     - <xref:str>
+  - name: hostname
+  - name: port
+    defaultValue: '5671'
+  - name: verify
+    defaultValue: None
+  - name: http_proxy
+    defaultValue: None
+  - name: transport_type
+    defaultValue: TransportType.Amqp
+  - name: encoding
+    defaultValue: UTF-8

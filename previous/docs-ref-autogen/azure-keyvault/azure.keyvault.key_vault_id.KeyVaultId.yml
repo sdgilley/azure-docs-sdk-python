@@ -33,6 +33,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: vault
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: version
+    defaultValue: None
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -50,6 +56,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: vault
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -67,6 +77,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: vault
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -89,6 +103,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: vault
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: version
+    defaultValue: None
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -116,6 +136,14 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: collection
+    isRequired: true
+  - name: vault
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: version
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -138,6 +166,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: vault
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: version
+    defaultValue: None
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -150,6 +184,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: id
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -162,6 +198,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: id
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -174,6 +212,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: id
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -186,6 +226,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: id
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -203,6 +245,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: collection
+    isRequired: true
+  - name: id
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>
@@ -215,6 +261,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: id
+    isRequired: true
   return:
     types:
     - <xref:azure.keyvault.key_vault_id.KeyVaultId>

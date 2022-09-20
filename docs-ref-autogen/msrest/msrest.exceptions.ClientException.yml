@@ -20,3 +20,6 @@ constructor:
     defaultValue: None
     types:
     - <xref:Exception>
+  - name: message
+  - name: inner_exception
+    defaultValue: None

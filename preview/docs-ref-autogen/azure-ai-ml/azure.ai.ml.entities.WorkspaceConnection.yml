@@ -49,6 +49,8 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:PathLike>, <xref:str>]
+  - name: path
+    isRequired: true
 attributes:
 - uid: azure.ai.ml.entities.WorkspaceConnection.credentials
   name: credentials

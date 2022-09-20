@@ -35,6 +35,11 @@ constructor:
       header is present.
     types:
     - <xref:int>
+  - name: credential
+  - name: subscription_id
+  - name: referer
+  - name: base_url
+    defaultValue: None
 variables:
 - description: Operations operations
   name: operations

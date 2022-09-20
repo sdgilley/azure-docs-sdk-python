@@ -33,3 +33,4 @@ constructor:
     isRequired: true
     types:
     - <xref:bool>
+  - name: default_encryption_scope

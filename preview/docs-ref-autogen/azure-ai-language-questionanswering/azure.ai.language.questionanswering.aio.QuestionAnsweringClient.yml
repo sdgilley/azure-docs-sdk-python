@@ -39,3 +39,5 @@ constructor:
     description: Sets the default language to use for all operations.
     types:
     - <xref:str>
+  - name: endpoint
+  - name: credential

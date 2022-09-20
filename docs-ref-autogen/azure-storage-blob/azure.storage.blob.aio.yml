@@ -90,6 +90,10 @@ functions:
       entire blocks, and doing so defeats the purpose of the memory-efficient algorithm.'
     types:
     - <xref:bool>
+  - name: blob_url
+  - name: output
+  - name: credential
+    defaultValue: None
   return:
     types:
     - <xref:None>
@@ -177,6 +181,10 @@ functions:
     description: Encoding to use if text is supplied as input. Defaults to UTF-8.
     types:
     - <xref:str>
+  - name: blob_url
+  - name: data
+  - name: credential
+    defaultValue: None
   return:
     description: Blob-updated property dict (Etag and last modified)
     types:

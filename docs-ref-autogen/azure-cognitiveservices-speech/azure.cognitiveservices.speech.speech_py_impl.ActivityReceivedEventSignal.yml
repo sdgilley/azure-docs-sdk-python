@@ -25,6 +25,8 @@ methods:
   - name: callback
     description: Callback to connect.
     isRequired: true
+  - name: func
+    isRequired: true
   - name: wrapped_type
     isRequired: true
 - uid: azure.cognitiveservices.speech.speech_py_impl.ActivityReceivedEventSignal.disconnect_all
@@ -38,4 +40,6 @@ methods:
   parameters:
   - name: t
     description: Event arguments to signal.
+    isRequired: true
+  - name: t
     isRequired: true

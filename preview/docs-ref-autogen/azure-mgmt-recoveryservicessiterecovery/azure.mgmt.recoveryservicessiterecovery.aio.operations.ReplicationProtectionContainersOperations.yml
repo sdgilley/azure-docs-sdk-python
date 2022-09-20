@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -77,6 +81,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: creation_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ProtectionContainer
       or the result of cls(response)
@@ -124,6 +134,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -178,6 +192,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: discover_protectable_item_request
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ProtectionContainer
       or the result of cls(response)
@@ -235,6 +255,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
+  - name: switch_input
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ProtectionContainer
       or the result of cls(response)
@@ -265,6 +291,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: fabric_name
+    isRequired: true
+  - name: protection_container_name
+    isRequired: true
   return:
     description: ProtectionContainer, or the result of cls(response)
     types:
@@ -307,6 +337,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: fabric_name
+    isRequired: true
   return:
     description: An iterator like instance of either ProtectionContainerCollection
       or the result of cls(response)

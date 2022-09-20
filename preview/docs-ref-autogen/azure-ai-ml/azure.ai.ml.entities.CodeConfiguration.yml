@@ -20,6 +20,10 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>, <xref:optional>
+  - name: code
+    defaultValue: None
+  - name: scoring_script
+    defaultValue: None
 attributes:
 - uid: azure.ai.ml.entities.CodeConfiguration.scoring_script
   name: scoring_script

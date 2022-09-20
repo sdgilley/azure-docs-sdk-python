@@ -53,6 +53,17 @@ constructor:
     defaultValue: UTF-8
     types:
     - <xref:str>
+  - name: hostname
+  - name: port
+    defaultValue: None
+  - name: verify
+    defaultValue: None
+  - name: http_proxy
+    defaultValue: None
+  - name: transport_type
+    defaultValue: TransportType.Amqp
+  - name: encoding
+    defaultValue: UTF-8
 methods:
 - uid: uamqp.authentication.common.AMQPAuth.close
   name: close
@@ -89,6 +100,10 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: hostname
+    isRequired: true
+  - name: port
+    isRequired: true
 - uid: uamqp.authentication.common.AMQPAuth.set_wsio
   name: set_wsio
   summary: Setup the default underlying Web Socket IO layer.
@@ -104,5 +119,9 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: hostname
+    isRequired: true
+  - name: port
+    isRequired: true
   - name: http_proxy
     isRequired: true

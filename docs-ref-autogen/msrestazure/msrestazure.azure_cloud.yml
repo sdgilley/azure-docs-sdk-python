@@ -23,6 +23,9 @@ functions:
     defaultValue: None
     types:
     - <xref:str>
+  - name: arm_endpoint
+  - name: name
+    defaultValue: None
   - name: session
     defaultValue: None
   return:

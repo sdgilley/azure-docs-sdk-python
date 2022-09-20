@@ -75,6 +75,8 @@ methods:
   - name: model
     description: the keyword recognition model that specifies the keyword to be recognized.
     isRequired: true
+  - name: model
+    isRequired: true
 - uid: azure.cognitiveservices.speech.Recognizer.start_keyword_recognition_async
   name: start_keyword_recognition_async
   summary: 'Asynchronously configures the recognizer with the given keyword model.
@@ -86,6 +88,8 @@ methods:
   parameters:
   - name: model
     description: the keyword recognition model that specifies the keyword to be recognized.
+    isRequired: true
+  - name: model
     isRequired: true
   return:
     description: A future that is fulfilled once recognition has been initialized.

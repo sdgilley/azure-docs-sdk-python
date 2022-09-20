@@ -149,3 +149,25 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: table_name
+    isRequired: true
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
+  - name: start_pk
+    defaultValue: None
+  - name: start_rk
+    defaultValue: None
+  - name: end_pk
+    defaultValue: None
+  - name: end_rk
+    defaultValue: None

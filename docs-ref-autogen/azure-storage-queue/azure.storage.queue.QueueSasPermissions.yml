@@ -36,6 +36,14 @@ constructor:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: read
+    defaultValue: 'False'
+  - name: add
+    defaultValue: 'False'
+  - name: update
+    defaultValue: 'False'
+  - name: process
+    defaultValue: 'False'
 methods:
 - uid: azure.storage.queue.QueueSasPermissions.from_string
   name: from_string
@@ -56,6 +64,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: permission
     isRequired: true
   return:

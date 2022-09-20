@@ -13,6 +13,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: url
   return:
     description: Tuple with the Response status code and the data returned from the
       request
@@ -28,6 +29,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: url
   return:
     description: Tuple with the Response status code and the data returned from the
       request
@@ -49,6 +51,9 @@ functions:
     defaultValue: None
     types:
     - <xref:Any>
+  - name: url
+  - name: data
+    defaultValue: None
   return:
     description: Tuple with the Response status code and the data returned from the
       request

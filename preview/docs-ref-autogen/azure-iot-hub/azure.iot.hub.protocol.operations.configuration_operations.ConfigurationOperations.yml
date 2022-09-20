@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2020-05-31-preview".'
   name: api_version
@@ -64,6 +68,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: content
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -112,6 +124,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: configuration
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Configuration or ClientRawResponse if raw=true
     types:
@@ -165,6 +187,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -200,6 +230,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Configuration or ClientRawResponse if raw=true
     types:
@@ -237,6 +273,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: top
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -277,6 +319,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: input
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ConfigurationQueriesTestResponse or ClientRawResponse if
 

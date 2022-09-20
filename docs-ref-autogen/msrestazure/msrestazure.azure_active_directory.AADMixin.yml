@@ -30,6 +30,8 @@ methods:
     defaultValue: None
     types:
     - <xref:requests.Session>
+  - name: session
+    defaultValue: None
   return:
     types:
     - <xref:requests.Session.>
@@ -59,6 +61,8 @@ methods:
     defaultValue: None
     types:
     - <xref:requests.Session>
+  - name: session
+    defaultValue: None
 attributes:
 - uid: msrestazure.azure_active_directory.AADMixin.cloud_environment
   name: cloud_environment

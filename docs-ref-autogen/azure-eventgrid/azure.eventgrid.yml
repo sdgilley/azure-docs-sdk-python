@@ -28,6 +28,9 @@ functions:
       If not provided, the default API version will be used.'
     types:
     - <xref:str>
+  - name: endpoint
+  - name: shared_access_key
+  - name: expiration_date_utc
   return:
     types:
     - <xref:str>

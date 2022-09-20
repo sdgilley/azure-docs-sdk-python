@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.language.luis.authoring.operations.ExamplesOperations.add
   name: add
@@ -71,6 +75,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: example_label_object
+    isRequired: true
+  - name: enable_nested_children
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: LabelExampleResponse or ClientRawResponse if raw=true
     types:
@@ -123,6 +139,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: example_label_object_array
+    isRequired: true
+  - name: enable_nested_children
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -170,6 +198,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: example_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -229,6 +267,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: skip
+    defaultValue: '0'
+  - name: take
+    defaultValue: '100'
+  - name: enable_nested_children
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:

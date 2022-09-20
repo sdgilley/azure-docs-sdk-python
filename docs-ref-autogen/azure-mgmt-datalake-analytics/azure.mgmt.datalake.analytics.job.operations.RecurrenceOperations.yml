@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Client Api Version. Constant value: "2017-09-01-preview".'
   name: api_version
@@ -78,6 +82,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: recurrence_identity
+    isRequired: true
+  - name: start_date_time
+    defaultValue: None
+  - name: end_date_time
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobRecurrenceInformation or ClientRawResponse if raw=true
     types:
@@ -133,6 +149,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: start_date_time
+    defaultValue: None
+  - name: end_date_time
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of JobRecurrenceInformation
     types:

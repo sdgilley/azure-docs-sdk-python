@@ -58,6 +58,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: address_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: address_resource
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either AddressResource or the
       result of cls(response)
@@ -110,6 +116,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: order_item_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: order_item_resource
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either OrderItemResource or
       the result of cls(response)
@@ -159,6 +171,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: address_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -203,6 +219,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: order_item_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -252,6 +272,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: order_item_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: return_order_item_details
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -315,6 +341,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: address_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: address_update_parameter
+    isRequired: true
+  - name: if_match
+    defaultValue: None
   return:
     description: An instance of LROPoller that returns either AddressResource or the
       result of cls(response)
@@ -373,6 +407,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: order_item_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: order_item_update_parameter
+    isRequired: true
+  - name: if_match
+    defaultValue: None
   return:
     description: An instance of LROPoller that returns either OrderItemResource or
       the result of cls(response)
@@ -405,6 +447,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: order_item_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: cancellation_reason
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -436,6 +484,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: address_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: AddressResource, or the result of cls(response)
     types:
@@ -467,6 +519,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: order_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: location
+    isRequired: true
   return:
     description: OrderResource, or the result of cls(response)
     types:
@@ -507,6 +565,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: order_item_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: expand
+    defaultValue: None
   return:
     description: OrderItemResource, or the result of cls(response)
     types:
@@ -544,6 +608,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either AddressResourceList or the result
       of cls(response)
@@ -577,6 +647,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: filter
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either AddressResourceList or the result
       of cls(response)
@@ -610,6 +684,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: configurations_request
+    isRequired: true
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either Configurations or the result
       of cls(response)
@@ -656,6 +734,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either OrderResourceList or the result
       of cls(response)
@@ -681,6 +763,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either OrderResourceList or the result
       of cls(response)
@@ -734,6 +818,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: expand
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either OrderItemResourceList or the
       result of cls(response)
@@ -782,6 +874,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: filter
+    defaultValue: None
+  - name: expand
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either OrderItemResourceList or the
       result of cls(response)
@@ -821,6 +919,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: product_families_request
+    isRequired: true
+  - name: expand
+    defaultValue: None
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either ProductFamilies or the result
       of cls(response)
@@ -847,6 +951,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either ProductFamiliesMetadata or the
       result of cls(response)

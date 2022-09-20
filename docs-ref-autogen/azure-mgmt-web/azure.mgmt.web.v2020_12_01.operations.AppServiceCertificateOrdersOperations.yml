@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -77,6 +81,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: certificate_distinguished_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either AppServiceCertificateOrder
       or the result of cls(response)
@@ -136,6 +146,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: key_vault_certificate
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either AppServiceCertificateResource
       or the result of cls(response)
@@ -166,6 +184,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -200,6 +222,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -229,6 +257,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
   return:
     description: AppServiceCertificateOrder, or the result of cls(response)
     types:
@@ -263,6 +295,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: AppServiceCertificateResource, or the result of cls(response)
     types:
@@ -305,6 +343,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An iterator like instance of either AppServiceCertificateOrderCollection
       or the result of cls(response)
@@ -335,6 +375,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
   return:
     description: An iterator like instance of either AppServiceCertificateCollection
       or the result of cls(response)
@@ -370,6 +414,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: reissue_certificate_order_request
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -404,6 +454,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: renew_certificate_order_request
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -433,6 +489,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -467,6 +527,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: name_identifier
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -496,6 +562,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: list of CertificateOrderAction, or the result of cls(response)
     types:
@@ -525,6 +595,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: list of CertificateEmail, or the result of cls(response)
     types:
@@ -559,6 +633,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: site_seal_request
+    isRequired: true
   return:
     description: SiteSeal, or the result of cls(response)
     types:
@@ -593,6 +673,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: certificate_distinguished_name
+    isRequired: true
   return:
     description: AppServiceCertificateOrder, or the result of cls(response)
     types:
@@ -634,6 +720,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: key_vault_certificate
+    isRequired: true
   return:
     description: AppServiceCertificateResource, or the result of cls(response)
     types:
@@ -658,6 +752,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: app_service_certificate_order
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -687,6 +783,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: certificate_order_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:

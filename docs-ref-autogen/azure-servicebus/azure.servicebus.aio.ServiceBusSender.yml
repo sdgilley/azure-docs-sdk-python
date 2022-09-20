@@ -78,6 +78,8 @@ constructor:
       string.
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+  - name: credential
 variables:
 - description: 'The fully qualified host name for the Service Bus namespace.
 
@@ -110,6 +112,8 @@ methods:
       greater than 0 if specified. The default value is None, meaning no timeout.'
     types:
     - <xref:float>
+  - name: sequence_numbers
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -144,6 +148,8 @@ methods:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:int>]
+  - name: max_size_in_bytes
+    defaultValue: None
   return:
     types:
     - <xref:azure.servicebus.ServiceBusMessageBatch>
@@ -187,6 +193,10 @@ methods:
       greater than 0 if specified. The default value is None, meaning no timeout.'
     types:
     - <xref:float>
+  - name: messages
+    isRequired: true
+  - name: schedule_time_utc
+    isRequired: true
   return:
     types:
     - <xref:list>[<xref:int>]
@@ -230,6 +240,8 @@ methods:
       no timeout.'
     types:
     - <xref:Optional>[<xref:float>]
+  - name: message
+    isRequired: true
   return:
     types:
     - <xref:None>

@@ -34,6 +34,8 @@ methods:
     isRequired: true
     types:
     - <xref:list>[<xref:azure.iot.hub.protocol.models.ExportImportDevice>]
+  - name: devices
+    isRequired: true
   return:
     description: The BulkRegistryOperationResult object.
   exceptions:
@@ -87,9 +89,21 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
+  - name: device_id
+    isRequired: true
+  - name: status
+    isRequired: true
+  - name: iot_edge
+    defaultValue: 'False'
+  - name: status_reason
+    defaultValue: None
+  - name: device_scope
+    defaultValue: None
+  - name: parent_scopes
+    defaultValue: None
   return:
     description: Device object containing the created device.
   exceptions:
@@ -153,9 +167,25 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
+  - name: device_id
+    isRequired: true
+  - name: primary_key
+    isRequired: true
+  - name: secondary_key
+    isRequired: true
+  - name: status
+    isRequired: true
+  - name: iot_edge
+    defaultValue: 'False'
+  - name: status_reason
+    defaultValue: None
+  - name: device_scope
+    defaultValue: None
+  - name: parent_scopes
+    defaultValue: None
   return:
     description: Device object containing the created device.
   exceptions:
@@ -219,9 +249,25 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
+  - name: device_id
+    isRequired: true
+  - name: primary_thumbprint
+    isRequired: true
+  - name: secondary_thumbprint
+    isRequired: true
+  - name: status
+    isRequired: true
+  - name: iot_edge
+    defaultValue: 'False'
+  - name: status_reason
+    defaultValue: None
+  - name: device_scope
+    defaultValue: None
+  - name: parent_scopes
+    defaultValue: None
   return:
     description: Device object containing the created device.
   exceptions:
@@ -246,6 +292,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: managed_by
+    isRequired: true
   return:
     description: Module object containing the created module.
   exceptions:
@@ -281,6 +333,16 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: managed_by
+    isRequired: true
+  - name: primary_key
+    isRequired: true
+  - name: secondary_key
+    isRequired: true
   return:
     description: Module object containing the created module.
   exceptions:
@@ -316,6 +378,16 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: managed_by
+    isRequired: true
+  - name: primary_thumbprint
+    isRequired: true
+  - name: secondary_thumbprint
+    isRequired: true
   return:
     description: Module object containing the created module.
   exceptions:
@@ -335,6 +407,10 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: etag
+    defaultValue: None
   return:
     description: None.
   exceptions:
@@ -359,6 +435,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: etag
+    defaultValue: None
   return:
     description: None.
   exceptions:
@@ -382,6 +464,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: connection_string
     isRequired: true
   return:
@@ -409,6 +493,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: url
+    isRequired: true
   - name: token_credential
     isRequired: true
   return:
@@ -424,6 +512,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
   return:
     description: The Device object containing the requested device.
   exceptions:
@@ -454,6 +544,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: max_number_of_devices
+    defaultValue: None
   return:
     description: List of device info.
   exceptions:
@@ -473,6 +565,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
   return:
     description: The Module object containing the requested module.
   exceptions:
@@ -492,6 +588,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
   return:
     description: The Twin object.
   exceptions:
@@ -506,6 +606,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
   return:
     description: The list[Module] containing all the modules on the device.
   exceptions:
@@ -528,6 +630,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
   return:
     description: The Twin object.
   exceptions:
@@ -547,6 +651,10 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.hub.protocol.models.CloudToDeviceMethod>
+  - name: device_id
+    isRequired: true
+  - name: direct_method_request
+    isRequired: true
   return:
     description: The CloudToDeviceMethodResult object.
   exceptions:
@@ -571,6 +679,12 @@ methods:
     isRequired: true
     types:
     - <xref:azure.iot.hub.protocol.models.CloudToDeviceMethod>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: direct_method_request
+    isRequired: true
   return:
     description: The CloudToDeviceMethodResult object.
   exceptions:
@@ -598,6 +712,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: query_specification
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: max_item_count
+    defaultValue: None
   return:
     description: The QueryResult object.
   exceptions:
@@ -627,6 +747,14 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: module_twin
+    isRequired: true
+  - name: etag
+    defaultValue: None
   return:
     description: The Twin object.
   exceptions:
@@ -651,6 +779,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: device_twin
+    isRequired: true
+  - name: etag
+    defaultValue: None
   return:
     description: The Twin object.
   exceptions:
@@ -677,6 +811,12 @@ methods:
     defaultValue: '{}'
     types:
     - <xref:dict>
+  - name: device_id
+    isRequired: true
+  - name: message
+    isRequired: true
+  - name: properties
+    defaultValue: '{}'
   exceptions:
   - type: Exception if the Send command is not able to send the message
 - uid: azure.iot.hub.IoTHubRegistryManager.update_device_with_certificate_authority
@@ -733,9 +873,23 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
+  - name: device_id
+    isRequired: true
+  - name: etag
+    isRequired: true
+  - name: status
+    isRequired: true
+  - name: iot_edge
+    defaultValue: 'False'
+  - name: status_reason
+    defaultValue: None
+  - name: device_scope
+    defaultValue: None
+  - name: parent_scopes
+    defaultValue: None
   return:
     description: The updated Device object containing the created device.
   exceptions:
@@ -804,9 +958,27 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
+  - name: device_id
+    isRequired: true
+  - name: etag
+    isRequired: true
+  - name: primary_key
+    isRequired: true
+  - name: secondary_key
+    isRequired: true
+  - name: status
+    isRequired: true
+  - name: iot_edge
+    defaultValue: 'False'
+  - name: status_reason
+    defaultValue: None
+  - name: device_scope
+    defaultValue: None
+  - name: parent_scopes
+    defaultValue: None
   return:
     description: The updated Device object containing the created device.
   exceptions:
@@ -875,9 +1047,27 @@ methods:
 
       For leaf devices, this could be set to the same value as device_scope or left
       for the service to copy over.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Union>[<xref:list>[<xref:str>]<xref:,>
+  - name: device_id
+    isRequired: true
+  - name: etag
+    isRequired: true
+  - name: primary_thumbprint
+    isRequired: true
+  - name: secondary_thumbprint
+    isRequired: true
+  - name: status
+    isRequired: true
+  - name: iot_edge
+    defaultValue: 'False'
+  - name: status_reason
+    defaultValue: None
+  - name: device_scope
+    defaultValue: None
+  - name: parent_scopes
+    defaultValue: None
   return:
     description: The updated Device object containing the created device.
   exceptions:
@@ -907,6 +1097,14 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: module_twin
+    isRequired: true
+  - name: etag
+    defaultValue: None
   return:
     description: The Twin object.
   exceptions:
@@ -937,6 +1135,14 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: managed_by
+    isRequired: true
+  - name: etag
+    isRequired: true
   return:
     description: The updated Module object containing the created module.
   exceptions:
@@ -977,6 +1183,18 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: managed_by
+    isRequired: true
+  - name: etag
+    isRequired: true
+  - name: primary_key
+    isRequired: true
+  - name: secondary_key
+    isRequired: true
   return:
     description: The updated Module object containing the created module.
   exceptions:
@@ -1017,6 +1235,18 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: managed_by
+    isRequired: true
+  - name: etag
+    isRequired: true
+  - name: primary_thumbprint
+    isRequired: true
+  - name: secondary_thumbprint
+    isRequired: true
   return:
     description: The updated Module object containing the created module.
   exceptions:
@@ -1041,6 +1271,12 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: device_id
+    isRequired: true
+  - name: device_twin
+    isRequired: true
+  - name: etag
+    defaultValue: None
   return:
     description: The Twin object.
   exceptions:

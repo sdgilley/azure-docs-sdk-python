@@ -26,3 +26,5 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: url
+    isRequired: true

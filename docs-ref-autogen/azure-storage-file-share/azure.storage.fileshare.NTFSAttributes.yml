@@ -92,6 +92,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: string
     isRequired: true
   return:

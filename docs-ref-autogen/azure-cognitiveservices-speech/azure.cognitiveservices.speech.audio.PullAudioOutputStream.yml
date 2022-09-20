@@ -25,6 +25,8 @@ methods:
   - name: audio_buffer
     description: The buffer to receive the audio data.
     isRequired: true
+  - name: audio_buffer
+    isRequired: true
   return:
     description: The number of bytes filled, or 0 in case the stream hits its end
       and there is no more data available.

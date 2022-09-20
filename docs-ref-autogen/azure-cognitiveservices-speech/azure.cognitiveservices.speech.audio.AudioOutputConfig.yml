@@ -35,3 +35,11 @@ constructor:
 
       This functionality was added in version 1.17.0.'
     defaultValue: None
+  - name: use_default_speaker
+    defaultValue: 'False'
+  - name: filename
+    defaultValue: None
+  - name: stream
+    defaultValue: None
+  - name: device_name
+    defaultValue: None

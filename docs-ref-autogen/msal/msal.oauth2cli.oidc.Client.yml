@@ -37,6 +37,8 @@ methods:
     description: 'A hard-to-guess string used to mitigate replay attacks. See also
 
       [OIDC specs](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).'
+    defaultValue: None
+  - name: response_type
     isRequired: true
   - name: nonce
     defaultValue: None
@@ -71,6 +73,8 @@ methods:
     defaultValue: None
     types:
     - <xref:list>
+  - name: scope
+    defaultValue: None
 - uid: msal.oauth2cli.oidc.Client.obtain_token_by_auth_code_flow
   name: obtain_token_by_auth_code_flow
   summary: 'Validate the auth_response being redirected back, and then obtain tokens,
@@ -110,6 +114,8 @@ methods:
       same nonce should also be provided here, so that we''ll validate it.
 
       An exception will be raised if the nonce in id token mismatches.'
+    defaultValue: None
+  - name: code
     isRequired: true
   - name: nonce
     defaultValue: None
@@ -180,3 +186,17 @@ methods:
     defaultValue: None
     types:
     - <xref:string>
+  - name: display
+    defaultValue: None
+  - name: prompt
+    defaultValue: None
+  - name: max_age
+    defaultValue: None
+  - name: ui_locales
+    defaultValue: None
+  - name: id_token_hint
+    defaultValue: None
+  - name: login_hint
+    defaultValue: None
+  - name: acr_values
+    defaultValue: None

@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -56,6 +60,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: CheckAvailabilityResult, or the result of cls(response)
     types:
@@ -93,6 +103,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: NotificationHubResource, or the result of cls(response)
     types:
@@ -135,6 +153,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: SharedAccessAuthorizationRuleResource, or the result of cls(response)
     types:
@@ -171,6 +199,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
+  - name: parameters
+    defaultValue: None
   return:
     description: DebugSendResponse, or the result of cls(response)
     types:
@@ -202,6 +238,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -239,6 +281,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -270,6 +320,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
   return:
     description: NotificationHubResource, or the result of cls(response)
     types:
@@ -306,6 +362,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
   return:
     description: SharedAccessAuthorizationRuleResource, or the result of cls(response)
     types:
@@ -337,6 +401,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
   return:
     description: PnsCredentialsResource, or the result of cls(response)
     types:
@@ -363,6 +433,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
   return:
     description: An iterator like instance of either NotificationHubListResult or
       the result of cls(response)
@@ -395,6 +469,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
   return:
     description: An iterator like instance of either SharedAccessAuthorizationRuleListResult
       or the result of cls(response)
@@ -434,6 +514,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
   return:
     description: ResourceListKeys, or the result of cls(response)
     types:
@@ -471,6 +559,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
+  - name: parameters
+    defaultValue: None
   return:
     description: NotificationHubResource, or the result of cls(response)
     types:
@@ -519,6 +615,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: notification_hub_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: ResourceListKeys, or the result of cls(response)
     types:

@@ -52,6 +52,10 @@ methods:
 
       according to [https://tools.ietf.org/html/rfc6749#section-6](https://tools.ietf.org/html/rfc6749#section-6)'
     defaultValue: None
+  - name: refresh_token
+    isRequired: true
+  - name: scope
+    defaultValue: None
 attributes:
 - uid: msal.oauth2cli.oauth2.BaseClient.session
   name: session

@@ -46,6 +46,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: path
+    isRequired: true
 - uid: azure.ai.ml.entities.VmSize.load
   name: load
   signature: 'load(path: Union[os.PathLike, str], params_override: Optional[list]

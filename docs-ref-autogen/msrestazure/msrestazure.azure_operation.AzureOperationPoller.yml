@@ -37,6 +37,11 @@ constructor:
     defaultValue: '30'
     types:
     - <xref:int>
+  - name: send_cmd
+  - name: output_cmd
+  - name: update_cmd
+  - name: timeout
+    defaultValue: '30'
 methods:
 - uid: msrestazure.azure_operation.AzureOperationPoller.add_done_callback
   name: add_done_callback
@@ -52,6 +57,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>
+  - name: func
+    isRequired: true
   exceptions:
   - type: ValueError if the long running operation has alreadycompleted.
 - uid: msrestazure.azure_operation.AzureOperationPoller.done
@@ -70,6 +77,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>
+  - name: func
+    isRequired: true
   exceptions:
   - type: ValueError if the long running operation has alreadycompleted.
 - uid: msrestazure.azure_operation.AzureOperationPoller.result
@@ -110,6 +119,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: timeout
+    defaultValue: None
   exceptions:
   - type: msrestazure.azure_exceptions.CloudError
     description: Server problem with the query.

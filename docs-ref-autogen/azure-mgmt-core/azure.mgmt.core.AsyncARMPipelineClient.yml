@@ -39,3 +39,4 @@ constructor:
     description: If omitted, AioHttpTransport is used for asynchronous transport.
     types:
     - <xref:AsyncHttpTransport>
+  - name: base_url

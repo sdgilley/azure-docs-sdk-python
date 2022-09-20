@@ -21,6 +21,9 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: credentials
+  - name: base_url
+    defaultValue: None
 variables:
 - description: Configuration for client.
   name: config
@@ -73,6 +76,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: workspace_id
+    isRequired: true
+  - name: body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: QueryResults or ClientRawResponse if raw=true
     types:

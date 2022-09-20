@@ -31,6 +31,12 @@ methods:
   - name: file_content
     description: dictionary containing file contet
     isRequired: true
+  - name: test_id
+    isRequired: true
+  - name: file_id
+    isRequired: true
+  - name: file
+    isRequired: true
   return:
     description: JSON object
     types:

@@ -36,6 +36,11 @@ constructor:
     defaultValue: None
     types:
     - <xref:int>
+  - name: action
+  - name: lifetime_percentage
+    defaultValue: None
+  - name: days_before_expiry
+    defaultValue: None
 attributes:
 - uid: azure.keyvault.certificates.LifetimeAction.action
   name: action

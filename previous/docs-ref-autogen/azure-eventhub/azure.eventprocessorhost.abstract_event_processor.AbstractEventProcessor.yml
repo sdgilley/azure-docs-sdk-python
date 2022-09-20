@@ -28,6 +28,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: context
+    isRequired: true
+  - name: reason
+    isRequired: true
 - uid: azure.eventprocessorhost.abstract_event_processor.AbstractEventProcessor.open_async
   name: open_async
   summary: Called by processor host to initialize the event processor.
@@ -38,6 +42,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.partition_context.PartitionContext>
+  - name: context
+    isRequired: true
 - uid: azure.eventprocessorhost.abstract_event_processor.AbstractEventProcessor.process_error_async
   name: process_error_async
   summary: 'Called when the underlying client experiences an error while receiving.
@@ -54,6 +60,10 @@ methods:
     - <xref:azure.eventprocessorhost.partition_context.PartitionContext>
   - name: error
     description: The error that occured.
+    isRequired: true
+  - name: context
+    isRequired: true
+  - name: error
     isRequired: true
 - uid: azure.eventprocessorhost.abstract_event_processor.AbstractEventProcessor.process_events_async
   name: process_events_async
@@ -72,3 +82,7 @@ methods:
     isRequired: true
     types:
     - <xref:list>[<xref:azure.eventhub.common.EventData>]
+  - name: context
+    isRequired: true
+  - name: messages
+    isRequired: true

@@ -20,6 +20,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: credential
+  - name: endpoint
 variables:
 - description: MonitoringOperations operations
   name: monitoring

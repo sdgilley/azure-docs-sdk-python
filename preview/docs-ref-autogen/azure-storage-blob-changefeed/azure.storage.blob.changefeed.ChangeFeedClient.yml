@@ -54,6 +54,9 @@ constructor:
       feature compatibility.'
     types:
     - <xref:str>
+  - name: account_url
+  - name: credential
+    defaultValue: None
 examples:
 - "Creating the ChangeFeedClient from a URL to a public blob (no auth needed).<!--[!code-python[Main](les\\\
   change_feed_samples.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
@@ -91,6 +94,10 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: conn_str
     isRequired: true
   - name: credential
     defaultValue: None

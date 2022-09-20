@@ -25,3 +25,5 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.checkpoint.Checkpoint>
+  - name: checkpoint
+    isRequired: true

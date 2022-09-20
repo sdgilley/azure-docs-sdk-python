@@ -39,6 +39,8 @@ methods:
     defaultValue: None
     types:
     - <xref:Exception>
+  - name: exception
+    defaultValue: None
 - uid: azure.eventhub.async_ops.sender_async.AsyncSender.has_started
   name: has_started
   summary: 'Whether the handler has completed all start up processes such as
@@ -82,6 +84,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventhub.common.EventData>
+  - name: event_data
+    isRequired: true
   exceptions:
   - type: azure.eventhub.common.EventHubError if the message fails tosend.
 - uid: azure.eventhub.async_ops.sender_async.AsyncSender.wait_async

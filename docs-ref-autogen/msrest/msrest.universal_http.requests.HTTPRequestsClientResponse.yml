@@ -31,3 +31,5 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: encoding
+    defaultValue: None

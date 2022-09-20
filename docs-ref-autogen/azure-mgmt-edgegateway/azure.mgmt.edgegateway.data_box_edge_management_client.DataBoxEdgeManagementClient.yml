@@ -23,6 +23,10 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: credentials
+  - name: subscription_id
+  - name: base_url
+    defaultValue: None
 variables:
 - description: Configuration for client.
   name: config

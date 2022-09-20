@@ -16,6 +16,7 @@ constructor:
     isRequired: true
     types:
     - <xref:class>
+  - name: name
   - name: description
     defaultValue: None
   - name: tags
@@ -33,6 +34,8 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:PathLike>, <xref:str>]
+  - name: path
+    isRequired: true
 attributes:
 - uid: azure.ai.ml.entities.Resource.base_path
   name: base_path

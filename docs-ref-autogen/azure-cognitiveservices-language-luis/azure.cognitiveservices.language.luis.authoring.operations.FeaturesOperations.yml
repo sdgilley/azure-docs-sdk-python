@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.language.luis.authoring.operations.FeaturesOperations.add_entity_feature
   name: add_entity_feature
@@ -73,6 +77,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: entity_id
+    isRequired: true
+  - name: feature_relation_create_object
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -127,6 +143,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: intent_id
+    isRequired: true
+  - name: feature_relation_create_object
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -176,6 +204,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: phraselist_create_object
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: int or ClientRawResponse if raw=true
     types:
@@ -221,6 +259,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: phraselist_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -266,6 +314,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: phraselist_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PhraseListFeatureInfo or ClientRawResponse if raw=true
     types:
@@ -320,6 +378,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: skip
+    defaultValue: '0'
+  - name: take
+    defaultValue: '100'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: FeaturesResponseObject or ClientRawResponse if raw=true
     types:
@@ -372,6 +442,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: skip
+    defaultValue: '0'
+  - name: take
+    defaultValue: '100'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -430,6 +512,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: phraselist_id
+    isRequired: true
+  - name: phraselist_update_object
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:

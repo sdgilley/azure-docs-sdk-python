@@ -38,6 +38,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.ai.ml.entities.WorkspaceConnection>
+  - name: workspace_connection
+    isRequired: true
   return:
     description: Created or update workspace connection.
     types:
@@ -52,6 +54,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: name
+    isRequired: true
 - uid: azure.ai.ml.operations.WorkspaceConnectionsOperations.get
   name: get
   summary: Get a workspace connection by name.
@@ -62,6 +66,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: name
+    isRequired: true
   return:
     description: The workspace connection with the provided name.
     types:
@@ -76,6 +82,8 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: connection_type
+    defaultValue: None
   return:
     description: An iterator like instance of workspace connection objects
     types:

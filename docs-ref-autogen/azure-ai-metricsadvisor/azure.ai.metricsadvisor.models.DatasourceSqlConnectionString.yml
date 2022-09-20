@@ -27,6 +27,8 @@ constructor:
     description: Description of data source credential.
     types:
     - <xref:str>
+  - name: name
+  - name: connection_string
 variables:
 - description: 'Required. Type of data source credential.Constant filled by
 

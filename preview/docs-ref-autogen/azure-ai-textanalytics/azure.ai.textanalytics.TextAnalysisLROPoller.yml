@@ -23,6 +23,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>
+  - name: func
+    isRequired: true
 - uid: azure.ai.textanalytics.TextAnalysisLROPoller.cancel
   name: cancel
   summary: Cancel the operation currently being polled.
@@ -60,6 +62,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>
+  - name: func
+    isRequired: true
   exceptions:
   - type: ValueError
     description: if the long running operation has already completed.
@@ -103,6 +107,8 @@ methods:
     defaultValue: None
     types:
     - <xref:float>
+  - name: timeout
+    defaultValue: None
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
     description: Server problem with the query.

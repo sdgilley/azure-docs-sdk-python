@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.applicationinsights.operations.events_operations.EventsOperations.get
   name: get
@@ -87,6 +91,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: event_type
+    isRequired: true
+  - name: event_id
+    isRequired: true
+  - name: timespan
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: EventsResults or ClientRawResponse if raw=true
     types:
@@ -208,6 +224,34 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: event_type
+    isRequired: true
+  - name: timespan
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: search
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: format
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: apply
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: EventsResults or ClientRawResponse if raw=true
     types:
@@ -247,6 +291,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: object or ClientRawResponse if raw=true
     types:

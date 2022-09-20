@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -59,6 +63,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
+  - name: customer_name
+    isRequired: true
+  - name: expand
+    defaultValue: None
   return:
     description: Customer, or the result of cls(response)
     types:
@@ -96,6 +106,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
+  - name: search
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either CustomerListResult or the result
       of cls(response)
@@ -140,6 +156,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_account_name
+    isRequired: true
+  - name: billing_profile_name
+    isRequired: true
+  - name: search
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either CustomerListResult or the result
       of cls(response)

@@ -51,6 +51,13 @@ constructor:
     defaultValue: KnownProfiles.default
     types:
     - <xref:azure.profiles.KnownProfiles>
+  - name: credential
+  - name: api_version
+    defaultValue: None
+  - name: base_url
+    defaultValue: https://management.azure.com
+  - name: profile
+    defaultValue: KnownProfiles.default
 methods:
 - uid: azure.mgmt.resource.subscriptions.aio.SubscriptionClient.close
   name: close

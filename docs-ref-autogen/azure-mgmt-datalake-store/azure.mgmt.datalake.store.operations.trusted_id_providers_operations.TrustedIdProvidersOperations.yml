@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Client Api Version. Constant value: "2016-11-01".'
   name: api_version
@@ -76,6 +80,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: trusted_id_provider_name
+    isRequired: true
+  - name: id_provider
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TrustedIdProvider or ClientRawResponse if raw=true
     types:
@@ -125,6 +141,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: trusted_id_provider_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -172,6 +198,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: trusted_id_provider_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TrustedIdProvider or ClientRawResponse if raw=true
     types:
@@ -214,6 +250,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of TrustedIdProvider
     types:
@@ -267,6 +311,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: trusted_id_provider_name
+    isRequired: true
+  - name: id_provider
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TrustedIdProvider or ClientRawResponse if raw=true
     types:

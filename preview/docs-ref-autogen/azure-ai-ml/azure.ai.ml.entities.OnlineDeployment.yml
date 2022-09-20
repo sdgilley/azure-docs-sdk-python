@@ -58,12 +58,12 @@ constructor:
     - <xref:Union>[<xref:str>, <xref:azure.ai.ml.entities.Environment>], <xref:optional>
   - name: app_insights_enabled
     description: defaults to False
-    defaultValue: None
+    defaultValue: 'False'
     types:
     - <xref:bool>, <xref:optional>
   - name: scale_settings
     description: How the online deployment will scale.
-    defaultValue: 'False'
+    defaultValue: None
     types:
     - <xref:OnlineScaleSettings>, <xref:optional>
   - name: request_settings
@@ -113,6 +113,41 @@ constructor:
     defaultValue: None
     types:
     - <xref:Union>[<xref:str>, <xref:PathLike>], <xref:optional>
+  - name: name
+  - name: endpoint_name
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: description
+    defaultValue: None
+  - name: model
+    defaultValue: None
+  - name: code_configuration
+    defaultValue: None
+  - name: environment
+    defaultValue: None
+  - name: app_insights_enabled
+    defaultValue: 'False'
+  - name: scale_settings
+    defaultValue: None
+  - name: request_settings
+    defaultValue: None
+  - name: liveness_probe
+    defaultValue: None
+  - name: readiness_probe
+    defaultValue: None
+  - name: environment_variables
+    defaultValue: None
+  - name: instance_count
+    defaultValue: None
+  - name: instance_type
+    defaultValue: None
+  - name: model_mount_path
+    defaultValue: None
+  - name: code_path
+    defaultValue: None
   - name: scoring_script
     defaultValue: None
 attributes:

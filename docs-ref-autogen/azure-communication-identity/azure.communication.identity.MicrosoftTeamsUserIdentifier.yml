@@ -23,6 +23,7 @@ constructor:
     types:
     - <xref:str>
     - <xref:azure.communication.chat.CommunicationCloudEnvironment>
+  - name: user_id
 variables:
 - description: Optional raw ID of the identifier.
   name: raw_id

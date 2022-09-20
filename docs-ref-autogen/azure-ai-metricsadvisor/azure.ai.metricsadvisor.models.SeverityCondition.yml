@@ -26,3 +26,5 @@ constructor:
     types:
     - <xref:str>
     - <xref:azure.ai.metricsadvisor.models.AnomalySeverity>
+  - name: min_alert_severity
+  - name: max_alert_severity

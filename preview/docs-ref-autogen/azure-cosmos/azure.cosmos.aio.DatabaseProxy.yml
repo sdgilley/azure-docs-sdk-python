@@ -317,6 +317,8 @@ methods:
   - name: container
     description: The ID (name) of the container to be retrieved.
     isRequired: true
+  - name: container
+    isRequired: true
   return:
     description: A *ContainerProxy* instance representing the container.
     types:
@@ -337,6 +339,8 @@ methods:
   parameters:
   - name: user
     description: The ID (name) of the user to be retrieved.
+    isRequired: true
+  - name: user_id
     isRequired: true
   return:
     description: A *UserProxy* instance representing the retrieved user.

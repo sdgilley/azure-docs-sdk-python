@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -74,6 +78,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either RelayNamespace
       or the result of cls(response)
@@ -121,6 +131,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -143,6 +157,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: parameters
+    isRequired: true
   return:
     description: CheckNameAvailabilityResult, or the result of cls(response)
     types:
@@ -180,6 +196,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: AuthorizationRule, or the result of cls(response)
     types:
@@ -211,6 +235,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -237,6 +267,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
   return:
     description: RelayNamespace, or the result of cls(response)
     types:
@@ -268,6 +302,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
   return:
     description: AuthorizationRule, or the result of cls(response)
     types:
@@ -311,6 +351,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
   return:
     description: An iterator like instance of either AuthorizationRuleListResult or
       the result of cls(response)
@@ -332,6 +376,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An iterator like instance of either RelayNamespaceListResult or the
       result of cls(response)
@@ -364,6 +410,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
   return:
     description: AccessKeys, or the result of cls(response)
     types:
@@ -401,6 +453,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: authorization_rule_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: AccessKeys, or the result of cls(response)
     types:
@@ -435,6 +495,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: RelayNamespace, or the result of cls(response)
     types:

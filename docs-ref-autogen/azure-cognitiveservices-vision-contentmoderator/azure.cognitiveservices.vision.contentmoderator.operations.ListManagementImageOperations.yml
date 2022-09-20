@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.vision.contentmoderator.operations.ListManagementImageOperations.add_image
   name: add_image
@@ -60,6 +64,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: tag
+    defaultValue: None
+  - name: label
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Image or ClientRawResponse if raw=true
     types:
@@ -121,6 +135,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: image_stream
+    isRequired: true
+  - name: tag
+    defaultValue: None
+  - name: label
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: Image or ClientRawResponse if raw=true
     types:
@@ -179,6 +207,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: tag
+    defaultValue: None
+  - name: label
+    defaultValue: None
+  - name: data_representation
+    defaultValue: URL
+  - name: value
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Image or ClientRawResponse if raw=true
     types:
@@ -213,6 +257,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -252,6 +302,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: image_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -286,6 +344,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImageIds or ClientRawResponse if raw=true
     types:

@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for this operation. Constant value: "2015-05-01".'
   name: api_version
@@ -94,6 +98,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: scope_path
+    isRequired: true
+  - name: id
+    defaultValue: None
+  - name: name
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -166,6 +184,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: scope_path
+    isRequired: true
+  - name: id
+    defaultValue: None
+  - name: name
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationInsightsComponentAnalyticsItem or
 
@@ -255,6 +287,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: scope_path
+    isRequired: true
+  - name: scope
+    defaultValue: shared
+  - name: type
+    defaultValue: none
+  - name: include_content
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -327,6 +375,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: resource_name
+    isRequired: true
+  - name: scope_path
+    isRequired: true
+  - name: item_properties
+    isRequired: true
+  - name: override_item
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationInsightsComponentAnalyticsItem or
 

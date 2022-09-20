@@ -20,6 +20,9 @@ constructor:
 
       as a str rather than bytes. Default is UTF-8.'
     defaultValue: UTF-8
+  - name: address
+  - name: encoding
+    defaultValue: UTF-8
 variables:
 - description: The endpoint URL.
   name: address
@@ -54,6 +57,8 @@ methods:
     defaultValue: b'apache.org:selector-filter:string'
     types:
     - <xref:bytes>
+  - name: name
+    defaultValue: b'apache.org:selector-filter:string'
 - uid: uamqp.address.Source.set_filter
   name: set_filter
   summary: 'Set a filter on the endpoint. Only one filter
@@ -86,3 +91,9 @@ methods:
     types:
     - <xref:bytes>
     - <xref:None>
+  - name: value
+    isRequired: true
+  - name: name
+    defaultValue: b'apache.org:selector-filter:string'
+  - name: descriptor
+    defaultValue: b'apache.org:selector-filter:string'

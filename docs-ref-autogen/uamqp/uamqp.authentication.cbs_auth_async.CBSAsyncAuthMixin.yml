@@ -35,6 +35,10 @@ methods:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: connection
+    isRequired: true
+  - name: debug
+    defaultValue: 'False'
   - name: loop
     defaultValue: None
   return:

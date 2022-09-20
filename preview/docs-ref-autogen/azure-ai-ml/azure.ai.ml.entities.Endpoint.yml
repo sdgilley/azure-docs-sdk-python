@@ -25,7 +25,7 @@ constructor:
   - name: traffic
     description: Traffic rules on how the traffic will be routed across deployments,
       defaults to {}
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:Dict>[<xref:str>, <xref:int>], <xref:optional>
   - name: name
@@ -45,7 +45,7 @@ constructor:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: scoring_uri
     description: str, Endpoint URI, readonly
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: swagger_uri
@@ -60,9 +60,23 @@ constructor:
     - <xref:str>, <xref:optional>
   - name: description
     description: Description of the resource.
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>, <xref:optional>
+  - name: base_path
+    defaultValue: None
+  - name: auth_mode
+    defaultValue: None
+  - name: location
+    defaultValue: None
+  - name: name
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: description
+    defaultValue: None
 methods:
 - uid: azure.ai.ml.entities.Endpoint.dump
   name: dump
@@ -74,6 +88,8 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:PathLike>, <xref:str>]
+  - name: path
+    isRequired: true
 attributes:
 - uid: azure.ai.ml.entities.Endpoint.provisioning_state
   name: provisioning_state

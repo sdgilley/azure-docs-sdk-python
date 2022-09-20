@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -59,6 +63,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: action_rule_name
+    isRequired: true
+  - name: action_rule
+    isRequired: true
   return:
     description: ActionRule, or the result of cls(response)
     types:
@@ -88,6 +98,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: action_rule_name
+    isRequired: true
   return:
     description: bool, or the result of cls(response)
     types:
@@ -117,6 +131,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: action_rule_name
+    isRequired: true
   return:
     description: ActionRule, or the result of cls(response)
     types:
@@ -209,6 +227,28 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: target_resource_group
+    defaultValue: None
+  - name: target_resource_type
+    defaultValue: None
+  - name: target_resource
+    defaultValue: None
+  - name: severity
+    defaultValue: None
+  - name: monitor_service
+    defaultValue: None
+  - name: impacted_scope
+    defaultValue: None
+  - name: description
+    defaultValue: None
+  - name: alert_rule_id
+    defaultValue: None
+  - name: action_group
+    defaultValue: None
+  - name: name
+    defaultValue: None
   return:
     description: An iterator like instance of either ActionRulesList or the result
       of cls(response)
@@ -293,6 +333,26 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: target_resource_group
+    defaultValue: None
+  - name: target_resource_type
+    defaultValue: None
+  - name: target_resource
+    defaultValue: None
+  - name: severity
+    defaultValue: None
+  - name: monitor_service
+    defaultValue: None
+  - name: impacted_scope
+    defaultValue: None
+  - name: description
+    defaultValue: None
+  - name: alert_rule_id
+    defaultValue: None
+  - name: action_group
+    defaultValue: None
+  - name: name
+    defaultValue: None
   return:
     description: An iterator like instance of either ActionRulesList or the result
       of cls(response)
@@ -328,6 +388,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: action_rule_name
+    isRequired: true
+  - name: action_rule_patch
+    isRequired: true
   return:
     description: ActionRule, or the result of cls(response)
     types:

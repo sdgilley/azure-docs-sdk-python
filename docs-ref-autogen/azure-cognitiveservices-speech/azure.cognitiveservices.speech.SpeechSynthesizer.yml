@@ -30,6 +30,10 @@ constructor:
   - name: auto_detect_source_language_config
     description: The auto detection source language config
     defaultValue: None
+  - name: speech_config
+  - name: audio_config
+  - name: auto_detect_source_language_config
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.SpeechSynthesizer.get_voices_async
   name: get_voices_async
@@ -40,6 +44,7 @@ methods:
     description: Specify the locale of voices, in BCP-47 format; or leave it empty
       to get all available voices.
     isRequired: true
+  - name: locale
   return:
     description: A task representing the asynchronous operation that gets the voices.
 - uid: azure.cognitiveservices.speech.SpeechSynthesizer.speak_ssml

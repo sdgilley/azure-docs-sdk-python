@@ -32,6 +32,10 @@ constructor:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:LockRenewFailureCallback>]
+  - name: max_lock_renewal_duration
+    defaultValue: '300'
+  - name: on_lock_renew_failure
+    defaultValue: None
   - name: loop
     defaultValue: None
 examples:
@@ -102,3 +106,11 @@ methods:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:AsyncLockRenewFailureCallback>]
+  - name: receiver
+    isRequired: true
+  - name: renewable
+    isRequired: true
+  - name: max_lock_renewal_duration
+    defaultValue: None
+  - name: on_lock_renew_failure
+    defaultValue: None

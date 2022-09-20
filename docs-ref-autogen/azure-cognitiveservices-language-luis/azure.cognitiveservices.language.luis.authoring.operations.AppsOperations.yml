@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.language.luis.authoring.operations.AppsOperations.add
   name: add
@@ -61,6 +65,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_create_object
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -103,6 +113,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: domain_name
+    defaultValue: None
+  - name: culture
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -142,6 +160,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: force
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -188,6 +214,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -222,6 +256,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationInfoResponse or ClientRawResponse if raw=true
     types:
@@ -256,6 +296,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PublishSettings or ClientRawResponse if raw=true
     types:
@@ -290,6 +336,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationSettings or ClientRawResponse if raw=true
     types:
@@ -336,6 +388,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: luis_app_lu
+    isRequired: true
+  - name: app_name
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -382,6 +442,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: luis_app
+    isRequired: true
+  - name: app_name
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -428,6 +496,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: luis_app_v2
+    isRequired: true
+  - name: app_name
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -469,6 +545,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: skip
+    defaultValue: '0'
+  - name: take
+    defaultValue: '100'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -499,6 +583,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -534,6 +622,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: culture
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -563,6 +657,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PersonalAssistantsResponse or ClientRawResponse if raw=true
     types:
@@ -592,6 +690,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -626,6 +728,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: dict or ClientRawResponse if raw=true
     types:
@@ -659,6 +767,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -688,6 +800,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -746,6 +862,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: slot_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -804,6 +930,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -851,6 +987,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: version_id
+    defaultValue: None
+  - name: is_staging
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ProductionOrStagingEndpointInfo or ClientRawResponse if
 
@@ -898,6 +1044,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: name
+    defaultValue: None
+  - name: description
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -942,6 +1098,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: publish_setting_update_object
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:
@@ -984,6 +1148,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: is_public
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OperationStatus or ClientRawResponse if raw=true
     types:

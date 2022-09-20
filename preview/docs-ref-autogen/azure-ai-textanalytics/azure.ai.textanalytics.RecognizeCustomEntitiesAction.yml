@@ -63,6 +63,8 @@ constructor:
       [https://www.microsoft.com/ai/responsible-ai](https://www.microsoft.com/ai/responsible-ai).'
     types:
     - <xref:Optional>[<xref:bool>]
+  - name: project_name
+  - name: deployment_name
 variables:
 - description: This field indicates the project name for the model.
   name: project_name

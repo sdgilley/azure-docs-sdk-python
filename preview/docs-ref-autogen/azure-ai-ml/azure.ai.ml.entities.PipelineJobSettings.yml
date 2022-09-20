@@ -33,3 +33,11 @@ constructor:
     defaultValue: None
     types:
     - <xref:bool>
+  - name: default_datastore
+    defaultValue: None
+  - name: default_compute
+    defaultValue: None
+  - name: continue_on_step_failure
+    defaultValue: None
+  - name: force_rerun
+    defaultValue: None

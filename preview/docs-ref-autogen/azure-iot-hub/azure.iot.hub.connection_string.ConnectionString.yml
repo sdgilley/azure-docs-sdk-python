@@ -28,5 +28,9 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: key
+    isRequired: true
+  - name: default
+    defaultValue: None
   return:
     description: The value for the given key

@@ -23,6 +23,8 @@ methods:
     defaultValue: '-1'
     types:
     - <xref:int>
+  - name: size
+    defaultValue: '-1'
   return:
     description: Bytes read from the input stream.
 - uid: azure.functions.blob.InputStream.readable

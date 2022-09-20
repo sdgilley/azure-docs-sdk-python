@@ -47,6 +47,12 @@ constructor:
     defaultValue: KnownProfiles.default
     types:
     - <xref:azure.profiles.KnownProfiles>
+  - name: credential
+  - name: endpoint
+  - name: api_version
+    defaultValue: '2020-12-01'
+  - name: profile
+    defaultValue: KnownProfiles.default
 methods:
 - uid: azure.synapse.managedprivateendpoints.VnetClient.close
   name: close

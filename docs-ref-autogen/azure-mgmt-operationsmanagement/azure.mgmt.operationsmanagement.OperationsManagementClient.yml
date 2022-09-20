@@ -47,6 +47,13 @@ constructor:
       header is present.
     types:
     - <xref:int>
+  - name: credential
+  - name: subscription_id
+  - name: provider_name
+  - name: resource_type
+  - name: resource_name
+  - name: base_url
+    defaultValue: None
 variables:
 - description: SolutionsOperations operations
   name: solutions

@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -51,6 +55,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: management_group_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -77,6 +85,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -103,6 +115,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -123,6 +139,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -155,6 +173,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: management_group_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -187,6 +211,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -219,6 +249,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -245,6 +281,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: remediation_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -271,6 +311,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: management_group_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -298,6 +342,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -325,6 +373,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -346,6 +398,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -373,6 +427,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: management_group_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -399,6 +457,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -425,6 +487,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -445,6 +511,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: remediation_name
+    isRequired: true
   return:
     description: Remediation, or the result of cls(response)
     types:
@@ -477,6 +545,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: management_group_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either RemediationDeploymentsListResult
       or the result of cls(response)
@@ -510,6 +584,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_id
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either RemediationDeploymentsListResult
       or the result of cls(response)
@@ -543,6 +623,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: remediation_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either RemediationDeploymentsListResult
       or the result of cls(response)
@@ -571,6 +657,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: remediation_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either RemediationDeploymentsListResult
       or the result of cls(response)
@@ -598,6 +688,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: management_group_id
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either RemediationListResult or the
       result of cls(response)
@@ -625,6 +719,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_id
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either RemediationListResult or the
       result of cls(response)
@@ -652,6 +750,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either RemediationListResult or the
       result of cls(response)
@@ -674,6 +776,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: query_options
+    defaultValue: None
   return:
     description: An iterator like instance of either RemediationListResult or the
       result of cls(response)

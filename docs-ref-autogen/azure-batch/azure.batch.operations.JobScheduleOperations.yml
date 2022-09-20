@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2022-01-01.15.0".'
   name: api_version
@@ -64,6 +68,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: cloud_job_schedule
+    isRequired: true
+  - name: job_schedule_add_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -119,6 +131,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_schedule_delete_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -164,6 +184,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_schedule_disable_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -206,6 +234,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_schedule_enable_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -250,6 +286,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_schedule_exists_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: bool or ClientRawResponse if raw=true
     types:
@@ -292,6 +336,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_schedule_get_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CloudJobSchedule or ClientRawResponse if raw=true
     types:
@@ -329,6 +381,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_list_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of CloudJobSchedule
     types:
@@ -388,6 +446,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_schedule_patch_parameter
+    isRequired: true
+  - name: job_schedule_patch_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -430,6 +498,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_schedule_terminate_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -490,6 +566,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_schedule_id
+    isRequired: true
+  - name: job_schedule_update_parameter
+    isRequired: true
+  - name: job_schedule_update_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

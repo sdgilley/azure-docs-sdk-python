@@ -28,3 +28,9 @@ constructor:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: service
+    defaultValue: 'False'
+  - name: file_system
+    defaultValue: 'False'
+  - name: object
+    defaultValue: 'False'

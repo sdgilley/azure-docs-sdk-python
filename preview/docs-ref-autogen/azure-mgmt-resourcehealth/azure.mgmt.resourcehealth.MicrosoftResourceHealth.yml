@@ -54,6 +54,14 @@ constructor:
     defaultValue: KnownProfiles.default
     types:
     - <xref:azure.profiles.KnownProfiles>
+  - name: credential
+  - name: subscription_id
+  - name: api_version
+    defaultValue: None
+  - name: base_url
+    defaultValue: None
+  - name: profile
+    defaultValue: KnownProfiles.default
 methods:
 - uid: azure.mgmt.resourcehealth.MicrosoftResourceHealth.close
   name: close

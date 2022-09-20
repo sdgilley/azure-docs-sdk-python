@@ -37,6 +37,14 @@ constructor:
     types:
     - <xref:bytes>
     - <xref:str.>
+  - name: method
+  - name: url
+  - name: headers
+    defaultValue: None
+  - name: files
+    defaultValue: None
+  - name: data
+    defaultValue: None
 methods:
 - uid: azure.core.pipeline.transport.HttpRequest.format_parameters
   name: format_parameters
@@ -52,6 +60,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: params
+    isRequired: true
 - uid: azure.core.pipeline.transport.HttpRequest.prepare_multipart_body
   name: prepare_multipart_body
   summary: 'Will prepare the body of this request according to the multipart information.
@@ -70,6 +80,8 @@ methods:
     defaultValue: '0'
     types:
     - <xref:int>
+  - name: content_index
+    defaultValue: '0'
   return:
     description: The updated index after all parts in this request have been added.
     types:
@@ -94,6 +106,8 @@ methods:
     isRequired: true
     types:
     - <xref:bytes>
+  - name: data
+    isRequired: true
 - uid: azure.core.pipeline.transport.HttpRequest.set_formdata_body
   name: set_formdata_body
   summary: Set form-encoded data as the body of the request.
@@ -104,6 +118,8 @@ methods:
     defaultValue: None
     types:
     - <xref:dict>
+  - name: data
+    defaultValue: None
 - uid: azure.core.pipeline.transport.HttpRequest.set_json_body
   name: set_json_body
   summary: Set a JSON-friendly object as the body of the request.
@@ -111,6 +127,8 @@ methods:
   parameters:
   - name: data
     description: A JSON serializable object
+    isRequired: true
+  - name: data
     isRequired: true
 - uid: azure.core.pipeline.transport.HttpRequest.set_multipart_mixed
   name: set_multipart_mixed
@@ -157,6 +175,8 @@ methods:
     - <xref:stream>
     - <xref:generator>
     - <xref:asyncgenerator>
+  - name: data
+    isRequired: true
 - uid: azure.core.pipeline.transport.HttpRequest.set_text_body
   name: set_text_body
   summary: Set a text as body of the request.
@@ -167,6 +187,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
 - uid: azure.core.pipeline.transport.HttpRequest.set_xml_body
   name: set_xml_body
   summary: Set an XML element tree as the body of the request.
@@ -177,6 +199,8 @@ methods:
     isRequired: true
     types:
     - <xref:<xref:XML node>>
+  - name: data
+    isRequired: true
 attributes:
 - uid: azure.core.pipeline.transport.HttpRequest.body
   name: body

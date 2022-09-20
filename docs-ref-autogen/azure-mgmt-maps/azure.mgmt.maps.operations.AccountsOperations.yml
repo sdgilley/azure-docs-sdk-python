@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -59,6 +63,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: maps_account
+    isRequired: true
   return:
     description: MapsAccount, or the result of cls(response)
     types:
@@ -85,6 +95,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -110,6 +124,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
   return:
     description: MapsAccount, or the result of cls(response)
     types:
@@ -130,6 +148,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An iterator like instance of either MapsAccounts or the result of
       cls(response)
@@ -179,6 +199,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
   return:
     description: MapsAccountKeys, or the result of cls(response)
     types:
@@ -213,6 +237,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: key_specification
+    isRequired: true
   return:
     description: MapsAccountKeys, or the result of cls(response)
     types:
@@ -247,6 +277,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: maps_account_update_parameters
+    isRequired: true
   return:
     description: MapsAccount, or the result of cls(response)
     types:

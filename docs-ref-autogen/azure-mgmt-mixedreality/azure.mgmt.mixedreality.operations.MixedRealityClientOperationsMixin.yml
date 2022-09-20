@@ -48,6 +48,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: location
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: type
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'CheckNameAvailabilityResponse or ClientRawResponse if
 

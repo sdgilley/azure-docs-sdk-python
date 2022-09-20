@@ -24,6 +24,9 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.keyvault.certificates.CertificateOperationError>
+  - name: code
+  - name: message
+  - name: inner_error
 attributes:
 - uid: azure.keyvault.certificates.CertificateOperationError.code
   name: code

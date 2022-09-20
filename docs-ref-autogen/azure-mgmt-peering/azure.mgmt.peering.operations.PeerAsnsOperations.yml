@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -54,6 +58,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: peer_asn_name
+    isRequired: true
+  - name: peer_asn
+    isRequired: true
   return:
     description: PeerAsn, or the result of cls(response)
     types:
@@ -74,6 +82,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: peer_asn_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -94,6 +104,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: peer_asn_name
+    isRequired: true
   return:
     description: PeerAsn, or the result of cls(response)
     types:

@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Version of the Api. Constant value: "2021-04-12".'
   name: api_version
@@ -52,6 +56,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -90,6 +100,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobResponse or ClientRawResponse if raw=true
     types:
@@ -129,6 +145,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_properties
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobProperties or ClientRawResponse if raw=true
     types:
@@ -175,6 +197,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: job_request
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobResponse or ClientRawResponse if raw=true
     types:
@@ -213,6 +243,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobProperties or ClientRawResponse if raw=true
     types:
@@ -246,6 +282,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -284,6 +324,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobResponse or ClientRawResponse if raw=true
     types:
@@ -336,6 +382,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: job_type
+    defaultValue: None
+  - name: job_status
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: QueryResult or ClientRawResponse if raw=true
     types:

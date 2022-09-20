@@ -40,3 +40,6 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineContext>
+  - name: http_request
+  - name: http_response
+  - name: context

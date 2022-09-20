@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: script
+  - name: digest
 attributes:
 - uid: azure.confidentialledger.Constitution.contents
   name: contents

@@ -27,6 +27,7 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.credentials.TokenCredential>
+  - name: identity_service_url
 methods:
 - uid: azure.confidentialledger.identity_service.ConfidentialLedgerIdentityServiceClient.get_ledger_identity
   name: get_ledger_identity

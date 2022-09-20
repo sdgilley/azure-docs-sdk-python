@@ -64,6 +64,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: config_parameter_override_list
+    isRequired: true
+  - name: force
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -106,6 +118,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: node_tags
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -193,6 +213,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: backup_timeout
+    defaultValue: '10'
+  - name: timeout
+    defaultValue: '60'
+  - name: backup_storage
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -295,6 +327,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: force
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -337,6 +379,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: repair_task_cancel_description
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: RepairTaskUpdateInfo or ClientRawResponse if raw=true
     types:
@@ -396,6 +444,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: session_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -449,6 +505,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image_store_copy_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -500,6 +564,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -560,6 +632,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: backup_policy_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: validate_connection
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -619,6 +701,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: create_compose_deployment_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -669,6 +759,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -734,6 +832,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: repair_task
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: RepairTaskUpdateInfo or ClientRawResponse if raw=true
     types:
@@ -812,6 +916,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -892,6 +1006,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_from_template_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -982,6 +1106,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: force_remove
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1037,6 +1171,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: backup_policy_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1092,6 +1234,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_path
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1147,6 +1297,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: session_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1201,6 +1359,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1259,6 +1425,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name_id
+    isRequired: true
+  - name: property_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1310,6 +1486,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: task_id
+    isRequired: true
+  - name: version
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1394,6 +1578,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: force_remove
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1462,6 +1656,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: deploy_service_package_to_node_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1536,6 +1740,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: clean_backup
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1615,6 +1829,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: deactivation_intent
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1685,6 +1909,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: clean_backup
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1765,6 +1999,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: clean_backup
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1845,6 +2089,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: backup_policy_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1899,6 +2153,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1967,6 +2229,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: backup_policy_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -2053,6 +2325,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: backup_policy_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -2104,6 +2386,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: task_id
+    isRequired: true
+  - name: version
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: RepairTaskUpdateInfo or ClientRawResponse if raw=true
     types:
@@ -2157,6 +2447,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: AadMetadataObject or ClientRawResponse if raw=true
     types:
@@ -2242,6 +2538,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: backup_policy_name
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedBackupEntityList or ClientRawResponse if raw=true
     types:
@@ -2341,6 +2649,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedBackupConfigurationInfoList or ClientRawResponse if
 
@@ -2480,6 +2800,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: latest
+    defaultValue: 'False'
+  - name: start_date_time_filter
+    defaultValue: None
+  - name: end_date_time_filter
+    defaultValue: None
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedBackupInfoList or ClientRawResponse if raw=true
     types:
@@ -2585,6 +2923,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -2821,6 +3177,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: deployed_applications_health_state_filter
+    defaultValue: '0'
+  - name: services_health_state_filter
+    defaultValue: '0'
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationHealth or ClientRawResponse if raw=true
     types:
@@ -3074,6 +3446,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: deployed_applications_health_state_filter
+    defaultValue: '0'
+  - name: services_health_state_filter
+    defaultValue: '0'
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: application_health_policy
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationHealth or ClientRawResponse if raw=true
     types:
@@ -3152,6 +3542,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: exclude_application_parameters
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationInfo or ClientRawResponse if raw=true
     types:
@@ -3290,6 +3690,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_definition_kind_filter
+    defaultValue: '0'
+  - name: application_type_name
+    defaultValue: None
+  - name: exclude_application_parameters
+    defaultValue: 'False'
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedApplicationInfoList or ClientRawResponse if raw=true
     types:
@@ -3363,6 +3779,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationLoadInfo or ClientRawResponse if raw=true
     types:
@@ -3417,6 +3841,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_type_name
+    isRequired: true
+  - name: application_type_version
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationTypeManifest or ClientRawResponse if raw=true
     types:
@@ -3482,6 +3916,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationNameInfo or ClientRawResponse if raw=true
     types:
@@ -3619,6 +4061,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_type_definition_kind_filter
+    defaultValue: '0'
+  - name: exclude_application_parameters
+    defaultValue: 'False'
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedApplicationTypeInfoList or ClientRawResponse if raw=true
     types:
@@ -3747,6 +4203,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_type_name
+    isRequired: true
+  - name: application_type_version
+    defaultValue: None
+  - name: exclude_application_parameters
+    defaultValue: 'False'
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedApplicationTypeInfoList or ClientRawResponse if raw=true
     types:
@@ -3812,6 +4284,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ApplicationUpgradeProgressInfo or ClientRawResponse if
 
@@ -3900,6 +4380,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -3949,6 +4445,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: backup_policy_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: BackupPolicyDescription or ClientRawResponse if raw=true
     types:
@@ -4027,6 +4531,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedBackupPolicyDescriptionList or ClientRawResponse if
 
@@ -4121,6 +4635,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: get_backup_by_storage_query_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedBackupInfoList or ClientRawResponse if raw=true
     types:
@@ -4168,6 +4694,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Chaos or ClientRawResponse if raw=true
     types:
@@ -4290,6 +4822,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: start_time_utc
+    defaultValue: None
+  - name: end_time_utc
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ChaosEventsSegment or ClientRawResponse if raw=true
     types:
@@ -4335,6 +4881,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ChaosScheduleDescription or ClientRawResponse if raw=true
     types:
@@ -4390,6 +4942,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: configuration_api_version
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterConfiguration or ClientRawResponse if raw=true
     types:
@@ -4438,6 +4998,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ClusterConfigurationUpgradeStatusInfo or ClientRawResponse if
 
@@ -4526,6 +5092,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -4770,6 +5352,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: nodes_health_state_filter
+    defaultValue: '0'
+  - name: applications_health_state_filter
+    defaultValue: '0'
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: include_system_application_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterHealth or ClientRawResponse if raw=true
     types:
@@ -4824,6 +5422,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterHealthChunk or ClientRawResponse if raw=true
     types:
@@ -4937,6 +5541,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: cluster_health_chunk_query_description
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterHealthChunk or ClientRawResponse if raw=true
     types:
@@ -5214,6 +5826,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: nodes_health_state_filter
+    defaultValue: '0'
+  - name: applications_health_state_filter
+    defaultValue: '0'
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: include_system_application_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: application_health_policy_map
+    defaultValue: None
+  - name: cluster_health_policy
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterHealth or ClientRawResponse if raw=true
     types:
@@ -5259,6 +5891,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterLoadInfo or ClientRawResponse if raw=true
     types:
@@ -5324,6 +5962,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterManifest or ClientRawResponse if raw=true
     types:
@@ -5372,6 +6016,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterUpgradeProgressObject or ClientRawResponse if raw=true
     types:
@@ -5417,6 +6067,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ClusterVersion or ClientRawResponse if raw=true
     types:
@@ -5472,6 +6128,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: deployment_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ComposeDeploymentStatusInfo or ClientRawResponse if raw=true
     types:
@@ -5562,6 +6226,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedComposeDeploymentStatusInfoList or ClientRawResponse if
 
@@ -5617,6 +6291,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: deployment_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'ComposeDeploymentUpgradeProgressInfo or ClientRawResponse if
 
@@ -5670,6 +6352,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -5773,6 +6463,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_manifest_name
+    isRequired: true
+  - name: code_package_name
+    isRequired: true
+  - name: tail
+    defaultValue: None
+  - name: previous
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ContainerLogs or ClientRawResponse if raw=true
     types:
@@ -5859,6 +6567,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -5908,6 +6632,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: event_instance_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -5985,6 +6717,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PartitionDataLossProgress or ClientRawResponse if raw=true
     types:
@@ -6185,6 +6929,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: deployed_service_packages_health_state_filter
+    defaultValue: '0'
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeployedApplicationHealth or ClientRawResponse if raw=true
     types:
@@ -6407,6 +7167,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: deployed_service_packages_health_state_filter
+    defaultValue: '0'
+  - name: application_health_policy
+    defaultValue: None
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeployedApplicationHealth or ClientRawResponse if raw=true
     types:
@@ -6502,6 +7280,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: include_health_state
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeployedApplicationInfo or ClientRawResponse if raw=true
     types:
@@ -6612,6 +7402,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: include_health_state
+    defaultValue: 'False'
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedDeployedApplicationInfoList or ClientRawResponse if
 
@@ -6700,6 +7504,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_manifest_name
+    defaultValue: None
+  - name: code_package_name
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -6832,6 +7650,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_package_name
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeployedServicePackageHealth or ClientRawResponse if raw=true
     types:
@@ -6986,6 +7818,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_package_name
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: application_health_policy
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeployedServicePackageHealth or ClientRawResponse if raw=true
     types:
@@ -7056,6 +7904,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -7137,6 +7995,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_package_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -7202,6 +8072,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: replica_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'DeployedServiceReplicaDetailInfo or ClientRawResponse if
 
@@ -7264,6 +8146,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'DeployedServiceReplicaDetailInfo or ClientRawResponse if
 
@@ -7356,6 +8248,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: partition_id
+    defaultValue: None
+  - name: service_manifest_name
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -7454,6 +8360,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_type_name
+    isRequired: true
+  - name: service_manifest_name
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -7543,6 +8463,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_manifest_name
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -7629,6 +8561,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: type_filter
+    defaultValue: '65535'
+  - name: state_filter
+    defaultValue: '65535'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -7684,6 +8626,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_path
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImageStoreContent or ClientRawResponse if raw=true
     types:
@@ -7739,6 +8689,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_path
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: FolderSizeInfo or ClientRawResponse if raw=true
     types:
@@ -7786,6 +8744,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImageStoreInfo or ClientRawResponse if raw=true
     types:
@@ -7832,6 +8796,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImageStoreContent or ClientRawResponse if raw=true
     types:
@@ -7878,6 +8848,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: FolderSizeInfo or ClientRawResponse if raw=true
     types:
@@ -7933,6 +8909,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: session_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: UploadSession or ClientRawResponse if raw=true
     types:
@@ -7988,6 +8972,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_path
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: UploadSession or ClientRawResponse if raw=true
     types:
@@ -8077,6 +9069,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: metric_name
+    isRequired: true
+  - name: service_name
+    defaultValue: None
+  - name: ordering
+    defaultValue: Desc
+  - name: max_results
+    defaultValue: '0'
+  - name: continuation_token
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'LoadedPartitionInformationResultList or ClientRawResponse if
 
@@ -8130,6 +9136,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -8221,6 +9235,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -8325,6 +9357,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: NodeHealth or ClientRawResponse if raw=true
     types:
@@ -8446,6 +9488,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: cluster_health_policy
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: NodeHealth or ClientRawResponse if raw=true
     types:
@@ -8499,6 +9553,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: NodeInfo or ClientRawResponse if raw=true
     types:
@@ -8593,6 +9655,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: node_status_filter
+    defaultValue: default
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedNodeInfoList or ClientRawResponse if raw=true
     types:
@@ -8644,6 +9718,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: NodeLoadInfo or ClientRawResponse if raw=true
     types:
@@ -8702,6 +9784,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: NodeTransitionProgress or ClientRawResponse if raw=true
     types:
@@ -8788,6 +9880,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -8839,6 +9947,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PartitionBackupConfigurationInfo or ClientRawResponse if
 
@@ -8927,6 +10043,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: latest
+    defaultValue: 'False'
+  - name: start_date_time_filter
+    defaultValue: None
+  - name: end_date_time_filter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedBackupInfoList or ClientRawResponse if raw=true
     types:
@@ -8978,6 +10108,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: BackupProgressInfo or ClientRawResponse if raw=true
     types:
@@ -9069,6 +10207,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -9239,6 +10395,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: replicas_health_state_filter
+    defaultValue: '0'
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PartitionHealth or ClientRawResponse if raw=true
     types:
@@ -9439,6 +10609,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: replicas_health_state_filter
+    defaultValue: '0'
+  - name: application_health_policy
+    defaultValue: None
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PartitionHealth or ClientRawResponse if raw=true
     types:
@@ -9494,6 +10680,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServicePartitionInfo or ClientRawResponse if raw=true
     types:
@@ -9576,6 +10770,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedServicePartitionInfoList or ClientRawResponse if
 
@@ -9635,6 +10839,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PartitionLoadInformation or ClientRawResponse if raw=true
     types:
@@ -9731,6 +10943,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: replica_id
+    isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -9822,6 +11054,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -9899,6 +11149,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PartitionRestartProgress or ClientRawResponse if raw=true
     types:
@@ -9952,6 +11214,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: RestoreProgressInfo or ClientRawResponse if raw=true
     types:
@@ -10038,6 +11308,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -10096,6 +11382,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name_id
+    isRequired: true
+  - name: property_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PropertyInfo or ClientRawResponse if raw=true
     types:
@@ -10179,6 +11475,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name_id
+    isRequired: true
+  - name: include_values
+    defaultValue: 'False'
+  - name: continuation_token
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedPropertyInfoList or ClientRawResponse if raw=true
     types:
@@ -10234,6 +11542,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: code_version
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -10289,6 +11605,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: config_version
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -10366,6 +11690,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PartitionQuorumLossProgress or ClientRawResponse if raw=true
     types:
@@ -10434,6 +11770,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: task_id_filter
+    defaultValue: None
+  - name: state_filter
+    defaultValue: None
+  - name: executor_filter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -10543,6 +11889,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: replica_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ReplicaHealth or ClientRawResponse if raw=true
     types:
@@ -10673,6 +12031,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: replica_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: application_health_policy
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ReplicaHealth or ClientRawResponse if raw=true
     types:
@@ -10729,6 +12101,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: replica_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ReplicaInfo or ClientRawResponse if raw=true
     types:
@@ -10801,6 +12183,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedReplicaInfoList or ClientRawResponse if raw=true
     types:
@@ -10898,6 +12290,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedBackupConfigurationInfoList or ClientRawResponse if
 
@@ -11033,6 +12437,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: latest
+    defaultValue: 'False'
+  - name: start_date_time_filter
+    defaultValue: None
+  - name: end_date_time_filter
+    defaultValue: None
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedBackupInfoList or ClientRawResponse if raw=true
     types:
@@ -11096,6 +12518,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServiceDescription or ClientRawResponse if raw=true
     types:
@@ -11199,6 +12629,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -11387,6 +12835,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: partitions_health_state_filter
+    defaultValue: '0'
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServiceHealth or ClientRawResponse if raw=true
     types:
@@ -11599,6 +13061,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: events_health_state_filter
+    defaultValue: '0'
+  - name: partitions_health_state_filter
+    defaultValue: '0'
+  - name: application_health_policy
+    defaultValue: None
+  - name: exclude_health_statistics
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServiceHealth or ClientRawResponse if raw=true
     types:
@@ -11683,6 +13161,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServiceInfo or ClientRawResponse if raw=true
     types:
@@ -11774,6 +13262,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_type_name
+    defaultValue: None
+  - name: continuation_token
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedServiceInfoList or ClientRawResponse if raw=true
     types:
@@ -11837,6 +13337,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_type_name
+    isRequired: true
+  - name: application_type_version
+    isRequired: true
+  - name: service_manifest_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServiceTypeManifest or ClientRawResponse if raw=true
     types:
@@ -11888,6 +13400,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServiceNameInfo or ClientRawResponse if raw=true
     types:
@@ -11959,6 +13479,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_type_name
+    isRequired: true
+  - name: application_type_version
+    isRequired: true
+  - name: service_type_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ServiceTypeInfo or ClientRawResponse if raw=true
     types:
@@ -12023,6 +13555,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_type_name
+    isRequired: true
+  - name: application_type_version
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -12109,6 +13651,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: start_time_utc
+    isRequired: true
+  - name: end_time_utc
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: events_types_filter
+    defaultValue: None
+  - name: exclude_analysis_events
+    defaultValue: None
+  - name: skip_correlation_lookup
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -12190,6 +13748,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name_id
+    isRequired: true
+  - name: recursive
+    defaultValue: 'False'
+  - name: continuation_token
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PagedSubNameInfoList or ClientRawResponse if raw=true
     types:
@@ -12277,6 +13847,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    defaultValue: None
+  - name: only_query_primaries
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: UnplacedReplicaInformation or ClientRawResponse if raw=true
     types:
@@ -12323,6 +13905,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'UpgradeOrchestrationServiceState or ClientRawResponse if
 
@@ -12426,6 +14014,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_manifest_name
+    isRequired: true
+  - name: code_package_name
+    isRequired: true
+  - name: code_package_instance_id
+    isRequired: true
+  - name: container_api_request_body
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ContainerApiResponse or ClientRawResponse if raw=true
     types:
@@ -12508,6 +14114,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: command
+    isRequired: true
+  - name: service_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -12588,6 +14204,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: command
+    isRequired: true
+  - name: service_id
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -12694,6 +14320,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: current_node_name
+    defaultValue: None
+  - name: new_node_name
+    defaultValue: None
+  - name: ignore_constraints
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -12803,6 +14445,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: current_node_name
+    defaultValue: None
+  - name: new_node_name
+    defaultValue: None
+  - name: ignore_constraints
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -12880,6 +14538,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: node_name
+    defaultValue: None
+  - name: ignore_constraints
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -12968,6 +14638,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: current_node_name
+    isRequired: true
+  - name: new_node_name
+    defaultValue: None
+  - name: ignore_constraints
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13036,6 +14720,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: version
+    defaultValue: None
+  - name: schedule
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13065,25 +14759,33 @@ methods:
       willing to wait for the requested operation to complete. The default
 
       value for this parameter is 60 seconds.'
-    isRequired: true
+    defaultValue: '60'
     types:
     - <xref:long>
   - name: custom_headers
     description: headers that will be added to the request
-    defaultValue: '60'
+    defaultValue: None
     types:
     - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
-    defaultValue: None
+    defaultValue: 'False'
     types:
     - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
       overrides*.'
+    isRequired: true
+  - name: provision_application_type_description_base_required_body_param
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
     defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
@@ -13143,6 +14845,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: code_file_path
+    defaultValue: None
+  - name: cluster_manifest_file_path
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13203,6 +14915,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name_id
+    isRequired: true
+  - name: property_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13254,6 +14976,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13309,6 +15037,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13380,6 +15116,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13434,6 +15178,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13483,6 +15233,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: deployment_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13534,6 +15292,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13621,6 +15387,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13664,6 +15438,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: node_tags
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13752,6 +15534,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: replica_id
+    isRequired: true
+  - name: force_remove
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -13887,6 +15683,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: health_information
+    isRequired: true
+  - name: immediate
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14003,6 +15811,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: health_information
+    isRequired: true
+  - name: immediate
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14145,6 +15963,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: health_information
+    isRequired: true
+  - name: immediate
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14291,6 +16123,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: service_package_name
+    isRequired: true
+  - name: health_information
+    isRequired: true
+  - name: immediate
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14412,6 +16260,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: health_information
+    isRequired: true
+  - name: immediate
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14533,6 +16393,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: health_information
+    isRequired: true
+  - name: immediate
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14587,7 +16459,7 @@ methods:
       Stateful) for which the health is being reported. Following are the
 
       possible values. Possible values include: ''Stateless'', ''Stateful'''
-    isRequired: true
+    defaultValue: Stateful
     types:
     - <xref:str>
     - <xref:azure.servicefabric.models.ReplicaHealthReportServiceKind>
@@ -14597,7 +16469,7 @@ methods:
       health report. This information needs to be present in all of the
 
       health reports sent to the health manager.'
-    defaultValue: Stateful
+    isRequired: true
     types:
     - <xref:azure.servicefabric.models.HealthInformation>
   - name: immediate
@@ -14669,6 +16541,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: replica_id
+    isRequired: true
+  - name: health_information
+    isRequired: true
+  - name: service_kind
+    defaultValue: Stateful
+  - name: immediate
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14802,6 +16690,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: health_information
+    isRequired: true
+  - name: immediate
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14853,6 +16753,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -14971,6 +16879,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_key_type
+    defaultValue: None
+  - name: partition_key_value
+    defaultValue: None
+  - name: previous_rsp_version
+    defaultValue: None
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ResolvedServicePartition or ClientRawResponse if raw=true
     types:
@@ -15050,6 +16972,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: restart_deployed_code_package_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15120,6 +17054,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: node_instance_id
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: create_fabric_dump
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15185,6 +17131,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: replica_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15276,6 +17234,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: restore_partition_description
+    isRequired: true
+  - name: restore_timeout
+    defaultValue: '10'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15345,6 +17315,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15423,6 +17401,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: upgrade_domain_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15476,6 +17464,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: upgrade_domain
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15527,6 +17523,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15592,6 +17596,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15665,6 +17677,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15711,6 +17731,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15766,6 +17792,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: service_state
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'UpgradeOrchestrationServiceStateSummary or ClientRawResponse
 
@@ -15854,6 +17888,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: application_upgrade_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15917,6 +17961,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: chaos_parameters
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -15972,6 +18024,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: cluster_configuration_upgrade_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16029,6 +18089,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: start_cluster_upgrade_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16087,6 +18155,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: deployment_name
+    isRequired: true
+  - name: compose_deployment_upgrade_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16204,6 +18282,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: data_loss_mode
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16303,6 +18395,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: node_name
+    isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: node_transition_type
+    isRequired: true
+  - name: node_instance_id
+    isRequired: true
+  - name: stop_duration_in_seconds
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16396,6 +18504,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: restart_partition_mode
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16500,6 +18622,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: quorum_loss_mode
+    isRequired: true
+  - name: quorum_loss_duration
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16551,6 +18689,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: deployment_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16606,6 +18752,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16666,6 +18818,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: name_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: operations
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PropertyBatchInfo or ClientRawResponse if raw=true
     types:
@@ -16737,6 +18899,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16788,6 +18958,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16855,6 +19033,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16910,6 +19096,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: enabled
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -16989,6 +19183,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_type_name
+    isRequired: true
+  - name: application_type_version
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: async_parameter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17045,6 +19251,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: code_version
+    defaultValue: None
+  - name: config_version
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17119,6 +19335,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: application_update_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17195,6 +19421,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: application_upgrade_update_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17258,6 +19494,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: backup_policy_description
+    isRequired: true
+  - name: backup_policy_name
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: validate_connection
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17311,6 +19559,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: update_cluster_upgrade_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17398,6 +19654,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: partition_metric_load_description_list
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: max_results
+    defaultValue: '0'
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: 'PagedUpdatePartitionLoadResultList or ClientRawResponse if
 
@@ -17442,6 +19710,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: repair_task
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: RepairTaskUpdateInfo or ClientRawResponse if raw=true
     types:
@@ -17484,6 +19758,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: repair_task_update_health_policy_description
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: RepairTaskUpdateInfo or ClientRawResponse if raw=true
     types:
@@ -17572,6 +19852,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: service_id
+    isRequired: true
+  - name: service_update_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17643,6 +19933,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_path
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17738,6 +20036,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_path
+    isRequired: true
+  - name: session_id
+    isRequired: true
+  - name: content_range
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -17795,6 +20105,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: start_cluster_upgrade_description
+    isRequired: true
+  - name: timeout
+    defaultValue: '60'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ValidateClusterUpgradeResult or ClientRawResponse if raw=true
     types:

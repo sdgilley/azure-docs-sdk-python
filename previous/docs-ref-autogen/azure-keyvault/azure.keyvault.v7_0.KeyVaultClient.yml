@@ -15,6 +15,7 @@ constructor:
     isRequired: true
     types:
     - <xref:msrestazure.azure_active_directory>
+  - name: credentials
 variables:
 - description: Configuration for client.
   name: config
@@ -63,6 +64,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: BackupCertificateResult or ClientRawResponse if raw=true
     types:
@@ -136,6 +145,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: BackupKeyResult or ClientRawResponse if raw=true
     types:
@@ -185,6 +202,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: BackupSecretResult or ClientRawResponse if raw=true
     types:
@@ -232,6 +257,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: BackupStorageResult or ClientRawResponse if raw=true
     types:
@@ -298,6 +331,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: certificate_policy
+    defaultValue: None
+  - name: certificate_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateOperation or ClientRawResponse if raw=true
     types:
@@ -394,6 +441,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: kty
+    isRequired: true
+  - name: key_size
+    defaultValue: None
+  - name: key_ops
+    defaultValue: None
+  - name: key_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: curve
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyBundle or ClientRawResponse if raw=true
     types:
@@ -470,6 +537,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key_version
+    isRequired: true
+  - name: algorithm
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyOperationResult or ClientRawResponse if raw=true
     types:
@@ -521,6 +602,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedCertificateBundle or ClientRawResponse if raw=true
     types:
@@ -563,6 +652,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Contacts or ClientRawResponse if raw=true
     types:
@@ -612,6 +707,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: issuer_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: IssuerBundle or ClientRawResponse if raw=true
     types:
@@ -661,6 +764,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateOperation or ClientRawResponse if raw=true
     types:
@@ -714,6 +825,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedKeyBundle or ClientRawResponse if raw=true
     types:
@@ -763,6 +882,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: sas_definition_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedSasDefinitionBundle or ClientRawResponse if raw=true
     types:
@@ -812,6 +941,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedSecretBundle or ClientRawResponse if raw=true
     types:
@@ -856,6 +993,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedStorageBundle or ClientRawResponse if raw=true
     types:
@@ -938,6 +1083,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key_version
+    isRequired: true
+  - name: algorithm
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyOperationResult or ClientRawResponse if raw=true
     types:
@@ -992,6 +1151,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: certificate_version
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateBundle or ClientRawResponse if raw=true
     types:
@@ -1036,6 +1205,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Contacts or ClientRawResponse if raw=true
     types:
@@ -1085,6 +1260,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: issuer_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: IssuerBundle or ClientRawResponse if raw=true
     types:
@@ -1136,6 +1319,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of CertificateIssuerItem
     types:
@@ -1182,6 +1373,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateOperation or ClientRawResponse if raw=true
     types:
@@ -1233,6 +1432,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificatePolicy or ClientRawResponse if raw=true
     types:
@@ -1289,6 +1496,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of CertificateItem
     types:
@@ -1346,6 +1563,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: include_pending
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of CertificateItem
     types:
@@ -1396,6 +1623,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedCertificateBundle or ClientRawResponse if raw=true
     types:
@@ -1460,6 +1695,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: include_pending
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DeletedCertificateItem
     types:
@@ -1510,6 +1755,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedKeyBundle or ClientRawResponse if raw=true
     types:
@@ -1569,6 +1822,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DeletedKeyItem
     types:
@@ -1622,6 +1883,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: sas_definition_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedSasDefinitionBundle or ClientRawResponse if raw=true
     types:
@@ -1680,6 +1951,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DeletedSasDefinitionItem
     types:
@@ -1728,6 +2009,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedSecretBundle or ClientRawResponse if raw=true
     types:
@@ -1779,6 +2068,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DeletedSecretItem
     types:
@@ -1827,6 +2124,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DeletedStorageBundle or ClientRawResponse if raw=true
     types:
@@ -1878,6 +2183,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DeletedStorageAccountItem
     types:
@@ -1933,6 +2246,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key_version
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyBundle or ClientRawResponse if raw=true
     types:
@@ -1987,6 +2310,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of KeyItem
     types:
@@ -2043,6 +2376,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of KeyItem
     types:
@@ -2091,6 +2432,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: sas_definition_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SasDefinitionBundle or ClientRawResponse if raw=true
     types:
@@ -2142,6 +2493,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of SasDefinitionItem
     types:
@@ -2193,6 +2554,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: secret_version
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SecretBundle or ClientRawResponse if raw=true
     types:
@@ -2249,6 +2620,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of SecretItem
     types:
@@ -2301,6 +2682,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of SecretItem
     types:
@@ -2344,6 +2733,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: StorageBundle or ClientRawResponse if raw=true
     types:
@@ -2390,6 +2787,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: maxresults
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of StorageAccountItem
     types:
@@ -2478,6 +2883,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: base64_encoded_certificate
+    isRequired: true
+  - name: password
+    defaultValue: None
+  - name: certificate_policy
+    defaultValue: None
+  - name: certificate_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateBundle or ClientRawResponse if raw=true
     types:
@@ -2553,6 +2976,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key
+    isRequired: true
+  - name: hsm
+    defaultValue: None
+  - name: key_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyBundle or ClientRawResponse if raw=true
     types:
@@ -2625,6 +3064,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: x509_certificates
+    isRequired: true
+  - name: certificate_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateBundle or ClientRawResponse if raw=true
     types:
@@ -2676,6 +3129,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -2727,6 +3188,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -2778,6 +3247,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -2829,6 +3306,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -2884,6 +3369,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateBundle or ClientRawResponse if raw=true
     types:
@@ -2939,6 +3432,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyBundle or ClientRawResponse if raw=true
     types:
@@ -2993,6 +3494,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: sas_definition_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SasDefinitionBundle or ClientRawResponse if raw=true
     types:
@@ -3042,6 +3553,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SecretBundle or ClientRawResponse if raw=true
     types:
@@ -3091,6 +3610,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: StorageBundle or ClientRawResponse if raw=true
     types:
@@ -3140,6 +3667,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: StorageBundle or ClientRawResponse if raw=true
     types:
@@ -3189,6 +3726,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_bundle_backup
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateBundle or ClientRawResponse if raw=true
     types:
@@ -3262,6 +3807,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_bundle_backup
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyBundle or ClientRawResponse if raw=true
     types:
@@ -3311,6 +3864,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_bundle_backup
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SecretBundle or ClientRawResponse if raw=true
     types:
@@ -3360,6 +3921,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_bundle_backup
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: StorageBundle or ClientRawResponse if raw=true
     types:
@@ -3407,6 +3976,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: contact_list
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Contacts or ClientRawResponse if raw=true
     types:
@@ -3478,6 +4055,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: issuer_name
+    isRequired: true
+  - name: provider
+    isRequired: true
+  - name: credentials
+    defaultValue: None
+  - name: organization_details
+    defaultValue: None
+  - name: attributes
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: IssuerBundle or ClientRawResponse if raw=true
     types:
@@ -3566,6 +4159,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: sas_definition_name
+    isRequired: true
+  - name: template_uri
+    isRequired: true
+  - name: sas_type
+    isRequired: true
+  - name: validity_period
+    isRequired: true
+  - name: sas_definition_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SasDefinitionBundle or ClientRawResponse if raw=true
     types:
@@ -3637,6 +4250,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: tags
+    defaultValue: None
+  - name: content_type
+    defaultValue: None
+  - name: secret_attributes
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SecretBundle or ClientRawResponse if raw=true
     types:
@@ -3720,6 +4349,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: resource_id
+    isRequired: true
+  - name: active_key_name
+    isRequired: true
+  - name: auto_regenerate_key
+    isRequired: true
+  - name: regeneration_period
+    defaultValue: None
+  - name: storage_account_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: StorageBundle or ClientRawResponse if raw=true
     types:
@@ -3792,6 +4441,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key_version
+    isRequired: true
+  - name: algorithm
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyOperationResult or ClientRawResponse if raw=true
     types:
@@ -3864,6 +4527,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key_version
+    isRequired: true
+  - name: algorithm
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyOperationResult or ClientRawResponse if raw=true
     types:
@@ -3940,6 +4617,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: certificate_version
+    isRequired: true
+  - name: certificate_policy
+    defaultValue: None
+  - name: certificate_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateBundle or ClientRawResponse if raw=true
     types:
@@ -4012,6 +4705,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: issuer_name
+    isRequired: true
+  - name: provider
+    defaultValue: None
+  - name: credentials
+    defaultValue: None
+  - name: organization_details
+    defaultValue: None
+  - name: attributes
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: IssuerBundle or ClientRawResponse if raw=true
     types:
@@ -4066,6 +4775,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: cancellation_requested
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificateOperation or ClientRawResponse if raw=true
     types:
@@ -4120,6 +4839,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: certificate_name
+    isRequired: true
+  - name: certificate_policy
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CertificatePolicy or ClientRawResponse if raw=true
     types:
@@ -4197,6 +4926,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key_version
+    isRequired: true
+  - name: key_ops
+    defaultValue: None
+  - name: key_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyBundle or ClientRawResponse if raw=true
     types:
@@ -4285,6 +5030,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: sas_definition_name
+    isRequired: true
+  - name: template_uri
+    defaultValue: None
+  - name: sas_type
+    defaultValue: None
+  - name: validity_period
+    defaultValue: None
+  - name: sas_definition_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SasDefinitionBundle or ClientRawResponse if raw=true
     types:
@@ -4360,6 +5125,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: secret_version
+    isRequired: true
+  - name: content_type
+    defaultValue: None
+  - name: secret_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SecretBundle or ClientRawResponse if raw=true
     types:
@@ -4438,6 +5219,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: active_key_name
+    defaultValue: None
+  - name: auto_regenerate_key
+    defaultValue: None
+  - name: regeneration_period
+    defaultValue: None
+  - name: storage_account_attributes
+    defaultValue: None
+  - name: tags
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: StorageBundle or ClientRawResponse if raw=true
     types:
@@ -4524,6 +5323,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key_version
+    isRequired: true
+  - name: algorithm
+    isRequired: true
+  - name: digest
+    isRequired: true
+  - name: signature
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyVerifyResult or ClientRawResponse if raw=true
     types:
@@ -4600,6 +5415,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: vault_base_url
+    isRequired: true
+  - name: key_name
+    isRequired: true
+  - name: key_version
+    isRequired: true
+  - name: algorithm
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: KeyOperationResult or ClientRawResponse if raw=true
     types:

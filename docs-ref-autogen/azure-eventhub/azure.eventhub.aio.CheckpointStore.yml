@@ -23,6 +23,8 @@ methods:
     isRequired: true
     types:
     - <xref:Iterable>[<xref:Dict>[<xref:str,Any>]]
+  - name: ownership_list
+    isRequired: true
   return:
     types:
     - '<xref:Iterable>[<xref:Dict>[<xref:str,Any>]], <xref:Iterable of dictionaries
@@ -64,6 +66,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+    isRequired: true
+  - name: eventhub_name
+    isRequired: true
+  - name: consumer_group
+    isRequired: true
   return:
     types:
     - '<xref:Iterable>[<xref:Dict>[<xref:str,Any>]], <xref:Iterable of dictionaries
@@ -102,6 +110,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+    isRequired: true
+  - name: eventhub_name
+    isRequired: true
+  - name: consumer_group
+    isRequired: true
   return:
     types:
     - '<xref:Iterable>[<xref:Dict>[<xref:str>, <xref:Any>]], <xref:Iterable of dictionaries
@@ -147,6 +161,8 @@ methods:
     isRequired: true
     types:
     - <xref:Dict>[<xref:str,Any>]
+  - name: checkpoint
+    isRequired: true
   return:
     types:
     - <xref:None>

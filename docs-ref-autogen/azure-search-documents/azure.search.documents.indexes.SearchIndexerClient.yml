@@ -35,6 +35,8 @@ constructor:
       will be assumed.'
     types:
     - <xref:str>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.search.documents.indexes.SearchIndexerClient.close
   name: close

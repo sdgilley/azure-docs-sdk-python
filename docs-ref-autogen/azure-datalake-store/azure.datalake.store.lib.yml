@@ -58,9 +58,27 @@ functions:
     - <xref:string>
   - name: kwargs
     description: Other parameters, for future use
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:<xref:key/values>>
+  - name: tenant_id
+    defaultValue: None
+  - name: username
+    defaultValue: None
+  - name: password
+    defaultValue: None
+  - name: client_id
+    defaultValue: 04b07795-8ddb-461a-bbee-02f9e1bf7b46
+  - name: client_secret
+    defaultValue: None
+  - name: resource
+    defaultValue: https://datalake.azure.net/
+  - name: require_2fa
+    defaultValue: 'False'
+  - name: authority
+    defaultValue: None
+  - name: retry_policy
+    defaultValue: None
   return:
     types:
     - '<xref:<xref:type DataLakeCredential :mod: *A DataLakeCredential object*>>'

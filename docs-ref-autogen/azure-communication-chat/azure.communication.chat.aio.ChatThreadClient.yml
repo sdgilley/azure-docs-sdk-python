@@ -38,6 +38,9 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: endpoint
+  - name: credential
+  - name: thread_id
 variables:
 - description: Chat thread id.
   name: thread_id

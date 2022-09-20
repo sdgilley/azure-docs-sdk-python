@@ -22,6 +22,9 @@ constructor:
     defaultValue: UTF-8
     types:
     - <xref:str>
+  - name: value
+  - name: encoding
+    defaultValue: UTF-8
 variables:
 - description: The Python value of the AMQP type.
   name: value

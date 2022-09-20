@@ -86,3 +86,9 @@ constructor:
     types:
     - <xref:datetime.datetime>
     - <xref:str>
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None

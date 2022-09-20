@@ -114,6 +114,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: path
+    isRequired: true
 attributes:
 - uid: azure.ai.ml.entities.Component.display_name
   name: display_name

@@ -53,6 +53,9 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: file_system_name
+  - name: directory_template
+  - name: file_template
 variables:
 - description: 'Required. data source type.Constant filled by server.  Possible values
 

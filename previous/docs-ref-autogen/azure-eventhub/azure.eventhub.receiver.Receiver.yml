@@ -39,6 +39,8 @@ methods:
     defaultValue: None
     types:
     - <xref:Exception>
+  - name: exception
+    defaultValue: None
 - uid: azure.eventhub.receiver.Receiver.get_handler_state
   name: get_handler_state
   summary: 'Get the state of the underlying handler with regards to start
@@ -91,6 +93,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: max_batch_size
+    defaultValue: None
   - name: timeout
     defaultValue: None
   return:

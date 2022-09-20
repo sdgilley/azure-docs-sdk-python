@@ -29,6 +29,11 @@ constructor:
   - name: audio_config
     description: The config for the audio input
     defaultValue: None
+  - name: speech_config
+  - name: auto_detect_source_language_config
+    defaultValue: None
+  - name: audio_config
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.SourceLanguageRecognizer.recognize_once
   name: recognize_once

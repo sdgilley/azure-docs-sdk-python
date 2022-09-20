@@ -25,6 +25,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
+  - name: data_type
+    isRequired: true
   return:
     types:
     - <xref:dict>
@@ -44,6 +48,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: name
+    isRequired: true
+  - name: data
+    isRequired: true
   - name: data_type
     isRequired: true
   return:
@@ -65,6 +73,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: name
+    isRequired: true
+  - name: data
+    isRequired: true
   - name: data_type
     isRequired: true
   return:
@@ -80,6 +92,8 @@ methods:
   parameters:
   - name: attr
     description: Object to be serialized.
+    isRequired: true
+  - name: attr
     isRequired: true
   return:
     types:
@@ -106,6 +120,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: data
+    isRequired: true
   - name: data_type
     isRequired: true
 - uid: msrest.serialization.Serializer.serialize_bytearray
@@ -115,6 +133,8 @@ methods:
   parameters:
   - name: attr
     description: Object to be serialized.
+    isRequired: true
+  - name: attr
     isRequired: true
   return:
     types:
@@ -139,6 +159,10 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: data
+    isRequired: true
+  - name: data_type
+    isRequired: true
   exceptions:
   - type: AttributeError if required data is None.
   - type: ValueError if data is None
@@ -153,6 +177,8 @@ methods:
     isRequired: true
     types:
     - <xref:Date>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:str>
@@ -163,6 +189,8 @@ methods:
   parameters:
   - name: attr
     description: Object to be serialized.
+    isRequired: true
+  - name: attr
     isRequired: true
   return:
     types:
@@ -189,6 +217,10 @@ methods:
     isRequired: true
     types:
     - <xref:bool>
+  - name: attr
+    isRequired: true
+  - name: dict_type
+    isRequired: true
   return:
     types:
     - <xref:dict>
@@ -202,6 +234,8 @@ methods:
     isRequired: true
     types:
     - <xref:TimeDelta>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:str>
@@ -223,6 +257,8 @@ methods:
     isRequired: true
     types:
     - <xref:Datetime>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:str>
@@ -249,16 +285,22 @@ methods:
     description: 'Whether the objects in the iterable must
 
       not be None or empty.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:bool>
   - name: div
     description: 'If set, this str will be used to combine the elements
 
       in the iterable into a combined string. Default is ''None''.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
+  - name: iter_type
+    isRequired: true
+  - name: div
+    defaultValue: None
   return:
     types:
     - <xref:list>, <xref:str>
@@ -269,6 +311,8 @@ methods:
   parameters:
   - name: attr
     description: Object to be serialized.
+    isRequired: true
+  - name: attr
     isRequired: true
   return:
     types:
@@ -289,6 +333,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:dict>
@@ -303,6 +349,8 @@ methods:
     isRequired: true
     types:
     - <xref:Datetime>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:str>
@@ -318,6 +366,8 @@ methods:
     isRequired: true
     types:
     - <xref:datetime.time>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:str>
@@ -330,6 +380,8 @@ methods:
   parameters:
   - name: data
     description: Object to be serialized.
+    isRequired: true
+  - name: cls
     isRequired: true
   - name: data
     isRequired: true
@@ -348,6 +400,8 @@ methods:
     isRequired: true
     types:
     - <xref:Datetime>
+  - name: attr
+    isRequired: true
   return:
     types:
     - <xref:int>
@@ -366,6 +420,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: name
+    isRequired: true
+  - name: data
+    isRequired: true
   - name: data_type
     isRequired: true
   return:

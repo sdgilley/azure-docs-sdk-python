@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.personalizer.operations.events_operations.EventsOperations.activate
   name: activate
@@ -51,6 +55,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: event_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -94,6 +104,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: event_id
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

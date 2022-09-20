@@ -12,6 +12,7 @@ constructor:
   parameters:
   - name: west
     description: The westmost value of coordinates.
+    defaultValue: '0.0'
     types:
     - <xref:float>
   - name: south
@@ -29,6 +30,13 @@ constructor:
     defaultValue: '0.0'
     types:
     - <xref:float>
+  - name: _cls
+  - name: west
+    defaultValue: '0.0'
+  - name: south
+    defaultValue: '0.0'
+  - name: east
+    defaultValue: '0.0'
   - name: north
     defaultValue: '0.0'
 attributes:

@@ -40,7 +40,7 @@ constructor:
     description: 'Whether to turn on network trace logs. If *True*, trace logs
 
       will be logged at INFO level. Default is *False*.'
-    defaultValue: None
+    defaultValue: 'False'
     types:
     - <xref:bool>
   - name: timeout
@@ -52,14 +52,14 @@ constructor:
 
       Set *shutdown_after_timeout* to *False* if keeping the receiver open after timeout
       is needed.'
-    defaultValue: 'False'
+    defaultValue: '0'
     types:
     - <xref:float>
   - name: shutdown_after_timeout
     description: 'Whether to automatically shutdown the receiver
 
       if no new messages are received after the specified timeout. Default is *True*.'
-    defaultValue: '0'
+    isRequired: true
     types:
     - <xref:bool>
   - name: auto_complete
@@ -210,6 +210,23 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: source
+  - name: auth
+    defaultValue: None
+  - name: client_name
+    defaultValue: None
+  - name: loop
+    defaultValue: None
+  - name: debug
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: '0'
+  - name: auto_complete
+    defaultValue: 'True'
+  - name: error_policy
+    defaultValue: None
+  - name: keep_alive_interval
+    defaultValue: None
 methods:
 - uid: uamqp.async_ops.client_async.ReceiveClientAsync.close_async
   name: close_async
@@ -267,6 +284,12 @@ methods:
     defaultValue: '0'
     types:
     - <xref:float>
+  - name: max_batch_size
+    defaultValue: None
+  - name: on_message_received
+    defaultValue: None
+  - name: timeout
+    defaultValue: '0'
 - uid: uamqp.async_ops.client_async.ReceiveClientAsync.receive_messages_async
   name: receive_messages_async
   summary: 'Receive messages asynchronously. This function will run indefinitely,
@@ -297,6 +320,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>[<xref:uamqp.message.Message>]
+  - name: on_message_received
+    isRequired: true
 - uid: uamqp.async_ops.client_async.ReceiveClientAsync.receive_messages_iter_async
   name: receive_messages_iter_async
   summary: 'Receive messages by asynchronous generator. Messages returned in the
@@ -325,6 +350,8 @@ methods:
     defaultValue: None
     types:
     - <xref:callable>[<xref:uamqp.message.Message>]
+  - name: on_message_received
+    defaultValue: None
   return:
     types:
     - <xref:Generator>[<xref:uamqp.message.Message>]
@@ -345,3 +372,7 @@ methods:
     isRequired: true
     types:
     - <xref:uamqp.authentication.common.AMQPAuth>
+  - name: redirect
+    isRequired: true
+  - name: auth
+    isRequired: true

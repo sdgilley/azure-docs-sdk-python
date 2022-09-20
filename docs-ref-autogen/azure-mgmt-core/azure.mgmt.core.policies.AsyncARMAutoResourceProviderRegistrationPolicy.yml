@@ -23,6 +23,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineRequest>
+  - name: request
+    isRequired: true
   return:
     description: The pipeline response object.
     types:

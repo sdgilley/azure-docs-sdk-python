@@ -83,6 +83,8 @@ constructor:
       120.
     types:
     - <xref:float>
+  - name: fully_qualified_namespace
+  - name: credential
 variables:
 - description: 'The fully qualified host name for the Service Bus namespace.
 
@@ -169,6 +171,10 @@ methods:
       120.
     types:
     - <xref:float>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.aio.ServiceBusClient>
@@ -273,6 +279,8 @@ methods:
       (if provided) within its request to the service.'
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.aio.ServiceBusReceiver>
@@ -299,6 +307,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: queue_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.aio.ServiceBusSender>
@@ -413,6 +423,10 @@ methods:
       (if provided) within its request to the service.'
     types:
     - <xref:int>
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.aio.ServiceBusReceiver>
@@ -441,6 +455,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.aio.ServiceBusSender>

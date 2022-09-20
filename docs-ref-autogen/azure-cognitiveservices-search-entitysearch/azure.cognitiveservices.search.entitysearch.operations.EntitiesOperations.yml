@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Activate swagger compliance. Constant value: "true".'
   name: x_bing_apis_sdk
@@ -401,6 +405,36 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: query
+    isRequired: true
+  - name: accept_language
+    defaultValue: None
+  - name: pragma
+    defaultValue: None
+  - name: user_agent
+    defaultValue: None
+  - name: client_id
+    defaultValue: None
+  - name: client_ip
+    defaultValue: None
+  - name: location
+    defaultValue: None
+  - name: country_code
+    defaultValue: None
+  - name: market
+    defaultValue: en-us
+  - name: response_filter
+    defaultValue: None
+  - name: response_format
+    defaultValue: None
+  - name: safe_search
+    defaultValue: None
+  - name: set_lang
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: SearchResponse or ClientRawResponse if raw=true
     types:

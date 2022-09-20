@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.knowledge.qnamaker.operations.alterations_operations.AlterationsOperations.get
   name: get
@@ -44,6 +48,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: WordAlterationsDTO or ClientRawResponse if raw=true
     types:
@@ -78,6 +86,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: WordAlterationsDTO or ClientRawResponse if raw=true
     types:
@@ -112,6 +126,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: word_alterations
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -152,6 +172,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: kb_id
+    isRequired: true
+  - name: word_alterations
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

@@ -237,6 +237,10 @@ constructor:
       Default is None in which case *certifi.where()* will be used.'
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+  - name: eventhub_name
+  - name: consumer_group
+  - name: credential
 examples:
 - "Create a new instance of the EventHubConsumerClient.<!--[!code-python[Main](les\\\
   sync_samples\\sample_code_eventhub.py )]-->\n\n<!-- literal_block {\"ids\": [],\
@@ -488,6 +492,12 @@ methods:
       Default is None in which case *certifi.where()* will be used.'
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
+  - name: consumer_group
+    isRequired: true
   return:
     types:
     - <xref:azure.eventhub.EventHubConsumerClient>
@@ -538,6 +548,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: partition_id
+    isRequired: true
   return:
     types:
     - <xref:Dict>[<xref:str>, <xref:Any>]
@@ -706,6 +718,8 @@ methods:
       Please refer to <xref:azure.eventhub.CloseReason> for the various closing reasons.'
     types:
     - <xref:Callable>[[<xref:azure.eventhub.PartitionContext>, <xref:azure.eventhub.CloseReason>]]
+  - name: on_event
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -899,6 +913,8 @@ methods:
       Please refer to <xref:azure.eventhub.CloseReason> for the various closing reasons.'
     types:
     - <xref:Callable>[[<xref:azure.eventhub.PartitionContext>, <xref:azure.eventhub.CloseReason>]]
+  - name: on_event_batch
+    isRequired: true
   return:
     types:
     - <xref:None>

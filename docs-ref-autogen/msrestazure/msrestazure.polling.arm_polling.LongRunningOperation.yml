@@ -30,6 +30,10 @@ constructor:
   - name: kwargs
     description: Unused for now
     isRequired: true
+  - name: response
+  - name: deserialization_callback
+  - name: lro_options
+    defaultValue: None
 methods:
 - uid: msrestazure.polling.arm_polling.LongRunningOperation.get_status_from_async
   name: get_status_from_async
@@ -43,6 +47,8 @@ methods:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: response
+    isRequired: true
   exceptions:
   - type: <xref:BadResponse if response has no body>, <xref:or body does notcontain
       status.>
@@ -58,6 +64,8 @@ methods:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: response
+    isRequired: true
   exceptions:
   - type: BadResponse if response has no body and not status 202.
 - uid: msrestazure.polling.arm_polling.LongRunningOperation.get_status_from_resource
@@ -72,6 +80,8 @@ methods:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: response
+    isRequired: true
   exceptions:
   - type: BadResponse if status not 200 or 204.
 - uid: msrestazure.polling.arm_polling.LongRunningOperation.get_status_link
@@ -105,6 +115,8 @@ methods:
     isRequired: true
     types:
     - <xref:requests.Response>
+  - name: response
+    isRequired: true
 - uid: msrestazure.polling.arm_polling.LongRunningOperation.should_do_final_get
   name: should_do_final_get
   summary: Check whether the polling should end doing a final GET.

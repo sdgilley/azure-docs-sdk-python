@@ -19,3 +19,5 @@ constructor:
     isRequired: true
     types:
     - <xref:float>
+  - name: min_number
+  - name: min_ratio

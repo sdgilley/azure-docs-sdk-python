@@ -43,6 +43,9 @@ functions:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: conn_str
+  - name: case_sensitive_keys
+    defaultValue: 'False'
   return:
     types:
     - <xref:Mapping>

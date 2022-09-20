@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Version of the Api. Constant value: "2021-04-12".'
   name: api_version
@@ -74,6 +78,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: module
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Module or ClientRawResponse if raw=true
     types:
@@ -127,6 +143,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -166,6 +192,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Module or ClientRawResponse if raw=true
     types:
@@ -200,6 +234,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -243,6 +283,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:
@@ -294,6 +342,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_id
+    isRequired: true
+  - name: module_id
+    isRequired: true
+  - name: direct_method_request
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CloudToDeviceMethodResult or ClientRawResponse if raw=true
     types:
@@ -354,6 +412,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: device_twin_info
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:
@@ -414,6 +484,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: device_twin_info
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:

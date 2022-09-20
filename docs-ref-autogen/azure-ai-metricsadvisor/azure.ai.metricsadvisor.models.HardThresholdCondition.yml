@@ -35,3 +35,5 @@ constructor:
       should be specified when anomalyDetectorDirection is Both or Up.'
     types:
     - <xref:float>
+  - name: anomaly_detector_direction
+  - name: suppress_condition

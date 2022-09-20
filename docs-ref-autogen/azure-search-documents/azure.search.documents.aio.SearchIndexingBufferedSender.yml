@@ -86,6 +86,9 @@ constructor:
       will be assumed.'
     types:
     - <xref:str>
+  - name: endpoint
+  - name: index_name
+  - name: credential
 methods:
 - uid: azure.search.documents.aio.SearchIndexingBufferedSender.close
   name: close

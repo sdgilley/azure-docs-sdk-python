@@ -36,3 +36,10 @@ constructor:
     defaultValue: None
     types:
     - <xref:dict>
+  - name: http_request
+  - name: http_response
+    defaultValue: None
+  - name: error
+    defaultValue: None
+  - name: context
+    defaultValue: None

@@ -141,6 +141,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Constructed batch deployment object.
     types:
@@ -161,6 +162,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Constructed batch endpoint object.
     types:
@@ -210,6 +212,8 @@ functions:
     isRequired: true
     types:
     - <xref:dict>
+  - name: path
+    defaultValue: None
   return:
     description: A function that can be called with parameters to get a *azure.ai.ml.entities.Component*
     types:
@@ -230,6 +234,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Loaded compute object.
     types:
@@ -250,6 +255,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Constructed data object.
     types:
@@ -270,6 +276,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Loaded datastore object.
     types:
@@ -290,6 +297,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Constructed environment object.
     types:
@@ -310,6 +318,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Loaded job object.
     types:
@@ -330,6 +339,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Constructed model object.
     types:
@@ -350,6 +360,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Constructed online deployment object.
     types:
@@ -370,6 +381,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Constructed online endpoint object.
     types:
@@ -390,6 +402,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Loaded workspace object.
     types:
@@ -411,6 +424,7 @@ functions:
     isRequired: true
     types:
     - <xref:List>[<xref:Dict>]
+  - name: path
   return:
     description: Constructed workspace connection object.
     types:

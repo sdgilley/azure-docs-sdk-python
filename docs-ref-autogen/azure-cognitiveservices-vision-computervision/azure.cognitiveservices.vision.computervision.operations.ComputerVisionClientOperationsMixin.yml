@@ -125,6 +125,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url
+    isRequired: true
+  - name: visual_features
+    defaultValue: None
+  - name: details
+    defaultValue: None
+  - name: language
+    defaultValue: en
+  - name: description_exclude
+    defaultValue: None
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImageAnalysis or ClientRawResponse if raw=true
     types:
@@ -194,6 +210,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: model
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: language
+    defaultValue: en
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DomainModelResults or ClientRawResponse if raw=true
     types:
@@ -274,6 +302,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: model
+    isRequired: true
+  - name: image
+    isRequired: true
+  - name: language
+    defaultValue: en
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: DomainModelResults or ClientRawResponse if raw=true
     types:
@@ -409,6 +451,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image
+    isRequired: true
+  - name: visual_features
+    defaultValue: None
+  - name: details
+    defaultValue: None
+  - name: language
+    defaultValue: en
+  - name: description_exclude
+    defaultValue: None
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: ImageAnalysis or ClientRawResponse if raw=true
     types:
@@ -489,6 +549,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url
+    isRequired: true
+  - name: max_candidates
+    defaultValue: '1'
+  - name: language
+    defaultValue: en
+  - name: description_exclude
+    defaultValue: None
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ImageDescription or ClientRawResponse if raw=true
     types:
@@ -580,6 +654,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image
+    isRequired: true
+  - name: max_candidates
+    defaultValue: '1'
+  - name: language
+    defaultValue: en
+  - name: description_exclude
+    defaultValue: None
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: ImageDescription or ClientRawResponse if raw=true
     types:
@@ -627,6 +717,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url
+    isRequired: true
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: DetectResult or ClientRawResponse if raw=true
     types:
@@ -685,6 +783,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image
+    isRequired: true
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: DetectResult or ClientRawResponse if raw=true
     types:
@@ -781,6 +889,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: width
+    isRequired: true
+  - name: height
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: smart_cropping
+    defaultValue: 'False'
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -877,6 +1001,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: width
+    isRequired: true
+  - name: height
+    isRequired: true
+  - name: image
+    isRequired: true
+  - name: smart_cropping
+    defaultValue: 'False'
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -937,6 +1077,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url
+    isRequired: true
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: AreaOfInterestResult or ClientRawResponse if raw=true
     types:
@@ -1008,6 +1156,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image
+    isRequired: true
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: AreaOfInterestResult or ClientRawResponse if raw=true
     types:
@@ -1048,6 +1206,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: operation_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ReadOperationResult or ClientRawResponse if raw=true
     types:
@@ -1089,6 +1253,10 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ListModelsResult or ClientRawResponse if raw=true
     types:
@@ -1193,6 +1361,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url
+    isRequired: true
+  - name: language
+    defaultValue: None
+  - name: pages
+    defaultValue: None
+  - name: model_version
+    defaultValue: latest
+  - name: reading_order
+    defaultValue: basic
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1308,6 +1490,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image
+    isRequired: true
+  - name: language
+    defaultValue: None
+  - name: pages
+    defaultValue: None
+  - name: model_version
+    defaultValue: latest
+  - name: reading_order
+    defaultValue: basic
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1343,12 +1541,12 @@ methods:
       image orientation and correct it before further processing (e.g. if
 
       it''s upside-down).'
-    isRequired: true
+    defaultValue: 'True'
     types:
     - <xref:bool>
   - name: url
     description: Publicly reachable URL of an image.
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:str>
   - name: language
@@ -1393,6 +1591,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url
+    isRequired: true
+  - name: detect_orientation
+    defaultValue: 'True'
+  - name: language
+    defaultValue: unk
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: OcrResult or ClientRawResponse if raw=true
     types:
@@ -1428,12 +1638,12 @@ methods:
       image orientation and correct it before further processing (e.g. if
 
       it''s upside-down).'
-    isRequired: true
+    defaultValue: 'True'
     types:
     - <xref:bool>
   - name: image
     description: An image stream.
-    defaultValue: 'True'
+    isRequired: true
     types:
     - <xref:Generator>
   - name: language
@@ -1489,6 +1699,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image
+    isRequired: true
+  - name: detect_orientation
+    defaultValue: 'True'
+  - name: language
+    defaultValue: unk
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: OcrResult or ClientRawResponse if raw=true
     types:
@@ -1555,6 +1779,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url
+    isRequired: true
+  - name: language
+    defaultValue: en
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: TagResult or ClientRawResponse if raw=true
     types:
@@ -1632,6 +1866,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: image
+    isRequired: true
+  - name: language
+    defaultValue: en
+  - name: model_version
+    defaultValue: latest
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: TagResult or ClientRawResponse if raw=true
     types:

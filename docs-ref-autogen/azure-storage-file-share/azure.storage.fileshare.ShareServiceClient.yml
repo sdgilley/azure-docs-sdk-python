@@ -62,6 +62,9 @@ constructor:
     description: The maximum range size used for a file upload. Defaults to 4*1024*1024.
     types:
     - <xref:int>
+  - name: account_url
+  - name: credential
+    defaultValue: None
 examples:
 - "Create the share service client with url and credential.<!--[!code-python[Main](les\\\
   file_samples_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
@@ -167,6 +170,10 @@ methods:
       an instance of a AzureSasCredential from azure.core.credentials or an account
 
       shared access key.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: conn_str
     isRequired: true
   - name: credential
     defaultValue: None
@@ -233,6 +240,10 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: share
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
   return:
     description: A ShareClient.
     types:

@@ -28,6 +28,8 @@ constructor:
     - <xref:azure.core.credentials.AzureKeyCredential>
     - <xref:azure.core.credentials.AzureSasCredential>
     - <xref:azure.core.credentials_async.AsyncTokenCredential>
+  - name: endpoint
+  - name: credential
 examples:
 - "Creating the EventGridPublisherClient with an endpoint and AzureKeyCredential.<!--[!code-python[Main](les\\\
   async_samples\\sample_authentication_async.py )]-->\n\n<!-- literal_block {\"ids\"\

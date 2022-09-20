@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The content type. Constant value: "text/plain".'
   name: content_type
@@ -109,6 +113,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: review_id
+    isRequired: true
+  - name: timescale
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -177,6 +191,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: review_id
+    isRequired: true
+  - name: frame_image_zip
+    isRequired: true
+  - name: frame_metadata
+    isRequired: true
+  - name: timescale
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -240,6 +270,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: review_id
+    isRequired: true
+  - name: video_frame_body
+    isRequired: true
+  - name: timescale
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -300,6 +344,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: review_id
+    isRequired: true
+  - name: vt_tfile
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -358,6 +414,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: review_id
+    isRequired: true
+  - name: transcript_moderation_body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -515,6 +583,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: content_id
+    isRequired: true
+  - name: workflow_name
+    isRequired: true
+  - name: job_content_type
+    isRequired: true
+  - name: content_value
+    isRequired: true
+  - name: call_back_endpoint
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: JobId or ClientRawResponse if raw=true
     types:
@@ -613,6 +699,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: url_content_type
+    isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: create_review_body
+    isRequired: true
+  - name: sub_team
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -711,6 +809,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: create_video_reviews_body
+    isRequired: true
+  - name: sub_team
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -750,6 +860,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: job_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Job or ClientRawResponse if raw=true
     types:
@@ -789,6 +907,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: review_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Review or ClientRawResponse if raw=true
     types:
@@ -892,6 +1018,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: review_id
+    isRequired: true
+  - name: start_seed
+    defaultValue: None
+  - name: no_of_records
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Frames or ClientRawResponse if raw=true
     types:
@@ -932,6 +1072,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: team_name
+    isRequired: true
+  - name: review_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

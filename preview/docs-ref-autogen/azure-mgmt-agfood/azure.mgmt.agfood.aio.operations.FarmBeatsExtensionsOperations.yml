@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -45,6 +49,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farm_beats_extension_id
+    isRequired: true
   return:
     description: FarmBeatsExtension, or the result of cls(response)
     types:
@@ -90,6 +96,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farm_beats_extension_ids
+    defaultValue: None
+  - name: farm_beats_extension_names
+    defaultValue: None
+  - name: extension_categories
+    defaultValue: None
+  - name: publisher_ids
+    defaultValue: None
+  - name: max_page_size
+    defaultValue: '50'
   return:
     description: An iterator like instance of either FarmBeatsExtensionListResponse
       or the result of cls(response)

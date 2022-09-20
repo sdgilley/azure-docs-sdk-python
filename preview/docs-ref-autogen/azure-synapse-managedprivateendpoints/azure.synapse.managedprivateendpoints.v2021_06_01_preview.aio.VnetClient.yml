@@ -19,6 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  - name: credential
+  - name: endpoint
 variables:
 - description: ManagedPrivateEndpointsOperations operations
   name: managed_private_endpoints

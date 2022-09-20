@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version. Constant value: "2019-03-01".'
   name: api_version
@@ -63,6 +67,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Alert or ClientRawResponse if raw=true
     types:
@@ -103,6 +117,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: device_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of Alert
     types:

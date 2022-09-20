@@ -202,6 +202,9 @@ constructor:
       Default is None in which case *certifi.where()* will be used.'
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+  - name: eventhub_name
+  - name: credential
 examples:
 - "Create a new instance of the EventHubProducerClient.<!--[!code-python[Main](les\\\
   async_samples\\sample_code_eventhub_async.py )]-->\n\n<!-- literal_block {\"ids\"\
@@ -532,6 +535,10 @@ methods:
       Default is None in which case *certifi.where()* will be used.'
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
   return:
     types:
     - <xref:azure.eventhub.aio.EventHubProducerClient>
@@ -564,6 +571,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: partition_id
+    isRequired: true
   return:
     types:
     - <xref:int>
@@ -602,6 +611,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: partition_id
+    isRequired: true
   return:
     types:
     - <xref:Dict>[<xref:str>, <xref:Any>]
@@ -692,6 +703,8 @@ methods:
       value.**'
     types:
     - <xref:str>
+  - name: event_data_batch
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -797,6 +810,8 @@ methods:
       value.**'
     types:
     - <xref:str>
+  - name: event_data
+    isRequired: true
   return:
     types:
     - <xref:None>

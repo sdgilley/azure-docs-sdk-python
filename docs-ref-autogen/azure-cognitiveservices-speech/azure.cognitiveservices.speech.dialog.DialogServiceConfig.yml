@@ -29,6 +29,8 @@ methods:
   - name: property_id
     description: The id of the property to be retrieved.
     isRequired: true
+  - name: property_id
+    isRequired: true
   return:
     description: The value of the property.
 - uid: azure.cognitiveservices.speech.dialog.DialogServiceConfig.get_property_by_name
@@ -38,6 +40,8 @@ methods:
   parameters:
   - name: property_name
     description: The name of the property to be retrieved.
+    isRequired: true
+  - name: property_name
     isRequired: true
   return:
     description: The value of the property.
@@ -53,6 +57,10 @@ methods:
   - name: value
     description: The value to be set for the property.
     isRequired: true
+  - name: property_id
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: azure.cognitiveservices.speech.dialog.DialogServiceConfig.set_property_by_name
   name: set_property_by_name
   summary: Set a property by name.
@@ -63,6 +71,10 @@ methods:
     isRequired: true
   - name: value
     description: The value to be set for the property.
+    isRequired: true
+  - name: property_name
+    isRequired: true
+  - name: value
     isRequired: true
 - uid: azure.cognitiveservices.speech.dialog.DialogServiceConfig.set_proxy
   name: set_proxy
@@ -96,6 +108,14 @@ methods:
   - name: password
     description: The password of the proxy server.
     isRequired: true
+  - name: hostname
+    isRequired: true
+  - name: port
+    isRequired: true
+  - name: username
+    isRequired: true
+  - name: password
+    isRequired: true
 - uid: azure.cognitiveservices.speech.dialog.DialogServiceConfig.set_service_property
   name: set_service_property
   summary: Sets a property value that will be passed to service using the specified
@@ -110,6 +130,12 @@ methods:
     isRequired: true
   - name: channel
     description: The channel used to pass the specified property to service.
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: channel
     isRequired: true
 attributes:
 - uid: azure.cognitiveservices.speech.dialog.DialogServiceConfig.language

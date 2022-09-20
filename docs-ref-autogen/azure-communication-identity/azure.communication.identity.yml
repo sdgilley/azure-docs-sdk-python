@@ -18,6 +18,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: raw_id
 classes:
 - azure.communication.identity.CommunicationIdentifier
 - azure.communication.identity.CommunicationIdentityClient

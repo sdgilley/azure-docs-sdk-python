@@ -76,6 +76,10 @@ constructor:
       Default value is not to decode messages. Other options include <xref:azure.storage.queue.TextBase64DecodePolicy>,
 
       <xref:azure.storage.queue.BinaryBase64DecodePolicy> or *None*.'
+  - name: account_url
+  - name: queue_name
+  - name: credential
+    defaultValue: None
 examples:
 - "Create the queue client with url and credential.<!--[!code-python[Main](les\\queue_samples_message.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -265,6 +269,12 @@ methods:
       account name, and "key"
 
       should be the storage account key.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
+  - name: queue_name
     isRequired: true
   - name: credential
     defaultValue: None
@@ -315,6 +325,10 @@ methods:
       account name, and "key"
 
       should be the storage account key.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: queue_url
     isRequired: true
   - name: credential
     defaultValue: None

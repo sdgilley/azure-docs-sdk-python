@@ -325,6 +325,8 @@ methods:
 
       or a dict representing the properties of the container to be retrieved.'
     isRequired: true
+  - name: container
+    isRequired: true
   return:
     description: A *ContainerProxy* instance representing the retrieved database.
     types:
@@ -360,6 +362,8 @@ methods:
     description: 'The ID (name), dict representing the properties or <xref:azure.cosmos.UserProxy>
 
       instance of the user to be retrieved.'
+    isRequired: true
+  - name: user
     isRequired: true
   return:
     description: A *UserProxy* instance representing the retrieved user.

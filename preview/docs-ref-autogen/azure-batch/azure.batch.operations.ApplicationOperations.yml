@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2022-01-01.15.0".'
   name: api_version
@@ -75,6 +79,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_id
+    isRequired: true
+  - name: application_get_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ApplicationSummary or ClientRawResponse if raw=true
     types:
@@ -122,6 +134,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: application_list_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of ApplicationSummary
     types:

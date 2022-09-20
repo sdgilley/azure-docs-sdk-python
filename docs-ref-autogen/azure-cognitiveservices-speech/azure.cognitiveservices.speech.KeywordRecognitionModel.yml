@@ -12,3 +12,5 @@ constructor:
   - name: filename
     description: file name for the keyword recognition model.
     defaultValue: None
+  - name: filename
+    defaultValue: None

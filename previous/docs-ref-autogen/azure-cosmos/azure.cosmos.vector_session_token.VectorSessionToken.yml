@@ -32,6 +32,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: session_token
     isRequired: true
   return:

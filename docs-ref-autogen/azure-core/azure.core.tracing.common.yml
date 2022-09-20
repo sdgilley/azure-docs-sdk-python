@@ -34,6 +34,7 @@ functions:
   - name: func
     description: The function that will be run in the new context
     isRequired: true
+  - name: func
   return:
     description: The func wrapped with correct context
     types:

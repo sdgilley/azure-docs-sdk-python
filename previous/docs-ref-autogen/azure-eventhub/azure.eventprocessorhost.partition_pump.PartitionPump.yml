@@ -22,6 +22,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: reason
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_pump.PartitionPump.is_closing
   name: is_closing
   summary: Returns whether pump is closing.
@@ -39,6 +41,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: reason
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_pump.PartitionPump.on_open_async
   name: on_open_async
   summary: Event handler for on open event.
@@ -57,6 +61,8 @@ methods:
     isRequired: true
     types:
     - <xref:Exception>
+  - name: error
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_pump.PartitionPump.process_events_async
   name: process_events_async
   summary: Process pump events.
@@ -67,6 +73,8 @@ methods:
     isRequired: true
     types:
     - <xref:list>[<xref:azure.eventhub.common.EventData>]
+  - name: events
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_pump.PartitionPump.run
   name: run
   summary: Makes pump sync so that it can be run in a thread.
@@ -81,6 +89,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.lease.Lease>
+  - name: new_lease
+    isRequired: true
 - uid: azure.eventprocessorhost.partition_pump.PartitionPump.set_pump_status
   name: set_pump_status
   summary: Updates pump status and logs update to console.

@@ -68,6 +68,14 @@ constructor:
     description: Allows the user to set permissions and POSIX ACLs on files and directories.
     types:
     - <xref:bool>
+  - name: read
+    defaultValue: 'False'
+  - name: create
+    defaultValue: 'False'
+  - name: write
+    defaultValue: 'False'
+  - name: delete
+    defaultValue: 'False'
 methods:
 - uid: azure.storage.filedatalake.FileSasPermissions.from_string
   name: from_string
@@ -88,6 +96,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: permission
     isRequired: true
   return:

@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Client Api Version. Constant value: "2016-11-01".'
   name: api_version
@@ -80,6 +84,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: credential_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -145,6 +161,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: password
+    isRequired: true
+  - name: uri
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -191,6 +221,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -260,6 +298,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: credential_name
+    isRequired: true
+  - name: cascade
+    defaultValue: 'False'
+  - name: password
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -311,6 +363,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -360,6 +422,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: assembly_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlAssembly or ClientRawResponse if raw=true
     types:
@@ -409,6 +481,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: credential_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlCredential or ClientRawResponse if raw=true
     types:
@@ -451,6 +533,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlDatabase or ClientRawResponse if raw=true
     types:
@@ -504,6 +594,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: external_data_source_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlExternalDataSource or ClientRawResponse if raw=true
     types:
@@ -556,6 +656,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: package_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlPackage or ClientRawResponse if raw=true
     types:
@@ -610,6 +722,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: procedure_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlProcedure or ClientRawResponse if raw=true
     types:
@@ -657,6 +781,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlSchema or ClientRawResponse if raw=true
     types:
@@ -708,6 +842,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlSecret or ClientRawResponse if raw=true
     types:
@@ -760,6 +904,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlTable or ClientRawResponse if raw=true
     types:
@@ -821,6 +977,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_name
+    isRequired: true
+  - name: partition_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlTablePartition or ClientRawResponse if raw=true
     types:
@@ -882,6 +1052,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_name
+    isRequired: true
+  - name: statistics_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlTableStatistics or ClientRawResponse if raw=true
     types:
@@ -938,6 +1122,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_type_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlTableType or ClientRawResponse if raw=true
     types:
@@ -998,6 +1194,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_valued_function_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlTableValuedFunction or ClientRawResponse if raw=true
     types:
@@ -1050,6 +1258,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: view_name
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlView or ClientRawResponse if raw=true
     types:
@@ -1095,6 +1315,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1146,6 +1374,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -1231,6 +1469,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of Acl
     types:
@@ -1321,6 +1577,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of Acl
     types:
@@ -1410,6 +1686,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlAssemblyClr
     types:
@@ -1498,6 +1794,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlCredential
     types:
@@ -1580,6 +1896,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlDatabase
     types:
@@ -1672,6 +2006,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlExternalDataSource
     types:
@@ -1767,6 +2121,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlPackage
     types:
@@ -1862,6 +2238,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlProcedure
     types:
@@ -1949,6 +2347,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlSchema
     types:
@@ -2055,6 +2473,30 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTableFragment
     types:
@@ -2157,6 +2599,30 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTablePartition
     types:
@@ -2259,6 +2725,30 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTableStatistics
     types:
@@ -2351,6 +2841,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTableStatistics
     types:
@@ -2448,6 +2958,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTableStatistics
     types:
@@ -2543,6 +3075,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTableType
     types:
@@ -2642,6 +3196,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTableValuedFunction
     types:
@@ -2734,6 +3310,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTableValuedFunction
     types:
@@ -2840,6 +3436,30 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: basic
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTable
     types:
@@ -2941,6 +3561,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: basic
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlTable
     types:
@@ -3036,6 +3678,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlType
     types:
@@ -3129,6 +3793,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlView
     types:
@@ -3219,6 +3905,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: skip
+    defaultValue: None
+  - name: select
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of USqlView
     types:
@@ -3284,6 +3990,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_name
+    isRequired: true
+  - name: max_rows
+    defaultValue: None
+  - name: max_columns
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlTablePreview or ClientRawResponse if raw=true
     types:
@@ -3358,6 +4080,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: schema_name
+    isRequired: true
+  - name: table_name
+    isRequired: true
+  - name: partition_name
+    isRequired: true
+  - name: max_rows
+    defaultValue: None
+  - name: max_columns
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: USqlTablePreview or ClientRawResponse if raw=true
     types:
@@ -3414,6 +4154,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: ace_type
+    isRequired: true
+  - name: principal_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -3475,6 +4225,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: ace_type
+    isRequired: true
+  - name: principal_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -3533,6 +4295,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: credential_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -3596,6 +4370,20 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: account_name
+    isRequired: true
+  - name: database_name
+    isRequired: true
+  - name: secret_name
+    isRequired: true
+  - name: password
+    isRequired: true
+  - name: uri
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

@@ -31,6 +31,8 @@ constructor:
       in reduced feature compatibility.'
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+  - name: credential
 methods:
 - uid: azure.servicebus.aio.management.ServiceBusAdministrationClient.close
   name: close
@@ -175,6 +177,8 @@ methods:
       Default value is 1024.'
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.QueueProperties>
@@ -211,6 +215,12 @@ methods:
     description: The action of the rule.
     types:
     - <xref:Optional>[<xref:azure.servicebus.management.SqlRuleAction>]
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
+  - name: rule_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.RuleProperties>
@@ -316,6 +326,10 @@ methods:
       format like "PT300S" is accepted.'
     types:
     - <xref:Union>[<xref:datetime.timedelta>, <xref:str>]
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.SubscriptionProperties>
@@ -424,6 +438,8 @@ methods:
       Default value is 1024.'
     types:
     - <xref:int>
+  - name: topic_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.TopicProperties>
@@ -439,6 +455,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: queue_name
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -465,6 +483,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
+  - name: rule_name
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -486,6 +510,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -499,6 +527,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -522,6 +552,10 @@ methods:
       in reduced feature compatibility.'
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.aio.ServiceBusAdministrationClient>
@@ -542,6 +576,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: queue_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.QueueProperties>
@@ -555,6 +591,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: queue_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.QueueRuntimeProperties>
@@ -581,6 +619,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
+  - name: rule_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.RuleProperties>
@@ -600,6 +644,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.SubscriptionProperties>
@@ -619,6 +667,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.SubscriptionRuntimeProperties>
@@ -632,6 +684,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.TopicDescription>
@@ -645,6 +699,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
   return:
     types:
     - <xref:azure.servicebus.management.TopicRuntimeProperties>
@@ -682,6 +738,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
   return:
     description: An iterable (auto-paging) response of RuleProperties.
     types:
@@ -696,6 +756,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
   return:
     description: An iterable (auto-paging) response of SubscriptionProperties.
     types:
@@ -711,6 +773,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: topic_name
+    isRequired: true
   return:
     description: An iterable (auto-paging) response of SubscriptionRuntimeProperties.
     types:
@@ -762,6 +826,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.servicebus.management.QueueProperties>
+  - name: queue
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -804,6 +870,12 @@ methods:
     isRequired: true
     types:
     - <xref:azure.servicebus.management.RuleProperties>
+  - name: topic_name
+    isRequired: true
+  - name: subscription_name
+    isRequired: true
+  - name: rule
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -841,6 +913,10 @@ methods:
     isRequired: true
     types:
     - <xref:azure.servicebus.management.SubscriptionProperties>
+  - name: topic_name
+    isRequired: true
+  - name: subscription
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -875,6 +951,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.servicebus.management.TopicProperties>
+  - name: topic
+    isRequired: true
   return:
     types:
     - <xref:None>

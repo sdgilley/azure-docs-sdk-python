@@ -35,6 +35,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: cls
+    isRequired: true
   - name: data
     isRequired: true
   return:

@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -87,6 +91,16 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: container_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
+  - name: container
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either Container or the result
       of cls(response)
@@ -141,6 +155,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: container_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -198,6 +220,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: device_name
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: container_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either None or the result of
       cls(response)
@@ -238,6 +268,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: device_name
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: container_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: Container, or the result of cls(response)
     types:
@@ -274,6 +312,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: device_name
+    isRequired: true
+  - name: storage_account_name
+    isRequired: true
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An iterator like instance of either ContainerList or the result of
       cls(response)

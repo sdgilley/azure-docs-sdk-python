@@ -54,3 +54,4 @@ constructor:
     description: Postal Code / Zip Code.
     types:
     - <xref:str>
+  - name: country_code

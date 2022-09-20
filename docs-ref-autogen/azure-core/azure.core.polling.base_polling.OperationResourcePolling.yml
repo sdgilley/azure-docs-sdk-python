@@ -21,6 +21,8 @@ constructor:
       [https://aka.ms/azsdk/autorest/openapi/lro-options](https://aka.ms/azsdk/autorest/openapi/lro-options)'
     types:
     - <xref:dict>[<xref:str,>
+  - name: operation_location_header
+    defaultValue: operation-location
 methods:
 - uid: azure.core.polling.base_polling.OperationResourcePolling.can_poll
   name: can_poll
@@ -54,6 +56,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineResponse>
+  - name: pipeline_response
+    isRequired: true
   exceptions:
   - type: <xref:BadResponse if response has no body>, <xref:or body does not contain
       status.>
@@ -67,3 +71,5 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineResponse>
+  - name: pipeline_response
+    isRequired: true

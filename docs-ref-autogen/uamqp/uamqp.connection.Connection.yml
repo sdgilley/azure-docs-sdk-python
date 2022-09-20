@@ -71,16 +71,34 @@ constructor:
     description: 'Whether to turn on network trace logs. If *True*, trace logs
 
       will be logged at INFO level. Default is *False*.'
-    defaultValue: None
+    defaultValue: 'False'
     types:
     - <xref:bool>
   - name: encoding
     description: 'The encoding to use for parameters supplied as strings.
 
       Default is ''UTF-8'''
-    defaultValue: 'False'
+    defaultValue: UTF-8
     types:
     - <xref:str>
+  - name: hostname
+  - name: sasl
+  - name: container_id
+    defaultValue: 'False'
+  - name: max_frame_size
+    defaultValue: None
+  - name: channel_max
+    defaultValue: None
+  - name: idle_timeout
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: remote_idle_timeout_empty_frame_send_ratio
+    defaultValue: None
+  - name: error_policy
+    defaultValue: None
+  - name: debug
+    defaultValue: 'False'
   - name: encoding
     defaultValue: UTF-8
 variables:
@@ -145,6 +163,8 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: seconds
+    isRequired: true
 - uid: uamqp.connection.Connection.work
   name: work
   summary: Perform a single Connection iteration.

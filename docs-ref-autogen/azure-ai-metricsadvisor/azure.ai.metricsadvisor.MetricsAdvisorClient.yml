@@ -28,6 +28,8 @@ constructor:
     types:
     - <xref:azure.ai.metricsadvisor.MetricsAdvisorKeyCredential>
     - <xref:azure.core.credentials.TokenCredential>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.ai.metricsadvisor.MetricsAdvisorClient.add_feedback
   name: add_feedback

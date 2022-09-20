@@ -30,3 +30,7 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: chunk_size
+    defaultValue: None
+  - name: callback
+    defaultValue: None

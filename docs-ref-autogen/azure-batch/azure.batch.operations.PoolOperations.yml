@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2022-01-01.15.0".'
   name: api_version
@@ -68,6 +72,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool
+    isRequired: true
+  - name: pool_add_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -135,6 +147,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: pool_delete_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -179,6 +199,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: pool_disable_auto_scale_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -272,6 +300,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: auto_scale_formula
+    defaultValue: None
+  - name: auto_scale_evaluation_interval
+    defaultValue: None
+  - name: pool_enable_auto_scale_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -338,6 +378,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: auto_scale_formula
+    isRequired: true
+  - name: pool_evaluate_auto_scale_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: AutoScaleRun or ClientRawResponse if raw=true
     types:
@@ -378,6 +428,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: pool_exists_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: bool or ClientRawResponse if raw=true
     types:
@@ -417,6 +475,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: pool_get_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CloudPool or ClientRawResponse if raw=true
     types:
@@ -467,6 +533,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_get_all_lifetime_statistics_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PoolStatistics or ClientRawResponse if raw=true
     types:
@@ -501,6 +573,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_list_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of CloudPool
     types:
@@ -552,6 +630,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_list_usage_metrics_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of PoolUsageMetrics
     types:
@@ -605,6 +689,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: pool_patch_parameter
+    isRequired: true
+  - name: pool_patch_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -661,6 +755,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: node_remove_parameter
+    isRequired: true
+  - name: pool_remove_nodes_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -723,6 +827,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: pool_resize_parameter
+    isRequired: true
+  - name: pool_resize_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -782,6 +896,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: pool_stop_resize_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -840,6 +962,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: pool_id
+    isRequired: true
+  - name: pool_update_properties_parameter
+    isRequired: true
+  - name: pool_update_properties_options
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

@@ -33,6 +33,10 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.polling.PollingMethod>
+  - name: client
+  - name: initial_response
+  - name: deserialization_callback
+  - name: polling_method
 methods:
 - uid: azure.core.polling.LROPoller.add_done_callback
   name: add_done_callback
@@ -48,6 +52,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>
+  - name: func
+    isRequired: true
 - uid: azure.core.polling.LROPoller.continuation_token
   name: continuation_token
   summary: Return a continuation token that allows to restart the poller later.
@@ -89,6 +95,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>
+  - name: func
+    isRequired: true
   exceptions:
   - type: ValueError
     description: if the long running operation has already completed.

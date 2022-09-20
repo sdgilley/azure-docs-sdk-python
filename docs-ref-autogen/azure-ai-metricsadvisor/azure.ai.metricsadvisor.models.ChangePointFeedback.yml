@@ -54,6 +54,11 @@ constructor:
     types:
     - <xref:str>
     - <xref:azure.ai.metricsadvisor.models.ChangePointValue>
+  - name: metric_id
+  - name: dimension_key
+  - name: start_time
+  - name: end_time
+  - name: value
 variables:
 - description: 'Required. feedback type.Constant filled by server.  Possible values
 

@@ -55,6 +55,10 @@ constructor:
     types:
     - <xref:str>
     - <xref:azure.mixedreality.remoterenderings.RemoteRenderingApiVersion>
+  - name: endpoint
+  - name: account_id
+  - name: account_domain
+  - name: credential
 methods:
 - uid: azure.mixedreality.remoterendering.RemoteRenderingClient.begin_asset_conversion
   name: begin_asset_conversion

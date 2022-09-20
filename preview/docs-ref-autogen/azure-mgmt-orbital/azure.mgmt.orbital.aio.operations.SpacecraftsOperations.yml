@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -106,6 +110,24 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: spacecraft_name
+    isRequired: true
+  - name: location
+    isRequired: true
+  - name: tags
+    defaultValue: None
+  - name: norad_id
+    defaultValue: None
+  - name: title_line
+    defaultValue: None
+  - name: tle_line1
+    defaultValue: None
+  - name: tle_line2
+    defaultValue: None
+  - name: links
+    defaultValue: None
   return:
     description: An instance of AsyncLROPoller that returns either Spacecraft or the
       result of cls(response)
@@ -150,6 +172,10 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: spacecraft_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -216,6 +242,18 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: spacecraft_name
+    isRequired: true
+  - name: contact_profile
+    isRequired: true
+  - name: ground_station_name
+    isRequired: true
+  - name: start_time
+    isRequired: true
+  - name: end_time
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either AvailableContactsListResult
       or the result of cls(response)
@@ -243,6 +281,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: spacecraft_name
+    isRequired: true
   return:
     description: Spacecraft, or the result of cls(response)
     types:
@@ -263,6 +305,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An iterator like instance of either SpacecraftListResult or the result
       of cls(response)
@@ -311,6 +355,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: spacecraft_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: Spacecraft, or the result of cls(response)
     types:

@@ -42,6 +42,14 @@ constructor:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:int>]
+  - name: max_lock_renewal_duration
+    defaultValue: '300'
+  - name: on_lock_renew_failure
+    defaultValue: None
+  - name: executor
+    defaultValue: None
+  - name: max_workers
+    defaultValue: None
 examples:
 - "Automatically renew a message lock<!--[!code-python[Main](les\\sync_samples\\sample_code_servicebus.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -78,6 +86,8 @@ methods:
     defaultValue: 'True'
     types:
     - <xref:bool>
+  - name: wait
+    defaultValue: 'True'
   return:
     types:
     - <xref:None>
@@ -116,6 +126,14 @@ methods:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:LockRenewFailureCallback>]
+  - name: receiver
+    isRequired: true
+  - name: renewable
+    isRequired: true
+  - name: max_lock_renewal_duration
+    defaultValue: None
+  - name: on_lock_renew_failure
+    defaultValue: None
   return:
     types:
     - <xref:None>

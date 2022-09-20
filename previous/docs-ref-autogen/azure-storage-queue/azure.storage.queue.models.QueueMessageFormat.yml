@@ -26,6 +26,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     description: Base64 decoded data.
     types:
@@ -40,6 +42,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     description: Base64 encoded data.
     types:
@@ -54,6 +58,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     description: The data passed in is returned unmodified.
     types:
@@ -68,6 +74,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     description: The data passed in is returned unmodified.
     types:
@@ -82,6 +90,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     description: Base64 decoded string.
     types:
@@ -96,6 +106,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     description: Base64 encoded string.
     types:
@@ -110,6 +122,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     description: XML decoded data.
     types:
@@ -124,6 +138,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: data
+    isRequired: true
   return:
     description: XML encoded data.
     types:

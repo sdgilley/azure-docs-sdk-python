@@ -30,6 +30,8 @@ constructor:
       <xref:azure.core.pipeline.transport.AioHttpTransport>.'
     types:
     - <xref:azure.core.pipeline.transport.AsyncHttpTransport>
+  - name: vault_url
+  - name: credential
 examples:
 - "Create a new `KeyClient`<!--[!code-python[Main](s\\test_samples_keys_async.py )]-->\n\
   \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -439,6 +441,8 @@ methods:
     description: Optional version of the key used to perform cryptographic operations.
     types:
     - <xref:str>
+  - name: key_name
+    isRequired: true
   return:
     description: 'A <xref:azure.keyvault.keys.crypto.aio.CryptographyClient> using
       the same options, credentials, and

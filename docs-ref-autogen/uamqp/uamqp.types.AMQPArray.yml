@@ -16,6 +16,7 @@ constructor:
     isRequired: true
     types:
     - <xref:int>
+  - name: value
 variables:
 - description: The Python values of the AMQP array.
   name: value

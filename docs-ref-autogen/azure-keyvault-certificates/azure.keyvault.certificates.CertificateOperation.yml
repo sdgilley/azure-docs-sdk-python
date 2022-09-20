@@ -77,6 +77,28 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  - name: cert_operation_id
+    defaultValue: None
+  - name: issuer_name
+    defaultValue: None
+  - name: certificate_type
+    defaultValue: None
+  - name: certificate_transparency
+    defaultValue: 'False'
+  - name: csr
+    defaultValue: None
+  - name: cancellation_requested
+    defaultValue: 'False'
+  - name: status
+    defaultValue: None
+  - name: status_details
+    defaultValue: None
+  - name: error
+    defaultValue: None
+  - name: target
+    defaultValue: None
+  - name: request_id
+    defaultValue: None
 attributes:
 - uid: azure.keyvault.certificates.CertificateOperation.cancellation_requested
   name: cancellation_requested

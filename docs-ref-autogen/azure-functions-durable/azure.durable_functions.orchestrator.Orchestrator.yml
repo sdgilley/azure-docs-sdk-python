@@ -29,6 +29,8 @@ methods:
     types:
     - <xref:Callable>[[<xref:azure.durable_functions.DurableOrchestrationContext>],
       <xref:Iterator>[<xref:Any>]]
+  - name: cls
+    isRequired: true
   - name: fn
     isRequired: true
   return:
@@ -54,4 +56,6 @@ methods:
   parameters:
   - name: context
     description: the context of what has been executed by
+    isRequired: true
+  - name: context
     isRequired: true

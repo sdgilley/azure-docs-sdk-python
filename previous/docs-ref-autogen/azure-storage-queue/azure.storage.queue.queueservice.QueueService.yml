@@ -127,6 +127,10 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.queue.queueservice.QueueService.create_queue
   name: create_queue
   summary: Creates a queue under the given account.
@@ -166,6 +170,14 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: fail_on_exist
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A boolean indicating whether the queue was created. If fail_on_exist
 
@@ -222,6 +234,14 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: message_id
+    isRequired: true
+  - name: pop_receipt
+    isRequired: true
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.queue.queueservice.QueueService.delete_queue
   name: delete_queue
   summary: 'Deletes the specified queue and any messages it contains.
@@ -256,6 +276,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: fail_not_exist
+    defaultValue: 'False'
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A boolean indicating whether the queue was deleted. If fail_not_exist
 
@@ -277,6 +303,10 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: A boolean indicating whether the queue exists.
     types:
@@ -361,6 +391,18 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: resource_types
+    isRequired: true
+  - name: permission
+    isRequired: true
+  - name: expiry
+    isRequired: true
+  - name: start
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -453,6 +495,20 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: queue_name
+    isRequired: true
+  - name: permission
+    defaultValue: None
+  - name: expiry
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: id
+    defaultValue: None
+  - name: ip
+    defaultValue: None
+  - name: protocol
+    defaultValue: None
   return:
     description: A Shared Access Signature (sas) token.
     types:
@@ -512,6 +568,14 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: num_messages
+    defaultValue: None
+  - name: visibility_timeout
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: A <xref:azure.storage.queue.models.QueueMessage> object representing
       the information passed.
@@ -534,6 +598,10 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: A dictionary of access policies associated with the queue.
     types:
@@ -555,6 +623,10 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A dictionary representing the queue metadata with an
 
@@ -575,6 +647,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: timeout
+    defaultValue: None
   return:
     description: The queue service properties.
     types:
@@ -619,6 +693,8 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: timeout
+    defaultValue: None
   return:
     description: The queue service stats.
     types:
@@ -682,6 +758,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: prefix
+    defaultValue: None
+  - name: num_results
+    defaultValue: None
+  - name: include_metadata
+    defaultValue: 'False'
+  - name: marker
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.queue.queueservice.QueueService.peek_messages
   name: peek_messages
   summary: 'Retrieves one or more messages from the front of the queue, but does
@@ -729,6 +815,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: num_messages
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A list of <xref:azure.storage.queue.models.QueueMessage> objects.
       Note that
@@ -808,6 +900,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: content
+    isRequired: true
+  - name: visibility_timeout
+    defaultValue: None
+  - name: time_to_live
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A <xref:azure.storage.queue.models.QueueMessage> object.
 
@@ -864,6 +966,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: signed_identifiers
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.queue.queueservice.QueueService.set_queue_metadata
   name: set_queue_metadata
   summary: 'Sets user-defined metadata on the specified queue. Metadata is
@@ -888,6 +996,12 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.queue.queueservice.QueueService.set_queue_service_properties
   name: set_queue_service_properties
   summary: 'Sets the properties of a storage account''s Queue service, including
@@ -939,6 +1053,16 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: logging
+    defaultValue: None
+  - name: hour_metrics
+    defaultValue: None
+  - name: minute_metrics
+    defaultValue: None
+  - name: cors
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: azure.storage.queue.queueservice.QueueService.update_message
   name: update_message
   summary: 'Updates the visibility timeout of a message. You can also use this
@@ -1011,6 +1135,18 @@ methods:
     defaultValue: None
     types:
     - <xref:int>
+  - name: queue_name
+    isRequired: true
+  - name: message_id
+    isRequired: true
+  - name: pop_receipt
+    isRequired: true
+  - name: visibility_timeout
+    isRequired: true
+  - name: content
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
   return:
     description: 'A list of <xref:azure.storage.queue.models.QueueMessage> objects.
       For convenience,

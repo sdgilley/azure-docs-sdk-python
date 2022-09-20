@@ -37,6 +37,10 @@ constructor:
     description: Description of data source credential.
     types:
     - <xref:str>
+  - name: name
+  - name: client_id
+  - name: client_secret
+  - name: tenant_id
 variables:
 - description: 'Required. Type of data source credential.Constant filled by
 

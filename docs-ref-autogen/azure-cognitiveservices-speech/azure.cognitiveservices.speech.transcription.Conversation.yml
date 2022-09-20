@@ -16,6 +16,9 @@ constructor:
   - name: conversation_id
     description: The conversation identifier.
     defaultValue: None
+  - name: speech_config
+  - name: conversation_id
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.transcription.Conversation.add_participant_async
   name: add_participant_async
@@ -29,6 +32,10 @@ methods:
     defaultValue: None
   - name: user_id
     description: the user identification string
+    defaultValue: None
+  - name: participant
+    defaultValue: None
+  - name: user_id
     defaultValue: None
   return:
     description: A future containing the added participant object.
@@ -74,6 +81,8 @@ methods:
   - name: participant_id
     description: the participant idnetifier.
     isRequired: true
+  - name: participant_id
+    isRequired: true
   return:
     description: A future that is fulfilled once participant has been muted.
 - uid: azure.cognitiveservices.speech.transcription.Conversation.remove_participant_async
@@ -88,6 +97,10 @@ methods:
     defaultValue: None
   - name: user_id
     description: the user identification string
+    defaultValue: None
+  - name: participant
+    defaultValue: None
+  - name: user_id
     defaultValue: None
   return:
     description: A future containing the added participant object.
@@ -122,6 +135,8 @@ methods:
   parameters:
   - name: participant_id
     description: the participant idnetifier.
+    isRequired: true
+  - name: participant_id
     isRequired: true
   return:
     description: A future that is fulfilled once participant has been muted.

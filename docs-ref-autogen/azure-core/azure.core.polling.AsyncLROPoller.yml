@@ -34,6 +34,10 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.polling.AsyncPollingMethod>
+  - name: client
+  - name: initial_response
+  - name: deserialization_callback
+  - name: polling_method
 methods:
 - uid: azure.core.polling.AsyncLROPoller.continuation_token
   name: continuation_token

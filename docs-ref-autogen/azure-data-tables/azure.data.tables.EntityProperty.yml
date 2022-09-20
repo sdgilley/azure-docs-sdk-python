@@ -26,6 +26,8 @@ constructor:
     types:
     - <xref:str>
     - <xref:azure.data.tables.EdmType>
+  - name: _cls
+  - name: value
   - name: edm_type
 attributes:
 - uid: azure.data.tables.EntityProperty.edm_type

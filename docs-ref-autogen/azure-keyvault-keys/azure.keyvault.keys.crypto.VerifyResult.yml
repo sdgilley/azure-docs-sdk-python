@@ -24,3 +24,6 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.keyvault.keys.crypto.SignatureAlgorithm>
+  - name: key_id
+  - name: is_valid
+  - name: algorithm

@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'Client API version. Constant value: "1.6".'
   name: api_version
@@ -75,6 +79,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: group_object_id
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: additional_properties
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -132,6 +146,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: additional_properties
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -166,6 +190,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ADGroup or ClientRawResponse if raw=true
     types:
@@ -200,6 +230,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -236,6 +272,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: ADGroup or ClientRawResponse if raw=true
     types:
@@ -272,6 +314,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DirectoryObject
     types:
@@ -326,6 +374,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: security_enabled_only
+    isRequired: true
+  - name: additional_properties
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of str
     types:
@@ -361,6 +419,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: CheckGroupMembershipResult or ClientRawResponse if raw=true
     types:
@@ -395,6 +459,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: filter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of ADGroup
     types:
@@ -433,6 +503,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: An iterator like instance of DirectoryObject
     types:
@@ -474,6 +550,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: group_object_id
+    isRequired: true
+  - name: member_object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -516,6 +600,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: object_id
+    isRequired: true
+  - name: owner_object_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

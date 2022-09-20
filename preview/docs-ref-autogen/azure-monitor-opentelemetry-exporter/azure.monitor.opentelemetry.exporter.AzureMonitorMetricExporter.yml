@@ -61,6 +61,10 @@ methods:
     description: The service API version used. Defaults to latest.
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
 - uid: azure.monitor.opentelemetry.exporter.AzureMonitorMetricExporter.shutdown
   name: shutdown
   summary: 'Shuts down the exporter.

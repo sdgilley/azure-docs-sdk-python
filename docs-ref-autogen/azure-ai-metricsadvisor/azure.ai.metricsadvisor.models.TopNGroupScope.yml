@@ -26,3 +26,6 @@ constructor:
     isRequired: true
     types:
     - <xref:int>
+  - name: top
+  - name: period
+  - name: min_top_count

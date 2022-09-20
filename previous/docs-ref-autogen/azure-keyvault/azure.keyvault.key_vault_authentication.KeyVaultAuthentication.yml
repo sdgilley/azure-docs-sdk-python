@@ -43,6 +43,8 @@ methods:
     defaultValue: None
     types:
     - <xref:requests.Session>
+  - name: session
+    defaultValue: None
   return:
     types:
     - <xref:requests.Session>

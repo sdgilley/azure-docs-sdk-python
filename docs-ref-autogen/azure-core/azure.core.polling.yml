@@ -36,6 +36,10 @@ functions:
     isRequired: true
     types:
     - <xref:azure.core.polling.PollingMethod>
+  - name: client
+  - name: initial_response
+  - name: deserialization_callback
+  - name: polling_method
 classes:
 - azure.core.polling.AsyncLROPoller
 - azure.core.polling.AsyncNoPolling

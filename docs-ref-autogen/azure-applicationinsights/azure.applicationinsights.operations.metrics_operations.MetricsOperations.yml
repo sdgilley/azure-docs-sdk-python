@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.applicationinsights.operations.metrics_operations.MetricsOperations.get
   name: get
@@ -183,6 +187,28 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: metric_id
+    isRequired: true
+  - name: timespan
+    defaultValue: None
+  - name: interval
+    defaultValue: None
+  - name: aggregation
+    defaultValue: None
+  - name: segment
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: orderby
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: MetricsResult or ClientRawResponse if raw=true
     types:
@@ -222,6 +248,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -266,6 +298,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: body
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:

@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -89,6 +93,16 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: cluster_name
+    isRequired: true
+  - name: application_name
+    isRequired: true
+  - name: service_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ServiceResource
       or the result of cls(response)
@@ -148,6 +162,14 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: cluster_name
+    isRequired: true
+  - name: application_name
+    isRequired: true
+  - name: service_name
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either None or the result
       of cls(response)
@@ -213,6 +235,16 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: cluster_name
+    isRequired: true
+  - name: application_name
+    isRequired: true
+  - name: service_name
+    isRequired: true
+  - name: parameters
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either ServiceResource
       or the result of cls(response)
@@ -258,6 +290,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: cluster_name
+    isRequired: true
+  - name: application_name
+    isRequired: true
+  - name: service_name
+    isRequired: true
   return:
     description: ServiceResource, or the result of cls(response)
     types:
@@ -296,6 +336,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: cluster_name
+    isRequired: true
+  - name: application_name
+    isRequired: true
   return:
     description: ServiceResourceList, or the result of cls(response)
     types:

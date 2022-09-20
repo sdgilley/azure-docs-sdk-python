@@ -76,6 +76,20 @@ constructor:
       To get immutability policy, you just need read permission.'
     types:
     - <xref:bool>
+  - name: read
+    defaultValue: 'False'
+  - name: add
+    defaultValue: 'False'
+  - name: create
+    defaultValue: 'False'
+  - name: write
+    defaultValue: 'False'
+  - name: delete
+    defaultValue: 'False'
+  - name: delete_previous_version
+    defaultValue: 'False'
+  - name: tag
+    defaultValue: 'False'
 methods:
 - uid: azure.storage.blob.BlobSasPermissions.from_string
   name: from_string
@@ -96,6 +110,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: permission
     isRequired: true
   return:

@@ -54,6 +54,9 @@ constructor:
       feature compatibility.'
     types:
     - <xref:str>
+  - name: account_url
+  - name: credential
+    defaultValue: None
 variables:
 - description: The full endpoint URL to the datalake service endpoint.
   name: url
@@ -130,6 +133,12 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: file_system
+    isRequired: true
+  - name: metadata
+    defaultValue: None
+  - name: public_access
+    defaultValue: None
   return:
     types:
     - <xref:azure.storage.filedatalake.FileSystemClient>
@@ -211,6 +220,8 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: file_system
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -254,6 +265,10 @@ methods:
 
       Credentials provided here will take precedence over those in the connection
       string.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: conn_str
     isRequired: true
   - name: credential
     defaultValue: None
@@ -294,6 +309,10 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.DirectoryProperties>
+  - name: file_system
+    isRequired: true
+  - name: directory
+    isRequired: true
   return:
     description: A DataLakeDirectoryClient.
     types:
@@ -335,6 +354,10 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.FileProperties>
+  - name: file_system
+    isRequired: true
+  - name: file_path
+    isRequired: true
   return:
     description: A DataLakeFileClient.
     types:
@@ -365,6 +388,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.filedatalake.FileSystemProperties>
+  - name: file_system
+    isRequired: true
   return:
     description: A FileSystemClient.
     types:
@@ -423,6 +448,10 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: key_start_time
+    isRequired: true
+  - name: key_expiry_time
+    isRequired: true
   return:
     description: The user delegation key.
     types:
@@ -489,6 +518,10 @@ methods:
       .. versionadded:: 12.6.0'
     types:
     - <xref:bool>
+  - name: name_starts_with
+    defaultValue: None
+  - name: include_metadata
+    defaultValue: None
   return:
     description: An iterable (auto-paging) of FileSystemProperties.
     types:
@@ -583,6 +616,10 @@ methods:
     description: The timeout parameter is expressed in seconds.
     types:
     - <xref:int>
+  - name: name
+    isRequired: true
+  - name: deleted_version
+    isRequired: true
   return:
     types:
     - <xref:azure.storage.filedatalake.FileSystemClient>

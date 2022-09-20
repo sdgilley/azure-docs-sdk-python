@@ -115,6 +115,28 @@ constructor:
       Default value is 10% of the remaining seconds until the token expires.'
     types:
     - <xref:int>
+  - name: audience
+  - name: uri
+  - name: get_token
+  - name: expires_in
+    defaultValue: '1:00:00'
+  - name: expires_at
+    defaultValue: None
+  - name: port
+    defaultValue: None
+  - name: timeout
+    defaultValue: '10'
+  - name: retry_policy
+  - name: verify
+    defaultValue: None
+  - name: token_type
+    defaultValue: b'jwt'
+  - name: http_proxy
+    defaultValue: None
+  - name: transport_type
+    defaultValue: TransportType.Amqp
+  - name: encoding
+    defaultValue: UTF-8
 methods:
 - uid: uamqp.authentication.cbs_auth.JWTTokenAuth.create_authenticator
   name: create_authenticator
@@ -137,6 +159,10 @@ methods:
     defaultValue: 'False'
     types:
     - <xref:bool>
+  - name: connection
+    isRequired: true
+  - name: debug
+    defaultValue: 'False'
   return:
     types:
     - <xref:uamqp.c_uamqp.CBSTokenAuth>

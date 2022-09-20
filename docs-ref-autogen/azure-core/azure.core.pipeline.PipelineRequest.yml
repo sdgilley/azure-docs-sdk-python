@@ -24,3 +24,5 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineContext>
+  - name: http_request
+  - name: context

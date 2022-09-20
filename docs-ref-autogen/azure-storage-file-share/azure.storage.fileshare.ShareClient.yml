@@ -72,6 +72,12 @@ constructor:
     description: The maximum range size used for a file upload. Defaults to 4*1024*1024.
     types:
     - <xref:int>
+  - name: account_url
+  - name: share_name
+  - name: snapshot
+    defaultValue: None
+  - name: credential
+    defaultValue: None
 methods:
 - uid: azure.storage.fileshare.ShareClient.acquire_lease
   name: acquire_lease
@@ -334,7 +340,7 @@ methods:
       snapshot ID string
 
       or the response returned from <xref:azure.storage.fileshare.ShareClient.create_snapshot>.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: credential
@@ -345,6 +351,14 @@ methods:
       an instance of a AzureSasCredential from azure.core.credentials or an account
 
       shared access key.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
+  - name: share_name
+    isRequired: true
+  - name: snapshot
     defaultValue: None
   - name: credential
     defaultValue: None
@@ -376,7 +390,7 @@ methods:
       snapshot ID string
 
       or the response returned from <xref:azure.storage.fileshare.ShareClient.create_snapshot>.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: credential
@@ -387,6 +401,12 @@ methods:
       an instance of a AzureSasCredential from azure.core.credentials or an account
 
       shared access key.'
+    defaultValue: None
+  - name: cls
+    isRequired: true
+  - name: share_url
+    isRequired: true
+  - name: snapshot
     defaultValue: None
   - name: credential
     defaultValue: None
@@ -406,6 +426,8 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: directory_path
+    defaultValue: None
   return:
     description: A Directory Client.
     types:
@@ -422,6 +444,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: file_path
+    isRequired: true
   return:
     description: A File Client.
     types:

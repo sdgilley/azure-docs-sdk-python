@@ -28,6 +28,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: lock_token
+    isRequired: true
   return:
     description: None.
   exceptions:
@@ -42,6 +44,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: lock_token
+    isRequired: true
   return:
     description: None.
   exceptions:
@@ -65,6 +69,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: connection_string
     isRequired: true
   return:
@@ -92,6 +98,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: url
+    isRequired: true
   - name: token_credential
     isRequired: true
   return:

@@ -37,6 +37,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: name
+    isRequired: true
+  - name: type
+    isRequired: true
+  - name: is_fqdn
+    defaultValue: None
   return:
     description: ResourceNameAvailability, or the result of cls(response)
     types:
@@ -66,6 +72,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: code
+    isRequired: true
+  - name: state
+    isRequired: true
   return:
     description: AppserviceGithubToken, or the result of cls(response)
     types:
@@ -107,6 +117,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: source_control_type
+    isRequired: true
   return:
     description: SourceControl, or the result of cls(response)
     types:
@@ -154,6 +166,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_location
+    defaultValue: None
+  - name: os_type
+    defaultValue: None
   return:
     description: An iterator like instance of either BillingMeterCollection or the
       result of cls(response)
@@ -203,6 +219,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: sku
+    defaultValue: None
+  - name: linux_workers_enabled
+    defaultValue: None
+  - name: xenon_workers_enabled
+    defaultValue: None
+  - name: linux_dynamic_workers_enabled
+    defaultValue: None
   return:
     description: An iterator like instance of either GeoRegionCollection or the result
       of cls(response)
@@ -247,6 +271,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: name_identifier
+    isRequired: true
   return:
     description: An iterator like instance of either IdentifierCollection or the result
       of cls(response)
@@ -314,6 +340,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: move_resource_envelope
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -338,6 +368,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: user_details
+    isRequired: true
   return:
     description: User, or the result of cls(response)
     types:
@@ -367,6 +399,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: source_control_type
+    isRequired: true
+  - name: request_message
+    isRequired: true
   return:
     description: SourceControl, or the result of cls(response)
     types:
@@ -396,6 +432,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: validate_request
+    isRequired: true
   return:
     description: ValidateResponse, or the result of cls(response)
     types:
@@ -425,6 +465,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: move_resource_envelope
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -453,6 +497,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: parameters
+    isRequired: true
   return:
     description: VnetValidationFailureDetails, or the result of cls(response)
     types:

@@ -19,6 +19,10 @@ constructor:
   - name: voice_signature
     description: User's voice signature (optional).
     defaultValue: None
+  - name: user_id
+  - name: preferred_language
+  - name: voice_signature
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.transcription.Participant.set_preferred_language
   name: set_preferred_language
@@ -28,6 +32,8 @@ methods:
   - name: language
     description: The language in BCP-47 format.
     isRequired: true
+  - name: language
+    isRequired: true
 - uid: azure.cognitiveservices.speech.transcription.Participant.set_voice_signature
   name: set_voice_signature
   summary: Sets the voice signature of the participant used for identification.
@@ -35,6 +41,8 @@ methods:
   parameters:
   - name: signature
     description: The language in BCP-47 format.
+    isRequired: true
+  - name: signature
     isRequired: true
 attributes:
 - uid: azure.cognitiveservices.speech.transcription.Participant.avatar

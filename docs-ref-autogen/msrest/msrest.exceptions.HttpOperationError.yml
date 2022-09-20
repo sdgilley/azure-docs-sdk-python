@@ -32,6 +32,10 @@ constructor:
   - name: args
     description: Additional args to pass to exception object.
     isRequired: true
+  - name: deserialize
+  - name: response
+  - name: resp_type
+    defaultValue: None
 variables:
 - description: Deserialized error model.
   name: error

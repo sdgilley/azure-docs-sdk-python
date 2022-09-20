@@ -26,3 +26,7 @@ methods:
     types:
     - <xref:azure.core.pipeline.transport.HttpResponse>
     - <xref:azure.core.pipeline.transport.AsyncHttpResponse>
+  - name: request
+    isRequired: true
+  - name: response
+    defaultValue: None

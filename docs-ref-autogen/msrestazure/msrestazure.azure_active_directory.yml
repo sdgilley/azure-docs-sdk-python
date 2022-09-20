@@ -31,6 +31,11 @@ functions:
     defaultValue: None
     types:
     - <xref:dict>[<xref:str,str>]
+  - name: resource
+  - name: port
+    defaultValue: '50342'
+  - name: msi_conf
+    defaultValue: None
 - uid: msrestazure.azure_active_directory.get_msi_token_webapp
   name: get_msi_token_webapp
   summary: "Get a MSI token from inside a webapp or functions.\n\nEnv variable will\
@@ -49,6 +54,9 @@ functions:
     defaultValue: None
     types:
     - <xref:dict>[<xref:str,str>]
+  - name: resource
+  - name: msi_conf
+    defaultValue: None
 classes:
 - msrestazure.azure_active_directory.AADMixin
 - msrestazure.azure_active_directory.AADTokenCredentials

@@ -106,6 +106,9 @@ constructor:
       or 4MB.'
     types:
     - <xref:int>
+  - name: account_url
+  - name: credential
+    defaultValue: None
 examples:
 - "Creating the BlobServiceClient with account url and credential.<!--[!code-python[Main](les\\\
   blob_samples_authentication_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
@@ -362,6 +365,12 @@ methods:
     types:
     - <xref:str>
     - <xref:dict>(<xref:str>, <xref:Any>)
+  - name: container
+    isRequired: true
+  - name: blob
+    isRequired: true
+  - name: snapshot
+    defaultValue: None
   return:
     description: A BlobClient.
     types:
@@ -393,6 +402,8 @@ methods:
     types:
     - <xref:str>
     - <xref:azure.storage.blob.ContainerProperties>
+  - name: container
+    isRequired: true
   return:
     description: A ContainerClient.
     types:

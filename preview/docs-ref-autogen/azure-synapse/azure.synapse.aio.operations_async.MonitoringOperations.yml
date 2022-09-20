@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -55,6 +59,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: pool_name
+    isRequired: true
+  - name: livy_id
+    isRequired: true
   return:
     description: SparkJobListViewResponse or  or the result of cls(response)
     types:
@@ -98,6 +108,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: pool_name
+    isRequired: true
+  - name: livy_id
+    isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: attempt_id
+    isRequired: true
   return:
     description: HistoryServerDataResponse or  or the result of cls(response)
     types:
@@ -141,6 +161,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: pool_name
+    isRequired: true
+  - name: livy_id
+    isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: attempt_id
+    isRequired: true
   return:
     description: HistoryServerDiagnosticResponse or  or the result of cls(response)
     types:
@@ -184,6 +214,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: pool_name
+    isRequired: true
+  - name: livy_id
+    isRequired: true
+  - name: app_id
+    isRequired: true
+  - name: attempt_id
+    isRequired: true
   return:
     description: HistoryServerGraphResponse or  or the result of cls(response)
     types:
@@ -206,6 +246,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
   return:
     description: HistoryServerPropertiesResponse or  or the result of cls(response)
     types:
@@ -227,6 +269,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
   return:
     description: SparkJobListViewResponse or  or the result of cls(response)
     types:

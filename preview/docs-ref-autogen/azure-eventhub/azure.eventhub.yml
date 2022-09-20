@@ -15,6 +15,7 @@ functions:
     isRequired: true
     types:
     - <xref:str>
+  - name: conn_str
   return:
     types:
     - <xref:azure.eventhub.EventHubConnectionStringProperties>

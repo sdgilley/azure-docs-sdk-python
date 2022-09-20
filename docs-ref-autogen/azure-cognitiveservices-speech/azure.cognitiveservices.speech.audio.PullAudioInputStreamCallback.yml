@@ -28,5 +28,7 @@ methods:
   - name: buffer
     description: the buffer that audio data should be passed in.
     isRequired: true
+  - name: buffer
+    isRequired: true
   return:
     description: The number of bytes passed into the stream.

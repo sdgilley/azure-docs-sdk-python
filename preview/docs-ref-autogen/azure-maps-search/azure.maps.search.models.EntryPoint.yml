@@ -24,3 +24,7 @@ constructor:
     defaultValue: None
     types:
     - <xref:azure.maps.search.models.LatLon>
+  - name: entry_point_type
+    defaultValue: None
+  - name: position
+    defaultValue: None

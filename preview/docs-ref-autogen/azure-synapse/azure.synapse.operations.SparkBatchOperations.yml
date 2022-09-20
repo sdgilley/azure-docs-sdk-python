@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -62,6 +66,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: livy_request
+    isRequired: true
+  - name: detailed
+    defaultValue: None
   return:
     description: ExtendedLivyBatchResponse or the result of cls(response)
     types:
@@ -93,6 +105,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: batch_id
+    isRequired: true
   return:
     description: None or the result of cls(response)
     types:
@@ -132,6 +150,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: batch_id
+    isRequired: true
+  - name: detailed
+    defaultValue: None
   return:
     description: ExtendedLivyBatchResponse or the result of cls(response)
     types:
@@ -179,6 +205,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: workspace_name
+    isRequired: true
+  - name: spark_pool_name
+    isRequired: true
+  - name: from_parameter
+    defaultValue: None
+  - name: size
+    defaultValue: None
+  - name: detailed
+    defaultValue: None
   return:
     description: ExtendedLivyListBatchResponse or the result of cls(response)
     types:

@@ -28,3 +28,5 @@ constructor:
       this default value may result in unsupported behavior.'
     types:
     - <xref:str>
+  - name: endpoint
+  - name: credential

@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -73,6 +77,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: job_id
+    isRequired: true
+  - name: farmer_id
+    isRequired: true
+  - name: seasonal_field_id
+    isRequired: true
   return:
     description: An instance of AsyncLROPoller that returns either CascadeDeleteJob
       or the result of cls(response)
@@ -106,6 +116,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: seasonal_field_id
+    isRequired: true
+  - name: seasonal_field
+    defaultValue: None
   return:
     description: SeasonalField, or the result of cls(response)
     types:
@@ -132,6 +148,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: seasonal_field_id
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -158,6 +178,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: seasonal_field_id
+    isRequired: true
   return:
     description: SeasonalField, or the result of cls(response)
     types:
@@ -179,6 +203,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: job_id
+    isRequired: true
   return:
     description: CascadeDeleteJob, or the result of cls(response)
     types:
@@ -329,6 +355,52 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farm_ids
+    defaultValue: None
+  - name: field_ids
+    defaultValue: None
+  - name: season_ids
+    defaultValue: None
+  - name: crop_variety_ids
+    defaultValue: None
+  - name: crop_ids
+    defaultValue: None
+  - name: min_avg_yield_value
+    defaultValue: None
+  - name: max_avg_yield_value
+    defaultValue: None
+  - name: avg_yield_unit
+    defaultValue: None
+  - name: min_avg_seed_population_value
+    defaultValue: None
+  - name: max_avg_seed_population_value
+    defaultValue: None
+  - name: avg_seed_population_unit
+    defaultValue: None
+  - name: min_planting_date_time
+    defaultValue: None
+  - name: max_planting_date_time
+    defaultValue: None
+  - name: ids
+    defaultValue: None
+  - name: names
+    defaultValue: None
+  - name: property_filters
+    defaultValue: None
+  - name: statuses
+    defaultValue: None
+  - name: min_created_date_time
+    defaultValue: None
+  - name: max_created_date_time
+    defaultValue: None
+  - name: min_last_modified_date_time
+    defaultValue: None
+  - name: max_last_modified_date_time
+    defaultValue: None
+  - name: max_page_size
+    defaultValue: '50'
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either SeasonalFieldListResponse or
       the result of cls(response)
@@ -487,6 +559,54 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: farmer_id
+    isRequired: true
+  - name: farm_ids
+    defaultValue: None
+  - name: field_ids
+    defaultValue: None
+  - name: season_ids
+    defaultValue: None
+  - name: crop_variety_ids
+    defaultValue: None
+  - name: crop_ids
+    defaultValue: None
+  - name: min_avg_yield_value
+    defaultValue: None
+  - name: max_avg_yield_value
+    defaultValue: None
+  - name: avg_yield_unit
+    defaultValue: None
+  - name: min_avg_seed_population_value
+    defaultValue: None
+  - name: max_avg_seed_population_value
+    defaultValue: None
+  - name: avg_seed_population_unit
+    defaultValue: None
+  - name: min_planting_date_time
+    defaultValue: None
+  - name: max_planting_date_time
+    defaultValue: None
+  - name: ids
+    defaultValue: None
+  - name: names
+    defaultValue: None
+  - name: property_filters
+    defaultValue: None
+  - name: statuses
+    defaultValue: None
+  - name: min_created_date_time
+    defaultValue: None
+  - name: max_created_date_time
+    defaultValue: None
+  - name: min_last_modified_date_time
+    defaultValue: None
+  - name: max_last_modified_date_time
+    defaultValue: None
+  - name: max_page_size
+    defaultValue: '50'
+  - name: skip_token
+    defaultValue: None
   return:
     description: An iterator like instance of either SeasonalFieldListResponse or
       the result of cls(response)

@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -64,6 +68,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: static_site_envelope
+    isRequired: true
   return:
     description: StaticSiteARMResource, or the result of cls(response)
     types:
@@ -104,6 +114,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: pr_id
+    isRequired: true
+  - name: app_settings
+    isRequired: true
   return:
     description: StringDictionary, or the result of cls(response)
     types:
@@ -142,6 +160,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: domain_name
+    isRequired: true
   return:
     description: StaticSiteCustomDomainOverviewARMResource, or the result of cls(response)
     types:
@@ -176,6 +200,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: app_settings
+    isRequired: true
   return:
     description: StringDictionary, or the result of cls(response)
     types:
@@ -210,6 +240,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: static_site_user_roles_invitation_envelope
+    isRequired: true
   return:
     description: StaticSiteUserInvitationResponseResource, or the result of cls(response)
     types:
@@ -239,6 +275,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -273,6 +313,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: pr_id
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -307,6 +353,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: domain_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -346,6 +398,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: authprovider
+    isRequired: true
+  - name: userid
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -375,6 +435,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -404,6 +468,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: StaticSiteARMResource, or the result of cls(response)
     types:
@@ -438,6 +506,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: pr_id
+    isRequired: true
   return:
     description: StaticSiteBuildARMResource, or the result of cls(response)
     types:
@@ -467,6 +541,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either StaticSiteBuildCollection or
       the result of cls(response)
@@ -492,6 +570,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An iterator like instance of either StaticSiteCollection or the result
       of cls(response)
@@ -546,6 +626,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: pr_id
+    isRequired: true
   return:
     description: StringDictionary, or the result of cls(response)
     types:
@@ -580,6 +666,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: pr_id
+    isRequired: true
   return:
     description: An iterator like instance of either StaticSiteFunctionOverviewCollection
       or the result of cls(response)
@@ -610,6 +702,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either StaticSiteCustomDomainOverviewCollection
       or the result of cls(response)
@@ -640,6 +736,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: StringDictionary, or the result of cls(response)
     types:
@@ -669,6 +769,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either StaticSiteFunctionOverviewCollection
       or the result of cls(response)
@@ -699,6 +803,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: StringDictionary, or the result of cls(response)
     types:
@@ -733,6 +841,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: authprovider
+    isRequired: true
   return:
     description: An iterator like instance of either StaticSiteUserCollection or the
       result of cls(response)
@@ -766,6 +880,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: location
+    isRequired: true
+  - name: static_sites_workflow_preview_request
+    isRequired: true
   return:
     description: StaticSitesWorkflowPreview, or the result of cls(response)
     types:
@@ -800,6 +918,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: reset_properties_envelope
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -839,6 +963,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: static_site_envelope
+    isRequired: true
   return:
     description: StaticSiteARMResource, or the result of cls(response)
     types:
@@ -886,6 +1016,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: authprovider
+    isRequired: true
+  - name: userid
+    isRequired: true
+  - name: static_site_user_envelope
+    isRequired: true
   return:
     description: StaticSiteUserARMResource, or the result of cls(response)
     types:
@@ -921,6 +1061,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: domain_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:

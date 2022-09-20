@@ -128,6 +128,32 @@ constructor:
       Default value is 10% of the remaining seconds until the token expires.'
     types:
     - <xref:int>
+  - name: audience
+  - name: uri
+  - name: token
+  - name: expires_in
+    defaultValue: None
+  - name: expires_at
+    defaultValue: None
+  - name: username
+    defaultValue: None
+  - name: password
+    defaultValue: None
+  - name: port
+    defaultValue: None
+  - name: timeout
+    defaultValue: '10'
+  - name: retry_policy
+  - name: verify
+    defaultValue: None
+  - name: token_type
+    defaultValue: b'servicebus.windows.net:sastoken'
+  - name: http_proxy
+    defaultValue: None
+  - name: transport_type
+    defaultValue: TransportType.Amqp
+  - name: encoding
+    defaultValue: UTF-8
 methods:
 - uid: uamqp.authentication.cbs_auth_async.SASTokenAsync.update_token
   name: update_token

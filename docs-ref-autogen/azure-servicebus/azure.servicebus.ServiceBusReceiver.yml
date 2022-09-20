@@ -143,6 +143,8 @@ constructor:
       (if provided) within its request to the service.'
     types:
     - <xref:int>
+  - name: fully_qualified_namespace
+  - name: credential
 variables:
 - description: 'The fully qualified host name for the Service Bus namespace.
 
@@ -168,6 +170,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.servicebus.ServiceBusReceivedMessage>
+  - name: message
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -211,6 +215,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.servicebus.ServiceBusReceivedMessage>
+  - name: message
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -259,6 +265,12 @@ methods:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:str>]
+  - name: message
+    isRequired: true
+  - name: reason
+    defaultValue: None
+  - name: error_description
+    defaultValue: None
   return:
     types:
     - <xref:None>
@@ -293,6 +305,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.servicebus.ServiceBusReceivedMessage>
+  - name: message
+    isRequired: true
   return:
     types:
     - <xref:None>
@@ -344,6 +358,8 @@ methods:
       no timeout.'
     types:
     - <xref:Optional>[<xref:float>]
+  - name: max_message_count
+    defaultValue: '1'
   return:
     types:
     - <xref:List>[<xref:azure.servicebus.ServiceBusReceivedMessage>]
@@ -382,6 +398,8 @@ methods:
       no timeout.'
     types:
     - <xref:Optional>[<xref:float>]
+  - name: sequence_numbers
+    isRequired: true
   return:
     types:
     - <xref:List>[<xref:azure.servicebus.ServiceBusReceivedMessage>]
@@ -452,6 +470,10 @@ methods:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:float>]
+  - name: max_message_count
+    defaultValue: '1'
+  - name: max_wait_time
+    defaultValue: None
   return:
     types:
     - <xref:List>[<xref:azure.servicebus.ServiceBusReceivedMessage>]
@@ -501,6 +523,8 @@ methods:
       no timeout.'
     types:
     - <xref:Optional>[<xref:float>]
+  - name: message
+    isRequired: true
   return:
     description: The utc datetime the lock is set to expire at.
     types:

@@ -63,6 +63,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: path
+    isRequired: true
 attributes:
 - uid: azure.ai.ml.entities.JobSchedule.is_enabled
   name: is_enabled

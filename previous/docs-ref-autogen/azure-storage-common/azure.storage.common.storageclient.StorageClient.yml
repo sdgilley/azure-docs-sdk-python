@@ -143,6 +143,14 @@ methods:
     defaultValue: None
     types:
     - <xref:str>
+  - name: host
+    isRequired: true
+  - name: port
+    isRequired: true
+  - name: user
+    defaultValue: None
+  - name: password
+    defaultValue: None
 attributes:
 - uid: azure.storage.common.storageclient.StorageClient.protocol
   name: protocol

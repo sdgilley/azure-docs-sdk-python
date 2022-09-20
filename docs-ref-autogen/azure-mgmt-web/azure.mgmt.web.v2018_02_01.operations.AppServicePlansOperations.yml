@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -76,6 +80,12 @@ methods:
       header is present.
     types:
     - <xref:int>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: app_service_plan
+    isRequired: true
   return:
     description: An instance of LROPoller that returns either AppServicePlan or the
       result of cls(response)
@@ -121,6 +131,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_name
+    isRequired: true
+  - name: route_name
+    isRequired: true
+  - name: route
+    isRequired: true
   return:
     description: VnetRoute, or the result of cls(response)
     types:
@@ -150,6 +170,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -189,6 +213,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: relay_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -228,6 +260,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_name
+    isRequired: true
+  - name: route_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -256,6 +296,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: AppServicePlan, or the result of cls(response)
     types:
@@ -296,6 +340,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: relay_name
+    isRequired: true
   return:
     description: HybridConnection, or the result of cls(response)
     types:
@@ -326,6 +378,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: HybridConnectionLimits, or the result of cls(response)
     types:
@@ -365,6 +421,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_name
+    isRequired: true
+  - name: route_name
+    isRequired: true
   return:
     description: list of VnetRoute, or the result of cls(response)
     types:
@@ -395,6 +459,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: any, or the result of cls(response)
     types:
@@ -429,6 +497,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_name
+    isRequired: true
   return:
     description: VnetInfo, or the result of cls(response)
     types:
@@ -469,6 +543,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_name
+    isRequired: true
+  - name: gateway_name
+    isRequired: true
   return:
     description: VnetGateway, or the result of cls(response)
     types:
@@ -494,6 +576,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: detailed
+    defaultValue: None
   return:
     description: An iterator like instance of either AppServicePlanCollection or the
       result of cls(response)
@@ -518,6 +602,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
   return:
     description: An iterator like instance of either AppServicePlanCollection or the
       result of cls(response)
@@ -548,6 +634,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: list of Capability, or the result of cls(response)
     types:
@@ -587,6 +677,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: relay_name
+    isRequired: true
   return:
     description: HybridConnectionKey, or the result of cls(response)
     types:
@@ -616,6 +714,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either HybridConnectionCollection or
       the result of cls(response)
@@ -646,6 +748,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either ResourceMetricDefinitionCollection
       or the result of cls(response)
@@ -697,6 +803,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: details
+    defaultValue: None
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either ResourceMetricCollection or the
       result of cls(response)
@@ -733,6 +847,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_name
+    isRequired: true
   return:
     description: list of VnetRoute, or the result of cls(response)
     types:
@@ -770,6 +890,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: filter
+    defaultValue: None
   return:
     description: An iterator like instance of either CsmUsageQuotaCollection or the
       result of cls(response)
@@ -799,6 +925,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: list of VnetInfo, or the result of cls(response)
     types:
@@ -853,6 +983,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: skip_token
+    defaultValue: None
+  - name: filter
+    defaultValue: None
+  - name: top
+    defaultValue: None
   return:
     description: An iterator like instance of either WebAppCollection or the result
       of cls(response)
@@ -893,6 +1033,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: namespace_name
+    isRequired: true
+  - name: relay_name
+    isRequired: true
   return:
     description: An iterator like instance of either ResourceCollection or the result
       of cls(response)
@@ -928,6 +1076,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: worker_name
+    isRequired: true
   return:
     description: None, or the result of cls(response)
     types:
@@ -966,6 +1120,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: soft_restart
+    defaultValue: None
   return:
     description: None, or the result of cls(response)
     types:
@@ -1000,6 +1160,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: app_service_plan
+    isRequired: true
   return:
     description: AppServicePlan, or the result of cls(response)
     types:
@@ -1045,6 +1211,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_name
+    isRequired: true
+  - name: gateway_name
+    isRequired: true
+  - name: connection_envelope
+    isRequired: true
   return:
     description: VnetGateway, or the result of cls(response)
     types:
@@ -1089,6 +1265,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: vnet_name
+    isRequired: true
+  - name: route_name
+    isRequired: true
+  - name: route
+    isRequired: true
   return:
     description: VnetRoute, or the result of cls(response)
     types:

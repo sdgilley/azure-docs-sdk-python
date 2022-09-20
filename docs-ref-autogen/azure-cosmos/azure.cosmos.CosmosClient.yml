@@ -100,6 +100,10 @@ constructor:
     description: The preferred locations for geo-replicated database accounts.
     types:
     - <xref:list>[<xref:str>]
+  - name: url
+  - name: credential
+  - name: consistency_level
+    defaultValue: None
 examples:
 - "Create a new instance of the Cosmos DB client:<!--[!code-python[Main](les\\examples.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -285,7 +289,7 @@ methods:
     description: 'Alternative credentials to use instead of the key
 
       provided in the connection string.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
     - <xref:dict>(<xref:str>, <xref:str>)
@@ -295,6 +299,12 @@ methods:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:str>]
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
+  - name: credential
+    defaultValue: None
   - name: consistency_level
     defaultValue: None
 - uid: azure.cosmos.CosmosClient.get_database_account
@@ -326,6 +336,8 @@ methods:
     - <xref:str>
     - <xref:dict>(<xref:str>, <xref:str>)
     - <xref:azure.cosmos.DatabaseProxy>
+  - name: database
+    isRequired: true
   return:
     description: A *DatabaseProxy* instance representing the retrieved database.
     types:

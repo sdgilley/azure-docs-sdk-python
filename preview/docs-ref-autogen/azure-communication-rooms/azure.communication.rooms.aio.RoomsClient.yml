@@ -23,6 +23,8 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.credentials.AzureKeyCredential>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.communication.rooms.aio.RoomsClient.add_participants
   name: add_participants
@@ -113,6 +115,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: conn_str
     isRequired: true
   return:

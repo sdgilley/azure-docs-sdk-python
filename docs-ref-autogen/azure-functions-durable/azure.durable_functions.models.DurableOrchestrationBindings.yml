@@ -31,6 +31,8 @@ methods:
 
       instance of the class'
     isRequired: true
+  - name: cls
+    isRequired: true
   - name: json_string
     isRequired: true
   return:

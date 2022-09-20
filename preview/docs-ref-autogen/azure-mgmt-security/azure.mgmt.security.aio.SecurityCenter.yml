@@ -36,6 +36,11 @@ constructor:
       header is present.
     types:
     - <xref:int>
+  - name: credential
+  - name: subscription_id
+  - name: asc_location
+  - name: base_url
+    defaultValue: None
 variables:
 - description: ComplianceResultsOperations operations
   name: compliance_results

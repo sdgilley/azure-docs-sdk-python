@@ -22,6 +22,8 @@ constructor:
 
       <xref:azure.identity>'
     isRequired: true
+  - name: vault_url
+  - name: credential
 methods:
 - uid: azure.keyvault.administration.KeyVaultAccessControlClient.create_role_assignment
   name: create_role_assignment

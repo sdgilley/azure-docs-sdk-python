@@ -60,3 +60,5 @@ constructor:
       preflight response.'
     types:
     - <xref:int>
+  - name: allowed_origins
+  - name: allowed_methods

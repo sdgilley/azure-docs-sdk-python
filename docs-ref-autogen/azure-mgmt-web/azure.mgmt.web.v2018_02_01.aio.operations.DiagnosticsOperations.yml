@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -81,6 +85,20 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: analysis_name
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: end_time
+    defaultValue: None
+  - name: time_grain
+    defaultValue: None
   return:
     description: DiagnosticAnalysis, or the result of cls(response)
     types:
@@ -142,6 +160,22 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: analysis_name
+    isRequired: true
+  - name: slot
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: end_time
+    defaultValue: None
+  - name: time_grain
+    defaultValue: None
   return:
     description: DiagnosticAnalysis, or the result of cls(response)
     types:
@@ -198,6 +232,20 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: detector_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: end_time
+    defaultValue: None
+  - name: time_grain
+    defaultValue: None
   return:
     description: DiagnosticDetectorResponse, or the result of cls(response)
     types:
@@ -259,6 +307,22 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: detector_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: slot
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: end_time
+    defaultValue: None
+  - name: time_grain
+    defaultValue: None
   return:
     description: DiagnosticDetectorResponse, or the result of cls(response)
     types:
@@ -310,6 +374,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: detector_name
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: end_time
+    defaultValue: None
+  - name: time_grain
+    defaultValue: None
   return:
     description: DetectorResponse, or the result of cls(response)
     types:
@@ -349,6 +425,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: analysis_name
+    isRequired: true
   return:
     description: DiagnosticAnalysis, or the result of cls(response)
     types:
@@ -393,6 +477,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: analysis_name
+    isRequired: true
+  - name: slot
+    isRequired: true
   return:
     description: DiagnosticAnalysis, or the result of cls(response)
     types:
@@ -432,6 +526,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: detector_name
+    isRequired: true
   return:
     description: An iterator like instance of either DiagnosticDetectorCollection
       or the result of cls(response)
@@ -484,6 +586,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: detector_name
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: end_time
+    defaultValue: None
+  - name: time_grain
+    defaultValue: None
   return:
     description: DetectorResponse, or the result of cls(response)
     types:
@@ -540,6 +654,20 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: detector_name
+    isRequired: true
+  - name: slot
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: end_time
+    defaultValue: None
+  - name: time_grain
+    defaultValue: None
   return:
     description: DetectorResponse, or the result of cls(response)
     types:
@@ -584,6 +712,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: detector_name
+    isRequired: true
+  - name: slot
+    isRequired: true
   return:
     description: An iterator like instance of either DiagnosticDetectorCollection
       or the result of cls(response)
@@ -619,6 +757,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
   return:
     description: DiagnosticCategory, or the result of cls(response)
     types:
@@ -658,6 +802,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: slot
+    isRequired: true
   return:
     description: DiagnosticCategory, or the result of cls(response)
     types:
@@ -687,6 +839,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: name
+    isRequired: true
   return:
     description: An iterator like instance of either DetectorResponseCollection or
       the result of cls(response)
@@ -722,6 +878,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
   return:
     description: An iterator like instance of either DiagnosticAnalysisCollection
       or the result of cls(response)
@@ -762,6 +924,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: slot
+    isRequired: true
   return:
     description: An iterator like instance of either DiagnosticAnalysisCollection
       or the result of cls(response)
@@ -792,6 +962,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
   return:
     description: An iterator like instance of either DetectorResponseCollection or
       the result of cls(response)
@@ -827,6 +1001,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: slot
+    isRequired: true
   return:
     description: An iterator like instance of either DetectorResponseCollection or
       the result of cls(response)
@@ -862,6 +1042,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
   return:
     description: An iterator like instance of either DiagnosticDetectorCollection
       or the result of cls(response)
@@ -902,6 +1088,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: diagnostic_category
+    isRequired: true
+  - name: slot
+    isRequired: true
   return:
     description: An iterator like instance of either DiagnosticDetectorCollection
       or the result of cls(response)
@@ -932,6 +1126,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
   return:
     description: An iterator like instance of either DiagnosticCategoryCollection
       or the result of cls(response)
@@ -967,6 +1165,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: resource_group_name
+    isRequired: true
+  - name: site_name
+    isRequired: true
+  - name: slot
+    isRequired: true
   return:
     description: An iterator like instance of either DiagnosticCategoryCollection
       or the result of cls(response)

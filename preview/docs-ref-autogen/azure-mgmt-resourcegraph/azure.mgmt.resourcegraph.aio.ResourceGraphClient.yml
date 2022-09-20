@@ -20,6 +20,9 @@ constructor:
     defaultValue: https://management.azure.com
     types:
     - <xref:str>
+  - name: credential
+  - name: base_url
+    defaultValue: https://management.azure.com
 variables:
 - description: Operations operations
   name: operations

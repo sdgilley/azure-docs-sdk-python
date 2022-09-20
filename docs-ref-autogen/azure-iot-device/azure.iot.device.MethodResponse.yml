@@ -40,6 +40,10 @@ methods:
     isRequired: true
     types:
     - <xref:int>
+  - name: cls
+    isRequired: true
+  - name: method_request
+    isRequired: true
   - name: status
     isRequired: true
   - name: payload

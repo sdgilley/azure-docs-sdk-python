@@ -18,6 +18,8 @@ constructor:
       If it is None or not provided, the default microphone device will be used for
       audio input.'
     defaultValue: None
+  - name: audio_config
+    defaultValue: None
 methods:
 - uid: azure.cognitiveservices.speech.KeywordRecognizer.recognize_once_async
   name: recognize_once_async
@@ -27,6 +29,8 @@ methods:
   parameters:
   - name: model
     description: The keyword recognition model that specifies the keyword to be recognized.
+    isRequired: true
+  - name: model
     isRequired: true
   return:
     description: A future that is fulfilled once recognition has been initialized.

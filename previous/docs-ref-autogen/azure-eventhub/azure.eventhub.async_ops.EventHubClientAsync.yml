@@ -60,6 +60,14 @@ methods:
     defaultValue: '300'
     types:
     - <xref:int>
+  - name: consumer_group
+    isRequired: true
+  - name: partition
+    isRequired: true
+  - name: epoch
+    isRequired: true
+  - name: prefetch
+    defaultValue: '300'
   - name: operation
     defaultValue: None
   - name: keep_alive
@@ -98,6 +106,14 @@ methods:
     defaultValue: '300'
     types:
     - <xref:int>
+  - name: consumer_group
+    isRequired: true
+  - name: partition
+    isRequired: true
+  - name: offset
+    defaultValue: None
+  - name: prefetch
+    defaultValue: '300'
   - name: operation
     defaultValue: None
   - name: keep_alive
@@ -132,7 +148,7 @@ methods:
       time that it is
 
       queued. Default value is 60 seconds. If set to 0, there will be no timeout.'
-    defaultValue: None
+    defaultValue: '60'
     types:
     - <xref:int>
   - name: keep_alive
@@ -143,7 +159,7 @@ methods:
       connection will not
 
       be pinged.'
-    defaultValue: '60'
+    defaultValue: '30'
     types:
     - <xref:int>
   - name: auto_reconnect
@@ -151,9 +167,17 @@ methods:
       occurs.
 
       Default value is *True*.'
-    defaultValue: '30'
+    defaultValue: 'True'
     types:
     - <xref:bool>
+  - name: partition
+    defaultValue: None
+  - name: operation
+    defaultValue: None
+  - name: send_timeout
+    defaultValue: '60'
+  - name: keep_alive
+    defaultValue: '30'
   - name: auto_reconnect
     defaultValue: 'True'
   - name: loop

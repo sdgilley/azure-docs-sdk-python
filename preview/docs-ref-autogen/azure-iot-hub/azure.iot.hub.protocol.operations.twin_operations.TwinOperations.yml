@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: 'The API version to use for the request. Constant value: "2020-05-31-preview".'
   name: api_version
@@ -59,6 +63,12 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:
@@ -105,6 +115,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:
@@ -156,6 +174,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: device_twin_info
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:
@@ -212,6 +240,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: device_twin_info
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:
@@ -263,6 +303,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: device_twin_info
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:
@@ -319,6 +369,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: id
+    isRequired: true
+  - name: mid
+    isRequired: true
+  - name: device_twin_info
+    isRequired: true
+  - name: if_match
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Twin or ClientRawResponse if raw=true
     types:

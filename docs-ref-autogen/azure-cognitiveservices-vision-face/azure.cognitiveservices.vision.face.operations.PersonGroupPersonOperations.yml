@@ -25,6 +25,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.vision.face.operations.PersonGroupPersonOperations.add_face_from_stream
   name: add_face_from_stream
@@ -186,6 +190,24 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: image
+    isRequired: true
+  - name: user_data
+    defaultValue: None
+  - name: target_face
+    defaultValue: None
+  - name: detection_model
+    defaultValue: detection_01
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: PersistedFace or ClientRawResponse if raw=true
     types:
@@ -341,6 +363,22 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: user_data
+    defaultValue: None
+  - name: target_face
+    defaultValue: None
+  - name: detection_model
+    defaultValue: detection_01
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PersistedFace or ClientRawResponse if raw=true
     types:
@@ -386,6 +424,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: name
+    defaultValue: None
+  - name: user_data
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Person or ClientRawResponse if raw=true
     types:
@@ -429,6 +477,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -484,6 +540,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: persisted_face_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -525,6 +591,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Person or ClientRawResponse if raw=true
     types:
@@ -574,6 +648,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: persisted_face_id
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: PersistedFace or ClientRawResponse if raw=true
     types:
@@ -627,6 +711,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: start
+    defaultValue: None
+  - name: top
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -677,6 +771,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: name
+    defaultValue: None
+  - name: user_data
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:
@@ -791,6 +897,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: person_group_id
+    isRequired: true
+  - name: person_id
+    isRequired: true
+  - name: persisted_face_id
+    isRequired: true
+  - name: user_data
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: None or ClientRawResponse if raw=true
     types:

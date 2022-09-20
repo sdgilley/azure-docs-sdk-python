@@ -29,6 +29,10 @@ constructor:
     description: The list of links to be added to the span.
     types:
     - <xref:list>[<xref:azure.core.tracing.Link>]
+  - name: span
+    defaultValue: None
+  - name: name
+    defaultValue: span
 methods:
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.add_attribute
   name: add_attribute
@@ -45,6 +49,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: key
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.change_context
   name: change_context
   summary: Change the context for the life of this context manager.
@@ -103,6 +111,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
   - name: traceparent
     isRequired: true
   - name: attributes
@@ -119,6 +129,8 @@ methods:
     isRequired: true
     types:
     - <xref:dict>
+  - name: cls
+    isRequired: true
   - name: headers
     isRequired: true
   - name: attributes
@@ -181,6 +193,8 @@ methods:
   parameters:
   - name: func
     description: The function that will be run in the new context
+    isRequired: true
+  - name: cls
     isRequired: true
   - name: func
     isRequired: true

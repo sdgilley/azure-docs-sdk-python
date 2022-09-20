@@ -51,6 +51,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.core.pipeline.PipelineRequest>
+  - name: request
+    isRequired: true
 - uid: azure.core.pipeline.policies.RequestIdPolicy.set_request_id
   name: set_request_id
   summary: Add the request id to the configuration to be applied to all requests.
@@ -61,3 +63,5 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: value
+    isRequired: true

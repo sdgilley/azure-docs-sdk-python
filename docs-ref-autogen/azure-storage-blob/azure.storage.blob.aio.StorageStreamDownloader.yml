@@ -88,6 +88,8 @@ methods:
     defaultValue: '1'
     types:
     - <xref:int>
+  - name: max_concurrency
+    defaultValue: '1'
   return:
     types:
     - <xref:bytes>
@@ -109,6 +111,10 @@ methods:
     defaultValue: UTF-8
     types:
     - <xref:str>
+  - name: max_concurrency
+    defaultValue: '1'
+  - name: encoding
+    defaultValue: UTF-8
   return:
     types:
     - <xref:str>
@@ -129,6 +135,10 @@ methods:
     defaultValue: '1'
     types:
     - <xref:int>
+  - name: stream
+    isRequired: true
+  - name: max_concurrency
+    defaultValue: '1'
   return:
     description: The properties of the downloaded blob.
     types:
@@ -153,6 +163,8 @@ methods:
       or any writable stream. The stream must be seekable if the download
 
       uses more than one parallel connection.'
+    isRequired: true
+  - name: stream
     isRequired: true
   return:
     description: The number of bytes read.

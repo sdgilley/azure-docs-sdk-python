@@ -27,6 +27,14 @@ constructor:
   - name: region
     description: The region name (see the [region page](https://aka.ms/csspeech/region)).
     defaultValue: None
+  - name: app_id
+    defaultValue: None
+  - name: subscription
+    defaultValue: None
+  - name: auth_token
+    defaultValue: None
+  - name: region
+    defaultValue: None
 attributes:
 - uid: azure.cognitiveservices.speech.dialog.CustomCommandsConfig.application_id
   name: application_id

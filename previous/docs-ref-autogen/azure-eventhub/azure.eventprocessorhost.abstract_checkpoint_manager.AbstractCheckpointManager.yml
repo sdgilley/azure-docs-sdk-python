@@ -25,6 +25,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: partition_id
+    isRequired: true
   return:
     description: The checkpoint for the given partition, whether newly created or
       already existing.
@@ -55,6 +57,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: partition_id
+    isRequired: true
 - uid: azure.eventprocessorhost.abstract_checkpoint_manager.AbstractCheckpointManager.get_checkpoint_async
   name: get_checkpoint_async
   summary: 'Get the checkpoint data associated with the given partition.
@@ -67,6 +71,8 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: partition_id
+    isRequired: true
   return:
     description: Given partition checkpoint info, or *None* if none has been previously
       stored.
@@ -88,3 +94,7 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventprocessorhost.checkpoint.Checkpoint>
+  - name: lease
+    isRequired: true
+  - name: checkpoint
+    isRequired: true

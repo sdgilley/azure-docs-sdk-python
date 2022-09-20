@@ -25,6 +25,9 @@ constructor:
       header is present.
     types:
     - <xref:int>
+  - name: credential
+  - name: base_url
+    defaultValue: None
 variables:
 - description: SettingsOperations operations
   name: settings

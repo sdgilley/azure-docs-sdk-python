@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.vision.contentmoderator.operations.list_management_term_operations.ListManagementTermOperations.add_term
   name: add_term
@@ -59,6 +63,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: term
+    isRequired: true
+  - name: language
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -100,6 +114,14 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: language
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -145,6 +167,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: term
+    isRequired: true
+  - name: language
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: str or ClientRawResponse if raw=true
     types:
@@ -195,6 +227,18 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: list_id
+    isRequired: true
+  - name: language
+    isRequired: true
+  - name: offset
+    defaultValue: None
+  - name: limit
+    defaultValue: None
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
   return:
     description: Terms or ClientRawResponse if raw=true
     types:

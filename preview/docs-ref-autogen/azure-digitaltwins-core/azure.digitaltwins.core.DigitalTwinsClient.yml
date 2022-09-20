@@ -20,6 +20,8 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.core.credentials.TokenCredential>
+  - name: endpoint
+  - name: credential
 methods:
 - uid: azure.digitaltwins.core.DigitalTwinsClient.create_models
   name: create_models

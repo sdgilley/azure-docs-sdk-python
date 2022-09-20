@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -97,6 +101,18 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: billing_scope
+    isRequired: true
+  - name: scope
+    isRequired: true
+  - name: region
+    isRequired: true
+  - name: term
+    isRequired: true
+  - name: look_back_period
+    isRequired: true
+  - name: product
+    isRequired: true
   return:
     description: ReservationRecommendationDetailsModel, or the result of cls(response)
     types:

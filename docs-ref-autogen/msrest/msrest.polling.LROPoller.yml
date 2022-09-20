@@ -35,6 +35,10 @@ constructor:
     isRequired: true
     types:
     - <xref:msrest.polling.PollingMethod>
+  - name: client
+  - name: initial_response
+  - name: deserialization_callback
+  - name: polling_method
 methods:
 - uid: msrest.polling.LROPoller.add_done_callback
   name: add_done_callback
@@ -50,6 +54,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>
+  - name: func
+    isRequired: true
 - uid: msrest.polling.LROPoller.done
   name: done
   summary: Check status of the long running operation.
@@ -66,6 +72,8 @@ methods:
     isRequired: true
     types:
     - <xref:callable>
+  - name: func
+    isRequired: true
   exceptions:
   - type: ValueError if the long running operation has alreadycompleted.
 - uid: msrest.polling.LROPoller.result
@@ -108,6 +116,8 @@ methods:
     defaultValue: None
     types:
     - <xref:float>
+  - name: timeout
+    defaultValue: None
   exceptions:
   - type: CloudError
     description: Server problem with the query.

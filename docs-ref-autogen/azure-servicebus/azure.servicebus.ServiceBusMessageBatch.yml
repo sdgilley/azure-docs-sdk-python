@@ -34,6 +34,8 @@ constructor:
     defaultValue: None
     types:
     - <xref:Optional>[<xref:int>]
+  - name: max_size_in_bytes
+    defaultValue: None
 methods:
 - uid: azure.servicebus.ServiceBusMessageBatch.add_message
   name: add_message
@@ -55,6 +57,8 @@ methods:
     isRequired: true
     types:
     - <xref:Union>[<xref:azure.servicebus.ServiceBusMessage>, <xref:azure.servicebus.amqp.AmqpAnnotatedMessage>]
+  - name: message
+    isRequired: true
   return:
     types:
     - <xref:None>

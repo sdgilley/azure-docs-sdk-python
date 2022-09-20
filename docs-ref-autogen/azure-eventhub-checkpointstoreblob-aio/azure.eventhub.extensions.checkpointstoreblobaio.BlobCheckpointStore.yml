@@ -47,6 +47,8 @@ constructor:
     description: The hostname of the secondary endpoint.
     types:
     - <xref:str>
+  - name: blob_account_url
+  - name: container_name
 methods:
 - uid: azure.eventhub.extensions.checkpointstoreblobaio.BlobCheckpointStore.claim_ownership
   name: claim_ownership
@@ -59,6 +61,8 @@ methods:
     isRequired: true
     types:
     - <xref:Iterable>[<xref:Dict>[<xref:str,Any>]]
+  - name: ownership_list
+    isRequired: true
   return:
     types:
     - '<xref:Iterable>[<xref:Dict>[<xref:str,Any>]], <xref:Iterable of dictionaries
@@ -115,6 +119,12 @@ methods:
     description: The hostname of the secondary endpoint.
     types:
     - <xref:str>
+  - name: cls
+    isRequired: true
+  - name: conn_str
+    isRequired: true
+  - name: container_name
+    isRequired: true
   return:
     description: A blob checkpoint store.
     types:
@@ -145,6 +155,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+    isRequired: true
+  - name: eventhub_name
+    isRequired: true
+  - name: consumer_group
+    isRequired: true
   return:
     types:
     - '<xref:Iterable>[<xref:Dict>[<xref:str,Any>]], <xref:Iterable of dictionaries
@@ -183,6 +199,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: fully_qualified_namespace
+    isRequired: true
+  - name: eventhub_name
+    isRequired: true
+  - name: consumer_group
+    isRequired: true
   return:
     types:
     - '<xref:Iterable>[<xref:Dict>[<xref:str>, <xref:Any>]], <xref:Iterable of dictionaries
@@ -228,6 +250,8 @@ methods:
     isRequired: true
     types:
     - <xref:Dict>[<xref:str,Any>]
+  - name: checkpoint
+    isRequired: true
   return:
     types:
     - <xref:None>

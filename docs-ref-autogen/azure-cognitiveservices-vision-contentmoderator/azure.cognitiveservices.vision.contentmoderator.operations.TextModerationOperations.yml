@@ -21,6 +21,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 methods:
 - uid: azure.cognitiveservices.vision.contentmoderator.operations.TextModerationOperations.detect_language
   name: detect_language
@@ -75,6 +79,16 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: text_content_type
+    isRequired: true
+  - name: text_content
+    isRequired: true
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: DetectedLanguage or ClientRawResponse if raw=true
     types:
@@ -159,6 +173,26 @@ methods:
 
       overrides*.'
     isRequired: true
+  - name: text_content_type
+    isRequired: true
+  - name: text_content
+    isRequired: true
+  - name: language
+    defaultValue: None
+  - name: autocorrect
+    defaultValue: 'False'
+  - name: pii
+    defaultValue: 'False'
+  - name: list_id
+    defaultValue: None
+  - name: classify
+    defaultValue: 'False'
+  - name: custom_headers
+    defaultValue: None
+  - name: raw
+    defaultValue: 'False'
+  - name: callback
+    defaultValue: None
   return:
     description: Screen or ClientRawResponse if raw=true
     types:

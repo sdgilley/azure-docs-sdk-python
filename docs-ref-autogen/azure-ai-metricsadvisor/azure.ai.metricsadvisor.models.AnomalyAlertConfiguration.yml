@@ -29,6 +29,9 @@ constructor:
     description: dimensions used to split alert.
     types:
     - <xref:list>[<xref:str>]
+  - name: name
+  - name: metric_alert_configurations
+  - name: hook_ids
 variables:
 - description: anomaly alert configuration unique id.
   name: id

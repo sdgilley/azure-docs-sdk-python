@@ -37,6 +37,8 @@ methods:
     defaultValue: None
     types:
     - <xref:Exception>
+  - name: exception
+    defaultValue: None
 - uid: azure.eventhub.sender.Sender.get_handler_state
   name: get_handler_state
   summary: 'Get the state of the underlying handler with regards to start
@@ -89,6 +91,8 @@ methods:
     isRequired: true
     types:
     - <xref:azure.eventhub.common.EventData>
+  - name: event_data
+    isRequired: true
   return:
     description: The outcome of the message send.
     types:
@@ -113,6 +117,10 @@ methods:
     defaultValue: None
     types:
     - <xref:callable>[<xref:uamqp.constants.MessageSendResult>, <xref:azure.eventhub.common.EventHubError>]
+  - name: event_data
+    isRequired: true
+  - name: callback
+    defaultValue: None
 - uid: azure.eventhub.sender.Sender.wait
   name: wait
   summary: Wait until all transferred events have been sent.

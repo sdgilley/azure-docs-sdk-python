@@ -21,6 +21,8 @@ methods:
     isRequired: true
     types:
     - <xref:Dict>[<xref:Any>, <xref:Any>]
+  - name: cls
+    isRequired: true
   - name: json_obj
     isRequired: true
   return:

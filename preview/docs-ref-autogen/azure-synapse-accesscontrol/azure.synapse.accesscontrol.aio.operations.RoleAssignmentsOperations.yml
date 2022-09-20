@@ -27,6 +27,10 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
     isRequired: true
+  - name: client
+  - name: config
+  - name: serializer
+  - name: deserializer
 variables:
 - description: Alias to model classes used in this operation group.
   name: models
@@ -57,6 +61,12 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: subject
+    isRequired: true
+  - name: actions
+    isRequired: true
+  - name: scope
+    isRequired: true
   return:
     description: CheckPrincipalAccessResponse, or the result of cls(response)
     types:
@@ -99,6 +109,16 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: role_assignment_id
+    isRequired: true
+  - name: role_id
+    isRequired: true
+  - name: principal_id
+    isRequired: true
+  - name: scope
+    isRequired: true
+  - name: principal_type
+    defaultValue: None
   return:
     description: RoleAssignmentDetails, or the result of cls(response)
     types:
@@ -125,6 +145,10 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: role_assignment_id
+    isRequired: true
+  - name: scope
+    defaultValue: None
   return:
     description: None, or the result of cls(response)
     types:
@@ -146,6 +170,8 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: role_assignment_id
+    isRequired: true
   return:
     description: RoleAssignmentDetails, or the result of cls(response)
     types:
@@ -183,6 +209,14 @@ methods:
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
+  - name: role_id
+    defaultValue: None
+  - name: principal_id
+    defaultValue: None
+  - name: scope
+    defaultValue: None
+  - name: continuation_token_parameter
+    defaultValue: None
   return:
     description: RoleAssignmentDetailsList, or the result of cls(response)
     types:

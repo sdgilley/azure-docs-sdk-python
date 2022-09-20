@@ -49,6 +49,8 @@ constructor:
     description: transport to use. Defaults to <xref:azure.core.pipeline.transport.RequestsTransport>.
     types:
     - <xref:azure.core.pipeline.transport.HttpTransport>
+  - name: key
+  - name: credential
 methods:
 - uid: azure.keyvault.keys.crypto.CryptographyClient.decrypt
   name: decrypt
@@ -168,6 +170,8 @@ methods:
     types:
     - <xref:azure.keyvault.keys.JsonWebKey>
     - <xref:dict>
+  - name: cls
+    isRequired: true
   - name: jwk
     isRequired: true
   return:
