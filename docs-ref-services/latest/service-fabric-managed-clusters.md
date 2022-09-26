@@ -1,12 +1,12 @@
 ---
-author: QingChenmsft
-ms.devlang: python
 ms.author: QingChenmsft
-ms.service: servicefabricmanagedclusters
+ms.topic: reference
+ms.devlang: python
+ms.data: 09/26/2022
 title: Azure Service Fabric Managed Clusters SDK for Python
 description: Reference for Azure Service Fabric Managed Clusters SDK for Python
-ms.data: 09/23/2022
-ms.topic: reference
+ms.service: servicefabricmanagedclusters
+author: QingChenmsft
 ---
 # Azure Service Fabric Managed Clusters SDK for Python - latest
 

@@ -1,12 +1,12 @@
 ---
-author: annatisch
-ms.devlang: python
 ms.author: antisch
-ms.service: tables
+ms.topic: reference
+ms.devlang: python
+ms.data: 09/26/2022
 title: Azure Tables SDK for Python
 description: Reference for Azure Tables SDK for Python
-ms.data: 09/23/2022
-ms.topic: reference
+ms.service: tables
+author: annatisch
 ---
 # Azure Tables SDK for Python - latest
 

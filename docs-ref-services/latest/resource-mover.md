@@ -1,12 +1,12 @@
 ---
-author: lmazuel
-ms.devlang: python
 ms.author: lmazuel
-ms.service: resourcemover
+ms.topic: reference
+ms.devlang: python
+ms.data: 09/26/2022
 title: Azure Resource Mover SDK for Python
 description: Reference for Azure Resource Mover SDK for Python
-ms.data: 09/23/2022
-ms.topic: reference
+ms.service: resourcemover
+author: lmazuel
 ---
 # Azure Resource Mover SDK for Python - latest
 
