@@ -1,12 +1,12 @@
 ---
-title: Azure Stack HCI SDK for Python
-author: lmazuel
-ms.service: stackhci
-ms.devlang: python
-ms.topic: reference
-ms.data: 09/27/2022
 ms.author: lmazuel
+title: Azure Stack HCI SDK for Python
+ms.service: stackhci
+ms.data: 09/28/2022
 description: Reference for Azure Stack HCI SDK for Python
+ms.devlang: python
+author: lmazuel
+ms.topic: reference
 ---
 # Azure Stack HCI SDK for Python - latest
 

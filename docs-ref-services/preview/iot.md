@@ -1,12 +1,12 @@
 ---
-title: Azure IoT SDK for Python
-author: lmazuel
-ms.service: iot
-ms.devlang: python
-ms.topic: reference
-ms.data: 09/27/2022
 ms.author: lmazuel
+title: Azure IoT SDK for Python
+ms.service: iot
+ms.data: 09/28/2022
 description: Reference for Azure IoT SDK for Python
+ms.devlang: python
+author: lmazuel
+ms.topic: reference
 ---
 # Azure IoT Hub libraries for python
 

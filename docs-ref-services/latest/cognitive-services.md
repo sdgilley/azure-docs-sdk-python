@@ -1,12 +1,12 @@
 ---
-title: Azure Cognitive Services SDK for Python
-author: lmazuel
-ms.service: cognitiveservices
-ms.devlang: python
-ms.topic: reference
-ms.data: 09/27/2022
 ms.author: lmazuel
+title: Azure Cognitive Services SDK for Python
+ms.service: cognitiveservices
+ms.data: 09/28/2022
 description: Reference for Azure Cognitive Services SDK for Python
+ms.devlang: python
+author: lmazuel
+ms.topic: reference
 ---
 # Azure Cognitive Services modules for Python
 

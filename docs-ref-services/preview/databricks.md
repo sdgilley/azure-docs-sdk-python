@@ -1,12 +1,12 @@
 ---
-title: Azure Databricks SDK for Python
-author: lmazuel
-ms.service: databricks
-ms.devlang: python
-ms.topic: reference
-ms.data: 09/27/2022
 ms.author: lmazuel
+title: Azure Databricks SDK for Python
+ms.service: databricks
+ms.data: 09/28/2022
 description: Reference for Azure Databricks SDK for Python
+ms.devlang: python
+author: lmazuel
+ms.topic: reference
 ---
 # Azure Databricks SDK for Python - preview
 
