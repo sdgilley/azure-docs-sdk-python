@@ -1,12 +1,12 @@
 ---
-ms.data: 09/28/2022
-author: lmazuel
-description: Reference for Azure Nginx SDK for Python
-ms.topic: reference
-ms.devlang: python
-ms.author: lmazuel
-title: Azure Nginx SDK for Python
 ms.service: nginx
+description: Reference for Azure Nginx SDK for Python
+ms.author: lmazuel
+author: lmazuel
+ms.devlang: python
+title: Azure Nginx SDK for Python
+ms.data: 09/30/2022
+ms.topic: reference
 ---
 # Azure Nginx SDK for Python - latest
 
