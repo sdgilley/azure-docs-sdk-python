@@ -8,7 +8,7 @@ ms.topic: reference
 ms.devlang: python
 ms.service: schemaregistry
 ---
-# Azure Schema Registry client library for Python - version 1.2.0a20221003001 
+# Azure Schema Registry client library for Python - version 1.2.0a20221003004 
 
 
 Azure Schema Registry is a schema repository service hosted by Azure Event Hubs, providing schema storage, versioning,
