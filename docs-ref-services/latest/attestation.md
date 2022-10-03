@@ -1,12 +1,12 @@
 ---
-ms.data: 09/30/2022
 ms.author: lmazuel
-ms.topic: reference
-title: Azure Attestation SDK for Python
-description: Reference for Azure Attestation SDK for Python
 author: lmazuel
 ms.service: attestation
+ms.topic: reference
 ms.devlang: python
+title: Azure Attestation SDK for Python
+ms.data: 10/03/2022
+description: Reference for Azure Attestation SDK for Python
 ---
 # Azure Attestation SDK for Python - latest
 

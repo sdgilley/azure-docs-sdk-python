@@ -1,12 +1,12 @@
 ---
-ms.data: 09/30/2022
 ms.author: lmazuel
-ms.topic: reference
-title: Azure IoT Plug and Play SDK for Python
-description: Reference for Azure IoT Plug and Play SDK for Python
 author: lmazuel
 ms.service: iotplugandplay
+ms.topic: reference
 ms.devlang: python
+title: Azure IoT Plug and Play SDK for Python
+ms.data: 10/03/2022
+description: Reference for Azure IoT Plug and Play SDK for Python
 ---
 # Azure IoT Plug and Play SDK for Python - latest
 
